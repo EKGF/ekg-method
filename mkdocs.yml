@@ -1,0 +1,88 @@
+site_name: Use Case Tree Method (work in progress)
+site_description: Use Case Tree Method
+repo_name: 'agnos-ai/usecase'
+repo_url: https://github.com/agnos-ai/usecase
+site_url: https://usecase.agnos.ai
+site_dir: site
+site_author: agnos.ai
+copyright: Copyright &copy; 2022 agnos.ai UK Ltd
+edit_uri: ''
+# Navigation
+# nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  language: en
+  custom_dir: docs-overrides/
+  icon:
+    logo: agnos-ai-logo-symbol
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - search.highlight
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+extra:
+  generator: false
+  giscus:
+    repo_id: 'MDEwOlJlcG9zaXRvcnkzMTk3MTE4MzM='
+    category:
+      name: 'General'
+      id: 'DIC_kwDOEw5qWc4CA98b'
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/agnosai
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/agnos-ai
+    - icon: fontawesome/brands/github
+      link: https://github.com/agnos-ai/usecase
+plugins:
+  - search:
+      prebuild_index: true
+      lang:
+        - en
+  - awesome-pages:
+      filename: .pages.yaml
+      collapse_single_pages: false
+      strict: true
+  - macros:
+      module_name: docs/main
+markdown_extensions:
+  - toc:
+      permalink: true
+  - mdx_spanner
+  - def_list
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
