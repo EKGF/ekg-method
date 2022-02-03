@@ -4,20 +4,25 @@ ifeq ($(OS),Windows_NT)
     INSTALL_TARGET := install-windows
     OPEN_EDITORS_VERSION_TARGET := open-editors-version-windows
     OPEN_RELEASE_VERSION_TARGET := open-release-version-windows
+    MKDOCS := mkdocs
 else
     YOUR_OS := $(shell sh -c 'uname 2>/dev/null || echo Unknown')
-    ifeq ($(YOUR_OS), Linux)
+ifeq ($(YOUR_OS), Linux)
     INSTALL_TARGET := install-linux
     OPEN_EDITORS_VERSION_TARGET := open-editors-version-linux
     OPEN_RELEASE_VERSION_TARGET := open-release-version-linux
-	MKDOCS = $(shell asdf where python)/bin/mkdocs
-    endif
-    ifeq ($(YOUR_OS), Darwin)
+ifneq ($(wildcard /home/runner/.*),)
+	MKDOCS := mkdocs
+else
+	MKDOCS := $(shell asdf where python)/bin/mkdocs
+endif
+endif
+ifeq ($(YOUR_OS), Darwin)
     INSTALL_TARGET := install-macos
     OPEN_EDITORS_VERSION_TARGET := open-editors-version-macos
     OPEN_RELEASE_VERSION_TARGET := open-release-version-macos
-	MKDOCS = $(shell asdf where python)/bin/mkdocs
-    endif
+	MKDOCS := $(shell asdf where python)/bin/mkdocs
+endif
 endif
 DOC_ORG_NAME := ekgf
 DOC_ROOT_NAME := usecase
