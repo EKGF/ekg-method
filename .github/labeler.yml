@@ -1,0 +1,23 @@
+mkdocs-infra:
+  - Makefile
+  - mkdocs.yml
+  - docs-overrides/
+  - docs/assets/
+  - docs/stylesheets/
+  - docs/main.py
+  - '*/**/CNAME'
+  - .tool-versions
+  - README.md
+
+github-actions:
+  - .github/
+
+agnos-ai:
+  - any: ['agnos-*']
+  - any: ['*-agnos/**/*']
+  - any: ['*-agnos-ai/**/*']
+
+products:
+  - docs/products/
+
+
