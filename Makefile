@@ -17,7 +17,7 @@ else
     OPEN_RELEASE_VERSION_TARGET := open-release-version-macos
     endif
 endif
-DOC_ORG_NAME := agnos-ai
+DOC_ORG_NAME := ekgf
 DOC_ROOT_NAME := usecase
 CURRENT_BRANCH := $(shell git branch --show-current)
 MKDOCS = $(shell asdf where python)/bin/mkdocs
@@ -29,25 +29,34 @@ info:
 	@echo "Git Branch: ${CURRENT_BRANCH}"
 
 .PHONY: docs-install
-docs-install:
-	brew upgrade asdf || brew install asdf
-	asdf plugin add python || true
-	asdf plugin add nodejs || true
-	asdf local python latest
-	asdf local nodejs 12.17.0
-	asdf exec python -m pip install --upgrade pip
-	pip install --upgrade mkdocs
-	pip install --upgrade mkdocs-material
-	pip install --upgrade mkdocs-localsearch
-	pip install --upgrade mdx-spanner
-	pip install --upgrade mkdocs-awesome-pages-plugin
-	pip install --upgrade mkdocs-macros-plugin
+docs-install: docs-install-python-packages
 	brew upgrade cairo || brew install cairo
 	brew upgrade freetype || brew install freetype
 	brew upgrade libffi || brew install libffi
 	brew upgrade libjpeg || brew install libjpeg
 	brew upgrade libpng || brew install libpng
 	brew upgrade zlib || brew install zlib
+
+.PHONY: docs-install-asdf
+docs-install-asdf:
+	brew upgrade asdf || brew install asdf
+	asdf plugin add python || true
+	asdf plugin add nodejs || true
+
+.PHONY: docs-install-python
+docs-install-python: docs-install-asdf
+	asdf install
+	asdf exec python -m pip install --upgrade pip
+
+.PHONY: docs-install-python-packages
+docs-install-python-packages: docs-install-python
+	pip install --upgrade mkdocs
+	pip install --upgrade mkdocs-material
+	pip install --upgrade mkdocs-localsearch
+	pip install --upgrade mdx-spanner
+	pip install --upgrade mkdocs-awesome-pages-plugin
+	pip install --upgrade mkdocs-macros-plugin
+	pip install --upgrade markdown-emdash
 
 .PHONY: docs-build
 docs-build:
