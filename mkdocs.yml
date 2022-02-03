@@ -54,6 +54,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/EKGF/use-case-tree-method
 plugins:
+  - include-markdown
   - search:
       prebuild_index: true
       lang:
