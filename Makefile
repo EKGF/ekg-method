@@ -69,6 +69,7 @@ endif
 	pip install --upgrade mkdocs-include-markdown-plugin
 	pip install --upgrade mkdocs-awesome-pages-plugin
 	pip install --upgrade mkdocs-macros-plugin
+	pip install --upgrade mkdocs-mermaid2-plugin
 	pip install --upgrade mdx-spanner
 	pip install --upgrade markdown-emdash
 

@@ -1,4 +1,4 @@
-name: Create PDF
+name: Build Website
 
 on:
   push:

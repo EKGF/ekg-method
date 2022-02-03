@@ -17,7 +17,7 @@ classDiagram
         - vocabulary: Vocabulary
         - stories: Story[]
     }
-    link UseCase "http://localhost:8000/concept/use-case/"
+    link UseCase "../use-case/"
     UseCase --> UseCase : requires
     Vocabulary "*" --> "*" Concept
     Vocabulary "*" --> "*" Term
