@@ -10,23 +10,27 @@ else
     INSTALL_TARGET := install-linux
     OPEN_EDITORS_VERSION_TARGET := open-editors-version-linux
     OPEN_RELEASE_VERSION_TARGET := open-release-version-linux
+	MKDOCS = $(shell asdf where python)/bin/mkdocs
     endif
     ifeq ($(YOUR_OS), Darwin)
     INSTALL_TARGET := install-macos
     OPEN_EDITORS_VERSION_TARGET := open-editors-version-macos
     OPEN_RELEASE_VERSION_TARGET := open-release-version-macos
+	MKDOCS = $(shell asdf where python)/bin/mkdocs
     endif
 endif
 DOC_ORG_NAME := ekgf
 DOC_ROOT_NAME := usecase
 CURRENT_BRANCH := $(shell git branch --show-current)
-MKDOCS = $(shell asdf where python)/bin/mkdocs
 
 .PHONY: info
 info:
 	@echo "MkDocs: ${MKDOCS}"
 	@echo "Document Version: ${DOC_VERSION}"
 	@echo "Git Branch: ${CURRENT_BRANCH}"
+
+.PHONY: install
+install: docs-install
 
 .PHONY: docs-install
 docs-install: docs-install-python-packages
@@ -39,14 +43,18 @@ docs-install: docs-install-python-packages
 
 .PHONY: docs-install-asdf
 docs-install-asdf:
+ifeq ($(GITHUB_TOKEN),)
 	brew upgrade asdf || brew install asdf
 	asdf plugin add python || true
 	asdf plugin add nodejs || true
+endif
 
 .PHONY: docs-install-python
 docs-install-python: docs-install-asdf
+ifeq ($(GITHUB_TOKEN),)
 	asdf install
 	asdf exec python -m pip install --upgrade pip
+endif
 
 .PHONY: docs-install-python-packages
 docs-install-python-packages: docs-install-python
