@@ -1,11 +1,11 @@
 site_name: Use Case Tree Method (work in progress)
 site_description: Use Case Tree Method
-repo_name: 'agnos-ai/usecase'
-repo_url: https://github.com/agnos-ai/usecase
-site_url: https://usecase.agnos.ai
+repo_name: 'EKGF/use-case-tree-method'
+repo_url: https://github.com/EKGF/use-case-tree-method
+site_url: https://use-case-tree-method.ekgf.org
 site_dir: site
-site_author: agnos.ai
-copyright: Copyright &copy; 2022 agnos.ai UK Ltd
+site_author: Enterprise Knowledge Graph Foundation
+copyright: Copyright &copy; 2022 Enterprise Knowledge Graph Foundation & agnos.ai UK Ltd
 edit_uri: ''
 # Navigation
 # nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
@@ -16,7 +16,7 @@ theme:
   language: en
   custom_dir: docs-overrides/
   icon:
-    logo: agnos-ai-logo-symbol
+    logo: ekgf-logo-symbol
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -42,17 +42,17 @@ theme:
 extra:
   generator: false
   giscus:
-    repo_id: 'MDEwOlJlcG9zaXRvcnkzMTk3MTE4MzM='
+    repo_id: 'R_kgDOGyFarg'
     category:
       name: 'General'
-      id: 'DIC_kwDOEw5qWc4CA98b'
+      id: 'DIC_kwDOGyFars4CA_Gc'
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/agnosai
+      link: https://twitter.com/EKG_Foundation
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/agnos-ai
+      link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
-      link: https://github.com/agnos-ai/usecase
+      link: https://github.com/EKGF/use-case-tree-method
 plugins:
   - search:
       prebuild_index: true
@@ -71,6 +71,7 @@ markdown_extensions:
   - def_list
   - abbr
   - admonition
+  - mdx_emdash
   - attr_list
   - footnotes
   - tables

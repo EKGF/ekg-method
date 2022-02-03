@@ -7,10 +7,9 @@ to be able to:
 1. implement use cases that enable more foundational data quality 
    for your enterprise’s business processes,
 2. be more easily compliant with regulations and
-3. enable use cases that can potentially create a competitive advantage.
+3. enable strategic use cases that create a competitive advantage.
 
-The most critical and most important _artifact_ in the 
-development of an EKG is "the Use Case Tree":
+The key _artifact_ in the development of an EKG is "the Use Case Tree":
 
 - The Use Case Tree is the EKG's equivalent of a long term
   data strategy and business capability plan.
@@ -50,7 +49,7 @@ Strategic long term use cases such as _Enterprise Risk Management_
 or _Client 360_ are broken down into smaller use cases that 
 can (and should) be done first.
 
-Each use case is a module, an EKG-component so you will, 
+Each use case is a module --- an EKG-component so you will --- 
 a building block with which other use cases can be constructed.
 
 The Use Case Tree Method is a practice that has been developed and
@@ -59,12 +58,12 @@ used for many EKG use cases that are running in production.
 The primary reasons for creating a Use Case Tree are:
 
 1. **Know what the business wants**.<br/>
-    Know exactly what the business -- i.e. the customer or product owner
-    -- really needs, short-, mid- and long-term.
+    Know exactly what the business --- i.e. the customer or product owner
+    --- really needs, short-, mid- and long-term.
 
     1. <u>Plan phase: Discover the business opportunities & business needs</u><br/>
        One of the tasks during the planning phase of any new initiative
-       -- or iteration -- is to "Discover" the business opportunities &
+       --- or iteration --- is to "Discover" the business opportunities &
        needs:
 
          - In non-technical terms.
@@ -72,7 +71,7 @@ The primary reasons for creating a Use Case Tree are:
          - Without assuming anything about existing systems and "how
            things are done today".
 
-         - Translate to "pure" functional requirements -- and "nice
+         - Translate to "pure" functional requirements --- and "nice
            to haves".
 
          - Looking broad horizontally, thinking ahead. Mile wide, inch
@@ -80,23 +79,24 @@ The primary reasons for creating a Use Case Tree are:
 
          - Let the business "dream a little" about "what could be"
            and "what should be", so that future needs can be
-           identified and communicated -- without necessarily
+           identified and communicated --- without necessarily
            committing to them (yet).
 
          - Promote "thinking outside the box", encourage people to
            not make any assumptions about what is technically possible
-           or not -- so often these assumptions unknowingly keep the
+           or not --- so often these assumptions unknowingly keep the
            bar lower than it could be.
 
     2. <u>Build phase: Translate requirements into an easy to 
        understand model i.e. the Use Case Tree</u><br/>
        "Contract with the business" i.e. the budget holder or
        product owner. 
-       Every major change to the Use Case Tree will have to be
-       signed off by the appropriate product owner.
+       Every major change to any given use case in the 
+       Use Case Tree will have to be signed off by the 
+       appropriate product owner.
 
          - Capture it as "meta-data" that will be part of the
-           EKG -- all the way to production.
+           EKG --- all the way to production.
 
          - Capture it in such a way that "everything that we ever do"
            is always directly or indirectly relatable to a use case
