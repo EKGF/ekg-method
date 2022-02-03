@@ -43,21 +43,21 @@ docs-install: docs-install-python-packages
 
 .PHONY: docs-install-asdf
 docs-install-asdf:
-ifeq ($(GITHUB_TOKEN),)
 	brew upgrade asdf || brew install asdf
 	asdf plugin add python || true
 	asdf plugin add nodejs || true
-endif
 
 .PHONY: docs-install-python
 docs-install-python: docs-install-asdf
-ifeq ($(GITHUB_TOKEN),)
 	asdf install
 	asdf exec python -m pip install --upgrade pip
-endif
 
 .PHONY: docs-install-python-packages
+ifneq ($(wildcard /home/runner/.*),)
+docs-install-python-packages:
+else
 docs-install-python-packages: docs-install-python
+endif
 	pip install --upgrade mkdocs
 	pip install --upgrade mkdocs-material
 	pip install --upgrade mkdocs-localsearch
