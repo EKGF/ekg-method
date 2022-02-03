@@ -66,9 +66,10 @@ endif
 	pip install --upgrade mkdocs
 	pip install --upgrade mkdocs-material
 	pip install --upgrade mkdocs-localsearch
-	pip install --upgrade mdx-spanner
+	pip install --upgrade mkdocs-include-markdown-plugin
 	pip install --upgrade mkdocs-awesome-pages-plugin
 	pip install --upgrade mkdocs-macros-plugin
+	pip install --upgrade mdx-spanner
 	pip install --upgrade markdown-emdash
 
 .PHONY: docs-build
