@@ -14,8 +14,11 @@
       
         <link rel="canonical" href="https://use-case-tree-method.ekgf.org/objective/">
       
+      
+        
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9+insiders-4.7.2">
     
     
       
@@ -23,11 +26,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2b4465f4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ab02f2be.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
+      
+      <link rel="preload" as="style" href="../assets/stylesheets/vendor/mermaid.acdec53c.min.css">
       
     
     
@@ -42,10 +47,11 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -60,6 +66,42 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
   
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -325,64 +367,94 @@
     <ul class="md-tabs__list">
       
         
-  
-  
 
 
-  <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
-      Use Case Tree Method
-    </a>
-  </li>
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  Use Case Tree Method
+
+      </a>
+    </li>
+  
 
       
         
+
+
+  
+    
+    
+      
+    
   
   
     
+    
+    
+      <li class="md-tabs__item">
+        <a href="know-what-the-business-wants/" class="md-tabs__link md-tabs__link--active">
+          
   
+  Objectives
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="know-what-the-business-wants/" class="md-tabs__link md-tabs__link--active">
-        Objectives
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../concept/use-case/" class="md-tabs__link">
-        Use Case Tree Concepts
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
-  
-  
 
 
   
+    
+    
   
   
-    <li class="md-tabs__item">
-      <a href="../product/" class="md-tabs__link">
-        Products
-      </a>
-    </li>
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../concept/use-case/" class="md-tabs__link">
+          
+  
+  Use Case Tree Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../product/" class="md-tabs__link">
+          
+  
+    
+  
+  Products
+
+        </a>
+      </li>
+    
   
 
       
@@ -574,12 +646,18 @@
       
       
 
+
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Use Case Tree Method
+        
+  
+  <span class="md-ellipsis">
+    Use Case Tree Method
+  </span>
+
       </a>
     </li>
   
@@ -588,6 +666,7 @@
       
       
       
+
 
   
   
@@ -627,10 +706,17 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Objectives</a>
+        <div class="md-nav__link md-nav__container">
+          <a href="./" class="md-nav__link md-nav__link--active">
+            
+  
+  <span class="md-ellipsis">
+    Objectives
+  </span>
+
+          </a>
           
-            <label for="__nav_2">
+            <label class="md-nav__link md-nav__link--active" for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
@@ -650,7 +736,12 @@
   
     <li class="md-nav__item">
       <a href="know-what-the-business-wants/" class="md-nav__link">
-        Know what the business wants
+        
+  
+  <span class="md-ellipsis">
+    Know what the business wants
+  </span>
+
       </a>
     </li>
   
@@ -664,7 +755,12 @@
   
     <li class="md-nav__item">
       <a href="bridge-the-gap/" class="md-nav__link">
-        Bridge the Gap
+        
+  
+  <span class="md-ellipsis">
+    Bridge the Gap
+  </span>
+
       </a>
     </li>
   
@@ -678,7 +774,12 @@
   
     <li class="md-nav__item">
       <a href="manage-expectations/" class="md-nav__link">
-        Manage Expectations
+        
+  
+  <span class="md-ellipsis">
+    Manage Expectations
+  </span>
+
       </a>
     </li>
   
@@ -692,7 +793,12 @@
   
     <li class="md-nav__item">
       <a href="enable-reuse/" class="md-nav__link">
-        Enable Reuse
+        
+  
+  <span class="md-ellipsis">
+    Enable Reuse
+  </span>
+
       </a>
     </li>
   
@@ -706,7 +812,12 @@
   
     <li class="md-nav__item">
       <a href="avoid-boiling-the-ocean/" class="md-nav__link">
-        No boiling ocean
+        
+  
+  <span class="md-ellipsis">
+    No boiling ocean
+  </span>
+
       </a>
     </li>
   
@@ -720,7 +831,12 @@
   
     <li class="md-nav__item">
       <a href="capture-knowledge/" class="md-nav__link">
-        Capture Knowledge
+        
+  
+  <span class="md-ellipsis">
+    Capture Knowledge
+  </span>
+
       </a>
     </li>
   
@@ -734,7 +850,12 @@
   
     <li class="md-nav__item">
       <a href="avoid-disruption/" class="md-nav__link">
-        Avoid Disruption
+        
+  
+  <span class="md-ellipsis">
+    Avoid Disruption
+  </span>
+
       </a>
     </li>
   
@@ -748,7 +869,12 @@
   
     <li class="md-nav__item">
       <a href="increase-quality/" class="md-nav__link">
-        Increase Quality
+        
+  
+  <span class="md-ellipsis">
+    Increase Quality
+  </span>
+
       </a>
     </li>
   
@@ -767,6 +893,7 @@
       
       
 
+
   
   
   
@@ -774,7 +901,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -794,7 +921,12 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Use Case Tree Concepts
+          
+  
+  <span class="md-ellipsis">
+    Use Case Tree Concepts
+  </span>
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
@@ -812,7 +944,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/use-case/" class="md-nav__link">
-        Use Case
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+
       </a>
     </li>
   
@@ -826,7 +963,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/persona/" class="md-nav__link">
-        Persona
+        
+  
+  <span class="md-ellipsis">
+    Persona
+  </span>
+
       </a>
     </li>
   
@@ -840,7 +982,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/story/" class="md-nav__link">
-        Story
+        
+  
+  <span class="md-ellipsis">
+    Story
+  </span>
+
       </a>
     </li>
   
@@ -854,7 +1001,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/concept/" class="md-nav__link">
-        Concept
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+
       </a>
     </li>
   
@@ -868,7 +1020,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/dataset/" class="md-nav__link">
-        Dataset
+        
+  
+  <span class="md-ellipsis">
+    Dataset
+  </span>
+
       </a>
     </li>
   
@@ -882,7 +1039,12 @@
   
     <li class="md-nav__item">
       <a href="../concept/outcome/" class="md-nav__link">
-        Outcome
+        
+  
+  <span class="md-ellipsis">
+    Outcome
+  </span>
+
       </a>
     </li>
   
@@ -899,6 +1061,7 @@
       
       
 
+
   
   
   
@@ -906,7 +1069,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -923,10 +1086,17 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../product/">Products</a>
+        <div class="md-nav__link md-nav__container">
+          <a href="../product/" class="md-nav__link ">
+            
+  
+  <span class="md-ellipsis">
+    Products
+  </span>
+
+          </a>
           
-            <label for="__nav_4">
+            <label class="md-nav__link " for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
@@ -948,7 +1118,12 @@
   
     <li class="md-nav__item">
       <a href="https://story-service.agnos.ai" class="md-nav__link">
-        Story Service
+        
+  
+  <span class="md-ellipsis">
+    Story Service
+  </span>
+
       </a>
     </li>
   
@@ -962,7 +1137,12 @@
   
     <li class="md-nav__item">
       <a href="https://rdchoke.agnos.ai" class="md-nav__link">
-        RDChoke
+        
+  
+  <span class="md-ellipsis">
+    RDChoke
+  </span>
+
       </a>
     </li>
   
@@ -1007,6 +1187,7 @@
 
                 
 
+
 <h1 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
 <!--objectives-index-start-->
 <p>The primary reasons for creating a Use Case Tree are:</p>
@@ -1021,6 +1202,9 @@
 <li><a href="increase-quality/">Increase Quality</a></li>
 </ol>
 <!--objectives-index-end-->
+
+
+
 
   <hr>
 <div class="md-source-file">
@@ -1082,10 +1266,11 @@
 </script>
 
             </article>
+            
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+          <a href="#" class="md-top md-top--hidden md-icon" data-md-component="top">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
             Back to top
           </a>
@@ -1179,10 +1364,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.f7fe2898.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../assets/javascripts/bundle.7cc7e457.min.js"></script>
       
     
   </body>
