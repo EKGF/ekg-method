@@ -33,9 +33,11 @@ jobs:
       -
         name: Install all MkDocs dependencies
         if: ${{ github.ref == 'refs/heads/main' }}
+        env:
+          PAT_MKDOCS_INSIDERS: ${{ secrets.PAT_MKDOCS_INSIDERS }}
         run: |
           pip install --upgrade pip
-          make docs-install-python-packages
+          make --environment-overrides docs-install-python-packages
       -
         name: Build Site
         if: ${{ github.ref != 'refs/heads/main' }}
