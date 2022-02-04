@@ -34,6 +34,7 @@ jobs:
         name: Install all MkDocs dependencies
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
+          pip install --upgrade pip
           make docs-install-python-packages
       -
         name: Build Site
