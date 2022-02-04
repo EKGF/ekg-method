@@ -13,7 +13,6 @@ extra_javascript:
   - extra/refresh_on_toggle_dark_light.js
 markdown_extensions:
   - pymdownx.superfences:
-      # make exceptions to highlighting of code:
       custom_fences:
         - name: mermaid
           class: mermaid
