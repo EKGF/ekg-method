@@ -99,6 +99,7 @@ else
 docs-install-python-packages: docs-install-python
 endif
 	@echo "Install packages via pip:"
+	pip install wheel
 	pip install --upgrade mkdocs
 	pip install --upgrade mkdocs-localsearch
 	pip install --upgrade mkdocs-include-markdown-plugin
