@@ -1,50 +1,86 @@
 # Know what the business wants
 
-Know exactly what the business --- i.e. the customer or product owner
+Know exactly what the business --- the customer or product owner
 --- really needs, short-, mid- and long-term.
 
-1. <u>Plan phase: Discover the business opportunities & business needs</u><br/>
-   One of the tasks during the planning phase of any new initiative
-   --- or iteration --- is to "Discover" the business opportunities &
-   needs:
+## Plan Phase
 
-    - In non-technical terms.
+One of the tasks during the planning phase of any new initiative
+--- or iteration --- is to "Discover" the business opportunities &
+needs:
 
-    - Without assuming anything about existing systems and "how
-      things are done today".
+- In non-technical terms.
 
-    - Translate to "pure" functional requirements --- and "nice
-      to haves".
+- Without assuming anything about existing systems and "how
+  things are done today".
 
-    - Looking broad horizontally, thinking ahead. Mile wide, inch
-      deep at this stage.
+- Translate to "pure" functional requirements --- and "nice
+  to haves".
 
-    - Let the business "dream a little" about "what could be"
-      and "what should be", so that future needs can be
-      identified and communicated --- without necessarily
-      committing to them (yet).
+- Looking broad horizontally, thinking ahead. Mile wide, inch
+  deep at this stage.
 
-    - Promote "thinking outside the box", encourage people to
-      not make any assumptions about what is technically possible
-      or not --- so often these assumptions unknowingly keep the
-      bar lower than it could be.
+- Let the business "dream a little" about "what could be"
+  and "what should be", so that future needs can be
+  identified and communicated --- without necessarily
+  committing to them (yet).
 
-2. <u>Build phase: Translate requirements into an easy to
-   understand model i.e. the Use Case Tree</u><br/>
-   "Contract with the business" i.e. the budget holder or
-   product owner.
-   Every major change to any given use case in the
-   Use Case Tree will have to be signed off by the
-   appropriate product owner.
+- Promote "thinking outside the box", encourage people to
+  not make any assumptions about what is technically possible
+  or not --- so often these assumptions unknowingly keep the
+  bar lower than it could be.
 
-    - Capture it as "meta-data" that will be part of the
-      EKG --- all the way to production.
+- Continuously improve, new insights occur all the time, have one
+  "living" shared data structure --- the Use Case Tree --- that gets
+  continuously updated with the latest insights even while parts
+  of that Use Case Tree are already running in production or still
+  worked on.
 
-    - Capture it in such a way that "everything that we ever do"
-      is always directly or indirectly relatable to a use case
-      in the Use Case Tree.
+- Business clearly decides which strategic use case(s) -- in the tree --- 
+  has/have priority. Capture these priority settings and use them to
+  derive the right implementation order of use cases, determine 
+  --- with the business --- the shortest path to delivering on the
+  specified business outcomes.
 
-    - The business never loses sight on what happens with their
-      budget and agreed deliverables.
-      All reporting to the business occurs in the context of
-      the agreed , even after delivery.
+## Build Phase
+
+Once a roadmap has been agreed, which is "the contract with the business" 
+i.e. the budget holder or product owner, implementation of the first use
+case on the given roadmap can commence.
+
+Implementation means, in the context of an EKG and from the viewpoint of
+the business:
+
+- Specialists are adding details to the use cases that are on the roadmap.
+- All effort will be visible. Anything that anyone does to implement a use cases
+  is directly or indirectly related to that use case and therefore trackable
+  and traceable providing full transparency to the business around:
+    - progress, blockers
+    - cost, risk, raid log
+- The business never loses sight on what happens with their
+  budget and agreed deliverables.
+  All reporting to the business occurs in the context of
+  the agreed roadmap, even after delivery.
+
+## Run Phase
+
+Ideally, at higher levels of operational maturity, changes get rolled out to
+production continuously and as frequently as possible so that any given update
+to production is as small and impact-free as possible.
+
+- End users get to see results on a continuous basis and will be able to provide
+  immediate feedback in the expectation that their feedback will be heard and possibly
+  lead to improvements in the very short term (which keeps people much more engaged)
+- There will never be any "big bang deployments" anymore. There's no need anymore
+  to send whole departments to training because of a giant new release, everything
+  goes gradually and people get used to it in a more natural way --- boiling the frog 
+  in cold water, reducing cost, resistance to change and a much more engaged user
+  community.
+- End users will be able to relate their work directly to the appropriate use cases
+  as they are defined in the Use Case Tree because the Use Case Tree is part of the
+  EKG itself and advanced user interfaces can link to it. It describes the user's
+  domain in their own terms. Direct feedback loops to all relevant stakeholders
+  are therefore possible which yet again promotes collaboration, end user satisfaction,
+  reduces costs and avoids technologists building something that's wrong or will
+  never be used.
+
