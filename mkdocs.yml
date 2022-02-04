@@ -60,6 +60,7 @@ extra:
       link: https://github.com/EKGF/use-case-tree-method
 plugins:
   - include-markdown
+  - git-revision-date
   - search:
       lang:
         - en
@@ -69,7 +70,6 @@ plugins:
       strict: true
   - macros:
       module_name: docs/main
-  - git-revision-date
 markdown_extensions:
   - toc:
       permalink: true
