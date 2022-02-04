@@ -100,19 +100,21 @@ docs-install-python-packages: docs-install-python
 endif
 	@echo "Install packages via pip:"
 	pip install --upgrade mkdocs
-ifeq ($(PAT_MKDOCS_INSIDERS),)
-	pip install --upgrade --force-reinstall mkdocs-material
-else
-	pip install --upgrade --force-reinstall git+https://$(PAT_MKDOCS_INSIDERS)@github.com/squidfunk/mkdocs-material-insiders.git
-endif
 	pip install --upgrade mkdocs-localsearch
 	pip install --upgrade mkdocs-include-markdown-plugin
 	pip install --upgrade mkdocs-awesome-pages-plugin
 	pip install --upgrade mkdocs-macros-plugin
 	pip install --upgrade mkdocs-mermaid2-plugin
 	pip install --upgrade mkdocs-git-revision-date-plugin
+	pip install --upgrade mkdocs-minify-plugin
+	pip install --upgrade mkdocs-redirects
 	pip install --upgrade mdx-spanner
 	pip install --upgrade markdown-emdash
+ifeq ($(PAT_MKDOCS_INSIDERS),)
+	pip install --upgrade --force-reinstall mkdocs-material
+else
+	pip install --upgrade --force-reinstall git+https://$(PAT_MKDOCS_INSIDERS)@github.com/squidfunk/mkdocs-material-insiders.git
+endif
 
 .PHONY: docs-build
 docs-build:
