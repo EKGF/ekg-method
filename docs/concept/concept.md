@@ -7,7 +7,7 @@ Most of these concepts and their terms will be pre-defined in all kinds of
 vocabularies but for brand-new use cases in a new domain concepts and their
 terms will have to be created.
 
-``` mermaid
+```mermaid
 classDiagram
     direction RL
     class Concept {
