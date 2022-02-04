@@ -31,7 +31,7 @@ PAT_MKDOCS_INSIDERS := $(shell cat ../.secrets/PAT_MKDOCS_INSIDERS.txt 2>/dev/nu
 ifeq ($(PAT_MKDOCS_INSIDERS),)
 	MKDOCS_CONFIG_FILE := 'mkdocs.outsiders.yml'
 else
-	MKDOCS_CONFIG_FILE := 'mkdocs.insiders.yml'
+	MKDOCS_CONFIG_FILE := 'mkdocs.yml'
 endif
 
 .PHONY: info
