@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Use Case Tree Method (work in progress)
 site_description: Use Case Tree Method
 repo_name: 'EKGF/use-case-tree-method'
@@ -57,30 +58,18 @@ extra:
       link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
       link: https://github.com/EKGF/use-case-tree-method
-extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
-  - extra/refresh_on_toggle_dark_light.js
 plugins:
   - include-markdown
   - search:
-      prebuild_index: true
       lang:
         - en
-  - mermaid2:
-      arguments:
-        # test if its __palette_1 (dark) or __palette_2 (light)
-        # for mkdocs-material >=8.0.0
-        theme: |
-          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
-#        theme: |
-#          ^(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
-        securityLevel: 'loose'
   - awesome-pages:
       filename: .pages.yaml
       collapse_single_pages: false
       strict: true
   - macros:
       module_name: docs/main
+  - git-revision-date
 markdown_extensions:
   - toc:
       permalink: true
@@ -97,6 +86,7 @@ markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.details
+#  - pymdownx.superfences
   - pymdownx.superfences:
       # make exceptions to highlighting of code:
       custom_fences:
