@@ -34,6 +34,9 @@ else
 	MKDOCS_CONFIG_FILE := 'mkdocs.yml'
 endif
 
+.PHONY: all
+all: docs-build
+
 .PHONY: info
 info:
 	@echo "MkDocs: ${MKDOCS}"
