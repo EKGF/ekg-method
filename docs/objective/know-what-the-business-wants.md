@@ -9,7 +9,7 @@ One of the tasks during the planning phase of any new initiative
 --- or iteration --- is to "Discover" the business opportunities &
 needs:
 
-- In non-technical terms.
+- In non-technical terms. No screen designs, no data models, just plain English.
 
 - Without assuming anything about existing systems and "how
   things are done today".
@@ -74,8 +74,8 @@ to production is as small and impact-free as possible.
 - There will never be any "big bang deployments" anymore. There's no need anymore
   to send whole departments to training because of a giant new release, everything
   goes gradually and people get used to it in a more natural way --- boiling the frog 
-  in cold water, reducing cost, resistance to change and a much more engaged user
-  community.
+  in cold water, thereby reducing the resistance to change and enabling a much
+  more engaged user community.
 - End users will be able to relate their work directly to the appropriate use cases
   as they are defined in the Use Case Tree because the Use Case Tree is part of the
   EKG itself and advanced user interfaces can link to it. It describes the user's
