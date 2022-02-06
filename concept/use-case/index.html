@@ -18,7 +18,7 @@
         
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9+insiders-4.7.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10+insiders-4.8.1">
     
     
       
@@ -26,13 +26,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ab02f2be.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.dea0c3a6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
-      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.acdec53c.min.css">
+      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.53552a32.min.css">
       
     
     
@@ -1033,6 +1033,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#life-cycle" class="md-nav__link">
     Life cycle
   </a>
@@ -1288,6 +1295,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#life-cycle" class="md-nav__link">
     Life cycle
   </a>
@@ -1326,21 +1340,27 @@
 <h1 id="use-case">Use Case<a class="headerlink" href="#use-case" title="Permanent link">&para;</a></h1>
 <p>A Use Case specifies a distinct set of business requirements &mdash; captured
 as an "executable model" &mdash; resulting in a specific business outcome.</p>
+<h2 id="process">Process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h2>
+<p>Ideas for use cases could come from any person in the organization at any point in time.
+We want all these ideas to end up in the organization's Use Case Tree, whether they are viable or not.
+If an idea for a given use case is rejected then show the rationale for that to everyone so that everyone can
+learn, and we're not wasting any time on that idea again. </p>
+<p>Let people contribute. All knowledge workers, all specialist users, data architects, technical architects, ontologists,
+end users, business executives, literally anyone should be allowed to understand:</p>
+<ul>
+<li>what's our business identity? Our mission and strategy?</li>
+<li>how does that map to our current and future data and technology landscape?</li>
+<li>(without becoming too technical or detailed, we want everyone to be able to chip in)</li>
+<li>how does our "technical debt" fit in? (identify the functionality of our technical debt as use cases in the tree as well)</li>
+<li>how are we going to "rationalise" our current siloed landscape (and technical debt)?</li>
+<li>what are the short and long term priorities?</li>
+<li>what are the milestones and the roadmap?</li>
+<li>which ideas (for use cases) have been proposed, considered approved or rejected and why?</li>
+</ul>
+<p><img alt="Context" src="../../diagrams/out/use-case-development-process.svg#darkable" /></p>
 <h2 id="life-cycle">Life cycle<a class="headerlink" href="#life-cycle" title="Permanent link">&para;</a></h2>
-<p>Use Cases go through a life-cycle of continuous improvement such as:<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-<pre class="mermaid"><code>journey
-    title Use Case Life Cycle
-    section Plan
-        Discovery: 5: Business, Analyst
-        Negotiation: 2: Business, Owner, Analyst
-        Agreed: 5: Business, Owner
-    section Build
-        Implementation: 1: Analyst, Ontologist, Engineer
-        Acceptance Test: 3: Owner
-        Delivered: 4: Engineer
-    section Run
-        Deployed: 5: DevOps
-        Decommissioned: 1: DevOps</code></pre>
+<p>Each individual Use Case itself goes through a life-cycle of continuous improvement like:<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><img alt="Context" src="../../diagrams/out/use-case-life-cycle.svg#darkable" /></p>
 <h2 id="key-components">Key components<a class="headerlink" href="#key-components" title="Permanent link">&para;</a></h2>
 <p>For every Use Case we specify:</p>
 <ul>
@@ -1378,16 +1398,19 @@ the term &mdash; it is not exactly the same, in our Use Case Tree Method:</p>
   highest levels of these trees a use case can represent a capability domain or 
   a "strategic use case" &mdash; or basically anything that fits well with the business.</li>
 <li>at the lowest levels in this tree we would end up with use cases that are much more
-  like turn-key components for the EKG, 100% reusable delivering "no code"-functionality<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</li>
+  like turn-key components for the EKG, 100% reusable delivering "no code"-functionality<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</li>
 </ul>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
+<p>the life-cycle diagram shown is obviously a simplification&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
 <p><a href="https://en.wikipedia.org/wiki/No-code_development_platform">No-code</a> or 
   <a href="https://en.wikipedia.org/wiki/Low-code_development_platform">Low-code</a> development
   allows non-programmers to create applications without
-  hard-wiring business logic with a programming language&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+  hard-wiring business logic with a programming language&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1400,7 +1423,7 @@ the term &mdash; it is not exactly the same, in our Use Case Tree Method:</p>
   <small>
     
       Last update:
-      2022-02-03
+      2022-02-06
     
   </small>
 </div>
@@ -1554,10 +1577,12 @@ the term &mdash; it is not exactly the same, in our Use Case Tree Method:</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f7fe2898.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.5c9dbbf3.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7cc7e457.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3069b7cf.min.js"></script>
+      
+        <script src="../../javascript/images_dark.js"></script>
       
     
   </body>

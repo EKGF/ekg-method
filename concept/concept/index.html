@@ -18,7 +18,7 @@
         
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9+insiders-4.7.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10+insiders-4.8.1">
     
     
       
@@ -26,13 +26,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ab02f2be.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.dea0c3a6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
-      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.acdec53c.min.css">
+      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.53552a32.min.css">
       
     
     
@@ -1259,7 +1259,6 @@ terms will have to be created.</p>
         - vocabulary: Vocabulary
         - stories: Story[]
     }
-    link UseCase "../use-case/"
     UseCase --&gt; UseCase : requires
     Vocabulary "*" --&gt; "*" Concept
     Vocabulary "*" --&gt; "*" Term
@@ -1272,7 +1271,12 @@ terms will have to be created.</p>
     Persona --|&gt; Concept
     Concept --&gt; Concept : broader
     Concept --&gt; Term : preferred
-    UseCase --&gt; "1" Vocabulary : use case vocabulary</code></pre>
+    UseCase --&gt; "1" Vocabulary : use case vocabulary
+    Persona "1" --o "0..*" Story
+    link UseCase "../use-case/"
+    link Story "../story/"
+    link Concept "../concept/"
+    link Persona "../persona/"</code></pre>
 
 
 
@@ -1282,7 +1286,7 @@ terms will have to be created.</p>
   <small>
     
       Last update:
-      2022-02-04
+      2022-02-06
     
   </small>
 </div>
@@ -1436,10 +1440,12 @@ terms will have to be created.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f7fe2898.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.5c9dbbf3.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7cc7e457.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3069b7cf.min.js"></script>
+      
+        <script src="../../javascript/images_dark.js"></script>
       
     
   </body>
