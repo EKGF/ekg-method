@@ -1250,33 +1250,6 @@ terms that the user or "the business" uses or wants to use.</p>
 <p>Most of these concepts and their terms will be pre-defined in all kinds of
 vocabularies but for brand-new use cases in a new domain concepts and their
 terms will have to be created.</p>
-<pre class="mermaid"><code>classDiagram
-    direction RL
-    class Concept {
-        - type : ConceptType
-    }
-    class UseCase {
-        - vocabulary: Vocabulary
-        - stories: Story[]
-    }
-    UseCase --&gt; UseCase : requires
-    Vocabulary "*" --&gt; "*" Concept
-    Vocabulary "*" --&gt; "*" Term
-    Story --&gt; "*" Concept : input
-    Story --&gt; "*" Concept : output
-    Term --&gt; "1..*" Concept
-    %% Concept --&gt; OntologyAxiom
-    Vocabulary &lt;--&gt; Concept
-    UseCase --&gt; "1..*" Story
-    Persona --|&gt; Concept
-    Concept --&gt; Concept : broader
-    Concept --&gt; Term : preferred
-    UseCase --&gt; "1" Vocabulary : use case vocabulary
-    Persona "1" --o "0..*" Story
-    link UseCase "../use-case/"
-    link Story "../story/"
-    link Concept "../concept/"
-    link Persona "../persona/"</code></pre>
 
 
 
