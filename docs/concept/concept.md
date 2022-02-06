@@ -17,7 +17,6 @@ classDiagram
         - vocabulary: Vocabulary
         - stories: Story[]
     }
-    link UseCase "../use-case/"
     UseCase --> UseCase : requires
     Vocabulary "*" --> "*" Concept
     Vocabulary "*" --> "*" Term
@@ -31,4 +30,9 @@ classDiagram
     Concept --> Concept : broader
     Concept --> Term : preferred
     UseCase --> "1" Vocabulary : use case vocabulary
+    Persona "1" --o "0..*" Story
+    link UseCase "../use-case/"
+    link Story "../story/"
+    link Concept "../concept/"
+    link Persona "../persona/"
 ```
