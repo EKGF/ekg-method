@@ -58,6 +58,7 @@ docs-install-brew-packages: docs-install-brew
 	brew upgrade libjpeg || brew install libjpeg
 	brew upgrade libpng || brew install libpng
 	brew upgrade zlib || brew install zlib
+	brew upgrade plantuml || brew install plantuml
 
 .PHONY: docs-install-brew
 ifeq ($(YOUR_OS), Linux)
@@ -104,6 +105,8 @@ endif
 	@echo "Install packages via pip:"
 	pip install --upgrade pip
 	pip install --upgrade wheel
+#	pip install --upgrade plantuml-markdown
+	pip install --upgrade mkdocs-build-plantuml-plugin
 	pip install --upgrade mkdocs
 	pip install --upgrade mkdocs-localsearch
 	pip install --upgrade mkdocs-include-markdown-plugin

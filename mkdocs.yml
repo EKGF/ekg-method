@@ -58,6 +58,8 @@ extra:
       link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
       link: https://github.com/EKGF/use-case-tree-method
+extra_javascript:
+  - "javascript/images_dark.js"
 plugins:
   - include-markdown
   - git-revision-date
@@ -70,6 +72,23 @@ plugins:
       strict: true
   - macros:
       module_name: docs/main
+  - build_plantuml:
+      render: "server" # or "local" for local rendering
+      bin_path: "/usr/local/bin/plantuml" # ignored when render: server
+      server: "http://www.plantuml.com/plantuml" # offical plantuml server
+      output_format: "svg" # or "png"
+      diagram_root: "docs/diagrams" # should reside under docs_dir
+      output_folder: "out"
+      input_folder: "src"
+      input_extensions: "" # comma separated list of extensions to parse, by default every file is parsed
+      theme_enabled: true
+      theme_folder: "include/themes"
+      theme_light: "light.puml"
+      theme_dark: "dark.puml"
+#  - exclude:
+#      glob:
+#        - diagrams/include/C4/*
+
 markdown_extensions:
   - toc:
       permalink: true
@@ -82,6 +101,7 @@ markdown_extensions:
   - footnotes
   - tables
   - md_in_html
+  - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.details

@@ -3,27 +3,33 @@
 A Use Case specifies a distinct set of business requirements --- captured
 as an "executable model" --- resulting in a specific business outcome.
 
+## Process
+
+Ideas for use cases could come from any person in the organization at any point in time.
+We want all these ideas to end up in the organization's Use Case Tree, whether they are viable or not.
+If an idea for a given use case is rejected then show the rationale for that to everyone so that everyone can
+learn, and we're not wasting any time on that idea again. 
+
+Let people contribute. All knowledge workers, all specialist users, data architects, technical architects, ontologists,
+end users, business executives, literally anyone should be allowed to understand:
+
+- what's our business identity? Our mission and strategy?
+- how does that map to our current and future data and technology landscape?
+- (without becoming too technical or detailed, we want everyone to be able to chip in)
+- how does our "technical debt" fit in? (identify the functionality of our technical debt as use cases in the tree as well)
+- how are we going to "rationalise" our current siloed landscape (and technical debt)?
+- what are the short and long term priorities?
+- what are the milestones and the roadmap?
+- which ideas (for use cases) have been proposed, considered approved or rejected and why?
+
+![Context](../diagrams/out/use-case-development-process.svg#darkable)
+
 ## Life cycle
 
-Use Cases go through a life-cycle of continuous improvement such as:[^1]
+Each individual Use Case itself goes through a life-cycle of continuous improvement like:[^1]
 
-```mermaid
-journey
-    title Use Case Life Cycle
-    section Plan
-        Discovery: 5: Business, Analyst
-        Negotiation: 2: Business, Owner, Analyst
-        Agreed: 5: Business, Owner
-    section Build
-        Implementation: 1: Analyst, Ontologist, Engineer
-        Acceptance Test: 3: Owner
-        Delivered: 4: Engineer
-    section Run
-        Deployed: 5: DevOps
-        Decommissioned: 1: DevOps
-```
+![Context](../diagrams/out/use-case-life-cycle.svg#darkable)
 
-[^1]: the life-cycle diagram shown is obviously a simplification
 
 ## Key components
 
@@ -65,9 +71,10 @@ the term --- it is not exactly the same, in our Use Case Tree Method:
   highest levels of these trees a use case can represent a capability domain or 
   a "strategic use case" --- or basically anything that fits well with the business.
 - at the lowest levels in this tree we would end up with use cases that are much more
-  like turn-key components for the EKG, 100% reusable delivering "no code"-functionality[^1].
+  like turn-key components for the EKG, 100% reusable delivering "no code"-functionality[^2].
 
-[^1]: [No-code](https://en.wikipedia.org/wiki/No-code_development_platform) or 
+[^1]: the life-cycle diagram shown is obviously a simplification
+[^2]: [No-code](https://en.wikipedia.org/wiki/No-code_development_platform) or 
       [Low-code](https://en.wikipedia.org/wiki/Low-code_development_platform) development
       allows non-programmers to create applications without
       hard-wiring business logic with a programming language
