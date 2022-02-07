@@ -103,25 +103,25 @@ else
 docs-install-python-packages: docs-install-python
 endif
 	@echo "Install packages via pip:"
-	pip install --upgrade pip
-	pip install --upgrade wheel
-#	pip install --upgrade plantuml-markdown
-	pip install --upgrade mkdocs-build-plantuml-plugin
-	pip install --upgrade mkdocs
-	pip install --upgrade mkdocs-localsearch
-	pip install --upgrade mkdocs-include-markdown-plugin
-	pip install --upgrade mkdocs-awesome-pages-plugin
-	pip install --upgrade mkdocs-macros-plugin
-	pip install --upgrade mkdocs-mermaid2-plugin
-	pip install --upgrade mkdocs-git-revision-date-plugin
-	pip install --upgrade mkdocs-minify-plugin
-	pip install --upgrade mkdocs-redirects
-	pip install --upgrade mdx-spanner
-	pip install --upgrade markdown-emdash
+	asdf exec python -m pip install --upgrade pip
+	asdf exec python -m pip install --upgrade wheel
+#	asdf exec python -m pip install --upgrade plantuml-markdown
+	asdf exec python -m pip install --upgrade mkdocs-build-plantuml-plugin
+	asdf exec python -m pip install --upgrade mkdocs
+	asdf exec python -m pip install --upgrade mkdocs-localsearch
+	asdf exec python -m pip install --upgrade mkdocs-include-markdown-plugin
+	asdf exec python -m pip install --upgrade mkdocs-awesome-pages-plugin
+	asdf exec python -m pip install --upgrade mkdocs-macros-plugin
+	asdf exec python -m pip install --upgrade mkdocs-mermaid2-plugin
+	asdf exec python -m pip install --upgrade mkdocs-git-revision-date-plugin
+	asdf exec python -m pip install --upgrade mkdocs-minify-plugin
+	asdf exec python -m pip install --upgrade mkdocs-redirects
+	asdf exec python -m pip install --upgrade mdx-spanner
+	asdf exec python -m pip install --upgrade markdown-emdash
 ifeq ($(PAT_MKDOCS_INSIDERS),)
-	pip install --upgrade --force-reinstall mkdocs-material
+	asdf exec python -m pip install --upgrade --force-reinstall mkdocs-material
 else
-	pip install --upgrade --force-reinstall git+https://$(PAT_MKDOCS_INSIDERS)@github.com/squidfunk/mkdocs-material-insiders.git
+	asdf exec python -m pip install --upgrade --force-reinstall git+https://$(PAT_MKDOCS_INSIDERS)@github.com/squidfunk/mkdocs-material-insiders.git
 endif
 
 .PHONY: docs-build
