@@ -1,4 +1,4 @@
-!define BORDER_THICKNESS 3
+!define BORDER_THICKNESS 1
 
 skinparam Padding 4
 skinparam RoundCorner 4
