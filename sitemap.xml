@@ -2,97 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://use-case-tree-method.ekgf.org/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/concept/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/dataset/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/outcome/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/persona/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/story/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/use-case/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/align-with-business-strategy/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/avoid-boiling-the-ocean/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/avoid-disruption/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/bridge-the-gap/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/capture-knowledge/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/enable-reuse/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/increase-quality/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/know-what-the-business-wants/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/manage-expectations/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/objective/strategic-usecases/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/other/</loc>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/product/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
