@@ -4,8 +4,9 @@
 !define BORDER_COLOR       #EEEEEE
 !define FONT_COLOR         #EEEEEE
 
-skinparam backgroundColor #transparent
-skinparam backgroundColor %hsl_color(232, 15, 21)
+skinparam backgroundColor       #transparent
+skinparam backgroundColor       %hsl_color(232, 15, 21)
+skinparam HyperLinkColor        #lightgreen
 
 ' include the general skinparams for both, light and dark
 ' to overwrite with the given settings
