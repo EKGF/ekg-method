@@ -49,8 +49,9 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
 #   - navigation.sections
-    - navigation.expand
+#    - navigation.expand
     - navigation.indexes
+    - toc.follow
     - content.code.annotate
 extra:
   generator: false
@@ -65,21 +66,20 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
-      link: https://github.com/EKGF/use-case-tree-method
+      link: https://github.com/EKGF/ekg-catalog
+  analytics:
+    provider: google
+    property: G-E2T299FBZG
 extra_javascript:
   - "javascript/images_dark.js"
   - "javascript/refresh_on_toggle_dark_light.js"
   - "https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"
 plugins:
-  - include-markdown
-  - git-revision-date
   - search:
       lang:
         - en
-  - awesome-pages:
-      filename: .pages.yaml
-      collapse_single_pages: false
-      strict: true
+  - include-markdown
+  - git-revision-date
   - exclude:
       glob:
         - "*.tmp"
@@ -89,8 +89,6 @@ plugins:
       regex:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
-  - macros:
-      module_name: docs/main
   - build_plantuml:
       render: "server" # or "local" for local rendering
       bin_path: "/usr/local/bin/plantuml" # ignored when render: server
@@ -104,6 +102,12 @@ plugins:
       theme_folder: "include/themes"
       theme_light: "light.puml"
       theme_dark: "dark.puml"
+  - awesome-pages:
+      filename: .pages.yaml
+      collapse_single_pages: false
+      strict: true
+  - macros:
+      module_name: docs/main
 
 markdown_extensions:
   - toc:
@@ -123,7 +127,6 @@ markdown_extensions:
       base_path:
         - .
         - docs
-        - Queries/SPARQL/
       check_paths: true
       auto_append:
         - abbreviations.md
