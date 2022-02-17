@@ -1,3 +1,8 @@
+---
+hide:
+- navigation
+- toc
+---
 # Use Case Tree Method
 
 Your enterprise embarked upon a strategic innovative journey towards 
