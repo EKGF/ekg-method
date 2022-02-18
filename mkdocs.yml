@@ -69,7 +69,7 @@ extra:
       link: https://github.com/EKGF/ekg-catalog
   analytics:
     provider: google
-    property: G-E2T299FBZG
+    property: G-VSE38KT025
 extra_javascript:
   - "javascript/images_dark.js"
   - "javascript/refresh_on_toggle_dark_light.js"
