@@ -1,3 +1,10 @@
+---
+title: Best form of ”expectation management”
+authors:
+- Jacobus Geluk
+hide:
+- toc
+---
 # Best form of ”expectation management”
 
 Creating an agreed and realistic strategic roadmap that is aligned to business strategy is hard.

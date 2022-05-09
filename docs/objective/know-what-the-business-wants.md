@@ -1,4 +1,11 @@
-# Know what the business wants
+---
+title: Know what the business wants & why
+authors:
+- Jacobus Geluk
+hide:
+- toc
+---
+# Know what the business wants & why
 
 Know exactly what the business --- the customer or product owner
 --- really needs, short-, mid- and long-term.

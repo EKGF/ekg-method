@@ -1,3 +1,10 @@
+---
+title: Avoid "boiling the ocean"
+authors:
+- Jacobus Geluk
+hide:
+  - toc
+---
 # Avoid "boiling the ocean"
 
 Avoids "boiling the ocean" because the Use Case Tree and its individual use cases

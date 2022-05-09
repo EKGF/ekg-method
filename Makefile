@@ -29,7 +29,7 @@ ifeq ($(YOUR_OS), Darwin)
 endif
 endif
 DOC_ORG_NAME := ekgf
-DOC_ROOT_NAME := $(shell cat .doc-name-root)
+DOC_ROOT_NAME := use-case-tree-method
 CURRENT_BRANCH := $(shell git branch --show-current)
 PAT_MKDOCS_INSIDERS := $(shell cat $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt 2>/dev/null)
 ifeq ($(PAT_MKDOCS_INSIDERS),)
@@ -151,6 +151,9 @@ endif
 .PHONY: docs-build
 docs-build:
 	$(MKDOCS) build --config-file $(MKDOCS_CONFIG_FILE)
+
+.PHONY: serve
+serve: docs-serve
 
 .PHONY: docs-serve
 docs-serve: docs-assets

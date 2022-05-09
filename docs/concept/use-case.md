@@ -81,6 +81,12 @@ as an "executable model" --- resulting in a specific business outcome.
       hard-wiring business logic with a programming language
 
 
-  
+
+## Similar Concepts
+
+### Packaged Business Capabilities
+
+- [WalkMe - Packaged Business Capabilities (PBCs)](https://www.walkme.com/glossary/packaged-business-capabilities/)
+- [ElasticPath - What Are Packaged Business Capabilities (PBCs)?](https://www.elasticpath.com/blog/what-are-packaged-business-capablities)
 
 
