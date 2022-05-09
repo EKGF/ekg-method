@@ -1,3 +1,10 @@
+---
+title: Bridge the traditional gap between Business & Technology
+authors:
+- Jacobus Geluk
+hide: 
+- toc
+---
 # Bridge the traditional gap between Business & Technology
 
 - Engage with the business, the product owner and get continuous

@@ -1,3 +1,10 @@
+---
+title: Align with Business Strategy
+authors:
+- Jacobus Geluk
+hide:
+  - toc
+---
 # Align with Business Strategy
 
 Creating an agreed and realistic strategic roadmap that is aligned to _business strategy_ is hard.

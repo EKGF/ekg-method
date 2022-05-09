@@ -1,3 +1,10 @@
+---
+title: Avoid Disruption
+authors:
+- Jacobus Geluk
+hide:
+  - toc
+---
 # Avoid Disruption
 
 [Capturing all knowledge in the organization](capture-knowledge.md)

@@ -1,3 +1,10 @@
+---
+title: Increase Quality
+authors:
+- Jacobus Geluk
+hide:
+- toc
+---
 # Increase Quality
 
 The Use Case Tree is a foundational structure for quality 

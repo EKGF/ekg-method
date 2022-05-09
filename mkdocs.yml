@@ -112,6 +112,7 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+  - meta
   - mdx_spanner
   - def_list
   - abbr

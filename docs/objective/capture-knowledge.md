@@ -1,3 +1,10 @@
+---
+title: Capture Knowledge
+authors:
+- Jacobus Geluk
+hide:
+- toc
+---
 # Capture Knowledge
 
 The Use Case Tree **Provides a "map"[^1] of all knowledge, data and 

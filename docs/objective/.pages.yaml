@@ -1,12 +1,14 @@
 title: Objectives
 nav:
-  - know-what-the-business-wants.md
-  - Bridge the Gap: bridge-the-gap.md
-  - Manage Expectations: manage-expectations.md
-  - Enable Reuse: enable-reuse.md
-  - No boiling ocean: avoid-boiling-the-ocean.md
-  - capture-knowledge.md
-  - avoid-disruption.md
-  - increase-quality.md
-  - align-with-business-strategy.md
+  - Requirements Captured: know-what-the-business-wants.md
+  - Knowledge Captured: capture-knowledge.md
+  - Gaps Bridged: bridge-the-gap.md
+  - Expectations Managed: manage-expectations.md
+  - Reuse Enabled: enable-reuse.md
+  - Did not boil the ocean: avoid-boiling-the-ocean.md
+  - Disruption Avoided: avoid-disruption.md
+  - Quality Increased: increase-quality.md
+  - Aligned with Strategy: align-with-business-strategy.md
+  - Delivered: strategic-usecases.md
+  - Modularity Managed: modularity.md
   - ...

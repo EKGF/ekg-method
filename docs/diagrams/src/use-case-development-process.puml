@@ -63,7 +63,7 @@ state Run {
 
     Optimize: - structural feedback loop
     Optimize: - continuously improve
-    Optimize: - continuoysly update\n   use case tree
+    Optimize: - continuously update\n   use case tree
 }
 
 Optimize --up--> Plan
