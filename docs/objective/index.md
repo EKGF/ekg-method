@@ -3,12 +3,15 @@
 <!--objectives-index-start-->
 The primary reasons for creating a Use Case Tree are:
 
-1. [Know what the Business wants](know-what-the-business-wants.md)
-2. [Bridge the Gap](bridge-the-gap.md)
-3. [Manage Expectations](manage-expectations.md)
-4. [Enable Reuse](enable-reuse.md)
-5. [Avoid "boiling the ocean"](avoid-boiling-the-ocean.md)
-6. [Capture Knowledge](capture-knowledge.md)
-7. [Avoid Disruption](avoid-disruption.md)
-8. [Increase Quality](increase-quality.md)
+1. [Requirements Captured](know-what-the-business-wants.md)
+2. [Knowledge Captured](capture-knowledge.md)
+3. [Gaps Bridged](bridge-the-gap.md)
+4. [Expectations Managed](manage-expectations.md)
+5. [Did not "boil the ocean"](avoid-boiling-the-ocean.md)
+6. [Disruption Avoided](avoid-disruption.md)
+7. [Quality Increased](increase-quality.md)
+8. [Aligned with Strategy](align-with-business-strategy.md)
+9. [Delivered Strategic Use Cases](strategic-usecases.md)
+10. [Modularity Managed](modularity.md)
+11. [Reuse Enabled](enable-reuse.md)
 <!--objectives-index-end-->
