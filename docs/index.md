@@ -3,7 +3,7 @@ hide:
 - navigation
 - toc
 ---
-# Use Case Tree Method
+# Use Case Tree Method for Composable Businesses
 
 Your enterprise embarked upon a strategic innovative journey towards 
 establishing a full scale Enterprise Knowledge Graph (EKG) in order 
@@ -13,6 +13,9 @@ to be able to:
    for your enterprise’s business processes,
 2. be more easily compliant with regulations and
 3. enable strategic use cases that create a competitive advantage.
+4. To connect business silos to make them work together
+5. To create business agility by creating reusable business components
+6. To capture intellectual property and manage your business value
 
 The key _artifact_ in the development of an EKG is "the Use Case Tree":
 
