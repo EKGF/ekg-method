@@ -65,7 +65,7 @@ success story as it set records in terms of its speed and
 costs compared to other similar projects took up to 10 or 20 
 years and cost much more that initially expected. 
 This radical difference stems from a number of decisions 
-that Melis’ took before starting this project:
+that Melis took before starting this project:
 
 - **No monuments**: Monuments and other forms of signature 
   architecture can be found in many subway stations but they are 
@@ -84,7 +84,7 @@ that Melis’ took before starting this project:
   Manuel understood this as he determined that the project 
   needed to be delivered in incremental steps of 3-6 kilometers.
   This may enable workers and him to get feedback after each 
-  step and to foster positive learning. 
+  step and to foster [positive learning](../vocab/positive-learning.md). 
   In other projects, this may also make possible to deliver 
   value to customers as soon as possible. 
 
@@ -106,7 +106,7 @@ are the following:
   The companies that are the fastest at this process will win”_. 
   Speed is critical for companies not only to create momentum 
   but also to create a feedback loop between the company and 
-  its environment to foster positive learning within companies. 
+  its environment to foster [positive learning](../vocab/positive-learning.md)positive learning within companies. 
   Positive learning is defined by Flyvbjerg as; _“learning to 
   do things faster, better, and cheaper by doing the same 
   thing over and over, through replicated modules”_. 
@@ -115,7 +115,7 @@ are the following:
   to calculate and are more reliable.
 - **Replicable modularity**: By relying on rather high-quality
   identical modules that can be assembled into a larger project, 
-  project managers can foster positive learning that will result
+  project managers can foster [positive learning](../vocab/positive-learning.md) that will result
   in performance increases, lower project management risks and 
   in meeting the project expectations. 
   Additionally, working incremental steps also offers delivering
@@ -152,9 +152,9 @@ building blocks of composable businesses.
 ## Sources
 
 - [Oxford Global Projects Academy - Smart Scaling: Modularity & Speed](https://academy.oxfordglobalprojects.com/pages/smart-scaling)
-- [Bent Flyvbjerg, Harvard Business Review - Make Megaprojects More Modular](https://hbr.org/2021/11/make-megaprojects-more-modular)
+- [Flyvbjerg, Bent, Harvard Business Review - Make Megaprojects More Modular](https://hbr.org/2021/11/make-megaprojects-more-modular)
 - [Flyvbjerg, Bent, Make Megaprojects More Modular (October 19, 2021). Harvard Business Review, 2021, November-December Issue, pp. 58-63.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3937465)
-- [Gartner Keynote: The Future of Business Is Composable](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable)
+- [Flyvbjerg, Bent, What Is Negative Learning — and Positive?](https://medium.com/geekculture/what-is-negative-learning-and-how-to-avoid-it-452d9e4c8263)- [Gartner Keynote: The Future of Business Is Composable](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable)
 - [Walkme - Packaged Business Capabilities (PBCs)](https://www.walkme.com/glossary/packaged-business-capabilities/)
 - [ElasticPath - What are Packaged Business Capabilities?](https://www.elasticpath.com/blog/what-are-packaged-business-capablities)
 - [Venture Leap - The future is called _“Packaged Business Capabilities”_](https://venture-leap.com/en/the-leap/the-future-is-called-packaged-business-capabilities-2/)
