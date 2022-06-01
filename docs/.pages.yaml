@@ -1,7 +1,7 @@
 nav:
-  - Use Case Tree Method: index.md
+  - intro
   - objective
   - concept
   - Products: product
   - other
-
+  - Vocabulary: vocab
