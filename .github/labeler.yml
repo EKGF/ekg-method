@@ -17,7 +17,5 @@ agnos-ai:
   - any: ['*-agnos/**/*']
   - any: ['*-agnos-ai/**/*']
 
-products:
-  - docs/products/
 
 
