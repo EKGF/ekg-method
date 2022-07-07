@@ -8,88 +8,82 @@ The primary reasons for creating a Use Case Tree are:
 
 <div class="grid cards" markdown>
 
-- :material-cached:{ .lg .middle } __Business Composability Improved__
+- :material-cached:{ .lg } __Interoperability Achieved__
     
-    ---
+    {% include-markdown "interoperability.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
+    [:octicons-arrow-right-24: Learn more](interoperability.md)
 
-    TODO
+- :material-cached:{ .lg } __Business Composability Improved__
+    
+    {% include-markdown "composable-business.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](composable-business.md)
 
-- :material-cached:{ .lg .middle } __Requirements Captured__
+- :material-cached:{ .lg } __Requirements Captured__
     
-    ---
-
-    Know exactly what the business — the customer or product owner — really needs, short-, mid- and long-term.
+    {% include-markdown "know-what-the-business-wants.md" 
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](know-what-the-business-wants.md)
 
-- :material-cached:{ .lg .middle } __Knowledge Captured__
+- :material-cached:{ .lg } __Knowledge Captured__
     
-    ---
-
-    Enabling a whole new league of use cases.
+    {% include-markdown "capture-knowledge.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](capture-knowledge.md)
 
-- :material-cached:{ .lg .middle } __Gaps Bridged__
+- :material-cached:{ .lg } __Gaps Bridged__
     
-    ---
-
-    TODO
+    {% include-markdown "bridge-the-gap.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](bridge-the-gap.md)
 
-- :material-cached:{ .lg .middle } __Expectations Managed__
+- :material-cached:{ .lg } __Expectations Managed__
     
-    ---
-
-    TODO
+    {% include-markdown "manage-expectations.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](manage-expectations.md)
 
-- :material-cached:{ .lg .middle } __Did not boil the ocean__
+- :material-cached:{ .lg } __Did not boil the ocean__
     
-    ---
-
-    TODO
+    {% include-markdown "avoid-boiling-the-ocean.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](avoid-boiling-the-ocean.md)
 
-- :material-cached:{ .lg .middle } __Disruption Avoided__
+- :material-cached:{ .lg } __Disruption Avoided__
     
-    ---
-
-    TODO
+    {% include-markdown "avoid-disruption.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](avoid-disruption.md)
 
-- :material-cached:{ .lg .middle } __Quality Increased__
+- :material-cached:{ .lg } __Quality Increased__
     
-    ---
-
-    TODO
+    {% include-markdown "increase-quality.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](increase-quality.md)
 
-- :material-cached:{ .lg .middle } __Aligned with Strategy__
+- :material-cached:{ .lg } __Aligned with Strategy__
     
-    ---
-
-    TODO
+    {% include-markdown "align-with-business-strategy.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](align-with-business-strategy.md)
 
-- :material-cached:{ .lg .middle } __Delivered__
+- :material-cached:{ .lg } __Delivered__
     
-    ---
-
-    TODO
+    {% include-markdown "strategic-usecases.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](strategic-usecases.md)
 
-- :material-cached:{ .lg .middle } __Modularity Managed__
+- :material-cached:{ .lg } __Modularity Managed__
     
-    ---
-
-    TODO
+    {% include-markdown "modularity.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](modularity.md)
 
-- :material-cached:{ .lg .middle } __Reuse Enabled__
+- :material-cached:{ .lg } __Reuse Enabled__
     
-    ---
-
-    TODO
+    {% include-markdown "enable-reuse.md"
+    start="<!--summary-start-->" end="<!--summary-end-->" %}
     [:octicons-arrow-right-24: Learn more](enable-reuse.md)
 
 </div>

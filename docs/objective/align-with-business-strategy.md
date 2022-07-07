@@ -7,8 +7,12 @@ hide:
 ---
 # Align with Business Strategy
 
+<!--summary-start-->
+_Align strategy of business capability improvement and execution._
+<!--summary-end-->
+
 Creating an agreed and realistic strategic roadmap that is aligned to _business strategy_ is hard.
-Most --- if not all --- large enterprises are complex and consist of many _lines of business_ (LOBs) where each
+Most---if not all---large enterprises are complex and consist of many _lines of business_ (LOBs) where each
 business has its own "business identity" and therefore its own long term strategy.
 Each of these organizational divisions has its own agenda.
 

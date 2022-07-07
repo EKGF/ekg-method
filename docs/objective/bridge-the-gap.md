@@ -7,6 +7,10 @@ hide:
 ---
 # Bridge the traditional gap between Business & Technology
 
+<!--summary-start-->
+_TODO._
+<!--summary-end-->
+
 - Engage with the business, the product owner and get continuous
   buy-in from the product owner during the life-cycle of the
   agreed use cases.
