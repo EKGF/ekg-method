@@ -8,6 +8,13 @@ The primary reasons for creating a Use Case Tree are:
 
 <div class="grid cards" markdown>
 
+- :material-cached:{ .lg .middle } __Business Composability Improved__
+    
+    ---
+
+    TODO
+    [:octicons-arrow-right-24: Learn more](composable-business.md)
+
 - :material-cached:{ .lg .middle } __Requirements Captured__
     
     ---
