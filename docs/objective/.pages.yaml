@@ -1,5 +1,6 @@
 title: Objectives
 nav:
+  - Composable Business: composable-business.md
   - Requirements Captured: know-what-the-business-wants.md
   - Knowledge Captured: capture-knowledge.md
   - Gaps Bridged: bridge-the-gap.md
