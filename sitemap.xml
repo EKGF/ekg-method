@@ -131,7 +131,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://use-case-tree-method.ekgf.org/product/</loc>
+         <loc>https://use-case-tree-method.ekgf.org/process/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/build/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/plan/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/plan/assess/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/plan/chart/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/plan/discover/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/plan/envision/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/process/run/</loc>
          <lastmod>2022-07-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
