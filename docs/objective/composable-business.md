@@ -7,4 +7,7 @@ hide:
 ---
 # Composable Business
 
-TODO
+<!--summary-start-->
+_TODO._
+<!--summary-end-->
+

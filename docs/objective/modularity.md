@@ -11,6 +11,10 @@ hide:
 
 # Modularity
 
+<!--summary-start-->
+_TODO._
+<!--summary-end-->
+
 The standard approach for large projects, such as nuclear 
 plants, ERP implementations, data-warehouses and subway systems, 
 is to build monolithical bespoke systems. 
@@ -88,7 +92,7 @@ that Melis took before starting this project:
   In other projects, this may also make possible to deliver 
   value to customers as soon as possible. 
 
-Using this megaproject and other successful ones such 
+Using this mega-project and other successful ones such 
 Tesla’s Gigafactory, Flyvbjerg identified the principles 
 behind scaling up in a smart way. 
 By smart way, he means starting from small beginning to a 

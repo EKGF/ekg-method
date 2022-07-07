@@ -7,6 +7,10 @@ hide:
 ---
 # Avoid Disruption
 
+<!--summary-start-->
+_TODO._
+<!--summary-end-->
+
 [Capturing all knowledge in the organization](capture-knowledge.md)
 as much as technically possible is not only useful to enable a whole
 new league of use cases but is also a necessity since all of these 

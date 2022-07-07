@@ -7,14 +7,16 @@ hide:
 ---
 # Know what the business wants & why
 
-Know exactly what the business --- the customer or product owner
---- really needs, short-, mid- and long-term.
+<!--summary-start-->
+_Know exactly what the business---the customer or
+product owner---really needs, short-, mid- and long-term._
+<!--summary-end-->
 
 ## Plan Phase
 
-One of the tasks during the planning phase of any new initiative
---- or iteration --- is to "Discover" the business opportunities &
-needs:
+One of the tasks during the planning phase of any new
+initiative---or iteration---is to "Discover" the 
+business opportunities & needs:
 
 - In non-technical terms. No screen designs, no data models, just plain English.
 

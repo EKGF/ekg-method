@@ -7,6 +7,10 @@ hide:
 ---
 # Increase Quality
 
+<!--summary-start-->
+_TODO._
+<!--summary-end-->
+
 The Use Case Tree is a foundational structure for quality 
 --- any kind of quality --- 
 since it enforces, requires and enables 100% test coverage 

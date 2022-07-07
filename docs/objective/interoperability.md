@@ -1,13 +1,17 @@
 ---
 title: Interoperability
-summary: Interoperability Managed
+summary: Interoperability Achieved
 authors:
 - Carlos Tubbax
 date: 2022-06-23
 some_url: https://use-case-tree-method.ekgf.org/objective/interoperability/
 ---
 
-# Interoperability Managed
+# Interoperability Achieved
+
+<!--summary-start-->
+_Enable interoperability across the enterprise at high levels of maturity._
+<!--summary-end-->
 
 ## The European Interoperability Framework (EIF)
 
