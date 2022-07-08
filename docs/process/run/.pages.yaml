@@ -1,4 +1,9 @@
 title: Run
 nav:
   - index.md
+  - deploy.md
+  - operate.md
+  - measure.md
+  - optimize.md
+  - ...
 
