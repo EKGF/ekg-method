@@ -1,4 +1,11 @@
 title: Build
 nav:
   - index.md
+  - allocate.md
+  - design.md
+  - implement.md
+  - test.md
+  - verify.md
+  - deliver.md
+  - ...
 

@@ -1,4 +1,9 @@
 title: Plan
 nav:
   - index.md
-
+  - Envision: envision.md
+  - Discover: discover.md
+  - Assess: assess.md
+  - Train: train.md
+  - Chart: chart.md
+  - ...
