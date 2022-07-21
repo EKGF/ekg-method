@@ -4,10 +4,10 @@ site_description: Use Case Tree Method
 repo_name: 'EKGF/use-case-tree-method'
 repo_url: https://github.com/EKGF/use-case-tree-method
 site_url: https://use-case-tree-method.ekgf.org
+edit_uri: edit/main/docs/
 site_dir: site
 site_author: Enterprise Knowledge Graph Foundation
 copyright: Copyright &copy; 2022 Enterprise Knowledge Graph Foundation & agnos.ai UK Ltd
-edit_uri: ''
 # Navigation
 # nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
 extra_css:
@@ -67,7 +67,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
-      link: https://github.com/EKGF/ekg-catalog
+      link: https://github.com/EKGF/use-case-tree-method
   analytics:
     provider: google
     property: G-VSE38KT025
@@ -137,6 +137,7 @@ markdown_extensions:
         - abbreviations.md
   - pymdownx.details
   - pymdownx.mark
+  - pymdownx.magiclink
   - pymdownx.smartsymbols
   - pymdownx.emoji:
       emoji_generator: !!python/name:materialx.emoji.to_svg
