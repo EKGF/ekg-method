@@ -67,3 +67,6 @@ That's what this method is for. See also all other [objectives](../../objective)
 
 </div>
 
+<figure markdown>
+<object data="../../diagrams/out/process-plan.svg#darkable" type="image/svg+xml"></object>
+</figure>

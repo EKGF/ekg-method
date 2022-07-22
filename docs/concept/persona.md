@@ -1,6 +1,6 @@
 # Persona
 
-=== "Business Audience"
+=== "Business & Management Audience"
 
     For any given Use Case we need to have a list of all the different types of players.
     In the initial stages of the life cycle of a use case it is less relevant whether these players
