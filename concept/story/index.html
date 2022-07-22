@@ -184,6 +184,10 @@
     
       
     
+      
+    
+      
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -1181,6 +1185,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -1299,6 +1307,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../outcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outcome
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../dataset/" class="md-nav__link">
         
   
@@ -1318,11 +1345,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../outcome/" class="md-nav__link">
+      <a href="../ontology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Outcome
+    Ontology
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
   </span>
 
       </a>
@@ -2314,17 +2360,66 @@
 
 
 <h1 id="story">Story<a class="headerlink" href="#story" title="Permanent link">&para;</a></h1>
-<p>A Story &mdash; in the context of a Use Case in the Use Case Tree &mdash; defines a business requirement.</p>
-<p>A business user could specify a requirement as follows:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Business &amp; Management Audience</label><label for="__tabbed_1_2">Data &amp; Tech Audience</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>A Story &mdash; in the context of a <a href="usecase">Use Case</a> in the 
+Use Case Tree &mdash; defines a business requirement.                       </p>
+<p>A business user could specify a requirement as follows:                                                                 </p>
 <ul>
-<li>As the Chief Risk Officer, I need to know our current Risk Position against party B, so that I can Assess the Risk</li>
-<li>As an Auditor, I need to get a list of all current board members of legal entity X, so that I can Verify Stakeholders</li>
-<li>As an Employee, I need to get a list of all my colleagues in my unit, so that I Know my Colleagues</li>
-<li>As a customer, I need to get a list of all products, so that I can make a product selection</li>
+<li><em>As the Chief Risk Officer, I need to know our current Risk Position against party B, so that I can Assess the Risk</em>    </li>
+<li><em>As an Auditor, I need to get a list of all current board members of legal entity X, so that I can Verify Stakeholders</em> </li>
+<li><em>As an Employee, I need to get a list of all my colleagues in my unit, so that I Know my Colleagues</em>                    </li>
+<li><em>As a customer, I need to get a list of all products, so that I can make a product selection</em>                           </li>
 </ul>
-<p>And so forth. That's all we ask.</p>
-<p>=== Business &amp; Management Audience</p>
-<p>=== Data &amp; Tech Audience</p>
+<p>And so forth. That's all we ask in the early phases of a given use case.                                                                                     </p>
+</div>
+<div class="tabbed-block">
+<p>"User Stories" start out as plain English sentences that, as the name suggests, come from the user.
+In other words, "the Business" or "the Customer", the end user of a system or application, is
+responsible for explaining to the people who need to deliver that system what the system is supposed to do.                     </p>
+<p>Makes sense right? Unfortunately, it's usually not that simple.
+All kinds of other factors come into play that have nothing to do with specifying what the user
+<em>really</em> wants such as design, architecture, existing systems, budgets, time, regulations, policies 
+and technical capabilities.</p>
+<p>However, it is a good thing to at least capture the "real" wishes of the user without having to consider all of 
+those other aspects.                                                                                          <br />
+Where the challenge is to ask the user to step out of their normal day-to-day practices and comfort zone and to 
+think ahead in a way that is not restricted by all the daily hurdles and practicalities.                      <br />
+This method proposes to use "Structured Business User Stories" to achieve many things such as:                  </p>
+<ul>
+<li>have a more strategic view on which functionality is <ins>really</ins> required                                          </li>
+<li>allow to see "the disconnect" or "the gap" between what's required and what is currently available,
+   delivered and deliverable                                                                                     </li>
+<li>avoid "tunnel thinking" where everyone, especially also "the business" itself, makes all kinds of
+   assumptions that may or may not be true and could severely diminish creativity.                               </li>
+<li>create a clear separation of concerns: the business specifies what they need but leaves it to the
+   data and technology people to work out how they can deliver it.
+   So no more "screen designs" (that comes later) or "schema's" that are used as
+   "functional specification".
+   We need to be able to go deeper, to the core questions about <strong>"what do you <ins>really</ins> need?"</strong> 
+   (and forget about the "How" for a minute).                                                                                </li>
+<li>have clear testable specifications of required functionality for the whole life-cycle of a given            <br />
+   user story.<br/>                                                                                            <br />
+   As long as people need a given story to be implemented, it will continuously be tested "end-to-end",
+   from inception all the way to production, not only before deployment into production but actually
+   also in production itself.
+   The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> knows about "its Stories" and continuously tests them, it therefore knows about its own
+   "functional health" and can detect whenever something changes (code, ontologies, ETL, new policies) 
+   whether it can still deliver all functionality                                 </li>
+</ul>
+<p>Here's a diagram that illustrates how we can break up a user story in some interesting components that
+we can link to other data structures in the Knowledge Graph such as a taxonomy of all <a href="persona">"Personas"</a></p>
+<p><figure markdown>
+  TODO
+</figure></p>
+<p>Here's one example of a User Story, more examples will follow later:                                            </p>
+<p><figure markdown>
+  TODO
+</figure></p>
+</div>
+</div>
+</div>
 
   
     
@@ -2338,7 +2433,7 @@
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        2022-02-07
+        2022-07-22
       </span>
     
     

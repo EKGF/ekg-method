@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://use-case-tree-method.ekgf.org/concept/ontology/</loc>
+         <lastmod>2022-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/outcome/</loc>
          <lastmod>2022-07-22</lastmod>
          <changefreq>daily</changefreq>
@@ -32,6 +37,11 @@
     </url>
     <url>
          <loc>https://use-case-tree-method.ekgf.org/concept/use-case/</loc>
+         <lastmod>2022-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://use-case-tree-method.ekgf.org/concept/workflow/</loc>
          <lastmod>2022-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
