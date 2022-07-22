@@ -1,21 +1,26 @@
 # Use Case
 
-A Use Case specifies a distinct set of business requirements --- captured
-as an "executable model" --- resulting in a specific business outcome.
+A Use Case specifies a distinct set of business requirements --- ideally
+but not necessarily captured as an "executable model" --- resulting in 
+a specific business outcome.
 
 === "Business & Management Audience"
 
     ## Process
 
     Ideas for use cases could come from any person in the organization at any point in time.
-    We want all these ideas to end up in the organization's Use Case Tree, whether they are viable or not.
-    If an idea for a given use case is rejected then show the rationale for that to everyone so that everyone can
-    learn, and we're not wasting any time on that idea again. 
+    We want all these ideas to end up in the organization's Use Case Tree, whether they are 
+    viable or not.
+    If an idea for a given use case is rejected then show the rationale for that to everyone
+    so that everyone can learn, and we're not wasting any time on that idea again. 
 
-    Let people contribute. All knowledge workers, all specialist users, data architects, technical architects, ontologists,
-    end users, business executives, literally anyone should be allowed to understand:
+    Let people contribute. All knowledge workers, all specialist users, data architects, 
+    technical architects, ontologists, end users, business executives, literally anyone 
+    should be allowed to understand:
 
-    - what's our business identity? Our mission and strategy?
+    - what's our 
+      [business identity](https://maturity-model.ekgf.org/pillar/business/background-and-intro/#business-identity)?
+      Our [mission and strategy](https://maturity-model.ekgf.org/pillar/business/capability-area/strategy-actuation/)?
     - how does that map to our current and future data and technology landscape?
     - (without becoming too technical or detailed, we want everyone to be able to chip in)
     - how does our "technical debt" fit in? (identify the functionality of our technical debt as use cases in the tree as well)

@@ -40,31 +40,35 @@ to help frame each deliverable in terms of staged business capabilities.
 
 ## Audience
 
-- Business Audience, “the customer”, product owners, business experts, change managers, SMEs
-- EKG Champion(s)
+* Business Audience, “the customer”, product owners, business experts, change managers, SMEs
+* EKG Champion(s)
 
 ## Outputs 
 
 All outputs below describe the properties of what a Use Case Tree is:
 
-- Identification of strategic use cases, priorities and desired business outcomes
-- Initial scope in the form of one priority strategic use case, 
+* Identification of strategic use cases, priorities and desired business outcomes
+* Initial scope in the form of one priority strategic use case, 
   one branch of the Use Case Tree to focus on
-- Evaluation criteria from both a business process and data perspective to ensure 
+* Evaluation criteria from both a business process and data perspective to ensure 
   EKG synchronization with defined requirements
-- Conversion of strategic priorities into a staged “use case tree” specifying 
+* Conversion of strategic priorities into a staged “use case tree” specifying 
   business functionality and data requirements
-- A shared understanding of the requirements for success including the investments 
+* A shared understanding of the requirements for success including the investments 
   needed to deliver against expected functionality
-- Well managed and agreed expectations with "the business"
-   – A "Contract" with the business in plain English, devoid of any technology assumptions
-   – One-to-one and end-to-end linkage between a plain english business user story and the proof
-     that this user story has been delivered, works and stays working
-- **A permanent artifact, a shared model, continuously being improved, that all stakeholders across
+* Well managed and agreed expectations with "the business"
+    * A "Contract" with the business in plain English, devoid of any technology assumptions
+    * One-to-one and end-to-end linkage between a plain english business user story and the
+      evidence that this user story has been delivered, works and stays working[^testing]
+* **A permanent artifact, a shared model, continuously being improved, that all stakeholders across
   the enterprise can talk to for the whole life-cycle of any given use case (even in production)**
-- Living data structure that becomes part of the EKG itself for its whole life-cycle
-- Modular structure of components that allows for an ecosystem of internal and external reusable
+* Living data structure that becomes part of the EKG itself for its whole life-cycle
+* Modular structure of components that allows for an ecosystem of internal and external reusable
   components compliant with standards set by the EKGF.
+
+[^testing]: this relates to all the further detail that will be added to each use case and its
+stories in all subsequent phases allowing the business to get insights to any level of depth
+and exactly trace cost, risk, timelines etc.
 
 ## Topics
 
@@ -79,12 +83,12 @@ Discuss some “standard” strategic use cases (at this helicopter-level these 
 “domains”) such as Enterprise Fraud Detection, Enterprise Compliance Management, Connected Inventory 
 and Customer 360.
 
-- Reg problems. Lineage. CCAR esp. threat of Fines.
-- Data privacy. Sharing agreements. Cataloging PII data. GDPR and CCPA. The threat of fines.
-- Reducing data estate/sprawl. Cost.
-- Move data to the cloud. Cost & capability
-- Improving Data Quality generally. Risk
-- Supporting the digitalization / Transform / Innovation agenda, capability play
+* Reg problems. Lineage. CCAR esp. threat of Fines.
+* Data privacy. Sharing agreements. Cataloging PII data. GDPR and CCPA. The threat of fines.
+* Reducing data estate/sprawl. Cost.
+* Move data to the cloud. Cost & capability
+* Improving Data Quality generally. Risk
+* Supporting the digitalization / Transform / Innovation agenda, capability play
 
 ### Identity your Strategic Use Cases & Business Outcomes
 
@@ -111,7 +115,7 @@ why, and in which order.
 
 ## TODO
 
-- What is "the right use case" (to start with)
-- What is a "strategic use case"
+* What is "the right use case" (to start with)
+* What is a "strategic use case"
 
 
