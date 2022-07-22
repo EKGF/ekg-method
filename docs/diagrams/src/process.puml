@@ -11,6 +11,7 @@ state Plan {
     Assess -down-> Chart
 
     Envision: - a shared strategy
+    
     Discover: - strategic use cases
     Discover: - initial use case tree
     Discover: - business knowledge
@@ -37,10 +38,14 @@ state Build {
     ' Verify -> Plan
 
     Allocate: - budget & team
+    
     Implement: - detail the use case
+    
     Test: - add test scenarios
     Test: - full coverage
+    
     Verify: - verify with business
+    
     Deliver: - continuously improve
     Deliver: - deliver small increments
     Deliver: - frequently
