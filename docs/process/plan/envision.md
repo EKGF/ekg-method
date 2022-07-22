@@ -61,20 +61,20 @@ the Envision phase that serves as input to all subsequent phases.**
 
 ### Vision
 
-– What is EKG and why is it the way forward?
-– Discuss and capture your current long-term vision, how is your
+* What is EKG and why is it the way forward?
+* Discuss and capture your current long-term vision, how is your
   business creating a competitive advantage leveraging its data and 
   knowledge. Get key-stakeholders involved, capture their view on the
   business vision and how they think that data management, technology and
   organization will or should support that vision.
-– Trends in information-intensive industries and their impact on 
+* Trends in information-intensive industries and their impact on 
   business data, technology, and organizational structure and culture.
-– Explanation---in business terms---of what an EKG is and what 
+* Explanation---in business terms---of what an EKG is and what 
   business benefits it could deliver.
-– Assess the impact of EKG, i.e. capturing all knowledge that is 
+* Assess the impact of EKG, i.e. capturing all knowledge that is 
   currently siloed and captured in all the various systems in a 
   given scope and eco-system on business data, technology and organization.
-– Do an initial discovery of the “strategic use cases”---that cannot be 
+* Do an initial discovery of the “strategic use cases”---that cannot be 
   realistically done today---and choose the initial focus area giving 
   scope for all subsequent phases.
 
@@ -82,37 +82,37 @@ the Envision phase that serves as input to all subsequent phases.**
 
 Key Paradigm Changes (in non-technical business terms) such as:
 
-– _Open World_ vs _Closed World_
-– “_Multiple versions of the truth_” vs “_Single version of the truth_”
-– Semantic Technologies
-– How to apply best practices from the software development world to
+* _Open World_ vs _Closed World_
+* “_Multiple versions of the truth_” vs “_Single version of the truth_”
+* Semantic Technologies
+* How to apply best practices from the software development world to
   the data world (data engineers, knowledge graph engineers being the
   new software i.e. use case developers) such as _DevOps_, _DataOps_, 
   _SemOps_, _EKGOps_, _Continuous Improvement_, _Continuous Intergration_, 
   _Continuous Delivery_, _Continuous Deployment_, _Infrastructure as Code (IaC)_
-– Agile and how this applies to one EKG serving many agendas
-– Reusable Data Components / Reusable Business Components
-– “Delusions” in Data Management
-– Breaking the technical, legal, organizational and cultural silos
+* Agile and how this applies to one EKG serving many agendas
+* Reusable Data Components / Reusable Business Components
+* “Delusions” in Data Management
+* Breaking the technical, legal, organizational and cultural silos
 
 ### Key Success Factors & Lessons Learned
 
-– Learning from mistakes, what to do differently, how to set up for success
-– Why a traditional _Proof-of-Concept (PoC)_ does not work with EKG
+* Learning from mistakes, what to do differently, how to set up for success
+* Why a traditional _Proof-of-Concept (PoC)_ does not work with EKG
 
 
 ### Method Summary
 
-– Explain (in business terms) what “the method” is, why it is essential 
+* Explain (in business terms) what “the method” is, why it is essential 
   to have an agreed, standardized and measurable approach. 
   How can one EKG serve all agendas across the enterprise successfully?
-– Use Case Trees (Summary)
-– Maturity Model (Summary)
+* Use Case Trees (Summary)
+* Maturity Model (Summary)
     * EKG Maturity Levels in the Business realm
     * EKG Maturity Levels in the Data realm
     * EKG Maturity Levels in the Tech realm
     * EKG Maturity Levels in the Organization (in general) realm
-– DataOps (Summary)
+* DataOps (Summary)
 
 ### Shared Strategy 
 
