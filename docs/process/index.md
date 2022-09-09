@@ -13,11 +13,14 @@ hide:
     start="<!--summary-plan-start-->" end="<!--summary-plan-end-->" %}
     [:octicons-arrow-right-24: Learn more](./plan/)
 
-* :material-cached:{ .lg } __Build__
+[//]: # (* :material-cached:{ .lg } __Build__)
 
-    {% include-markdown "build/index.md"
-    start="<!--summary-build-start-->" end="<!--summary-build-end-->" %}
-    [:octicons-arrow-right-24: Learn more](./build/)
+[//]: # ()
+[//]: # (    {% include-markdown "build/index.md")
+
+[//]: # (    start="<!--summary-build-start-->" end="<!--summary-build-end-->" %})
+
+[//]: # (    [:octicons-arrow-right-24: Learn more]&#40;./build/&#41;)
 
 [//]: # (* :material-cached:{ .lg } __Run__)
 
