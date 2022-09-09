@@ -2,16 +2,12 @@
 ifeq ($(OS),Windows_NT)
     YOUR_OS := Windows
     INSTALL_TARGET := install-windows
-    OPEN_EDITORS_VERSION_TARGET := open-editors-version-windows
-    OPEN_RELEASE_VERSION_TARGET := open-release-version-windows
     MKDOCS := mkdocs
     PIP := pip
 else
     YOUR_OS := $(shell sh -c 'uname 2>/dev/null || echo Unknown')
 ifeq ($(YOUR_OS), Linux)
     INSTALL_TARGET := install-linux
-    OPEN_EDITORS_VERSION_TARGET := open-editors-version-linux
-    OPEN_RELEASE_VERSION_TARGET := open-release-version-linux
 ifneq ($(wildcard /home/runner/.*),) # this means we're running in Github Actions
 	MKDOCS := mkdocs
 	PIP := pip
@@ -22,14 +18,12 @@ endif
 endif
 ifeq ($(YOUR_OS), Darwin)
     INSTALL_TARGET := install-macos
-    OPEN_EDITORS_VERSION_TARGET := open-editors-version-macos
-    OPEN_RELEASE_VERSION_TARGET := open-release-version-macos
 	MKDOCS := $(shell asdf where python)/bin/mkdocs
 	PIP := $(shell asdf where python)/bin/python -m pip
 endif
 endif
 DOC_ORG_NAME := ekgf
-DOC_ROOT_NAME := use-case-tree-method
+DOC_ROOT_NAME := method
 CURRENT_BRANCH := $(shell git branch --show-current)
 PAT_MKDOCS_INSIDERS := $(shell cat $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt 2>/dev/null)
 ifeq ($(PAT_MKDOCS_INSIDERS),)

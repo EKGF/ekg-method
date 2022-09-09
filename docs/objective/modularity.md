@@ -4,7 +4,7 @@ summary: Introducing EKG modularity
 authors:
 - Carlos Tubbax
 date: 2022-05-01
-some_url: https://use-case-tree-method.ekgf.org/objective/modularity/
+some_url: https://*method.ekgf.org/objective/modularity/
 hide:
   - toc
 ---

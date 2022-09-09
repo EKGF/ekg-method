@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: Use Case Tree Method
-site_description: Use Case Tree Method
-repo_name: 'EKGF/use-case-tree-method'
-repo_url: https://github.com/EKGF/use-case-tree-method
-site_url: https://use-case-tree-method.ekgf.org
+site_name: EKG/Method
+site_description: Use Case Tree Method, a method to develop an Enterprise Knowledge Graph (EKG)
+repo_name: 'EKGF/method'
+repo_url: https://github.com/EKGF/method
+site_url: https://*method.ekgf.org
 edit_uri: edit/main/docs/
 site_dir: site
 site_author: Enterprise Knowledge Graph Foundation
@@ -67,7 +67,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/EKGF
     - icon: fontawesome/brands/github
-      link: https://github.com/EKGF/use-case-tree-method
+      link: https://github.com/EKGF/method
   analytics:
     provider: google
     property: G-VSE38KT025

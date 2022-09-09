@@ -7,12 +7,12 @@ have lead to various websites:
 
 The main website of the Foundation: [https://ekgf.org](https://ekgf.org)
 
-## Manifesto
+## Principles
 
-The EKG Manifesto: 
-[https://manifesto.ekgf.org](https://manifesto.ekgf.org), 
+The EKG Principles: 
+[https://principles.ekgf.org](https://principles.ekgf.org), 
 this is a project that is being maintained in the GitHub repository 
-[EKGF/ekg-manifesto](https://github.com/EKGF/ekg-manifesto).
+[EKGF/ekg-principles](https://github.com/EKGF/ekg-principles).
 
 You're welcome to contribute.
 
@@ -33,8 +33,8 @@ All use cases from the community, their datasets and their ontologies:
 ## Use Case Tree Method
 
 A proposal for a front-to-back method to support your EKG journey:
-[https://use-case-tree-method.ekgf.org](https://use-case-tree-method.ekgf.org),
+[https://*method.ekgf.org](https://*method.ekgf.org),
 this is a project that is being maintained in the GitHub repository
-[EKGF/use-case-tree-method](https://github.com/EKGF/use-case-tree-method).
+[EKGF/method](https://github.com/EKGF/method).
 
 You're welcome to contribute.
