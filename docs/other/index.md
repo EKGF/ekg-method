@@ -33,7 +33,7 @@ All use cases from the community, their datasets and their ontologies:
 ## Use Case Tree Method
 
 A proposal for a front-to-back method to support your EKG journey:
-[https://*method.ekgf.org](https://*method.ekgf.org),
+[https://method.ekgf.org](https://method.ekgf.org),
 this is a project that is being maintained in the GitHub repository
 [EKGF/method](https://github.com/EKGF/method).
 
