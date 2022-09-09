@@ -7,11 +7,14 @@ hide:
 
 <div class="grid cards" markdown>
 
-* :material-cached:{ .lg } __Plan__
+[//]: # (* :material-cached:{ .lg } __Plan__)
 
-    {% include-markdown "plan/index.md"
-    start="<!--summary-plan-start-->" end="<!--summary-plan-end-->" %}
-    [:octicons-arrow-right-24: Learn more](./plan/)
+[//]: # ()
+[//]: # (    {% include-markdown "plan/index.md")
+
+[//]: # (    start="<!--summary-plan-start-->" end="<!--summary-plan-end-->" %})
+
+[//]: # (    [:octicons-arrow-right-24: Learn more]&#40;./plan/&#41;)
 
 [//]: # (* :material-cached:{ .lg } __Build__)
 
