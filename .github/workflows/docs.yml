@@ -3,12 +3,16 @@ name: docs
 on:
   push:
     branches:
-      - '*'
-    tags:
-      - '*'
+    - main
+  pull_request:
+  workflow_dispatch:
+
+env:
+  HOMEBREW_NO_INSTALL_CLEANUP: 1
+  ENABLE_PDF_EXPORT: 1
 
 jobs:
-  website-ubuntu:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       -
@@ -35,40 +39,9 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         env:
           PAT_MKDOCS_INSIDERS: ${{ secrets.PAT_MKDOCS_INSIDERS }}
-        run: make --environment-overrides docs-install-python-packages
-      -
-        name: Build Site
-        if: ${{ github.ref != 'refs/heads/main' }}
-        env:
-          PAT_MKDOCS_INSIDERS: ${{ secrets.PAT_MKDOCS_INSIDERS }}
-        run: make --environment-overrides docs-build
-      -
-        name: Deploy Site
-        if: ${{ github.ref == 'refs/heads/main' }}
-        env:
-          PAT_MKDOCS_INSIDERS: ${{ secrets.PAT_MKDOCS_INSIDERS }}
-        run: make --environment-overrides docs-deploy
-
-  website-macos:
-    if: ${{ false }}  # disable for now
-    runs-on: macos-latest
-    steps:
-      -
-        name: Set up Git repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      -
-        uses: actions/cache@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-      -
-        name: Install all MkDocs dependencies
-        env:
-          PAT_MKDOCS_INSIDERS: ${{ secrets.PAT_MKDOCS_INSIDERS }}
-        run: make --environment-overrides docs-install
+        run: |
+          echo "/home/linuxbrew/.linuxbrew/bin/brew" >> $GITHUB_PATH
+          make --environment-overrides docs-install-github-actions
       -
         name: Build Site
         if: ${{ github.ref != 'refs/heads/main' }}

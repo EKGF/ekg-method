@@ -4,7 +4,7 @@ summary: Interoperability Achieved
 authors:
 - Carlos Tubbax
 date: 2022-06-23
-some_url: https://*method.ekgf.org/objective/interoperability/
+some_url: https://method.ekgf.org/objective/interoperability/
 ---
 
 # Interoperability Achieved

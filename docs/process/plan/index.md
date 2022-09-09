@@ -4,7 +4,7 @@ summary: The Plan Phase
 authors:
   - Jacobus Geluk
 date: 2021-01-01
-some_url: https://*method.ekgf.org/process/plan/
+some_url: https://method.ekgf.org/process/plan/
 hide:
   - toc
   - navigation

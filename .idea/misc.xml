@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CidrRootsConfiguration">
     <excludeRoots>
-      <file path="$PROJECT_DIR$/site" />
+      <file path="$PROJECT_DIR$/../ekg-method/site" />
     </excludeRoots>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />

@@ -3,7 +3,7 @@ site_name: EKG/Method
 site_description: Use Case Tree Method, a method to develop an Enterprise Knowledge Graph (EKG)
 repo_name: 'EKGF/method'
 repo_url: https://github.com/EKGF/method
-site_url: https://*method.ekgf.org
+site_url: https://method.ekgf.org
 edit_uri: edit/main/docs/
 site_dir: site
 site_author: Enterprise Knowledge Graph Foundation
