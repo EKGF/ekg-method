@@ -19,11 +19,14 @@ hide:
     start="<!--summary-build-start-->" end="<!--summary-build-end-->" %}
     [:octicons-arrow-right-24: Learn more](./build/)
 
-* :material-cached:{ .lg } __Run__
+[//]: # (* :material-cached:{ .lg } __Run__)
 
-    {% include-markdown "run/index.md"
-    start="<!--summary-run-start-->" end="<!--summary-run-end-->" %}
-    [:octicons-arrow-right-24: Learn more](run)
+[//]: # ()
+[//]: # (    {% include-markdown "run/index.md")
+
+[//]: # (    start="<!--summary-run-start-->" end="<!--summary-run-end-->" %})
+
+[//]: # (    [:octicons-arrow-right-24: Learn more]&#40;run&#41;)
 
 </div>
 
