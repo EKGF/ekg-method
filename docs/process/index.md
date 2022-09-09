@@ -27,6 +27,8 @@ hide:
 
 </div>
 
-<figure markdown>
-<object data="../diagrams/out/process.svg#darkable" type="image/svg+xml"></object>
-</figure>
+[//]: # (<figure markdown>)
+
+[//]: # (<object data="../diagrams/out/process.svg#darkable" type="image/svg+xml"></object>)
+
+[//]: # (</figure>)
