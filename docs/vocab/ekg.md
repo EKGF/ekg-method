@@ -94,3 +94,10 @@ The most common and generic reasons for EKG are:
   and reduce the number of silos.
 - Reduce technology cost.
 
+## Proposed New Version
+
+A knowledge graph is a set of real-world constructs structured in a semantic network of objects, their attributes, and the relationships between objects that can be used to represent the meaning of information.  It has a simple semantic structure of Subject – Verb – Object statements, but given sufficient volumes and business coverage of instances of these statements, affords the capability to leverage Semantic AI statistical inference software to traverse and deliver answers to complex business questions.  A knowledge graph may also be referred to as Ontology.     
+
+An Enterprise Knowledge Graph (EKG) is a knowledge graph with a scope to serve a broad set of information needs across the entire enterprise.  The scope is bounded for business information relevant to what the business does, products produced, relevant external knowledge pertaining to the specific industry that the business operates in, and external business environment knowledge that can impact the business.  An EKG is built to serve the information needs and usage for stakeholders across the business. 
+ 
+The EKG can be mapped to operational, derived, and external information in other data formats, and to the documents and text that the business uses.  It is not necessary to load all operational and external world data into the EKG, it can use data in its current operational supporting state.  Knowledge graphs work together with several key technologies that together can achieve significant capabilities in: explainable AI, inferring knowledge from information not directly chained together, improving natural language processing to resolve ambiguity, and quickly finding meaningful information in unstructured data such as text and numerous volumes of documents.
