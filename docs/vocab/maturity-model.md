@@ -6,4 +6,4 @@ non-functional requirements of any given use case.
 
 ## Links
 
-- [https://maturity-model.ekgf.org](https://maturity-model.ekgf.org)
+- [https://maturity.ekgf.org](https://maturity.ekgf.org)

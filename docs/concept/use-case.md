@@ -27,15 +27,15 @@
     literally anyone should be allowed to understand:
 
     * What's our 
-      [business identity](https://maturity-model.ekgf.org/pillar/business/background-and-intro/#business-identity)?
-      Our [mission and strategy](https://maturity-model.ekgf.org/pillar/business/capability-area/strategy-actuation/)?
+      [business identity](https://maturity.ekgf.org/pillar/business/background-and-intro/#business-identity)?
+      Our [mission and strategy](https://maturity.ekgf.org/pillar/business/capability-area/strategy-actuation/)?
       What do we all this for (besides being profitable), what are the long term
       objectives that we are going to achieve?
     * How does that map to our current and future data and technology landscape?
         * (without becoming too technical or detailed, we want everyone to be able to chip in)
     * [Assess](../process/plan/assess.md) all our organization's capabalities,
       as specified in the 
-      [Maturity Model for the Enterprise Knowledge Graph (EKG/MM)](https://maturity-model.ekgf.org) 
+      [Maturity Model for the Enterprise Knowledge Graph (EKG/MM)](https://maturity.ekgf.org) 
       related to our own EKG and how they match with our ambitions to implement our 
       strategic use cases?
     * How does our "technical debt" fit in? (identify the functionality of our 

@@ -19,7 +19,7 @@ You're welcome to contribute.
 ## Maturity Model
 
 The Maturity Model for the Enterprise Knowledge Graph: 
-[https://maturity-model.ekgf.org](https://maturity-model.ekgf.org),
+[https://maturity.ekgf.org](https://maturity.ekgf.org),
 this is a project that is being maintained in the GitHub repository 
 [EKGF/ekg-mm](https://github.com/EKGF/ekg-mm).
 
