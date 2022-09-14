@@ -7,7 +7,7 @@ hide:
 # Deploy
 
 <!--summary-start-->
-Fully automated deployments as _Infrastructure-as-Code_ using _Continuous Deployment_ principles
+_Fully automated deployments as Infrastructure-as-Code using Continuous Deployment principles_
 <!--summary-end-->
 
 ## Audience

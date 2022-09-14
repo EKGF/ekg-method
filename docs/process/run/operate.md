@@ -7,7 +7,8 @@ hide:
 # Operate
 
 <!--summary-start-->
-TODO
+_Operating production-level, distributed and federated EKG/Platform that serves
+any wildly different use cases across the enterprise, guaranteeing business continuity._
 <!--summary-end-->
 
 What’s new for most organizations is to have one platform supporting many wildly different and

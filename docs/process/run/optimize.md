@@ -7,8 +7,12 @@ hide:
 # Optimize
 
 <!--summary-start-->
-_Structural feedback loops, continuously improve, continuously update the Use Case Tree._
+_Structural feedback loops, continuously improve, continuously updating the Use Case Tree._
 <!--summary-end-->
+
+Continuously optimize, as a _Business-as-Usual (BAU)_ activity, all delivered use cases
+in terms of quality, inter-use case integration, evolution of more reusable components,
+"connecting the dots" across use cases, analysing the EKG to see patterns and so forth.
 
 The [EKG CoE](../../vocab/coe) should be a standing organization (federated or not) 
 that "owns" and orchestrates the EKG overall — not necessarily the data or the 
