@@ -1,5 +1,6 @@
 title: Concepts
 nav:
+  - use-case-tree.md
   - use-case.md
   - persona.md
   - story.md
