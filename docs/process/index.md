@@ -7,36 +7,33 @@ hide:
 
 === "Steps"
 
-    <div class="grid cards" markdown>
+     <div class="grid cards" markdown>
     
-    * :material-cached:{ .lg } __Plan__
+     - :material-floor-plan:{ .lg } __[Plan](plan)__
     
+         ---
+
+         {% include-markdown "plan/index.md" start="<!--summary-plan-start-->" end="<!--summary-plan-end-->" %}
     
-        {% include-markdown "plan/index.md"
+         [:octicons-arrow-right-24: Learn more](./plan/)
     
-        start="<!--summary-plan-start-->" end="<!--summary-plan-end-->" %}
+     - :construction_site:{ .lg } __[Build](build)__
     
-        [:octicons-arrow-right-24: Learn more](./plan/)
+         ---
     
-    * :material-cached:{ .lg } __Build__
+         {% include-markdown "build/index.md" start="<!--summary-build-start-->" end="<!--summary-build-end-->" %}
     
+         [:octicons-arrow-right-24: Learn more](./build/)
     
-        {% include-markdown "build/index.md"
+     - :material-run:{ .lg } __[Run](run)__
     
-        start="<!--summary-build-start-->" end="<!--summary-build-end-->" %}
+         ---
+
+         {% include-markdown "run/index.md" start="<!--summary-run-start-->" end="<!--summary-run-end-->" %}
     
-        [:octicons-arrow-right-24: Learn more](./build/)
+         [:octicons-arrow-right-24: Learn more](run)
     
-    * :material-cached:{ .lg } __Run__
-    
-    
-        {% include-markdown "run/index.md"
-    
-        start="<!--summary-run-start-->" end="<!--summary-run-end-->" %}
-    
-        [:octicons-arrow-right-24: Learn more](run)
-    
-    </div>
+     </div>
 
 === "Diagram"
 
