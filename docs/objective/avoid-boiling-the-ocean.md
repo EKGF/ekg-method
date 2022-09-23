@@ -37,9 +37,9 @@ to have managed expectations, to not waste time on things that are not important
 yet, to keep the eye on the ball which is to keep delivering real business value to
 real end-users continuously.
 
-The Use Case Tree avoids the "boil the ocean" phenomenon because the Use Case Tree
-and its individual use cases define an agreed scope at the detail level
-without becoming technical immediately.
+The [Use Case Tree](/concept/use-case-tree) avoids the boil-the-ocean-phenomenon 
+because the Use Case Tree and its individual use cases define an agreed scope at 
+the detail level without becoming technical immediately.
 
 First focus on _**"the why and the what"**_ (to deliver), then keep adding 
 specialists and let them add their detailed information to your use cases until 

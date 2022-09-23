@@ -12,7 +12,7 @@ hide:
 # Modularity
 
 <!--summary-start-->
-_TODO._
+_TODO: Summary_
 <!--summary-end-->
 
 The standard approach for large projects, such as nuclear 

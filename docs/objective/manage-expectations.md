@@ -8,7 +8,7 @@ hide:
 # Best form of ”expectation management”
 
 <!--summary-start-->
-_TODO._
+_TODO: Summary_
 <!--summary-end-->
 
 Creating an agreed and realistic strategic roadmap that is aligned to business strategy is hard.

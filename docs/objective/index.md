@@ -1,6 +1,6 @@
 # Objectives
 
-The primary reasons for creating a Use Case Tree are:
+The primary reasons for creating a [Use Case Tree](/concept/use-case-tree) are:
 
 <!--objectives-index-start-->
 

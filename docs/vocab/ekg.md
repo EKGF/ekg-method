@@ -18,7 +18,7 @@ end users usually see as "applications"---that leverage the mix of
 knowledge and data to provide functionality that can go far beyond 
 the current state of the art that traditional technologies allow.
 
-### Technical perspectvie
+### Technical perspective
 
 An EKG requires a "platform" to run it, where the term "platform"---or
 EKG/Platform---is used for the collection of software services that serve 
@@ -49,14 +49,14 @@ The primary justification for EKG is short and simple: to get your strategic use
 
 One EKG can support an unlimited number of use cases. 
 These use cases are structured as a tree of reusable components, 
-the so-called Use Case Tree (UCT). 
+the so-called [Use Case Tree](/concept/use-case-tree) (UCT). 
 Each use case represents data or information or knowledge even and behavior. 
 These UCTs are defined and constructed with "the business", your primary stakeholders 
 and budget holders. 
 They capture in non-technical terms which functional requirements your 
 business needs and what the desired Business Outcomes are.
 
-At the top of a Use Case Tree you generally see the Strategic Use Case that 
+At the top of a [Use Case Tree](/concept/use-case-tree) you generally see the Strategic Use Case that 
 your business plans to implement in the long term. 
 Such as true Client 360, Customer Analytics, Enterprise Fraud Detection,
 real-time Enterprise Risk & Compliance Management, Supply Chain Management, 
@@ -69,25 +69,25 @@ that only an EKG can realistically implement those strategic use cases.
 
 The most common and generic reasons for EKG are:
 
-- Achieve a whole new level---or league---of strategic use cases,
-  use cases that cannot be done (properly) today, improving:
+- Achieve a whole new level---or league---of 
+  _[strategic use cases](https://catalog.ekgf.org/use-case/strategic-use-cases/)_,
+  i.e. use cases that cannot be done (properly) today, improving:
     - Operational efficiency e.g. automation, cost containment, 
       digitalisation & resiliency
-    - Control & Oversight e.g. regulatory compliance & governance 
-      automation
-    - Business Innovation e.g. Client 360, improved 
-      customer experience & product/market insight
+    - Control & Oversight e.g. regulatory compliance & governance automation
+    - Business Innovation e.g. [Client 360](https://catalog.ekgf.org/use-case/client-360/), 
+      improved customer experience & product/market insight
     - Organizational capability (no better wat to address 
       "insoluble problems”)
 - Become a data-centric operation, leveraging your data, 
   knowledge and staff to become more competitive.
   Position your organization in the heart of your market and
-  eco-system.
+  ecosystem.
 - Drastically increase data quality: better and faster 
   decision-making at any level.
-   - Create much higher levels of trust in the information 
-     that your organization provides to executives, employees,
-     customers, suppliers and last but not least: regulators.
+    - Create much higher levels of trust in the information 
+      that your organization provides to executives, employees,
+      customers, suppliers and last but not least: regulators.
 - Prepare for AI at a fundamental level.
 - Break out of the world of silos.
   Create a pathway to rationalise your technology landscape

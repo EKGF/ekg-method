@@ -40,7 +40,7 @@ the business opportunities & needs:
   bar lower than it could be.
 
 * Continuously improve, new insights occur all the time, have one
-  "living" shared data structure --- the Use Case Tree --- that gets
+  "living" shared data structure --- the [Use Case Tree](/concept/use-case-tree) --- that gets
   continuously updated with the latest insights even while parts
   of that Use Case Tree are already running in production or still
   worked on.
@@ -86,10 +86,10 @@ to production is as small and impact-free as possible.
   in cold water, thereby reducing the resistance to change and enabling a much
   more engaged user community.
 * End users will be able to relate their work directly to the appropriate use cases
-  as they are defined in the Use Case Tree because the Use Case Tree is part of the
-  EKG itself and advanced user interfaces can link to it. It describes the user's
-  domain in their own terms. Direct feedback loops to all relevant stakeholders
-  are therefore possible which yet again promotes collaboration, end user satisfaction,
-  reduces costs and avoids technologists building something that's wrong or will
-  never be used.
+  as they are defined in the [Use Case Tree](/concept/use-case-tree) because the 
+  Use Case Tree is part of the EKG itself and advanced user interfaces can link to it. 
+  It describes the user's domain in their own terms. Direct feedback loops to all 
+  relevant stakeholders are therefore possible which yet again promotes collaboration, 
+  end user satisfaction, reduces costs and avoids technologists building something 
+  that's wrong or will never be used.
 

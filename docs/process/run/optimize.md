@@ -7,7 +7,7 @@ hide:
 # Optimize
 
 <!--summary-start-->
-_Structural feedback loops, continuously improve, continuously updating the Use Case Tree._
+_Structural feedback loops, continuously improve, continuously updating the [Use Case Tree](/concept/use-case-tree)._
 <!--summary-end-->
 
 Continuously optimize, as a _Business-as-Usual (BAU)_ activity, all delivered use cases

@@ -8,7 +8,7 @@ hide:
 
 <!--summary-start-->
 _Discover all use cases in the given scope, short-term and long-term, 
-create a “use case tree” that shows a viable, realistic, logical,
+create a “[Use Case Tree](/concept/use-case-tree)” that shows a viable, realistic, logical,
 and successful pathway towards strategic goals.
 This is about “the what” and how it relates to "the why"._
 <!--summary-end-->

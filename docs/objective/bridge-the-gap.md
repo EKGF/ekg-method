@@ -8,7 +8,7 @@ hide:
 # Bridge the traditional gap between Business & Technology
 
 <!--summary-start-->
-_TODO._
+Align business expectations with technology delivery.
 <!--summary-end-->
 
 - Engage with the business, the product owner and get continuous
@@ -24,7 +24,7 @@ _TODO._
   be used for many other use cases such as 
   "Shareholding disclosure"?
 
-- Yes, the customer is always right but the Use Case Tree 
+- Yes, the customer is always right but the [Use Case Tree](/concept/use-case-tree) 
   shows to the customer that there are many other customers
   (or future customers, in and outside the organization even)
   and why it makes sense to prioritize reuse and how that not 
