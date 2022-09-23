@@ -11,10 +11,10 @@ _Create a vision that is shared by all key-stakeholders._
 _This is about “the why” long term._
 <!--summary-end-->
 
-Create a shared vision, where do we think that our organization should be,
+Create a <ins>shared</ins> vision, where do we think that our organization should be,
 three to ten years down the road and how do we leverage our unique data and knowledge to become,
-or stay, a leader in our markets? Translate this to a (long term) business, data and technology
-strategy, identify primary stakeholders and initial scope.
+or stay, a leader in our markets? Translate this to a (long term) integrated business, data
+and technology strategy, identify primary stakeholders and initial scope.
 
 Clarify the potential of knowledge graph for your enterprise and help position it 
 as part of your overall data and technology strategy. 
@@ -27,15 +27,20 @@ leverage the full potential of precisely-defined and fully-connected data.
 
 Conduct interactive workshops with senior stakeholders to explore the 
 realities of becoming a ”data-centric” organization. 
-Concentrate on the key EKG principles of identity, precision and reuse.
+Concentrate on the key [EKG principles](https://principles.ekgf.org/principle/#__tabbed_1_2) 
+of [identity](https://principles.ekgf.org/principle/01-identity/), 
+[precision of meaning](https://principles.ekgf.org/principle/02-meaning/) and reuse.
 Apply state-of-the-art architectural thinking to craft a revised strategy, 
 where knowledge graph takes its place as a key component in the data and technology
 landscape.
 
 ## Audience
 
-The envision phase covers topics that are of interest to representatives 
-of all four capability domains (Business, Data, Technology and Organization)
+The envision-phase covers topics that are of interest to representatives 
+of all four capability domains ([Business](https://maturity.ekgf.org/pillar/#__tabbed_1_1),
+[Data](https://maturity.ekgf.org/pillar/#__tabbed_1_3), 
+[Technology](https://maturity.ekgf.org/pillar/#__tabbed_1_4) and 
+[Organization](https://maturity.ekgf.org/pillar/#__tabbed_1_2))
 but focuses on the benefits for the business as a whole.
 
 - Executive Management (Business-side and CDO, CIO, CTO, CRO, CFO or their directs)
@@ -73,7 +78,7 @@ the Envision phase that serves as input to all subsequent phases.**
   business benefits it could deliver.
 * Assess the impact of EKG, i.e. capturing all knowledge that is 
   currently siloed and captured in all the various systems in a 
-  given scope and eco-system on business data, technology and organization.
+  given scope and ecosystem on business data, technology and organization.
 * Do an initial discovery of the “strategic use cases”---that cannot be 
   realistically done today---and choose the initial focus area giving 
   scope for all subsequent phases.
@@ -82,17 +87,23 @@ the Envision phase that serves as input to all subsequent phases.**
 
 Key Paradigm Changes (in non-technical business terms) such as:
 
-* _Open World_ vs _Closed World_
-* “_Multiple versions of the truth_” vs “_Single version of the truth_”
-* Semantic Technologies
+* [_Open World_](https://principles.ekgf.org/principle/04-open-world/) vs _Closed World_
+    - “_Multiple versions of the truth_” (MVOT) vs [“_Single version of the truth_” (SVOT)](https://en.wikipedia.org/wiki/Single_version_of_the_truth)
+* The key Semantic Technologies and their impact
 * How to apply best practices from the software development world to
-  the data world (data engineers, knowledge graph engineers being the
-  new software i.e. use case developers) such as _DevOps_, _DataOps_, 
-  _SemOps_, _EKGOps_, _Continuous Improvement_, _Continuous Intergration_, 
-  _Continuous Delivery_, _Continuous Deployment_, _Infrastructure as Code (IaC)_
-* Agile and how this applies to one EKG serving many agendas
-* Reusable Data Components / Reusable Business Components
-* “Delusions” in Data Management
+  the data world such as 
+  [_TDD/BDD_](https://www.pluralsight.com/blog/software-development/tdd-vs-bdd), 
+  _DevOps_ / [_GitOps_](https://www.atlassian.com/git/tutorials/gitops) (becoming: _DataOps_ / _SemOps_ / _EKGOps_),
+  [_Continuous Improvement_](https://www.planview.com/resources/guide/lean-principles-101/what-is-continuous-improvement/),
+  [_Continuous Integration_](https://www.atlassian.com/continuous-delivery/continuous-integration), 
+  [_Continuous Delivery_](https://continuousdelivery.com/), 
+  [_Continuous Deployment_](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment),
+  [_Infrastructure as Code (IaC)_](`https://en.wikipedia.org/wiki/Infrastructure_as_code`)
+* Agile and how this applies to one single EKG serving many agendas and how company culture and current practices may prohibit innovation
+* _Composability_, [_Composable Business_](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable), _Packaged business capabilities (PBCs)_, 
+  _Reusable Data Components_, _Reusable Business Components_ and how that relates to the _[Use Case Tree](/concept/use-case-tree)_
+* Various “Delusions” in Data Management
+* The economics of EKG
 * Breaking the technical, legal, organizational and cultural silos
 
 ### Key Success Factors & Lessons Learned
@@ -100,25 +111,27 @@ Key Paradigm Changes (in non-technical business terms) such as:
 * Learning from mistakes, what to do differently, how to set up for success
 * Why a traditional _Proof-of-Concept (PoC)_ does not work with EKG
 
-
 ### Method Summary
 
 * Explain (in business terms) what “the method” is, why it is essential 
   to have an agreed, standardized and measurable approach. 
   How can one EKG serve all agendas across the enterprise successfully?
-* Use Case Trees (Summary)
+* [Use Case Tree](/concept/use-case-tree)s (Summary)
 * Maturity Model (Summary)
     * EKG Maturity Levels in the Business realm
+    * EKG Maturity Levels in the Organization (in general) realm
     * EKG Maturity Levels in the Data realm
     * EKG Maturity Levels in the Tech realm
-    * EKG Maturity Levels in the Organization (in general) realm
-* DataOps (Summary)
+* EKGOps/DataOps (Summary)
 
 ### Shared Strategy 
 
 Development of a “shared strategy” where all key stakeholders agree to 
 align on a shared vision and how to get there. 
-One could say---in the context of EKG---that Business Strategy
-should drive Data Strategy which in turn should drive Tech and Org Strategies.
+One could say---in the context of EKG---that [Business Strategy](../../objective/align-with-business-strategy.md)
+should drive Data Strategy which in turn should drive Tech and Org Strategies[^see-bs].
 The Shared Strategy document is the final tangible deliverable of 
 the Envision phase that serves as input to all subsequent phases.
+
+
+[^see-bs]: See ["Align with Business Strategy"](../../objective/align-with-business-strategy.md) 

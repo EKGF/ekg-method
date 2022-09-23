@@ -20,12 +20,12 @@ to be able to:
 5. To create business agility by creating reusable business components
 6. To capture intellectual property and manage your business value
 
-The key _artifact_ in the development of an EKG is "the Use Case Tree":
+The key _artifact_ in the development of an EKG is "the [Use Case Tree](/concept/use-case-tree)":
 
-- The Use Case Tree provides a 
+- The [Use Case Tree](/concept/use-case-tree) provides a 
   **long term data strategy and business capability plan**.
 
-- The Use Case Tree is the
+- The [Use Case Tree](/concept/use-case-tree) is the
   **high-level requirements overview, scoping and dependency model**.
   <br/>It gives a _mile wide, inch deep_ view of business capabilities.
 
@@ -40,7 +40,7 @@ by technology, different groups of people, often across many departments, will g
 have their own way of looking at it.
 There is no shared language, not one single artifact that they can 
 all talk to and reason about.
-The Use Case Tree is that single artifact. 
+The [Use Case Tree](/concept/use-case-tree) is that single artifact. 
 It provides one single construct, owned by _the business_, and 
 primarily driven by business strategy, that every group of people, 
 every specialist, can relate their way of thinking to. 
@@ -48,13 +48,13 @@ This includes not only data and technology specialists but also project
 managers, financial managers, security and compliance officers,
 operations engineers and so forth. 
 All their models and different ways of looking at a given capability 
-can be plugged into the Use Case Tree as different views.
+can be plugged into the [Use Case Tree](/concept/use-case-tree) as different views.
 
 Everything we ever do in an organization, especially in the data and
 technology pillars of that enterprise, should be related to at least
-one use case in the organization's Use Case Tree.
+one use case in the organization's [Use Case Tree](/concept/use-case-tree).
 
-The Use Case Tree is a breakdown of strategic planned-for 
+The [Use Case Tree](/concept/use-case-tree) is a breakdown of strategic planned-for 
 capabilities into smaller building blocks, all called use cases.
 Strategic long term use cases such as 
 _[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)_ 

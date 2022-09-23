@@ -39,35 +39,35 @@ hide:
 
     <div class="grid cards" markdown>
     
-    - :material-cached:{ .lg } __Envision__
+    - :material-cached:{ .lg } __[Envision](envision)__
     
         {% include-markdown "envision.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](envision.md)
+        [:octicons-arrow-right-24: Learn more](envision)
     
-    - :material-cached:{ .lg } __Discover__
+    - :material-cached:{ .lg } __[Discover](discover)__
     
         {% include-markdown "discover.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](discover.md)
+        [:octicons-arrow-right-24: Learn more](discover)
     
-    - :material-cached:{ .lg } __Assess__
+    - :material-cached:{ .lg } __[Assess](assess)__
     
         {% include-markdown "assess.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](assess.md)
+        [:octicons-arrow-right-24: Learn more](assess)
     
-    - :material-cached:{ .lg } __Train__
+    - :material-cached:{ .lg } __[Train](train)__
     
         {% include-markdown "train.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](train.md)
+        [:octicons-arrow-right-24: Learn more](train)
     
-    - :material-cached:{ .lg } __Chart__
+    - :material-cached:{ .lg } __[Chart](chart)__
     
         {% include-markdown "chart.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](chart.md)
+        [:octicons-arrow-right-24: Learn more](chart)
     
     </div>
 

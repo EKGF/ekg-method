@@ -11,7 +11,7 @@ hide:
 _Enabling a whole new league of use cases._
 <!--summary-end-->
 
-The Use Case Tree **Provides a "map"[^1] of all knowledge, data and 
+The [Use Case Tree](/concept/use-case-tree) **Provides a "map"[^1] of all knowledge, data and 
 functionality** that the EKG provides to the enterprise.
 Enabling a whole new league of use cases.
 

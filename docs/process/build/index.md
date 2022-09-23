@@ -11,7 +11,7 @@ hide:
     **<!--summary-build-start-->
     _"Building" an EKG-based use case involves 
     everything from detailed requirements gathering---structured 
-    around the Use Case Tree---all the way up to delivery of
+    around the [Use Case Tree](/concept/use-case-tree)---all the way up to delivery of
     components for your production EKG-platform._
     <!--summary-build-end-->**
  

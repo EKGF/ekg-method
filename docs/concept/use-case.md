@@ -11,13 +11,13 @@
     the organization at any point in time.
     We want to capture all these ideas (and as much of the knowledge behind
     those ideas) and create one data structure for it that
-    we call "the Use Case Tree" because it looks like an inverted tree: it's
+    we call "the [Use Case Tree](/concept/use-case-tree)" because it looks like an inverted tree: it's
     something that starts on a whiteboard, showing a break-down of a
     component of the business into smaller components.
   
     Anyone should be able to contribute ideas that may or may not 
     end up as fully implemented use cases to end up in the organization's 
-    Use Case Tree, whether they are viable or not.
+    [Use Case Tree](/concept/use-case-tree), whether they are viable or not.
     If an idea for a given use case is rejected then show the rationale
     for that to everyone so that everyone can learn, and we're not wasting
     anyones time on that idea again. 
@@ -35,7 +35,7 @@
         * (without becoming too technical or detailed, we want everyone to be able to chip in)
     * [Assess](../process/plan/assess.md) all our organization's capabalities,
       as specified in the 
-      [Maturity Model for the Enterprise Knowledge Graph (EKG/MM)](https://maturity.ekgf.org) 
+      [Maturity Model for the Enterprise Knowledge Graph (EKG/Maturity)](https://maturity.ekgf.org) 
       related to our own EKG and how they match with our ambitions to implement our 
       strategic use cases?
     * How does our "technical debt" fit in? (identify the functionality of our 

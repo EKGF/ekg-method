@@ -9,22 +9,20 @@ hide:
 <!--summary-start-->
 _Assess where your current organization stands in terms of the non-functional requirements and
 where it should be to be able to support the use cases as they come out of the [Discover phase](discover).
-These assessments are based on the [EKG/MM](../../vocab/maturity-model).
+These assessments are based on the [Maturity Model for the EKG (EKG/Maturity)](https://maturity.ekgf.org).
 This is partly about "the how" and "can we?"._
 <!--summary-end-->
 
 Perform an assessment of the current and desired state of maturity of the organization
 as it relates to the selected scope of use cases in terms of business, data, technology and
-other organizational maturity topics, based on the Maturity Model for the Enterprise
-Knowledge Graph (EKG/MM).
+other organizational maturity topics, based on [EKG/Maturity](https://maturity.ekgf.org).
 This is primarily about the ”non-functional requirements”, ensuring successful
 implementations of enterprise wide use cases.
 
 The Assess phase is a formal evaluation of the readiness of the organization
 to leverage the potential of the Enterprise Knowledge Graph.
 
-The evaluation--–based on the 
-[Maturity Model for the Enterprise Knowledge Graph (EKG/MM)](../../vocab/maturity-model)---considers
+The evaluation--–based on [EKG/Maturity)](https://maturity.ekgf.org)---considers
 four core dimensions---or capability domains so you will---of your environment
 (business, data, technology and organizational capabilities) 
 to provide you with an EKG that matches your business objectives.
@@ -34,15 +32,16 @@ a sustainable and realistic EKG implementation.
 
 ## Approach
 
-The key to the Assess phase is a detailed readiness evaluation to understand 
+The key to the Assess phase is a detailed _readiness evaluation_ to understand 
 interdependencies and limitations.
 
-Use the EKG/MM as a framework for creating a baseline assessment and as a 
-basis for continuous evaluation and continuous improvement.
+Use the [Maturity Model for the EKG (EKG/Maturity)](https://maturity.ekgf.org) as 
+a framework for creating a baseline assessment and as a basis for 
+_continuous evaluation_ and _continuous improvement_.
 
 Conduct interviews with your key personnel and review key documents for
 both completeness and repeatability. 
-The EKG/MM approach results in a scorecard of capabilities across linked processes.
+The EKG/Maturity approach results in a scorecard of capabilities across linked processes.
 
 ## Outputs
 

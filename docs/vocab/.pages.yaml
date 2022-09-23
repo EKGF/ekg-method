@@ -1,8 +1,8 @@
 title: Vocabulary
 nav:
   - index.md
-  - EKG: ekg.md
-  - EKG/MM: maturity-model.md
   - CoE: coe.md
+  - EKG: ekg.md
+  - EKG/Maturity: maturity-model.md
   - Positive Learning: positive-learning.md
   - ...

@@ -3,7 +3,7 @@
 === "Business & Management Audience"
 
     A Story --- in the context of a [Use Case](usecase) in the 
-    Use Case Tree --- defines a business requirement.                       
+    [Use Case Tree](/concept/use-case-tree) --- defines a business requirement.                       
                                                                                                                             
     A business user could specify a requirement as follows:                                                                 
                                                                                                                             
