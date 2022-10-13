@@ -13,8 +13,8 @@
     of functionality, not many).
     <!--summary-run-end-->***
     
-    Once the EKG/Platform has been [deployed](deploy) in production, it needs to be 
-    supported and maintained. 
+    Once the [EKG/Platform](/vocab/ekg-platform/) has been [deployed](deploy) in 
+    production, it needs to be supported and maintained. 
     Or [Operated](operate), [Measured](measure) and [Optimized](optimize) so you will.
     
     We recommend to allocate funding for these services, whether they are performed 

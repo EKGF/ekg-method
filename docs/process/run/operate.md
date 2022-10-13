@@ -7,14 +7,14 @@ hide:
 # Operate
 
 <!--summary-start-->
-_Operating production-level, distributed and federated EKG/Platform that serves
+_Operating production-level, distributed and federated [EKG/Platform](/vocab/ekg-platform/) that serves
 any wildly different use cases across the enterprise, guaranteeing business continuity._
 <!--summary-end-->
 
 What’s new for most organizations is to have one platform supporting many wildly different and
 potentially complex transactional use cases used across many parts of the business. 
 This is different from managing a siloed landscape of more or less independent systems.
-Operating a production-level, distributed and federated EKG/Platform that serves many 
+Operating a production-level, distributed and federated [EKG/Platform](/vocab/ekg-platform/) that serves many 
 wildly different use cases across the enterprise where stakeholders do not necessarily 
 even know each other---let alone have their priorities aligned---is not something that 
 most organizations are used to. 
@@ -49,7 +49,7 @@ operating models and practices needed for distributed EKG deployment.
 
 ## Outputs
 
-- An EKG/Platform that complies with agreed levels of service and support
+- An [EKG/Platform](/vocab/ekg-platform/) that complies with agreed levels of service and support
 - Disaster recovery and business continuity testing for the EKG 
 - Operational Processes for fast and effective issue resolution
 
