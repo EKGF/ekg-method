@@ -93,6 +93,73 @@
 
     ![Context](../diagrams/out/use-case-life-cycle.svg#darkable)
 
+=== "Plan/Build/Run"
+
+    The EKG/Method defines a process that consists of three phases where each phase has 
+    well-defined "steps":
+    [Plan](../process/plan/index.md), 
+    [Build](../process/build/index.md) and 
+    [Run](../process/run/index.md).
+    The common artifact across each of these phases---and most of their steps---is the Use Case Tree
+    where certain information is relevant to that phase for each of its Use Cases:
+
+    <div class="grid cards" markdown>
+    
+    - :material-floor-plan:{ .lg } __Plan Phase__
+
+        -----    
+
+        1. Name + Business Description
+        2. Desired Business Outcomes
+            - Definition of Success
+        3. [Personas](../concept/persona.md), [Concepts & Terms](../concept/concept.md)
+            - Add examples i.e. input for test scenarios
+        4. [Stories](../concept/story.md) & [Workflows](../concept/workflow.md)
+            - High level but agreed, metrics based estimates
+        5. Tree Structure
+            - Break-down into---existing or non-existing---sub-use cases
+              (some of which are reusable and some of which are specific to the parent use case)
+            - Priority is to look up in the tree, not down, and define the longer term “strategic use cases” as well
+
+        [:octicons-arrow-right-24: Learn more about the _Discover Step_](../../process/plan/discover/)
+       
+    - :construction_site:{ .lg } __Build Phase__
+
+        -----
+
+        6. Datasets
+            - identify existing datasets or develop new
+              [_Self-describing datasets_ (SDDs)](https://principles.ekgf.org/vocab/sdd)
+        7. Ontologies
+            - map the given [Concepts](../concept/concept.md) to the right Ontologies
+        8. Test scenarios
+            - define test-datasets and test-scenarios for each [Story](../concept/story.md)
+            - provision continuous integration pipelines for continuous automated testing
+            - ensure 100% test coverage across all stories
+        9. Story-implementation details
+            - all optional -- e.g. SPARQL, SHACL, SQL, workflow, audit,
+              history, provenance, entitlements, caching policies, etc
+        10. Metrics
+            - function point or story point-like metrics
+            - lead / cycle time metrics
+            - predict cost & delivery
+            - based on metrics of previous use cases
+
+        [:octicons-arrow-right-24: Learn more](../process/build/index.md)
+
+    - :material-run:{ .lg } __Run Phase__
+
+        -----
+
+        Additional detail added after deployment.
+
+        [:octicons-arrow-right-24: Learn more](../process/run/index.md)
+    
+    </div>
+    
+
+
+
 === "Similar Concepts"
 
      * Packaged Business Capabilities

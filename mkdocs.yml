@@ -92,14 +92,14 @@ extra_javascript:
   - "javascript/refresh_on_toggle_dark_light.js"
   - "https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"
 plugins:
+  - include-markdown
+  - git-revision-date
   - search:
       lang:
         - en
   - exclude-search:
       exclude:
         - 'fragment/*'
-  - include-markdown
-  - git-revision-date
   - build_plantuml:
       render: "server" # or "local" for local rendering
       bin_path: "/usr/local/bin/plantuml" # ignored when render: server
@@ -127,12 +127,12 @@ plugins:
       regex:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
-  - macros:
-      module_name: 'docs/main'
-  - kroki:
-      ServerURL: https://kroki.io/
-      DownloadImages: false
-      DownloadDir: docs/diagrams/out
+#  - macros:
+#      module_name: 'docs/main'
+#  - kroki:
+#      ServerURL: https://kroki.io/
+#      DownloadImages: false
+#      DownloadDir: docs/diagrams/out
 #  - with-pdf:
 #      author: The Team
 #      copyright: Copyright &copy; 2018 - 2022 agnos.ai UK Ltd & Stealth Software Technologies, Inc --- Confidential
@@ -171,11 +171,11 @@ markdown_extensions:
   - toc:
       permalink: true
   - meta
-  - mdx_spanner
+# - mdx_spanner
   - def_list
   - abbr
   - admonition
-  - mdx_emdash
+# - mdx_emdash
   - attr_list
   - footnotes
   - tables
