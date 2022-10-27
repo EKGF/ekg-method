@@ -2,267 +2,272 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://method.ekgf.org/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/concept/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/dataset/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/ontology/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/outcome/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/persona/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/story/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/use-case-tree/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/use-case/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/concept/workflow/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/intro/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/align-with-business-strategy/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/avoid-boiling-the-ocean/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/avoid-disruption/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/bridge-the-gap/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/capture-knowledge/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/composable-business/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/enable-reuse/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/increase-quality/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/interoperability/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/know-what-the-business-wants/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/manage-expectations/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/modularity/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/objective/strategic-usecases/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/other/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/other/faq/</loc>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/allocate/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/deliver/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/design/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/implement/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/test/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/build/verify/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/assess/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/chart/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/discover/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/envision/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/plan/train/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/deploy/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/measure/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/operate/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/optimize/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/coe/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/ekg-id/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/ekg-iri/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/ekg-platform/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/ekg/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/maturity-model/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/positive-learning/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://method.ekgf.org/vocab/silo/</loc>
-         <lastmod>2022-10-13</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
