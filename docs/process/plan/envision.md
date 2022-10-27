@@ -7,7 +7,7 @@ hide:
 # Envision
 
 <!--summary-start-->
-_Create a vision that is shared by all key-stakeholders._
+_Create a vision for the EKG that is shared by all key-stakeholders._
 _This is about “the why” long term._
 <!--summary-end-->
 
@@ -29,7 +29,8 @@ Conduct interactive workshops with senior stakeholders to explore the
 realities of becoming a ”data-centric” organization. 
 Concentrate on the key [EKG principles](https://principles.ekgf.org/principle/#__tabbed_1_2) 
 of [identity](https://principles.ekgf.org/principle/01-identity/), 
-[precision of meaning](https://principles.ekgf.org/principle/02-meaning/) and reuse.
+[precision of meaning](https://principles.ekgf.org/principle/02-meaning/), reuse and
+scalability.
 Apply state-of-the-art architectural thinking to craft a revised strategy, 
 where knowledge graph takes its place as a key component in the data and technology
 landscape.
