@@ -11,6 +11,8 @@ state Plan {
     Assess -down-> Chart
 
     Envision: - a shared strategy
+    Envision: - EKG envisioning
+    Envision: - EKG as a business enabler
     
     Discover: - strategic use cases
     Discover: - initial use case tree
@@ -20,6 +22,7 @@ state Plan {
     Assess: - current state
     Assess: - required next state
     Assess: - maturity (buss/org/data/tech)
+    Assess: - scalability assessment
 
     Chart: - viable roadmap
     Chart: - business case
