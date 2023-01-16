@@ -14,7 +14,7 @@ This is partly about "the how" and "can we?"._
 <!--summary-end-->
 
 Perform an assessment of the current and desired state of maturity of the organization
-as it relates to the selected scope of use cases in terms of business, data, technology and
+as it relates to the selected scope of the use case tree in terms of business, data, technology and
 other organizational maturity topics, based on [EKG/Maturity](https://maturity.ekgf.org).
 This is primarily about the ”non-functional requirements”, ensuring successful
 implementations of enterprise wide use cases.
@@ -22,18 +22,33 @@ implementations of enterprise wide use cases.
 The Assess phase is a formal evaluation of the readiness of the organization
 to leverage the potential of the Enterprise Knowledge Graph.
 
-The evaluation--–based on [EKG/Maturity)](https://maturity.ekgf.org)---considers
-four core dimensions---or capability domains so you will---of your environment
-(business, data, technology and organizational capabilities) 
+The evaluation---based on [EKG/Maturity)](https://maturity.ekgf.org)---considers
+four capability domains of your enterprise (business, data, technology and organizational capabilities) 
 to provide you with an EKG that matches your business objectives.
-Concentrate on producing a gap analysis that addresses your 
-requirements---i.e. the _non-functional requirements (NFRs)_---in the context of
+
+Given the use cases that you described in your use case tree, in the previous step
+of the method (see Discover), we now need to be able to assess whether your enterprise
+has mature capabilities to deliver these use cases and deliver on the specified outcomes.
+The characteristics of these outcomes are described in the "dimensions" of each of the
+capabilities that are documented in the EKG/Maturity model.
+
+At a very high level, we've defined "[Purposeful Business Themes](https://principles.ekgf.org/theme/)"
+where each theme is a collection of desired "outcomes".
+Each of these outcomes can be mapped to the Dimensions that we defined per Capability
+in the Maturity Model.
+
+For instance, you have identified "KYC Use Case", a highly regulatory use case in the financial industry,
+what's the coverage level of ontologies, so that we can deliver on the outcomes defined as part of the business purpose 
+"[Manage Risk & Compliance](https://principles.ekgf.org/theme/manage-risk-and-compliance/)".
+
+Concentrate on producing a gap analysis that addresses your requirements---i.e. 
+when use of controls is a _non-functional requirement (NFR)_---in the context of
 a sustainable and realistic EKG implementation.
 
 ## Approach
 
 The key to the Assess phase is a detailed _readiness evaluation_ to understand 
-interdependencies and limitations.
+limitations and interdependencies across the enterprise (by line of business and by key shared activities).
 
 Use the [Maturity Model for the EKG (EKG/Maturity)](https://maturity.ekgf.org) as 
 a framework for creating a baseline assessment and as a basis for 
@@ -45,7 +60,10 @@ The EKG/Maturity approach results in a scorecard of capabilities across linked p
 
 ## Outputs
 
-- EKG maturity assessment as input into building business cases and for 
+- Assessment of business enablers as input to a business case.
+    - The business case will be worked on in the next step "Chart".
+    - 
+- into building a business case and for 
   obtaining commitment from key stakeholders.
 - Explicit gap analysis to clarify deficiencies and define the scope of work
   required to deliver against EKG requirements.
