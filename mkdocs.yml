@@ -121,7 +121,7 @@ plugins:
       theme_light: "light.puml"
       theme_dark: "dark.puml"
   - awesome-pages:
-      filename: '.pages.yaml'
+      filename: .pages.yaml
       collapse_single_pages: false
       strict: true
   - exclude:
