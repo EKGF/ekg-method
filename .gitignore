@@ -1,4 +1,9 @@
+.cache/
+.venv/
+venv/
+__pypackages__/
 site/
+poetry.lock
 .DS_Store
 .texpadtmp
 *.aux
@@ -53,3 +58,4 @@ out/
 *.fdb_latexmk
 *.xdy
 .venv/
+.pdm-python
