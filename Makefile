@@ -52,7 +52,7 @@ PAT_MKDOCS_INSIDERS := $(shell cat $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt 2>/d
 ifneq ($(PAT_MKDOCS_INSIDERS),)
 MKDOCS_CONFIG_FILE := mkdocs.yml
 else
-$(info You don't have the $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt file so we are using the open source version of MkDocs)
+$(info You do not have the $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt file so we are using the open source version of MkDocs)
 MKDOCS_CONFIG_FILE := mkdocs.outsiders.yml
 endif
 
@@ -74,7 +74,8 @@ info:
 clean:
 	@echo Cleaning
 	@rm -rf site 2>/dev/null || true
-	@rm -rf .venv/lib/python*/site-packages 2>/dev/null || true
+	@rm -rf .venv 2>/dev/null || true
+	@rm -rf *.lock 2>/dev/null || true
 
 .PHONY: install
 install: docs-install
