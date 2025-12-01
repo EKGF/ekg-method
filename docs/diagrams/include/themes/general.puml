@@ -1,10 +1,11 @@
 !define BORDER_THICKNESS 1
 
+!option handwritten false
+skinparam handwritten false
 skinparam Padding 4
 skinparam RoundCorner 8
 skinparam Shadowing false
 skinparam HyperlinkUnderline false
-!option handwritten false
 
 skinparam Default {
   FontName "Roboto"
