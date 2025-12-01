@@ -158,6 +158,14 @@ docs-build-clean: docs-ensure-venv
 docs-serve: docs-ensure-venv
 	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
 
+.PHONY: docs-diagrams-clean
+docs-diagrams-clean:
+	@echo "Cleaning generated PlantUML diagrams"
+	@rm -rf docs/diagrams/out 2>/dev/null || true
+
+.PHONY: docs-serve-fresh
+docs-serve-fresh: docs-diagrams-clean docs-serve
+
 .PHONY: docs-serve-fast
 docs-serve-fast: docs-ensure-venv
 	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
