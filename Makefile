@@ -34,15 +34,8 @@ endif
 # on windows in a different way. Here we assume you did that yourself in
 # the local project's virtualenv directory (./.venv).
 #
-ifeq ($(OS),Windows_NT)
-VENV_POETRY := $(VIRTUAL_ENV)/bin/poetry
-VENV_MKDOCS := $(VIRTUAL_ENV)/bin/mkdocs
 VENV_PYTHON := $(VIRTUAL_ENV)/bin/python3
-else # On mac and linux we have asdf:
-VENV_POETRY := $(shell asdf where poetry)/bin/poetry
-VENV_MKDOCS := $(VIRTUAL_ENV)/bin/mkdocs
-VENV_PYTHON := $(VIRTUAL_ENV)/bin/python3
-endif
+UV := uv
 
 PIPENV_DEFAULT_PYTHON_VERSION := 3.11
 PIPENV_VENV_IN_PROJECT := 1
@@ -61,7 +54,7 @@ info:
 	@echo "MkDocs config file: ${MKDOCS_CONFIG_FILE}"
 	@echo "System Python     : ${SYSTEM_PYTHON} version: $$($(SYSTEM_PYTHON) --version)" 
 	@echo "Virtual Env Python: ${VENV_PYTHON} version: $$($(VENV_PYTHON) --version)"
-	@echo "Python poetry     : ${VENV_POETRY}"
+	@echo "uv                : $$($(UV) --version)"
 	@echo "install target    : ${INSTALL_TARGET}"
 
 .PHONY: clean
@@ -92,7 +85,7 @@ docs-install-brew-packages:
 	@brew upgrade zlib 2>/dev/null || brew install zlib
 	@brew upgrade plantuml 2>/dev/null || brew install plantuml
 	@brew upgrade graphviz 2>/dev/null || brew install graphviz
-	@brew upgrade pdm 2>/dev/null || brew install pdm
+	@brew upgrade uv 2>/dev/null || brew install uv
 
 .PHONY: docs-install-brew
 ifeq ($(YOUR_OS), Linux)
@@ -130,77 +123,60 @@ docs-install-asdf: docs-install-brew
 	@asdf plugin add python 2>/dev/null || true
 	@asdf plugin add nodejs 2>/dev/null || true
 	@asdf plugin add java 2>/dev/null || true
-	@asdf plugin add poetry https://github.com/asdf-community/asdf-poetry.git 2>/dev/null || true
 
 .PHONY: docs-install-asdf-packages
 docs-install-asdf-packages: docs-install-asdf
 	@echo "Install packages via asdf:"
 	asdf install
 	
-# poetry gets installed via asdf
-$(VENV_POETRY): docs-install-asdf-packages
-	@echo $@
-
 .PHONY: docs-install-python-packages
 #ifneq ($(wildcard /home/runner/.*),)
 #docs-install-python-packages: docs-install-asdf
 #else
-docs-install-python-packages: docs-install-asdf-packages docs-install-standard-python-packages docs-install-special-python-packages
+docs-install-python-packages: docs-install-asdf-packages docs-install-standard-python-packages
 #endif
 
 .PHONY: docs-install-standard-python-packages
-docs-install-standard-python-packages: $(VENV_POETRY)
-	@echo "Install standard python packages via pip:"
-	$(VENV_POETRY) config virtualenvs.in-project true --local
-	$(VENV_POETRY) config experimental.system-git-client true --local
+docs-install-standard-python-packages:
+	@echo "Create venv and install Python packages via uv:"
+	$(UV) venv
+	$(UV) sync
 
-.PHONY: docs-install-special-python-packages
-docs-install-special-python-packages: docs-install-ekglib docs-install-mkdocs-packages
-
-.PHONY: docs-install-ekglib
-docs-install-ekglib: $(VENV_POETRY)
-	@echo "Install ekglib via poetry:"
-	$(VENV_POETRY) add "git+https://github.com/EKGF/ekglib.git"
-
-.PHONY: docs-install-mkdocs-packages
-docs-install-mkdocs-packages: $(VENV_POETRY)
-	@echo "Install mkdocs-material (open source) via poetry:"
-	@$(VENV_POETRY) add mkdocs-material
-
-$(VENV_MKDOCS): docs-install-python-packages
-	@if [ -f $(VENV_MKDOCS) ] ; then echo $(VENV_MKDOCS) exists ; exit 0 ; else echo $(VENV_MKDOCS) does not exist ; exit 1 ; fi
+.PHONY: docs-ensure-venv
+docs-ensure-venv:
+	@$(UV) venv
 
 .PHONY: docs-build
-docs-build: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) build --config-file $(MKDOCS_CONFIG_FILE)
+docs-build: docs-ensure-venv
+	$(UV) run mkdocs build --config-file $(MKDOCS_CONFIG_FILE)
 
 .PHONY: docs-build-clean
-docs-build-clean:
-	$(VENV_MKDOCS) build --config-file $(MKDOCS_CONFIG_FILE) --clean
+docs-build-clean: docs-ensure-venv
+	$(UV) run mkdocs build --config-file $(MKDOCS_CONFIG_FILE) --clean
 
 .PHONY: docs-serve
-docs-serve: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
+docs-serve: docs-ensure-venv
+	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
 
 .PHONY: docs-serve-fast
-docs-serve-fast:
-	$(VENV_MKDOCS) serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
+docs-serve-fast: docs-ensure-venv
+	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
 
 .PHONY: docs-serve-non-strict
-docs-serve-non-strict: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) serve --config-file $(MKDOCS_CONFIG_FILE) --livereload
+docs-serve-non-strict: docs-ensure-venv
+	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload
 
 .PHONY: docs-serve-debug
-docs-serve-debug: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --verbose --strict
+docs-serve-debug: docs-ensure-venv
+	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --verbose --strict
 
 .PHONY: docs-serve-debug-non-strict
-docs-serve-debug-non-strict: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --verbose
+docs-serve-debug-non-strict: docs-ensure-venv
+	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --verbose
 
 .PHONY: docs-deploy
-docs-deploy: $(VENV_MKDOCS)
-	$(VENV_MKDOCS) gh-deploy --config-file $(MKDOCS_CONFIG_FILE) --verbose
+docs-deploy: docs-ensure-venv
+	$(UV) run mkdocs gh-deploy --config-file $(MKDOCS_CONFIG_FILE) --verbose
 
 .PHONY: docs-sync-from
 docs-sync-from: docs-sync-from-ekg-maturity docs-sync-from-ekg-principles
