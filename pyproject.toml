@@ -5,7 +5,7 @@ description = ""
 authors = [
   {name = "Jacobus Geluk", email = "jacobus.geluk@ekgf.org"},
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 readme = "README.md"
 license = { file = "LICENSE" }
 dependencies = [

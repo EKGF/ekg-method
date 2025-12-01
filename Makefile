@@ -11,14 +11,21 @@ else
 ifeq ($(YOUR_OS), Linux)
 	INSTALL_TARGET := install-linux
 	ifneq ($(wildcard /home/runner/.*),) # this means we're running in Github Actions
-		SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
+		PIP := pip
+		SYSTEM_PYTHON := python3
 	else
-		SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
+		PIP := $(shell asdf where python)/bin/python -m pip
+		SYSTEM_PYTHON := $(shell asdf where python)/bin/python3
 	endif
 endif
 ifeq ($(YOUR_OS), Darwin)
 	INSTALL_TARGET := install-macos
-	SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
+	PIP := $(shell asdf where python)/bin/python -m pip
+	ifneq (,$(wildcard /usr/local/bin/python3))
+		SYSTEM_PYTHON := /usr/local/bin/python3
+	else
+		SYSTEM_PYTHON := $(shell asdf where python)/bin/python3
+	endif
 endif
 endif
 
@@ -29,9 +36,8 @@ endif
 #
 VENV_PYTHON := $(VIRTUAL_ENV)/bin/python3
 UV := uv
-PYTHON_VERSION := 3.13
 
-PIPENV_DEFAULT_PYTHON_VERSION := 3.13
+PIPENV_DEFAULT_PYTHON_VERSION := 3.11
 PIPENV_VENV_IN_PROJECT := 1
 
 CURRENT_BRANCH := $(shell git branch --show-current)
@@ -44,7 +50,7 @@ all: docs-build
 info:
 	@echo "Git Branch        : ${CURRENT_BRANCH}"
 	@echo "Operating System  : ${YOUR_OS}"
-	@echo "MkDocs            : $$($(UV) run mkdocs --version)"
+	@echo "MkDocs            : ${VENV_MKDOCS}"
 	@echo "MkDocs config file: ${MKDOCS_CONFIG_FILE}"
 	@echo "System Python     : ${SYSTEM_PYTHON} version: $$($(SYSTEM_PYTHON) --version)" 
 	@echo "Virtual Env Python: ${VENV_PYTHON} version: $$($(VENV_PYTHON) --version)"
@@ -62,11 +68,10 @@ clean:
 install: docs-install
 
 .PHONY: docs-install
-# Run env setup first so info shows correct versions
-docs-install: docs-install-brew docs-install-brew-packages docs-install-python-packages info
+docs-install: info docs-install-brew docs-install-brew-packages docs-install-python-packages
 
 .PHONY: docs-install-github-actions
-docs-install-github-actions: docs-install-brew-packages docs-install-python-packages info
+docs-install-github-actions: info docs-install-brew-packages docs-install-python-packages
 
 .PHONY: docs-install-brew-packages
 docs-install-brew-packages:
@@ -78,6 +83,7 @@ docs-install-brew-packages:
 	@brew upgrade libjpeg 2>/dev/null || brew install libjpeg
 	@brew upgrade libpng 2>/dev/null || brew install libpng
 	@brew upgrade zlib 2>/dev/null || brew install zlib
+	@brew upgrade plantuml 2>/dev/null || brew install plantuml
 	@brew upgrade graphviz 2>/dev/null || brew install graphviz
 	@brew upgrade uv 2>/dev/null || brew install uv
 
@@ -113,10 +119,10 @@ docs-install-brew-macos:
 .PHONY: docs-install-asdf
 docs-install-asdf: docs-install-brew
 	@echo "Install the asdf package manager:"
-	@if ! command -v asdf >/dev/null 2>&1; then \
-		brew upgrade asdf 2>/dev/null || brew install asdf; \
-	fi
+	@brew upgrade asdf 2>/dev/null || brew install asdf
 	@asdf plugin add python 2>/dev/null || true
+	@asdf plugin add nodejs 2>/dev/null || true
+	@asdf plugin add java 2>/dev/null || true
 
 .PHONY: docs-install-asdf-packages
 docs-install-asdf-packages: docs-install-asdf
@@ -131,19 +137,14 @@ docs-install-python-packages: docs-install-asdf-packages docs-install-standard-p
 #endif
 
 .PHONY: docs-install-standard-python-packages
-docs-install-standard-python-packages: docs-ensure-venv
-	@echo "Install Python packages via uv:"
+docs-install-standard-python-packages:
+	@echo "Create venv and install Python packages via uv:"
+	$(UV) venv
 	$(UV) sync
 
 .PHONY: docs-ensure-venv
 docs-ensure-venv:
-	@echo "Ensure venv (Python $(PYTHON_VERSION)) exists and matches version:"
-	@if [ ! -d ".venv" ] || ! ./.venv/bin/python3 --version 2>/dev/null | grep -q "$(PYTHON_VERSION)"; then \
-		echo "Creating/Recreating venv with Python $(PYTHON_VERSION)"; \
-		UV_VENV_CLEAR=1 $(UV) venv --python $(PYTHON_VERSION) --quiet; \
-	else \
-		echo "Existing venv uses correct Python version"; \
-	fi
+	@$(UV) venv
 
 .PHONY: docs-build
 docs-build: docs-ensure-venv
@@ -156,14 +157,6 @@ docs-build-clean: docs-ensure-venv
 .PHONY: docs-serve
 docs-serve: docs-ensure-venv
 	$(UV) run mkdocs serve --config-file $(MKDOCS_CONFIG_FILE) --livereload --strict
-
-.PHONY: docs-diagrams-clean
-docs-diagrams-clean:
-	@echo "Cleaning generated PlantUML diagrams"
-	@rm -rf docs/diagrams/out 2>/dev/null || true
-
-.PHONY: docs-serve-fresh
-docs-serve-fresh: docs-diagrams-clean docs-serve
 
 .PHONY: docs-serve-fast
 docs-serve-fast: docs-ensure-venv
