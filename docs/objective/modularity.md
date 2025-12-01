@@ -1,15 +1,15 @@
 ---
-title: Modularity
+title: "L: Modularity"
 summary: Introducing EKG modularity
 authors:
 - Carlos Tubbax
 date: 2022-05-01
 some_url: https://method.ekgf.org/objective/modularity/
 hide:
-  - toc
+- toc
 ---
 
-# Modularity
+# L: Modularity
 
 <!--summary-start-->
 _Build with modular, reusable components instead of monolithic systems._

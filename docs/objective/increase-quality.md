@@ -1,11 +1,11 @@
 ---
-title: Increase Quality
+title: "I: Increase Quality"
 authors:
 - Jacobus Geluk
 hide:
 - toc
 ---
-# Increase Quality
+# I: Increase Quality
 
 <!--summary-start-->
 _Enforce 100% test coverage based on real business scenarios and requirements._

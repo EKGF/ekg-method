@@ -1,5 +1,5 @@
 ---
-title: Interoperability
+title: "A: Interoperability"
 summary: Interoperability Achieved
 authors:
 - Carlos Tubbax
@@ -7,7 +7,7 @@ date: 2022-06-23
 some_url: https://method.ekgf.org/objective/interoperability/
 ---
 
-# Interoperability Achieved
+# A: Interoperability Achieved
 
 <!--summary-start-->
 _Enable interoperability across the enterprise at high levels of maturity._

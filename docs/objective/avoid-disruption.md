@@ -1,11 +1,11 @@
 ---
-title: Avoid Disruption
+title: "H: Avoid Disruption"
 authors:
 - Jacobus Geluk
 hide:
-  - toc
+- toc
 ---
-# Avoid Disruption
+# H: Avoid Disruption
 
 <!--summary-start-->
 _Make changes gradually with clear interdependencies to avoid disruption across use cases._
