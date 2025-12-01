@@ -143,9 +143,9 @@ plugins:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
   - kroki:
-      ServerURL: https://kroki.io/
-      DownloadImages: false
-      DownloadDir: docs/diagrams/out
+      server_url: https://kroki.io/
+      download_images: false
+      download_dir: docs/diagrams/out
 
 markdown_extensions:
   - footnotes
@@ -179,8 +179,8 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.critic
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       options:
         custom_icons:
           - docs-overrides/.icons
