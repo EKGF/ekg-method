@@ -2,8 +2,8 @@
 
 === "Business & Management Audience"
 
-    A Story --- in the context of a [Use Case](usecase) in the 
-    [Use Case Tree](/concept/use-case-tree) --- defines a business requirement.                       
+    A Story --- in the context of a [Use Case](use-case.md) in the 
+    [Use Case Tree](use-case-tree.md) --- defines a business requirement.                       
                                                                                                                             
     A business user could specify a requirement as follows:                                                                 
                                                                                                                             
@@ -53,7 +53,7 @@
        whether it can still deliver all functionality                                 
                                                                                                                      
     Here's a diagram that illustrates how we can break up a user story in some interesting components that
-    we can link to other data structures in the Knowledge Graph such as a taxonomy of all ["Personas"](persona)
+    we can link to other data structures in the Knowledge Graph such as a taxonomy of all ["Personas"](persona.md)
 
     <figure markdown>
       TODO

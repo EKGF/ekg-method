@@ -10,10 +10,10 @@ that forms the primary identifier of an object[^object] in the EKG.
 According to the first---and most important---of the ten principles 
 of the EKGF, [Principle 1: Identity](https://principles.ekgf.org/principle/01-identity):
 
-_Any EKG/IRI is [universally unique](../ekg-id/#universally-unique), 
-[opaque](../ekg-id/#opaque), [permanent](../ekg-id/#permanent), 
-[non-reassignable](../ekg-id/#non-reassignable) and 
-[web-resolvable](../ekg-id/#web-resolvable)._
+_Any EKG/IRI is [universally unique](ekg-id.md#universally-unique), 
+[opaque](ekg-id.md#opaque), [permanent](ekg-id.md#permanent), 
+[non-reassignable](ekg-id.md#non-reassignable) and 
+[web-resolvable](ekg-id.md#web-resolvable)._
 
 An EKG/IRI consists of a locator-part and an identifier-part: `[locator][identifier]`.
 Where the `[identifier]` is an [EKG/ID](ekg-id.md).

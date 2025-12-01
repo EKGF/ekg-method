@@ -14,11 +14,11 @@ Allocate resources, organize a team and start creating a "Center of Excellence f
 
 Building an EKG falls apart into two major types of development work-streams:
 
-1. The [EKG/Platform](/vocab/ekg-platform/)
+1. The [EKG/Platform](../../vocab/ekg-platform.md)
 2. Any of the EKG use cases<br />
    EKG Use Cases – reusable EKG components that can be seen as “apps” or “systems” or “projects” – we call
    them use cases – can only be delivered if there is at least a minimal form of an 
-   [EKG/Platform](/vocab/ekg-platform/) in place.
+   [EKG/Platform](../../vocab/ekg-platform.md) in place.
    One EKG/Platform---either in distributed form or not---can serve an unlimited number 
    of EKG Use Cases across an unlimited number of business areas and user groups, 
    serving all the various needs, priorities, and agendas of all at the same time.

@@ -24,7 +24,7 @@ Align business expectations with technology delivery.
   be used for many other use cases such as 
   "Shareholding disclosure"?
 
-- Yes, the customer is always right but the [Use Case Tree](/concept/use-case-tree) 
+- Yes, the customer is always right but the [Use Case Tree](../concept/use-case-tree.md) 
   shows to the customer that there are many other customers
   (or future customers, in and outside the organization even)
   and why it makes sense to prioritize reuse and how that not 

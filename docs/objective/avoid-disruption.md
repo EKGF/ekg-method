@@ -33,5 +33,5 @@ So, for instance, when some sub-use case of a high-level use case is
 also used in another high-level use case then a change that serves
 the needs of one could potentially also affect the other and its
 users.
-That's why we need the [Use Case Tree](/concept/use-case-tree), to allow us to avoid any disruption
+That's why we need the [Use Case Tree](../concept/use-case-tree.md), to allow us to avoid any disruption
 across the board.

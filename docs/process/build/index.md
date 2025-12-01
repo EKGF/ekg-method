@@ -11,7 +11,7 @@ hide:
     **<!--summary-build-start-->
     _"Building" an EKG-based use case involves 
     everything from detailed requirements gathering---structured 
-    around the [Use Case Tree](/concept/use-case-tree)---all the way up to delivery of
+    around the [Use Case Tree](../../concept/use-case-tree.md)---all the way up to delivery of
     components for your production EKG-platform._
     <!--summary-build-end-->**
  
@@ -72,25 +72,25 @@ hide:
 === "Inputs"
 
     To set up for success, it is essential that the build phase starts with 
-    the following artifacts and results that are created during the [plan phase](../plan)
+    the following artifacts and results that are created during the [plan phase](../plan/index.md)
     are input for the build phase:
 
-    - **From [Envision](../plan/envision):** A shared vision and strategy, 
+    - **From [Envision](../plan/envision.md):** A shared vision and strategy, 
       an agreed overall scope and direction, all stakeholders are identified 
       and are supporting the strategy.
-    - **From [Discover](../plan/discover):** The UCT, a broad-stroke overview
+    - **From [Discover](../plan/discover.md):** The UCT, a broad-stroke overview
       of all use cases in the agreed scope with agreed names and
       "Business Outcomes" plus abstract business descriptions of functional
       requirements. (Details of the UCT to be determined during the build phase).
-    - **From [Assess](../plan/assess):** A light assessment of the various 
+    - **From [Assess](../plan/assess.md):** A light assessment of the various 
       non-functional requirements and levels of maturity in the areas of 
       the organization that the EKG and the EKG team would depend on plus 
       a plan as to how to bridge gaps.
-    - **From [Train](../plan/train):** Depending on the size of the 
+    - **From [Train](../plan/train.md):** Depending on the size of the 
       selected use cases and their scope, everyone involved should have
       gone through some light basic training where the various new concepts 
       around EKG have been explained, especially the members of the initial team.
-    - **From [Chart](../plan/chart):** An agreed, supported and funded project 
+    - **From [Chart](../plan/chart.md):** An agreed, supported and funded project 
       plan. With a well-defined _definition of done (DoD)_ or a definition 
       of what a successful delivery of the selected use cases means,
       ideally around agreed business outcomes.
@@ -106,7 +106,7 @@ hide:
     3. An EKG requires internal ownership and a team that understands
        the many new paradigms that are involved.
         - Creating a solid team---let's call it the [Center of Excellence (CoE)
-          for the EKG](../../vocab/coe)---is essential.
+          for the EKG](../../vocab/coe.md)---is essential.
         - It is not the technology that holds us back---the technology works---it
           is the internal organization’s readiness and level of maturity in a
           number of areas that require focus.
@@ -115,6 +115,6 @@ hide:
        all areas, from strategy and idea inception to capturing the right 
        business outcomes and requirements all the way to delivering a 
        use case in production and supporting it during its life cycle.
-    6. Any investment in a properly executed [plan phase](../plan) will 
+    6. Any investment in a properly executed [plan phase](../plan/index.md) will 
        drastically increase the likelihood of successful delivery.
     

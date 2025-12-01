@@ -11,5 +11,5 @@ hide:
 _TODO: Summary_
 <!--summary-end-->
 
-The [Use Case Tree](/concept/use-case-tree) is a foundational mechanism to create an ecosystem of 
+The [Use Case Tree](../concept/use-case-tree.md) is a foundational mechanism to create an ecosystem of 
 reusable components for the EKG.

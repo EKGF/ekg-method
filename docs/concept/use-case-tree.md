@@ -14,7 +14,7 @@ Some notes as input for this article (to still be written):
   (EKG) is “the Use Case Tree” (UCT).
     - The Use Case Tree is the EKG’s equivalent of a long term data strategy and business capability plan.
       - The Use Case Tree is the EKG high level requirements overview, scoping and dependency model.
-        In its initial stages, in the [Plan Phase](/process/plan/), it gives a mile wide, inch deep view 
+        In its initial stages, in the [Plan Phase](../process/plan/index.md), it gives a mile wide, inch deep view 
         of business capabilities.
 - The Use Case Tree is a breakdown of strategic planned-for capabilities into smaller building blocks, all
   called ”use cases”. Strategic long term use cases such as

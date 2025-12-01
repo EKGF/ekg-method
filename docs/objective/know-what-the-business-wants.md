@@ -12,7 +12,7 @@ _Know exactly what the business---the customer or
 product owner---really needs, short-, mid- and long-term._
 <!--summary-end-->
 
-## [Plan Phase](../../process/plan/)
+## [Plan Phase](../process/plan/index.md)
 
 One of the tasks during the planning phase of any new
 initiative---or iteration---is to ["Discover"](../process/plan/discover.md)
@@ -40,7 +40,7 @@ the business opportunities & needs:
   bar lower than it could be.
 
 * Continuously improve, new insights occur all the time, have one
-  "living" shared data structure --- the [Use Case Tree](/concept/use-case-tree) --- that gets
+  "living" shared data structure --- the [Use Case Tree](../concept/use-case-tree.md) --- that gets
   continuously updated with the latest insights even while parts
   of that Use Case Tree are already running in production or still
   worked on.
@@ -51,7 +51,7 @@ the business opportunities & needs:
   --- with the business --- the shortest path to delivering on the
   specified business outcomes.
 
-## [Build Phase](../../process/build/)
+## [Build Phase](../process/build/index.md)
 
 Once a roadmap has been agreed, which is "the contract with the business" 
 i.e. the budget holder or product owner, implementation of the first use
@@ -71,7 +71,7 @@ the business:
   All reporting to the business occurs in the context of
   the agreed roadmap, even after delivery.
 
-## [Run Phase](../../process/run/)
+## [Run Phase](../process/run/index.md)
 
 Ideally, at higher levels of operational maturity, changes get rolled out to
 production continuously and as frequently as possible so that any given update
@@ -86,7 +86,7 @@ to production is as small and impact-free as possible.
   in cold water, thereby reducing the resistance to change and enabling a much
   more engaged user community.
 * End users will be able to relate their work directly to the appropriate use cases
-  as they are defined in the [Use Case Tree](/concept/use-case-tree) because the 
+  as they are defined in the [Use Case Tree](../concept/use-case-tree.md) because the 
   Use Case Tree is part of the EKG itself and advanced user interfaces can link to it. 
   It describes the user's domain in their own terms. Direct feedback loops to all 
   relevant stakeholders are therefore possible which yet again promotes collaboration, 

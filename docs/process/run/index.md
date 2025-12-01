@@ -13,9 +13,9 @@
     of functionality, not many).
     <!--summary-run-end-->***
     
-    Once the [EKG/Platform](/vocab/ekg-platform/) has been [deployed](deploy) in 
+    Once the [EKG/Platform](../../vocab/ekg-platform.md) has been [deployed](deploy.md) in 
     production, it needs to be supported and maintained. 
-    Or [Operated](operate), [Measured](measure) and [Optimized](optimize) so you will.
+    Or [Operated](operate.md), [Measured](measure.md) and [Optimized](optimize.md) so you will.
     
     We recommend to allocate funding for these services, whether they are performed 
     by your CoE or by an external consultancy firm, from _Business-as-Usual (BAU)_

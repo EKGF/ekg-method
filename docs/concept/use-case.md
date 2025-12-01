@@ -11,13 +11,13 @@
     the organization at any point in time.
     We want to capture all these ideas (and as much of the knowledge behind
     those ideas) and create one data structure for it that
-    we call "the [Use Case Tree](/concept/use-case-tree)" because it looks like an inverted tree: it's
+    we call "the [Use Case Tree](use-case-tree.md)" because it looks like an inverted tree: it's
     something that starts on a whiteboard, showing a break-down of a
     component of the business into smaller components.
   
     Anyone should be able to contribute ideas that may or may not 
     end up as fully implemented use cases to end up in the organization's 
-    [Use Case Tree](/concept/use-case-tree), whether they are viable or not.
+    [Use Case Tree](use-case-tree.md), whether they are viable or not.
     If an idea for a given use case is rejected then show the rationale
     for that to everyone so that everyone can learn, and we're not wasting
     anyones time on that idea again. 
@@ -75,7 +75,7 @@
     At a later stage in the life-cycle of the Use Case we add:
 
     - The stories, see [Story](story.md)
-    - The [datasets](dataset) and their ontologies
+    - The datasets and their ontologies
     - The workflows
 
     Specialists of various disciplines in the organization can add their details
@@ -121,7 +121,7 @@
               (some of which are reusable and some of which are specific to the parent use case)
             - Priority is to look up in the tree, not down, and define the longer term “strategic use cases” as well
 
-        [:octicons-arrow-right-24: Learn more about the _Discover Step_](../../process/plan/discover/)
+        [:octicons-arrow-right-24: Learn more about the _Discover Step_](../process/plan/discover.md)
        
     - :construction_site:{ .lg } __Build Phase__
 

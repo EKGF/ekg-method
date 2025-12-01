@@ -102,7 +102,7 @@ Key Paradigm Changes (in non-technical business terms) such as:
   [_Infrastructure as Code (IaC)_](`https://en.wikipedia.org/wiki/Infrastructure_as_code`)
 * Agile and how this applies to one single EKG serving many agendas and how company culture and current practices may prohibit innovation
 * _Composability_, [_Composable Business_](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable), _Packaged business capabilities (PBCs)_, 
-  _Reusable Data Components_, _Reusable Business Components_ and how that relates to the _[Use Case Tree](/concept/use-case-tree)_
+  _Reusable Data Components_, _Reusable Business Components_ and how that relates to the _[Use Case Tree](../../concept/use-case-tree.md)_
 * Various “Delusions” in Data Management
 * The economics of EKG
 * Breaking the technical, legal, organizational and cultural silos
@@ -117,7 +117,7 @@ Key Paradigm Changes (in non-technical business terms) such as:
 * Explain (in business terms) what “the method” is, why it is essential 
   to have an agreed, standardized and measurable approach. 
   How can one EKG serve all agendas across the enterprise successfully?
-* [Use Case Tree](/concept/use-case-tree)s (Summary)
+* [Use Case Tree](../../concept/use-case-tree.md)s (Summary)
 * Maturity Model (Summary)
     * EKG Maturity Levels in the Business realm
     * EKG Maturity Levels in the Organization (in general) realm

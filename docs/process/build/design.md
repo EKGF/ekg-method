@@ -19,7 +19,7 @@ business.
 
 ## Approach
 
-Once the business case has been approved, as it comes out of the [Chart phase](../plan/chart)
+Once the business case has been approved, as it comes out of the [Chart phase](../plan/chart.md)
 an initial team can be created, the scope is clearly defined, and we know what the first
 use case is to start with. 
 First thing to do then is to organize design sessions with that team and go through all the various
@@ -36,7 +36,7 @@ first having a good plan.
 3. Then the translation of that to:
     * Ontology Architecture
     * Technical Architecture
-        - [EKG/Platform](/vocab/ekg-platform/), identification and 
+        - [EKG/Platform](../../vocab/ekg-platform.md), identification and 
           functional description and requirements of all the various 
           platform services needed.
         - A design and architecture for the ”DataOps Environment” 

@@ -33,7 +33,7 @@ hide:
     what the longer-term vision behind it is, agree on that vision, whereby the first use cases need to be
     very convincing and need to be delivered successfully.
     
-    That's what this method is for. See also all other [objectives](../../objective).
+    That's what this method is for. See also all other [objectives](../../objective/index.md).
 
 === "Steps"
 
