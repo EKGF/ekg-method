@@ -29,6 +29,7 @@ endif
 #
 VENV_PYTHON := $(VIRTUAL_ENV)/bin/python3
 UV := uv
+PYTHON_VERSION := 3.13
 
 PIPENV_DEFAULT_PYTHON_VERSION := 3.13
 PIPENV_VENV_IN_PROJECT := 1
@@ -132,12 +133,12 @@ docs-install-python-packages: docs-install-asdf-packages docs-install-standard-p
 .PHONY: docs-install-standard-python-packages
 docs-install-standard-python-packages:
 	@echo "Create venv and install Python packages via uv:"
-	$(UV) venv
+	$(UV) venv --python $(PYTHON_VERSION)
 	$(UV) sync
 
 .PHONY: docs-ensure-venv
 docs-ensure-venv:
-	@$(UV) venv
+	@$(UV) venv --python $(PYTHON_VERSION)
 
 .PHONY: docs-build
 docs-build: docs-ensure-venv
