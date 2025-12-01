@@ -28,25 +28,25 @@
 
     - :material-cached:{ .lg } __Deploy__
     
-         {% include-markdown "deploy.md"
+         {% include-markdown "process/run/deploy.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](deploy.md)
     
     - :material-cached:{ .lg } __Operate__
     
-         {% include-markdown "operate.md"
+         {% include-markdown "process/run/operate.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](operate.md)
 
     - :material-cached:{ .lg } __Measure__
     
-         {% include-markdown "measure.md"
+         {% include-markdown "process/run/measure.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](measure.md)
 
     - :material-cached:{ .lg } __Optimize__
     
-         {% include-markdown "optimize.md"
+         {% include-markdown "process/run/optimize.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](optimize.md)
 
