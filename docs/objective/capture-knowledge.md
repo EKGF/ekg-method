@@ -1,11 +1,11 @@
 ---
-title: Capture Knowledge
+title: "D: Capture Knowledge"
 authors:
 - Jacobus Geluk
 hide:
 - toc
 ---
-# Capture Knowledge
+# D: Capture Knowledge
 
 <!--summary-start-->
 _Enabling a whole new league of use cases._

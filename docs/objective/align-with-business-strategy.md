@@ -1,11 +1,11 @@
 ---
-title: Align with Business Strategy
+title: "J: Align with Business Strategy"
 authors:
 - Jacobus Geluk
 hide:
-  - toc
+- toc
 ---
-# Align with Business Strategy
+# J: Align with Business Strategy
 
 <!--summary-start-->
 _Align strategy of business capability improvement and execution._

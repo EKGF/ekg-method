@@ -1,14 +1,14 @@
 ---
-title: Bridge the traditional gap between Business & Technology
+title: "E: Bridge the traditional gap between Business & Technology"
 authors:
 - Jacobus Geluk
-hide: 
+hide:
 - toc
 ---
-# Bridge the traditional gap between Business & Technology
+# E: Bridge the traditional gap between Business & Technology
 
 <!--summary-start-->
-Align business expectations with technology delivery.
+_Align business expectations with technology delivery._
 <!--summary-end-->
 
 - Engage with the business, the product owner and get continuous
