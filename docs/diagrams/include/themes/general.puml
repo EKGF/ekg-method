@@ -4,7 +4,7 @@ skinparam Padding 4
 skinparam RoundCorner 40
 skinparam Shadowing true
 skinparam HyperlinkUnderline false
-skinparam handwritten false
+!option handwritten false
 
 skinparam Default {
   'FontName "Open Sans Semibold"
