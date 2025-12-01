@@ -48,13 +48,7 @@ PIPENV_DEFAULT_PYTHON_VERSION := 3.11
 PIPENV_VENV_IN_PROJECT := 1
 
 CURRENT_BRANCH := $(shell git branch --show-current)
-PAT_MKDOCS_INSIDERS := $(shell cat $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt 2>/dev/null)
-ifneq ($(PAT_MKDOCS_INSIDERS),)
 MKDOCS_CONFIG_FILE := mkdocs.yml
-else
-$(info You do not have the $(HOME)/.secrets/PAT_MKDOCS_INSIDERS.txt file so we are using the open source version of MkDocs)
-MKDOCS_CONFIG_FILE := mkdocs.outsiders.yml
-endif
 
 .PHONY: all
 all: docs-build
@@ -161,28 +155,17 @@ docs-install-standard-python-packages: $(VENV_POETRY)
 	$(VENV_POETRY) config experimental.system-git-client true --local
 
 .PHONY: docs-install-special-python-packages
-docs-install-special-python-packages: docs-install-ekglib docs-install-mkdocs-insider-version-packages
+docs-install-special-python-packages: docs-install-ekglib docs-install-mkdocs-packages
 
 .PHONY: docs-install-ekglib
 docs-install-ekglib: $(VENV_POETRY)
 	@echo "Install ekglib via poetry:"
 	$(VENV_POETRY) add "git+https://github.com/EKGF/ekglib.git"
 
-.PHONY: docs-install-mkdocs-insider-version-packages
-docs-install-mkdocs-insider-version-packages: $(VENV_POETRY)
-ifeq ($(PAT_MKDOCS_INSIDERS),)
-	@echo "Install standard mkdocs python package via poetry:"
+.PHONY: docs-install-mkdocs-packages
+docs-install-mkdocs-packages: $(VENV_POETRY)
+	@echo "Install mkdocs-material (open source) via poetry:"
 	@$(VENV_POETRY) add mkdocs-material
-else
-	@if ! cat poetry.lock | grep -q "mkdocs-material-insiders" ; then \
-		echo "Install special insiders version of mkdocs python package via poetry:" ;\
-		echo "First remove the public version of mkdocs-material, if it's installed:" ;\
-		$(VENV_POETRY) remove mkdocs-material || true ;\
-		echo "Then install the actual insiders version:" ;\
-		$(VENV_POETRY) add "git+https://$(PAT_MKDOCS_INSIDERS)@github.com/squidfunk/mkdocs-material-insiders.git" ;\
-		echo "Insider's version of mkdocs-material has been installed successfully!" ;\
-	fi
-endif
 
 $(VENV_MKDOCS): docs-install-python-packages
 	@if [ -f $(VENV_MKDOCS) ] ; then echo $(VENV_MKDOCS) exists ; exit 0 ; else echo $(VENV_MKDOCS) does not exist ; exit 1 ; fi
