@@ -42,13 +42,12 @@ jobs:
         uses: asdf-vm/actions/install@v2
       -
         name: Install all MkDocs dependencies
-        if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           # echo "/home/linuxbrew/.linuxbrew/bin/brew" >> $GITHUB_PATH
           make --environment-overrides docs-install-github-actions
       -
         name: Build Site
-#       if: ${{ github.ref != 'refs/heads/main' }}
+        # Build runs on all branches and PRs to validate changes
         # run 'docs-build' twice because 'gen_files' doesn't let MkDocs 
         # pick up on the generated files in the first run
         run: |
@@ -56,5 +55,6 @@ jobs:
           make --environment-overrides docs-build
       -
         name: Deploy Site
+        # Deploy only runs on main branch after successful build
         if: ${{ github.ref == 'refs/heads/main' }}
         run: make --environment-overrides docs-deploy
