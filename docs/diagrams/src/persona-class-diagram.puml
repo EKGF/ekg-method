@@ -1,6 +1,5 @@
-@startuml
-
 !option handwritten false
+@startuml
 !include ../include/themes/light.puml
 
 class Concept {
