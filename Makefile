@@ -37,7 +37,7 @@ endif
 VENV_PYTHON := $(VIRTUAL_ENV)/bin/python3
 UV := uv
 
-PIPENV_DEFAULT_PYTHON_VERSION := 3.11
+PIPENV_DEFAULT_PYTHON_VERSION := 3.13
 PIPENV_VENV_IN_PROJECT := 1
 
 CURRENT_BRANCH := $(shell git branch --show-current)
