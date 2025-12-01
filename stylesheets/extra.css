@@ -100,6 +100,49 @@
   opacity: 1;
 }
 
+/* Objective badge styling - circular badges with letters */
+.md-typeset .grid.cards .objective-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
+  position: relative;
+}
+
+.md-typeset .grid.cards .objective-badge::before {
+  content: attr(data-letter);
+}
+
+/* Dark mode badge styling */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards .objective-badge {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
+}
+
+/* Badge hover effect */
+.md-typeset .grid.cards > ul > li:hover .objective-badge,
+.md-typeset .grid.cards li:hover .objective-badge {
+  opacity: 1;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(74, 35, 217, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover .objective-badge,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards li:hover .objective-badge {
+  box-shadow: 0 4px 12px rgba(74, 35, 217, 0.5);
+}
+
 /* Hide "Learn more" text but keep the link functional */
 .md-typeset .grid.cards > ul > li > p:last-child,
 .md-typeset .grid.cards li > p:last-child {
