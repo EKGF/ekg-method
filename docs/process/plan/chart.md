@@ -17,8 +17,8 @@ key-stakeholders and “champions”, setting up for successful delivery of the
 first use cases in production and establishing the foundation for a “CoE” 
 for the EKG.
 
-Use the outcomes of "[Envision](envision), [Discover](discover),
-[Assess](assess) & [Train](train)" to develop a well-justified 
+Use the outcomes of "[Envision](envision.md), [Discover](discover.md),
+[Assess](assess.md) & [Train](train.md)" to develop a well-justified 
 thorough ”business case”.
 
 Think big, start small, but have a solid and well-supported plan to be used

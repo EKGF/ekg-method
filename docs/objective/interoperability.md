@@ -156,7 +156,7 @@ The _Use Case Tree Method_ is a rationale by which enterprises could design,
 build and deploy Enterprise Knowledge Graphs that, at high levels of maturity, 
 will enable interoperability across the enterprise.
 Besides offering in semantic interoperability via ontologies and 
-machine-readable definitions of meaning, the [Use Case Tree](/concept/use-case-tree) enables 
+machine-readable definitions of meaning, the [Use Case Tree](../concept/use-case-tree.md) enables 
 organizational by offering the opportunity to different parts of an 
 organization to align their business processes, responsibilities, 
 and expectations through modular reusable business capabilities 

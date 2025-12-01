@@ -16,7 +16,7 @@ The Future of Business Is Composable
 
     Work in progress. Points to make:
 
-    - Explain that the [Use Case Tree (UCT)](/concept/use-case-tree) is the ultimate way to implement
+    - Explain that the [Use Case Tree (UCT)](../concept/use-case-tree.md) is the ultimate way to implement
       what Gartner now calls "Composable Business": 
         - https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable
     - Same for "Packaged Business Capabilities (PBCs)" (also called Packaged Business Components):

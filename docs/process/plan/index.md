@@ -33,41 +33,41 @@ hide:
     what the longer-term vision behind it is, agree on that vision, whereby the first use cases need to be
     very convincing and need to be delivered successfully.
     
-    That's what this method is for. See also all other [objectives](../../objective).
+    That's what this method is for. See also all other [objectives](../../objective/index.md).
 
 === "Steps"
 
     <div class="grid cards" markdown>
     
-    - :material-cached:{ .lg } __[Envision](envision)__
+    - :material-cached:{ .lg } __[Envision](envision.md)__
     
-        {% include-markdown "envision.md"
+        {% include-markdown "process/plan/envision.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](envision)
+        [:octicons-arrow-right-24: Learn more](envision.md)
     
-    - :material-cached:{ .lg } __[Discover](discover)__
+    - :material-cached:{ .lg } __[Discover](discover.md)__
     
-        {% include-markdown "discover.md"
+        {% include-markdown "process/plan/discover.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](discover)
+        [:octicons-arrow-right-24: Learn more](discover.md)
     
-    - :material-cached:{ .lg } __[Assess](assess)__
+    - :material-cached:{ .lg } __[Assess](assess.md)__
     
-        {% include-markdown "assess.md"
+        {% include-markdown "process/plan/assess.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](assess)
+        [:octicons-arrow-right-24: Learn more](assess.md)
     
-    - :material-cached:{ .lg } __[Train](train)__
+    - :material-cached:{ .lg } __[Train](train.md)__
     
-        {% include-markdown "train.md"
+        {% include-markdown "process/plan/train.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](train)
+        [:octicons-arrow-right-24: Learn more](train.md)
     
-    - :material-cached:{ .lg } __[Chart](chart)__
+    - :material-cached:{ .lg } __[Chart](chart.md)__
     
-        {% include-markdown "chart.md"
+        {% include-markdown "process/plan/chart.md"
         start="<!--summary-start-->" end="<!--summary-end-->" %}
-        [:octicons-arrow-right-24: Learn more](chart)
+        [:octicons-arrow-right-24: Learn more](chart.md)
     
     </div>
 

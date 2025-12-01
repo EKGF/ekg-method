@@ -104,6 +104,14 @@ plugins:
   - search:
       lang:
         - en
+  - mermaid2:
+      javascript: "https://unpkg.com/mermaid/dist/mermaid.min.js"
+      arguments:
+        # test if its __palette_1 (dark) or __palette_2 (light)
+        # for mkdocs-material >=8.0.0
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
+        securityLevel: 'loose'
   - exclude-search:
       exclude:
         - 'fragment/*'
@@ -135,9 +143,7 @@ plugins:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
   - kroki:
-      ServerURL: https://kroki.io/
-      DownloadImages: false
-      DownloadDir: docs/diagrams/out
+      server_url: https://kroki.io/
 
 markdown_extensions:
   - footnotes
@@ -171,13 +177,16 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.critic
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      options:
+        custom_icons:
+          - docs-overrides/.icons
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:

@@ -16,11 +16,11 @@ Most---if not all---large enterprises are complex and consist of many _lines of 
 business has its own "business identity" and therefore its own long term strategy.
 Each of these organizational divisions has its own agenda.
 
-The [Use Case Tree](/concept/use-case-tree) is the single artifact that all lines of business can talk to. 
+The [Use Case Tree](../concept/use-case-tree.md) is the single artifact that all lines of business can talk to. 
 
 ## Business Capability Map
 
-At the highest levels, the [Use Case Tree](/concept/use-case-tree) will end up being 
+At the highest levels, the [Use Case Tree](../concept/use-case-tree.md) will end up being 
 identical---or almost identical---to a _business capability map_.
 
 Here's an example of a simplified capability map of an insurance company 
@@ -47,7 +47,7 @@ models but in many cases:
 
 ## Next-level Capability Map
 
-The [Use Case Tree](/concept/use-case-tree) serves as the next level in Business Capability Mapping where each capability gets broken down
+The [Use Case Tree](../concept/use-case-tree.md) serves as the next level in Business Capability Mapping where each capability gets broken down
 into smaller capabilities each of which ends up as an executable model --- or component or model so you will ---
 in the EKG itself.
 

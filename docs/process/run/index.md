@@ -13,9 +13,9 @@
     of functionality, not many).
     <!--summary-run-end-->***
     
-    Once the [EKG/Platform](/vocab/ekg-platform/) has been [deployed](deploy) in 
+    Once the [EKG/Platform](../../vocab/ekg-platform.md) has been [deployed](deploy.md) in 
     production, it needs to be supported and maintained. 
-    Or [Operated](operate), [Measured](measure) and [Optimized](optimize) so you will.
+    Or [Operated](operate.md), [Measured](measure.md) and [Optimized](optimize.md) so you will.
     
     We recommend to allocate funding for these services, whether they are performed 
     by your CoE or by an external consultancy firm, from _Business-as-Usual (BAU)_
@@ -28,25 +28,25 @@
 
     - :material-cached:{ .lg } __Deploy__
     
-         {% include-markdown "deploy.md"
+         {% include-markdown "process/run/deploy.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](deploy.md)
     
     - :material-cached:{ .lg } __Operate__
     
-         {% include-markdown "operate.md"
+         {% include-markdown "process/run/operate.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](operate.md)
 
     - :material-cached:{ .lg } __Measure__
     
-         {% include-markdown "measure.md"
+         {% include-markdown "process/run/measure.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](measure.md)
 
     - :material-cached:{ .lg } __Optimize__
     
-         {% include-markdown "optimize.md"
+         {% include-markdown "process/run/optimize.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](optimize.md)
 

@@ -9,7 +9,7 @@ hide:
 
     <div class="grid cards" markdown>
     
-    - :material-floor-plan:{ .lg } __[Plan](plan)__
+    - :material-floor-plan:{ .lg } __[Plan](plan/index.md)__
         
         -----
 
@@ -17,64 +17,64 @@ hide:
 
         -----
 
-        [Envision](./plan/envision/), 
-        [Discover](./plan/discover/),
-        [Assess](./plan/assess/),
-        [Train](./plan/train/) and
-        [Chart](./plan/chart/). 
+        [Envision](./plan/envision.md), 
+        [Discover](./plan/discover.md),
+        [Assess](./plan/assess.md),
+        [Train](./plan/train.md) and
+        [Chart](./plan/chart.md). 
     
-        [:octicons-arrow-right-24: Learn more](./plan/)
+        [:octicons-arrow-right-24: Learn more](./plan/index.md)
     
-    - :construction_site:{ .lg } __[Build](build)__
+    - :construction_site:{ .lg } __[Build](build/index.md)__
 
         -----
 
         "Building" an EKG-based use case involves
         everything from detailed requirements gathering---structured 
-        around the [Use Case Tree](/concept/use-case-tree)---all the way up to delivery of
+        around the [Use Case Tree](../concept/use-case-tree.md)---all the way up to delivery of
         components for your production EKG-platform.
 
-        [:octicons-arrow-right-24: Learn more](./build/)
+        [:octicons-arrow-right-24: Learn more](./build/index.md)
 
-    - :material-run:{ .lg } __[Run](run)__
+    - :material-run:{ .lg } __[Run](run/index.md)__
 
         ---
 
         Deploying, Operating, Measuring and Optimizing an 
-        [EKG/Platform](/vocab/ekg-platform/) that
+        [EKG/Platform](../vocab/ekg-platform.md) that
         serves many Use Cases across the Enterprise.
 
-        [:octicons-arrow-right-24: Learn more](run)
+        [:octicons-arrow-right-24: Learn more](./run/index.md)
 
     - :material-foot-print: Steps
 
         -----
 
-        [Envision](./plan/envision/), 
-        [Discover](./plan/discover/),
-        [Assess](./plan/assess/),
-        [Train](./plan/train/) and
-        [Chart](./plan/chart/). 
+        [Envision](./plan/envision.md), 
+        [Discover](./plan/discover.md),
+        [Assess](./plan/assess.md),
+        [Train](./plan/train.md) and
+        [Chart](./plan/chart.md). 
 
     - :material-foot-print: Steps
 
         -----
 
-        [Allocate](./build/allocate/),
-        [Design](./build/design/),
-        [Implement](./build/implement/),
-        [Test](./build/test/),
-        [Verify](./build/verify/) and
-        [Deliver](./build/deliver/).
+        [Allocate](./build/allocate.md),
+        [Design](./build/design.md),
+        [Implement](./build/implement.md),
+        [Test](./build/test.md),
+        [Verify](./build/verify.md) and
+        [Deliver](./build/deliver.md).
 
     - :material-foot-print: Steps
 
         -----
 
-        [Deploy](./run/deploy/),
-        [Operate](./run/operate/),
-        [Measure](./run/measure/) and
-        [Optimize](./run/optimize/).
+        [Deploy](./run/deploy.md),
+        [Operate](./run/operate.md),
+        [Measure](./run/measure.md) and
+        [Optimize](./run/optimize.md).
 
     </div>
 

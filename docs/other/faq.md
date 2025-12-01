@@ -7,16 +7,16 @@ author:
 
 ## What is a Use Case?
 
-A [Use Case](/concept/use-case/) is an aggregation of user (or data-) [stories](/concept/story/) on a common theme.
+A [Use Case](../concept/use-case.md) is an aggregation of user (or data-) [stories](../concept/story.md) on a common theme.
 
-They are the modules---or components, so you will---of an [EKG](/vocab/ekg/).
+They are the modules---or components, so you will---of an [EKG](../vocab/ekg.md).
 A business-focused packaging of stories, concepts, personas, logical [self-describing](https://principles.ekgf.org/vocab/sdd/)
-[datasets](/concept/dataset/) (or data products), ontologies, workflows, user interface models and functionality.
+datasets (or data products), ontologies, workflows, user interface models and functionality.
 
 ## What’s the relationship to user stories?
 
 A user story can be seen as a black-box function with inputs and outputs.
-We model these inputs and outputs initially just as simple "[Concepts](/concept/concept/)"
+We model these inputs and outputs initially just as simple "[Concepts](../concept/concept.md)"
 (and the terms that are being used for those concepts).
 By adding more and more detail to these stories, they eventually become runnable or 
 executable and can be invoked as an HTTP API, in response to a Kafka message, 
@@ -41,7 +41,7 @@ The UML notion of single-user interaction is closer to an EKG story.
 
 A use case can be a `componentOf` of other use cases and therefore form a hierarchy that
 more or less resembles a tree structure that can be easily visualized on a whiteboard hence
-the term [Use Case Tree](/concept/use-case-tree/).
+the term [Use Case Tree](../concept/use-case-tree.md/).
 
 ## Are use case trees actually trees (hierarchies)?
 
@@ -51,7 +51,7 @@ can support, and be supported by, many others) but we obviously didn't want to c
 
 ## What is the detail needed behind each use case? - Narrative? Happy case? Exceptions
 
-Here's a [template](/concept/use-case/#__tabbed_1_5) for the kind of information that we need
+Here's a [template](../concept/use-case.md#__tabbed_1_5) for the kind of information that we need
 to collect for any given use case during the various phases in their life cycle.
 
 ## How are use cases named?
@@ -86,7 +86,7 @@ Stories are not depicted.
 
 ## What about Actors/Personas?
 
-We use the term [_Personas_](/concept/persona/) rather than _Actors_ or _Roles_ to avoid confusion because
+We use the term [_Personas_](../concept/persona.md) rather than _Actors_ or _Roles_ to avoid confusion because
 they are slightly different concepts. Like in the real world, you could have a `Person` who is an `Actor` playing
 a `Role` as a certain `Persona.`
 
@@ -187,7 +187,7 @@ See above.
 
 ## What is the relationship to organizations?
 
-Any EKG enterprise will have their own [use case tree (UCT)](/concept/use-case-tree) but
+Any EKG enterprise will have their own [use case tree (UCT)](../concept/use-case-tree.md) but
 not all use cases are owned by that enterprise since many use cases may have been
 provided by external parties such as the EKGF community as "reusable components".
 
@@ -286,7 +286,7 @@ in other EKGs.
 
 ## How do you work - top down or bottom up?
 
-Think big, start small, rinse, repeat, accelerate. See [Process](/process/plan/).
+Think big, start small, rinse, repeat, accelerate. See [Process](../process/plan/index.md).
 
 ### Think Big
 
@@ -297,7 +297,7 @@ So that's a top-down approach.
 
 ### Start Small
 
-Then once a business case has been created and approved (see [Chart](/process/plan/chart)),
+Then once a business case has been created and approved (see [Chart](../process/plan/chart.md)),
 the build-phase can start with a use case at the bottom of the tree, building all
 lego bricks to then build higher level use cases.
 That's the start small (and bottom up) approach.
@@ -312,10 +312,10 @@ analysis on real production usage, and rerun the cycle.
 A use case is "done" when the business says so.
 Ideally, the initial use case in its early plan stage of its life cycle serves
 as a "contract with the business" that includes agreed test scenarios so that
-a it can be [verified](/process/build/verify/) and validated with the business
+a it can be [verified](../process/build/verify.md) and validated with the business
 that a given use case is "done".
 
-After deployment to production, business metrics could be [collected](/process/run/measure/)
+After deployment to production, business metrics could be [collected](../process/run/measure.md)
 to check whether the use case actually delivers on the agreed business outcome.
 
 ## How to measure the design and the implementation?
@@ -351,11 +351,11 @@ corporate styling etc.
 ## How can you drive (data) modeling?
 
 One major "lesson learned" is that semantic technology and knowledge graphs easily
-allow people to "[boil the ocean](/objective/avoid-boiling-the-ocean/)" and 
+allow people to "[boil the ocean](../objective/avoid-boiling-the-ocean.md)" and 
 "model the whole world" using generic abstract ontologies, sometimes even up to 
 philosophical levels of abstraction.
 
-One of the key objectives of the EKG/Method is to [avoid boiling the ocean](/objective/avoid-boiling-the-ocean/)
+One of the key objectives of the EKG/Method is to [avoid boiling the ocean](../objective/avoid-boiling-the-ocean.md)
 by creating a laser sharp description of what the business needs and pays for.
 And make that description testable and therefore verifiable.
 

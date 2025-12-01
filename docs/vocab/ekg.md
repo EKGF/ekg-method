@@ -21,7 +21,7 @@ the current state of the art that traditional technologies allow.
 ### Technical perspective
 
 An EKG requires a "platform" to run it, where the term "platform"---or
-[EKG/Platform](/vocab/ekg-platform/)---is used for the collection of software services that serve 
+[EKG/Platform](ekg-platform.md)---is used for the collection of software services that serve 
 the content of the EKG to users and systems.
 The EKG/Platform can be seen as a "layer" on top of all your other data sources, 
 providing a "holistic view"---from a user perspective---to all data and knowledge, 
@@ -49,14 +49,14 @@ The primary justification for EKG is short and simple: to get your strategic use
 
 One EKG can support an unlimited number of use cases. 
 These use cases are structured as a tree of reusable components, 
-the so-called [Use Case Tree](/concept/use-case-tree) (UCT). 
+the so-called [Use Case Tree](../concept/use-case-tree.md) (UCT). 
 Each use case represents data or information or knowledge even and behavior. 
 These UCTs are defined and constructed with "the business", your primary stakeholders 
 and budget holders. 
 They capture in non-technical terms which functional requirements your 
 business needs and what the desired Business Outcomes are.
 
-At the top of a [Use Case Tree](/concept/use-case-tree) you generally see the Strategic Use Case that 
+At the top of a [Use Case Tree](../concept/use-case-tree.md) you generally see the Strategic Use Case that 
 your business plans to implement in the long term. 
 Such as true Client 360, Customer Analytics, Enterprise Fraud Detection,
 real-time Enterprise Risk & Compliance Management, Supply Chain Management, 
