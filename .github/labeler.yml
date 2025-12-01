@@ -6,7 +6,6 @@ mkdocs-infra:
           - docs-overrides/**
           - docs/assets/**
           - docs/stylesheets/**
-          - docs/main.py
           - '**/CNAME'
           - .tool-versions
           - README.md
