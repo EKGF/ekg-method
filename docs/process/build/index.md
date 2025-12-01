@@ -33,37 +33,37 @@ hide:
     
     - :material-cached:{ .lg } __Allocate__
     
-         {% include-markdown "allocate.md"
+         {% include-markdown "process/build/allocate.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](allocate.md)
     
     - :material-cached:{ .lg } __Design__
     
-         {% include-markdown "design.md"
+         {% include-markdown "process/build/design.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](design.md)
     
     - :material-cached:{ .lg } __Implement__
     
-         {% include-markdown "implement.md"
+         {% include-markdown "process/build/implement.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](implement.md)
     
     - :material-cached:{ .lg } __Test__
     
-         {% include-markdown "test.md"
+         {% include-markdown "process/build/test.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](test.md)
     
     - :material-cached:{ .lg } __Verify__
     
-         {% include-markdown "verify.md"
+         {% include-markdown "process/build/verify.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](verify.md)
     
     - :material-cached:{ .lg } __Deliver__
     
-         {% include-markdown "deliver.md"
+         {% include-markdown "process/build/deliver.md"
          start="<!--summary-start-->" end="<!--summary-end-->" %}
          [:octicons-arrow-right-24: Learn more](deliver.md)
     
