@@ -9,7 +9,7 @@ skinparam HyperlinkUnderline false
 skinparam Default {
   FontName "Roboto"
   FontColor FONT_COLOR
-  FontSize 12
+  FontSize 14
 }
 
 skinparam Arrow {
