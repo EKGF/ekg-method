@@ -62,10 +62,11 @@ clean:
 install: docs-install
 
 .PHONY: docs-install
-docs-install: info docs-install-brew docs-install-brew-packages docs-install-python-packages
+# Run env setup first so info shows correct versions
+docs-install: docs-install-brew docs-install-brew-packages docs-install-python-packages info
 
 .PHONY: docs-install-github-actions
-docs-install-github-actions: info docs-install-brew-packages docs-install-python-packages
+docs-install-github-actions: docs-install-brew-packages docs-install-python-packages info
 
 .PHONY: docs-install-brew-packages
 docs-install-brew-packages:
@@ -131,14 +132,19 @@ docs-install-python-packages: docs-install-asdf-packages docs-install-standard-p
 #endif
 
 .PHONY: docs-install-standard-python-packages
-docs-install-standard-python-packages:
-	@echo "Create venv and install Python packages via uv:"
-	$(UV) venv --python $(PYTHON_VERSION)
+docs-install-standard-python-packages: docs-ensure-venv
+	@echo "Install Python packages via uv:"
 	$(UV) sync
 
 .PHONY: docs-ensure-venv
 docs-ensure-venv:
-	@$(UV) venv --python $(PYTHON_VERSION)
+	@echo "Ensure venv (Python $(PYTHON_VERSION)) exists and matches version:"
+	@if [ ! -d ".venv" ] || ! ./.venv/bin/python3 --version 2>/dev/null | grep -q "$(PYTHON_VERSION)"; then \
+		echo "Creating/Recreating venv with Python $(PYTHON_VERSION)"; \
+		UV_VENV_CLEAR=1 $(UV) venv --python $(PYTHON_VERSION) --quiet; \
+	else \
+		echo "Existing venv uses correct Python version"; \
+	fi
 
 .PHONY: docs-build
 docs-build: docs-ensure-venv
