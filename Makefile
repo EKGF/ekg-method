@@ -11,16 +11,13 @@ else
 ifeq ($(YOUR_OS), Linux)
 	INSTALL_TARGET := install-linux
 	ifneq ($(wildcard /home/runner/.*),) # this means we're running in Github Actions
-		PIP := pip
 		SYSTEM_PYTHON := python3
 	else
-		PIP := $(shell asdf where python)/bin/python -m pip
 		SYSTEM_PYTHON := $(shell asdf where python)/bin/python3
 	endif
 endif
 ifeq ($(YOUR_OS), Darwin)
 	INSTALL_TARGET := install-macos
-	PIP := $(shell asdf where python)/bin/python -m pip
 	ifneq (,$(wildcard /usr/local/bin/python3))
 		SYSTEM_PYTHON := /usr/local/bin/python3
 	else
@@ -50,7 +47,7 @@ all: docs-build
 info:
 	@echo "Git Branch        : ${CURRENT_BRANCH}"
 	@echo "Operating System  : ${YOUR_OS}"
-	@echo "MkDocs            : ${VENV_MKDOCS}"
+	@echo "MkDocs            : $$($(UV) run mkdocs --version)"
 	@echo "MkDocs config file: ${MKDOCS_CONFIG_FILE}"
 	@echo "System Python     : ${SYSTEM_PYTHON} version: $$($(SYSTEM_PYTHON) --version)" 
 	@echo "Virtual Env Python: ${VENV_PYTHON} version: $$($(VENV_PYTHON) --version)"
