@@ -11,18 +11,14 @@ else
 ifeq ($(YOUR_OS), Linux)
 	INSTALL_TARGET := install-linux
 	ifneq ($(wildcard /home/runner/.*),) # this means we're running in Github Actions
-		SYSTEM_PYTHON := python3
+		SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
 	else
-		SYSTEM_PYTHON := $(shell asdf where python)/bin/python3
+		SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
 	endif
 endif
 ifeq ($(YOUR_OS), Darwin)
 	INSTALL_TARGET := install-macos
-	ifneq (,$(wildcard /usr/local/bin/python3))
-		SYSTEM_PYTHON := /usr/local/bin/python3
-	else
-		SYSTEM_PYTHON := $(shell asdf where python)/bin/python3
-	endif
+	SYSTEM_PYTHON := $(shell command -v python3 || echo python3)
 endif
 endif
 
