@@ -1,5 +1,6 @@
 @startuml
 
+!option handwritten false
 !include ../include/themes/light.puml
 
 state Plan {
