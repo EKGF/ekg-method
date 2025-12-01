@@ -1,26 +1,27 @@
 mkdocs-infra:
-  - changed-files:
-      any-glob-to-any-file:
-        - Makefile
-        - mkdocs.yml
-        - docs-overrides/**
-        - docs/assets/**
-        - docs/stylesheets/**
-        - '**/CNAME'
-        - .tool-versions
-        - README.md
+  - any:
+      - changed-files:
+          - Makefile
+          - mkdocs.yml
+          - docs-overrides/**
+          - docs/assets/**
+          - docs/stylesheets/**
+          - docs/main.py
+          - '**/CNAME'
+          - .tool-versions
+          - README.md
 
 github-actions:
-  - changed-files:
-      any-glob-to-any-file:
-        - .github/**
+  - any:
+      - changed-files:
+          - .github/**
 
 agnos-ai:
-  - changed-files:
-      any-glob-to-any-file:
-        - 'agnos-*'
-        - '*-agnos/**/*'
-        - '*-agnos-ai/**/*'
+  - any:
+      - changed-files:
+          - 'agnos-*'
+          - '*-agnos/**/*'
+          - '*-agnos-ai/**/*'
 
 
 
