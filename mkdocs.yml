@@ -144,8 +144,6 @@ plugins:
         - '_.*\.md$'
   - kroki:
       server_url: https://kroki.io/
-      download_images: false
-      download_dir: docs/diagrams/out
 
 markdown_extensions:
   - footnotes
