@@ -1,11 +1,11 @@
 ---
-title: Enable Reuse
+title: "M: Enable Reuse"
 authors:
 - Jacobus Geluk
 hide:
 - toc
 ---
-# Enable Reuse
+# M: Enable Reuse
 
 <!--summary-start-->
 _Create an ecosystem of reusable components for the EKG._

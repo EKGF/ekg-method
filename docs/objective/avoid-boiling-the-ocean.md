@@ -1,11 +1,11 @@
 ---
-title: Avoid "boiling the ocean"
+title: "G: Avoid \"boiling the ocean\""
 authors:
 - Jacobus Geluk
 hide:
-  - toc
+- toc
 ---
-# Avoid "boiling the ocean"
+# G: Avoid "boiling the ocean"
 
 <!--summary-start-->
 _Provide focus, clarity, deliver business value fast, do the right things at the right time. Save money._

@@ -1,14 +1,14 @@
 ---
-title: Composable Business
+title: "B: Composable Business"
 authors:
 - Jacobus Geluk
 hide:
 - toc
 ---
-# Composable Business
+# B: Composable Business
 
 <!--summary-start-->
-The Future of Business Is Composable
+_The Future of Business Is Composable_
 <!--summary-end-->
 
 

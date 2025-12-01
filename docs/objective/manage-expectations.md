@@ -1,11 +1,11 @@
 ---
-title: Best form of ”expectation management”
+title: "F: Best form of \"expectation management\""
 authors:
 - Jacobus Geluk
 hide:
 - toc
 ---
-# Best form of ”expectation management”
+# F: Best form of "expectation management"
 
 <!--summary-start-->
 _Create an agreed and realistic strategic roadmap aligned to business strategy._
