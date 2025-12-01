@@ -1,3 +1,4 @@
+!option handwritten false
 !define BG_MAIN_COLOR      #66BCF0
 !define BG_SECONDARY_COLOR #B4BCBE
 !define BG_PACKAGE_COLOR   #eeb291
