@@ -114,7 +114,9 @@ docs-install-brew-macos:
 .PHONY: docs-install-asdf
 docs-install-asdf: docs-install-brew
 	@echo "Install the asdf package manager:"
-	@brew upgrade asdf 2>/dev/null || brew install asdf
+	@if ! command -v asdf >/dev/null 2>&1; then \
+		brew upgrade asdf 2>/dev/null || brew install asdf; \
+	fi
 	@asdf plugin add python 2>/dev/null || true
 	@asdf plugin add nodejs 2>/dev/null || true
 	@asdf plugin add java 2>/dev/null || true
