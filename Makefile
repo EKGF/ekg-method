@@ -118,7 +118,6 @@ docs-install-asdf: docs-install-brew
 		brew upgrade asdf 2>/dev/null || brew install asdf; \
 	fi
 	@asdf plugin add python 2>/dev/null || true
-	@asdf plugin add nodejs 2>/dev/null || true
 	@asdf plugin add java 2>/dev/null || true
 
 .PHONY: docs-install-asdf-packages
