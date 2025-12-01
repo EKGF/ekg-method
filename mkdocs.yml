@@ -88,6 +88,7 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 extra_javascript:
+  - "https://unpkg.com/mermaid/dist/mermaid.min.js"
   - "javascript/images_dark.js"
   - "javascript/refresh_on_toggle_dark_light.js"
   - "https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"
@@ -105,7 +106,6 @@ plugins:
       lang:
         - en
   - mermaid2:
-      javascript: "https://unpkg.com/mermaid/dist/mermaid.min.js"
       arguments:
         # test if its __palette_1 (dark) or __palette_2 (light)
         # for mkdocs-material >=8.0.0
@@ -144,6 +144,8 @@ plugins:
         - '_.*\.md$'
   - kroki:
       server_url: https://kroki.io/
+      download_images: false
+      download_dir: docs/diagrams/out
 
 markdown_extensions:
   - footnotes
