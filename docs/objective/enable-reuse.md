@@ -8,7 +8,7 @@ hide:
 # Enable Reuse
 
 <!--summary-start-->
-_TODO: Summary_
+_Create an ecosystem of reusable components for the EKG._
 <!--summary-end-->
 
 The [Use Case Tree](../concept/use-case-tree.md) is a foundational mechanism to create an ecosystem of 

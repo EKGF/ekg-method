@@ -8,7 +8,7 @@ hide:
 # Avoid Disruption
 
 <!--summary-start-->
-_TODO: Summary_
+_Make changes gradually with clear interdependencies to avoid disruption across use cases._
 <!--summary-end-->
 
 [Capturing all knowledge in the organization](capture-knowledge.md)

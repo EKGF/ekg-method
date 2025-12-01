@@ -8,7 +8,7 @@ hide:
 # Increase Quality
 
 <!--summary-start-->
-_TODO: Summary_
+_Enforce 100% test coverage based on real business scenarios and requirements._
 <!--summary-end-->
 
 The [Use Case Tree](../concept/use-case-tree.md) is a foundational structure for quality 

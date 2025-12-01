@@ -12,7 +12,7 @@ hide:
 # Modularity
 
 <!--summary-start-->
-_TODO: Summary_
+_Build with modular, reusable components instead of monolithic systems._
 <!--summary-end-->
 
 The standard approach for large projects, such as nuclear 
