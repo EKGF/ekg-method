@@ -78,7 +78,6 @@ docs-install-brew-packages:
 	@brew upgrade libjpeg 2>/dev/null || brew install libjpeg
 	@brew upgrade libpng 2>/dev/null || brew install libpng
 	@brew upgrade zlib 2>/dev/null || brew install zlib
-	@brew upgrade plantuml 2>/dev/null || brew install plantuml
 	@brew upgrade graphviz 2>/dev/null || brew install graphviz
 	@brew upgrade uv 2>/dev/null || brew install uv
 
@@ -118,7 +117,6 @@ docs-install-asdf: docs-install-brew
 		brew upgrade asdf 2>/dev/null || brew install asdf; \
 	fi
 	@asdf plugin add python 2>/dev/null || true
-	@asdf plugin add java 2>/dev/null || true
 
 .PHONY: docs-install-asdf-packages
 docs-install-asdf-packages: docs-install-asdf
