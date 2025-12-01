@@ -32,37 +32,23 @@ jobs:
         with:
           fetch-depth: 0
       -
-        name: Cache asdf installations
         uses: actions/cache@v4
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          path: |
-            ~/.asdf/installs
-            ~/.asdf/plugins
-            ~/.asdf/shims
-          key: ${{ runner.os }}-asdf-${{ hashFiles('.tool-versions') }}
-          restore-keys: |
-            ${{ runner.os }}-asdf-
-      -
-        name: Cache uv dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/uv
-            .venv
-          key: ${{ runner.os }}-uv-${{ hashFiles('uv.lock', 'pyproject.toml') }}
-          restore-keys: |
-            ${{ runner.os }}-uv-
+          key: ${{ github.ref }}
+          path: .cache
       -
         name: Install asdf & tools
-        uses: asdf-vm/actions/install@v4
+        uses: asdf-vm/actions/install@v2
       -
         name: Install all MkDocs dependencies
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           # echo "/home/linuxbrew/.linuxbrew/bin/brew" >> $GITHUB_PATH
           make --environment-overrides docs-install-github-actions
       -
         name: Build Site
-        # Build runs on all branches and PRs to validate changes
+#       if: ${{ github.ref != 'refs/heads/main' }}
         # run 'docs-build' twice because 'gen_files' doesn't let MkDocs 
         # pick up on the generated files in the first run
         run: |
@@ -70,6 +56,5 @@ jobs:
           make --environment-overrides docs-build
       -
         name: Deploy Site
-        # Deploy only runs on main branch after successful build
         if: ${{ github.ref == 'refs/heads/main' }}
         run: make --environment-overrides docs-deploy

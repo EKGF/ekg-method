@@ -9,7 +9,7 @@ hide:
 
     <div class="grid cards" markdown>
     
-    - :material-floor-plan:{ .lg } __[Plan](plan)__
+    - :material-floor-plan:{ .lg } __[Plan](plan/index.md)__
         
         -----
 
@@ -23,28 +23,28 @@ hide:
         [Train](./plan/train.md) and
         [Chart](./plan/chart.md). 
     
-        [:octicons-arrow-right-24: Learn more](./plan/)
+        [:octicons-arrow-right-24: Learn more](./plan/index.md)
     
-    - :construction_site:{ .lg } __[Build](build)__
+    - :construction_site:{ .lg } __[Build](build/index.md)__
 
         -----
 
         "Building" an EKG-based use case involves
         everything from detailed requirements gathering---structured 
-        around the [Use Case Tree](/concept/use-case-tree)---all the way up to delivery of
+        around the [Use Case Tree](../concept/use-case-tree.md)---all the way up to delivery of
         components for your production EKG-platform.
 
-        [:octicons-arrow-right-24: Learn more](./build/)
+        [:octicons-arrow-right-24: Learn more](./build/index.md)
 
-    - :material-run:{ .lg } __[Run](run)__
+    - :material-run:{ .lg } __[Run](run/index.md)__
 
         ---
 
         Deploying, Operating, Measuring and Optimizing an 
-        [EKG/Platform](/vocab/ekg-platform/) that
+        [EKG/Platform](../vocab/ekg-platform.md) that
         serves many Use Cases across the Enterprise.
 
-        [:octicons-arrow-right-24: Learn more](./run/)
+        [:octicons-arrow-right-24: Learn more](./run/index.md)
 
     - :material-foot-print: Steps
 
