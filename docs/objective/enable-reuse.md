@@ -113,7 +113,6 @@ The EKGF Method continues by modelling behaviour, packaging it as reusable
 use cases, and feeding it back into a composable enterprise — closing the
 loop between data, knowledge, and operational wisdom.</sub>
 
->>>>>>> e8ff454 (feat(docs): add DIKW to EKGF section to enable reuse page)
 ## The Role of the Use Case Tree (UCT)
 
 In the EKGF Method, the **Use Case Tree (UCT)** is the mechanism that
