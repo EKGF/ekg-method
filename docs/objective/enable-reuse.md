@@ -77,34 +77,6 @@ This is the crucial difference:
     Method captures *the behaviour itself* — executable, governed, and
     reusable across domains — without necessarily writing code at all.
 
-``` mermaid
-flowchart LR
-
-    A[Data] --> B[Information]
-
-    B --> C[Knowledge]
-
-    C --> D[Behaviour]
-
-    D --> E[Reusable Use Case]
-
-    E --> F[[Composable Enterprise]]
-
-
-
-    style A fill:#ffffff,stroke:#000000,stroke-width:2px
-
-    style B fill:#ffffff,stroke:#000000,stroke-width:2px
-
-    style C fill:#ffffff,stroke:#000000,stroke-width:2px
-
-    style D fill:#ffffff,stroke:#000000,stroke-width:2px
-
-    style E fill:#ffffff,stroke:#000000,stroke-width:2px
-
-    style F fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold
-```
-
 In this sense, a **Use Case** in the EKG is just as real and reusable as
 a software package in the JavaScript or Python ecosystems.
 Each can be discovered, installed, versioned, extended, and composed —
@@ -114,6 +86,34 @@ spanning data, logic, and meaning.
 That's why **reuse** is not a side effect of the EKG.
 It's the *reason the EKG exists.*
 
+### From DIKW to EKGF: Making Knowledge Executable
+
+The well-known **DIKW Model** (Data → Information → Knowledge → Wisdom)
+has guided information management for decades.
+But it assumes that *Wisdom naturally follows from Knowledge* — as if
+understanding automatically produces action.
+In practice, enterprises rarely reach that state because the bridge from
+*knowing* to *doing* is missing.
+
+The **EKGF Method** extends this model by adding the **operational
+dimension**:
+knowledge becomes **behaviour**, behaviour becomes **reusable**, and
+reuse powers **composability**.
+This is the *Path to Executable Knowledge* — where understanding turns
+into governed, shareable, and actionable intelligence.
+
+The diagram below visualises this shift — showing how the EKGF Method
+transforms the classic DIKW hierarchy into a living model of executable,
+reusable knowledge.
+
+![DIKW Model Revised – Path to Executable Knowledge](../assets/dikw-revised.svg)
+
+<sub>Traditional DIKW ends at understanding.
+The EKGF Method continues by modelling behaviour, packaging it as reusable
+use cases, and feeding it back into a composable enterprise — closing the
+loop between data, knowledge, and operational wisdom.</sub>
+
+>>>>>>> e8ff454 (feat(docs): add DIKW to EKGF section to enable reuse page)
 ## The Role of the Use Case Tree (UCT)
 
 In the EKGF Method, the **Use Case Tree (UCT)** is the mechanism that
