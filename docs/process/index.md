@@ -25,9 +25,7 @@ schema_type: "WebPage"
             <span class="process-card-subtitle">Strategy & Scope</span>
           </div>
       </div>
-      
-      <div class="process-card-body" markdown>
-      
+        
         -----
 
         Strategic vision, stakeholder alignment, and the [Use Case Tree](../concept/use-case-tree.md).
@@ -42,8 +40,6 @@ schema_type: "WebPage"
         - [Chart](./plan/chart.md)
     
         [:octicons-arrow-right-24: Learn more](./plan/index.md)
-      
-      </div>
     
     - <div class="process-card-header process-card-build">
           :material-tools:{ .lg }
@@ -52,8 +48,6 @@ schema_type: "WebPage"
             <span class="process-card-subtitle">Executable Models</span>
           </div>
       </div>
-
-      <div class="process-card-body" markdown>
 
         -----
 
@@ -70,8 +64,6 @@ schema_type: "WebPage"
         - [Deliver](./build/deliver.md)
 
         [:octicons-arrow-right-24: Learn more](./build/index.md)
-
-      </div>
     
     - <div class="process-card-header process-card-run">
           :material-rocket-launch:{ .lg }
@@ -80,8 +72,6 @@ schema_type: "WebPage"
             <span class="process-card-subtitle">Operate & Optimize</span>
           </div>
       </div>
-
-      <div class="process-card-body" markdown>
 
         -----
 
@@ -97,8 +87,6 @@ schema_type: "WebPage"
         - [Optimize](./run/optimize.md)
 
         [:octicons-arrow-right-24: Learn more](./run/index.md)
-
-      </div>
     
     </div>
 
