@@ -83,11 +83,118 @@
 /* Large icon styling (.lg class) */
 .md-typeset .grid.cards .twemoji.lg svg,
 .md-typeset .grid.cards .twemoji.lg {
-  width: 3rem !important;
-  height: 3rem !important;
-  margin-bottom: 1rem;
-  opacity: 0.9;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
   display: block;
+}
+
+/* Process cards - enhanced icon styling */
+.md-typeset .grid.cards > ul > li .twemoji.lg svg,
+.md-typeset .grid.cards > ul > li .twemoji.lg {
+  filter: drop-shadow(0 2px 4px rgba(74, 35, 217, 0.15));
+}
+
+/* Process card specific styling */
+.process-cards > ul > li {
+  padding: 0 1.25rem 1.25rem !important;
+  padding-top: 0 !important;
+}
+
+.process-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin: 0 -1.25rem 0.9rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(18, 32, 70, 0.18);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  isolation: isolate;
+  min-height: 4.5rem;
+}
+
+.process-card-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(48, 63, 159, 0.45), rgba(25, 118, 210, 0.4));
+  z-index: -1;
+}
+
+.process-card-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% -10%, rgba(255, 255, 255, 0.15), transparent 55%);
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.process-card-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.process-card-header .twemoji.lg,
+.process-card-header .twemoji.lg svg {
+  margin: 0 !important;
+  width: 3.25rem !important;
+  height: 3.25rem !important;
+  opacity: 1;
+  color: #fff !important;
+  filter: drop-shadow(0 4px 12px rgba(15, 23, 42, 0.3));
+}
+
+.process-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.process-card-header strong {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 1.35em !important;
+}
+
+.process-card-header strong a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.process-card-header strong a:hover {
+  text-decoration: underline;
+}
+
+.process-card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.process-card-plan {
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+  background-position: center 30%;
+}
+
+.process-card-build {
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80");
+  background-position: center 40%;
+}
+
+.process-card-run {
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80");
+  background-position: center 55%;
 }
 
 .md-typeset .grid.cards .twemoji.lg svg {
@@ -200,12 +307,13 @@
 
 /* Card title styling */
 .md-typeset .grid.cards strong {
-  font-size: 1.1em !important;
-  font-weight: 600 !important;
+  font-size: 1.25em !important;
+  font-weight: 700 !important;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: var(--md-primary-fg-color) !important;
   transition: color 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .grid.cards strong {
@@ -220,7 +328,14 @@
 /* Card paragraph spacing */
 .md-typeset .grid.cards p {
   margin: 0.5rem 0;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+/* Process cards - more compact description */
+.md-typeset .grid.cards > ul > li > hr:first-of-type + p {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* Improve card content readability */
@@ -231,9 +346,15 @@
 
 /* Card separator (horizontal rule) styling */
 .md-typeset .grid.cards hr {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
   border-color: rgba(0, 0, 0, 0.1);
   opacity: 0.5;
+}
+
+/* Process cards - tighter separator spacing */
+.md-typeset .grid.cards > ul > li > hr:first-of-type {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .grid.cards hr {
@@ -254,7 +375,7 @@
 
 /* Ensure description paragraph has consistent height so separator aligns */
 .md-typeset .grid.cards > ul > li > hr:first-of-type + p {
-  min-height: 5.5rem !important;
+  min-height: 3.5rem !important;
   flex-grow: 0 !important;
   flex-shrink: 0 !important;
 }
