@@ -16,10 +16,12 @@ schema_type: "HowTo"
 # Discover
 
 <!--summary-start-->
-_Discover all use cases in the given scope, short-term and long-term, 
-create a "[Use Case Tree](../../concept/use-case-tree.md)" that shows a viable, realistic, logical,
-and successful pathway towards strategic goals.
-This is about "the what" and how it relates to "the why"._
+
+- strategic use cases
+- initial use case tree
+- business knowledge
+- priorities & outcomes
+
 <!--summary-end-->
 
 Discover all strategic use cases in the given scope that support the agreed vision
