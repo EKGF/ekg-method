@@ -142,10 +142,10 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Enterprise Knowledge Graph Foundation",
+    "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 12:56:37 EST"><span class="timeago" datetime="2025-12-03T12:56:37-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 12:56:37 EST">2025-12-03</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 13:35:08 EST"><span class="timeago" datetime="2025-12-03T13:35:08-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 13:35:08 EST">2025-12-03</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "FAQ",
@@ -3423,12 +3423,12 @@ datasets (or data products), ontologies, workflows, user interface models and fu
 <p>A user story can be seen as a black-box function with inputs and outputs.
 We model these inputs and outputs initially just as simple "<a href="../../concept/concept/">Concepts</a>"
 (and the terms that are being used for those concepts).
-By adding more and more detail to these stories, they eventually become runnable or 
-executable and can be invoked as an HTTP <abbr title="Application Programming Interface">API</abbr>, in response to a Kafka message, 
+By adding more and more detail to these stories, they eventually become runnable or
+executable and can be invoked as an HTTP <abbr title="Application Programming Interface">API</abbr>, in response to a Kafka message,
 or via any other technology.
-Stories can be "implemented" using <abbr title="SPARQL Protocol and RDF Query Language, a W3C standard">SPARQL</abbr>, SQL, Gremlin, or calls to external APIs 
-of any sort since they're seen as a "black box," it really doesn't matter, although usually, 
-the easiest way to implement them is, of course, <abbr title="SPARQL Protocol and RDF Query Language, a W3C standard">SPARQL</abbr> since an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> is primarily an 
+Stories can be "implemented" using <abbr title="SPARQL Protocol and RDF Query Language, a W3C standard">SPARQL</abbr>, SQL, Gremlin, or calls to external APIs
+of any sort since they're seen as a "black box," it really doesn't matter, although usually,
+the easiest way to implement them is, of course, <abbr title="SPARQL Protocol and RDF Query Language, a W3C standard">SPARQL</abbr> since an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> is primarily an
 <abbr title="Resource Definition Framework, the standard that defines the basic building block of a semantic graph: the so-called &quot;triple&quot; i.e. an RDF-statement">RDF</abbr>-based world.</p>
 <p>A story is (by precedent) linked to only one use case.</p>
 <h2 id="how-do-ekg-use-cases-compare-to-uml-use-cases">How do <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> use cases compare to UML use cases?<a class="headerlink" href="#how-do-ekg-use-cases-compare-to-uml-use-cases" title="Permanent link">&para;</a></h2>
@@ -3441,8 +3441,8 @@ and are, therefore, more suitable for the <abbr title="Enterprise Knowledge Grap
 more or less resembles a tree structure that can be easily visualized on a whiteboard hence
 the term <a href="../../concept/use-case-tree/">Use Case Tree</a>.</p>
 <h2 id="are-use-case-trees-actually-trees-hierarchies">Are use case trees actually trees (hierarchies)?<a class="headerlink" href="#are-use-case-trees-actually-trees-hierarchies" title="Permanent link">&para;</a></h2>
-<p>No, they are <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a> (one use case 
-can support, and be supported by, many others) but we obviously didn't want to call it 
+<p>No, they are <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a> (one use case
+can support, and be supported by, many others) but we obviously didn't want to call it
 "Use Case DAG" :-)</p>
 <h2 id="what-is-the-detail-needed-behind-each-use-case-narrative-happy-case-exceptions">What is the detail needed behind each use case? - Narrative? Happy case? Exceptions<a class="headerlink" href="#what-is-the-detail-needed-behind-each-use-case-narrative-happy-case-exceptions" title="Permanent link">&para;</a></h2>
 <p>Here's a <a href="../../concept/use-case/#plan-build-run">template</a> for the kind of information that we need
@@ -3450,7 +3450,7 @@ to collect for any given use case during the various phases in their life cycle.
 <h2 id="how-are-use-cases-named">How are use cases named?<a class="headerlink" href="#how-are-use-cases-named" title="Permanent link">&para;</a></h2>
 <ul>
 <li>traditionally: verb phrase including noun, e.g., <em>Maintain customer accounts</em></li>
-<li>actual: noun phrase for a data subject area, which may be singular or plural, 
+<li>actual: noun phrase for a data subject area, which may be singular or plural,
   for instance, <em>Customer Accounts</em>.</li>
 </ul>
 <p>With just using nouns, any given use case tree starts to look like one of three things
@@ -3462,7 +3462,7 @@ or some sort of combination of it, especially at the higher levels in the tree:<
 </ul>
 <p>This may be a bit confusing because it's none of those three things, but there is a close relationship
 between these four concepts (domains, capabilities, organizational units, and Use Case Trees).
-And that's precisely how it should be; your <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr>'s modular structure should look like 
+And that's precisely how it should be; your <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr>'s modular structure should look like
 <em>your</em> enterprise structure.</p>
 <p>However:</p>
 <ul>
@@ -3505,7 +3505,7 @@ own context-specific language.</p>
 life cycle, from initiation to production and beyond.</p>
 <p>Changing terms simply because some external ontology has a "better" name for the same concept is
 not helping.
-The whole point of using semantic technology is that we can easily model all "semantic conundrums" 
+The whole point of using semantic technology is that we can easily model all "semantic conundrums"
 and make sure that we always address "the business" (i.e., the customer) with their language
 while keeping the backend <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> models "generic" and linked to any number of appropriate ontologies.</p>
 <p>A "concept" in the Use Case Tree Method is, therefore, "the linking pin," linking local business language to
@@ -3517,7 +3517,7 @@ any other appropriate concepts in any number of other ontologies.</p>
 <li><code>&lt;concept&gt; datatype &lt;xsd datatype&gt; .</code> (optional)</li>
 <li><code>&lt;concept&gt; ....</code> (all kinds of mapping information)</li>
 <li><code>&lt;concept&gt; term &lt;term&gt;</code> (where term can be a multilingual context-specific name for the concept or
-   a technology-stack specific name)</li>
+  a technology-stack specific name)</li>
 <li><code>&lt;concept&gt; isInputFor &lt;story&gt;</code></li>
 <li><code>&lt;concept&gt; isOutputFor &lt;story&gt;</code></li>
 <li><code>&lt;concept&gt; isUsedInUseCase &lt;usecase&gt;</code> (derived from the stories of the use case)</li>
@@ -3542,7 +3542,7 @@ of this method, spanning across the workflows of many use cases.</p>
 <h2 id="what-is-the-relationship-to-strategy">What is the relationship to Strategy?<a class="headerlink" href="#what-is-the-relationship-to-strategy" title="Permanent link">&para;</a></h2>
 <p>The Use Case Tree of an organization has everything to do with Strategy;
 overall <a href="https://maturity.ekgf.org/pillar/business/capability-area/strategy-actuation/">Business Strategy</a>,
-<a href="https://maturity.ekgf.org/pillar/data/capability-area/data-strategy/">Data Strategy</a>, 
+<a href="https://maturity.ekgf.org/pillar/data/capability-area/data-strategy/">Data Strategy</a>,
 <a href="https://maturity.ekgf.org/pillar/organization/capability-area/executive-leadership/capability/organizational-strategy/">Organizational Strategy</a>
 and <a href="https://maturity.ekgf.org/pillar/technology/capability-area/technology-strategy/">Technology Strategy</a>.</p>
 <p>These are the topics that we discuss in the EKGF Maturity Model at <a href="https://maturity.ekgf.org">https://maturity.ekgf.org</a>.</p>
@@ -3575,11 +3575,11 @@ and so forth.</p>
 just stand for some external "legacy" system. For instance if your organization has
 an old mainframe running "Billing" for 40 years, built with COBOL, then we can add
 that as a Use Case, a black box really, to the Use Case Tree.</p>
-<p>The implementation of a use case can be anything. Implementation details will be 
+<p>The implementation of a use case can be anything. Implementation details will be
 added by engineers using their own models.</p>
 <p>Point is: everyone can talk to the Use Case Tree; business people, any stakeholder,
 end users, ontologists, data modelers, knowledge graph engineers or other data scientists,
-COBOL programmers, devops people, they're all talking about the same deliverables that 
+COBOL programmers, devops people, they're all talking about the same deliverables that
 the business ultimately pays for.</p>
 <h2 id="how-if-at-all-is-a-uct-specific-to-knowledge-graphs">How, if at all, is a UCT specific to Knowledge Graphs?<a class="headerlink" href="#how-if-at-all-is-a-uct-specific-to-knowledge-graphs" title="Permanent link">&para;</a></h2>
 <p>See previous question as well. No, the Use Case Tree is not specific to Knowledge Graphs,
@@ -3595,24 +3595,20 @@ confusion, communication disconnects, the gap between "business &amp; technology
 <ul>
 <li>Define use cases with a minimum number of "dependencies"</li>
 <li>dependencies come in many forms, ontologies, datasets, people, maturity requirements,
-     departments and so forth.</li>
+    departments and so forth.</li>
 <li>Start with "reference data" (so that we have something to link to)</li>
 <li>Build upon standard use cases (downloadable from EKGF and others, or other internal departments)</li>
-<li>Select the shortest path in the tree<ul>
-<li>should lead quickly to the delivery of a "lighthouse use case" or a "strategic use case", 
-  delivering real value to the business, ideally value that no other technology stack can currently 
-  (realistically) provide.</li>
-</ul>
-</li>
-<li>Deliver straight to production, from the first tiny use case onwards<ul>
+<li>Select the shortest path in the tree</li>
+<li>should lead quickly to the delivery of a "lighthouse use case" or a "strategic use case",
+    delivering real value to the business, ideally value that no other technology stack can currently
+    (realistically) provide.</li>
+<li>Deliver straight to production, from the first tiny use case onwards</li>
 <li>Implement full test-driven development with 100% test-coverage</li>
-<li>Implement full end-to-end <a href="https://en.wikipedia.org/wiki/Continuous_deployment">continuous deployment</a> 
-  or <a href="https://www.gitops.tech/">GitOps</a>.</li>
+<li>Implement full end-to-end <a href="https://en.wikipedia.org/wiki/Continuous_deployment">continuous deployment</a>
+    or <a href="https://www.gitops.tech/">GitOps</a>.</li>
 <li>Get through all red-tape and learning curve with the technology first so that delivery
-  of all subsequent use cases is not held back and it can be proven that price and time-to-market
-  will be reduced drastically with each subsequent use case delivery.</li>
-</ul>
-</li>
+    of all subsequent use cases is not held back and it can be proven that price and time-to-market
+    will be reduced drastically with each subsequent use case delivery.</li>
 </ul>
 <h2 id="what-is-reusable">What is reusable?<a class="headerlink" href="#what-is-reusable" title="Permanent link">&para;</a></h2>
 <p>Most Use Cases can be developed as "reusable components" (if you do it right).
@@ -3630,12 +3626,12 @@ competitors.</p>
 <p>Every successful technology stack has a central place where the community publishes their
 reusable components, for JavaScript that is <a href="https://npmjs.org">https://npmjs.org</a>, for
 Java we have <a href="https://mvnrepository.com/repos/central">Maven Central</a> (and others), Python has
-<a href="https://pypi.org">https://pypi.org</a> and for the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> we have the EKGF Catalog 
-(under development, it's in its very early stages still) at 
+<a href="https://pypi.org">https://pypi.org</a> and for the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> we have the EKGF Catalog
+(under development, it's in its very early stages still) at
 <a href="https://catalog.ekgf.org">https://catalog.ekgf.org</a>.</p>
 <h2 id="how-are-use-cases-plug-and-play">How are Use Cases "plug and play?"<a class="headerlink" href="#how-are-use-cases-plug-and-play" title="Permanent link">&para;</a></h2>
 <p>Any given use case can be "enriched" with more and more detail during its development.
-This eventually leads to it becoming "executable", which in effect turns it into the 
+This eventually leads to it becoming "executable", which in effect turns it into the
 <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> equivalent of an "application".
 Use Cases at this level of sophistication are then "plug and play" and can be re-deployed
 in other EKGs.</p>
@@ -3687,8 +3683,8 @@ any UI for it, showing it fully integrated with all other use cases with your
 corporate styling etc.</p>
 <h2 id="how-can-you-drive-data-modeling">How can you drive (data) modeling?<a class="headerlink" href="#how-can-you-drive-data-modeling" title="Permanent link">&para;</a></h2>
 <p>One major "lesson learned" is that semantic technology and knowledge graphs easily
-allow people to "<a href="../../objective/avoid-boiling-the-ocean/">boil the ocean</a>" and 
-"model the whole world" using generic abstract ontologies, sometimes even up to 
+allow people to "<a href="../../objective/avoid-boiling-the-ocean/">boil the ocean</a>" and
+"model the whole world" using generic abstract ontologies, sometimes even up to
 philosophical levels of abstraction.</p>
 <p>One of the key objectives of the Use Case Tree Method is to <a href="../../objective/avoid-boiling-the-ocean/">avoid boiling the ocean</a>
 by creating a laser sharp description of what the business needs and pays for.
@@ -3704,7 +3700,7 @@ for the ontologist, the use case's automated tests being the overall judge.</p>
 can be built as an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> use case.</p>
 <p>Practically, there will always be many other systems that are specialised in what they're
 doing. Source of record systems, PeopleSoft, Salesforce, spreadsheets, trading systems,
-blockchains and the like. The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> can serve as a layer on top of all those other systems, 
+blockchains and the like. The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> can serve as a layer on top of all those other systems,
 connecting the dots across the enterprise or ecosystem.</p>
 <h2 id="not-suitable-for">Not suitable for?<a class="headerlink" href="#not-suitable-for" title="Permanent link">&para;</a></h2>
 <p><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> as a general concept is not tied to specific types of databases although standard
@@ -3737,7 +3733,7 @@ databases.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 12:56:37 EST"><span class="timeago" datetime="2025-12-03T12:56:37-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 12:56:37 EST">2025-12-03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 13:35:08 EST"><span class="timeago" datetime="2025-12-03T13:35:08-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 13:35:08 EST">2025-12-03</span>
   </span>
 
     
@@ -3891,7 +3887,7 @@ databases.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2019-2023 Enterprise Knowledge Graph Foundation
+      Copyright © 2025 Object Management Group®, OMG® | All Rights Reserved
     </div>
   
   
