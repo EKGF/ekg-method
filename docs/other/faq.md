@@ -10,7 +10,8 @@ keywords:
   - use case tree FAQ
   - enterprise knowledge graph questions
 schema_type: "FAQPage"
---- 
+---
+
 # Frequently Asked Questions
 
 ## What is a Use Case?
@@ -26,12 +27,12 @@ datasets (or data products), ontologies, workflows, user interface models and fu
 A user story can be seen as a black-box function with inputs and outputs.
 We model these inputs and outputs initially just as simple "[Concepts](../concept/concept.md)"
 (and the terms that are being used for those concepts).
-By adding more and more detail to these stories, they eventually become runnable or 
-executable and can be invoked as an HTTP API, in response to a Kafka message, 
+By adding more and more detail to these stories, they eventually become runnable or
+executable and can be invoked as an HTTP API, in response to a Kafka message,
 or via any other technology.
-Stories can be "implemented" using SPARQL, SQL, Gremlin, or calls to external APIs 
-of any sort since they're seen as a "black box," it really doesn't matter, although usually, 
-the easiest way to implement them is, of course, SPARQL since an EKG is primarily an 
+Stories can be "implemented" using SPARQL, SQL, Gremlin, or calls to external APIs
+of any sort since they're seen as a "black box," it really doesn't matter, although usually,
+the easiest way to implement them is, of course, SPARQL since an EKG is primarily an
 RDF-based world.
 
 A story is (by precedent) linked to only one use case.
@@ -53,8 +54,8 @@ the term [Use Case Tree](../concept/use-case-tree.md/).
 
 ## Are use case trees actually trees (hierarchies)?
 
-No, they are [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (one use case 
-can support, and be supported by, many others) but we obviously didn't want to call it 
+No, they are [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (one use case
+can support, and be supported by, many others) but we obviously didn't want to call it
 "Use Case DAG" :-)
 
 ## What is the detail needed behind each use case? - Narrative? Happy case? Exceptions
@@ -65,7 +66,7 @@ to collect for any given use case during the various phases in their life cycle.
 ## How are use cases named?
 
 - traditionally: verb phrase including noun, e.g., _Maintain customer accounts_
-- actual: noun phrase for a data subject area, which may be singular or plural, 
+- actual: noun phrase for a data subject area, which may be singular or plural,
   for instance, _Customer Accounts_.
 
 With just using nouns, any given use case tree starts to look like one of three things
@@ -77,7 +78,7 @@ or some sort of combination of it, especially at the higher levels in the tree:
 
 This may be a bit confusing because it's none of those three things, but there is a close relationship
 between these four concepts (domains, capabilities, organizational units, and Use Case Trees).
-And that's precisely how it should be; your EKG's modular structure should look like 
+And that's precisely how it should be; your EKG's modular structure should look like
 _your_ enterprise structure.
 
 However:
@@ -132,7 +133,7 @@ life cycle, from initiation to production and beyond.
 
 Changing terms simply because some external ontology has a "better" name for the same concept is
 not helping.
-The whole point of using semantic technology is that we can easily model all "semantic conundrums" 
+The whole point of using semantic technology is that we can easily model all "semantic conundrums"
 and make sure that we always address "the business" (i.e., the customer) with their language
 while keeping the backend EKG models "generic" and linked to any number of appropriate ontologies.
 
@@ -145,7 +146,7 @@ any other appropriate concepts in any number of other ontologies.
 - `<concept> datatype <xsd datatype> .` (optional)
 - `<concept> ....` (all kinds of mapping information)
 - `<concept> term <term>` (where term can be a multilingual context-specific name for the concept or
-   a technology-stack specific name)
+  a technology-stack specific name)
 - `<concept> isInputFor <story>`
 - `<concept> isOutputFor <story>`
 - `<concept> isUsedInUseCase <usecase>` (derived from the stories of the use case)
@@ -173,7 +174,7 @@ of this method, spanning across the workflows of many use cases.
 
 The Use Case Tree of an organization has everything to do with Strategy;
 overall [Business Strategy](https://maturity.ekgf.org/pillar/business/capability-area/strategy-actuation/),
-[Data Strategy](https://maturity.ekgf.org/pillar/data/capability-area/data-strategy/), 
+[Data Strategy](https://maturity.ekgf.org/pillar/data/capability-area/data-strategy/),
 [Organizational Strategy](https://maturity.ekgf.org/pillar/organization/capability-area/executive-leadership/capability/organizational-strategy/)
 and [Technology Strategy](https://maturity.ekgf.org/pillar/technology/capability-area/technology-strategy/).
 
@@ -216,12 +217,12 @@ just stand for some external "legacy" system. For instance if your organization 
 an old mainframe running "Billing" for 40 years, built with COBOL, then we can add
 that as a Use Case, a black box really, to the Use Case Tree.
 
-The implementation of a use case can be anything. Implementation details will be 
+The implementation of a use case can be anything. Implementation details will be
 added by engineers using their own models.
 
 Point is: everyone can talk to the Use Case Tree; business people, any stakeholder,
 end users, ontologists, data modelers, knowledge graph engineers or other data scientists,
-COBOL programmers, devops people, they're all talking about the same deliverables that 
+COBOL programmers, devops people, they're all talking about the same deliverables that
 the business ultimately pays for.
 
 ## How, if at all, is a UCT specific to Knowledge Graphs?
@@ -244,22 +245,22 @@ Selecting the "right" first use cases is a bit of an art.
 Some rules of thumb:
 
 - Define use cases with a minimum number of "dependencies"
-   - dependencies come in many forms, ontologies, datasets, people, maturity requirements,
-     departments and so forth.
+  - dependencies come in many forms, ontologies, datasets, people, maturity requirements,
+    departments and so forth.
 - Start with "reference data" (so that we have something to link to)
 - Build upon standard use cases (downloadable from EKGF and others, or other internal departments)
 - Select the shortest path in the tree
-    - should lead quickly to the delivery of a "lighthouse use case" or a "strategic use case", 
-      delivering real value to the business, ideally value that no other technology stack can currently 
-      (realistically) provide.
+  - should lead quickly to the delivery of a "lighthouse use case" or a "strategic use case",
+    delivering real value to the business, ideally value that no other technology stack can currently
+    (realistically) provide.
 - Deliver straight to production, from the first tiny use case onwards
-    - Implement full test-driven development with 100% test-coverage
-    - Implement full end-to-end [continuous deployment](https://en.wikipedia.org/wiki/Continuous_deployment) 
-      or [GitOps](https://www.gitops.tech/).
-    - Get through all red-tape and learning curve with the technology first so that delivery
-      of all subsequent use cases is not held back and it can be proven that price and time-to-market
-      will be reduced drastically with each subsequent use case delivery.
- 
+  - Implement full test-driven development with 100% test-coverage
+  - Implement full end-to-end [continuous deployment](https://en.wikipedia.org/wiki/Continuous_deployment)
+    or [GitOps](https://www.gitops.tech/).
+  - Get through all red-tape and learning curve with the technology first so that delivery
+    of all subsequent use cases is not held back and it can be proven that price and time-to-market
+    will be reduced drastically with each subsequent use case delivery.
+
 ## What is reusable?
 
 Most Use Cases can be developed as "reusable components" (if you do it right).
@@ -280,14 +281,14 @@ competitors.
 Every successful technology stack has a central place where the community publishes their
 reusable components, for JavaScript that is [https://npmjs.org](https://npmjs.org), for
 Java we have [Maven Central](https://mvnrepository.com/repos/central) (and others), Python has
-[https://pypi.org](https://pypi.org) and for the EKG we have the EKGF Catalog 
-(under development, it's in its very early stages still) at 
+[https://pypi.org](https://pypi.org) and for the EKG we have the EKGF Catalog
+(under development, it's in its very early stages still) at
 [https://catalog.ekgf.org](https://catalog.ekgf.org).
 
 ## How are Use Cases "plug and play?"
 
 Any given use case can be "enriched" with more and more detail during its development.
-This eventually leads to it becoming "executable", which in effect turns it into the 
+This eventually leads to it becoming "executable", which in effect turns it into the
 EKG equivalent of an "application".
 Use Cases at this level of sophistication are then "plug and play" and can be re-deployed
 in other EKGs.
@@ -359,8 +360,8 @@ corporate styling etc.
 ## How can you drive (data) modeling?
 
 One major "lesson learned" is that semantic technology and knowledge graphs easily
-allow people to "[boil the ocean](../objective/avoid-boiling-the-ocean.md)" and 
-"model the whole world" using generic abstract ontologies, sometimes even up to 
+allow people to "[boil the ocean](../objective/avoid-boiling-the-ocean.md)" and
+"model the whole world" using generic abstract ontologies, sometimes even up to
 philosophical levels of abstraction.
 
 One of the key objectives of the Use Case Tree Method is to [avoid boiling the ocean](../objective/avoid-boiling-the-ocean.md)
@@ -381,7 +382,7 @@ can be built as an EKG use case.
 
 Practically, there will always be many other systems that are specialised in what they're
 doing. Source of record systems, PeopleSoft, Salesforce, spreadsheets, trading systems,
-blockchains and the like. The EKG can serve as a layer on top of all those other systems, 
+blockchains and the like. The EKG can serve as a layer on top of all those other systems,
 connecting the dots across the enterprise or ecosystem.
 
 ## Not suitable for?
@@ -391,4 +392,3 @@ semantic graph database products (aka "triple stores") are the de-facto choice t
 the EKG. However, many other technologies can be used as well, with a bit more work,
 such as time series databases, Kafka, relational databases and labeled property graph (LPG)
 databases.
-

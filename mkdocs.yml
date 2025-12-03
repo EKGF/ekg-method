@@ -6,8 +6,8 @@ repo_url: https://github.com/EKGF/ekg-method
 site_url: https://method.ekgf.org
 edit_uri: edit/main/docs/
 site_dir: site
-site_author: Enterprise Knowledge Graph Foundation
-copyright: Copyright &copy; 2019-2023 Enterprise Knowledge Graph Foundation
+site_author: Object Management Group (OMG) Enterprise Knowledge Graph Forum
+copyright: "Copyright © 2025 Object Management Group®, OMG® | All Rights Reserved"
 
 # Navigation
 # nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
@@ -27,7 +27,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: light-blue
+      accent: light blue
       toggle:
 #        icon: material/toggle-switch-off-outline
 #        icon: material/lightbulb-outline
@@ -157,7 +157,6 @@ markdown_extensions:
   - abbr
   - admonition
 # - mdx_emdash (causes too many warnings)
-  - footnotes
   - tables
   - mkdocs_graphviz
   - pymdownx.caret
@@ -172,9 +171,7 @@ markdown_extensions:
       auto_append:
         - abbreviations.md
   - pymdownx.details
-  - pymdownx.mark
   - pymdownx.magiclink
-  - pymdownx.smartsymbols
   - pymdownx.critic
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -194,4 +191,3 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
