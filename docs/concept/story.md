@@ -151,6 +151,26 @@ defines what a Persona needs to accomplish within a Use Case_
     they are **living, executable specifications** that the EKG
     monitors and validates throughout their entire lifecycle.
 
+    ## Relationship to Workflows
+
+    Stories are executed as steps within [Workflows](workflow.md).
+    For each Story, we always know in which Workflows it participates
+    as a Step.
+
+    This bidirectional relationship enables:
+
+    - **Story reuse** — Stories can be reused across multiple
+      workflows, enabling composition and consistency
+    - **Workflow discovery** — Understanding which workflows use a
+      given story helps discover related business processes
+    - **Impact analysis** — Knowing what workflows are affected when
+      a story changes enables better change management
+    - **Process understanding** — Seeing how stories are composed
+      into workflows provides insight into business processes
+
+    Stories define the "what" (the capability), while Workflows
+    define the "how" (the sequence and order of execution).
+
     ## Relationship to Other Concepts
 
     Stories link to other data structures in the Knowledge Graph:
@@ -163,6 +183,8 @@ defines what a Persona needs to accomplish within a Use Case_
       to business outcomes
     - **[Concepts](concept.md)** — Stories reference domain concepts
       that need to be understood and modeled
+    - **[Workflows](workflow.md)** — Stories are executed as steps
+      within workflows
 
     This integration ensures that Stories are not isolated
     requirements but part of a cohesive, semantic model of the
