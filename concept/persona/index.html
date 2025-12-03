@@ -1360,6 +1360,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persona
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1376,6 +1394,196 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-persona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Persona?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-personas-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Personas Matter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reuse-across-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reuse Across Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-vs-actor-vs-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona vs. Actor vs. Role
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-technical-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Technical Characteristics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Technical Characteristics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-role-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automated Role Assignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-persona-computation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-Time Persona Computation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontology-based-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ontology-Based Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-vocabulary-and-reuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept Vocabulary and Reuse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beyond-active-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beyond Active Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-to-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship to Stories
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-inheritance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona Inheritance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Relationships
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2881,54 +3089,201 @@
 
 <!-- Page content -->
 <h1 id="persona">Persona<a class="headerlink" href="#persona" title="Permanent link">&para;</a></h1>
+<!--summary-start-->
+<p><em>A representation of the different types of players — people, systems,
+or entities — involved in a Use Case, defined using business language</em></p>
+<!--summary-end-->
+
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="business--management-audience" name="__tabbed_1" type="radio" /><input id="data--tech-audience" name="__tabbed_1" type="radio" /><input id="model" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="business--management-audience">Business &amp; Management Audience</label><label for="data--tech-audience">Data &amp; Tech Audience</label><label for="model">Model</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>For any given Use Case we need to have a list of all the different types of players.
-In the initial stages of the life cycle of a use case it is less relevant whether these players
-are called Stakeholders, Actors, Roles, User Types or Systems, we simply need to know what terms the
-actual users, the real customer(s) of the use case, are using for them in their daily practice.</p>
-<p>We call them Personas.</p>
-<p>For example, in the use case "Legal Entity Management" you would have Personas like:</p>
+<h2 id="what-is-a-persona">What Is a Persona?<a class="headerlink" href="#what-is-a-persona" title="Permanent link">&para;</a></h2>
+<p>For any given <a href="../use-case/">Use Case</a>, we need to identify all
+the different types of players involved.
+In the initial stages of a use case's lifecycle, it matters less
+whether these players are called Stakeholders, Actors, Roles, User
+Types, or Systems.
+What matters is understanding what terms the actual users — the
+real customers of the use case — use for them in their daily
+practice.</p>
+<p>We call them <strong>Personas</strong>.</p>
+<h2 id="why-personas-matter">Why Personas Matter<a class="headerlink" href="#why-personas-matter" title="Permanent link">&para;</a></h2>
+<p>Personas help us understand who interacts with a use case and
+what their needs are.
+They provide a common language that bridges business and
+technology, ensuring that everyone understands who is involved
+and what roles they play.</p>
+<div class="admonition tip">
+<p class="admonition-title">Use business language</p>
+<p>Start with the terms your organization already uses.
+Don't force technical terminology — let the business
+language guide you.</p>
+</div>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p>For example, in the use case "Legal Entity Management," you
+would have Personas like:</p>
 <ul>
-<li>Auditor</li>
-<li>Data Owner</li>
-<li>Shareholder</li>
-<li>Director</li>
-<li>Signator<ul>
-<li>Signator Power Pursuent to Commercial Register</li>
-</ul>
-</li>
-<li>Board Member</li>
-<li>Legal Council</li>
-<li>Liquidator</li>
+<li><strong>Auditor</strong> — Reviews and verifies legal entity information</li>
+<li><strong>Data Owner</strong> — Responsible for maintaining accurate data</li>
+<li><strong>Shareholder</strong> — Has ownership interest in the entity</li>
+<li><strong>Director</strong> — Member of the board of directors</li>
+<li><strong>Signator</strong> — Authorized to sign on behalf of the entity</li>
+<li>Signator Power Pursuant to Commercial Register</li>
+<li><strong>Board Member</strong> — Serves on the entity's board</li>
+<li><strong>Legal Council</strong> — Provides legal guidance</li>
+<li><strong>Liquidator</strong> — Manages entity dissolution</li>
 <li>...</li>
 </ul>
-<p>Many of these Personas are involved in multiple use cases and are grouped together in <em>persona taxonomies</em>
-and defined in <em>ontologies</em> with "machine readable meaning" that can be used to let algorithms "understand"
+<h2 id="reuse-across-use-cases">Reuse Across Use Cases<a class="headerlink" href="#reuse-across-use-cases" title="Permanent link">&para;</a></h2>
+<p>Many Personas are involved in multiple use cases and are
+grouped together in <strong>persona taxonomies</strong>.
+These taxonomies are defined in <a href="../ontology/">ontologies</a> with
+"machine-readable meaning" that enables algorithms to understand
 the actual context and act upon it.</p>
+<p>This reuse ensures consistency across the enterprise and enables
+the <a href="../../objective/composable-business/">composable business</a>
+approach, where Personas become reusable components in the
+Enterprise Knowledge Graph.</p>
 </div>
 <div class="tabbed-block">
-<p>In traditional use case modelling people use the term <em>Actor</em> rather than <em>Persona</em>.
-The term <em>Actor</em> is also used in a TOGAF Metamodel and combined with the term <em>Role</em> whereby an actor 
-assumes a role to perform a task.</p>
-<p>The Use Case Tree Method does not make that distinction, primarily to keep things as simple as possible when
-capturing requirements --- primarily as <a href="../story/">stories</a> --- but also because the term Persona combines both
-concepts into one whereby:</p>
+<h2 id="persona-vs-actor-vs-role">Persona vs. Actor vs. Role<a class="headerlink" href="#persona-vs-actor-vs-role" title="Permanent link">&para;</a></h2>
+<p>In traditional use case modeling, the term <strong>Actor</strong> is commonly
+used rather than <strong>Persona</strong>.
+The term Actor is also used in the TOGAF Metamodel, where it is
+combined with the term <strong>Role</strong> — an actor assumes a role to
+perform a task.</p>
+<p>The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method does not make that distinction, primarily to keep
+things simple when capturing requirements — primarily as
+<a href="../story/">Stories</a> — but also because the term Persona combines
+both concepts into one unified model.</p>
+<h2 id="key-technical-characteristics">Key Technical Characteristics<a class="headerlink" href="#key-technical-characteristics" title="Permanent link">&para;</a></h2>
+<h3 id="automated-role-assignment">Automated Role Assignment<a class="headerlink" href="#automated-role-assignment" title="Permanent link">&para;</a></h3>
+<p>Actors assuming a Role is fully automated, context-dependent,
+and driven by models, rules, and policies.
+This means that the system determines which Persona applies
+based on the current context, rather than requiring manual
+assignment.</p>
+<h3 id="real-time-persona-computation">Real-Time Persona Computation<a class="headerlink" href="#real-time-persona-computation" title="Permanent link">&para;</a></h3>
+<p>A proper <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> service layer is able to compute the set of
+Personas that the current user has <strong>in real-time</strong> and map
+them to lower-level roles and privileges local to the given
+technology stack.</p>
+<p>This dynamic computation enables:</p>
 <ul>
-<li>Actors assuming a Role is fully automated, context dependent, model-, rule- and policy-driven</li>
-<li>Personas are <a href="../concept/">Concepts</a> tied to Ontology-defined Classes that can inherit from other Persona types</li>
-<li>Personas are not just the "users" (or systems) of the use case but also any other party in the related
-  data-models (or <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> models/ontologies). For instance, your user can have the persona "Legal Entity Maintainer"
-  but since the legal entity can have a Director as well, the Director is also a Persona, even when that
-  Director might never be an active user of the system.</li>
+<li><strong>Contextual assignment</strong> — Some Personas are assigned to a
+  user temporarily, just in the context of a given use case or
+  when working with a specific object</li>
+<li><strong>Rule-based determination</strong> — Personas can be computed
+  based on business rules (e.g., you can be the "Account
+  Owner" if the account is assigned to you, is in your region,
+  etc.)</li>
+<li><strong>Technology stack mapping</strong> — The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> service layer
+  translates high-level Personas into the specific roles and
+  privileges required by each technology stack (databases,
+  APIs, applications)</li>
 </ul>
+<p>This approach ensures that authorization and access control are
+driven by business semantics (Personas) rather than
+technology-specific roles, while still respecting the
+constraints and capabilities of each underlying system.</p>
+<h3 id="ontology-based-definition">Ontology-Based Definition<a class="headerlink" href="#ontology-based-definition" title="Permanent link">&para;</a></h3>
+<p>Technically (or ontologically), a <strong>Persona is just another
+<a href="../concept/">Concept</a></strong> — tied to ontology-defined classes that
+can inherit from other Persona types.
+This fundamental equivalence enables:</p>
+<ul>
+<li><strong>Inheritance relationships</strong> — Personas can be organized in
+  hierarchies (e.g., "Signator Power Pursuant to Commercial
+  Register" is a sub-persona of "Signator")</li>
+<li><strong>Semantic meaning</strong> — Personas have machine-readable
+  definitions that enable automated reasoning</li>
+<li><strong>Reuse</strong> — Personas defined once can be used across multiple
+  use cases</li>
+</ul>
+<h3 id="concept-vocabulary-and-reuse">Concept Vocabulary and Reuse<a class="headerlink" href="#concept-vocabulary-and-reuse" title="Permanent link">&para;</a></h3>
+<p>Each <a href="../use-case/">Use Case</a> can have its own vocabulary of
+concepts, including Personas.
+However, use cases also <strong>inherit or borrow</strong> concepts from
+higher-level or otherwise related use cases in the
+<a href="../use-case-tree/">Use Case Tree</a> (UCT).</p>
+<p>This approach enables:</p>
+<ul>
+<li><strong>Local vocabulary</strong> — Use cases can define concepts
+  (including Personas) specific to their domain</li>
+<li><strong>Inheritance</strong> — Lower-level use cases inherit concepts from
+  their parent use cases in the UCT hierarchy</li>
+<li><strong>Borrowing</strong> — Use cases can reference and reuse concepts
+  from related use cases, even if they're not direct ancestors</li>
+<li><strong>Consistency</strong> — Common concepts (like standard Personas) are
+  defined once and reused, ensuring consistency across the
+  enterprise</li>
+</ul>
+<p>Since Personas are Concepts, they follow the same reuse and
+inheritance patterns as any other concept in the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method.</p>
+<h3 id="beyond-active-users">Beyond Active Users<a class="headerlink" href="#beyond-active-users" title="Permanent link">&para;</a></h3>
+<p>Personas are not just the "users" (or systems) of the use case
+but also any other party in the related data models (or <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr>
+models/ontologies).</p>
+<p>For instance, your user can have the Persona "Legal Entity
+Maintainer," but since the legal entity can have a Director as
+well, the Director is also a Persona, even when that Director
+might never be an active user of the system.</p>
+<p>This broader definition ensures that all entities involved in
+the domain are properly represented, whether they actively
+interact with the system or are simply part of the data model.</p>
+<h2 id="relationship-to-stories">Relationship to Stories<a class="headerlink" href="#relationship-to-stories" title="Permanent link">&para;</a></h2>
+<p><a href="../story/">Stories</a> define what a Persona needs to accomplish.
+Each Story specifies:</p>
+<ul>
+<li><strong>Who</strong> — The Persona (e.g., "As an Auditor...")</li>
+<li><strong>What</strong> — The action or need (e.g., "...I need to get a
+  list of all current board members...")</li>
+<li><strong>Why</strong> — The business outcome (e.g., "...so that I can
+  Verify Stakeholders")</li>
+</ul>
+<p>This structure links Personas to business requirements in a
+clear, testable way.</p>
+<h2 id="persona-inheritance">Persona Inheritance<a class="headerlink" href="#persona-inheritance" title="Permanent link">&para;</a></h2>
+<p>Personas support inheritance through the <code>isSubPersonaOf</code>
+relationship.
+This enables hierarchical organization where more specific
+Personas inherit characteristics from more general ones.</p>
+<p><strong>Example:</strong>
+- <code>Signator Power Pursuant to Commercial Register</code> is a
+  sub-persona of <code>Signator</code>
+- A user associated with the sub-persona automatically inherits
+  the parent Persona's characteristics</p>
+<p><strong>How it works:</strong>
+This inheritance works bottom-up: if a user is associated with
+<code>&lt;persona-A&gt;</code>, and <code>&lt;persona-A&gt;</code> is a sub-persona of
+<code>&lt;persona-B&gt;</code>, then the user is also associated with
+<code>&lt;persona-B&gt;</code>.</p>
 </div>
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The following diagram shows a subset of the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method model as a
+UML Class Diagram, focusing on <strong>Persona</strong> and its relationships
+to other core concepts.</p>
+<p><img alt="Persona Class Diagram" src="../../diagrams/out/persona-class-diagram.svg#darkable" /></p>
+<h2 id="key-relationships">Key Relationships<a class="headerlink" href="#key-relationships" title="Permanent link">&para;</a></h2>
+<p>The model shows how Personas relate to:</p>
+<ul>
+<li><strong><a href="../use-case/">Use Cases</a></strong> — Personas are used in use
+  cases to identify who interacts with the capability</li>
+<li><strong><a href="../story/">Stories</a></strong> — Stories specify what a Persona
+  needs to accomplish</li>
+<li><strong><a href="../concept/">Concepts</a></strong> — Personas are Concepts, enabling
+  semantic definition and reasoning</li>
+<li><strong>Ontologies</strong> — Personas are defined as ontology classes,
+  supporting inheritance and reuse</li>
+</ul>
+<p>This model ensures that Personas are not just labels but
+integrated components of the Enterprise Knowledge Graph,
+enabling automated reasoning, policy enforcement, and
+composability.</p>
 </div>
 </div>
-<p>A subset of the model, as a UML Class Diagram, around <strong>Persona</strong>.</p>
-<p><img alt="Context" src="../../diagrams/out/persona-class-diagram.svg#darkable" /></p>
+</div>
 
 <!-- Source file information -->
 
@@ -2954,7 +3309,7 @@ concepts into one whereby:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 22, 2022 10:30:46 EDT"><span class="timeago" datetime="2022-07-22T10:30:46-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 22, 2022 10:30:46 EDT">2022-07-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 09:14:53 EST"><span class="timeago" datetime="2025-12-03T09:14:53-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 09:14:53 EST">2025-12-03</span>
   </span>
 
     
