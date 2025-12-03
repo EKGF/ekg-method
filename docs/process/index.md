@@ -25,8 +25,6 @@ schema_type: "WebPage"
             <span class="process-card-subtitle">Strategy & Scope</span>
           </div>
       </div>
-        
-        -----
 
         Strategic vision, stakeholder alignment, and the [Use Case Tree](../concept/use-case-tree.md).
         Essential at the start, repeatable at any level---even for individual use cases.
@@ -49,8 +47,6 @@ schema_type: "WebPage"
           </div>
       </div>
 
-        -----
-
         Capture [Stories](../concept/story.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept.md).
         Specify executable behavior as semantic models---mostly no-code---for reusable components.
 
@@ -72,8 +68,6 @@ schema_type: "WebPage"
             <span class="process-card-subtitle">Operate & Optimize</span>
           </div>
       </div>
-
-        -----
 
         Deploy, operate, and optimize the [EKG/Platform](../vocab/ekg-platform.md).
         Measure [Outcomes](../concept/outcome.md), monitor [Workflows](../concept/workflow.md),
