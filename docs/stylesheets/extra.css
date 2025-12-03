@@ -246,10 +246,30 @@
 }
 
 /* Focus states for accessibility */
-.md-typeset .grid.cards a:focus-visible {
-  outline: 2px solid var(--md-primary-fg-color);
-  outline-offset: 2px;
-  border-radius: 0.25rem;
+/* Ensure bullet lists in process cards align vertically (top-aligned) */
+.md-typeset .grid.cards > ul > li {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Ensure description paragraph has consistent height so separator aligns */
+.md-typeset .grid.cards > ul > li > hr:first-of-type + p {
+  min-height: 5.5rem !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Ensure the separator before lists is at consistent vertical position */
+.md-typeset .grid.cards > ul > li > hr:last-of-type {
+  margin-top: auto !important;
+  margin-bottom: 0.5rem !important;
+  flex-shrink: 0 !important;
+}
+
+/* Ensure lists start at consistent position from top */
+.md-typeset .grid.cards > ul > li > ul {
+  margin-top: 0 !important;
+  flex-shrink: 0 !important;
 }
 
 /* ChatGPT-style table styling */
