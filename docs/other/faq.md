@@ -51,7 +51,7 @@ can support, and be supported by, many others) but we obviously didn't want to c
 
 ## What is the detail needed behind each use case? - Narrative? Happy case? Exceptions
 
-Here's a [template](../concept/use-case.md#__tabbed_1_5) for the kind of information that we need
+Here's a [template](../concept/use-case.md#plan-build-run) for the kind of information that we need
 to collect for any given use case during the various phases in their life cycle.
 
 ## How are use cases named?
