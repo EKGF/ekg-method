@@ -1528,6 +1528,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1544,6 +1562,157 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Workflow?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-workflows-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Workflows Matter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-are-workflows-defined" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Are Workflows Defined?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-workflow-in-the-ekg-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Workflow in the EKG Method?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Components
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-to-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship to Stories
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Execution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistent-stateful-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent Stateful Workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflows-as-first-class-ekg-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflows as First-Class EKG Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-to-other-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship to Other Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2881,15 +3050,280 @@
 
 <!-- Page content -->
 <h1 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h1>
-<p>Every <a href="../use-case/">Use Case</a> has one or more Workflows.</p>
-<p>For every given use case, we also need to describe the logical order 
-of things in terms of workflows or business processes. 
-These workflows depend on the <a href="../concept/">concepts</a> captured during
-the requirements gathering phase and are executed to achieve the desired 
-business <a href="../outcome/">outcome</a>. 
-Each step in the workflow corresponds to executing a story in the use case,
-and the concepts and terms used in the workflow are based on the
-context-specific vocabulary identified during the requirements gathering phase.</p>
+<!--summary-start-->
+<p><em>A logical sequence of steps that defines the order of execution for
+Stories within a Use Case to achieve desired business Outcomes</em></p>
+<!--summary-end-->
+
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="business--management-audience" name="__tabbed_1" type="radio" /><input id="data--tech-audience" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="business--management-audience">Business &amp; Management Audience</label><label for="data--tech-audience">Data &amp; Tech Audience</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h2 id="what-is-a-workflow">What Is a Workflow?<a class="headerlink" href="#what-is-a-workflow" title="Permanent link">&para;</a></h2>
+<p>A <strong>Workflow</strong> defines the logical order of steps needed to
+accomplish a business process within a <a href="../use-case/">Use Case</a>.
+Every Use Case has one or more Workflows that describe how
+business activities should be performed.</p>
+<p>Workflows provide a structured way to organize and sequence the
+work that needs to be done, ensuring that tasks are performed in
+the right order and that dependencies are respected.</p>
+<h2 id="why-workflows-matter">Why Workflows Matter<a class="headerlink" href="#why-workflows-matter" title="Permanent link">&para;</a></h2>
+<p>Workflows enable:</p>
+<ul>
+<li><strong>Clarity</strong> — Everyone understands the sequence of activities
+  needed to accomplish a goal</li>
+<li><strong>Consistency</strong> — The same process is followed every time,
+  reducing errors and variability</li>
+<li><strong>Efficiency</strong> — Workflows optimize the order of operations</li>
+<li><strong>Automation</strong> — Well-defined workflows can be automated,
+  reducing manual effort</li>
+<li><strong>Governance</strong> — Workflows ensure that business rules and
+  policies are followed</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Start with business logic</p>
+<p>Workflows should reflect how the business actually works, not
+how systems are currently implemented.
+Focus on the logical order of business activities.</p>
+</div>
+<h2 id="workflow-structure">Workflow Structure<a class="headerlink" href="#workflow-structure" title="Permanent link">&para;</a></h2>
+<p>Workflows consist of a sequence of steps, where each step
+corresponds to executing a <a href="../story/">Story</a> in the use case.
+The steps are organized to achieve the desired business
+<a href="../outcome/">Outcome</a>.</p>
+<p>The concepts and terms used in the workflow are based on the
+context-specific vocabulary identified during the requirements
+gathering phase — the same <a href="../concept/">Concepts</a> that define
+the use case's domain.</p>
+<h2 id="when-are-workflows-defined">When Are Workflows Defined?<a class="headerlink" href="#when-are-workflows-defined" title="Permanent link">&para;</a></h2>
+<p>Workflows are typically defined in later stages of the use case
+lifecycle, once:</p>
+<ul>
+<li>The use case requirements are well understood</li>
+<li>The Stories are clearly defined</li>
+<li>The logical order of activities is known</li>
+<li>Dependencies between activities are identified</li>
+</ul>
+<p>This allows workflows to be designed based on a solid
+understanding of what needs to be accomplished and how.</p>
+</div>
+<div class="tabbed-block">
+<h2 id="what-is-a-workflow-in-the-ekg-method">What Is a Workflow in the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method?<a class="headerlink" href="#what-is-a-workflow-in-the-ekg-method" title="Permanent link">&para;</a></h2>
+<p>A <strong>Workflow</strong> is a logical sequence of steps that defines the
+order of execution for <a href="../story/">Stories</a> within a <a href="../use-case/">Use
+Case</a>.
+Every Use Case has one or more Workflows that describe how
+business processes should be executed.</p>
+<p>Workflows depend on the <a href="../concept/">Concepts</a> captured during
+the requirements gathering phase and are executed to achieve the
+desired business <a href="../outcome/">Outcome</a>.</p>
+<h2 id="workflow-components">Workflow Components<a class="headerlink" href="#workflow-components" title="Permanent link">&para;</a></h2>
+<p>Workflows consist of:</p>
+<ul>
+<li><strong>Steps</strong> — Each step corresponds to executing a Story in the
+  use case</li>
+<li><strong>Sequence</strong> — The logical order in which steps should be
+  executed</li>
+<li><strong>Dependencies</strong> — Relationships between steps that determine
+  execution order</li>
+<li><strong>Concepts</strong> — The domain concepts and terms used throughout
+  the workflow</li>
+</ul>
+<p>The concepts and terms used in the workflow are based on the
+context-specific vocabulary identified during the requirements
+gathering phase — the same Concepts that define the use case's
+domain.</p>
+<h2 id="relationship-to-stories">Relationship to Stories<a class="headerlink" href="#relationship-to-stories" title="Permanent link">&para;</a></h2>
+<p>Each step in a workflow corresponds to executing a Story in the
+use case.
+This means:</p>
+<ul>
+<li><strong>Stories define what</strong> — Each Story specifies what needs to
+  be accomplished (the capability)</li>
+<li><strong>Workflows define how</strong> — Workflows specify the order and
+  sequence in which Stories are executed</li>
+<li><strong>Together they define the process</strong> — Stories + Workflows =
+  Complete business process definition</li>
+</ul>
+<p>This separation allows Stories to be reusable across different
+workflows, while workflows can compose Stories in different ways
+to achieve different outcomes.</p>
+<p><strong>Bidirectional relationship:</strong>
+For each Story, we always know in which Workflows it participates
+as a Step.
+This bidirectional relationship enables:</p>
+<ul>
+<li><strong>Story reuse analysis</strong> — Understanding which workflows use a
+  given story</li>
+<li><strong>Impact analysis</strong> — Knowing what workflows are affected when
+  a story changes</li>
+<li><strong>Discovery</strong> — Finding workflows that accomplish similar
+  outcomes by examining their constituent stories</li>
+</ul>
+<h2 id="workflow-execution">Workflow Execution<a class="headerlink" href="#workflow-execution" title="Permanent link">&para;</a></h2>
+<p>Workflows can be executed in different ways:</p>
+<ul>
+<li><strong>Manual execution</strong> — Steps are performed by people following
+  the workflow definition</li>
+<li><strong>Automated execution</strong> — Steps are performed by systems that
+  interpret and execute the workflow</li>
+<li><strong>Hybrid execution</strong> — Some steps are automated, others are
+  manual</li>
+</ul>
+<p>The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> can track workflow execution, monitor progress, and
+ensure that business rules and policies are followed throughout
+the process.</p>
+<h2 id="persistent-stateful-workflows">Persistent Stateful Workflows<a class="headerlink" href="#persistent-stateful-workflows" title="Permanent link">&para;</a></h2>
+<p>It is expected that workflows have <strong>persistent stateful</strong>
+execution capabilities.
+This means that workflows can maintain their state across
+execution sessions, enabling them to handle processes of varying
+durations and complexity.</p>
+<p><strong>Short-duration workflows:</strong>
+Some workflows can be done quickly in real-time and in-memory,
+where one <a href="../story/">Story's</a> output can be directly used as the
+next Story's input.
+These workflows execute entirely within a single session and
+complete in seconds or minutes.</p>
+<p><strong>Long-duration workflows:</strong>
+Some workflows may take hours, weeks, or even months to complete.
+These workflows require persistent state management because:</p>
+<ul>
+<li><strong>Human involvement</strong> — Steps may require human review,
+  approval, or input, which can take significant time</li>
+<li><strong>Agentic steps</strong> — Steps may involve autonomous agents that
+  need time to complete their tasks</li>
+<li><strong>External dependencies</strong> — Steps may depend on external
+  systems or events that occur over extended periods</li>
+<li><strong>Complex processes</strong> — Business processes may naturally span
+  long timeframes (e.g., procurement, project management,
+  regulatory approvals)</li>
+</ul>
+<p>Persistent stateful workflows enable the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> to:</p>
+<ul>
+<li><strong>Resume execution</strong> — Workflows can pause and resume from
+  their last state</li>
+<li><strong>Track progress</strong> — Long-running workflows maintain their
+  state and can report progress at any time</li>
+<li><strong>Handle interruptions</strong> — Workflows can handle system
+  restarts, failures, or pauses without losing their state</li>
+<li><strong>Support human-in-the-loop</strong> — Workflows can wait for human
+  input and resume when that input is provided</li>
+</ul>
+<p>This capability is essential for modeling real-world business
+processes that don't complete instantly but unfold over time.</p>
+<h2 id="workflows-as-first-class-ekg-objects">Workflows as First-Class <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Objects<a class="headerlink" href="#workflows-as-first-class-ekg-objects" title="Permanent link">&para;</a></h2>
+<p>Ideally, workflows are persisted as part of the overall <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> as
+<strong>first-class citizen objects</strong>.
+This means that workflows, their steps, and their states can be
+inspected, queried, and reasoned about like any other object in
+the     Enterprise Knowledge Graph.</p>
+<p><strong>Workflow lifecycle:</strong></p>
+<ul>
+<li><strong>Workflows are initiated by Stories</strong> — A Story can trigger
+  the execution of a workflow</li>
+<li><strong>Each step is a call to a Story</strong> — Each step in a workflow
+  corresponds to executing a Story, maintaining the connection
+  between the workflow definition and the business requirements</li>
+<li><strong>State is persisted</strong> — Workflow state is stored in the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr>,
+  enabling inspection, monitoring, and reasoning about workflow
+  execution</li>
+</ul>
+<p><strong>Benefits of first-class persistence:</strong></p>
+<ul>
+<li><strong>Inspectability</strong> — Workflow steps and states can be queried
+  and analyzed like any other <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> data</li>
+<li><strong>Observability</strong> — Workflow execution can be monitored and
+  traced through the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr></li>
+<li><strong>Reasoning</strong> — The <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> can reason about workflow state,
+  dependencies, and execution paths</li>
+<li><strong>Integration</strong> — Workflows are integrated with other <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr>
+  concepts (Use Cases, Stories, Concepts, Personas)</li>
+</ul>
+<p><strong>Implementation:</strong>
+Conceptually, workflows are similar to
+<a href="https://aws.amazon.com/step-functions/">AWS Step Functions</a>,
+which could be one of the technologies used to implement these
+workflows.
+However, the key difference is that in the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method, workflows
+are not just execution engines but semantic objects that are part
+of the knowledge graph itself, enabling deeper integration and
+reasoning capabilities.</p>
+<div class="admonition info">
+<p class="admonition-title">Provenance</p>
+<p>When your <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Service Layer fully supports the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Method and
+you have a Story Service that can execute Stories, then
+ideally you want it to automatically maintain the provenance
+chain of activities.</p>
+<p>Like the <a href="https://www.w3.org/TR/prov-o/">PROV-O</a> (Provenance
+Ontology) describes, provenance has three main classes:
+<strong>Activity</strong>, <strong>Agent</strong>, and <strong>Entity</strong>.</p>
+<p>The ultimate form of provenance implementation is to be able
+to link an Activity to the execution of a particular Story in
+the context of a particular instance of a Workflow.
+Then you have everything to provide full explainability.</p>
+<p>This provenance chain enables:</p>
+<ul>
+<li><strong>Traceability</strong> — Understanding what happened and why</li>
+<li><strong>Explainability</strong> — Explaining how results were produced</li>
+<li><strong>Auditability</strong> — Tracking who did what and when</li>
+<li><strong>Debugging</strong> — Understanding execution paths and failures</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Observability</p>
+<p>In modern-day architectures, you have fully instrumented code
+producing traces that are collected by
+<a href="https://opentelemetry.io/">OpenTelemetry</a> (OTEL)-compliant
+collectors.</p>
+<p>The concept of a so-called <strong>"span"</strong> (in
+<a href="https://opentelemetry.io/docs/specs/otlp/">OTLP</a> / OTEL
+jargon) perfectly aligns with a
+<a href="https://www.w3.org/TR/prov-o/">PROV-O</a> Activity and with a
+Workflow-step execution.</p>
+<p>This alignment enables:</p>
+<ul>
+<li><strong>Unified observability</strong> — Workflow execution traces can
+  be integrated with application traces</li>
+<li><strong>End-to-end visibility</strong> — From business process
+  (Workflow) to technical implementation (code spans)</li>
+<li><strong>Semantic enrichment</strong> — OTEL spans can be enriched with
+  <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> semantic metadata (Story, Workflow, Persona, etc.)</li>
+<li><strong>Cross-system correlation</strong> — Linking business activities
+  with technical execution across distributed systems</li>
+</ul>
+</div>
+<h2 id="workflow-patterns">Workflow Patterns<a class="headerlink" href="#workflow-patterns" title="Permanent link">&para;</a></h2>
+<p>Common workflow patterns include:</p>
+<ul>
+<li><strong>Sequential</strong> — Steps execute one after another in a fixed
+  order</li>
+<li><strong>Parallel</strong> — Multiple steps execute simultaneously</li>
+<li><strong>Conditional</strong> — Different steps execute based on conditions</li>
+<li><strong>Iterative</strong> — Steps repeat until a condition is met</li>
+<li><strong>Event-driven</strong> — Steps execute in response to events</li>
+</ul>
+<p>These patterns can be combined to create complex workflows that
+model real-world business processes.</p>
+<h2 id="relationship-to-other-concepts">Relationship to Other Concepts<a class="headerlink" href="#relationship-to-other-concepts" title="Permanent link">&para;</a></h2>
+<p>Workflows relate to other core concepts:</p>
+<ul>
+<li><strong><a href="../use-case/">Use Cases</a></strong> — Every use case has one or more
+  workflows</li>
+<li><strong><a href="../story/">Stories</a></strong> — Each workflow step corresponds to
+  executing a story</li>
+<li><strong><a href="../concept/">Concepts</a></strong> — Workflows use concepts from the
+  use case's vocabulary</li>
+<li><strong><a href="../outcome/">Outcomes</a></strong> — Workflows are executed to achieve
+  desired business outcomes</li>
+<li><strong><a href="../persona/">Personas</a></strong> — Workflows specify which personas
+  are involved in each step</li>
+</ul>
+<p>This integration ensures that workflows are not isolated process
+definitions but part of a cohesive, semantic model of the
+enterprise.</p>
+</div>
+</div>
+</div>
 
 <!-- Source file information -->
 
@@ -2915,7 +3349,7 @@ context-specific vocabulary identified during the requirements gathering phase.<
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="May 5, 2023 11:26:46 EDT"><span class="timeago" datetime="2023-05-05T11:26:46-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="May 5, 2023 11:26:46 EDT">2023-05-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 3, 2025 11:11:24 EST"><span class="timeago" datetime="2025-12-03T11:11:24-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 3, 2025 11:11:24 EST">2025-12-03</span>
   </span>
 
     
