@@ -13,15 +13,17 @@ hide:
         
         -----
 
-        Think big, start small, rinse, repeat, accelerate.
+        Establish strategic vision, align stakeholders, and create the
+        [Use Case Tree](../concept/use-case-tree.md) that defines business
+        outcomes and scopes reusable capabilities across the enterprise.
 
         -----
 
-        [Envision](./plan/envision.md), 
-        [Discover](./plan/discover.md),
-        [Assess](./plan/assess.md),
-        [Train](./plan/train.md) and
-        [Chart](./plan/chart.md). 
+        - [Envision](./plan/envision.md)
+        - [Discover](./plan/discover.md)
+        - [Assess](./plan/assess.md)
+        - [Train](./plan/train.md)
+        - [Chart](./plan/chart.md)
     
         [:octicons-arrow-right-24: Learn more](./plan/index.md)
     
@@ -29,56 +31,39 @@ hide:
 
         -----
 
-        "Building" an EKG-based use case involves
-        everything from detailed requirements gathering---structured 
-        around the [Use Case Tree](../concept/use-case-tree.md)---all the way up to delivery of
-        components for your production EKG-platform.
+        Capture [Stories](../concept/story.md) and [Workflows](../concept/workflow.md),
+        define [Concepts](../concept/concept.md) that link business and technical terms,
+        and specify executable behavior as semantic models---mostly no-code---that
+        become reusable components in your production EKG-platform.
+
+        -----
+
+        - [Allocate](./build/allocate.md)
+        - [Design](./build/design.md)
+        - [Implement](./build/implement.md)
+        - [Test](./build/test.md)
+        - [Verify](./build/verify.md)
+        - [Deliver](./build/deliver.md)
 
         [:octicons-arrow-right-24: Learn more](./build/index.md)
 
     - :material-run:{ .lg } __[Run](run/index.md)__
 
-        ---
+        -----
 
-        Deploying, Operating, Measuring and Optimizing an 
-        [EKG/Platform](../vocab/ekg-platform.md) that
-        serves many Use Cases across the Enterprise.
+        Deploy, operate, and continuously optimize the 
+        [EKG/Platform](../vocab/ekg-platform.md) by measuring
+        [Outcomes](../concept/outcome.md), monitoring [Workflows](../concept/workflow.md),
+        and ensuring the platform serves multiple use cases across the enterprise.
+
+        -----
+
+        - [Deploy](./run/deploy.md)
+        - [Operate](./run/operate.md)
+        - [Measure](./run/measure.md)
+        - [Optimize](./run/optimize.md)
 
         [:octicons-arrow-right-24: Learn more](./run/index.md)
-
-    </div>
-
-    <div class="grid cards" markdown>
-
-    - :material-foot-print: Steps
-
-        -----
-
-        [Envision](./plan/envision.md), 
-        [Discover](./plan/discover.md),
-        [Assess](./plan/assess.md),
-        [Train](./plan/train.md) and
-        [Chart](./plan/chart.md). 
-
-    - :material-foot-print: Steps
-
-        -----
-
-        [Allocate](./build/allocate.md),
-        [Design](./build/design.md),
-        [Implement](./build/implement.md),
-        [Test](./build/test.md),
-        [Verify](./build/verify.md) and
-        [Deliver](./build/deliver.md).
-
-    - :material-foot-print: Steps
-
-        -----
-
-        [Deploy](./run/deploy.md),
-        [Operate](./run/operate.md),
-        [Measure](./run/measure.md) and
-        [Optimize](./run/optimize.md).
 
     </div>
 
