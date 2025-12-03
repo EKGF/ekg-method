@@ -1,5 +1,5 @@
 ---
-description: "The specific result or benefit that an organization expects to achieve from a Use Case, providing the 'why' behind every business requirement. Learn how outcomes drive business value in the EKG Method."
+description: "The specific result or benefit that an organization expects to achieve from a Use Case, providing the 'why' behind every business requirement. Learn how outcomes drive business value in the Use Case Tree Method."
 keywords:
   - outcome
   - business outcome
@@ -99,7 +99,7 @@ from a Use Case, providing the "why" behind every business requirement_
 
 === "Data & Tech Audience"
 
-    ## What Is an Outcome in the EKG Method?
+    ## What Is an Outcome in the Use Case Tree Method?
 
     An **Outcome** represents the business value or benefit that a
     [Use Case](use-case.md) is designed to deliver.
@@ -144,7 +144,7 @@ from a Use Case, providing the "why" behind every business requirement_
     These stereotypes help organize and categorize outcomes while
     maintaining the fundamental concept that they all represent the
     "why" behind business requirements.
-    The EKG Method uses "Outcome" as the base concept, with
+    The Use Case Tree Method uses "Outcome" as the base concept, with
     stereotypes providing additional semantic meaning as needed.
 
     ## Relationship to Stories

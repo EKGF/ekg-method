@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Enforce 100% test coverage based on real business scenarios and requirements. Learn how the EKG Method ensures quality through comprehensive testing."
+description: "Enforce 100% test coverage based on real business scenarios and requirements. Learn how the Use Case Tree Method ensures quality through comprehensive testing."
 keywords:
   - quality assurance
   - test coverage

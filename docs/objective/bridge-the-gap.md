@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Align business expectations with technology delivery. Learn how the EKG Method bridges the gap between business and IT through continuous engagement."
+description: "Align business expectations with technology delivery. Learn how the Use Case Tree Method bridges the gap between business and IT through continuous engagement."
 keywords:
   - business IT alignment
   - business technology gap

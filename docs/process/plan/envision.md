@@ -3,7 +3,7 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Create a vision for the EKG that is shared by all key-stakeholders. Learn how to establish a long-term integrated business, data, and technology strategy in the Envision phase of the EKG Method."
+description: "Create a vision for the EKG that is shared by all key-stakeholders. Learn how to establish a long-term integrated business, data, and technology strategy in the Envision phase of the Use Case Tree Method."
 keywords:
   - envision
   - EKG vision

@@ -1,5 +1,5 @@
 ---
-description: "An executable model of business requirements that delivers specific business outcomes within the Use Case Tree. Learn how use cases structure business capabilities in the EKG Method."
+description: "An executable model of business requirements that delivers specific business outcomes within the Use Case Tree. Learn how use cases structure business capabilities in the Use Case Tree Method."
 keywords:
   - use case
   - business requirements
@@ -81,9 +81,9 @@ business outcomes within the Use Case Tree_
 
 === "Data & Tech Audience"
 
-    ## What Is a Use Case in the EKG Method?
+    ## What Is a Use Case in the Use Case Tree Method?
 
-    A **Use Case** in the EKG Method specifies a distinct set of
+    A **Use Case** in the Use Case Tree Method specifies a distinct set of
     business requirements — ideally captured as an "executable model"
     — resulting in a specific business outcome.
     Each use case is a node in the
@@ -104,7 +104,7 @@ business outcomes within the Use Case Tree_
 
     ### Key Differences
 
-    - **Broader abstraction**: Use cases in the EKG Method are often
+    - **Broader abstraction**: Use cases in the Use Case Tree Method are often
       used as a much broader and more abstract container concept
       compared to a UML Use Case.
       They can be organized in a "tree structure" where, at the
@@ -128,7 +128,7 @@ business outcomes within the Use Case Tree_
 
     ## Technical Implementation
 
-    From a technical perspective, a Use Case in the EKG Method:
+    From a technical perspective, a Use Case in the Use Case Tree Method:
 
     - **Organizes related components**: Groups together personas,
       concepts, stories, workflows, datasets, and ontologies that
@@ -153,7 +153,7 @@ business outcomes within the Use Case Tree_
 
     ## Overview
 
-    A Use Case in the EKG Method is composed of multiple components
+    A Use Case in the Use Case Tree Method is composed of multiple components
     that evolve throughout its lifecycle.
     These components work together to create a complete, executable
     model of business requirements.
@@ -261,7 +261,7 @@ business outcomes within the Use Case Tree_
 
     Each individual Use Case goes through a lifecycle of continuous
     improvement:[^1]
-    This lifecycle spans the entire EKG Method process, from initial
+    This lifecycle spans the entire Use Case Tree Method process, from initial
     idea through planning, building, running, and ongoing optimization.
 
     ![Use Case Lifecycle](../diagrams/out/use-case-life-cycle.svg#darkable)
@@ -269,7 +269,7 @@ business outcomes within the Use Case Tree_
     ## Lifecycle Stages
 
     The Use Case lifecycle aligns with the three main phases of the
-    EKG Method:
+    Use Case Tree Method:
 
     ### Plan Phase
 
@@ -358,9 +358,9 @@ business outcomes within the Use Case Tree_
 
 === "Plan/Build/Run"
 
-    ## Use Cases Across the EKG Method Process
+    ## Use Cases Across the Use Case Tree Method Process
 
-    The EKG Method defines a process consisting of three phases, each
+    The Use Case Tree Method defines a process consisting of three phases, each
     with well-defined steps:
     [Plan](../process/plan/index.md),
     [Build](../process/build/index.md), and
@@ -489,7 +489,7 @@ business outcomes within the Use Case Tree_
 
     ## Related Approaches
 
-    The concept of Use Cases in the EKG Method shares similarities with
+    The concept of Use Cases in the Use Case Tree Method shares similarities with
     several other approaches in enterprise architecture and software
     development.
     Understanding these relationships can help contextualize how Use
@@ -515,7 +515,7 @@ business outcomes within the Use Case Tree_
     **Key Differences:**
 
     - **Scope** — PBCs are typically focused on commerce and business
-      applications, while Use Cases in the EKG Method span all
+      applications, while Use Cases in the Use Case Tree Method span all
       enterprise capabilities
     - **Semantic foundation** — EKG Use Cases are built on semantic
       models (ontologies) that enable deeper integration and
@@ -533,7 +533,7 @@ business outcomes within the Use Case Tree_
     ### UML Use Cases
 
     As discussed in the [Data & Tech Audience](#data--tech-audience)
-    tab, Use Cases in the EKG Method share terminology with UML Use
+    tab, Use Cases in the Use Case Tree Method share terminology with UML Use
     Cases but operate at a different level of abstraction.
 
     **Key Distinctions:**
@@ -598,7 +598,7 @@ business outcomes within the Use Case Tree_
 
     ## Summary
 
-    While Use Cases in the EKG Method share concepts with these related
+    While Use Cases in the Use Case Tree Method share concepts with these related
     approaches, they are uniquely designed for the Enterprise Knowledge
     Graph context:
 

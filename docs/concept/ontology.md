@@ -1,5 +1,5 @@
 ---
-description: "A formal, machine-readable specification of concepts and their relationships that bridges the gap between demand (Use Cases) and supply (Data Products). Learn how ontologies enable semantic interoperability in the EKG Method."
+description: "A formal, machine-readable specification of concepts and their relationships that bridges the gap between demand (Use Cases) and supply (Data Products). Learn how ontologies enable semantic interoperability in the Use Case Tree Method."
 keywords:
   - ontology
   - semantic model
@@ -72,14 +72,14 @@ supply (Data Products) in the data economy_
 
 === "Data & Tech Audience"
 
-    ## What Is an Ontology in the EKG Method?
+    ## What Is an Ontology in the Use Case Tree Method?
 
     An **Ontology** is a formal, machine-readable specification of
     concepts and their relationships, typically expressed using
     standards like OWL (Web Ontology Language) or SHACL (Shapes
     Constraint Language).
 
-    In the EKG Method, ontologies serve as the semantic foundation
+    In the Use Case Tree Method, ontologies serve as the semantic foundation
     that enables the Enterprise Knowledge Graph to understand and
     reason about business concepts.
 
@@ -122,7 +122,7 @@ supply (Data Products) in the data economy_
 
     ## Ontology Standards
 
-    Ontologies in the EKG Method typically use:
+    Ontologies in the Use Case Tree Method typically use:
 
     - **OWL (Web Ontology Language)** — For defining classes,
       properties, and relationships with rich logical expressivity

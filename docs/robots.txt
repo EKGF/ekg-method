@@ -1,4 +1,4 @@
-# robots.txt for EKG/Method documentation site
+# robots.txt for Use Case Tree Method documentation site
 # https://method.ekgf.org/robots.txt
 
 User-agent: *

@@ -1,6 +1,6 @@
 # SEO Guide for Content Authors
 
-This guide explains how to optimize your content for search engines when writing documentation for the EKG/Method site.
+This guide explains how to optimize your content for search engines when writing documentation for the Use Case Tree Method site.
 
 ## Page-Specific Meta Descriptions
 
@@ -29,7 +29,7 @@ schema_type: "Article"  # or "WebPage", "HowTo", etc.
 
 ```yaml
 ---
-description: "Learn how outcomes define the business value and success criteria for use cases in the EKG Method. Outcomes provide the 'why' behind every requirement."
+description: "Learn how outcomes define the business value and success criteria for use cases in the Use Case Tree Method. Outcomes provide the 'why' behind every requirement."
 keywords:
   - outcome
   - business outcome
@@ -160,7 +160,7 @@ When creating a new page, ensure you have:
 
 ```yaml
 ---
-description: "Learn how [concept] works in the EKG Method. [Specific benefit or learning outcome]."
+description: "Learn how [concept] works in the Use Case Tree Method. [Specific benefit or learning outcome]."
 keywords:
   - concept-name
   - related-term
@@ -174,7 +174,7 @@ schema_type: "Article"
 
 ```yaml
 ---
-description: "Step-by-step guide to [process name] in the EKG Method. Learn how to [specific action]."
+description: "Step-by-step guide to [process name] in the Use Case Tree Method. Learn how to [specific action]."
 keywords:
   - process-name
   - workflow

@@ -52,7 +52,7 @@ should be traceable to a use case in the Use Case Tree.
 ## Why the Use Case Tree Matters
 
 The Use Case Tree serves as the organizing principle for the entire
-EKG Method.
+Use Case Tree Method.
 It bridges the gap between business vision and technical execution,
 ensuring that every capability is designed for reuse and governed
 throughout its lifecycle.

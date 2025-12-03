@@ -1,5 +1,5 @@
 ---
-description: "A representation of the different types of players — people, systems, or entities — involved in a Use Case, defined using business language. Understand how personas shape requirements in the EKG Method."
+description: "A representation of the different types of players — people, systems, or entities — involved in a Use Case, defined using business language. Understand how personas shape requirements in the Use Case Tree Method."
 keywords:
   - persona
   - user persona
@@ -84,7 +84,7 @@ or entities — involved in a Use Case, defined using business language_
     combined with the term **Role** — an actor assumes a role to
     perform a task.
 
-    The EKG Method does not make that distinction, primarily to keep
+    The Use Case Tree Method does not make that distinction, primarily to keep
     things simple when capturing requirements — primarily as
     [Stories](story.md) — but also because the term Persona combines
     both concepts into one unified model.
@@ -161,7 +161,7 @@ or entities — involved in a Use Case, defined using business language_
       enterprise
 
     Since Personas are Concepts, they follow the same reuse and
-    inheritance patterns as any other concept in the EKG Method.
+    inheritance patterns as any other concept in the Use Case Tree Method.
 
     ### Beyond Active Users
 
@@ -216,7 +216,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ## Overview
 
-    The following diagram shows a subset of the EKG Method model as a
+    The following diagram shows a subset of the Use Case Tree Method model as a
     UML Class Diagram, focusing on **Persona** and its relationships
     to other core concepts.
 

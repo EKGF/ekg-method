@@ -2,7 +2,7 @@
 hide:
   - toc
   - navigation
-description: "The EKG Method process: Plan (strategy & scope), Build (executable models), and Run (operate & optimize). Learn the three-phase approach to developing Enterprise Knowledge Graphs."
+description: "The Use Case Tree Method process: Plan (strategy & scope), Build (executable models), and Run (operate & optimize). Learn the three-phase approach to developing Enterprise Knowledge Graphs."
 keywords:
   - EKG process
   - EKG methodology

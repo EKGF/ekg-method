@@ -1,5 +1,5 @@
 ---
-description: "A domain term or idea that links business language to semantic models, enabling the Enterprise Knowledge Graph to understand and reason about business concepts. Learn how concepts bridge business and technical domains in the EKG Method."
+description: "A domain term or idea that links business language to semantic models, enabling the Enterprise Knowledge Graph to understand and reason about business concepts. Learn how concepts bridge business and technical domains in the Use Case Tree Method."
 keywords:
   - concept
   - domain concept
@@ -78,7 +78,7 @@ business concepts_
 
 === "Data & Tech Audience"
 
-    ## What Is a Concept in the EKG Method?
+    ## What Is a Concept in the Use Case Tree Method?
 
     A **Concept** is the linking pin between local business language
     and formal semantic models (ontologies).
@@ -187,7 +187,7 @@ business concepts_
     ## Reuse and Inheritance
 
     Concepts follow the same reuse patterns as other elements in the
-    EKG Method:
+    Use Case Tree Method:
 
     - **Local definition** — Each use case can define concepts
       specific to its domain

@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Make changes gradually with clear interdependencies to avoid disruption across use cases. Learn how the EKG Method enables safe, incremental change."
+description: "Make changes gradually with clear interdependencies to avoid disruption across use cases. Learn how the Use Case Tree Method enables safe, incremental change."
 keywords:
   - change management
   - disruption avoidance

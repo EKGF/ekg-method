@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Provide focus, clarity, deliver business value fast, do the right things at the right time. Learn how the EKG Method prevents scope creep and delivers value incrementally."
+description: "Provide focus, clarity, deliver business value fast, do the right things at the right time. Learn how the Use Case Tree Method prevents scope creep and delivers value incrementally."
 keywords:
   - scope management
   - incremental delivery
