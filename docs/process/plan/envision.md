@@ -17,16 +17,30 @@ schema_type: "HowTo"
 
 <!--summary-start-->
 
-- a shared strategy
-- EKG envisioning
-- EKG as a business enabler
+- shared EKG vision
+- why EKG is critical for long-term business health
+- shared strategy to realize that vision
 
 <!--summary-end-->
 
-Create a <ins>shared</ins> vision, where do we think that our organization should be,
-three to ten years down the road and how do we leverage our unique data and knowledge to become,
+Create a <ins>shared</ins> vision: where do we think that our organization should be
+three to ten years down the road, and how do we leverage our unique data and knowledge to become,
 or stay, a leader in our markets? Translate this to a (long term) integrated business, data
-and technology strategy, identify primary stakeholders and initial scope.
+and technology strategy, and identify primary stakeholders and an agreed scope.
+
+That scope can range from an enterprise-wide transformation, to a single business unit or region,
+down to one critical use case or system that needs to be replaced or improved. There is no golden rule.
+In this phase it is important to **think big first** and allow everyone to "dream a little"—some
+“pie in the sky thinking” should be tolerated to explore what *could* be possible, before converging
+on a pragmatic initial scope and direction that everyone can commit to.
+
+At the same time, generative AI has become a board-level priority: organizations that fail to learn
+how to safely and effectively leverage GenAI risk becoming irrelevant. A virtual Enterprise Knowledge Graph
+is a critical enabler here. Without an EKG as a trusted semantic layer, GenAI agents are forced to interact
+directly with a patchwork of legacy systems, APIs, and data sources of unknown quality—often a recipe for
+fragile, unexplainable behaviour. With an EKG in place, GenAI agents can work against a coherent,
+well-governed, business-aligned knowledge layer, dramatically improving reliability, explainability,
+and long-term agility.
 
 Clarify the potential of knowledge graph for your enterprise and help position it 
 as part of your overall data and technology strategy. 
