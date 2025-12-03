@@ -1,3 +1,14 @@
+---
+description: "Explore other Enterprise Knowledge Graph Foundation initiatives including EKG Principles, Maturity Model, Catalog, and related resources."
+keywords:
+  - EKGF
+  - enterprise knowledge graph foundation
+  - EKG resources
+  - EKG principles
+  - EKG maturity model
+schema_type: "WebPage"
+---
+
 # Other
 
 The Enterprise Knowledge Graph Foundation is working on multiple initiatives that

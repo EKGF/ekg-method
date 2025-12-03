@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Align business expectations with technology delivery. Learn how the EKG Method bridges the gap between business and IT through continuous engagement."
+keywords:
+  - business IT alignment
+  - business technology gap
+  - stakeholder engagement
+  - EKG method
+  - enterprise knowledge graph
+  - product owner
+schema_type: "Article"
 ---
 # E: Bridge the traditional gap between Business & Technology
 

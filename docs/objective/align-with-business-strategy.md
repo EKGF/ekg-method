@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Align strategy of business capability improvement and execution. Learn how the EKG Method creates a single artifact that aligns all lines of business."
+keywords:
+  - business strategy
+  - strategic alignment
+  - business capabilities
+  - EKG method
+  - enterprise knowledge graph
+  - capability planning
+schema_type: "Article"
 ---
 # J: Align with Business Strategy
 

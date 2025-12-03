@@ -3,14 +3,23 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Discover all use cases in the given scope and create a Use Case Tree that shows a viable pathway towards strategic goals. Learn how to identify business outcomes and select the shortest path to value in the Discover phase."
+keywords:
+  - discover
+  - use case discovery
+  - use case tree creation
+  - EKG method
+  - enterprise knowledge graph
+  - business outcomes
+schema_type: "HowTo"
 ---
 # Discover
 
 <!--summary-start-->
 _Discover all use cases in the given scope, short-term and long-term, 
-create a “[Use Case Tree](../../concept/use-case-tree.md)” that shows a viable, realistic, logical,
+create a "[Use Case Tree](../../concept/use-case-tree.md)" that shows a viable, realistic, logical,
 and successful pathway towards strategic goals.
-This is about “the what” and how it relates to "the why"._
+This is about "the what" and how it relates to "the why"._
 <!--summary-end-->
 
 Discover all strategic use cases in the given scope that support the agreed vision

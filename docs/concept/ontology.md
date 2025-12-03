@@ -1,3 +1,15 @@
+---
+description: "A formal, machine-readable specification of concepts and their relationships that bridges the gap between demand (Use Cases) and supply (Data Products). Learn how ontologies enable semantic interoperability in the EKG Method."
+keywords:
+  - ontology
+  - semantic model
+  - knowledge representation
+  - EKG method
+  - enterprise knowledge graph
+  - data modeling
+schema_type: "Article"
+---
+
 # Ontology
 
 <!--summary-start-->

@@ -3,12 +3,21 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Create a vision for the EKG that is shared by all key-stakeholders. Learn how to establish a long-term integrated business, data, and technology strategy in the Envision phase of the EKG Method."
+keywords:
+  - envision
+  - EKG vision
+  - strategic planning
+  - EKG method
+  - enterprise knowledge graph strategy
+  - stakeholder alignment
+schema_type: "HowTo"
 ---
 # Envision
 
 <!--summary-start-->
 _Create a vision for the EKG that is shared by all key-stakeholders._
-_This is about “the why” long term._
+_This is about "the why" long term._
 <!--summary-end-->
 
 Create a <ins>shared</ins> vision, where do we think that our organization should be,

@@ -5,6 +5,15 @@ authors:
 - Carlos Tubbax
 date: 2022-06-23
 some_url: https://method.ekgf.org/objective/interoperability/
+description: "Enable interoperability across the enterprise at high levels of maturity. Learn how the EKG Method achieves enterprise-wide data and system interoperability through semantic standards."
+keywords:
+  - interoperability
+  - enterprise interoperability
+  - data interoperability
+  - EKG method
+  - enterprise knowledge graph
+  - semantic interoperability
+schema_type: "Article"
 ---
 
 # A: Interoperability Achieved

@@ -1,3 +1,15 @@
+---
+description: "An EKG Identifier (EKG/ID) identifies an object in an EKG and is universally unique, opaque, permanent, resolvable, and non-reassignable. Learn about EKG identity principles."
+keywords:
+  - EKG/ID
+  - EKG identifier
+  - unique identifier
+  - identity management
+  - EKG method
+  - enterprise knowledge graph
+schema_type: "Article"
+---
+
 # EKG Identifier (EKG/ID)
 
 _An EKG Identifier identifies an object[^object] in an [EKG](ekg.md)

@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Make changes gradually with clear interdependencies to avoid disruption across use cases. Learn how the EKG Method enables safe, incremental change."
+keywords:
+  - change management
+  - disruption avoidance
+  - incremental change
+  - EKG method
+  - enterprise knowledge graph
+  - use case dependencies
+schema_type: "Article"
 ---
 # H: Avoid Disruption
 

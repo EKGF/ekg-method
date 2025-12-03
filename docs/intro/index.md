@@ -4,6 +4,14 @@ author:
 hide:
   - toc
   - navigation
+description: "Introduction to the Use Case Tree Method for developing Enterprise Knowledge Graphs. Learn how this method enables strategic use cases, data quality, compliance, and competitive advantage."
+keywords:
+  - use case tree method
+  - EKG introduction
+  - enterprise knowledge graph method
+  - business capabilities
+  - EKG method
+schema_type: "Article"
 ---
 
 # Use Case Tree Method for Business Capabilities

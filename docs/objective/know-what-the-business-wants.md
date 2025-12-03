@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Know exactly what the business—the customer or product owner—really needs, short-, mid- and long-term. Learn how the EKG Method captures true business requirements."
+keywords:
+  - business requirements
+  - requirements capture
+  - business needs
+  - EKG method
+  - enterprise knowledge graph
+  - product owner
+schema_type: "Article"
 ---
 # C: Know what the business wants & why
 

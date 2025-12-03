@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Making the enterprise adaptive through modular knowledge and reusable capabilities. Learn how the EKG Method enables composable business architecture."
+keywords:
+  - composable business
+  - business composability
+  - modular architecture
+  - EKG method
+  - enterprise knowledge graph
+  - adaptive enterprise
+schema_type: "Article"
 ---
 # B: Composable Business
 

@@ -1,3 +1,15 @@
+---
+description: "A semantic data product that provides required information for a Use Case, selected based on semantic relevance and suitability. Learn how data products enable reuse in the EKG Method."
+keywords:
+  - data product
+  - semantic data product
+  - data asset
+  - EKG method
+  - enterprise knowledge graph
+  - data reuse
+schema_type: "Article"
+---
+
 # Data Product
 
 <!--summary-start-->

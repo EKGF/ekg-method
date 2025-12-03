@@ -2,20 +2,36 @@
 hide:
   - toc
   - navigation
+description: "The EKG Method process: Plan (strategy & scope), Build (executable models), and Run (operate & optimize). Learn the three-phase approach to developing Enterprise Knowledge Graphs."
+keywords:
+  - EKG process
+  - EKG methodology
+  - plan build run
+  - EKG method
+  - enterprise knowledge graph
+  - development process
+schema_type: "WebPage"
 ---
 # Process
 
 === "Steps"
 
-    <div class="grid cards" markdown>
+    <div class="grid cards process-cards" markdown>
     
-    - :material-floor-plan:{ .lg } __[Plan](plan/index.md)__
-        
+    - <div class="process-card-header process-card-plan">
+          :material-compass:{ .lg }
+          <div class="process-card-title">
+            __[Plan](plan/index.md)__
+            <span class="process-card-subtitle">Strategy & Scope</span>
+          </div>
+      </div>
+      
+      <div class="process-card-body" markdown>
+      
         -----
 
-        Establish strategic vision, align stakeholders, and create the
-        [Use Case Tree](../concept/use-case-tree.md) that defines business
-        outcomes and scopes reusable capabilities across the enterprise.
+        Strategic vision, stakeholder alignment, and the [Use Case Tree](../concept/use-case-tree.md).
+        Essential at the start, repeatable at any level---even for individual use cases.
 
         -----
 
@@ -26,15 +42,23 @@ hide:
         - [Chart](./plan/chart.md)
     
         [:octicons-arrow-right-24: Learn more](./plan/index.md)
+      
+      </div>
     
-    - :construction_site:{ .lg } __[Build](build/index.md)__
+    - <div class="process-card-header process-card-build">
+          :material-tools:{ .lg }
+          <div class="process-card-title">
+            __[Build](build/index.md)__
+            <span class="process-card-subtitle">Executable Models</span>
+          </div>
+      </div>
+
+      <div class="process-card-body" markdown>
 
         -----
 
-        Capture [Stories](../concept/story.md) and [Workflows](../concept/workflow.md),
-        define [Concepts](../concept/concept.md) that link business and technical terms,
-        and specify executable behavior as semantic models---mostly no-code---that
-        become reusable components in your production EKG-platform.
+        Capture [Stories](../concept/story.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept.md).
+        Specify executable behavior as semantic models---mostly no-code---for reusable components.
 
         -----
 
@@ -47,14 +71,23 @@ hide:
 
         [:octicons-arrow-right-24: Learn more](./build/index.md)
 
-    - :material-run:{ .lg } __[Run](run/index.md)__
+      </div>
+    
+    - <div class="process-card-header process-card-run">
+          :material-rocket-launch:{ .lg }
+          <div class="process-card-title">
+            __[Run](run/index.md)__
+            <span class="process-card-subtitle">Operate & Optimize</span>
+          </div>
+      </div>
+
+      <div class="process-card-body" markdown>
 
         -----
 
-        Deploy, operate, and continuously optimize the 
-        [EKG/Platform](../vocab/ekg-platform.md) by measuring
-        [Outcomes](../concept/outcome.md), monitoring [Workflows](../concept/workflow.md),
-        and ensuring the platform serves multiple use cases across the enterprise.
+        Deploy, operate, and optimize the [EKG/Platform](../vocab/ekg-platform.md).
+        Measure [Outcomes](../concept/outcome.md), monitor [Workflows](../concept/workflow.md),
+        serve multiple use cases across the enterprise.
 
         -----
 
@@ -65,6 +98,8 @@ hide:
 
         [:octicons-arrow-right-24: Learn more](./run/index.md)
 
+      </div>
+    
     </div>
 
 === "Diagram"

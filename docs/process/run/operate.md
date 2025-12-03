@@ -3,6 +3,15 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Operating production-level, distributed and federated EKG Platform that serves different use cases across the enterprise, guaranteeing business continuity. Learn EKG operations best practices."
+keywords:
+  - operate
+  - EKG operations
+  - platform operations
+  - business continuity
+  - EKG method
+  - enterprise knowledge graph operations
+schema_type: "HowTo"
 ---
 # Operate
 

@@ -8,6 +8,15 @@ some_url: https://method.ekgf.org/process/plan/
 hide:
   - toc
   - navigation
+description: "Think big, start small, rinse, repeat, accelerate. Learn the Plan phase of the EKG Method: Envision, Discover, Assess, Train, and Chart your Enterprise Knowledge Graph strategy."
+keywords:
+  - EKG planning
+  - plan phase
+  - EKG strategy
+  - use case tree planning
+  - EKG method
+  - enterprise knowledge graph planning
+schema_type: "HowTo"
 ---
 # Plan
 
