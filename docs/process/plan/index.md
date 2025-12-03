@@ -48,9 +48,9 @@ That's what this method is for. See also all other [objectives](../../objective/
 
 - :material-cached:{ .lg } __[Envision](envision.md)__
 
-    - a shared strategy
-    - EKG envisioning
-    - EKG as a business enabler
+    - shared EKG vision
+    - why EKG is critical for long-term business health
+    - shared strategy to realize that vision
 
     [:octicons-arrow-right-24: Learn more](envision.md)
 
