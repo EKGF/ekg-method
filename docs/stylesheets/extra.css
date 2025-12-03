@@ -357,6 +357,55 @@
   font-size: 0.95em;
 }
 
+/* Show bullet points in grid cards - override Material defaults */
+.md-typeset .grid.cards > ul > li ul,
+.md-typeset .grid.cards > ul > li > ul,
+.md-typeset .grid.cards li ul {
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  margin-left: 1.5rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  display: block !important;
+}
+
+.md-typeset .grid.cards > ul > li ul li,
+.md-typeset .grid.cards > ul > li > ul > li,
+.md-typeset .grid.cards li ul li {
+  list-style-type: disc !important;
+  display: list-item !important;
+  margin-left: 0 !important;
+  padding-left: 0.25rem !important;
+  padding-right: 0 !important;
+}
+
+.md-typeset .grid.cards > ul > li ul li::marker,
+.md-typeset .grid.cards > ul > li > ul > li::marker {
+  content: "• " !important;
+  color: inherit !important;
+}
+
+/* Force a visible dot when Material hides markers */
+.md-typeset .grid.cards > ul > li ul li,
+.md-typeset .grid.cards > ul > li > ul > li {
+  list-style: none !important;
+  position: relative !important;
+  padding-left: 1.1rem !important;
+}
+
+.md-typeset .grid.cards > ul > li ul li::before,
+.md-typeset .grid.cards > ul > li > ul > li::before {
+  content: "•" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0.2rem !important;
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  font-size: 1.2rem !important;
+}
+
 /* Process cards - more compact description */
 .md-typeset .grid.cards > ul > li > hr:first-of-type + p {
   margin-top: 0.25rem !important;

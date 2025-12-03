@@ -16,8 +16,11 @@ schema_type: "HowTo"
 # Envision
 
 <!--summary-start-->
-_Create a vision for the EKG that is shared by all key-stakeholders._
-_This is about "the why" long term._
+
+- a shared strategy
+- EKG envisioning
+- EKG as a business enabler
+
 <!--summary-end-->
 
 Create a <ins>shared</ins> vision, where do we think that our organization should be,

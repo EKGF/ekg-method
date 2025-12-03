@@ -16,9 +16,9 @@ schema_type: "HowTo"
 # Train
 
 <!--summary-start-->
-Get everyone involved up to speed with all the fundamentals around EKG, the various
-new paradigms and especially how EKG requires a number of new ways of looking at various
-topics.
+Get everyone involved up to speed with all the fundamentals around EKG,
+the various new paradigms and especially how EKG requires a number of
+new ways of looking at various topics.
 <!--summary-end-->
 
 Provide expert training classes covering the core concepts and technologies 

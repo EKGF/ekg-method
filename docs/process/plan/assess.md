@@ -16,10 +16,12 @@ schema_type: "HowTo"
 # Assess
 
 <!--summary-start-->
-_Assess where your current organization stands in terms of the non-functional requirements and
-where it should be to be able to support the use cases as they come out of the [Discover phase](discover.md).
-These assessments are based on the [Maturity Model for the EKG (EKG/Maturity)](https://maturity.ekgf.org).
-This is partly about "the how" and "can we?"._
+
+- current state
+- required next state
+- maturity (buss/org/data/tech)
+- scalability assessment
+
 <!--summary-end-->
 
 Perform an assessment of the current and desired state of maturity of the organization

@@ -16,9 +16,12 @@ schema_type: "HowTo"
 # Chart
 
 <!--summary-start-->
-_Craft a proper "business case", manage expectations, define crystal clear what success
-means and what is needed to get there.
-This is about "when are we done?"._
+
+- viable roadmap
+- business case
+- stakeholder agreement
+- mandate
+
 <!--summary-end-->
 
 Build a business case that charts out a solid plan, well-supported by all 
