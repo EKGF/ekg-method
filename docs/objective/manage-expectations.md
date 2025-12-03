@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Create an agreed and realistic strategic roadmap aligned to business strategy. Learn how the EKG Method manages expectations across complex enterprises."
+description: "Create an agreed and realistic strategic roadmap aligned to business strategy. Learn how the Use Case Tree Method manages expectations across complex enterprises."
 keywords:
   - expectation management
   - strategic roadmap

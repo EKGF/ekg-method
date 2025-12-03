@@ -1,5 +1,5 @@
 ---
-description: "A logical sequence of steps that defines the order of execution for Stories within a Use Case to achieve desired business Outcomes. Learn how workflows structure business processes in the EKG Method."
+description: "A logical sequence of steps that defines the order of execution for Stories within a Use Case to achieve desired business Outcomes. Learn how workflows structure business processes in the Use Case Tree Method."
 keywords:
   - workflow
   - business process
@@ -77,7 +77,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
 === "Data & Tech Audience"
 
-    ## What Is a Workflow in the EKG Method?
+    ## What Is a Workflow in the Use Case Tree Method?
 
     A **Workflow** is a logical sequence of steps that defines the
     order of execution for [Stories](story.md) within a [Use
@@ -229,14 +229,14 @@ Stories within a Use Case to achieve desired business Outcomes_
     [AWS Step Functions](https://aws.amazon.com/step-functions/),
     which could be one of the technologies used to implement these
     workflows.
-    However, the key difference is that in the EKG Method, workflows
+    However, the key difference is that in the Use Case Tree Method, workflows
     are not just execution engines but semantic objects that are part
     of the knowledge graph itself, enabling deeper integration and
     reasoning capabilities.
 
     !!! info "Provenance"
 
-        When your EKG Service Layer fully supports the EKG Method and
+        When your EKG Service Layer fully supports the Use Case Tree Method and
         you have a Story Service that can execute Stories, then
         ideally you want it to automatically maintain the provenance
         chain of activities.

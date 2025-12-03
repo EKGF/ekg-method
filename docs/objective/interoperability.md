@@ -5,7 +5,7 @@ authors:
 - Carlos Tubbax
 date: 2022-06-23
 some_url: https://method.ekgf.org/objective/interoperability/
-description: "Enable interoperability across the enterprise at high levels of maturity. Learn how the EKG Method achieves enterprise-wide data and system interoperability through semantic standards."
+description: "Enable interoperability across the enterprise at high levels of maturity. Learn how the Use Case Tree Method achieves enterprise-wide data and system interoperability through semantic standards."
 keywords:
   - interoperability
   - enterprise interoperability

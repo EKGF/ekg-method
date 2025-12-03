@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Making the enterprise adaptive through modular knowledge and reusable capabilities. Learn how the EKG Method enables composable business architecture."
+description: "Making the enterprise adaptive through modular knowledge and reusable capabilities. Learn how the Use Case Tree Method enables composable business architecture."
 keywords:
   - composable business
   - business composability

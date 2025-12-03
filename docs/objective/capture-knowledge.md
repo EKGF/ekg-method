@@ -4,7 +4,7 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Enabling a whole new league of use cases through comprehensive knowledge capture. Learn how the EKG Method maps all knowledge, data, and functionality."
+description: "Enabling a whole new league of use cases through comprehensive knowledge capture. Learn how the Use Case Tree Method maps all knowledge, data, and functionality."
 keywords:
   - knowledge capture
   - knowledge management

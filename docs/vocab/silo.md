@@ -1,5 +1,5 @@
 ---
-description: "A silo in enterprise architecture refers to isolated systems or data stores that don't integrate well. Learn how the EKG Method helps break down silos and connect enterprise data."
+description: "A silo in enterprise architecture refers to isolated systems or data stores that don't integrate well. Learn how the Use Case Tree Method helps break down silos and connect enterprise data."
 keywords:
   - silo
   - data silo

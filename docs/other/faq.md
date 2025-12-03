@@ -2,7 +2,7 @@
 title: FAQ
 author:
   - Jacobus Geluk
-description: "Frequently asked questions about the EKG Method and Use Case Tree. Get answers about use cases, stories, personas, data products, and the Enterprise Knowledge Graph methodology."
+description: "Frequently asked questions about the Use Case Tree Method and Use Case Tree. Get answers about use cases, stories, personas, data products, and the Enterprise Knowledge Graph methodology."
 keywords:
   - FAQ
   - frequently asked questions
@@ -136,7 +136,7 @@ The whole point of using semantic technology is that we can easily model all "se
 and make sure that we always address "the business" (i.e., the customer) with their language
 while keeping the backend EKG models "generic" and linked to any number of appropriate ontologies.
 
-A "concept" in the EKG/Method is, therefore, "the linking pin," linking local business language to
+A "concept" in the Use Case Tree Method is, therefore, "the linking pin," linking local business language to
 any other appropriate concepts in any number of other ontologies.
 
 - `<usecase> usesConcept <concept> .`
@@ -363,7 +363,7 @@ allow people to "[boil the ocean](../objective/avoid-boiling-the-ocean.md)" and
 "model the whole world" using generic abstract ontologies, sometimes even up to 
 philosophical levels of abstraction.
 
-One of the key objectives of the EKG/Method is to [avoid boiling the ocean](../objective/avoid-boiling-the-ocean.md)
+One of the key objectives of the Use Case Tree Method is to [avoid boiling the ocean](../objective/avoid-boiling-the-ocean.md)
 by creating a laser sharp description of what the business needs and pays for.
 And make that description testable and therefore verifiable.
 

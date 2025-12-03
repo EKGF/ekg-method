@@ -1,5 +1,5 @@
 ---
-description: "A semantic data product that provides required information for a Use Case, selected based on semantic relevance and suitability. Learn how data products enable reuse in the EKG Method."
+description: "A semantic data product that provides required information for a Use Case, selected based on semantic relevance and suitability. Learn how data products enable reuse in the Use Case Tree Method."
 keywords:
   - data product
   - semantic data product
@@ -88,7 +88,7 @@ use case's requirements_
 
 === "Data & Tech Audience"
 
-    ## What Is a Data Product in the EKG Method?
+    ## What Is a Data Product in the Use Case Tree Method?
 
     A **Data Product** is a semantic data asset that provides
     required information for a [Use Case](use-case.md).
@@ -98,7 +98,7 @@ use case's requirements_
 
     ## Semantic Data Products
 
-    Data Products in the EKG Method are **semantic** — they include:
+    Data Products in the Use Case Tree Method are **semantic** — they include:
 
     - **Data** — The actual data values
     - **Semantics** — The meaning of the data, defined through
@@ -261,10 +261,10 @@ use case's requirements_
     - **Domain** — The business or information area supported
     - **Purpose** — Objectives and intended usage
 
-    ## Relationship to EKG Method
+    ## Relationship to Use Case Tree Method
 
     DPROD provides a standardized way to describe Data Products that
-    aligns with the EKG Method's approach:
+    aligns with the Use Case Tree Method's approach:
 
     - **Semantic description** — DPROD uses ontologies to describe
       the semantic meaning of data products
@@ -275,7 +275,7 @@ use case's requirements_
     - **Decentralized architecture** — DPROD supports decentralized
       data ownership and management
 
-    When implementing Data Products in the EKG Method, DPROD can be
+    When implementing Data Products in the Use Case Tree Method, DPROD can be
     used to provide standardized metadata that enables discovery,
     integration, and governance across the enterprise.
 

@@ -1,5 +1,5 @@
 ---
-description: "A structured business requirement expressed in plain language that defines what a Persona needs to accomplish within a Use Case. Learn how stories capture requirements in the EKG Method."
+description: "A structured business requirement expressed in plain language that defines what a Persona needs to accomplish within a Use Case. Learn how stories capture requirements in the Use Case Tree Method."
 keywords:
   - story
   - user story
@@ -79,7 +79,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
 === "Data & Tech Audience"
 
-    ## What Is a Story in the EKG Method?
+    ## What Is a Story in the Use Case Tree Method?
 
     "User Stories" start out as plain English sentences that, as the
     name suggests, come from the user.
