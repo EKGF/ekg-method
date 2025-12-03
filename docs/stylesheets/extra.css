@@ -96,10 +96,15 @@
   filter: drop-shadow(0 2px 4px rgba(74, 35, 217, 0.15));
 }
 
-/* Process card specific styling */
-.process-cards > ul > li {
-  padding: 0 1.25rem 1.25rem !important;
-  padding-top: 0 !important;
+/* Process card specific styling - override ALL Material padding */
+.md-typeset .grid.process-cards > ul > li {
+  padding: 0 !important;
+  margin: 0;
+}
+
+/* Ensure header is flush with card top */
+.md-typeset .grid.process-cards > ul > li > div:first-child {
+  margin-top: 0 !important;
 }
 
 .process-card-header {
@@ -107,8 +112,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  margin: 0 -1.25rem 0.9rem;
+  margin: 0 0 0.5rem 0 !important;
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(18, 32, 70, 0.18);
@@ -118,6 +122,15 @@
   color: #fff;
   isolation: isolate;
   min-height: 4.5rem;
+}
+
+.md-typeset .grid.process-cards > ul > li > *:not(.process-card-header) {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.md-typeset .grid.process-cards > ul > li > *:last-child {
+  padding-bottom: 1.25rem;
 }
 
 .process-card-header::before {
@@ -180,6 +193,18 @@
   font-size: 0.7rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.process-card-body {
+  padding: 0 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.process-card-body hr {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .process-card-plan {
@@ -374,21 +399,21 @@
 }
 
 /* Ensure description paragraph has consistent height so separator aligns */
-.md-typeset .grid.cards > ul > li > hr:first-of-type + p {
+.process-cards > ul > li > hr:first-of-type + p {
   min-height: 3.5rem !important;
   flex-grow: 0 !important;
   flex-shrink: 0 !important;
 }
 
 /* Ensure the separator before lists is at consistent vertical position */
-.md-typeset .grid.cards > ul > li > hr:last-of-type {
+.process-cards > ul > li > hr:last-of-type {
   margin-top: auto !important;
   margin-bottom: 0.5rem !important;
   flex-shrink: 0 !important;
 }
 
 /* Ensure lists start at consistent position from top */
-.md-typeset .grid.cards > ul > li > ul {
+.process-cards > ul > li > ul {
   margin-top: 0 !important;
   flex-shrink: 0 !important;
 }
