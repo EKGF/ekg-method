@@ -1,0 +1,13 @@
+# robots.txt for EKG/Method documentation site
+# https://method.ekgf.org/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow search and admin pages
+Disallow: /search/
+Disallow: /*.json$
+
+# Allow sitemap
+Sitemap: https://method.ekgf.org/sitemap.xml
+

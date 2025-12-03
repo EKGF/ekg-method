@@ -1,3 +1,14 @@
+---
+description: "A representation of the different types of players — people, systems, or entities — involved in a Use Case, defined using business language. Understand how personas shape requirements in the EKG Method."
+keywords:
+  - persona
+  - user persona
+  - stakeholder
+  - EKG method
+  - enterprise knowledge graph
+schema_type: "Article"
+---
+
 # Persona
 
 <!--summary-start-->

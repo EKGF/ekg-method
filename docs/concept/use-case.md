@@ -1,3 +1,14 @@
+---
+description: "An executable model of business requirements that delivers specific business outcomes within the Use Case Tree. Learn how use cases structure business capabilities in the EKG Method."
+keywords:
+  - use case
+  - business requirements
+  - EKG method
+  - enterprise knowledge graph
+  - use case tree
+schema_type: "Article"
+---
+
 # Use Case
 
 <!--summary-start-->

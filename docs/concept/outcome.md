@@ -1,3 +1,14 @@
+---
+description: "The specific result or benefit that an organization expects to achieve from a Use Case, providing the 'why' behind every business requirement. Learn how outcomes drive business value in the EKG Method."
+keywords:
+  - outcome
+  - business outcome
+  - use case outcome
+  - EKG method
+  - enterprise knowledge graph
+schema_type: "Article"
+---
+
 # Outcome
 
 <!--summary-start-->
@@ -195,6 +206,3 @@ from a Use Case, providing the "why" behind every business requirement_
     This integration ensures that outcomes are not abstract goals but
     concrete, measurable results that drive the EKG's value
     proposition.
-
-
-
