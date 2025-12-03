@@ -184,7 +184,7 @@ use case's requirements_
     ## What Is DPROD?
 
     The **Data Product Ontology (DPROD)** is a specification developed
-    by the Enterprise Knowledge Graph Foundation (EKGF) that provides
+    by the Object Management Group (OMG) Enterprise Knowledge Graph Forum (EKGF) that provides
     a standardized way to describe Data Products using W3C Linked Data
     standards.
     DPROD is available at

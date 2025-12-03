@@ -1,8 +1,9 @@
 ---
-description: "Explore other Enterprise Knowledge Graph Foundation initiatives including EKG Principles, Maturity Model, Catalog, and related resources."
+description: "Explore other Object Management Group (OMG) Enterprise Knowledge Graph Forum initiatives including EKG Principles, Maturity Model, Catalog, and related resources."
 keywords:
   - EKGF
-  - enterprise knowledge graph foundation
+  - object management group
+  - enterprise knowledge graph forum
   - EKG resources
   - EKG principles
   - EKG maturity model
@@ -11,12 +12,11 @@ schema_type: "WebPage"
 
 # Other
 
-The Enterprise Knowledge Graph Foundation is working on multiple initiatives that
-have lead to various websites:
+The Object Management Group (OMG) Enterprise Knowledge Graph Forum (EKGF) is a managed community within OMG and is working on multiple initiatives that have lead to various websites:
 
 ## ekgf.org
 
-The main website of the Foundation: [https://ekgf.org](https://ekgf.org)
+The main website of the OMG-managed forum: [https://ekgf.org](https://ekgf.org)
 
 ## Principles
 
