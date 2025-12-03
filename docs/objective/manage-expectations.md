@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Create an agreed and realistic strategic roadmap aligned to business strategy. Learn how the EKG Method manages expectations across complex enterprises."
+keywords:
+  - expectation management
+  - strategic roadmap
+  - business strategy
+  - EKG method
+  - enterprise knowledge graph
+  - roadmap planning
+schema_type: "Article"
 ---
 # F: Best form of "expectation management"
 

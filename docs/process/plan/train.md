@@ -3,6 +3,15 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Get everyone involved up to speed with EKG fundamentals, new paradigms, and semantic technology. Learn how to train stakeholders, architects, and engineers for EKG success."
+keywords:
+  - train
+  - EKG training
+  - semantic technology training
+  - EKG education
+  - EKG method
+  - enterprise knowledge graph training
+schema_type: "HowTo"
 ---
 # Train
 

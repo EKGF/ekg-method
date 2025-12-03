@@ -3,6 +3,15 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Allocate resources, organize a team, and start creating a Center of Excellence for the EKG. Learn how to structure development workstreams for the EKG Platform and use cases."
+keywords:
+  - allocate
+  - resource allocation
+  - EKG team
+  - center of excellence
+  - EKG method
+  - enterprise knowledge graph team
+schema_type: "HowTo"
 ---
 # Allocate
 

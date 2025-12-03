@@ -1,3 +1,14 @@
+---
+description: "Discover the primary objectives for creating a Use Case Tree in the EKG Method. Learn how interoperability, composability, reuse, and other objectives drive enterprise knowledge graph success."
+keywords:
+  - EKG objectives
+  - use case tree objectives
+  - enterprise knowledge graph goals
+  - EKG method
+  - business objectives
+schema_type: "WebPage"
+---
+
 # Objectives
 
 The primary reasons for creating a [Use Case Tree](../concept/use-case-tree.md) are:

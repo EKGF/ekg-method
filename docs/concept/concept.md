@@ -1,3 +1,15 @@
+---
+description: "A domain term or idea that links business language to semantic models, enabling the Enterprise Knowledge Graph to understand and reason about business concepts. Learn how concepts bridge business and technical domains in the EKG Method."
+keywords:
+  - concept
+  - domain concept
+  - business concept
+  - semantic model
+  - EKG method
+  - enterprise knowledge graph
+schema_type: "Article"
+---
+
 # Concept
 
 <!--summary-start-->

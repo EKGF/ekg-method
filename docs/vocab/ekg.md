@@ -1,3 +1,15 @@
+---
+description: "An Enterprise Knowledge Graph connects all data objects and their meaning across systems. Learn what an EKG is, how it works, and why it enables advanced use cases beyond traditional technologies."
+keywords:
+  - EKG
+  - enterprise knowledge graph
+  - knowledge graph
+  - semantic data
+  - connected data
+  - EKG method
+schema_type: "Article"
+---
+
 # Enterprise Knowledge Graph (EKG)
 
 ## What is an EKG?

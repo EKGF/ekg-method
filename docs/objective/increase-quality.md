@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Enforce 100% test coverage based on real business scenarios and requirements. Learn how the EKG Method ensures quality through comprehensive testing."
+keywords:
+  - quality assurance
+  - test coverage
+  - business scenarios
+  - EKG method
+  - enterprise knowledge graph
+  - testing methodology
+schema_type: "Article"
 ---
 # I: Increase Quality
 

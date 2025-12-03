@@ -1,3 +1,15 @@
+---
+description: "A logical sequence of steps that defines the order of execution for Stories within a Use Case to achieve desired business Outcomes. Learn how workflows structure business processes in the EKG Method."
+keywords:
+  - workflow
+  - business process
+  - process flow
+  - EKG method
+  - enterprise knowledge graph
+  - business automation
+schema_type: "Article"
+---
+
 # Workflow
 
 <!--summary-start-->

@@ -1,3 +1,15 @@
+---
+description: "A structured business requirement expressed in plain language that defines what a Persona needs to accomplish within a Use Case. Learn how stories capture requirements in the EKG Method."
+keywords:
+  - story
+  - user story
+  - business requirement
+  - persona story
+  - EKG method
+  - enterprise knowledge graph
+schema_type: "Article"
+---
+
 # Story
 
 <!--summary-start-->

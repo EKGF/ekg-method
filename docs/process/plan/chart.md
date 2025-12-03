@@ -3,6 +3,15 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
+description: "Craft a proper business case, manage expectations, and define what success means. Learn how to chart a solid plan with stakeholder support and clear success criteria in the Chart phase."
+keywords:
+  - chart
+  - business case
+  - EKG planning
+  - success criteria
+  - EKG method
+  - enterprise knowledge graph planning
+schema_type: "HowTo"
 ---
 # Chart
 

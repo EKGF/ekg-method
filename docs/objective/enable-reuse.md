@@ -4,6 +4,15 @@ authors:
 - Jacobus Geluk
 hide:
 - toc
+description: "Building the foundation for composable, scalable enterprise knowledge through reuse. Learn how the EKG Method enables safe reuse of knowledge assets across teams and domains."
+keywords:
+  - reuse
+  - knowledge reuse
+  - reusable components
+  - EKG method
+  - enterprise knowledge graph
+  - composability
+schema_type: "Article"
 ---
 # M: Enable Reuse
 

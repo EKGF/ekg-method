@@ -2,6 +2,14 @@
 title: FAQ
 author:
   - Jacobus Geluk
+description: "Frequently asked questions about the EKG Method and Use Case Tree. Get answers about use cases, stories, personas, data products, and the Enterprise Knowledge Graph methodology."
+keywords:
+  - FAQ
+  - frequently asked questions
+  - EKG method FAQ
+  - use case tree FAQ
+  - enterprise knowledge graph questions
+schema_type: "FAQPage"
 --- 
 # Frequently Asked Questions
 

@@ -7,6 +7,15 @@ date: 2022-05-01
 some_url: https://method.ekgf.org/objective/modularity/
 hide:
 - toc
+description: "Build with modular, reusable components instead of monolithic systems. Learn how the EKG Method enables modular architecture for enterprise systems."
+keywords:
+  - modularity
+  - modular architecture
+  - reusable components
+  - EKG method
+  - enterprise knowledge graph
+  - system design
+schema_type: "Article"
 ---
 
 # L: Modularity

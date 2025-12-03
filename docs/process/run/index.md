@@ -1,3 +1,15 @@
+---
+description: "Deploy, operate, measure, and optimize the EKG Platform. Learn how to run an Enterprise Knowledge Graph platform that serves multiple use cases across the enterprise."
+keywords:
+  - EKG operations
+  - run phase
+  - EKG platform operations
+  - EKG deployment
+  - EKG method
+  - enterprise knowledge graph operations
+schema_type: "HowTo"
+---
+
 # Run
 
 === "Intro"
