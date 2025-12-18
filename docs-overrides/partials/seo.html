@@ -8,7 +8,8 @@
 {% set full_title = page_title + " - " + config.site_name if page_title != config.site_name else config.site_name %}
 
 {# Get page URL #}
-{% set page_url = config.site_url + page.url if page.url else config.site_url %}
+{# Prefer MkDocs' canonical_url when available #}
+{% set page_url = page.canonical_url if page.canonical_url else (config.site_url + page.url if page.url else config.site_url) %}
 
 {# Get page image (use site logo or custom image) #}
 {% set page_image = config.site_url + "/assets/images/favicon.png" %}
@@ -44,6 +45,11 @@
 {# Additional SEO meta tags #}
 {% if page.meta and page.meta.keywords %}
 <meta name="keywords" content="{{ page.meta.keywords | join(', ') }}">
+{% endif %}
+
+{# Google Search Console verification #}
+{% if config.extra.google_site_verification %}
+<meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
 {% endif %}
 
 {# JSON-LD Structured Data #}
