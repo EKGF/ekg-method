@@ -81,6 +81,7 @@ business outcomes within the Use Case Tree_
 
 === "Data & Tech Audience"
 
+    <span id="data-tech-audience"></span>
     ## What Is a Use Case in the Use Case Tree Method?
 
     A **Use Case** in the Use Case Tree Method specifies a distinct set of
@@ -358,6 +359,7 @@ business outcomes within the Use Case Tree_
 
 === "Plan/Build/Run"
 
+    <span id="plan-build-run"></span>
     ## Use Cases Across the Use Case Tree Method Process
 
     The Use Case Tree Method defines a process consisting of three phases, each
@@ -532,7 +534,7 @@ business outcomes within the Use Case Tree_
 
     ### UML Use Cases
 
-    As discussed in the [Data & Tech Audience](#data--tech-audience)
+    As discussed in the [Data & Tech Audience](#data-tech-audience)
     tab, Use Cases in the Use Case Tree Method share terminology with UML Use
     Cases but operate at a different level of abstraction.
 

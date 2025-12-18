@@ -2,6 +2,14 @@
 
 Documenting the Use Case Tree method.
 
+## Python
+
+This repo uses **Python 3.13+** (see `pyproject.toml`) and **uv**.
+
+```bash
+uv sync
+```
+
 This is an initiative of:
 
 - [agnos.ai UK Ltd](https://agnos.ai)
