@@ -1,7 +1,87 @@
 :root {
-  --md-primary-fg-color:        #4A23D9;
-  --md-primary-fg-color--light: #4A23D9;
-  --md-primary-fg-color--dark:  #25126A;
+  /* EKGF custom colors - used by entire theme including Mermaid diagrams */
+  --md-primary-fg-color:        #4051b5;  /* Material Indigo 500 for primary elements */
+  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo */
+  --md-primary-fg-color--dark:  #303f9f;  /* Darker indigo */
+  --md-accent-fg-color:         #ff6f00;  /* EKGF orange for accents */
+  --md-accent-fg-color--light:  #ff9800;  /* Lighter orange */
+  --md-accent-fg-color--dark:   #e65100;  /* Darker orange */
+}
+
+/* Dark mode color adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #4051b5;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark:  #303f9f;
+  --md-accent-fg-color:         #ff6f00;
+  --md-accent-fg-color--light:  #ff9800;
+  --md-accent-fg-color--dark:   #e65100;
+}
+
+/* Force Mermaid diagram elements to use EKGF colors */
+/* Node backgrounds - indigo blue */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .cluster rect,
+.mermaid g.classGroup rect {
+  fill: #4051b5 !important;
+}
+
+/* Node borders - orange */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .cluster rect,
+.mermaid g.classGroup rect {
+  stroke: #ff6f00 !important;
+  stroke-width: 2px !important;
+}
+
+/* Connector lines and arrows - orange */
+.mermaid .edgePath path,
+.mermaid .flowchart-link,
+.mermaid line.relation,
+.mermaid path.relation,
+.mermaid line[class*="messageLine"],
+.mermaid path[class*="messageLine"] {
+  stroke: #ff6f00 !important;
+  stroke-width: 2px !important;
+}
+
+/* Arrow markers - orange */
+.mermaid marker path,
+.mermaid defs marker path {
+  fill: #ff6f00 !important;
+  stroke: #ff6f00 !important;
+}
+
+/* Text labels on nodes - white */
+.mermaid .nodeLabel,
+.mermaid text.nodeLabel,
+.mermaid .node text,
+.mermaid .classLabel .label,
+.mermaid tspan {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Edge labels - keep dark for readability */
+.mermaid .edgeLabel,
+.mermaid .edgeLabel text,
+.mermaid .edgeLabel tspan {
+  fill: #333333 !important;
+  color: #333333 !important;
+}
+
+/* Dark mode edge label adjustments */
+[data-md-color-scheme="slate"] .mermaid .edgeLabel,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel text,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel tspan {
+  fill: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* Card Design Enhancements */
@@ -575,3 +655,4 @@
 .md-typeset blockquote p:last-child {
   margin-bottom: 0;
 }
+

@@ -26,8 +26,8 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: light blue
+      primary: custom
+      accent: custom
       toggle:
 #        icon: material/toggle-switch-off-outline
 #        icon: material/lightbulb-outline
@@ -35,8 +35,8 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep orange
+      primary: custom
+      accent: custom
       toggle:
 #        icon: material/toggle-switch
 #        icon: material/lightbulb
@@ -83,26 +83,6 @@ plugins:
   - search:
       lang:
         - en
-  - mermaid2:
-      javascript: "https://unpkg.com/mermaid/dist/mermaid.min.js"
-      arguments:
-        # Use a consistent “EKGF blue” background with white text for all Mermaid diagrams.
-        # We use theme "base" so we can control colors via themeVariables.
-        theme: "base"
-        themeVariables:
-          # Match MkDocs Material "indigo" (nav bar) for node fills, but keep the canvas white
-          # so connectors remain visible.
-          background: "#ffffff"
-          primaryColor: "#4051b5"       # Material Indigo 500 (close to the nav bar)
-          secondaryColor: "#4051b5"
-          tertiaryColor: "#4051b5"
-          primaryTextColor: "#ffffff"
-          secondaryTextColor: "#ffffff"
-          tertiaryTextColor: "#ffffff"
-          primaryBorderColor: "#ff6f00" # EKGF orange (lines/borders)
-          lineColor: "#ff6f00"          # EKGF orange
-          textColor: "#ffffff"
-        securityLevel: 'loose'
   - exclude-search:
       exclude:
         - 'fragment/*'
@@ -174,7 +154,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
