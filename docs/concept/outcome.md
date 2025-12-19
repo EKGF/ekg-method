@@ -206,3 +206,51 @@ from a Use Case, providing the "why" behind every business requirement_
     This integration ensures that outcomes are not abstract goals but
     concrete, measurable results that drive the EKG's value
     proposition.
+
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-outcome.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around an Outcome.
+
+    ### Required facts about an Outcome
+
+    - **Opaque universally unique identifier**
+        - An Outcome should have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**, represented as a URI:
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Business-friendly name**
+        - An Outcome must have a human-readable name expressed in business language.
+
+    - **Definition**
+        - An Outcome must have a definition explaining the expected benefit/result.
+
+    - **Stereotype**
+        - An Outcome can have an **Outcome Stereotype** (e.g. KPI, Goal, Objective, Success
+          Criteria, Definition of Done).
+        - Stereotypes categorize outcomes without changing the underlying “Outcome” concept.
+
+    - **Time horizon (optional)**
+        - Outcomes often imply a time horizon (short/mid/long term). Capture it explicitly if
+          it matters.
+
+    - **Measurability (optional but recommended)**
+        - Outcomes should have measurable success criteria where possible (metrics, thresholds,
+          targets, baselines).
+
+    - **Owned by a Use Case (optional)**
+        - Outcomes are often defined/owned by a Use Case, but can be referenced by other Use
+          Cases (e.g., children).
+
+    - **Use Case ↔ Outcome relationship-object (recommended)**
+        - Model the connection between a Use Case and an Outcome via a **relationship-object**
+          (not just a direct link).
+        - This supports:
+            - **Inheritance**: a child Use Case referencing an Outcome defined on a parent Use Case
+            - **Contribution mapping**: describing *how* the child contributes to that desired Outcome
+            - **Local outcomes**: linking to Outcomes owned by the current Use Case as well

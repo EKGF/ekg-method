@@ -41,10 +41,17 @@ business outcomes within the Use Case Tree_
     shared with everyone so that everyone can learn and avoid wasting
     time on that idea again.
 
-    Let people contribute.
-    All knowledge workers, specialist users, data architects,
-    technical architects, ontologists, end users, business executives
-    — literally anyone — should be able to understand:
+    !!! important "Let people contribute"
+
+        A Use Case is a **shared, living artifact** across the full end-to-end lifecycle
+        (Plan → Build → Run → evolve).
+        Everyone involved — knowledge workers, specialist users, data architects,
+        technical architects, ontologists, end users, business executives — literally anyone —
+        should be able to **read it**, **talk about the same Use Case (the same version)**,
+        and **contribute what they know** as the work progresses.
+
+        Everything you do in and around a Use Case should be discoverable back in the
+        **Knowledge Graph**, and be directly or indirectly related to that Use Case.
 
     ### Strategic Context
 
@@ -117,6 +124,11 @@ business outcomes within the Use Case Tree_
       end up with use cases that are much more like turn-key
       components for the EKG — 100% reusable, delivering
       "no-code"-functionality[^2].
+
+    [^2]: [No-code](https://en.wikipedia.org/wiki/No-code_development_platform) or
+          [Low-code](https://en.wikipedia.org/wiki/Low-code_development_platform)
+          development allows non-programmers to create applications without
+          hard-wiring business logic with a programming language
 
     - **Executable models**: Unlike UML use cases, which are primarily
       descriptive, EKG use cases can be captured as executable models
@@ -256,8 +268,9 @@ business outcomes within the Use Case Tree_
     traceable, reusable, and aligned with the business outcomes the
     use case is designed to deliver.
 
-=== "Life Cycle"
+=== "Process"
 
+    <span id="life-cycle"></span>
     ## Continuous Improvement
 
     Each individual Use Case goes through a lifecycle of continuous
@@ -356,8 +369,6 @@ business outcomes within the Use Case Tree_
 
     This ensures that individual use case lifecycles are coordinated
     and aligned with the broader enterprise strategy.
-
-=== "Plan/Build/Run"
 
     <span id="plan-build-run"></span>
     ## Use Cases Across the Use Case Tree Method Process
@@ -487,6 +498,8 @@ business outcomes within the Use Case Tree_
     This continuous evolution ensures that use cases remain aligned
     with business needs and continue to deliver value over time.
 
+    [^1]: The lifecycle diagram shown is a simplification
+
 === "Similar Concepts"
 
     ## Related Approaches
@@ -611,8 +624,113 @@ business outcomes within the Use Case Tree_
     - **Business-first approach** ensures alignment with business
       outcomes and value
 
-[^1]: The lifecycle diagram shown is a simplification
-[^2]: [No-code](https://en.wikipedia.org/wiki/No-code_development_platform) or
-      [Low-code](https://en.wikipedia.org/wiki/Low-code_development_platform)
-      development allows non-programmers to create applications without
-      hard-wiring business logic with a programming language
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-use-case.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around a Use Case.
+
+    ### Required facts about a Use Case
+
+    - **Opaque universally unique identifier**
+        - A Use Case must have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**.
+        - Represent it as a URI, for example:
+
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Business-friendly name**
+        - A Use Case must have a **human-readable name** that resonates with business users.
+        - This is what people see, say, and search for.
+
+    - **Slug**
+        - A Use Case must have a **slug**: a kebab-cased identifier that is **at least unique
+          within the organization** (and stable over time as much as possible).
+        - Example: `customer-360`, `reduce-churn-risk`, `supplier-risk-monitoring`
+
+    - **Business-focused definition**
+        - A Use Case must have a **definition** that explains what it is, in business terms.
+        - Keep it implementation-agnostic: focus on intent and value, not solutions.
+
+    - **One or more outcomes**
+        - A Use Case must have **at least one Outcome** explaining *why it exists* and *what
+          contribution is expected*.
+        - Outcomes can represent **KPIs**, **goals**, **objectives**, **definitions of success**,
+          etc.
+        - What an Outcome *is exactly* is determined by its **stereotype** (e.g. KPI vs Goal),
+          but the key is to capture expected **short/mid/long-term outcomes**.
+
+    - **Outcome relationships (supports inheritance and contribution mapping)**
+        - Model the connection between a Use Case and an Outcome via a **relationship-object**
+          (not just a direct link).
+        - This enables a Use Case to relate to an Outcome it **owns**, and also enables a child
+          Use Case to **reference an Outcome defined on a parent Use Case** (inherited) and
+          capture *how the child contributes* to that desired Outcome.
+
+    - **Use Case stereotype (optional, organization-defined)**
+        - A Use Case can have a **Use Case Stereotype**.
+        - By default, the stereotype is simply “Use Case”.
+        - Many organizations use different type names for scopes that are effectively the same
+          concept in the Use Case Tree Method. A stereotype makes the Use Case **recognizable**
+          in the local language without changing the underlying model.
+        - Organizations can define **any number** of stereotypes and how they interrelate,
+          including constraints like “allowed parent stereotypes” and “allowed child stereotypes”.
+        - Examples:
+            - **Business Capability Area**: allows only Business Capability Domain as child
+            - **Business Capability Domain**: parent must be Business Capability Area; child must be Business Capability
+            - **Business Capability**: parent must be Business Capability Domain; child can be anything
+            - **Data Domain**
+            - **Technical Capability**
+            - **Business Component**
+            - **Architecture Component**
+            - **Module**
+            - **API Service**
+            - **Application**
+
+    - **Stories (optional, owned)**
+        - A Use Case can have **zero or more Stories**.
+        - The relationship is **part-of**: the Use Case **owns** its Stories.
+        - If the Use Case is deleted, its owned Stories are deleted as well.
+
+    - **Workflow definitions (optional, owned)**
+        - A Use Case can have **zero or more Workflows**.
+        - More precisely: these are **WorkflowDefinition** objects (the definition, not a run).
+        - The relationship is **part-of**: the Use Case **owns** its workflow definitions.
+        - If the Use Case is deleted, its owned workflow definitions are deleted as well.
+
+    - **Persona taxonomy (optional, SKOS scheme)**
+        - A Use Case can have **zero or one PersonaTaxonomy**.
+        - A PersonaTaxonomy is a `skos:ConceptScheme` that groups the Personas relevant for the
+          Use Case.
+        - Personas are `skos:Concept` and are members of exactly one PersonaTaxonomy via
+          `skos:inScheme`.
+
+    - **Concept vocabularies (optional, mixed)**
+        - A Use Case can have **zero or more relationships** to Concept Vocabularies.
+        - It may **reference an external** Concept Vocabulary, and/or **own a private** Concept
+          Vocabulary.
+        - A Concept Vocabulary contains **Concepts**.
+        - Stories relate to Concepts via a **relationship-object** that captures usage type:
+            - **Input Concept** — required/mandatory input parameter (or optional)
+            - **Output Concept** — definition of the output (often a shape/compound object)
+            - **Dependent Concept** — referenced in filters/constraints (e.g., SQL/SPARQL `WHERE`)
+
+    ### How it fits with Concepts & Terms
+
+    In the Use Case Tree Method, [Concepts & Terms](concept.md) capture the shared vocabulary
+    and intent.
+    Ontologies make that vocabulary **precise and machine-actionable** (identifiers, relations,
+    constraints, and alignment to standards).
+
+    Learn more in [Ontology](ontology.md).
+
+    ### Governance and reuse (pragmatic guidance)
+
+    - **Reuse first**: adopt/align to existing ontologies before creating new ones
+    - **Versioning**: track ontology/schema versions alongside the Use Case version
+    - **Change impact**: semantic changes can break queries, validation, and workflows
+    - **Interoperability**: shared semantics are a primary driver for cross-domain reuse

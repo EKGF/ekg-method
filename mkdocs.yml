@@ -89,10 +89,22 @@ plugins:
   - mermaid2:
       javascript: "https://unpkg.com/mermaid/dist/mermaid.min.js"
       arguments:
-        # test if its __palette_1 (dark) or __palette_2 (light)
-        # for mkdocs-material >=8.0.0
-        theme: |
-          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
+        # Use a consistent “EKGF blue” background with white text for all Mermaid diagrams.
+        # We use theme "base" so we can control colors via themeVariables.
+        theme: "base"
+        themeVariables:
+          # Match MkDocs Material "indigo" (nav bar) for node fills, but keep the canvas white
+          # so connectors remain visible.
+          background: "#ffffff"
+          primaryColor: "#4051b5"       # Material Indigo 500 (close to the nav bar)
+          secondaryColor: "#4051b5"
+          tertiaryColor: "#4051b5"
+          primaryTextColor: "#ffffff"
+          secondaryTextColor: "#ffffff"
+          tertiaryTextColor: "#ffffff"
+          primaryBorderColor: "#ff6f00" # EKGF orange (lines/borders)
+          lineColor: "#ff6f00"          # EKGF orange
+          textColor: "#ffffff"
         securityLevel: 'loose'
   - exclude-search:
       exclude:

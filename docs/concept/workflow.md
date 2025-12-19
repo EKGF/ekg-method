@@ -313,3 +313,51 @@ Stories within a Use Case to achieve desired business Outcomes_
     This integration ensures that workflows are not isolated process
     definitions but part of a cohesive, semantic model of the
     enterprise.
+
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-workflow.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around a Workflow.
+
+    !!! note "WorkflowDefinition"
+
+        When we say “Workflow” here, we primarily mean the **definition** of a workflow
+        (a **WorkflowDefinition**), not a specific runtime execution instance.
+
+    ### Required facts about a WorkflowDefinition
+
+    - **Opaque universally unique identifier**
+        - A WorkflowDefinition should have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**, represented as a URI:
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Business-friendly name**
+        - A WorkflowDefinition should have a human-readable name.
+
+    - **Slug**
+        - A WorkflowDefinition should have a kebab-cased slug that is unique at least within the
+          organization.
+        - Example: `onboard-supplier`, `assess-counterparty-risk`
+
+    - **Definition**
+        - A WorkflowDefinition should have a definition describing the business process it models.
+
+    - **Owned by a Use Case**
+        - A WorkflowDefinition is **part-of** a Use Case: the Use Case **owns** it.
+        - If the owning Use Case is deleted, its workflow definitions are deleted as well.
+
+    - **Steps that reference Stories (relationship-object)**
+        - A WorkflowDefinition has **zero or more Steps**.
+        - Each Step references a Story.
+        - Model Steps as relationship-objects so you can capture ordering and execution semantics
+          (sequence, branching/conditions, parallelism, retries, etc.).
+
+    - **Outcomes and concepts**
+        - Workflows are executed to achieve Outcomes (directly or via the Stories they orchestrate).
+        - Workflows use Concepts through the Use Case’s Concept Vocabularies and the Stories in
+          their steps.

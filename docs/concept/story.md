@@ -201,3 +201,54 @@ defines what a Persona needs to accomplish within a Use Case_
     This integration ensures that Stories are not isolated
     requirements but part of a cohesive, semantic model of the
     enterprise.
+
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-story.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around a Story.
+
+    ### Required facts about a Story
+
+    - **Opaque universally unique identifier**
+        - A Story must have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**.
+        - Represent it as a URI, for example:
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Business-friendly name**
+        - A Story should have a concise, human-readable name.
+
+    - **Slug**
+        - A Story should have a kebab-cased slug that is unique at least within the organization.
+        - Example: `assess-risk-position`, `verify-stakeholders`
+
+    - **Business-focused definition**
+        - A Story must have a plain-language definition of what the user needs.
+
+    - **Structured statement (who / what / why)**
+        - A Story should capture:
+            - **Who**: a reference to a Persona (or persona-like Concept)
+            - **What**: the capability/action needed
+            - **Why**: a reference to an Outcome (the intended business value)
+
+    - **Owned by a Use Case**
+        - A Story is **part-of** a Use Case: the Use Case **owns** the Story.
+        - If the owning Use Case is deleted, its Stories are deleted as well.
+
+    - **Concept usage (relationship-object)**
+        - Model the relationship between a Story and a Concept as a **relationship-object**
+          (not a direct link), because it carries meaning about *how* the Concept is used.
+        - The relationship-object defines a usage type, for example:
+            - **Input Concept** — required/mandatory input parameter (or optional)
+            - **Output Concept** — definition of the output (often a shape/compound object)
+            - **Dependent Concept** — referenced in filters/constraints (e.g., SQL/SPARQL `WHERE`)
+
+    - **Workflow participation**
+        - A Story can participate as a **Step** in one or more WorkflowDefinitions.
+        - Model this via a relationship-object (e.g. a “WorkflowStep”) so you can capture step
+          order, conditions, and other execution semantics.
