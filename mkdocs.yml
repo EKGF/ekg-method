@@ -69,10 +69,7 @@ extra:
   analytics:
     provider: google
     property: G-9LCW4TSSRP
-extra_javascript:
-  - "javascript/images_dark.js"
-  - "javascript/refresh_on_toggle_dark_light.js"
-  - "https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"
+extra_javascript: []
 plugins:
   - include-markdown
   - git-revision-date-localized:
