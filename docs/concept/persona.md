@@ -211,7 +211,6 @@ or entities — involved in a Use Case, defined using business language_
     `<persona-B>`, then the user is also associated with
     `<persona-B>`.
 
-
 === "Model"
 
     ## Overview
@@ -239,3 +238,46 @@ or entities — involved in a Use Case, defined using business language_
     integrated components of the Enterprise Knowledge Graph,
     enabling automated reasoning, policy enforcement, and
     composability.
+
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-persona.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around a Persona.
+
+    ### Required facts about a Persona
+
+    - **Opaque universally unique identifier**
+        - A Persona should have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**, represented as a URI:
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Business-friendly name**
+        - A Persona must have a human-readable name (e.g., “Auditor”, “Chief Risk Officer”).
+
+    - **Slug**
+        - A Persona should have a kebab-cased slug (convenient identifier; do not use as a foreign
+          key in the Knowledge Graph).
+        - Example: `auditor`, `chief-risk-officer`, `legal-entity-maintainer`
+
+    - **Definition**
+        - A Persona should have a definition describing who it represents in the domain.
+
+    - **Persona inheritance (optional)**
+        - Personas can be related via `isSubPersonaOf` for hierarchical organization.
+
+    - **Persona taxonomy membership (required)**
+        - Personas are `skos:Concept`.
+        - Every Persona is a member of exactly one **PersonaTaxonomy** (a `skos:ConceptScheme`)
+          via `skos:inScheme`.
+        - Each Use Case can have **zero or one PersonaTaxonomy** that provides the scheme for
+          Personas used in that Use Case.
+
+    - **Participation in Stories (relationship-object)**
+        - Stories reference Personas in the “Who” part.
+        - Model the connection via a relationship-object if you need to capture context such as
+          role, responsibility, entitlement, or provenance.

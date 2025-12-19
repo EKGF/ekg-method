@@ -213,3 +213,65 @@ business concepts_
     - **[Ontologies](ontology.md)** — Concepts link to ontology
       classes, properties, and shapes
 
+=== "Ontology"
+
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-concept.md"
+
+    We're not (yet) prescribing a full OWL ontology here.
+    But we can state a small set of **facts** that people can reliably use to build their own
+    ontology / schema / graph model around a Concept.
+
+    ### Required facts about a Concept
+
+    - **Opaque universally unique identifier**
+        - A Concept must have an **opaque**, **universally unique** identifier.
+        - Prefer a random identifier such as **UUIDv4**.
+        - Represent it as a URI, for example:
+          `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
+
+    - **Slug**
+        - A Concept should have a kebab-cased slug.
+        - Slug uniqueness cannot be guaranteed, but it can be used as a convenient alternative
+          identifier next to the real identifier (with lookup/search).
+        - Do **not** use the slug as a foreign key in the Knowledge Graph itself; use the real
+          identifier for references.
+
+    - **Label Term (instead of a traditional label)**
+        - A Concept does not have a traditional label such as `skos:prefLabel` or `rdfs:label`.
+        - Instead, it has a **labelTerm** link to one of its **BusinessTerm** objects (a resource
+          in the Knowledge Graph).
+        - Learn more in [Term](term.md).
+
+    - **Definition**
+        - A Concept must have a business-focused definition explaining what it means in context.
+
+    - **One or more Terms (required)**
+        - A Concept must have **one or more Terms** (`Term`), which can be either a
+          **BusinessTerm** or a **TechnicalTerm**.
+        - A Concept without a Term has no reason to exist.
+        - All Terms of a Concept **mean the same thing** in the context of that Concept.
+        - Terms may include alternative spellings, abbreviations, synonyms, and technical
+          manifestations.
+        - Terms are **owned** by the Concept (part-of): when the Concept is deleted, its Term
+          objects are deleted as well.
+        - Learn more in [Term](term.md).
+
+    - **Contained in a Concept Vocabulary**
+        - A Concept is a member of a Concept Vocabulary (a “container” of Concepts).
+        - A Use Case can relate to Concept Vocabularies via relationship-objects:
+            - it can **reference** an external vocabulary and/or
+            - **own** a private vocabulary.
+
+    - **Mapping to ontologies (optional)**
+        - A Concept can be mapped/aligned to terms in one or more ontologies (classes,
+          properties, shapes).
+        - Model this via mapping/alignment relationships so you can capture confidence, rationale,
+          and provenance.
+
+    - **Used by Stories and Workflows**
+        - Stories use Concepts as **input**, **output**, and **dependent** concepts.
+        - Workflows use Concepts through the Stories they orchestrate and the vocabulary of the
+          Use Case.
+
