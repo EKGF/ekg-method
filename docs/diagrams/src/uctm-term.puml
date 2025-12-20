@@ -1,0 +1,26 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "Term" as Term [[../concept/term/]]
+class "BusinessTerm" as BusinessTerm
+class "TechnicalTerm" as TechnicalTerm
+class "Concept" as Concept [[../concept/concept/]]
+class "ConceptVocabulary" as ConceptVocabulary
+class "UseCase" as UseCase [[../concept/use-case/]]
+
+' Term specializations
+Term <|-- BusinessTerm
+Term <|-- TechnicalTerm
+
+' Ownership
+Concept "1" *-- "1..*" Term : :term
+Concept "0..1" --> "1" BusinessTerm : :labelTerm
+
+' Context (terms live inside vocabularies used by use cases)
+ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+ConceptVocabulary "0..*" --> "1" UseCase : :useCase
+
+@enduml
+

@@ -1,0 +1,25 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "Story" as Story [[../concept/story/]]
+class "Outcome" as Outcome [[../concept/outcome/]]
+class "Concept" as Concept [[../concept/concept/]]
+class "StoryConceptRelationship" as StoryConceptRelationship
+
+' Other resources point to UseCase (typical KG modeling style)
+WorkflowDefinition "0..*" --> "1" UseCase : :useCase
+
+' Steps (relationship-object implied)
+WorkflowDefinition --> Story : :steps
+
+' Stories link to outcomes and concepts
+Story --> Outcome : :contributesTo
+Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
+StoryConceptRelationship --> Concept : :concept
+
+@enduml
+

@@ -1,0 +1,19 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "Outcome" as Outcome [[../concept/outcome/]]
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "Story" as Story [[../concept/story/]]
+class "OutcomeRelationship" as OutcomeRelationship
+
+' Outcome linkage (relationship-object)
+OutcomeRelationship "0..*" --> "1" UseCase : :useCase
+OutcomeRelationship --> Outcome : :targetOutcome
+
+' Stories reference outcomes as "why"
+Story --> Outcome : :contributesTo
+
+@enduml
+
