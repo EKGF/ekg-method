@@ -1,8 +1,9 @@
 ---
 description: >-
-  A representation of the different types of players — people, systems, or
-  entities — involved in a Use Case, defined using business language.
-  Understand how personas shape requirements in the Use Case Tree Method.
+  A representation of the different types of players — people,
+  systems, or entities — involved in a Use Case, defined using
+  business language. Understand how personas shape requirements in the
+  Use Case Tree Method.
 keywords:
   - persona
   - user persona
@@ -15,8 +16,10 @@ schema_type: "Article"
 # Persona
 
 <!--summary-start-->
+
 _A representation of the different types of players — people, systems,
 or entities — involved in a Use Case, defined using business language_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
