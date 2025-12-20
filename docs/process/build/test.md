@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Add test scenarios and deliver full coverage based on real business scenarios. Learn how to ensure quality through comprehensive testing in the Use Case Tree Method Test phase."
+description: >-
+  Add test scenarios and deliver full coverage based on real business scenarios.
+  Learn how to ensure quality through comprehensive testing in the Use Case
+  Tree Method Test phase.
 keywords:
   - test
   - EKG testing

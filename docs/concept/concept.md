@@ -1,5 +1,9 @@
 ---
-description: "A domain term or idea that links business language to semantic models, enabling the Enterprise Knowledge Graph to understand and reason about business concepts. Learn how concepts bridge business and technical domains in the Use Case Tree Method."
+description: >-
+  A domain term or idea that links business language to semantic models,
+  enabling the Enterprise Knowledge Graph to understand and reason about
+  business concepts. Learn how concepts bridge business and technical domains
+  in the Use Case Tree Method.
 keywords:
   - concept
   - domain concept

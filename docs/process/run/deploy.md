@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Fully automated deployments as Infrastructure-as-Code using Continuous Deployment principles. Learn how to deploy the EKG Platform to production with automation and reliability."
+description: >-
+  Fully automated deployments as Infrastructure-as-Code using Continuous
+  Deployment principles. Learn how to deploy the EKG Platform to production
+  with automation and reliability.
 keywords:
   - deploy
   - EKG deployment

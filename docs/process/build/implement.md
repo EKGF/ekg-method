@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Detail the use case by implementing executable models. Learn how to transform requirements into semantic models that run on the EKG Platform in the Implement phase."
+description: >-
+  Detail the use case by implementing executable models. Learn how to transform
+  requirements into semantic models that run on the EKG Platform in the
+  Implement phase.
 keywords:
   - implement
   - use case implementation

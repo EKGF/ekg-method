@@ -1,5 +1,8 @@
 ---
-description: "The foundational structure that organizes business capabilities into reusable, governed components within the Enterprise Knowledge Graph. Learn how the Use Case Tree drives EKG development."
+description: >-
+  The foundational structure that organizes business capabilities into reusable,
+  governed components within the Enterprise Knowledge Graph. Learn how the Use
+  Case Tree drives EKG development.
 keywords:
   - use case tree
   - UCT

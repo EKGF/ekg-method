@@ -1,5 +1,8 @@
 ---
-description: "A manifestation of a Concept: a business-facing or technical term (e.g., synonyms, abbreviations, variable names) that all mean the same thing in the Concept’s context. Learn how Terms work in the Use Case Tree Method."
+description: >-
+  A manifestation of a Concept: a business-facing or technical term (e.g.,
+  synonyms, abbreviations, variable names) that all mean the same thing in the
+  Concept's context. Learn how Terms work in the Use Case Tree Method.
 keywords:
   - term
   - business term

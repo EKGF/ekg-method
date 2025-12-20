@@ -1,5 +1,8 @@
 ---
-description: "EKG/Platform is the technical infrastructure that runs the Enterprise Knowledge Graph. Learn about the platform layer that provides holistic views of all connected data and knowledge."
+description: >-
+  EKG/Platform is the technical infrastructure that runs the Enterprise
+  Knowledge Graph. Learn about the platform layer that provides holistic views
+  of all connected data and knowledge.
 keywords:
   - EKG/Platform
   - EKG platform

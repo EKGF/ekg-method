@@ -1,5 +1,8 @@
 ---
-description: "A structured business requirement expressed in plain language that defines what a Persona needs to accomplish within a Use Case. Learn how stories capture requirements in the Use Case Tree Method."
+description: >-
+  A structured business requirement expressed in plain language that defines
+  what a Persona needs to accomplish within a Use Case. Learn how stories
+  capture requirements in the Use Case Tree Method.
 keywords:
   - story
   - user story

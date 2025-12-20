@@ -1,3 +1,18 @@
+---
+description: >-
+  Learn how to optimize your documentation pages for search engines. A
+  comprehensive guide to front-matter metadata, keywords, structured data, and
+  SEO best practices for the Use Case Tree Method site.
+keywords:
+  - SEO guide
+  - search engine optimization
+  - meta descriptions
+  - structured data
+  - EKG method documentation
+  - content optimization
+schema_type: "Article"
+---
+
 # SEO Guide for Content Authors
 
 This guide explains how to optimize your content for search engines when writing documentation for the Use Case Tree Method site.

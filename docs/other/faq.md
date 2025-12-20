@@ -2,7 +2,10 @@
 title: FAQ
 author:
   - Jacobus Geluk
-description: "Frequently asked questions about the Use Case Tree Method and Use Case Tree. Get answers about use cases, stories, personas, data products, and the Enterprise Knowledge Graph methodology."
+description: >-
+  Frequently asked questions about the Use Case Tree Method and Use Case Tree.
+  Get answers about use cases, stories, personas, data products, and the
+  Enterprise Knowledge Graph methodology.
 keywords:
   - FAQ
   - frequently asked questions

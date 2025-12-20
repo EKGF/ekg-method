@@ -1,5 +1,9 @@
 ---
-description: "Use Case Tree Method for developing Enterprise Knowledge Graphs (EKG). A comprehensive method to develop business capabilities through structured use cases, outcomes, and workflows."
+description: >-
+  Learn the Use Case Tree Method for developing Enterprise Knowledge Graphs.
+  A comprehensive, proven methodology to build business capabilities through
+  structured use cases, outcomes, and workflows.
+date_published: "2022-01-01"
 keywords:
   - EKG method
   - enterprise knowledge graph

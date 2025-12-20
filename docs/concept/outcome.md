@@ -1,5 +1,8 @@
 ---
-description: "The specific result or benefit that an organization expects to achieve from a Use Case, providing the 'why' behind every business requirement. Learn how outcomes drive business value in the Use Case Tree Method."
+description: >-
+  The specific result or benefit that an organization expects to achieve from
+  a Use Case, providing the 'why' behind every business requirement. Learn how
+  outcomes drive business value in the Use Case Tree Method.
 keywords:
   - outcome
   - business outcome

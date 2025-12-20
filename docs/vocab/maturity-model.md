@@ -1,5 +1,8 @@
 ---
-description: "The Maturity Model for the Enterprise Knowledge Graph (EKG/Maturity) is the reference framework for all non-functional requirements of any given use case. Learn about EKG maturity assessment."
+description: >-
+  The Maturity Model for the Enterprise Knowledge Graph (EKG/Maturity) is the
+  reference framework for all non-functional requirements of any given use case.
+  Learn about EKG maturity assessment.
 keywords:
   - EKG maturity model
   - EKG/Maturity

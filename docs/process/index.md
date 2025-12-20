@@ -2,7 +2,10 @@
 hide:
   - toc
   - navigation
-description: "The Use Case Tree Method process: Plan (strategy & scope), Build (executable models), and Run (operate & optimize). Learn the three-phase approach to developing Enterprise Knowledge Graphs."
+description: >-
+  The Use Case Tree Method process: Plan (strategy & scope), Build (executable
+  models), and Run (operate & optimize). Learn the three-phase approach to
+  developing Enterprise Knowledge Graphs.
 keywords:
   - EKG process
   - EKG methodology
@@ -87,5 +90,5 @@ schema_type: "WebPage"
 === "Diagram"
 
     <figure markdown>
-        <object data="../diagrams/out/process.svg#darkable" type="image/svg+xml"></object>
+        <object data="../diagrams/out/uctm-process.svg#darkable" type="image/svg+xml"></object>
     </figure>

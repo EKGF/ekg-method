@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Structural feedback loops, continuously improve, and continuously update the Use Case Tree. Learn how to optimize EKG use cases and platform performance as a BAU activity."
+description: >-
+  Structural feedback loops, continuously improve, and continuously update the
+  Use Case Tree. Learn how to optimize EKG use cases and platform performance
+  as a BAU activity.
 keywords:
   - optimize
   - continuous improvement

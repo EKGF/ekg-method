@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Design the EKG Platform architecture and use case specifications. Learn how to architect both the technical platform and business-focused use case designs in the Design phase."
+description: >-
+  Design the EKG Platform architecture and use case specifications. Learn how to
+  architect both the technical platform and business-focused use case designs
+  in the Design phase.
 keywords:
   - design
   - EKG architecture

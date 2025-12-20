@@ -8,7 +8,10 @@ some_url: https://method.ekgf.org/process/plan/
 hide:
   - toc
   - navigation
-description: "Think big, start small, rinse, repeat, accelerate. Learn the Plan phase of the Use Case Tree Method: Envision, Discover, Assess, Train, and Chart your Enterprise Knowledge Graph strategy."
+description: >-
+  Think big, start small, rinse, repeat, accelerate. Learn the Plan phase of
+  the Use Case Tree Method: Envision, Discover, Assess, Train, and Chart your
+  Enterprise Knowledge Graph strategy.
 keywords:
   - EKG planning
   - plan phase
@@ -94,5 +97,5 @@ That's what this method is for. See also all other [objectives](../../objective/
 ## Process Flow
 
 <figure markdown>
-<object data="../../diagrams/out/process-plan.svg#darkable" type="image/svg+xml"></object>
+<object data="../../diagrams/out/uctm-process-plan.svg#darkable" type="image/svg+xml"></object>
 </figure>
