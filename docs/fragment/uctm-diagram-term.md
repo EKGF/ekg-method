@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD041 MD012 -->
 
-![Term Class Diagram](../diagrams/out/uctm-term.svg#darkable)
+<figure markdown>
+<object data="/diagrams/out/uctm-term.svg#darkable" type="image/svg+xml"></object>
+</figure>
 
 
 

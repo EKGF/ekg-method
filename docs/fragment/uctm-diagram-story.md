@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD041 MD012 -->
 
-![Story Class Diagram](../diagrams/out/uctm-story.svg#darkable)
+<figure markdown>
+<object data="/diagrams/out/uctm-story.svg#darkable" type="image/svg+xml"></object>
+</figure>
 
 

@@ -1,13 +1,13 @@
 @startuml
-!include ../include/themes/ekgf-handwritten.puml
-left to right direction
+!include ../include/themes/light.puml
+top to bottom direction
 hide members
 
-class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
-class "UseCase" as UseCase [[../concept/use-case/]]
-class "Story" as Story [[../concept/story/]]
-class "Outcome" as Outcome [[../concept/outcome/]]
-class "Concept" as Concept [[../concept/concept/]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship
 
 ' Other resources point to UseCase (typical KG modeling style)

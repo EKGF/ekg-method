@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD041 MD012 -->
 
-![Outcome Class Diagram](../diagrams/out/uctm-outcome.svg#darkable)
+<figure markdown>
+<object data="/diagrams/out/uctm-outcome.svg#darkable" type="image/svg+xml"></object>
+</figure>
 
 
 

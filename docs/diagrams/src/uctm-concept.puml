@@ -1,15 +1,15 @@
 @startuml
-!include ../include/themes/ekgf-handwritten.puml
-left to right direction
+!include ../include/themes/light.puml
+top to bottom direction
 hide members
 
-class "Concept" as Concept [[../concept/concept/]]
-class "Term" as Term [[../concept/term/]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "Term" as Term [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm
 class "TechnicalTerm" as TechnicalTerm
 class "ConceptVocabulary" as ConceptVocabulary
-class "UseCase" as UseCase [[../concept/use-case/]]
-class "Story" as Story [[../concept/story/]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship
 
 ' Term specializations

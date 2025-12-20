@@ -1,18 +1,18 @@
 @startuml
-!include ../include/themes/ekgf-handwritten.puml
-left to right direction
+!include ../include/themes/light.puml
+top to bottom direction
 hide members
 
-class "UseCase" as UseCase [[../concept/use-case/]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "UseCaseStereotype" as UseCaseStereotype
-class "Story" as Story [[../concept/story/]]
-class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
-class "Outcome" as Outcome [[../concept/outcome/]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
-class "Concept" as Concept [[../concept/concept/]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary
-class "Term" as Term [[../concept/term/]]
-class "Persona" as Persona [[../concept/persona/]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "Persona" as Persona [[/concept/persona/#ontology]]
 
 ' Ownership / composition (part-of)
 UseCase "1" *-- "0..*" Story : owns
