@@ -1,10 +1,15 @@
 ---
-title: "H: Avoid Disruption"
+title: >-
+  H: Avoid Disruption - Incremental Change Management
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Make changes gradually with clear interdependencies to avoid disruption across use cases. Learn how the Use Case Tree Method enables safe, incremental change."
+date_published: "2022-01-01"
+description: >-
+  Learn how to make changes gradually with clear interdependencies to avoid
+  disruption. Discover how the Use Case Tree Method enables safe, incremental
+  change across use cases.
 keywords:
   - change management
   - disruption avoidance

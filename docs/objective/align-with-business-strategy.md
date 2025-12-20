@@ -1,10 +1,15 @@
 ---
-title: "J: Align with Business Strategy"
+title: >-
+  J: Align with Business Strategy - Strategic Alignment
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Align strategy of business capability improvement and execution. Learn how the Use Case Tree Method creates a single artifact that aligns all lines of business."
+date_published: "2022-01-01"
+description: >-
+  Learn how to align strategy of business capability improvement and execution.
+  Discover how the Use Case Tree Method creates a single artifact that aligns
+  all lines of business.
 keywords:
   - business strategy
   - strategic alignment

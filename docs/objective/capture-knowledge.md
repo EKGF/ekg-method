@@ -1,10 +1,15 @@
 ---
-title: "D: Capture Knowledge"
+title: >-
+  D: Capture Knowledge - Enterprise Knowledge Mapping
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Enabling a whole new league of use cases through comprehensive knowledge capture. Learn how the Use Case Tree Method maps all knowledge, data, and functionality."
+date_published: "2022-01-01"
+description: >-
+  Learn how to enable a whole new league of use cases through comprehensive
+  knowledge capture. Discover how the Use Case Tree Method maps all knowledge,
+  data, and functionality.
 keywords:
   - knowledge capture
   - knowledge management

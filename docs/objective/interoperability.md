@@ -1,11 +1,17 @@
 ---
-title: "A: Interoperability"
+title: >-
+  A: Interoperability Achieved - Enterprise Interoperability
+  with Knowledge Graphs
 summary: Interoperability Achieved
 authors:
 - Carlos Tubbax
 date: 2022-06-23
+date_published: "2022-06-23"
 some_url: https://method.ekgf.org/objective/interoperability/
-description: "Enable interoperability across the enterprise at high levels of maturity. Learn how the Use Case Tree Method achieves enterprise-wide data and system interoperability through semantic standards."
+description: >-
+  Learn how to achieve enterprise-wide interoperability using the Use Case Tree
+  Method. Practical guide to semantic standards, data integration, and the
+  European Interoperability Framework (EIF).
 keywords:
   - interoperability
   - enterprise interoperability
@@ -174,3 +180,11 @@ in the past.
 
 Additionally, EKG and the Use Case tree method could help organizations to 
 reach higher levels of legal interoperability through compliance.
+
+## Related Content
+
+- **[Use Case Tree](../concept/use-case-tree.md)** - The foundational structure that enables interoperability
+- **[Ontology](../concept/ontology.md)** - Semantic models that provide interoperability at the data level
+- **[Composable Business](composable-business.md)** - Building interoperable business capabilities
+- **[Enable Reuse](enable-reuse.md)** - Reusable components enable interoperability
+- **[Modularity](modularity.md)** - Modular design supports interoperability
