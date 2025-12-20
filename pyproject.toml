@@ -21,7 +21,6 @@ dependencies = [
   "mkdocs-include-markdown-plugin",
   "mkdocs-localsearch",
   "mkdocs-macros-plugin",
-  "mkdocs-mermaid2-plugin",
   "mkdocs-minify-plugin",
   "mkdocs-redirects",
   "mkdocs-kroki-plugin",
