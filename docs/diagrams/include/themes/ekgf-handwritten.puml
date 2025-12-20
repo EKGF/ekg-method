@@ -6,7 +6,7 @@
 !define FONT_COLOR         #ffffff
 !define ARROW_COLOR        #ff6f00
 
-skinparam backgroundColor #white
+skinparam backgroundColor transparent
 
 skinparam Padding 4
 skinparam RoundCorner 8
