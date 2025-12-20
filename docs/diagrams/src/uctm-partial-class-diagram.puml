@@ -1,0 +1,37 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "UseCaseStereotype" as UseCaseStereotype
+class "Story" as Story [[../concept/story/]]
+class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
+class "Outcome" as Outcome [[../concept/outcome/]]
+class "OutcomeRelationship" as OutcomeRelationship
+class "Concept" as Concept [[../concept/concept/]]
+class "ConceptVocabulary" as ConceptVocabulary
+class "Term" as Term [[../concept/term/]]
+class "Persona" as Persona [[../concept/persona/]]
+
+' Ownership / composition (part-of)
+UseCase "1" *-- "0..*" Story : owns
+UseCase "1" *-- "0..*" WorkflowDefinition : owns
+Concept "1" *-- "1..*" Term : owns
+
+' Relationships
+UseCase "0..1" --> "1" UseCaseStereotype : hasStereotype
+UseCase "0..*" --> "0..*" OutcomeRelationship : outcomeLink
+OutcomeRelationship --> Outcome : targetOutcome
+UseCase "0..*" --> "0..*" ConceptVocabulary : references/owns
+ConceptVocabulary "1" o-- "0..*" Concept : contains
+
+' Usage
+Story --> Persona : story:playedBy
+Story --> Outcome : story:contributesTo
+Story --> StoryConceptRelationship : story:relatedConcept
+StoryConceptRelationship --> Concept: story:concept
+WorkflowDefinition --> Story : workflow:firstStep
+
+@enduml
+

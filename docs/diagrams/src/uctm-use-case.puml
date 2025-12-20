@@ -1,0 +1,52 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "UseCaseStereotype" as UseCaseStereotype
+class "Story" as Story [[../concept/story/]]
+class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
+class "Outcome" as Outcome [[../concept/outcome/]]
+class "OutcomeRelationship" as OutcomeRelationship
+class "ConceptVocabulary" as ConceptVocabulary
+class "Concept" as Concept [[../concept/concept/]]
+class "Term" as Term [[../concept/term/]]
+class "BusinessTerm" as BusinessTerm
+class "TechnicalTerm" as TechnicalTerm
+class "Persona" as Persona [[../concept/persona/]]
+class "StoryConceptRelationship" as StoryConceptRelationship
+class "PersonaTaxonomy" as PersonaTaxonomy
+
+' Term specializations
+Term <|-- BusinessTerm
+Term <|-- TechnicalTerm
+
+' Other resources point to UseCase (typical KG modeling style)
+Story "0..*" --> "1" UseCase : :useCase
+WorkflowDefinition "0..*" --> "1" UseCase : :useCase
+ConceptVocabulary "0..*" --> "1" UseCase : :useCase
+OutcomeRelationship "0..*" --> "1" UseCase : :useCase
+PersonaTaxonomy "0..1" --> "1" UseCase : :useCase
+
+' Local ownership / containment
+Concept "1" *-- "1..*" Term : :term
+Concept "0..1" --> "1" BusinessTerm : :labelTerm
+ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+
+' Other key relationships
+UseCase "0..1" --> "1" UseCaseStereotype : usecase:stereotype
+OutcomeRelationship --> Outcome : :targetOutcome
+
+' Usage (high-level)
+Story --> Persona : :playedBy
+Story --> Outcome : :contributesTo
+Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
+StoryConceptRelationship --> Concept : :concept
+WorkflowDefinition --> Story : steps
+
+' Personas belong to a PersonaTaxonomy (SKOS concept scheme)
+Persona --> PersonaTaxonomy : skos:inScheme
+
+@enduml
+

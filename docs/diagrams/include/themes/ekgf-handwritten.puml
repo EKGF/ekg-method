@@ -1,0 +1,45 @@
+!option handwritten true
+!define BG_MAIN_COLOR      #4051b5
+!define BG_SECONDARY_COLOR #4051b5
+!define BG_PACKAGE_COLOR   #4051b5
+!define BORDER_COLOR       #ff6f00
+!define FONT_COLOR         #ffffff
+!define ARROW_COLOR        #ff6f00
+
+skinparam backgroundColor #white
+
+skinparam Padding 4
+skinparam RoundCorner 8
+skinparam Shadowing false
+skinparam HyperlinkUnderline true
+skinparam HyperlinkColor #ff6f00
+
+skinparam Default {
+  FontName "Roboto"
+  FontColor FONT_COLOR
+  FontSize 14
+}
+
+skinparam Arrow {
+  Color ARROW_COLOR
+  FontColor #333333
+  FontStyle normal
+  Thickness 2
+}
+
+skinparam class {
+  BackgroundColor BG_MAIN_COLOR
+  BorderColor BORDER_COLOR
+  BorderThickness 2
+  FontColor FONT_COLOR
+  AttributeFontColor FONT_COLOR
+  ArrowColor ARROW_COLOR
+  ArrowThickness 2
+}
+
+skinparam package {
+  FontColor FONT_COLOR
+  BackgroundColor BG_MAIN_COLOR
+  BorderColor BORDER_COLOR
+}
+

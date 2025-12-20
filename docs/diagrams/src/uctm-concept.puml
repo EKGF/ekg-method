@@ -1,0 +1,32 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "Concept" as Concept [[../concept/concept/]]
+class "Term" as Term [[../concept/term/]]
+class "BusinessTerm" as BusinessTerm
+class "TechnicalTerm" as TechnicalTerm
+class "ConceptVocabulary" as ConceptVocabulary
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "Story" as Story [[../concept/story/]]
+class "StoryConceptRelationship" as StoryConceptRelationship
+
+' Term specializations
+Term <|-- BusinessTerm
+Term <|-- TechnicalTerm
+
+' Terms
+Concept "1" *-- "1..*" Term : :term
+Concept "0..1" --> "1" BusinessTerm : :labelTerm
+
+' Vocabularies
+ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+ConceptVocabulary "0..*" --> "1" UseCase : :useCase
+
+' Usage
+Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
+StoryConceptRelationship --> Concept : :concept
+
+@enduml
+

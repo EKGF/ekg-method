@@ -1,0 +1,38 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "Story" as Story [[../concept/story/]]
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "Persona" as Persona [[../concept/persona/]]
+class "Outcome" as Outcome [[../concept/outcome/]]
+class "Concept" as Concept [[../concept/concept/]]
+class "Term" as Term [[../concept/term/]]
+class "BusinessTerm" as BusinessTerm
+class "TechnicalTerm" as TechnicalTerm
+class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
+class "StoryConceptRelationship" as StoryConceptRelationship
+
+' Term specializations
+Term <|-- BusinessTerm
+Term <|-- TechnicalTerm
+
+' Other resources point to UseCase (typical KG modeling style)
+Story "0..*" --> "1" UseCase : :useCase
+
+' Story structure
+Story --> Persona : :playedBy
+Story --> Outcome : :contributesTo
+
+' Concept usage
+Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
+StoryConceptRelationship --> Concept : :concept
+Concept "1" *-- "1..*" Term : :term
+Concept "0..1" --> "1" BusinessTerm : :labelTerm
+
+' Workflow participation
+WorkflowDefinition --> Story : :steps
+
+@enduml
+

@@ -1,0 +1,23 @@
+@startuml
+!include ../include/themes/ekgf-handwritten.puml
+left to right direction
+hide members
+
+class "Persona" as Persona [[../concept/persona/]]
+class "Story" as Story [[../concept/story/]]
+class "UseCase" as UseCase [[../concept/use-case/]]
+class "PersonaTaxonomy" as PersonaTaxonomy
+
+' Personas show up in stories ("playedBy") which are owned by a use case
+Story --> Persona : :playedBy
+Story "0..*" --> "1" UseCase : :useCase
+
+' Personas belong to a PersonaTaxonomy (SKOS concept scheme)
+Persona --> PersonaTaxonomy : skos:inScheme
+PersonaTaxonomy "0..1" --> "1" UseCase : :useCase
+
+' Persona inheritance (optional)
+Persona --> Persona : :isSubPersonaOf
+
+@enduml
+
