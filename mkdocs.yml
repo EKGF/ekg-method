@@ -7,7 +7,8 @@ site_url: https://method.ekgf.org
 edit_uri: edit/main/docs/
 site_dir: site
 site_author: Object Management Group (OMG) Enterprise Knowledge Graph Forum
-copyright: "Copyright © 2025 Object Management Group®, OMG® | All Rights Reserved"
+copyright: >-
+  Copyright © 2025 Object Management Group®, OMG® | All Rights Reserved
 
 # Navigation
 # nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
@@ -71,6 +72,7 @@ extra:
     property: G-9LCW4TSSRP
 extra_javascript:
   - javascripts/mermaid.js
+  - javascripts/darkable-objects.js
 plugins:
   - include-markdown
   - git-revision-date-localized:
@@ -111,6 +113,7 @@ plugins:
         - "*.gz"
         - 'diagrams/src/*'
         - 'fragment/*'
+        - 'other/seo-guide.md'
       regex:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
