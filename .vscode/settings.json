@@ -6,5 +6,15 @@
     "tag:yaml.org,2002:python/name",
     "tag:yaml.org,2002:python/object/apply"
   ],
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [70],
+    "editor.wordWrap": "off"
+  },
+  "markdownlint.run": "onSave",
+  "markdownlint.fixOnSave": true,
+  "prettier.printWidth": 70,
+  "prettier.proseWrap": "always"
 }
