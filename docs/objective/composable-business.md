@@ -84,7 +84,7 @@ scale, spanning business, data, and knowledge assets.
 While Composable Business and Reuse Enablement both aim to make the
 enterprise modular, they operate at different levels of abstraction.
 The table below outlines how they relate and reinforce one another
-within the EKGF Method.
+within the Use Case Tree Method.
 
 | Aspect | Composable Business | Reuse Enablement |
 |--------|---------------------|------------------|
@@ -144,7 +144,7 @@ To move toward a composable business:
 ## Summary
 
 Composable Business is not a new methodology — it is the natural
-outcome of applying the EKGF Method.
+outcome of applying the Use Case Tree Method.
 When business capabilities, data products, and knowledge artifacts are
 structured and governed through the EKG and the UCT, the enterprise
 itself becomes composable: a living system of reusable knowledge, ready
