@@ -667,3 +667,25 @@
   margin-bottom: 0;
 }
 
+/* Tabbed content styling - orange active tabs */
+.md-typeset .tabbed-labels > label {
+  color: inherit;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Active tab - orange underline and text */
+.md-typeset .tabbed-set > input:checked + label {
+  color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+
+/* Ensure orange color in both light and dark modes */
+[data-md-color-scheme="slate"] .md-typeset .tabbed-set > input:checked + label {
+  color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+

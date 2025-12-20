@@ -8,16 +8,19 @@
 
 skinparam backgroundColor transparent
 
-skinparam Padding 4
-skinparam RoundCorner 8
+' Compact layout settings
+skinparam Padding 2
+skinparam RoundCorner 6
 skinparam Shadowing false
 skinparam HyperlinkUnderline true
 skinparam HyperlinkColor #ff6f00
+skinparam ranksep 40
+skinparam nodesep 30
 
 skinparam Default {
   FontName "Roboto"
   FontColor FONT_COLOR
-  FontSize 14
+  FontSize 13
 }
 
 skinparam Arrow {
