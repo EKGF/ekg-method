@@ -1,10 +1,15 @@
 ---
-title: "C: Know what the business wants & why"
+title: >-
+  C: Know What the Business Wants - Capture Business Requirements
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Know exactly what the business—the customer or product owner—really needs, short-, mid- and long-term. Learn how the Use Case Tree Method captures true business requirements."
+date_published: "2022-01-01"
+description: >-
+  Learn how to capture what the business really needs—short, mid, and
+  long-term. Discover how the Use Case Tree Method ensures you know what the
+  business wants and why.
 keywords:
   - business requirements
   - requirements capture

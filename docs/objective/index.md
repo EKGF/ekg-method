@@ -1,5 +1,8 @@
 ---
-description: "Discover the primary objectives for creating a Use Case Tree in the Use Case Tree Method. Learn how interoperability, composability, reuse, and other objectives drive enterprise knowledge graph success."
+description: >-
+  Discover the primary objectives for creating a Use Case Tree in the Use Case
+  Tree Method. Learn how interoperability, composability, reuse, and other
+  objectives drive enterprise knowledge graph success.
 keywords:
   - EKG objectives
   - use case tree objectives

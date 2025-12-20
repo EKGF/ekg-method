@@ -1,5 +1,8 @@
 ---
-description: "An Enterprise Knowledge Graph connects all data objects and their meaning across systems. Learn what an EKG is, how it works, and why it enables advanced use cases beyond traditional technologies."
+description: >-
+  An Enterprise Knowledge Graph connects all data objects and their meaning
+  across systems. Learn what an EKG is, how it works, and why it enables
+  advanced use cases beyond traditional technologies.
 keywords:
   - EKG
   - enterprise knowledge graph
@@ -8,6 +11,7 @@ keywords:
   - connected data
   - EKG method
 schema_type: "Article"
+date_published: "2022-01-01"
 ---
 
 # Enterprise Knowledge Graph (EKG)
@@ -113,3 +117,11 @@ A knowledge graph is a set of real-world constructs structured in a semantic net
 An Enterprise Knowledge Graph (EKG) is a knowledge graph with a scope to serve a broad set of information needs across the entire enterprise.  The scope is bounded for business information relevant to what the business does, products produced, relevant external knowledge pertaining to the specific industry that the business operates in, and external business environment knowledge that can impact the business.  An EKG is built to serve the information needs and usage for stakeholders across the business. 
  
 The EKG can be mapped to operational, derived, and external information in other data formats, and to the documents and text that the business uses.  It is not necessary to load all operational and external world data into the EKG, it can use data in its current operational supporting state.  Knowledge graphs work together with several key technologies that together can achieve significant capabilities in: explainable AI, inferring knowledge from information not directly chained together, improving natural language processing to resolve ambiguity, and quickly finding meaningful information in unstructured data such as text and numerous volumes of documents.
+
+## Related Content
+
+- **[Use Case Tree](../concept/use-case-tree.md)** - The structure that organizes EKG use cases
+- **[EKG Platform](ekg-platform.md)** - The technical platform that runs the EKG
+- **[Use Case](../concept/use-case.md)** - Business capabilities implemented in the EKG
+- **[Ontology](../concept/ontology.md)** - Semantic models that define meaning in the EKG
+- **[Maturity Model](maturity-model.md)** - Assessing EKG maturity levels

@@ -1,10 +1,16 @@
 ---
-title: "B: Composable Business"
+title: >-
+  B: Composable Business - Modular Architecture
+  with Knowledge Graphs
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Making the enterprise adaptive through modular knowledge and reusable capabilities. Learn how the Use Case Tree Method enables composable business architecture."
+date_published: "2022-01-01"
+description: >-
+  Learn how to build a composable business using modular knowledge graphs.
+  Discover how the Use Case Tree Method enables adaptive enterprises through
+  reusable, semantically connected components.
 keywords:
   - composable business
   - business composability
@@ -143,3 +149,11 @@ When business capabilities, data products, and knowledge artifacts are
 structured and governed through the EKG and the UCT, the enterprise
 itself becomes composable: a living system of reusable knowledge, ready
 to evolve continuously.
+
+## Related Content
+
+- **[Use Case Tree](../concept/use-case-tree.md)** - The modular structure that enables composability
+- **[Enable Reuse](enable-reuse.md)** - Reusable components are the foundation of composable business
+- **[Modularity](modularity.md)** - Modular design principles for composable architecture
+- **[Data Product](../concept/data-product.md)** - Reusable data products as composable building blocks
+- **[Interoperability](interoperability.md)** - Interoperable systems enable composition

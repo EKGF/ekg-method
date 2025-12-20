@@ -1,10 +1,15 @@
 ---
-title: "F: Best form of \"expectation management\""
+title: >-
+  F: Manage Expectations - Strategic Roadmap Planning
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Create an agreed and realistic strategic roadmap aligned to business strategy. Learn how the Use Case Tree Method manages expectations across complex enterprises."
+date_published: "2022-01-01"
+description: >-
+  Learn how to create an agreed and realistic strategic roadmap aligned to
+  business strategy. Discover how the Use Case Tree Method manages expectations
+  across complex enterprises.
 keywords:
   - expectation management
   - strategic roadmap

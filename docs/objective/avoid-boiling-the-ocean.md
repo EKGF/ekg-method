@@ -1,10 +1,15 @@
 ---
-title: "G: Avoid \"boiling the ocean\""
+title: >-
+  G: Avoid Boiling the Ocean - Prevent Scope Creep
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Provide focus, clarity, deliver business value fast, do the right things at the right time. Learn how the Use Case Tree Method prevents scope creep and delivers value incrementally."
+date_published: "2022-01-01"
+description: >-
+  Learn how to provide focus, clarity, and deliver business value fast.
+  Discover how the Use Case Tree Method prevents scope creep and delivers value
+  incrementally.
 keywords:
   - scope management
   - incremental delivery

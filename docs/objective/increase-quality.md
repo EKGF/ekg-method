@@ -1,10 +1,15 @@
 ---
-title: "I: Increase Quality"
+title: >-
+  I: Increase Quality - Comprehensive Testing Methodology
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Enforce 100% test coverage based on real business scenarios and requirements. Learn how the Use Case Tree Method ensures quality through comprehensive testing."
+date_published: "2022-01-01"
+description: >-
+  Learn how to enforce 100% test coverage based on real business scenarios
+  and requirements. Discover how the Use Case Tree Method ensures quality
+  through comprehensive testing.
 keywords:
   - quality assurance
   - test coverage

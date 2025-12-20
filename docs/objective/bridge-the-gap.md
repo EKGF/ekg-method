@@ -1,10 +1,15 @@
 ---
-title: "E: Bridge the traditional gap between Business & Technology"
+title: >-
+  E: Bridge the Gap - Business and Technology Alignment
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Align business expectations with technology delivery. Learn how the Use Case Tree Method bridges the gap between business and IT through continuous engagement."
+date_published: "2022-01-01"
+description: >-
+  Learn how to align business expectations with technology delivery. Discover
+  how the Use Case Tree Method bridges the gap between business and IT through
+  continuous engagement.
 keywords:
   - business IT alignment
   - business technology gap

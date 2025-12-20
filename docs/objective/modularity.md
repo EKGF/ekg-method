@@ -1,13 +1,18 @@
 ---
-title: "L: Modularity"
+title: >-
+  L: Modularity - Modular Architecture for Knowledge Graphs
 summary: Introducing EKG modularity
 authors:
 - Carlos Tubbax
 date: 2022-05-01
+date_published: "2022-05-01"
 some_url: https://method.ekgf.org/objective/modularity/
 hide:
 - toc
-description: "Build with modular, reusable components instead of monolithic systems. Learn how the Use Case Tree Method enables modular architecture for enterprise systems."
+description: >-
+  Learn how to build with modular, reusable components instead of monolithic
+  systems. Discover how the Use Case Tree Method enables modular architecture
+  for enterprise knowledge graphs.
 keywords:
   - modularity
   - modular architecture

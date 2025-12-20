@@ -1,10 +1,15 @@
 ---
-title: "M: Enable Reuse"
+title: >-
+  M: Enable Reuse - Knowledge Reuse Across Enterprise
 authors:
 - Jacobus Geluk
 hide:
 - toc
-description: "Building the foundation for composable, scalable enterprise knowledge through reuse. Learn how the Use Case Tree Method enables safe reuse of knowledge assets across teams and domains."
+date_published: "2022-01-01"
+description: >-
+  Learn how to build composable, scalable enterprise knowledge through reuse.
+  Discover how the Use Case Tree Method enables safe reuse of knowledge assets
+  across teams and domains.
 keywords:
   - reuse
   - knowledge reuse
