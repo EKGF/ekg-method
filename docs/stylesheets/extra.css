@@ -680,6 +680,23 @@
 }
 
 /* Hover state - orange on hover for all tabs */
+
+/* Fix PlantUML start/end state visibility in dark mode */
+/* JavaScript (darkable-objects.js) handles the differentiation:
+ *   - Start states: orange fill + stroke
+ *   - End states: outer circle (transparent fill + orange stroke), inner circle (orange fill + stroke)
+ * CSS here is a fallback to ensure visibility before JS runs */
+[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[fill="#222222"],
+[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[fill="#222"],
+[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[fill="#222222"],
+[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[fill="#222"],
+[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[style*="stroke:#222222"],
+[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[style*="stroke:#222"],
+[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[style*="stroke:#222222"],
+[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[style*="stroke:#222"] {
+  stroke: #ff6f00 !important;
+  /* Fill will be handled by JavaScript to differentiate start vs end states */
+}
 .md-typeset .tabbed-labels > label:hover {
   color: #ff6f00 !important;
 }

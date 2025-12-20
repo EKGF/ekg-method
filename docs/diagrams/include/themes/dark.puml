@@ -57,5 +57,13 @@ skinparam state {
   EndColor #ffffff
 }
 
+' Explicitly set start/end state colors for visibility in dark mode
+' Note: PlantUML may hardcode start/end state colors, so these may not work
 skinparam StateStartColor #ffffff
 skinparam StateEndColor #ffffff
+skinparam StateStartBackgroundColor #ffffff
+skinparam StateEndBackgroundColor #ffffff
+skinparam StateStartBorderColor #ffffff
+skinparam StateEndBorderColor #ffffff
+skinparam StateStartFillColor #ffffff
+skinparam StateEndFillColor #ffffff
