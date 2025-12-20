@@ -1,5 +1,5 @@
 !option handwritten false
-@startuml Plan Build Run
+@startuml
 !include ../include/themes/light.puml
 
 state Planxs {
