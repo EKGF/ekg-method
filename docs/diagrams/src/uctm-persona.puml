@@ -1,11 +1,11 @@
 @startuml
-!include ../include/themes/ekgf-handwritten.puml
-left to right direction
+!include ../include/themes/light.puml
+top to bottom direction
 hide members
 
-class "Persona" as Persona [[../concept/persona/]]
-class "Story" as Story [[../concept/story/]]
-class "UseCase" as UseCase [[../concept/use-case/]]
+class "Persona" as Persona [[/concept/persona/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "PersonaTaxonomy" as PersonaTaxonomy
 
 ' Personas show up in stories ("playedBy") which are owned by a use case

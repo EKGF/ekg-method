@@ -1,20 +1,20 @@
 @startuml
-!include ../include/themes/ekgf-handwritten.puml
-left to right direction
+!include ../include/themes/light.puml
+top to bottom direction
 hide members
 
-class "UseCase" as UseCase [[../concept/use-case/]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "UseCaseStereotype" as UseCaseStereotype
-class "Story" as Story [[../concept/story/]]
-class "WorkflowDefinition" as WorkflowDefinition [[../concept/workflow/]]
-class "Outcome" as Outcome [[../concept/outcome/]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
 class "ConceptVocabulary" as ConceptVocabulary
-class "Concept" as Concept [[../concept/concept/]]
-class "Term" as Term [[../concept/term/]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "Term" as Term [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm
 class "TechnicalTerm" as TechnicalTerm
-class "Persona" as Persona [[../concept/persona/]]
+class "Persona" as Persona [[/concept/persona/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship
 class "PersonaTaxonomy" as PersonaTaxonomy
 

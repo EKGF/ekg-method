@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD041 MD012 -->
 
-![UseCase Class Diagram](../diagrams/out/uctm-use-case.svg#darkable)
+<figure markdown>
+<object data="/diagrams/out/uctm-use-case.svg#darkable" type="image/svg+xml"></object>
+</figure>
 
 
 

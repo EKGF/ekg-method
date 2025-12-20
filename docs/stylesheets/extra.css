@@ -667,25 +667,67 @@
   margin-bottom: 0;
 }
 
-/* Tabbed content styling - orange active tabs */
-.md-typeset .tabbed-labels > label {
-  color: inherit;
-  transition: color 0.2s ease, border-color 0.2s ease;
+/* Tabbed content styling - ONLY active/selected tab is orange */
+.md-typeset .tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > :nth-child(1),
+.md-typeset .tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > :nth-child(2),
+.md-typeset .tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(3),
+.md-typeset .tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > :nth-child(4),
+.md-typeset .tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > :nth-child(5),
+.md-typeset .tabbed-set > input:nth-child(6):checked ~ .tabbed-labels > :nth-child(6) {
+  color: #ff6f00 !important;
+  border-color: #ff6f00 !important;
+  border-bottom-color: #ff6f00 !important;
 }
 
+/* Hover state - orange on hover for all tabs */
 .md-typeset .tabbed-labels > label:hover {
-  color: var(--md-accent-fg-color);
+  color: #ff6f00 !important;
 }
 
-/* Active tab - orange underline and text */
-.md-typeset .tabbed-set > input:checked + label {
-  color: var(--md-accent-fg-color) !important;
-  border-color: var(--md-accent-fg-color) !important;
+/* PlantUML diagram container injected via darkable-objects.js */
+.ekgf-diagram {
+  display: block;
+  width: auto;
+  max-width: 100%;
 }
 
-/* Ensure orange color in both light and dark modes */
-[data-md-color-scheme="slate"] .md-typeset .tabbed-set > input:checked + label {
-  color: var(--md-accent-fg-color) !important;
-  border-color: var(--md-accent-fg-color) !important;
+.ekgf-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.md-typeset figure > .ekgf-diagram {
+  margin: 0;
+}
+
+/* FORCE transparent backgrounds on ALL figure and object elements */
+figure,
+figure[markdown],
+figure > *,
+.md-typeset figure,
+.md-typeset figure[markdown],
+.md-typeset figure > p,
+.md-typeset figure > p > *,
+object[type="image/svg+xml"],
+object[data*=".svg"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Dark mode - even more aggressive */
+[data-md-color-scheme="slate"] figure,
+[data-md-color-scheme="slate"] figure[markdown],
+[data-md-color-scheme="slate"] figure > *,
+[data-md-color-scheme="slate"] .md-typeset figure,
+[data-md-color-scheme="slate"] .md-typeset figure[markdown],
+[data-md-color-scheme="slate"] .md-typeset figure > p,
+[data-md-color-scheme="slate"] .md-typeset figure > p > *,
+[data-md-color-scheme="slate"] object[type="image/svg+xml"],
+[data-md-color-scheme="slate"] object[data*=".svg"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 

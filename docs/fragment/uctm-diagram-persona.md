@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD041 MD012 -->
 
-![Persona Class Diagram](../diagrams/out/uctm-persona.svg#darkable)
+<figure markdown>
+<object data="/diagrams/out/uctm-persona.svg#darkable" type="image/svg+xml"></object>
+</figure>
 
 
 
