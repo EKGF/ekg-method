@@ -68,6 +68,10 @@ docs-install: docs-install-brew docs-install-brew-packages docs-install-python-p
 docs-install-github-actions: docs-install-brew-packages docs-install-python-packages info
 
 .PHONY: docs-install-brew-packages
+ifeq ($(YOUR_OS), Linux)
+docs-install-brew-packages:
+	@echo "Skip Homebrew packages on Linux (installed via apt-get in CI)"
+else
 docs-install-brew-packages:
 	@echo "Install packages via HomeBrew:"
 	@brew upgrade cairo 2>/dev/null || brew install cairo
@@ -79,6 +83,7 @@ docs-install-brew-packages:
 	@brew upgrade zlib 2>/dev/null || brew install zlib
 	@brew upgrade graphviz 2>/dev/null || brew install graphviz
 	@brew upgrade uv 2>/dev/null || brew install uv
+endif
 
 .PHONY: docs-install-brew
 ifeq ($(YOUR_OS), Linux)

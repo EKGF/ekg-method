@@ -69,7 +69,8 @@ extra:
   analytics:
     provider: google
     property: G-9LCW4TSSRP
-extra_javascript: []
+extra_javascript:
+  - javascripts/mermaid.js
 plugins:
   - include-markdown
   - git-revision-date-localized:
@@ -150,6 +151,13 @@ markdown_extensions:
       options:
         custom_icons:
           - docs-overrides/.icons
+  # Mermaid diagram support - using Material for MkDocs native integration
+  # NOTE: Do NOT use mkdocs-mermaid2-plugin - it conflicts with Material's native support
+  # Material for MkDocs has built-in Mermaid.js support that works better with instant loading
+  # Custom colors are configured using:
+  #   1. Theme palette set to 'custom' (primary/accent colors)
+  #   2. CSS variables in docs/stylesheets/extra.css
+  #   3. Inline %%{init}%% directives in individual diagrams (docs/fragment/uctm-diagram-*.md)
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

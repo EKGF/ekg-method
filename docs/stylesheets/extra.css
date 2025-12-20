@@ -19,61 +19,68 @@
 }
 
 /* Force Mermaid diagram elements to use EKGF colors */
-/* Node backgrounds - indigo blue */
+/* Apply to all possible rect elements - node backgrounds - indigo blue */
+.mermaid rect,
 .mermaid .node rect,
 .mermaid .node circle,
 .mermaid .node ellipse,
 .mermaid .node polygon,
 .mermaid .cluster rect,
-.mermaid g.classGroup rect {
+.mermaid g.classGroup rect,
+.mermaid g rect.divider,
+.mermaid g.classGroup > rect:first-child,
+.mermaid svg g rect {
   fill: #4051b5 !important;
-}
-
-/* Node borders - orange */
-.mermaid .node rect,
-.mermaid .node circle,
-.mermaid .node ellipse,
-.mermaid .node polygon,
-.mermaid .cluster rect,
-.mermaid g.classGroup rect {
   stroke: #ff6f00 !important;
   stroke-width: 2px !important;
 }
 
-/* Connector lines and arrows - orange */
+/* Connector lines, relations, and arrows - orange */
+.mermaid path,
+.mermaid line,
 .mermaid .edgePath path,
 .mermaid .flowchart-link,
 .mermaid line.relation,
 .mermaid path.relation,
 .mermaid line[class*="messageLine"],
-.mermaid path[class*="messageLine"] {
+.mermaid path[class*="messageLine"],
+.mermaid .relationshipLine {
   stroke: #ff6f00 !important;
   stroke-width: 2px !important;
 }
 
 /* Arrow markers - orange */
 .mermaid marker path,
-.mermaid defs marker path {
+.mermaid defs marker path,
+.mermaid marker polygon {
   fill: #ff6f00 !important;
   stroke: #ff6f00 !important;
 }
 
 /* Text labels on nodes - white */
+.mermaid text,
 .mermaid .nodeLabel,
 .mermaid text.nodeLabel,
 .mermaid .node text,
 .mermaid .classLabel .label,
-.mermaid tspan {
+.mermaid tspan,
+.mermaid g.classGroup text,
+.mermaid .classLabel text {
   fill: #ffffff !important;
   color: #ffffff !important;
 }
 
-/* Edge labels - keep dark for readability */
+/* Edge labels - keep dark for readability on light background */
 .mermaid .edgeLabel,
 .mermaid .edgeLabel text,
-.mermaid .edgeLabel tspan {
+.mermaid .edgeLabel tspan,
+.mermaid .edgeLabel rect {
   fill: #333333 !important;
   color: #333333 !important;
+}
+
+.mermaid .edgeLabel rect {
+  fill: #ffffff !important;
 }
 
 /* Dark mode edge label adjustments */
@@ -82,6 +89,10 @@
 [data-md-color-scheme="slate"] .mermaid .edgeLabel tspan {
   fill: #ffffff !important;
   color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel rect {
+  fill: #1e1e1e !important;
 }
 
 /* Card Design Enhancements */
