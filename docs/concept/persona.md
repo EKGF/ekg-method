@@ -211,34 +211,6 @@ or entities — involved in a Use Case, defined using business language_
     `<persona-B>`, then the user is also associated with
     `<persona-B>`.
 
-=== "Model"
-
-    ## Overview
-
-    The following diagram shows a subset of the Use Case Tree Method model as a
-    UML Class Diagram, focusing on **Persona** and its relationships
-    to other core concepts.
-
-    ![Persona Class Diagram](../diagrams/out/persona-class-diagram.svg#darkable)
-
-    ## Key Relationships
-
-    The model shows how Personas relate to:
-
-    - **[Use Cases](use-case.md)** — Personas are used in use
-      cases to identify who interacts with the capability
-    - **[Stories](story.md)** — Stories specify what a Persona
-      needs to accomplish
-    - **[Concepts](concept.md)** — Personas are Concepts, enabling
-      semantic definition and reasoning
-    - **Ontologies** — Personas are defined as ontology classes,
-      supporting inheritance and reuse
-
-    This model ensures that Personas are not just labels but
-    integrated components of the Enterprise Knowledge Graph,
-    enabling automated reasoning, policy enforcement, and
-    composability.
-
 === "Ontology"
 
     ## Ontology (minimal facts we can state today)
