@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Continuously improve and deliver small increments frequently. Learn how to deploy use cases to production and establish a delivery cadence in the Deliver phase."
+description: >-
+  Continuously improve and deliver small increments frequently. Learn how to
+  deploy use cases to production and establish a delivery cadence in the
+  Deliver phase.
 keywords:
   - deliver
   - continuous delivery

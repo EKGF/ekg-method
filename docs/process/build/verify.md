@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Verify the use case implementation with the business stakeholders. Learn how to validate that delivered functionality meets business requirements and outcomes."
+description: >-
+  Verify the use case implementation with the business stakeholders. Learn how
+  to validate that delivered functionality meets business requirements and
+  outcomes.
 keywords:
   - verify
   - business verification

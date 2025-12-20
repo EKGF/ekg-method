@@ -1,5 +1,8 @@
 ---
-description: "A semantic data product that provides required information for a Use Case, selected based on semantic relevance and suitability. Learn how data products enable reuse in the Use Case Tree Method."
+description: >-
+  A semantic data product that provides required information for a Use Case,
+  selected based on semantic relevance and suitability. Learn how data products
+  enable reuse in the Use Case Tree Method.
 keywords:
   - data product
   - semantic data product

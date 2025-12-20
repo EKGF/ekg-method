@@ -1,5 +1,8 @@
 ---
-description: "An executable model of business requirements that delivers specific business outcomes within the Use Case Tree. Learn how use cases structure business capabilities in the Use Case Tree Method."
+description: >-
+  An executable model of business requirements that delivers specific business
+  outcomes within the Use Case Tree. Learn how use cases structure business
+  capabilities in the Use Case Tree Method.
 keywords:
   - use case
   - business requirements
@@ -278,7 +281,7 @@ business outcomes within the Use Case Tree_
     This lifecycle spans the entire Use Case Tree Method process, from initial
     idea through planning, building, running, and ongoing optimization.
 
-    ![Use Case Lifecycle](../diagrams/out/use-case-life-cycle.svg#darkable)
+    ![Use Case Lifecycle](../diagrams/out/uctm-use-case-life-cycle.svg#darkable)
 
     ## Lifecycle Stages
 

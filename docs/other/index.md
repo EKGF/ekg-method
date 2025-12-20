@@ -1,5 +1,8 @@
 ---
-description: "Explore other Object Management Group (OMG) Enterprise Knowledge Graph Forum initiatives including EKG Principles, Maturity Model, Catalog, and related resources."
+description: >-
+  Explore other Object Management Group (OMG) Enterprise Knowledge Graph Forum
+  initiatives including EKG Principles, Maturity Model, Catalog, and related
+  resources.
 keywords:
   - EKGF
   - object management group

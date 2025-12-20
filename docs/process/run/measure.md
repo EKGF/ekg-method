@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Measure technical and business performance, availability, vulnerability, quality, and business outcomes. Learn how to monitor and measure EKG Platform success metrics."
+description: >-
+  Measure technical and business performance, availability, vulnerability,
+  quality, and business outcomes. Learn how to monitor and measure EKG Platform
+  success metrics.
 keywords:
   - measure
   - EKG metrics

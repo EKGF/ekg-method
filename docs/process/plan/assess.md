@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Assess your organization's maturity in non-functional requirements using the EKG Maturity Model. Learn how to evaluate readiness and bridge gaps before implementing use cases."
+description: >-
+  Assess your organization's maturity in non-functional requirements using the
+  EKG Maturity Model. Learn how to evaluate readiness and bridge gaps before
+  implementing use cases.
 keywords:
   - assess
   - maturity assessment

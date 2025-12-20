@@ -1,7 +1,10 @@
 ---
 author:
 - Jacobus Geluk
-description: "An EKG/IRI is an HTTPS-based Internationalised Resource Identifier that forms the primary identifier of an object in the EKG. Learn about EKG identity and web-resolvable identifiers."
+description: >-
+  An EKG/IRI is an HTTPS-based Internationalised Resource Identifier that forms
+  the primary identifier of an object in the EKG. Learn about EKG identity and
+  web-resolvable identifiers.
 keywords:
   - EKG/IRI
   - IRI

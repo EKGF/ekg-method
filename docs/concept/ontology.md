@@ -1,5 +1,9 @@
 ---
-description: "A formal, machine-readable specification of concepts and their relationships that bridges the gap between demand (Use Cases) and supply (Data Products). Learn how ontologies enable semantic interoperability in the Use Case Tree Method."
+description: >-
+  A formal, machine-readable specification of concepts and their relationships
+  that bridges the gap between demand (Use Cases) and supply (Data Products).
+  Learn how ontologies enable semantic interoperability in the Use Case Tree
+  Method.
 keywords:
   - ontology
   - semantic model

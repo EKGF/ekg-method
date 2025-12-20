@@ -1,5 +1,8 @@
 ---
-description: "A logical sequence of steps that defines the order of execution for Stories within a Use Case to achieve desired business Outcomes. Learn how workflows structure business processes in the Use Case Tree Method."
+description: >-
+  A logical sequence of steps that defines the order of execution for Stories
+  within a Use Case to achieve desired business Outcomes. Learn how workflows
+  structure business processes in the Use Case Tree Method.
 keywords:
   - workflow
   - business process

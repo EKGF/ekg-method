@@ -3,7 +3,10 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Building an EKG-based use case involves detailed requirements gathering structured around the Use Case Tree, all the way to delivery. Learn the Build phase: Allocate, Design, Implement, Test, Verify, and Deliver."
+description: >-
+  Building an EKG-based use case involves detailed requirements gathering
+  structured around the Use Case Tree, all the way to delivery. Learn the Build
+  phase: Allocate, Design, Implement, Test, Verify, and Deliver.
 keywords:
   - EKG build
   - build phase

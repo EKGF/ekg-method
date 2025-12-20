@@ -3,7 +3,11 @@ authors:
   - Jacobus Geluk
 hide:
   - toc
-description: "Discover all use cases in the given scope and create a Use Case Tree that shows a viable pathway towards strategic goals. Learn how to identify business outcomes and select the shortest path to value in the Discover phase."
+description: >-
+  Discover all use cases in the given scope and create a Use Case Tree that
+  shows a viable pathway towards strategic goals. Learn how to identify
+  business outcomes and select the shortest path to value in the Discover
+  phase.
 keywords:
   - discover
   - use case discovery
