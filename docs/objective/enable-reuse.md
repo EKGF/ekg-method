@@ -35,7 +35,7 @@ generations of technology.
 It is the foundation of the Enterprise Knowledge Graph (EKG): without
 reuse, there is no composability, no scalability, and no sustainable
 intelligence.
-The EKGF Method defines reuse not as a technical afterthought but as a
+The Use Case Tree Method defines reuse not as a technical afterthought but as a
 *core architectural principle* — embedded in the way we plan, build,
 and run every enterprise capability.
 
@@ -73,7 +73,7 @@ That is where the **Enterprise Knowledge Graph (EKG)** and **Use Case
 Tree (UCT)** shift the paradigm.
 They treat **reuse not as a data exercise**, but as the foundation for
 *application composition*.
-In the EKGF Method, reuse is not limited to triples or ontologies — it
+In the Use Case Tree Method, reuse is not limited to triples or ontologies — it
 extends to **behaviour**, expressed as *Stories* and *Workflows*.
 
 Just as **object-oriented programming** in the 1980s combined data and
@@ -85,10 +85,10 @@ its behaviour (stories, workflows, outcomes).
 
 This is the crucial difference:
 
-!!! tip "The EKGF Method paradigm shift"
+!!! tip "The Use Case Tree Method paradigm shift"
 
-    Instead of describing data that *others must code against*, the EKGF
-    Method captures *the behaviour itself* — executable, governed, and
+    Instead of describing data that *others must code against*, the Use Case
+    Tree Method captures *the behaviour itself* — executable, governed, and
     reusable across domains — without necessarily writing code at all.
 
 In this sense, a **Use Case** in the EKG is just as real and reusable as
@@ -109,27 +109,27 @@ understanding automatically produces action.
 In practice, enterprises rarely reach that state because the bridge from
 *knowing* to *doing* is missing.
 
-The **EKGF Method** extends this model by adding the **operational
+The **Use Case Tree Method** extends this model by adding the **operational
 dimension**:
 knowledge becomes **behaviour**, behaviour becomes **reusable**, and
 reuse powers **composability**.
 This is the *Path to Executable Knowledge* — where understanding turns
 into governed, shareable, and actionable intelligence.
 
-The diagram below visualises this shift — showing how the EKGF Method
+The diagram below visualises this shift — showing how the Use Case Tree Method
 transforms the classic DIKW hierarchy into a living model of executable,
 reusable knowledge.
 
 ![DIKW Model Revised – Path to Executable Knowledge](../assets/dikw-revised.svg)
 
 <sub>Traditional DIKW ends at understanding.
-The EKGF Method continues by modelling behaviour, packaging it as reusable
+The Use Case Tree Method continues by modelling behaviour, packaging it as reusable
 use cases, and feeding it back into a composable enterprise — closing the
 loop between data, knowledge, and operational wisdom.</sub>
 
 ## The Role of the Use Case Tree (UCT)
 
-In the EKGF Method, the **Use Case Tree (UCT)** is the mechanism that
+In the Use Case Tree Method, the **Use Case Tree (UCT)** is the mechanism that
 makes reuse practical and governed.
 
 Each node in the UCT acts as a *semantic package* — a defined,
@@ -158,7 +158,7 @@ and ready for reuse across the organisation.
 
 While *Reuse Enablement* and *Composable Business* share the same
 foundation, they operate at different levels of abstraction.
-The table below summarises their relationship within the EKGF Method.
+The table below summarises their relationship within the Use Case Tree Method.
 
 | Aspect | Composable Business | Reuse Enablement |
 |--------|---------------------|------------------|

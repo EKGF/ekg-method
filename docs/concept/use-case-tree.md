@@ -216,7 +216,7 @@ This model is captured entirely within the EKG itself, enabling:
 ## Relationship to Other Concepts
 
 The Use Case Tree is closely related to several other concepts in the
-EKGF Method:
+Use Case Tree Method:
 
 - **[Use Case](use-case.md)** — Individual nodes in the tree
 - **[Enable Reuse](../objective/enable-reuse.md)** — The Use Case
