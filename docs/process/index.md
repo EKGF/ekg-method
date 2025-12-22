@@ -3,9 +3,9 @@ hide:
   - toc
   - navigation
 description: >-
-  The Use Case Tree Method process: Plan (strategy & scope), Build (executable
-  models), and Run (operate & optimize). Learn the three-phase approach to
-  developing Enterprise Knowledge Graphs.
+  The Use Case Tree Method process: Plan (strategy & scope), Build
+  (executable models), and Run (operate & optimize). Learn the
+  three-phase approach to developing Enterprise Knowledge Graphs.
 keywords:
   - EKG process
   - EKG methodology
@@ -15,12 +15,13 @@ keywords:
   - development process
 schema_type: "WebPage"
 ---
+
 # Process
 
 === "Steps"
 
     <div class="grid cards process-cards" markdown>
-    
+
     - <div class="process-card-header process-card-plan">
           :material-compass:{ .lg }
           <div class="process-card-title">
@@ -29,8 +30,10 @@ schema_type: "WebPage"
           </div>
       </div>
 
-        Strategic vision, stakeholder alignment, and the [Use Case Tree](../concept/use-case-tree.md).
-        Essential at the start, repeatable at any level---even for individual use cases.
+        Strategic vision, stakeholder alignment, and the
+        [Use Case Tree](../concept/use-case-tree.md).
+        Essential at the start, repeatable at any level---even for
+        individual use cases.
 
         -----
 
@@ -39,9 +42,9 @@ schema_type: "WebPage"
         - [Assess](./plan/assess.md)
         - [Train](./plan/train.md)
         - [Chart](./plan/chart.md)
-    
+
         [:octicons-arrow-right-24: Learn more](./plan/index.md)
-    
+
     - <div class="process-card-header process-card-build">
           :material-tools:{ .lg }
           <div class="process-card-title">
@@ -63,7 +66,7 @@ schema_type: "WebPage"
         - [Deliver](./build/deliver.md)
 
         [:octicons-arrow-right-24: Learn more](./build/index.md)
-    
+
     - <div class="process-card-header process-card-run">
           :material-rocket-launch:{ .lg }
           <div class="process-card-title">
@@ -84,7 +87,7 @@ schema_type: "WebPage"
         - [Optimize](./run/optimize.md)
 
         [:octicons-arrow-right-24: Learn more](./run/index.md)
-    
+
     </div>
 
 === "Diagram"
