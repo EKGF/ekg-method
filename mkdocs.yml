@@ -73,6 +73,7 @@ extra:
 extra_javascript:
   - javascripts/mermaid.js
   - javascripts/darkable-objects.js
+  - javascripts/objective-badges.js
 plugins:
   - include-markdown
   - git-revision-date-localized:

@@ -40,6 +40,9 @@
 {% endif %}
 
 <!-- Page content -->
+{% if page.meta.letter_prefix %}
+<script type="application/json" id="page-meta-letter-prefix">{{ page.meta.letter_prefix | tojson }}</script>
+{% endif %}
 {{ page.content }}
 
 <!-- Source file information -->
