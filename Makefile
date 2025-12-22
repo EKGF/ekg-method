@@ -56,6 +56,7 @@ clean:
 	@rm -rf site 2>/dev/null || true
 	@rm -rf .venv 2>/dev/null || true
 	@rm -rf *.lock 2>/dev/null || true
+	@rm -rf docs/diagrams/out 2>/dev/null || true
 
 .PHONY: install
 install: docs-install

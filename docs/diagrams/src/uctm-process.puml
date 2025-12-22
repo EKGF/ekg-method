@@ -1,14 +1,17 @@
 !option handwritten false
-@startuml
+@startuml uctm-process
 !include ../include/themes/light.puml
 
-state Planxs {
+skinparam noteFontColor #000000
 
-    [*] -down-> Envision #pink
 
-    Envision -down-> Discover #blue
-    Discover -down-> Assess #green
-    Assess -down-> Chart #yellow
+state Plan {
+
+    [*] -down-> Envision
+
+    Envision -down-> Discover
+    Discover -down-> Assess
+    Assess -down-> Chart
 
     Envision: - a shared strategy
     Envision: - EKG envisioning
@@ -74,6 +77,6 @@ state Run {
     Optimize: - continuously update\n   use case tree
 }
 
-Optimize --up--> Planxs
+Optimize --up--> Plan
 
 @enduml

@@ -16,6 +16,7 @@ skinparam HyperlinkUnderline true
 skinparam HyperlinkColor #ff6f00
 skinparam ranksep 40
 skinparam nodesep 30
+skinparam noteFontColor #000000
 
 skinparam Default {
   FontName "Roboto"
