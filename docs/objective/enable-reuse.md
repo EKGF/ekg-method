@@ -6,6 +6,7 @@ authors:
 hide:
   - toc
 date_published: "2022-01-01"
+letter_prefix: "M"
 description: >-
   Learn how to build composable, scalable enterprise knowledge through
   reuse. Discover how the Use Case Tree Method enables safe reuse of
@@ -20,7 +21,7 @@ keywords:
 schema_type: "Article"
 ---
 
-# M: Enable Reuse
+# Enable Reuse
 
 <!--summary-start-->
 

@@ -366,6 +366,52 @@
   box-shadow: 0 4px 12px rgba(74, 35, 217, 0.5);
 }
 
+/* Standalone objective badge (for use on individual objective pages, not in grid cards) */
+.md-typeset .objective-badge-standalone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
+  position: relative;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.md-typeset .objective-badge-standalone::before {
+  content: attr(data-letter);
+}
+
+/* Dark mode standalone badge styling */
+[data-md-color-scheme="slate"] .md-typeset .objective-badge-standalone {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
+}
+
+/* Objective page header with badge - flex layout */
+.md-typeset .objective-header-with-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset .objective-header-with-badge h1 {
+  margin: 0;
+  flex: 1;
+}
+
 /* Hide "Learn more" text but keep the link functional */
 .md-typeset .grid.cards > ul > li > p:last-child,
 .md-typeset .grid.cards li > p:last-child {
