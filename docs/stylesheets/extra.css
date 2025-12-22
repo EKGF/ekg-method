@@ -1,8 +1,8 @@
 :root {
   /* EKGF custom colors - used by entire theme including Mermaid diagrams */
-  --md-primary-fg-color:        #4051b5;  /* Material Indigo 500 for primary elements */
-  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo */
-  --md-primary-fg-color--dark:  #303f9f;  /* Darker indigo */
+  --md-primary-fg-color:        #4A23D9;
+  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo for dark mode bold text */
+  --md-primary-fg-color--dark:  #25126A;
   --md-accent-fg-color:         #ff6f00;  /* EKGF orange for accents */
   --md-accent-fg-color--light:  #ff9800;  /* Lighter orange */
   --md-accent-fg-color--dark:   #e65100;  /* Darker orange */
@@ -10,16 +10,16 @@
 
 /* Dark mode color adjustments */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #4051b5;
+  --md-primary-fg-color:        #4A23D9;
   --md-primary-fg-color--light: #5c6bc0;
-  --md-primary-fg-color--dark:  #303f9f;
+  --md-primary-fg-color--dark:  #25126A;
   --md-accent-fg-color:         #ff6f00;
   --md-accent-fg-color--light:  #ff9800;
   --md-accent-fg-color--dark:   #e65100;
 }
 
 /* Force Mermaid diagram elements to use EKGF colors */
-/* Apply to all possible rect elements - node backgrounds - indigo blue */
+/* Apply to all possible rect elements - node backgrounds - use indigo blue (#4051b5) to match PlantUML class diagrams */
 .mermaid rect,
 .mermaid .node rect,
 .mermaid .node circle,
@@ -792,5 +792,31 @@ object[data*=".svg"] {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
+}
+
+/* Dark mode bold text - use lighter blue instead of dark blue/purple */
+[data-md-color-scheme="slate"] .md-typeset strong,
+[data-md-color-scheme="slate"] .md-typeset b {
+  color: var(--md-primary-fg-color--light) !important;
+}
+
+/* Link colors - use lighter blue in dark mode for better readability */
+[data-md-color-scheme="slate"] .md-typeset a:not(:hover) {
+  color: var(--md-primary-fg-color--light) !important;
+}
+
+/* Bold links in dark mode */
+[data-md-color-scheme="slate"] .md-typeset a strong,
+[data-md-color-scheme="slate"] .md-typeset strong a {
+  color: var(--md-primary-fg-color--light) !important;
+}
+
+/* Link hover color - use orange for all links */
+.md-typeset a:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--md-accent-fg-color) !important;
 }
 
