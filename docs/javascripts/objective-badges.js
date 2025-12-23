@@ -16,9 +16,7 @@
 
   function injectBadge() {
     // Check if letter_prefix exists in page metadata
-    const metaScript = document.getElementById(
-      'page-meta-letter-prefix'
-    );
+    const metaScript = document.getElementById('page-meta-letter-prefix');
     if (!metaScript) {
       return; // No letter_prefix on this page
     }
@@ -27,10 +25,7 @@
     try {
       letterPrefix = JSON.parse(metaScript.textContent);
     } catch (e) {
-      console.error(
-        '[objective-badges] Failed to parse letter_prefix',
-        e
-      );
+      console.error('[objective-badges] Failed to parse letter_prefix', e);
       return;
     }
 
@@ -39,17 +34,13 @@
     }
 
     // Find the first H1 in the main content area
-    const mainContent = document.querySelector(
-      '.md-content__inner, article'
-    );
+    const mainContent = document.querySelector('.md-content__inner, article');
     if (!mainContent) {
       return;
     }
 
     // Check if H1 is already wrapped in objective-header-with-badge
-    const existingWrapper = mainContent.querySelector(
-      '.objective-header-with-badge'
-    );
+    const existingWrapper = mainContent.querySelector('.objective-header-with-badge');
     if (existingWrapper) {
       return; // Already has badge, skip
     }
@@ -57,7 +48,7 @@
     // Find the first H1
     const firstH1 = mainContent.querySelector('h1:first-of-type');
     if (!firstH1) {
-      return; // No H1 found
+      return;
     }
 
     // Create the badge span
@@ -77,23 +68,30 @@
     wrapper.appendChild(document.createTextNode('\n\n'));
   }
 
-  function initPage() {
-    // Small delay to ensure DOM is ready
-    setTimeout(injectBadge, 0);
+  function scheduleInjection() {
+    // Use requestIdleCallback to run when browser is idle (after rendering)
+    if (window.requestIdleCallback) {
+      requestIdleCallback(() => {
+        injectBadge();
+      }, { timeout: 500 });
+    } else {
+      // Fallback for browsers without requestIdleCallback
+      setTimeout(injectBadge, 200);
+    }
   }
 
-  // Handle Material for MkDocs instant loading
+  // Subscribe to document$ observable for instant loading
   if (window.document$ && window.document$.subscribe) {
     document$.subscribe(() => {
-      initPage();
+      scheduleInjection();
     });
   }
 
-  // Initial page load
+  // Initial call
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPage);
+    document.addEventListener('DOMContentLoaded', scheduleInjection);
   } else {
-    initPage();
+    scheduleInjection();
   }
 })();
 

@@ -35,7 +35,16 @@
   page title (or respectively site name) is used as the main headline.
 -->
 {% if not "\x3ch1" in page.content %}
+{% if page.meta.letter_prefix %}
+<div class="objective-header-with-badge">
+<span class="objective-badge-standalone" data-letter="{{ page.meta.letter_prefix }}"></span>
+
 <h1>{{ page.title | d(config.site_name, true)}}</h1>
+
+</div>
+{% else %}
+<h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
 {% endif %}
 {% endif %}
 
