@@ -1,8 +1,8 @@
 :root {
   /* EKGF custom colors - used by entire theme including Mermaid diagrams */
-  --md-primary-fg-color:        #4A23D9;
-  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo for dark mode bold text */
-  --md-primary-fg-color--dark:  #25126A;
+  --md-primary-fg-color:        #4051b5;  /* Material Indigo 500 for primary elements */
+  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo */
+  --md-primary-fg-color--dark:  #303f9f;  /* Darker indigo */
   --md-accent-fg-color:         #ff6f00;  /* EKGF orange for accents */
   --md-accent-fg-color--light:  #ff9800;  /* Lighter orange */
   --md-accent-fg-color--dark:   #e65100;  /* Darker orange */
@@ -10,9 +10,9 @@
 
 /* Dark mode color adjustments */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #4A23D9;
+  --md-primary-fg-color:        #4051b5;
   --md-primary-fg-color--light: #5c6bc0;
-  --md-primary-fg-color--dark:  #25126A;
+  --md-primary-fg-color--dark:  #303f9f;
   --md-accent-fg-color:         #ff6f00;
   --md-accent-fg-color--light:  #ff9800;
   --md-accent-fg-color--dark:   #e65100;
