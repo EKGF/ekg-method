@@ -1,20 +1,13 @@
 {
-  "yaml.schemas": {
-    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
-  },
-  "yaml.customTags": [
-    "tag:yaml.org,2002:python/name",
-    "tag:yaml.org,2002:python/object/apply"
-  ],
-  "makefile.configureOnOpen": false,
+  "editor.formatOnSave": true,
+  "editor.rulers": [70],
   "[markdown]": {
     "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 70,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.rulers": [70],
-    "editor.wordWrap": "off"
+    "editor.rulers": [70]
   },
-  "markdownlint.run": "onSave",
-  "markdownlint.fixOnSave": true,
-  "prettier.printWidth": 70,
-  "prettier.proseWrap": "always"
+  "prettier.proseWrap": "always",
+  "prettier.printWidth": 70
 }
