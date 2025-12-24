@@ -862,3 +862,8 @@ object[data*=".svg"] {
   font-weight: bold !important;
 }
 
+/* Images in dark mode - transparent background */
+[data-md-color-scheme="slate"] .md-typeset img {
+  background: transparent !important;
+}
+
