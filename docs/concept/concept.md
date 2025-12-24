@@ -155,8 +155,10 @@ business concepts_
     and manifestations.
 
     **Example:**
+
     The official term for Customer could be "Customer," but it
     appears in different forms:
+
     - On forms in apps as "Cust."
     - In Python code as `_customer`
     - In SPARQL statements as `?cust`
