@@ -191,6 +191,7 @@ business concepts_
       interoperability and reasoning
 
     This multi-faceted nature allows the EKG to:
+
     - Address "the business" with their language
     - Integrate with technical systems using their terminology
     - Keep backend EKG models generic and linked to appropriate
