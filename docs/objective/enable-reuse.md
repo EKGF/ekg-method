@@ -122,7 +122,8 @@ The diagram below visualises this shift — showing how the Use Case
 Tree Method transforms the classic DIKW hierarchy into a living model
 of executable, reusable knowledge.
 
-![DIKW Model Revised – Path to Executable Knowledge](../assets/dikw-revised.svg)
+![DIKW Model Revised – Path to Executable Knowledge](../assets/dikw-revised.svg){.only-light}
+![DIKW Model Revised – Path to Executable Knowledge](../assets/dikw-revised-dark.svg){.only-dark}
 
 <sub>Traditional DIKW ends at understanding. The Use Case Tree Method
 continues by modelling behaviour, packaging it as reusable use cases,

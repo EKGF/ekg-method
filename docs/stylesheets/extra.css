@@ -867,3 +867,12 @@ object[data*=".svg"] {
   background: transparent !important;
 }
 
+/* Show/hide images based on color scheme */
+[data-md-color-scheme="default"] .md-typeset img.only-dark {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset img.only-light {
+  display: none;
+}
+
