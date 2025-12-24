@@ -820,3 +820,45 @@ object[data*=".svg"] {
   color: var(--md-accent-fg-color) !important;
 }
 
+/* Sidebar active/selected item - use orange in dark mode */
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link--active:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* Headings in dark mode - use subtle color for all levels */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: var(--md-default-fg-color--light) !important;
+}
+
+/* Summary sections (content between <!--summary-start--> and <!--summary-end-->) */
+/* Target paragraphs with emphasis immediately after H1 (typical summary pattern) */
+.md-typeset h1 + p > em,
+.md-typeset .objective-header-with-badge + p > em {
+  font-size: 1.25em;
+  line-height: 1.6;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* PlantUML mindmap text color override in light mode */
+/* Default text color should be blue for connector text */
+[data-md-color-scheme="default"] .md-typeset object[data*=".svg"] svg text,
+[data-md-color-scheme="default"] .md-typeset .ekgf-diagram svg text {
+  fill: #4051b5 !important;
+}
+
+/* Text inside boxes (nodes with polygons as background) should be white, larger, and bold */
+/* Polygons are used for mindmap node backgrounds in PlantUML */
+[data-md-color-scheme="default"] .md-typeset object[data*=".svg"] svg g polygon + a text,
+[data-md-color-scheme="default"] .md-typeset .ekgf-diagram svg g polygon + a text {
+  fill: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
