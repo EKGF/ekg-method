@@ -60,3 +60,4 @@ out/
 .venv/
 .pdm-python
 Screenshot*
+.playwright-mcp/
