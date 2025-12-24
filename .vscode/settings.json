@@ -1,12 +1,16 @@
 {
   "editor.formatOnSave": true,
-  "editor.rulers": [70],
+  "editor.rulers": [
+    70
+  ],
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 70,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.rulers": [70]
+    "editor.rulers": [
+      70
+    ]
   },
   "prettier.proseWrap": "always",
   "prettier.printWidth": 70
