@@ -116,6 +116,14 @@ business concepts_
     This allows for better integration of the use case with the
     overall EKG ecosystem.
 
+    !!! note "Implementation Detail"
+        The mapping to OWL ontologies or SHACL shapes is primarily a
+        technical implementation detail that is local to the specific
+        use case. Different use cases may map to the same ontology in
+        completely different ways, reflecting their unique business
+        contexts and requirements. This flexibility ensures that
+        ontology mappings serve the use case rather than constraining it.
+
     ### Refinement and Evolution
 
     As the use case evolves and the understanding of the domain
