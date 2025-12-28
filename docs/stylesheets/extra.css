@@ -487,6 +487,133 @@
   color: var(--md-accent-fg-color) !important;
 }
 
+/* Hero section styling */
+.hero-container {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 100%);
+  color: white;
+  padding: 5rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  text-align: center;
+  border-radius: 0 0 3rem 3rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-container h1 {
+  color: white !important;
+  font-size: 3.5rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 1.5rem !important;
+  letter-spacing: -0.03em !important;
+  border: none !important;
+  line-height: 1.1 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container p {
+  font-size: 1.4rem;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  opacity: 0.95;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-buttons .md-button {
+  margin: 0 !important;
+  padding: 0.8rem 2.2rem !important;
+  font-weight: 700 !important;
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.hero-buttons .md-button--primary {
+  background-color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4);
+}
+
+.hero-buttons .md-button--primary:hover {
+  background-color: var(--md-accent-fg-color--light) !important;
+  border-color: var(--md-accent-fg-color--light) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 111, 0, 0.5);
+}
+
+.hero-buttons .md-button:not(.md-button--primary) {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+  backdrop-filter: blur(10px);
+}
+
+.hero-buttons .md-button:not(.md-button--primary):hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  border-color: white !important;
+  transform: translateY(-3px);
+}
+
+/* Feature cards icons */
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  display: block;
+  color: var(--md-primary-fg-color);
+  transition: transform 0.3s ease;
+}
+
+.grid.cards > ul > li:hover .feature-icon {
+  transform: scale(1.15) rotate(-5deg);
+  color: var(--md-accent-fg-color);
+}
+
+/* Section dividers */
+hr {
+  margin: 4rem 0 !important;
+  opacity: 0.1 !important;
+}
+
+/* Two-column layout adjustments */
+.grid {
+  gap: 2rem !important;
+}
+
+/* Admonition in grid */
+.grid .admonition {
+  margin: 0 !important;
+  height: 100%;
+}
+
+/* Dark mode overrides for hero */
+[data-md-color-scheme="slate"] .hero-container {
+  background: linear-gradient(135deg, #1a237e 0%, #303f9f 100%);
+}
+
 /* Card paragraph spacing */
 .md-typeset .grid.cards p {
   margin: 0.5rem 0;
