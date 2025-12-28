@@ -5,9 +5,9 @@ hide:
   - toc
   - navigation
 description: >-
-  Introduction to the Use Case Tree Method for developing Enterprise Knowledge
-  Graphs. Learn how this method enables strategic use cases, data quality,
-  compliance, and competitive advantage.
+  A practical introduction to the Use Case Tree Method: a business-owned
+  way to build Enterprise Knowledge Graph capabilities with modular
+  delivery, reuse, and governance by design.
 keywords:
   - use case tree method
   - EKG introduction
@@ -19,70 +19,57 @@ schema_type: "Article"
 
 # Use Case Tree Method for Business Capabilities
 
-Your enterprise embarked upon a strategic innovative journey towards 
-establishing a full scale _Enterprise Knowledge Graph (EKG)_ in order 
-to be able to:
+Turn strategy into reusable EKG components—without boiling the ocean.
 
-1. implement use cases that enable more foundational data quality 
-   for your enterprise’s business processes,
-2. be more easily compliant with regulations and
-3. enable strategic use cases that create a competitive advantage.
-4. To connect business silos to make them work together
-5. To create business agility by creating reusable business components
-6. To capture intellectual property and manage your business value
+[Explore the Use Case Tree](../concept/use-case-tree.md){ .md-button .md-button--primary }
+[Explore objectives](../objective/index.md){ .md-button }
+[Browse example use cases](https://catalog.ekgf.org/){ .md-button }
 
-The key _artifact_ in the development of an EKG is "the [Use Case Tree](../concept/use-case-tree.md)":
+<div class="grid cards" markdown>
 
-- The [Use Case Tree](../concept/use-case-tree.md) provides a 
-  **long term data strategy and business capability plan**.
+- __What you get__
+  
+  A single business-owned artifact that aligns strategy, data, and delivery.
 
-- The [Use Case Tree](../concept/use-case-tree.md) is the
-  **high-level requirements overview, scoping and dependency model**.
-  <br/>It gives a _mile wide, inch deep_ view of business capabilities.
+- __How you deliver__
+  
+  Build small use cases first, then compose them into bigger capabilities.
 
-Traditionally, data strategy, architecture and models i.e.
-_specifications of business requirements_ on one side and technology
-and software, i.e. _functionality_ on the other side, are separate.
-They are concerns of different departments; different groups of
-specialists think about these concepts in their own way and have their
-own practices and models for it. 
-For any given development of a business capability that is supported 
-by technology, different groups of people, often across many departments, will get involved and they all
-have their own way of looking at it.
-There is no shared language, not one single artifact that they can 
-all talk to and reason about.
-The [Use Case Tree](../concept/use-case-tree.md) is that single artifact. 
-It provides one single construct, owned by _the business_, and 
-primarily driven by business strategy, that every group of people, 
-every specialist, can relate their way of thinking to. 
-This includes not only data and technology specialists but also project
-managers, financial managers, security and compliance officers,
-operations engineers and so forth. 
-All their models and different ways of looking at a given capability 
-can be plugged into the [Use Case Tree](../concept/use-case-tree.md) as different views.
+- __How you scale__
+  
+  Reuse knowledge safely with governance and traceability by design.
 
-Everything we ever do in an organization, especially in the data and
-technology pillars of that enterprise, should be related to at least
-one use case in the organization's [Use Case Tree](../concept/use-case-tree.md).
+</div>
 
-The [Use Case Tree](../concept/use-case-tree.md) is a breakdown of strategic planned-for 
-capabilities into smaller building blocks, all called use cases.
-Strategic long term use cases such as 
+## The Use Case Tree in one sentence
+
+The [Use Case Tree](../concept/use-case-tree.md) is the map of the capabilities
+your enterprise plans to build—broken down into use cases with dependencies,
+so you can deliver in the right order.
+
+## Why this works (objectives)
+
+This method is designed to help you achieve outcomes like:
+
+- **Interoperability** across domains and teams
+- **Modularity + reuse** (composable business capabilities)
+- **Captured requirements and knowledge** as durable assets
+- **Increased quality** through structure and traceability
+- **Alignment with business strategy** and managed expectations
+
+[:octicons-arrow-right-24: Explore all objectives](../objective/index.md)
+
+## Start small, compose big
+
+Strategic capabilities like
 _[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)_ 
-or _[Client 360](https://catalog.ekgf.org/use-case/client-360/)_ are 
-down into smaller use cases that can---and should---be done first.
+or _[Client 360](https://catalog.ekgf.org/use-case/client-360/)_ are broken down
+into smaller use cases that you can—and should—deliver first.
 
-Each use case is a module---an EKG-component so you will---a
-building block with which other use cases can be constructed
-(see ["Modularity Managed"](../objective/modularity.md)).
+Each use case is a reusable building block (see
+["Modularity Managed"](../objective/modularity.md)).
 
-The Use Case Tree Method is a practice that has been developed and
-used for many EKG use cases that are running in production.
-
-{%
-include-markdown "../objective/index.md"
-start="<!--objectives-index-start-->"
-end="<!--objectives-index-end-->"
-%}
+The Use Case Tree Method has been developed and applied in EKG use cases that
+are running in production.
 
 

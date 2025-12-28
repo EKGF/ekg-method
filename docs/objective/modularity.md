@@ -153,8 +153,8 @@ composable businesses.
 - [Oxford Global Projects Academy - Smart Scaling: Modularity & Speed](https://academy.oxfordglobalprojects.com/pages/smart-scaling)
 - [Flyvbjerg, Bent, Harvard Business Review - Make Megaprojects More Modular](https://hbr.org/2021/11/make-megaprojects-more-modular)
 - [Flyvbjerg, Bent, Make Megaprojects More Modular (October 19, 2021). Harvard Business Review, 2021, November-December Issue, pp. 58-63.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3937465)
-- [Flyvbjerg, Bent, What Is Negative Learning — and Positive?](https://medium.com/geekculture/what-is-negative-learning-and-how-to-avoid-it-452d9e4c8263)-
-  [Gartner Keynote: The Future of Business Is Composable](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable)
+- [Flyvbjerg, Bent, What Is Negative Learning — and Positive?](https://medium.com/geekculture/what-is-negative-learning-and-how-to-avoid-it-452d9e4c8263)
+- [Gartner Keynote: The Future of Business Is Composable](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable)
 - [Walkme - Packaged Business Capabilities (PBCs)](https://www.walkme.com/glossary/packaged-business-capabilities/)
 - [ElasticPath - What are Packaged Business Capabilities?](https://www.elasticpath.com/blog/what-are-packaged-business-capablities)
 - [Venture Leap - The future is called _“Packaged Business Capabilities”_](https://venture-leap.com/en/the-leap/the-future-is-called-packaged-business-capabilities-2/)
