@@ -13,20 +13,21 @@ keywords:
   - knowledge graph methodology
 schema_type: "WebSite"
 hide:
-- navigation
-- toc
+  - navigation
+  - toc
 ---
 
 <div class="hero-container" markdown="1">
 
 # Use Case Tree Method
 
-Deliver strategic business value and agility through connected enterprise
-knowledge — one use case at a time.
+Deliver strategic business value and agility through connected
+enterprise knowledge — one use case at a time.
 
 <div class="hero-buttons" markdown="1">
 
-[Explore the Use Case Tree](concept/use-case-tree.md){ .md-button .md-button--primary }
+[Explore the Use Case Tree](concept/use-case-tree.md){ .md-button
+.md-button--primary }
 [Browse example use cases](https://catalog.ekgf.org/){ .md-button }
 
 </div>
@@ -66,19 +67,30 @@ knowledge — one use case at a time.
 
 ## What is the Use Case Tree Method?
 
-The **Use Case Tree Method** is a business-owned approach to turn strategy into reusable EKG components — without [boiling the ocean](objective/avoid-boiling-the-ocean.md).
+The **Use Case Tree Method** is a business-owned approach to turn
+strategy into reusable EKG components — without
+[boiling the ocean](objective/avoid-boiling-the-ocean.md).
 
-Strategic capabilities like _[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)_ or _[Client 360](https://catalog.ekgf.org/use-case/client-360/)_ are broken down into smaller use cases that you can — and should — deliver first. Each use case is a [reusable](objective/enable-reuse.md) [building block](objective/modularity.md) (see ["Modularity Managed"](objective/modularity.md)).
+Strategic capabilities like
+_[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)_
+or _[Client 360](https://catalog.ekgf.org/use-case/client-360/)_ are
+broken down into smaller use cases that you can — and should — deliver
+first. Each use case is a [reusable](objective/enable-reuse.md)
+[building block](objective/modularity.md) (see
+["Modularity Managed"](objective/modularity.md)).
 
 ### The Use Case Tree in one sentence
 
-The [Use Case Tree](concept/use-case-tree.md) is a high-level map of the
-capabilities your enterprise plans to build — broken down into use cases with
-dependencies, so you can deliver in the right order.
+The [Use Case Tree](concept/use-case-tree.md) is a high-level map of
+the capabilities your enterprise plans to build — broken down into use
+cases with dependencies, so you can deliver in the right order.
 
-- **Plan**: Long-term [data strategy](objective/align-with-business-strategy.md) and business capability plan.
+- **Plan**: Long-term
+  [data strategy](objective/align-with-business-strategy.md) and
+  business capability plan.
 - **Scope**: High-level requirements overview and dependency model.
-- **Align**: One single artifact for business, data, and technology specialists.
+- **Align**: One single artifact for business, data, and technology
+  specialists.
 
 </div>
 
@@ -86,22 +98,31 @@ dependencies, so you can deliver in the right order.
 
 <div class="grid cards" markdown>
 
-- :material-target: __Objectives__
-  
-    Why the method works: [interoperability](objective/interoperability.md), [reuse](objective/enable-reuse.md), [modularity](objective/modularity.md), [quality](objective/increase-quality.md), [alignment](objective/align-with-business-strategy.md), and more.
-  
-    [:octicons-arrow-right-24: Explore the objectives](objective/index.md)
+- :material-target: **Objectives**
 
-- :material-lightbulb-outline: __Concepts__
-  
-    The core building blocks: [use case](concept/use-case.md), [outcome](concept/outcome.md), [workflow](concept/workflow.md), [terms](concept/term.md), and more.
-  
-    [:octicons-arrow-right-24: Explore concepts](concept/use-case.md)
+  Why the method works:
+  [interoperability](objective/interoperability.md),
+  [reuse](objective/enable-reuse.md),
+  [modularity](objective/modularity.md),
+  [quality](objective/increase-quality.md),
+  [alignment](objective/align-with-business-strategy.md), and more.
 
-- :material-cog-outline: __Process__
-  
-    [Plan](process/plan/index.md), [build](process/build/index.md), and [run](process/run/index.md) EKG components — from first use case to scale.
-  
-    [:octicons-arrow-right-24: Explore the process](process/index.md)
+  [:octicons-arrow-right-24: Explore the objectives](objective/index.md)
+
+- :material-lightbulb-outline: **Concepts**
+
+  The core building blocks: [use case](concept/use-case.md),
+  [outcome](concept/outcome.md), [workflow](concept/workflow.md),
+  [terms](concept/term.md), and more.
+
+  [:octicons-arrow-right-24: Explore concepts](concept/use-case.md)
+
+- :material-cog-outline: **Process**
+
+  [Plan](process/plan/index.md), [build](process/build/index.md), and
+  [run](process/run/index.md) EKG components — from first use case to
+  scale.
+
+  [:octicons-arrow-right-24: Explore the process](process/index.md)
 
 </div>
