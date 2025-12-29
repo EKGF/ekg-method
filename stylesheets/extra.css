@@ -111,7 +111,8 @@
   display: block;
 }
 
-.md-typeset .hero-container h1 {
+.md-typeset .hero-container h1,
+[data-md-color-scheme="slate"] .md-typeset .hero-container h1 {
   color: white !important;
   font-size: 3rem !important;
   font-weight: 800 !important;
@@ -127,7 +128,8 @@
   display: none !important;
 }
 
-.md-typeset .hero-container p {
+.md-typeset .hero-container p,
+[data-md-color-scheme="slate"] .md-typeset .hero-container p {
   font-size: 1.25rem !important;
   max-width: 850px !important;
   margin-left: auto !important;
@@ -146,7 +148,8 @@
   flex-wrap: wrap;
 }
 
-.hero-buttons .md-button {
+.hero-buttons .md-button,
+[data-md-color-scheme="slate"] .hero-buttons .md-button {
   margin: 0 !important;
   padding: 0.6rem 1.5rem !important;
   font-weight: 700 !important;
@@ -157,13 +160,17 @@
   min-width: 180px;
 }
 
-.hero-buttons .md-button--primary {
+.hero-buttons .md-button--primary,
+[data-md-color-scheme="slate"] .hero-buttons .md-button--primary {
   background-color: var(--md-accent-fg-color) !important;
   border-color: var(--md-accent-fg-color) !important;
   color: white !important;
 }
 
-.hero-buttons .md-button:not(.md-button--primary) {
+.hero-buttons .md-button:not(.md-button--primary),
+[data-md-color-scheme="slate"]
+  .hero-buttons
+  .md-button:not(.md-button--primary) {
   background-color: rgba(255, 255, 255, 0.2) !important;
   border-color: rgba(255, 255, 255, 0.8) !important;
   color: white !important;
@@ -269,8 +276,9 @@ hr {
 }
 
 /* Typography */
+
 .md-typeset h1 {
-  color: var(--md-primary-fg-color--dark) !important;
+  color: var(--md-primary-fg-color--dark);
 }
 
 .md-typeset h2 {
