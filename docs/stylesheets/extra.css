@@ -1,14 +1,13 @@
 :root {
-  /* EKGF custom colors - used by entire theme including Mermaid diagrams */
-  --md-primary-fg-color:        #4051b5;  /* Material Indigo 500 for primary elements */
-  --md-primary-fg-color--light: #5c6bc0;  /* Lighter indigo */
-  --md-primary-fg-color--dark:  #303f9f;  /* Darker indigo */
-  --md-accent-fg-color:         #ff6f00;  /* EKGF orange for accents */
-  --md-accent-fg-color--light:  #ff9800;  /* Lighter orange */
-  --md-accent-fg-color--dark:   #e65100;  /* Darker orange */
+  /* EKGF custom colors */
+  --md-primary-fg-color:        #4051b5;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark:  #303f9f;
+  --md-accent-fg-color:         #ff6f00;
+  --md-accent-fg-color--light:  #ff9800;
+  --md-accent-fg-color--dark:   #e65100;
 }
 
-/* Dark mode color adjustments */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #4051b5;
   --md-primary-fg-color--light: #5c6bc0;
@@ -18,988 +17,214 @@
   --md-accent-fg-color--dark:   #e65100;
 }
 
-/* Force Mermaid diagram elements to use EKGF colors */
-/* Apply to all possible rect elements - node backgrounds - use indigo blue (#4051b5) to match PlantUML class diagrams */
-.mermaid rect,
-.mermaid .node rect,
-.mermaid .node circle,
-.mermaid .node ellipse,
-.mermaid .node polygon,
-.mermaid .cluster rect,
-.mermaid g.classGroup rect,
-.mermaid g rect.divider,
-.mermaid g.classGroup > rect:first-child,
-.mermaid svg g rect {
+/* Force Mermaid colors */
+.mermaid rect, .mermaid .node rect, .mermaid .node circle, .mermaid .node ellipse, .mermaid .node polygon, .mermaid .cluster rect, .mermaid g.classGroup rect, .mermaid g rect.divider, .mermaid g.classGroup > rect:first-child, .mermaid svg g rect {
   fill: #4051b5 !important;
   stroke: #ff6f00 !important;
   stroke-width: 2px !important;
 }
-
-/* Connector lines, relations, and arrows - orange */
-.mermaid path,
-.mermaid line,
-.mermaid .edgePath path,
-.mermaid .flowchart-link,
-.mermaid line.relation,
-.mermaid path.relation,
-.mermaid line[class*="messageLine"],
-.mermaid path[class*="messageLine"],
-.mermaid .relationshipLine {
+.mermaid path, .mermaid line, .mermaid .edgePath path, .mermaid .flowchart-link, .mermaid line.relation, .mermaid path.relation, .mermaid line[class*="messageLine"], .mermaid path[class*="messageLine"], .mermaid .relationshipLine {
   stroke: #ff6f00 !important;
   stroke-width: 2px !important;
 }
-
-/* Arrow markers - orange */
-.mermaid marker path,
-.mermaid defs marker path,
-.mermaid marker polygon {
+.mermaid marker path, .mermaid defs marker path, .mermaid marker polygon {
   fill: #ff6f00 !important;
   stroke: #ff6f00 !important;
 }
-
-/* Text labels on nodes - white */
-.mermaid text,
-.mermaid .nodeLabel,
-.mermaid text.nodeLabel,
-.mermaid .node text,
-.mermaid .classLabel .label,
-.mermaid tspan,
-.mermaid g.classGroup text,
-.mermaid .classLabel text {
+.mermaid text, .mermaid .nodeLabel, .mermaid text.nodeLabel, .mermaid .node text, .mermaid .classLabel .label, .mermaid tspan, .mermaid g.classGroup text, .mermaid .classLabel text {
   fill: #ffffff !important;
   color: #ffffff !important;
 }
-
-/* Edge labels - keep dark for readability on light background */
-.mermaid .edgeLabel,
-.mermaid .edgeLabel text,
-.mermaid .edgeLabel tspan,
-.mermaid .edgeLabel rect {
+.mermaid .edgeLabel, .mermaid .edgeLabel text, .mermaid .edgeLabel tspan, .mermaid .edgeLabel rect {
   fill: #333333 !important;
   color: #333333 !important;
 }
-
-.mermaid .edgeLabel rect {
-  fill: #ffffff !important;
-}
-
-/* Dark mode edge label adjustments */
-[data-md-color-scheme="slate"] .mermaid .edgeLabel,
-[data-md-color-scheme="slate"] .mermaid .edgeLabel text,
-[data-md-color-scheme="slate"] .mermaid .edgeLabel tspan {
+.mermaid .edgeLabel rect { fill: #ffffff !important; }
+[data-md-color-scheme="slate"] .mermaid .edgeLabel, [data-md-color-scheme="slate"] .mermaid .edgeLabel text, [data-md-color-scheme="slate"] .mermaid .edgeLabel tspan {
   fill: #ffffff !important;
   color: #ffffff !important;
 }
+[data-md-color-scheme="slate"] .mermaid .edgeLabel rect { fill: #1e1e1e !important; }
 
-[data-md-color-scheme="slate"] .mermaid .edgeLabel rect {
-  fill: #1e1e1e !important;
-}
-
-/* Card Design Enhancements */
-
-/* Grid cards container - improved spacing */
+/* Grid Design for standard cards */
 .md-typeset .grid.cards {
-  gap: 1.5rem !important;
-  margin: 2rem 0;
-}
-
-.md-typeset .grid.cards > ul {
-  gap: 1.5rem !important;
   display: grid !important;
-  /* Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */
+  gap: 1.5rem !important;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  margin: 2rem 0 !important;
 }
+.md-typeset .grid.cards > ul { display: contents !important; }
 
-/* Individual card styling - cards are in ul > li structure */
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid.cards li {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  border-radius: 0.5rem !important;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-}
-
-/* Card hover effects */
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid.cards li:hover {
-  transform: translateY(-4px) scale(1.01) !important;
-  box-shadow: 
-    0 8px 16px rgba(0, 0, 0, 0.12),
-    0 4px 8px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Light mode card hover shadow */
-[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li:hover,
-[data-md-color-scheme="default"] .md-typeset .grid.cards li:hover {
-  box-shadow: 
-    0 8px 16px rgba(74, 35, 217, 0.15),
-    0 4px 8px rgba(74, 35, 217, 0.1) !important;
-}
-
-/* Dark mode card hover shadow */
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
-[data-md-color-scheme="slate"] .md-typeset .grid.cards li:hover {
-  box-shadow: 
-    0 8px 16px rgba(0, 0, 0, 0.3),
-    0 4px 8px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* Card content padding */
-.md-typeset .grid.cards > ul > li > *,
-.md-typeset .grid.cards li > * {
-  transition: color 0.2s ease;
-}
-
-/* Icon styling improvements - target SVG icons in twemoji spans */
-.md-typeset .grid.cards .twemoji svg,
-.md-typeset .grid.cards img[alt*="material-"],
-.md-typeset .grid.cards img[alt*="octicons-"],
-.md-typeset .grid.cards .md-typeset img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: brightness(1);
-}
-
-/* Icon hover effect */
-.md-typeset .grid.cards > ul > li:hover .twemoji svg,
-.md-typeset .grid.cards li:hover .twemoji svg,
-.md-typeset .grid.cards > ul > li:hover img[alt*="material-"],
-.md-typeset .grid.cards li:hover img[alt*="octicons-"],
-.md-typeset .grid.cards > ul > li:hover .md-typeset img,
-.md-typeset .grid.cards li:hover .md-typeset img {
-  transform: scale(1.1);
-  filter: brightness(1.1);
-}
-
-/* Large icon styling (.lg class) */
-.md-typeset .grid.cards .twemoji.lg svg,
-.md-typeset .grid.cards .twemoji.lg {
-  width: 3.5rem !important;
-  height: 3.5rem !important;
-  margin-bottom: 0.75rem;
-  opacity: 0.85;
-  display: block;
-}
-
-/* Process cards - enhanced icon styling */
-.md-typeset .grid.cards > ul > li .twemoji.lg svg,
-.md-typeset .grid.cards > ul > li .twemoji.lg {
-  filter: drop-shadow(0 2px 4px rgba(74, 35, 217, 0.15));
-}
-
-/* Process card specific styling - override ALL Material padding */
-.md-typeset .grid.process-cards > ul > li {
-  padding: 0 !important;
-  margin: 0;
-}
-
-/* Ensure header is flush with card top */
-.md-typeset .grid.process-cards > ul > li > div:first-child {
-  margin-top: 0 !important;
-}
-
-.process-card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-  margin: 0 0 0.25rem 0 !important;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(18, 32, 70, 0.18);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  isolation: isolate;
-  min-height: 4.5rem;
-}
-
-.md-typeset .grid.process-cards > ul > li > *:not(.process-card-header) {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.md-typeset .grid.process-cards > ul > li > *:last-child {
-  padding-bottom: 1.25rem;
-}
-
-.process-card-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(48, 63, 159, 0.45), rgba(25, 118, 210, 0.4));
-  z-index: -1;
-}
-
-.process-card-header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle at 80% -10%, rgba(255, 255, 255, 0.15), transparent 55%);
-  opacity: 0.35;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.process-card-header > * {
-  position: relative;
-  z-index: 1;
-}
-
-.process-card-header .twemoji.lg,
-.process-card-header .twemoji.lg svg {
-  margin: 0 !important;
-  width: 3.25rem !important;
-  height: 3.25rem !important;
-  opacity: 1;
-  color: #fff !important;
-  filter: drop-shadow(0 4px 12px rgba(15, 23, 42, 0.3));
-}
-
-.process-card-title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.process-card-header strong {
-  margin: 0 !important;
-  color: #fff !important;
-  font-size: 1.35em !important;
-}
-
-.process-card-header strong a {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-.process-card-header strong a:hover {
-  text-decoration: underline;
-}
-
-.process-card-subtitle {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.process-card-body {
-  padding: 0 1.25rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.process-card-body hr {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.process-card-plan {
-  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
-  background-position: center 30%;
-}
-
-.process-card-build {
-  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80");
-  background-position: center 40%;
-}
-
-.process-card-run {
-  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80");
-  background-position: center 55%;
-}
-
-.md-typeset .grid.cards .twemoji.lg svg {
-  width: 3rem;
-  height: 3rem;
-}
-
-.md-typeset .grid.cards > ul > li:hover .twemoji.lg,
-.md-typeset .grid.cards li:hover .twemoji.lg {
-  opacity: 1;
-}
-
-/* Objective badge styling - circular badges with letters */
-.md-typeset .grid.cards .objective-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem !important;
-  height: 3rem !important;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  opacity: 0.9;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
-  position: relative;
-}
-
-.md-typeset .grid.cards .objective-badge::before {
-  content: attr(data-letter);
-}
-
-/* Dark mode badge styling */
-[data-md-color-scheme="slate"] .md-typeset .grid.cards .objective-badge {
-  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
-  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
-}
-
-/* Badge hover effect */
-.md-typeset .grid.cards > ul > li:hover .objective-badge,
-.md-typeset .grid.cards li:hover .objective-badge {
-  opacity: 1;
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 4px 12px rgba(74, 35, 217, 0.4);
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover .objective-badge,
-[data-md-color-scheme="slate"] .md-typeset .grid.cards li:hover .objective-badge {
-  box-shadow: 0 4px 12px rgba(74, 35, 217, 0.5);
-}
-
-/* Standalone objective badge (for use on individual objective pages, not in grid cards) */
-.md-typeset .objective-badge-standalone {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem !important;
-  height: 3rem !important;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-  opacity: 0.9;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
-  position: relative;
-  vertical-align: middle;
-  flex-shrink: 0;
-}
-
-.md-typeset .objective-badge-standalone::before {
-  content: attr(data-letter);
-}
-
-/* Dark mode standalone badge styling */
-[data-md-color-scheme="slate"] .md-typeset .objective-badge-standalone {
-  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
-  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
-}
-
-/* Objective page header with badge - flex layout */
-.md-typeset .objective-header-with-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.md-typeset .objective-header-with-badge h1 {
-  margin: 0;
-  flex: 1;
-}
-
-/* Hide "Learn more" text but keep the link functional */
-.md-typeset .grid.cards > ul > li > p:last-child,
-.md-typeset .grid.cards li > p:last-child {
-  margin: 0 !important;
-  padding: 0 !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  font-size: 0;
-  line-height: 0;
-  overflow: visible;
-}
-
-/* Make the "Learn more" link cover the entire card */
-.md-typeset .grid.cards > ul > li > p:last-child > a,
-.md-typeset .grid.cards li > p:last-child > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-indent: -9999px;
-  overflow: hidden;
-  color: transparent;
-  font-size: 0;
-  z-index: 1;
-}
-
-/* Ensure card content is above the link overlay for proper stacking and interaction */
-.md-typeset .grid.cards > ul > li > *:not(p:last-child),
-.md-typeset .grid.cards li > *:not(p:last-child) {
-  position: relative;
-  z-index: 2;
-  pointer-events: none; /* Allow clicks to pass through to the link */
-}
-
-/* Re-enable pointer events for nested links (if any) */
-.md-typeset .grid.cards > ul > li > *:not(p:last-child) a,
-.md-typeset .grid.cards li > *:not(p:last-child) a {
-  pointer-events: auto;
-}
-
-/* Remove link hover transform since whole card is clickable */
-.md-typeset .grid.cards a:hover {
-  transform: none;
-}
-
-/* Card title styling */
-.md-typeset .grid.cards strong {
-  font-size: 1.25em !important;
-  font-weight: 700 !important;
-  display: block;
-  margin-bottom: 0.75rem;
-  color: var(--md-primary-fg-color) !important;
-  transition: color 0.2s ease;
-  letter-spacing: -0.01em;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards strong {
-  color: var(--md-primary-fg-color--light) !important;
-}
-
-.md-typeset .grid.cards > ul > li:hover strong,
-.md-typeset .grid.cards li:hover strong {
-  color: var(--md-accent-fg-color) !important;
-}
-
-/* Hero section styling */
-.hero-container {
+/* Hero section */
+.md-typeset .hero-container {
   background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 100%);
   color: white;
-  padding: 5rem 2rem;
-  margin: -2rem -2rem 2rem -2rem;
+  padding: 4rem 2rem;
+  margin: 0 -2rem 3rem -2rem;
   text-align: center;
-  border-radius: 0 0 3rem 3rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 1.5rem 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   display: block;
-  position: relative;
-  overflow: hidden;
 }
 
-.hero-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-}
-
-.hero-container h1 {
+.md-typeset .hero-container h1 {
   color: white !important;
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
   font-weight: 800 !important;
+  margin-top: 0 !important;
   margin-bottom: 1.5rem !important;
-  letter-spacing: -0.03em !important;
   border: none !important;
   line-height: 1.1 !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100% !important;
+  text-align: center !important;
 }
 
-.hero-container p {
-  font-size: 1.4rem;
-  max-width: 850px;
-  margin: 0 auto 2.5rem auto;
-  opacity: 0.95;
-  line-height: 1.5;
-  font-weight: 400;
+/* Hide the anchor link pilcrow in the hero to ensure perfect centering */
+.hero-container h1 .headerlink {
+  display: none !important;
+}
+
+.md-typeset .hero-container p {
+  font-size: 1.25rem !important;
+  max-width: 850px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 2.5rem !important;
+  opacity: 0.95 !important;
+  line-height: 1.5 !important;
+  color: white !important;
+  text-align: center !important;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }
 
 .hero-buttons .md-button {
   margin: 0 !important;
-  padding: 0.8rem 2.2rem !important;
+  padding: 0.6rem 1.5rem !important;
   font-weight: 700 !important;
   border-radius: 0.5rem !important;
   font-size: 1rem !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  min-width: 180px;
 }
 
 .hero-buttons .md-button--primary {
   background-color: var(--md-accent-fg-color) !important;
   border-color: var(--md-accent-fg-color) !important;
   color: white !important;
-  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4);
-}
-
-.hero-buttons .md-button--primary:hover {
-  background-color: var(--md-accent-fg-color--light) !important;
-  border-color: var(--md-accent-fg-color--light) !important;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 111, 0, 0.5);
 }
 
 .hero-buttons .md-button:not(.md-button--primary) {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
   color: white !important;
-  backdrop-filter: blur(10px);
 }
 
-.hero-buttons .md-button:not(.md-button--primary):hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  border-color: white !important;
-  transform: translateY(-3px);
+/* Custom Benefit Cards (HTML Based) */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-/* Feature cards icons */
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
+@media screen and (min-width: 600px) {
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefit-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.benefit-card-custom {
+  position: relative;
+  min-height: 280px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none !important;
+}
+
+.benefit-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.benefit-card-custom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.1) 100%);
+  z-index: 1;
+}
+
+.benefit-card-custom-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  color: white;
+}
+
+.benefit-card-custom-content strong {
   display: block;
-  color: var(--md-primary-fg-color);
-  transition: transform 0.3s ease;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.grid.cards > ul > li:hover .feature-icon {
-  transform: scale(1.15) rotate(-5deg);
-  color: var(--md-accent-fg-color);
-}
-
-/* Section dividers */
-hr {
-  margin: 4rem 0 !important;
-  opacity: 0.1 !important;
-}
-
-/* Two-column layout adjustments */
-.grid {
-  gap: 2rem !important;
-}
-
-/* Admonition in grid */
-.grid .admonition {
-  margin: 0 !important;
-  height: 100%;
-}
-
-/* Dark mode overrides for hero */
-[data-md-color-scheme="slate"] .hero-container {
-  background: linear-gradient(135deg, #1a237e 0%, #303f9f 100%);
-}
-
-/* Card paragraph spacing */
-.md-typeset .grid.cards p {
-  margin: 0.5rem 0;
-  line-height: 1.5;
-  font-size: 0.95em;
-}
-
-/* Show bullet points in grid cards - override Material defaults */
-.md-typeset .grid.cards > ul > li ul,
-.md-typeset .grid.cards > ul > li > ul,
-.md-typeset .grid.cards li ul {
-  list-style-type: disc !important;
-  list-style-position: outside !important;
-  margin-left: 1.5rem !important;
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  padding-left: 0.5rem !important;
-  display: block !important;
-}
-
-.md-typeset .grid.cards > ul > li ul li,
-.md-typeset .grid.cards > ul > li > ul > li,
-.md-typeset .grid.cards li ul li {
-  list-style-type: disc !important;
-  display: list-item !important;
-  margin-left: 0 !important;
-  padding-left: 0.25rem !important;
-  padding-right: 0 !important;
-}
-
-.md-typeset .grid.cards > ul > li ul li::marker,
-.md-typeset .grid.cards > ul > li > ul > li::marker {
-  content: "• " !important;
-  color: inherit !important;
-}
-
-/* Force a visible dot when Material hides markers */
-.md-typeset .grid.cards > ul > li ul li,
-.md-typeset .grid.cards > ul > li > ul > li {
-  list-style: none !important;
-  position: relative !important;
-  padding-left: 1.1rem !important;
-}
-
-.md-typeset .grid.cards > ul > li ul li::before,
-.md-typeset .grid.cards > ul > li > ul > li::before {
-  content: "•" !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 0.2rem !important;
-  color: var(--md-primary-fg-color) !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  font-size: 1.2rem !important;
-}
-
-/* Process cards - more compact description */
-.md-typeset .grid.cards > ul > li > hr:first-of-type + p {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-/* Improve card content readability */
-.md-typeset .grid.cards em {
-  font-style: italic;
-  opacity: 0.9;
-}
-
-/* Card separator (horizontal rule) styling */
-.md-typeset .grid.cards hr {
-  margin: 0.75rem 0;
-  border-color: rgba(0, 0, 0, 0.1);
-  opacity: 0.5;
-}
-
-/* Process cards - tighter separator spacing */
-.md-typeset .grid.cards > ul > li > hr:first-of-type {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards hr {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Smooth transitions for all interactive elements */
-.md-typeset .grid.cards * {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Focus states for accessibility */
-/* Ensure bullet lists in process cards align vertically (top-aligned) */
-.md-typeset .grid.cards > ul > li {
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-/* Ensure description paragraph has consistent height so separator aligns */
-.process-cards > ul > li > hr:first-of-type + p {
-  min-height: 3.5rem !important;
-  flex-grow: 0 !important;
-  flex-shrink: 0 !important;
-}
-
-/* Ensure the separator before lists is at consistent vertical position */
-.process-cards > ul > li > hr:last-of-type {
-  margin-top: auto !important;
-  margin-bottom: 0.5rem !important;
-  flex-shrink: 0 !important;
-}
-
-/* Ensure lists start at consistent position from top */
-.process-cards > ul > li > ul {
-  margin-top: 0 !important;
-  flex-shrink: 0 !important;
-}
-
-/* ChatGPT-style table styling */
-.md-typeset table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.5rem 0;
-  background: transparent;
-  border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
-}
-
-.md-typeset table thead {
-  border: none !important;
-}
-
-.md-typeset table thead th {
-  border: none !important;
-  border-top: none !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-  border-left: none !important;
-  border-right: none !important;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  font-weight: 600;
-  background: transparent;
-  color: inherit;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table thead th {
-  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.md-typeset table tbody {
-  border: none !important;
-}
-
-.md-typeset table tbody tr {
-  border: none !important;
-  border-top: none !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-  border-left: none !important;
-  border-right: none !important;
-  background: transparent;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table tbody tr {
-  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
-}
-
-.md-typeset table tbody tr:last-child {
-  border-bottom: none !important;
-}
-
-.md-typeset table tbody td {
-  border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  background: transparent;
-  vertical-align: top;
-}
-
-.md-typeset table tbody td:first-child {
-  font-weight: 600;
-}
-
-.md-typeset table tbody tr:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-[data-md-color-scheme="slate"] .md-typeset table tbody tr:hover {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-/* Enhanced blockquote styling */
-.md-typeset blockquote {
-  border-left: 4px solid var(--md-primary-fg-color);
-  padding-left: 1.5rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin: 1.5rem 0;
-  background: rgba(74, 35, 217, 0.03);
-  border-radius: 0 0.25rem 0.25rem 0;
-  font-style: normal;
-}
-
-[data-md-color-scheme="slate"] .md-typeset blockquote {
-  background: rgba(74, 35, 217, 0.08);
-  border-left-color: var(--md-primary-fg-color--light);
-}
-
-.md-typeset blockquote p {
-  margin: 0.5rem 0;
-}
-
-.md-typeset blockquote p:first-child {
-  margin-top: 0;
-}
-
-.md-typeset blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-/* Tabbed content styling - ONLY active/selected tab is orange */
-.md-typeset .tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > :nth-child(1),
-.md-typeset .tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > :nth-child(2),
-.md-typeset .tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(3),
-.md-typeset .tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > :nth-child(4),
-.md-typeset .tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > :nth-child(5),
-.md-typeset .tabbed-set > input:nth-child(6):checked ~ .tabbed-labels > :nth-child(6) {
-  color: #ff6f00 !important;
-  border-color: #ff6f00 !important;
-  border-bottom-color: #ff6f00 !important;
-}
-
-/* Hover state - orange on hover for all tabs */
-
-/* Fix PlantUML start/end state visibility in dark mode */
-/* JavaScript (darkable-objects.js) handles the differentiation:
- *   - Start states: orange fill + stroke
- *   - End states: outer circle (transparent fill + orange stroke), inner circle (orange fill + stroke)
- * CSS here is a fallback to ensure visibility before JS runs */
-[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[fill="#222222"],
-[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[fill="#222"],
-[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[fill="#222222"],
-[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[fill="#222"],
-[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[style*="stroke:#222222"],
-[data-md-color-scheme="slate"] svg[data-diagram-type="STATE"] polygon[style*="stroke:#222"],
-[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[style*="stroke:#222222"],
-[data-md-color-scheme="slate"] .ekgf-diagram svg[data-diagram-type="STATE"] polygon[style*="stroke:#222"] {
-  stroke: #ff6f00 !important;
-  /* Fill will be handled by JavaScript to differentiate start vs end states */
-}
-.md-typeset .tabbed-labels > label:hover {
-  color: #ff6f00 !important;
-}
-
-/* PlantUML diagram container injected via darkable-objects.js */
-.ekgf-diagram {
-  display: block;
-  width: auto;
-  max-width: 100%;
-}
-
-.ekgf-diagram svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.md-typeset figure > .ekgf-diagram {
+.benefit-card-custom-content p {
   margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.95;
 }
 
-/* FORCE transparent backgrounds on ALL figure and object elements */
-figure,
-figure[markdown],
-figure > *,
-.md-typeset figure,
-.md-typeset figure[markdown],
-.md-typeset figure > p,
-.md-typeset figure > p > *,
-object[type="image/svg+xml"],
-object[data*=".svg"] {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-}
+/* Admonitions */
+.md-typeset .admonition { border-radius: 0.5rem !important; margin: 1.5rem 0 !important; }
 
-/* Dark mode - even more aggressive */
-[data-md-color-scheme="slate"] figure,
-[data-md-color-scheme="slate"] figure[markdown],
-[data-md-color-scheme="slate"] figure > *,
-[data-md-color-scheme="slate"] .md-typeset figure,
-[data-md-color-scheme="slate"] .md-typeset figure[markdown],
-[data-md-color-scheme="slate"] .md-typeset figure > p,
-[data-md-color-scheme="slate"] .md-typeset figure > p > *,
-[data-md-color-scheme="slate"] object[type="image/svg+xml"],
-[data-md-color-scheme="slate"] object[data*=".svg"] {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-}
+/* Sections */
+hr { margin: 4rem 0 !important; opacity: 0.1 !important; }
 
-/* Dark mode bold text - use lighter blue instead of dark blue/purple */
-[data-md-color-scheme="slate"] .md-typeset strong,
-[data-md-color-scheme="slate"] .md-typeset b {
-  color: var(--md-primary-fg-color--light) !important;
-}
-
-/* Link colors - use lighter blue in dark mode for better readability */
-[data-md-color-scheme="slate"] .md-typeset a:not(:hover) {
-  color: var(--md-primary-fg-color--light) !important;
-}
-
-/* Bold links in dark mode */
-[data-md-color-scheme="slate"] .md-typeset a strong,
-[data-md-color-scheme="slate"] .md-typeset strong a {
-  color: var(--md-primary-fg-color--light) !important;
-}
-
-/* Link hover color - use orange for all links */
-.md-typeset a:hover {
-  color: var(--md-accent-fg-color) !important;
-}
-
-[data-md-color-scheme="slate"] .md-typeset a:hover {
-  color: var(--md-accent-fg-color) !important;
-}
-
-/* Sidebar active/selected item - use orange in dark mode */
-[data-md-color-scheme="slate"] .md-nav__link--active,
-[data-md-color-scheme="slate"] .md-nav__link--active:hover {
-  color: var(--md-accent-fg-color) !important;
-}
-
-/* Headings in dark mode - use subtle color for all levels */
-[data-md-color-scheme="slate"] .md-typeset h1,
-[data-md-color-scheme="slate"] .md-typeset h2,
-[data-md-color-scheme="slate"] .md-typeset h3,
-[data-md-color-scheme="slate"] .md-typeset h4,
-[data-md-color-scheme="slate"] .md-typeset h5,
-[data-md-color-scheme="slate"] .md-typeset h6 {
-  color: var(--md-default-fg-color--light) !important;
-}
-
-/* Summary sections (content between <!--summary-start--> and <!--summary-end-->) */
-/* Target paragraphs with emphasis immediately after H1 (typical summary pattern) */
-.md-typeset h1 + p > em,
-.md-typeset .objective-header-with-badge + p > em {
-  font-size: 1.25em;
+/* Landing page explanatory section */
+.landing-explanatory-section {
+  font-size: 1.1rem;
   line-height: 1.6;
-  display: block;
-  margin: 1rem 0;
 }
 
-/* PlantUML mindmap text color override in light mode */
-/* Default text color should be blue for connector text */
-[data-md-color-scheme="default"] .md-typeset object[data*=".svg"] svg text,
-[data-md-color-scheme="default"] .md-typeset .ekgf-diagram svg text {
-  fill: #4051b5 !important;
+.landing-explanatory-section h2 {
+  font-size: 2rem !important;
+  margin-top: 1.5rem !important;
 }
 
-/* Text inside boxes (nodes with polygons as background) should be white, larger, and bold */
-/* Polygons are used for mindmap node backgrounds in PlantUML */
-[data-md-color-scheme="default"] .md-typeset object[data*=".svg"] svg g polygon + a text,
-[data-md-color-scheme="default"] .md-typeset .ekgf-diagram svg g polygon + a text {
-  fill: #ffffff !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
+.landing-explanatory-section h3 {
+  font-size: 1.4rem !important;
+  margin-top: 1.25rem !important;
 }
 
-/* Images in dark mode - transparent background */
-[data-md-color-scheme="slate"] .md-typeset img {
-  background: transparent !important;
+.landing-explanatory-section p, 
+.landing-explanatory-section li {
+  margin-bottom: 1rem;
 }
 
-/* Show/hide images based on color scheme */
-[data-md-color-scheme="default"] .md-typeset img.only-dark {
-  display: none;
+/* Typography */
+.md-typeset h2 { 
+  font-weight: 700 !important; 
+  margin-top: 2rem !important; 
+  font-size: 2rem !important;
 }
-
-[data-md-color-scheme="slate"] .md-typeset img.only-light {
-  display: none;
-}
-
