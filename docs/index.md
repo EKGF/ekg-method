@@ -24,12 +24,9 @@ hide:
 Deliver strategic business value and agility through connected
 enterprise knowledge — one use case at a time.
 
-<div class="hero-buttons" markdown="1">
-
-[Explore the Use Case Tree](concept/use-case-tree.md){ .md-button
-.md-button--primary }
-[Browse example use cases](https://catalog.ekgf.org/){ .md-button }
-
+<div class="hero-buttons">
+<a href="concept/use-case-tree.md" class="md-button md-button--primary">Explore the Use Case Tree</a>
+<a href="https://catalog.ekgf.org/" class="md-button">Browse example use cases</a>
 </div>
 
 </div>
