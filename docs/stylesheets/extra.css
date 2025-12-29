@@ -79,10 +79,7 @@
   text-align: center !important;
 }
 
-/* Hide the anchor link pilcrow in the hero to ensure perfect centering */
-.hero-container h1 .headerlink {
-  display: none !important;
-}
+.hero-container h1 .headerlink { display: none !important; }
 
 .md-typeset .hero-container p {
   font-size: 1.25rem !important;
@@ -133,18 +130,8 @@
   gap: 1.5rem;
   margin: 2rem 0;
 }
-
-@media screen and (min-width: 600px) {
-  .benefit-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .benefit-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+@media screen and (min-width: 600px) { .benefit-grid { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (min-width: 1200px) { .benefit-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .benefit-card-custom {
   position: relative;
@@ -159,12 +146,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none !important;
 }
-
-.benefit-card-custom:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
+.benefit-card-custom:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
 .benefit-card-custom::before {
   content: "";
   position: absolute;
@@ -172,28 +154,9 @@
   background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.1) 100%);
   z-index: 1;
 }
-
-.benefit-card-custom-content {
-  position: relative;
-  z-index: 2;
-  padding: 1.5rem;
-  color: white;
-}
-
-.benefit-card-custom-content strong {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-.benefit-card-custom-content p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  opacity: 0.95;
-}
+.benefit-card-custom-content { position: relative; z-index: 2; padding: 1.5rem; color: white; }
+.benefit-card-custom-content strong { display: block; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.benefit-card-custom-content p { margin: 0; font-size: 0.95rem; line-height: 1.4; opacity: 0.95; }
 
 /* Admonitions */
 .md-typeset .admonition { border-radius: 0.5rem !important; margin: 1.5rem 0 !important; }
@@ -202,29 +165,112 @@
 hr { margin: 4rem 0 !important; opacity: 0.1 !important; }
 
 /* Landing page explanatory section */
-.landing-explanatory-section {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.landing-explanatory-section h2 {
-  font-size: 2rem !important;
-  margin-top: 1.5rem !important;
-}
-
-.landing-explanatory-section h3 {
-  font-size: 1.4rem !important;
-  margin-top: 1.25rem !important;
-}
-
-.landing-explanatory-section p, 
-.landing-explanatory-section li {
-  margin-bottom: 1rem;
-}
+.landing-explanatory-section { font-size: 1.1rem; line-height: 1.6; }
+.landing-explanatory-section h2 { font-size: 2rem !important; margin-top: 1.5rem !important; }
+.landing-explanatory-section h3 { font-size: 1.4rem !important; margin-top: 1.25rem !important; }
+.landing-explanatory-section p, .landing-explanatory-section li { margin-bottom: 1rem; }
 
 /* Typography */
-.md-typeset h2 { 
-  font-weight: 700 !important; 
-  margin-top: 2rem !important; 
-  font-size: 2rem !important;
+.md-typeset h2 { font-weight: 700 !important; margin-top: 2rem !important; font-size: 2rem !important; }
+
+/* Objective badge styling - circular badges with letters */
+.md-typeset .objective-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
+  position: relative;
 }
+.md-typeset .objective-badge::before { content: attr(data-letter); }
+[data-md-color-scheme="slate"] .md-typeset .objective-badge {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
+}
+
+/* Standalone objective badge */
+.md-typeset .objective-badge-standalone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.2);
+  position: relative;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.md-typeset .objective-badge-standalone::before { content: attr(data-letter); }
+[data-md-color-scheme="slate"] .md-typeset .objective-badge-standalone {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
+  box-shadow: 0 2px 8px rgba(74, 35, 217, 0.3);
+}
+
+/* Objective page header with badge */
+.md-typeset .objective-header-with-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.md-typeset .objective-header-with-badge h1 { margin: 0; flex: 1; }
+
+/* Grid card structural fixes for objective index */
+.md-typeset .grid.cards > ul > li {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px) scale(1.01) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+.md-typeset .grid.cards strong {
+  font-size: 1.25em !important;
+  font-weight: 700 !important;
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--md-primary-fg-color) !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards strong { color: var(--md-primary-fg-color--light) !important; }
+
+/* Whole card link for objective cards */
+.md-typeset .grid.cards > ul > li > p:last-child {
+  margin: 0 !important; padding: 0 !important;
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%; z-index: 1;
+  font-size: 0; line-height: 0; overflow: visible;
+}
+.md-typeset .grid.cards > ul > li > p:last-child > a {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%; display: block;
+  text-indent: -9999px; overflow: hidden;
+  color: transparent; font-size: 0; z-index: 1;
+}
+.md-typeset .grid.cards > ul > li > *:not(p:last-child) { position: relative; z-index: 2; pointer-events: none; }
+.md-typeset .grid.cards > ul > li > *:not(p:last-child) a { pointer-events: auto; }
