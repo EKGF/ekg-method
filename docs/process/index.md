@@ -25,7 +25,7 @@ schema_type: "WebPage"
     - <div class="process-card-header process-card-plan">
           :material-compass:{ .lg }
           <div class="process-card-title">
-            __[Plan](plan)__
+            __[Plan](plan/index.md)__
             <span class="process-card-subtitle">Strategy & Scope</span>
           </div>
       </div>
@@ -43,17 +43,17 @@ schema_type: "WebPage"
         - [Train](./plan/train.md)
         - [Chart](./plan/chart.md)
 
-        [:octicons-arrow-right-24: Learn more](./plan)
+        [:octicons-arrow-right-24: Learn more](plan/index.md)
 
     - <div class="process-card-header process-card-build">
           :material-tools:{ .lg }
           <div class="process-card-title">
-            __[Build](build)__
+            __[Build](build/index.md)__
             <span class="process-card-subtitle">Executable Models</span>
           </div>
       </div>
 
-        Capture [Stories](../concept/story.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept).
+        Capture [Stories](../concept/story.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept/index.md).
         Specify executable behavior as semantic models---mostly no-code---for reusable components.
 
         -----
@@ -65,18 +65,18 @@ schema_type: "WebPage"
         - [Verify](./build/verify.md)
         - [Deliver](./build/deliver.md)
 
-        [:octicons-arrow-right-24: Learn more](./build)
+        [:octicons-arrow-right-24: Learn more](build/index.md)
 
     - <div class="process-card-header process-card-run">
           :material-rocket-launch:{ .lg }
           <div class="process-card-title">
-            __[Run](run)__
+            __[Run](run/index.md)__
             <span class="process-card-subtitle">Operate & Optimize</span>
           </div>
       </div>
 
         Deploy, operate, and optimize the [EKG/Platform](../vocab/ekg-platform.md).
-        Measure [Outcomes](../concept/outcome), monitor [Workflows](../concept/workflow.md),
+        Measure [Outcomes](../concept/outcome/index.md), monitor [Workflows](../concept/workflow.md),
         serve multiple use cases across the enterprise.
 
         -----
@@ -86,7 +86,7 @@ schema_type: "WebPage"
         - [Measure](./run/measure.md)
         - [Optimize](./run/optimize.md)
 
-        [:octicons-arrow-right-24: Learn more](./run)
+        [:octicons-arrow-right-24: Learn more](run/index.md)
 
     </div>
 

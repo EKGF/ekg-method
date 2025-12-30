@@ -21,7 +21,7 @@ schema_type: "HowTo"
 
 <!--summary-start-->
 
-- strategic [use cases](../../concept/use-case.md) & desired [business outcomes](../../concept/outcome)
+- strategic [use cases](../../concept/use-case.md) & desired [business outcomes](../../concept/outcome/index.md)
 - initial [Use Case Tree](../../concept/use-case-tree.md) and primary branch
 - shared business language & knowledge
 - aligned priorities and reuse opportunities
@@ -30,7 +30,7 @@ schema_type: "HowTo"
 
 Discover all strategic [use cases](../../concept/use-case.md) in the given scope that support the agreed vision
 and strategy. Create the initial [Use Case Tree (UCT)](../../concept/use-case-tree.md) for the organization.
-Identify desired mid and long term [business outcomes](../../concept/outcome).
+Identify desired mid and long term [business outcomes](../../concept/outcome/index.md).
 Select the primary branch in the Use Case Tree to focus on, break that part
 of the Use Case Tree down into deeper levels, identify the shortest pathway to real business
 value.
@@ -63,7 +63,7 @@ to help frame each deliverable in terms of staged business capabilities.
 
 All outputs below describe the properties of what a [Use Case Tree](../../concept/use-case-tree.md) is:
 
-* Identification of strategic [use cases](../../concept/use-case.md), priorities and desired [business outcomes](../../concept/outcome)
+* Identification of strategic [use cases](../../concept/use-case.md), priorities and desired [business outcomes](../../concept/outcome/index.md)
 * Initial scope in the form of one priority strategic [use case](../../concept/use-case.md), 
   one branch of the [Use Case Tree](../../concept/use-case-tree.md) to focus on
 * Evaluation criteria from both a business process and data perspective to ensure 

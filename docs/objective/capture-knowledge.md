@@ -67,8 +67,8 @@ systematically extract knowledge from SMEs and turn it into
 **executable models**.
 
 1. **Structured SME Logic**: SMEs define the
-   [Concepts](../concept/concept),
-   [Outcomes](../concept/outcome), and
+   [Concepts](../concept/concept/index.md),
+   [Outcomes](../concept/outcome/index.md), and
    [Workflows](../concept/workflow.md) that drive the business. This
    transforms "head-knowledge" into machine-readable
    [Ontologies](../concept/ontology.md).

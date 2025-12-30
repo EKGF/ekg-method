@@ -15,23 +15,25 @@
       "!ENV scalar",
       "!relative scalar"
     ],
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
     "editor.rulers": [
       70
     ],
     "[markdown]": {
-      "editor.formatOnSave": true,
+      "editor.formatOnSave": false,
       "editor.wordWrap": "off",
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.rulers": [
         70
       ],
       "files.trimTrailingWhitespace": false
     },
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
-    "prettier.proseWrap": "always",
-    "prettier.printWidth": 70
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.md$",
+          "cmd": "python3 ${workspaceFolder}/scripts/wrap_markdown.py ${file}"
+        }
+      ]
+    }
   }
 }

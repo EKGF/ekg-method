@@ -41,7 +41,7 @@ defines what a Persona needs to accomplish within a Use Case_
       (e.g., "As the Chief Risk Officer...")
     - **What** — What they need to do or know (e.g., "...I need to
       know our current Risk Position...")
-    - **Why** — The business [Outcome](outcome) or purpose (e.g.,
+    - **Why** — The business [Outcome](outcome/index.md) or purpose (e.g.,
       "...so that I can Assess the Risk")
 
     !!! tip "Start simple"
@@ -195,9 +195,9 @@ defines what a Persona needs to accomplish within a Use Case_
       Persona needs the capability
     - **[Use Cases](use-case.md)** — Stories are organized within
       Use Cases, defining the functional requirements
-    - **[Outcomes](outcome)** — The "why" part of a Story links
+    - **[Outcomes](outcome/index.md)** — The "why" part of a Story links
       to business outcomes
-    - **[Concepts](concept)** — Stories reference domain concepts
+    - **[Concepts](concept/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
     - **[Workflows](workflow.md)** — Stories are executed as steps
       within workflows
