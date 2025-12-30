@@ -46,6 +46,7 @@ _Technical manifestations of a Concept in code, data, and metadata_
 
     ## Semantic & Validation Artifacts
     Later in the lifecycle (Build phase), Technical Terms also represent:
+
     - **OWL classes and properties** in an ontology.
     - **SHACL shapes** and constraints.
 
