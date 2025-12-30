@@ -1,8 +1,8 @@
 ---
 description: >-
-  The foundational structure that organizes business capabilities into reusable,
-  governed components within the Enterprise Knowledge Graph. Learn how the Use
-  Case Tree drives EKG development.
+  The foundational structure that organizes business capabilities into
+  reusable, governed components within the Enterprise Knowledge Graph.
+  Learn how the Use Case Tree drives EKG development.
 keywords:
   - use case tree
   - UCT
@@ -16,22 +16,23 @@ schema_type: "Article"
 # Use Case Tree (UCT)
 
 <!--summary-start-->
+
 _The foundational structure that organizes business capabilities into
 reusable, governed components within the Enterprise Knowledge Graph_
+
 <!--summary-end-->
 
 ## What Is the Use Case Tree?
 
 The **Use Case Tree (UCT)** is the most critical artifact in the
-development of an Enterprise Knowledge Graph (EKG).
-It is the EKG's equivalent of a long-term data strategy and business
-capability plan — a high-level requirements overview, scoping and
-dependency model that organizes everything the enterprise does.
+development of an Enterprise Knowledge Graph (EKG). It is the EKG's
+equivalent of a long-term data strategy and business capability plan —
+a high-level requirements overview, scoping and dependency model that
+organizes everything the enterprise does.
 
 At its core, the Use Case Tree breaks down strategic business
-capabilities into smaller, reusable building blocks called
-**use cases**.
-Strategic use cases such as
+capabilities into smaller, reusable building blocks called **use
+cases**. Strategic use cases such as
 "[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)"
 or "[Client 360](https://catalog.ekgf.org/use-case/client-360/)" are
 decomposed into smaller use cases that can be implemented
@@ -39,9 +40,9 @@ incrementally.
 
 Each use case in the tree acts as a **semantic package** — a module,
 component, and building block that can be discovered, versioned, and
-reused across the enterprise.
-Everything done in a business, especially in data and technology,
-should be traceable to a use case in the Use Case Tree.
+reused across the enterprise. Everything done in a business,
+especially in data and technology, should be traceable to a use case
+in the Use Case Tree.
 
 !!! tip "Higher-level abstraction"
 
@@ -55,10 +56,9 @@ should be traceable to a use case in the Use Case Tree.
 ## Why the Use Case Tree Matters
 
 The Use Case Tree serves as the organizing principle for the entire
-Use Case Tree Method.
-It bridges the gap between business vision and technical execution,
-ensuring that every capability is designed for reuse and governed
-throughout its lifecycle.
+Use Case Tree Method. It bridges the gap between business vision and
+technical execution, ensuring that every capability is designed for
+reuse and governed throughout its lifecycle.
 
 ### Know What the Business Wants
 
@@ -97,15 +97,14 @@ becomes the contract with the business:
 - **Complete traceability** — everything done is directly or
   indirectly relatable to a use case in the tree
 - **Ongoing visibility** — the business never loses sight of budget
-  and deliverables, with all reporting occurring in the context of
-  the agreed Use Case Tree
+  and deliverables, with all reporting occurring in the context of the
+  agreed Use Case Tree
 
 ### Bridge Business and Technology
 
 The Use Case Tree creates a shared language between business and
-technology teams.
-It enables continuous engagement with product owners and stakeholders
-throughout the lifecycle of use cases.
+technology teams. It enables continuous engagement with product owners
+and stakeholders throughout the lifecycle of use cases.
 
 !!! tip "Think beyond the immediate use case"
 
@@ -121,16 +120,16 @@ throughout the lifecycle of use cases.
     why prioritizing reuse delivers both quality and broader buy-in
     across the firm or industry.
 
-By engaging multiple stakeholders — not just the direct product
-owner, but also stakeholders of neighboring or higher-level use cases
-— teams can identify reuse opportunities that accelerate delivery
-rather than slow it down.
+By engaging multiple stakeholders — not just the direct product owner,
+but also stakeholders of neighboring or higher-level use cases — teams
+can identify reuse opportunities that accelerate delivery rather than
+slow it down.
 
 ### Manage Expectations
 
 The Use Case Tree is the foundation of expectation management,
-creating an agreed and realistic strategic roadmap.
-It provides clarity on:
+creating an agreed and realistic strategic roadmap. It provides
+clarity on:
 
 - What will be delivered and when
 - How capabilities relate to business outcomes
@@ -140,8 +139,7 @@ It provides clarity on:
 ### Enable Modularity and Reuse
 
 The Use Case Tree is the foundational mechanism for creating an
-ecosystem of reusable components for the EKG.
-Each use case can be:
+ecosystem of reusable components for the EKG. Each use case can be:
 
 - **Designed** as a reusable building block
 - **Versioned** and governed independently
@@ -155,10 +153,9 @@ This aligns directly with the objectives of
 ### Avoid "Boiling the Ocean"
 
 Semantic technology projects often spend excessive time modeling
-everything in a domain — "boiling the ocean."
-The Use Case Tree and its individual use cases define an agreed
-scope at the appropriate level of detail (without becoming overly
-technical).
+everything in a domain — "boiling the ocean." The Use Case Tree and
+its individual use cases define an agreed scope at the appropriate
+level of detail (without becoming overly technical).
 
 - **Provides focus** for the Center of Excellence (CoE), enabling
   teams to deliver use cases incrementally
@@ -168,9 +165,9 @@ technical).
 
 ### Map All Knowledge
 
-The Use Case Tree provides a comprehensive map of all knowledge,
-data, and functionality — whether implemented as running EKG use
-cases or planned for the future — across the enterprise.
+The Use Case Tree provides a comprehensive map of all knowledge, data,
+and functionality — whether implemented as running EKG use cases or
+planned for the future — across the enterprise.
 
 This map is essential because:
 
@@ -188,9 +185,8 @@ That's why the Use Case Tree enforces:
 
 For example, when a sub-use case in one high-level use case is also
 used in another (via `is-used-in`), changes serving one stakeholder's
-needs could affect others.
-The Use Case Tree makes these relationships visible, enabling teams to
-avoid disruption across the board.
+needs could affect others. The Use Case Tree makes these relationships
+visible, enabling teams to avoid disruption across the board.
 
 ### Foundational Structure for Quality
 
@@ -220,20 +216,20 @@ The Use Case Tree is closely related to several other concepts in the
 Use Case Tree Method:
 
 - **[Use Case](use-case.md)** — Individual nodes in the tree
-- **[Enable Reuse](../objective/enable-reuse.md)** — The Use Case
-  Tree is the primary mechanism for enabling reuse
-- **[Composable Business](../objective/composable-business.md)** —
-  The tree organizes capabilities for composition
+- **[Enable Reuse](../objective/enable-reuse.md)** — The Use Case Tree
+  is the primary mechanism for enabling reuse
+- **[Composable Business](../objective/composable-business.md)** — The
+  tree organizes capabilities for composition
 - **[Persona](persona.md)**, **[Story](story.md)**,
   **[Workflow](workflow.md)**, **[Data Product](data-product.md)**,
-  **[Ontology](ontology.md)** — All registered within use cases in
-  the tree
+  **[Ontology](ontology.md)** — All registered within use cases in the
+  tree
 
 ## Summary
 
 The Use Case Tree is not just a planning tool — it is the living
-structure that organizes, governs, and enables reuse of every
-business capability in the Enterprise Knowledge Graph.
-It bridges business and technology, manages expectations, enables
-modularity, prevents scope creep, maps enterprise knowledge, and
-provides the foundation for quality at scale.
+structure that organizes, governs, and enables reuse of every business
+capability in the Enterprise Knowledge Graph. It bridges business and
+technology, manages expectations, enables modularity, prevents scope
+creep, maps enterprise knowledge, and provides the foundation for
+quality at scale.

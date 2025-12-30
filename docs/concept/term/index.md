@@ -1,8 +1,9 @@
 ---
 description: >-
-  A manifestation of a Concept: a business-facing or technical term (e.g.,
-  synonyms, abbreviations, variable names) that all mean the same thing in the
-  Concept's context. Learn how Terms work in the Use Case Tree Method.
+  A manifestation of a Concept: a business-facing or technical term
+  (e.g., synonyms, abbreviations, variable names) that all mean the
+  same thing in the Concept's context. Learn how Terms work in the Use
+  Case Tree Method.
 keywords:
   - term
   - business term
@@ -16,14 +17,17 @@ schema_type: "Article"
 # Term
 
 <!--summary-start-->
-_A manifestation of a Concept: the words (business-facing and technical) used to refer to the same underlying meaning_
+
+_A manifestation of a Concept: the words (business-facing and
+technical) used to refer to the same underlying meaning_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
 
     ## What Is a Term?
 
-    A **Term** is a word or phrase people use to refer to a [Concept](concept.md) in a given
+    A **Term** is a word or phrase people use to refer to a [Concept](../concept.md) in a given
     context.
     Concepts are about **meaning**; Terms are about **how that meaning shows up** in language.
 
@@ -34,9 +38,9 @@ _A manifestation of a Concept: the words (business-facing and technical) used to
 
     Terms come in two broad categories:
 
-    - **Business Terms** — user-facing terminology used in conversations, documentation, UI, and
+    - **[Business Terms](business-term.md)** — user-facing terminology used in conversations, documentation, UI, and
       policies (e.g., “Customer”, “Counterparty”, “Risk Position”)
-    - **Technical Terms** — manifestations in code and data (e.g., variable names, column names,
+    - **[Technical Terms](technical-term.md)** — manifestations in code and data (e.g., variable names, column names,
       API parameters, query bindings)
 
     Treat both as Terms, because both are used by people, and both need to be linked back to the
@@ -159,4 +163,3 @@ _A manifestation of a Concept: the words (business-facing and technical) used to
 
     - **Ontology / shape identifier** (IRI), e.g. `hospital:Patient`
     - **Mapping kind** (e.g., representsClass / representsProperty / constrainedByShape)
-

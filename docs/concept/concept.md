@@ -259,7 +259,7 @@ reason about business concepts_
         - A Concept does not have a traditional label such as `skos:prefLabel` or `rdfs:label`.
         - Instead, it has a **labelTerm** link to one of its **BusinessTerm** objects (a resource
           in the Knowledge Graph).
-        - Learn more in [Term](term.md).
+        - Learn more in [Term](term/index.md).
 
     - **Definition**
         - A Concept must have a business-focused definition explaining what it means in context.
@@ -273,7 +273,7 @@ reason about business concepts_
           manifestations.
         - Terms are **owned** by the Concept (part-of): when the Concept is deleted, its Term
           objects are deleted as well.
-        - Learn more in [Term](term.md).
+        - Learn more in [Term](term/index.md).
 
     - **Contained in a Concept Vocabulary**
         - A Concept is a member of a Concept Vocabulary (a “container” of Concepts).

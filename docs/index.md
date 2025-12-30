@@ -110,7 +110,7 @@ cases with dependencies, so you can deliver in the right order.
 
   The core building blocks: [use case](concept/use-case.md),
   [outcome](concept/outcome.md), [workflow](concept/workflow.md),
-  [terms](concept/term.md), and more.
+  [terms](concept/term/index.md), and more.
 
   [:octicons-arrow-right-24: Explore concepts](concept/use-case.md)
 
