@@ -4,6 +4,7 @@ venv/
 __pypackages__/
 site/
 poetry.lock
+node_modules/
 .DS_Store
 .texpadtmp
 *.aux
