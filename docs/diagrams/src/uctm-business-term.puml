@@ -1,0 +1,17 @@
+@startuml
+!include ../include/themes/light.puml
+top to bottom direction
+hide members
+
+class "Term" as Term [[/concept/term/index.md]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+
+' Inheritance
+Term <|-- BusinessTerm
+
+' Ownership
+Concept "1" *-- "1..*" BusinessTerm : owns
+
+@enduml
+

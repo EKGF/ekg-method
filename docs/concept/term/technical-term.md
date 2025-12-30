@@ -1,45 +1,64 @@
 ---
 description: >-
   Technical manifestations of a Concept in code, data, and metadata.
-  Learn how Technical Terms bridge the gap between human language and
-  machine-readable data.
+  Learn how Technical Terms bridge the gap between human language and machine-readable data.
 keywords:
   - technical term
   - variable name
   - column header
   - API parameter
   - EKG method
+schema_type: "Article"
 ---
 
 # Technical Term
 
-Technical Terms are manifestations of a [Concept](../concept.md) in
-code and data.
+<!--summary-start-->
+_Technical manifestations of a Concept in code, data, and metadata_
+<!--summary-end-->
 
-## Purpose
+=== "Business & Management Audience"
 
-Technical Terms allow the Knowledge Graph to connect technical
-artifacts back to a consistent semantic core. This enables automated
-discovery and traceability from business requirements down to the
-exact line of code or database column.
+    ## What is a Technical Term?
+    A **Technical Term** is the manifestation of a [Concept](../concept.md) in the digital landscape—code, databases, and APIs.
 
-## Categories of Technical Terms
+    While Business Terms focus on how people talk, Technical Terms focus on how systems "speak." Linking these together in the Knowledge Graph provides 100% traceability from a high-level business requirement down to the exact database column or line of code.
 
-### Code & Data Manifestations
+    ## Why it Matters
+    - **Automated Discovery**: We can scan codebases to find where business concepts are actually implemented.
+    - **Impact Analysis**: See how a change in business logic affects specific technical components.
+    - **Transparency**: Provides a clear map of how data flows through the enterprise.
 
-- **Variable names** (e.g., `cust_id`, `?patient`)
-- **Database column names** (e.g., `P_NAME`, `CLIENT_REF`)
-- **API parameters and fields** (e.g., `/customers/{id}`)
+=== "Data & Tech Audience"
 
-### Semantic Artifacts
+    ## Technical Terms in Code and Data
+    Technical Terms include any symbol or identifier used in technical artifacts:
+    - **Variable names** (e.g., `_customer`, `cust_id`, `?cust`)
+    - **Database columns** (e.g., `P_NAME`, `CLIENT_REF`)
+    - **API parameters** (e.g., `/customers/{id}`)
 
-In the Build phase, Technical Terms include links to:
+    ## Automated Discovery
+    Technical Terms are often discovered automatically by scanning repositories (Python, Java, SQL, CSV, etc.). Each detected manifestation becomes a Technical Term that links back to the Concept.
 
-- **OWL classes and properties** (e.g., `hospital:Patient`)
-- **SHACL shapes** for validation
+    ## Semantic & Validation Artifacts
+    Later in the lifecycle (Build phase), Technical Terms also represent:
+    - **OWL classes and properties** in an ontology.
+    - **SHACL shapes** and constraints.
 
-## Automated Discovery
+=== "Ontology"
 
-Technical Terms can often be **discovered automatically** by scanning
-the organization’s repositories: Python/Java code, SQL, configuration,
-CSV column headers, and API specs.
+    ## Ontology (minimal facts we can state today)
+
+    --8<-- "fragment/uctm-diagram-technical-term.md"
+
+    ### Required facts about a Technical Term
+    - **Inherits from Term**: All facts required for a [Term](index.md#ontology) apply.
+    - **Term Kind**: Must be identified as a "Technical Term".
+    - **Provenance (Source Location)**: Must capture where the term was found:
+        - **Repository URL**
+        - **File path & Line range**
+        - **Commit / Revision**
+
+    ### Optional but Recommended
+    - **System / Artifact**: The specific system where the term resides.
+    - **Mapping Kind**: For ontology terms (e.g., `representsClass`, `constrainedByShape`).

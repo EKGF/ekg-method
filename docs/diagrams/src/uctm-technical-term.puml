@@ -1,0 +1,17 @@
+@startuml
+!include ../include/themes/light.puml
+top to bottom direction
+hide members
+
+class "Term" as Term [[/concept/term/index.md]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+
+' Inheritance
+Term <|-- TechnicalTerm
+
+' Ownership
+Concept "1" *-- "1..*" TechnicalTerm : owns
+
+@enduml
+
