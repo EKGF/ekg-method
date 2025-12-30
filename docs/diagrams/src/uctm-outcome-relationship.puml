@@ -4,7 +4,7 @@ top to bottom direction
 hide members
 
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
-class "Outcome" as Outcome [[/concept/outcome/index.md#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 
 ' Links
