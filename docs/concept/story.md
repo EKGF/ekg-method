@@ -208,7 +208,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
+    ## Ontology (minimal facts we can state today) {: #ontology }
 
     --8<-- "fragment/uctm-diagram-story.md"
 

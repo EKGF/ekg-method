@@ -55,7 +55,7 @@ policies_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
+    ## Ontology (minimal facts we can state today) {: #ontology }
 
     --8<-- "fragment/uctm-diagram-business-term.md"
 

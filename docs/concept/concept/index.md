@@ -28,7 +28,7 @@ reason about business concepts_
 
     ## What Is a Concept?
 
-    For every given [Use Case](use-case.md), we want to start with
+    For every given [Use Case](../use-case.md), we want to start with
     capturing the concepts and terms that the user or "the business"
     uses or wants to use.
 
@@ -65,7 +65,7 @@ reason about business concepts_
 
     Each Use Case can have its own vocabulary of concepts, but it can
     also inherit or borrow concepts from higher-level or related use
-    cases in the [Use Case Tree](use-case-tree.md).
+    cases in the [Use Case Tree](../use-case-tree.md).
     This enables reuse and consistency across the enterprise.
 
     ## Evolution and Refinement
@@ -221,18 +221,18 @@ reason about business concepts_
 
     Concepts are fundamental building blocks that relate to:
 
-    - **[Use Cases](use-case.md)** — Each use case has a vocabulary
+    - **[Use Cases](../use-case.md)** — Each use case has a vocabulary
       of concepts
-    - **[Personas](persona.md)** — Personas are Concepts, enabling
+    - **[Personas](../persona.md)** — Personas are Concepts, enabling
       semantic definition and reasoning
-    - **[Stories](story.md)** — Stories reference domain concepts
+    - **[Stories](../story.md)** — Stories reference domain concepts
       that need to be understood and modeled
-    - **[Ontologies](ontology.md)** — Concepts link to ontology
+    - **[Ontologies](../ontology.md)** — Concepts link to ontology
       classes, properties, and shapes
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
+    ## Ontology (minimal facts we can state today) {: #ontology }
 
     --8<-- "fragment/uctm-diagram-concept.md"
 
@@ -259,7 +259,7 @@ reason about business concepts_
         - A Concept does not have a traditional label such as `skos:prefLabel` or `rdfs:label`.
         - Instead, it has a **labelTerm** link to one of its **BusinessTerm** objects (a resource
           in the Knowledge Graph).
-        - Learn more in [Term](term/index.md).
+        - Learn more in [Term](../term/index.md).
 
     - **Definition**
         - A Concept must have a business-focused definition explaining what it means in context.
@@ -273,7 +273,7 @@ reason about business concepts_
           manifestations.
         - Terms are **owned** by the Concept (part-of): when the Concept is deleted, its Term
           objects are deleted as well.
-        - Learn more in [Term](term/index.md).
+        - Learn more in [Term](../term/index.md).
 
     - **Contained in a Concept Vocabulary**
         - A Concept is a member of a Concept Vocabulary (a “container” of Concepts).

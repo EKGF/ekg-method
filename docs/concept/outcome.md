@@ -1,8 +1,9 @@
 ---
 description: >-
-  The specific result or benefit that an organization expects to achieve from
-  a Use Case, providing the 'why' behind every business requirement. Learn how
-  outcomes drive business value in the Use Case Tree Method.
+  The specific result or benefit that an organization expects to
+  achieve from a Use Case, providing the 'why' behind every business
+  requirement. Learn how outcomes drive business value in the Use Case
+  Tree Method.
 keywords:
   - outcome
   - business outcome
@@ -15,8 +16,11 @@ schema_type: "Article"
 # Outcome
 
 <!--summary-start-->
-_The specific result or benefit that an organization expects to achieve
-from a Use Case, providing the "why" behind every business requirement_
+
+_The specific result or benefit that an organization expects to
+achieve from a Use Case, providing the "why" behind every business
+requirement_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -212,7 +216,7 @@ from a Use Case, providing the "why" behind every business requirement_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
+    ## Ontology (minimal facts we can state today) {: #ontology }
 
     --8<-- "fragment/uctm-diagram-outcome.md"
 

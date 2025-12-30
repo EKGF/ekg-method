@@ -322,7 +322,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
+    ## Ontology (minimal facts we can state today) {: #ontology }
 
     --8<-- "fragment/uctm-diagram-workflow.md"
 
