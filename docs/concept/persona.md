@@ -219,7 +219,7 @@ or entities — involved in a Use Case, defined using business language_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today) {: #ontology-facts }
+    ## Ontology (minimal facts we can state today)
 
     --8<-- "fragment/uctm-diagram-persona.md"
 

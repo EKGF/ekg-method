@@ -3,9 +3,9 @@
 top to bottom direction
 hide members
 
-class "Story" as Story [[/concept/story/#ontology-facts]]
-class "Concept" as Concept [[/concept/concept/#ontology-facts]]
-class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology-facts]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Usage
 Story "0..*" *-- "1" StoryConceptRelationship : owns

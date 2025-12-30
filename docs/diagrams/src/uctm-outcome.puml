@@ -3,9 +3,9 @@
 top to bottom direction
 hide members
 
-class "Outcome" as Outcome [[/concept/outcome/#ontology-facts]]
-class "UseCase" as UseCase [[/concept/use-case/#ontology-facts]]
-class "Story" as Story [[/concept/story/#ontology-facts]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
 
 ' Outcome linkage (relationship-object)

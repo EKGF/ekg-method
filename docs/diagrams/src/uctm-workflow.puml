@@ -3,12 +3,12 @@
 top to bottom direction
 hide members
 
-class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology-facts]]
-class "UseCase" as UseCase [[/concept/use-case/#ontology-facts]]
-class "Story" as Story [[/concept/story/#ontology-facts]]
-class "Outcome" as Outcome [[/concept/outcome/#ontology-facts]]
-class "Concept" as Concept [[/concept/concept/#ontology-facts]]
-class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology-facts]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Other resources point to UseCase (typical KG modeling style)
 WorkflowDefinition "0..*" --> "1" UseCase : :useCase

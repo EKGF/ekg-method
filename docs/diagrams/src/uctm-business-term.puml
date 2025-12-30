@@ -3,9 +3,9 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/#ontology-facts]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology-facts]]
-class "Concept" as Concept [[/concept/concept/#ontology-facts]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
 
 ' Inheritance
 Term <|-- BusinessTerm

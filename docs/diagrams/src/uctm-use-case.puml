@@ -3,19 +3,19 @@
 top to bottom direction
 hide members
 
-class "UseCase" as UseCase [[/concept/use-case/#ontology-facts]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "UseCaseStereotype" as UseCaseStereotype
-class "Story" as Story [[/concept/story/#ontology-facts]]
-class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology-facts]]
-class "Outcome" as Outcome [[/concept/outcome/#ontology-facts]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
 class "ConceptVocabulary" as ConceptVocabulary
-class "Concept" as Concept [[/concept/concept/#ontology-facts]]
-class "Term" as Term [[/concept/term/#ontology-facts]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology-facts]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology-facts]]
-class "Persona" as Persona [[/concept/persona/#ontology-facts]]
-class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology-facts]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "Persona" as Persona [[/concept/persona/#ontology]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 class "PersonaTaxonomy" as PersonaTaxonomy
 
 ' Term specializations

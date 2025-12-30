@@ -633,7 +633,7 @@ business outcomes within the Use Case Tree_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today) {: #ontology-facts }
+    ## Ontology (minimal facts we can state today)
 
     --8<-- "fragment/uctm-diagram-use-case.md"
 
