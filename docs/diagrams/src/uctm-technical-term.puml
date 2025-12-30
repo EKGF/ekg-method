@@ -3,9 +3,9 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
+class "Term" as Term [[/concept/term/#ontology-facts]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology-facts]]
+class "Concept" as Concept [[/concept/concept/#ontology-facts]]
 
 ' Inheritance
 Term <|-- TechnicalTerm

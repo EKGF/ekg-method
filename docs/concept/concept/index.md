@@ -232,7 +232,7 @@ reason about business concepts_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today) {: #ontology }
+    ## Ontology (minimal facts we can state today) {: #ontology-facts }
 
     --8<-- "fragment/uctm-diagram-concept.md"
 
