@@ -6,7 +6,7 @@ hide members
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
-class "OutcomeRelationship" as OutcomeRelationship
+class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 
 ' Outcome linkage (relationship-object)
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase

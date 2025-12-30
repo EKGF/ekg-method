@@ -179,7 +179,7 @@ business outcomes within the Use Case Tree_
     ## Essential Elements
 
     Every Use Case starts with these fundamental components, defined
-    during the [Plan Phase](../process/plan/index.md):
+    during the [Plan Phase](../process/plan):
 
     - **Name and description** — Clear identification and purpose.
       This provides the foundation for all other components and
@@ -189,7 +189,7 @@ business outcomes within the Use Case Tree_
       outcome(s) and how they can be measured.
       These define success criteria and provide the "why" behind
       the use case.
-      See [Outcome](outcome.md) for more details.
+      See [Outcome](outcome) for more details.
 
     - **Personas** — The [personas](persona.md) of all the people and
       systems involved in the domain or scope represented by the Use
@@ -201,7 +201,7 @@ business outcomes within the Use Case Tree_
       in the context of the Use Case.
       These form the vocabulary of the domain and link to the
       semantic models (ontologies) that will be developed.
-      See [Concept](concept/index.md) for more details.
+      See [Concept](concept) for more details.
 
     !!! tip "Start simple, evolve iteratively"
 
@@ -211,7 +211,7 @@ business outcomes within the Use Case Tree_
 
     ## Additional Elements (Later in Lifecycle)
 
-    As the Use Case moves into the [Build Phase](../process/build/index.md),
+    As the Use Case moves into the [Build Phase](../process/build),
     additional components are added:
 
     - **Stories** — The functional requirements and business logic
@@ -294,7 +294,7 @@ business outcomes within the Use Case Tree_
 
     ### Plan Phase
 
-    During the [Plan Phase](../process/plan/index.md), the use case
+    During the [Plan Phase](../process/plan), the use case
     starts as an idea and evolves into a well-defined requirement:
 
     - **Ideation** — Initial concept or business need identified
@@ -309,7 +309,7 @@ business outcomes within the Use Case Tree_
 
     ### Build Phase
 
-    During the [Build Phase](../process/build/index.md), the use case
+    During the [Build Phase](../process/build), the use case
     becomes executable:
 
     - **Design** — Stories, workflows, and data models designed
@@ -326,7 +326,7 @@ business outcomes within the Use Case Tree_
 
     ### Run Phase
 
-    During the [Run Phase](../process/run/index.md), the use case
+    During the [Run Phase](../process/run), the use case
     operates in production:
 
     - **Deployment** — Use case deployed to production environment
@@ -382,9 +382,9 @@ business outcomes within the Use Case Tree_
 
     The Use Case Tree Method defines a process consisting of three phases, each
     with well-defined steps:
-    [Plan](../process/plan/index.md),
-    [Build](../process/build/index.md), and
-    [Run](../process/run/index.md).
+    [Plan](../process/plan),
+    [Build](../process/build), and
+    [Run](../process/run).
 
     The **Use Case Tree** is the common artifact across each of these
     phases — and most of their steps.
@@ -412,7 +412,7 @@ business outcomes within the Use Case Tree_
         1. **Name + Business Description**
         2. **Desired Business Outcomes**
             - Definition of Success
-        3. **[Personas](../concept/persona.md), [Concepts & Terms](../concept/concept/index.md)**
+        3. **[Personas](../concept/persona.md), [Concepts & Terms](../concept/concept)**
             - Add examples i.e. input for test scenarios
         4. **[Stories](../concept/story.md) & [Workflows](../concept/workflow.md)**
             - High level but agreed, metrics-based estimates
@@ -432,7 +432,7 @@ business outcomes within the Use Case Tree_
             - Identify existing datasets or develop new
               [_Self-describing datasets_ (SDDs)](https://principles.ekgf.org/vocab/sdd)
         7. **Ontologies**
-            - Map the given [Concepts](../concept/concept/index.md) to the
+            - Map the given [Concepts](../concept/concept) to the
               right Ontologies
         8. **Test Scenarios**
             - Define test-datasets and test-scenarios for each
@@ -449,7 +449,7 @@ business outcomes within the Use Case Tree_
             - Predict cost & delivery
             - Based on metrics of previous use cases
 
-        [:octicons-arrow-right-24: Learn more](../process/build/index.md)
+        [:octicons-arrow-right-24: Learn more](../process/build)
 
     - :material-run:{ .lg } __Run Phase__
 
@@ -472,7 +472,7 @@ business outcomes within the Use Case Tree_
             - Version roadmap
             - Integration with new use cases
 
-        [:octicons-arrow-right-24: Learn more](../process/run/index.md)
+        [:octicons-arrow-right-24: Learn more](../process/run)
 
     </div>
 
@@ -672,7 +672,9 @@ business outcomes within the Use Case Tree_
           but the key is to capture expected **short/mid/long-term outcomes**.
 
     - **Outcome relationships (supports inheritance and contribution mapping)**
-        - Model the connection between a Use Case and an Outcome via a **relationship-object**
+        - Model the connection between a Use Case and an Outcome via
+          an
+          **[Outcome Relationship](outcome/outcome-relationship.md)**
           (not just a direct link).
         - This enables a Use Case to relate to an Outcome it **owns**, and also enables a child
           Use Case to **reference an Outcome defined on a parent Use Case** (inherited) and
@@ -747,7 +749,7 @@ business outcomes within the Use Case Tree_
 
     ### How it fits with Concepts & Terms
 
-    In the Use Case Tree Method, [Concepts & Terms](concept/index.md) capture the shared vocabulary
+    In the Use Case Tree Method, [Concepts & Terms](concept) capture the shared vocabulary
     and intent.
     Ontologies make that vocabulary **precise and machine-actionable** (identifiers, relations,
     constraints, and alignment to standards).

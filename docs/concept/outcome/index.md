@@ -216,6 +216,7 @@ requirement_
 
 === "Ontology"
 
+    <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
 
     --8<-- "fragment/uctm-diagram-outcome.md"
@@ -255,7 +256,8 @@ requirement_
           Cases (e.g., children).
 
     - **Use Case ↔ Outcome relationship-object (recommended)**
-        - Model the connection between a Use Case and an Outcome via a **relationship-object**
+        - Model the connection between a Use Case and an Outcome via an
+          **[Outcome Relationship](outcome-relationship.md)**
           (not just a direct link).
         - This supports:
             - **Inheritance**: a child Use Case referencing an Outcome defined on a parent Use Case

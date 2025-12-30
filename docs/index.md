@@ -104,22 +104,22 @@ cases with dependencies, so you can deliver in the right order.
   [quality](objective/increase-quality.md),
   [alignment](objective/align-with-business-strategy.md), and more.
 
-  [:octicons-arrow-right-24: Explore the objectives](objective/index.md)
+  [:octicons-arrow-right-24: Explore the objectives](objective)
 
 - :material-lightbulb-outline: **Concepts**
 
   The core building blocks: [use case](concept/use-case.md),
-  [outcome](concept/outcome.md), [workflow](concept/workflow.md),
-  [terms](concept/term/index.md), and more.
+  [outcome](concept/outcome), [workflow](concept/workflow.md),
+  [terms](concept/term), and more.
 
   [:octicons-arrow-right-24: Explore concepts](concept/use-case.md)
 
 - :material-cog-outline: **Process**
 
-  [Plan](process/plan/index.md), [build](process/build/index.md), and
-  [run](process/run/index.md) EKG components — from first use case to
+  [Plan](process/plan), [build](process/build), and
+  [run](process/run) EKG components — from first use case to
   scale.
 
-  [:octicons-arrow-right-24: Explore the process](process/index.md)
+  [:octicons-arrow-right-24: Explore the process](process)
 
 </div>

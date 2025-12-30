@@ -8,7 +8,7 @@ class "UseCaseStereotype" as UseCaseStereotype
 class "Story" as Story [[/concept/story/#ontology]]
 class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
-class "OutcomeRelationship" as OutcomeRelationship
+class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "Term" as Term [[/concept/term/#ontology]]

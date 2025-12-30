@@ -61,11 +61,11 @@ Stories within a Use Case to achieve desired business Outcomes_
     Workflows consist of a sequence of steps, where each step
     corresponds to executing a [Story](story.md) in the use case.
     The steps are organized to achieve the desired business
-    [Outcome](outcome.md).
+    [Outcome](outcome).
 
     The concepts and terms used in the workflow are based on the
     context-specific vocabulary identified during the requirements
-    gathering phase — the same [Concepts](concept/index.md) that define
+    gathering phase — the same [Concepts](concept) that define
     the use case's domain.
 
     ## When Are Workflows Defined?
@@ -91,9 +91,9 @@ Stories within a Use Case to achieve desired business Outcomes_
     Every Use Case has one or more Workflows that describe how
     business processes should be executed.
 
-    Workflows depend on the [Concepts](concept/index.md) captured during
+    Workflows depend on the [Concepts](concept) captured during
     the requirements gathering phase and are executed to achieve the
-    desired business [Outcome](outcome.md).
+    desired business [Outcome](outcome).
 
     ## Workflow Components
 
@@ -309,9 +309,9 @@ Stories within a Use Case to achieve desired business Outcomes_
       workflows
     - **[Stories](story.md)** — Each workflow step corresponds to
       executing a story
-    - **[Concepts](concept/index.md)** — Workflows use concepts from the
+    - **[Concepts](concept)** — Workflows use concepts from the
       use case's vocabulary
-    - **[Outcomes](outcome.md)** — Workflows are executed to achieve
+    - **[Outcomes](outcome)** — Workflows are executed to achieve
       desired business outcomes
     - **[Personas](persona.md)** — Workflows specify which personas
       are involved in each step
