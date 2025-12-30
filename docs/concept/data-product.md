@@ -1,8 +1,8 @@
 ---
 description: >-
-  A semantic data product that provides required information for a Use Case,
-  selected based on semantic relevance and suitability. Learn how data products
-  enable reuse in the Use Case Tree Method.
+  A semantic data product that provides required information for a Use
+  Case, selected based on semantic relevance and suitability. Learn
+  how data products enable reuse in the Use Case Tree Method.
 keywords:
   - data product
   - semantic data product
@@ -16,9 +16,11 @@ schema_type: "Article"
 # Data Product
 
 <!--summary-start-->
+
 _A semantic data product that provides required information for a Use
-Case, selected based on semantic relevance and suitability to the
-use case's requirements_
+Case, selected based on semantic relevance and suitability to the use
+case's requirements_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -155,7 +157,7 @@ use case's requirements_
       products to fulfill their requirements
     - **[Ontologies](ontology.md)** — Data products use ontologies
       to define the semantic meaning of their data
-    - **[Concepts](concept.md)** — Data products contain data about
+    - **[Concepts](concept/index.md)** — Data products contain data about
       concepts that are relevant to use cases
     - **[Stories](story.md)** — Stories may require specific data
       products to fulfill their needs
@@ -318,5 +320,3 @@ use case's requirements_
 
         The stereotype simply indicates the primary purpose or role of
         that use case in the data economy.
-
-

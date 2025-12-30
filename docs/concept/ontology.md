@@ -1,9 +1,9 @@
 ---
 description: >-
-  A formal, machine-readable specification of concepts and their relationships
-  that bridges the gap between demand (Use Cases) and supply (Data Products).
-  Learn how ontologies enable semantic interoperability in the Use Case Tree
-  Method.
+  A formal, machine-readable specification of concepts and their
+  relationships that bridges the gap between demand (Use Cases) and
+  supply (Data Products). Learn how ontologies enable semantic
+  interoperability in the Use Case Tree Method.
 keywords:
   - ontology
   - semantic model
@@ -17,9 +17,11 @@ schema_type: "Article"
 # Ontology
 
 <!--summary-start-->
+
 _A formal, machine-readable specification of concepts and their
 relationships that bridges the gap between demand (Use Cases) and
 supply (Data Products) in the data economy_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -46,7 +48,7 @@ supply (Data Products) in the data economy_
 
     **Ontologies bridge the gap** between these two sides by
     providing a common language that can be used to describe the
-    [Concepts](concept.md) and relationships relevant to both the
+    [Concepts](concept/index.md) and relationships relevant to both the
     demand and supply sides.
 
     !!! tip "Common language"
@@ -110,7 +112,7 @@ supply (Data Products) in the data economy_
     products:
 
     1. **Use Cases define concepts** — Each use case has a
-       vocabulary of [Concepts](concept.md) that represent the
+       vocabulary of [Concepts](concept/index.md) that represent the
        domain knowledge it needs
     2. **Concepts link to ontologies** — Concepts are linked to
        ontology classes, properties, and shapes that define their
@@ -148,7 +150,7 @@ supply (Data Products) in the data economy_
 
     ## Relationship to Concepts
 
-    [Concepts](concept.md) serve as the linking pin between business
+    [Concepts](concept/index.md) serve as the linking pin between business
     language and ontologies:
 
     - **Business language** — Concepts capture the terms and ideas
@@ -183,7 +185,7 @@ supply (Data Products) in the data economy_
 
     Ontologies relate to other core concepts:
 
-    - **[Concepts](concept.md)** — Concepts link to ontology
+    - **[Concepts](concept/index.md)** — Concepts link to ontology
       classes, properties, and shapes to define their semantic
       meaning
     - **[Use Cases](use-case.md)** — Use cases have vocabularies of
@@ -196,4 +198,3 @@ supply (Data Products) in the data economy_
     This integration ensures that ontologies are not isolated
     specifications but part of a cohesive, semantic model of the
     enterprise.
-

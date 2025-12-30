@@ -134,7 +134,7 @@ or entities — involved in a Use Case, defined using business language_
     ### Ontology-Based Definition
 
     Technically (or ontologically), a **Persona is just another
-    [Concept](concept.md)** — tied to ontology-defined classes that
+    [Concept](concept/index.md)** — tied to ontology-defined classes that
     can inherit from other Persona types.
     This fundamental equivalence enables:
 

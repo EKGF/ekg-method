@@ -23,7 +23,7 @@ _Technical manifestations of a Concept in code, data, and metadata_
 === "Business & Management Audience"
 
     ## What is a Technical Term?
-    A **Technical Term** is the manifestation of a [Concept](../concept.md) in the digital landscape—code, databases, and APIs.
+    A **Technical Term** is the manifestation of a [Concept](../concept/index.md) in the digital landscape—code, databases, and APIs.
 
     While Business Terms focus on how people talk, Technical Terms focus on how systems "speak." Linking these together in the Knowledge Graph provides 100% traceability from a high-level business requirement down to the exact database column or line of code.
 

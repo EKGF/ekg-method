@@ -1,0 +1,15 @@
+@startuml
+!include ../include/themes/light.puml
+top to bottom direction
+hide members
+
+class "Story" as Story [[/concept/story.md]]
+class "Concept" as Concept [[/concept/concept/index.md]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship.md]]
+
+' Usage
+Story "0..*" *-- "1" StoryConceptRelationship : owns
+StoryConceptRelationship "0..*" --> "1" Concept : concept
+
+@enduml
+

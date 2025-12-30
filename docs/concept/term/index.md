@@ -27,7 +27,7 @@ technical) used to refer to the same underlying meaning_
 
     ## What Is a Term?
 
-    A **Term** is a word or phrase people use to refer to a [Concept](../concept.md) in a given
+    A **Term** is a word or phrase people use to refer to a [Concept](../concept/index.md) in a given
     context.
     Concepts are about **meaning**; Terms are about **how that meaning shows up** in language.
 

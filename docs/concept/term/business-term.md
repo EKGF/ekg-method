@@ -24,7 +24,7 @@ policies_
 === "Business & Management Audience"
 
     ## What is a Business Term?
-    A **Business Term** is a human-readable label for a [Concept](../concept.md). It represents how business users speak about a specific meaning within a given context.
+    A **Business Term** is a human-readable label for a [Concept](../concept/index.md). It represents how business users speak about a specific meaning within a given context.
 
     By linking multiple Business Terms (synonyms) to a single Concept, the Enterprise Knowledge Graph ensures that everyone is talking about the same underlying meaning even if they use different words.
 

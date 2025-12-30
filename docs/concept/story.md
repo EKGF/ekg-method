@@ -1,8 +1,8 @@
 ---
 description: >-
-  A structured business requirement expressed in plain language that defines
-  what a Persona needs to accomplish within a Use Case. Learn how stories
-  capture requirements in the Use Case Tree Method.
+  A structured business requirement expressed in plain language that
+  defines what a Persona needs to accomplish within a Use Case. Learn
+  how stories capture requirements in the Use Case Tree Method.
 keywords:
   - story
   - user story
@@ -16,8 +16,10 @@ schema_type: "Article"
 # Story
 
 <!--summary-start-->
+
 _A structured business requirement expressed in plain language that
 defines what a Persona needs to accomplish within a Use Case_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -78,7 +80,6 @@ defines what a Persona needs to accomplish within a Use Case_
     - **Everyone is aligned** — Business, data, and technology
       teams share a common understanding of what needs to be
       delivered
-
 
 === "Data & Tech Audience"
 
@@ -196,7 +197,7 @@ defines what a Persona needs to accomplish within a Use Case_
       Use Cases, defining the functional requirements
     - **[Outcomes](outcome.md)** — The "why" part of a Story links
       to business outcomes
-    - **[Concepts](concept.md)** — Stories reference domain concepts
+    - **[Concepts](concept/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
     - **[Workflows](workflow.md)** — Stories are executed as steps
       within workflows

@@ -201,7 +201,7 @@ business outcomes within the Use Case Tree_
       in the context of the Use Case.
       These form the vocabulary of the domain and link to the
       semantic models (ontologies) that will be developed.
-      See [Concept](concept.md) for more details.
+      See [Concept](concept/index.md) for more details.
 
     !!! tip "Start simple, evolve iteratively"
 
@@ -412,7 +412,7 @@ business outcomes within the Use Case Tree_
         1. **Name + Business Description**
         2. **Desired Business Outcomes**
             - Definition of Success
-        3. **[Personas](../concept/persona.md), [Concepts & Terms](../concept/concept.md)**
+        3. **[Personas](../concept/persona.md), [Concepts & Terms](../concept/concept/index.md)**
             - Add examples i.e. input for test scenarios
         4. **[Stories](../concept/story.md) & [Workflows](../concept/workflow.md)**
             - High level but agreed, metrics-based estimates
@@ -432,7 +432,7 @@ business outcomes within the Use Case Tree_
             - Identify existing datasets or develop new
               [_Self-describing datasets_ (SDDs)](https://principles.ekgf.org/vocab/sdd)
         7. **Ontologies**
-            - Map the given [Concepts](../concept/concept.md) to the
+            - Map the given [Concepts](../concept/concept/index.md) to the
               right Ontologies
         8. **Test Scenarios**
             - Define test-datasets and test-scenarios for each
@@ -747,7 +747,7 @@ business outcomes within the Use Case Tree_
 
     ### How it fits with Concepts & Terms
 
-    In the Use Case Tree Method, [Concepts & Terms](concept.md) capture the shared vocabulary
+    In the Use Case Tree Method, [Concepts & Terms](concept/index.md) capture the shared vocabulary
     and intent.
     Ontologies make that vocabulary **precise and machine-actionable** (identifiers, relations,
     constraints, and alignment to standards).

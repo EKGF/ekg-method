@@ -1,8 +1,9 @@
 ---
 description: >-
-  A logical sequence of steps that defines the order of execution for Stories
-  within a Use Case to achieve desired business Outcomes. Learn how workflows
-  structure business processes in the Use Case Tree Method.
+  A logical sequence of steps that defines the order of execution for
+  Stories within a Use Case to achieve desired business Outcomes.
+  Learn how workflows structure business processes in the Use Case
+  Tree Method.
 keywords:
   - workflow
   - business process
@@ -16,8 +17,10 @@ schema_type: "Article"
 # Workflow
 
 <!--summary-start-->
+
 _A logical sequence of steps that defines the order of execution for
 Stories within a Use Case to achieve desired business Outcomes_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -62,7 +65,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     The concepts and terms used in the workflow are based on the
     context-specific vocabulary identified during the requirements
-    gathering phase — the same [Concepts](concept.md) that define
+    gathering phase — the same [Concepts](concept/index.md) that define
     the use case's domain.
 
     ## When Are Workflows Defined?
@@ -88,7 +91,7 @@ Stories within a Use Case to achieve desired business Outcomes_
     Every Use Case has one or more Workflows that describe how
     business processes should be executed.
 
-    Workflows depend on the [Concepts](concept.md) captured during
+    Workflows depend on the [Concepts](concept/index.md) captured during
     the requirements gathering phase and are executed to achieve the
     desired business [Outcome](outcome.md).
 
@@ -306,7 +309,7 @@ Stories within a Use Case to achieve desired business Outcomes_
       workflows
     - **[Stories](story.md)** — Each workflow step corresponds to
       executing a story
-    - **[Concepts](concept.md)** — Workflows use concepts from the
+    - **[Concepts](concept/index.md)** — Workflows use concepts from the
       use case's vocabulary
     - **[Outcomes](outcome.md)** — Workflows are executed to achieve
       desired business outcomes
