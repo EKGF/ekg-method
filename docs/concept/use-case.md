@@ -191,7 +191,7 @@ business outcomes within the Use Case Tree_
       the use case.
       See [Outcome](outcome/index.md) for more details.
 
-    - **Personas** — The [personas](persona.md) of all the people and
+    - **Personas** — The [personas](persona/index.md) of all the people and
       systems involved in the domain or scope represented by the Use
       Case.
       Personas define who (or what) interacts with the use case and
@@ -412,7 +412,7 @@ business outcomes within the Use Case Tree_
         1. **Name + Business Description**
         2. **Desired Business Outcomes**
             - Definition of Success
-        3. **[Personas](../concept/persona.md), [Concepts & Terms](concept/index.md)**
+        3. **[Personas](../concept/persona/index.md), [Concepts & Terms](concept/index.md)**
             - Add examples i.e. input for test scenarios
         4. **[Stories](../concept/story.md) & [Workflows](../concept/workflow.md)**
             - High level but agreed, metrics-based estimates

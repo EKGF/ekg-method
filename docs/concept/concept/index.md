@@ -223,7 +223,7 @@ reason about business concepts_
 
     - **[Use Cases](../use-case.md)** — Each use case has a vocabulary
       of concepts
-    - **[Personas](../persona.md)** — Personas are Concepts, enabling
+    - **[Personas](../persona/index.md)** — Personas are Concepts, enabling
       semantic definition and reasoning
     - **[Stories](../story.md)** — Stories reference domain concepts
       that need to be understood and modeled

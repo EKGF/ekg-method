@@ -112,7 +112,7 @@ Stories are not depicted.
 
 ## What about Actors/Personas?
 
-We use the term [_Personas_](../concept/persona.md) rather than
+We use the term [_Personas_](../concept/persona/index.md) rather than
 _Actors_ or _Roles_ to avoid confusion because they are slightly
 different concepts. Like in the real world, you could have a `Person`
 who is an `Actor` playing a `Role` as a certain `Persona.`

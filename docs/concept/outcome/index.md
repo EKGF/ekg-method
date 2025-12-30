@@ -111,7 +111,7 @@ requirement_
     An **Outcome** represents the business value or benefit that a
     [Use Case](../use-case.md) is designed to deliver.
     It is the "why" part of the [Story](../story.md) structure: "As a
-    [Persona](../persona.md), I need [capability], so that I can
+    [Persona](../persona/index.md), I need [capability], so that I can
     [Outcome]."
 
     Outcomes provide the business justification and success criteria
@@ -205,7 +205,7 @@ requirement_
       outcomes that define its purpose
     - **[Stories](../story.md)** — Stories specify outcomes as the
       "why" component
-    - **[Personas](../persona.md)** — Outcomes are achieved by
+    - **[Personas](../persona/index.md)** — Outcomes are achieved by
       Personas through Stories
     - **Strategy** — Outcomes align with enterprise strategy and
       objectives

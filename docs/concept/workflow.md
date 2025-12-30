@@ -313,7 +313,7 @@ Stories within a Use Case to achieve desired business Outcomes_
       use case's vocabulary
     - **[Outcomes](outcome/index.md)** — Workflows are executed to achieve
       desired business outcomes
-    - **[Personas](persona.md)** — Workflows specify which personas
+    - **[Personas](persona/index.md)** — Workflows specify which personas
       are involved in each step
 
     This integration ensures that workflows are not isolated process

@@ -192,7 +192,7 @@ supply (Data Products) in the data economy_
       concepts that link to ontologies
     - **[Data Products](data-product.md)** — Data products specify
       which ontologies their datasets conform to
-    - **[Personas](persona.md)** — Personas are Concepts that link
+    - **[Personas](persona/index.md)** — Personas are Concepts that link
       to ontology classes, enabling semantic definition
 
     This integration ensures that ontologies are not isolated

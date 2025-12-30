@@ -37,7 +37,7 @@ defines what a Persona needs to accomplish within a Use Case_
     Stories follow a simple, structured format that captures three
     essential elements:
 
-    - **Who** — The [Persona](persona.md) who needs this capability
+    - **Who** — The [Persona](persona/index.md) who needs this capability
       (e.g., "As the Chief Risk Officer...")
     - **What** — What they need to do or know (e.g., "...I need to
       know our current Risk Position...")
@@ -191,7 +191,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
     Stories link to other data structures in the Knowledge Graph:
 
-    - **[Personas](persona.md)** — Each Story specifies which
+    - **[Personas](persona/index.md)** — Each Story specifies which
       Persona needs the capability
     - **[Use Cases](use-case.md)** — Stories are organized within
       Use Cases, defining the functional requirements

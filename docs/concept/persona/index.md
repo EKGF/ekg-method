@@ -26,7 +26,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ## What Is a Persona?
 
-    For any given [Use Case](use-case.md), we need to identify all
+    For any given [Use Case](../use-case.md), we need to identify all
     the different types of players involved.
     In the initial stages of a use case's lifecycle, it matters less
     whether these players are called Stakeholders, Actors, Roles, User
@@ -71,12 +71,12 @@ or entities — involved in a Use Case, defined using business language_
 
     Many Personas are involved in multiple use cases and are
     grouped together in **persona taxonomies**.
-    These taxonomies are defined in [ontologies](ontology.md) with
+    These taxonomies are defined in [ontologies](../ontology.md) with
     "machine-readable meaning" that enables algorithms to understand
     the actual context and act upon it.
 
     This reuse ensures consistency across the enterprise and enables
-    the [composable business](../objective/composable-business.md)
+    the [composable business](../../objective/composable-business.md)
     approach, where Personas become reusable components in the
     Enterprise Knowledge Graph.
 
@@ -92,7 +92,7 @@ or entities — involved in a Use Case, defined using business language_
 
     The Use Case Tree Method does not make that distinction, primarily to keep
     things simple when capturing requirements — primarily as
-    [Stories](story.md) — but also because the term Persona combines
+    [Stories](../story.md) — but also because the term Persona combines
     both concepts into one unified model.
 
     ## Key Technical Characteristics
@@ -134,7 +134,7 @@ or entities — involved in a Use Case, defined using business language_
     ### Ontology-Based Definition
 
     Technically (or ontologically), a **Persona is just another
-    [Concept](concept/index.md)** — tied to ontology-defined classes that
+    [Concept](../concept/index.md)** — tied to ontology-defined classes that
     can inherit from other Persona types.
     This fundamental equivalence enables:
 
@@ -148,11 +148,11 @@ or entities — involved in a Use Case, defined using business language_
 
     ### Concept Vocabulary and Reuse
 
-    Each [Use Case](use-case.md) can have its own vocabulary of
+    Each [Use Case](../use-case.md) can have its own vocabulary of
     concepts, including Personas.
     However, use cases also **inherit or borrow** concepts from
     higher-level or otherwise related use cases in the
-    [Use Case Tree](use-case-tree.md) (UCT).
+    [Use Case Tree](../use-case-tree.md) (UCT).
 
     This approach enables:
 
@@ -186,7 +186,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ## Relationship to Stories
 
-    [Stories](story.md) define what a Persona needs to accomplish.
+    [Stories](../story.md) define what a Persona needs to accomplish.
     Each Story specifies:
 
     - **Who** — The Persona (e.g., "As an Auditor...")
@@ -219,6 +219,7 @@ or entities — involved in a Use Case, defined using business language_
 
 === "Ontology"
 
+    <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
 
     --8<-- "fragment/uctm-diagram-persona.md"
