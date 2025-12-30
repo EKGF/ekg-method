@@ -17,6 +17,8 @@ class "Persona" as Persona [[/concept/persona/#ontology]]
 ' Ownership / composition (part-of)
 UseCase "1" *-- "0..*" Story : owns
 UseCase "1" *-- "0..*" WorkflowDefinition : owns
+UseCase "0..1" *-- "0..*" UseCase : is-part-of
+UseCase "0..*" o-- "0..*" UseCase : is-used-in
 Concept "1" *-- "1..*" Term : owns
 
 ' Relationships

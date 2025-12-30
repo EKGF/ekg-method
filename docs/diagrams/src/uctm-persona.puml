@@ -16,6 +16,10 @@ Story "0..*" --> "1" UseCase : :useCase
 Persona --> PersonaTaxonomy : skos:inScheme
 PersonaTaxonomy "0..1" --> "1" UseCase : :useCase
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Persona inheritance (optional)
 Persona --> Persona : :isSubPersonaOf
 

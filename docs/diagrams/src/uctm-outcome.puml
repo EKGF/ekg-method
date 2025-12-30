@@ -12,6 +12,10 @@ class "OutcomeRelationship" as OutcomeRelationship
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase
 OutcomeRelationship --> Outcome : :targetOutcome
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Stories reference outcomes as "why"
 Story --> Outcome : :contributesTo
 

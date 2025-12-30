@@ -13,6 +13,10 @@ class "StoryConceptRelationship" as StoryConceptRelationship
 ' Other resources point to UseCase (typical KG modeling style)
 WorkflowDefinition "0..*" --> "1" UseCase : :useCase
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Steps (relationship-object implied)
 WorkflowDefinition --> Story : :steps
 

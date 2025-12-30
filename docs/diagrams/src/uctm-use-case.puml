@@ -29,6 +29,10 @@ ConceptVocabulary "0..*" --> "1" UseCase : :useCase
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase
 PersonaTaxonomy "0..1" --> "1" UseCase : :useCase
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Local ownership / containment
 Concept "1" *-- "1..*" Term : :term
 Concept "0..1" --> "1" BusinessTerm : :labelTerm

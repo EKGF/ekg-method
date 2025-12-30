@@ -24,6 +24,10 @@ Concept "0..1" --> "1" BusinessTerm : :labelTerm
 ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
 ConceptVocabulary "0..*" --> "1" UseCase : :useCase
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Usage
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
 StoryConceptRelationship --> Concept : :concept

@@ -21,6 +21,10 @@ Term <|-- TechnicalTerm
 ' Other resources point to UseCase (typical KG modeling style)
 Story "0..*" --> "1" UseCase : :useCase
 
+' Use Case Tree structure
+UseCase "0..*" --> "0..1" UseCase : :isPartOf
+UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+
 ' Story structure
 Story --> Persona : :playedBy
 Story --> Outcome : :contributesTo
