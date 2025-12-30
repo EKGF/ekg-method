@@ -183,11 +183,12 @@ That's why the Use Case Tree enforces:
 
 1. **Gradual, incremental changes** — no "big bang" releases
 2. **Clear inter-dependencies** — all dependencies are explicit and
-   tested automatically and continuously
+   tested automatically and continuously via `is-part-of` and
+   `is-used-in` relationships.
 
 For example, when a sub-use case in one high-level use case is also
-used in another, changes serving one stakeholder's needs could affect
-others.
+used in another (via `is-used-in`), changes serving one stakeholder's
+needs could affect others.
 The Use Case Tree makes these relationships visible, enabling teams to
 avoid disruption across the board.
 

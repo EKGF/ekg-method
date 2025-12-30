@@ -1,8 +1,8 @@
 ---
 description: >-
-  An executable model of business requirements that delivers specific business
-  outcomes within the Use Case Tree. Learn how use cases structure business
-  capabilities in the Use Case Tree Method.
+  An executable model of business requirements that delivers specific
+  business outcomes within the Use Case Tree. Learn how use cases
+  structure business capabilities in the Use Case Tree Method.
 keywords:
   - use case
   - business requirements
@@ -15,8 +15,10 @@ schema_type: "Article"
 # Use Case
 
 <!--summary-start-->
+
 _An executable model of business requirements that delivers specific
 business outcomes within the Use Case Tree_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -264,6 +266,8 @@ business outcomes within the Use Case Tree_
       business processes
     - **Concepts** link to **Ontologies** that provide the semantic
       foundation
+    - **Use Cases** relate to each other via **is-part-of** (ownership hierarchy)
+      and **is-used-in** (dependency/reuse)
     - All components are versioned, tested, and governed together as
       part of the Use Case
 
@@ -400,10 +404,10 @@ business outcomes within the Use Case Tree_
     during each phase:
 
     <div class="grid cards" markdown>
-    
+
     - :material-floor-plan:{ .lg } __Plan Phase__
 
-        -----    
+        -----
 
         1. **Name + Business Description**
         2. **Desired Business Outcomes**
@@ -414,12 +418,12 @@ business outcomes within the Use Case Tree_
             - High level but agreed, metrics-based estimates
         5. **Tree Structure**
             - Break-down into existing or non-existing sub-use cases
-              (some reusable, some specific to the parent use case)
+              (using `is-part-of` for ownership or `is-used-in` for reuse)
             - Priority is to look up in the tree, not down, and define
               the longer-term "strategic use cases" as well
 
         [:octicons-arrow-right-24: Learn more about the _Discover Step_](../process/plan/discover.md)
-       
+
     - :construction_site:{ .lg } __Build Phase__
 
         -----
@@ -469,7 +473,7 @@ business outcomes within the Use Case Tree_
             - Integration with new use cases
 
         [:octicons-arrow-right-24: Learn more](../process/run/index.md)
-    
+
     </div>
 
     ## Phase Transitions
@@ -673,6 +677,25 @@ business outcomes within the Use Case Tree_
         - This enables a Use Case to relate to an Outcome it **owns**, and also enables a child
           Use Case to **reference an Outcome defined on a parent Use Case** (inherited) and
           capture *how the child contributes* to that desired Outcome.
+
+    - **Relationship: is-part-of (hierarchy and ownership)**
+        - A Use Case can be **part of exactly one** other Use Case (zero or one cardinality).
+        - If a Use Case is part of another, it is a **child-use case** (or **sub-use case**).
+        - If it is not part of any other Use Case, it is a **root-use case**.
+        - This is the only relationship that implies **ownership**: the parent Use Case owns its
+          child-use cases.
+
+    - **Relationship: is-used-in (dependency and reuse)**
+        - A Use Case can be **used in zero or many** other Use Cases (zero to many cardinality).
+        - Use cases that are "used in" others are generally treated as sub-use cases in that
+          context, but they are **not owned** by the referring Use Case.
+        - This relationship enables cross-tree dependencies and identifies reusable building
+          blocks that serve multiple business areas.
+
+    !!! note "Colloquial Parents"
+        Use cases referred to via either `is-part-of` or `is-used-in` are colloquially known as
+        **parent use cases**. In this sense, a Use Case can have multiple parents, but only the
+        one linked via `is-part-of` is the "REAL" parent that owns it.
 
     - **Use Case stereotype (optional, organization-defined)**
         - A Use Case can have a **Use Case Stereotype**.
