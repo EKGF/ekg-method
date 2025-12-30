@@ -3,19 +3,19 @@
 top to bottom direction
 hide members
 
-class "UseCase" as UseCase [[/concept/use-case.md]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "UseCaseStereotype" as UseCaseStereotype
-class "Story" as Story [[/concept/story.md]]
-class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow.md]]
-class "Outcome" as Outcome [[/concept/outcome.md]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
+class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
-class "Concept" as Concept [[/concept/concept/index.md]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary
-class "Term" as Term [[/concept/term/index.md]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
-class "Persona" as Persona [[/concept/persona.md]]
-class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship.md]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "Persona" as Persona [[/concept/persona/#ontology]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Ownership / composition (part-of)
 UseCase "1" *-- "0..*" Story : owns

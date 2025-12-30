@@ -3,8 +3,8 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/index.md]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 
 ' Inheritance

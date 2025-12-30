@@ -3,8 +3,8 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/index.md]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 
 ' Inheritance

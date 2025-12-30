@@ -3,14 +3,14 @@
 top to bottom direction
 hide members
 
-class "Concept" as Concept [[/concept/concept/index.md]]
-class "Term" as Term [[/concept/term/index.md]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
+class "Concept" as Concept [[/concept/concept/#ontology]]
+class "Term" as Term [[/concept/term/#ontology]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary
-class "UseCase" as UseCase [[/concept/use-case.md]]
-class "Story" as Story [[/concept/story.md]]
-class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship.md]]
+class "UseCase" as UseCase [[/concept/use-case/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
+class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Term specializations
 Term <|-- BusinessTerm
