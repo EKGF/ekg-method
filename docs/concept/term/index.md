@@ -99,6 +99,7 @@ technical) used to refer to the same underlying meaning_
 
 === "Ontology"
 
+    <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
 
     --8<-- "fragment/uctm-diagram-term.md"
