@@ -29,14 +29,12 @@ requirement_
 
     A **business outcome** is the specific result or benefit that an
     organization expects to achieve from a particular [Use
-    Case](../use-case.md).
-    It is the reason why the use case exists and what it aims to
-    accomplish.
+    Case](../use-case.md). It is the reason why the use case exists
+    and what it aims to accomplish.
 
     Outcomes answer the fundamental question: **"Why are we doing
-    this?"**
-    They provide the business justification for investing time,
-    resources, and effort into a use case.
+    this?"** They provide the business justification for investing
+    time, resources, and effort into a use case.
 
     ## Why Outcomes Matter
 
@@ -54,9 +52,8 @@ requirement_
     !!! tip "Start with outcomes"
 
         Before defining what a use case does, understand why it
-        exists.
-        The outcome defines success and guides all decisions about
-        implementation.
+        exists. The outcome defines success and guides all decisions
+        about implementation.
 
     ## Outcome Characteristics
 
@@ -109,8 +106,8 @@ requirement_
     ## What Is an Outcome in the Use Case Tree Method?
 
     An **Outcome** represents the business value or benefit that a
-    [Use Case](../use-case.md) is designed to deliver.
-    It is the "why" part of the [Story](../story.md) structure: "As a
+    [Use Case](../use-case.md) is designed to deliver. It is the "why"
+    part of the [Story](../story.md) structure: "As a
     [Persona](../persona/index.md), I need [capability], so that I can
     [Outcome]."
 
@@ -133,31 +130,20 @@ requirement_
 
     ## Outcome Stereotypes
 
-    We can define **Outcome Stereotypes** to categorize outcomes
-    based on their nature or purpose.
-    If you want to call an outcome a "Goal", "Objective", or
+    Outcomes can be categorized using **[Outcome
+    Stereotypes](outcome-stereotype.md)** based on their nature or
+    purpose. If you want to call an outcome a "Goal", "Objective", or
     "Definition of Done", that's just a stereotype of Outcome.
 
-    Common outcome stereotypes include:
+    Common outcome stereotypes include Goals, Objectives, KPIs,
+    Success Criteria, and Key Results.
 
-    - **Goal** — A high-level, strategic outcome
-    - **Objective** — A specific, measurable outcome
-    - **Definition of Done** — A completion criterion for a use case
-      or story
-    - **Success Criteria** — Measurable conditions that indicate
-      success
-    - **Key Result** — A quantifiable outcome that supports a goal
-
-    These stereotypes help organize and categorize outcomes while
-    maintaining the fundamental concept that they all represent the
-    "why" behind business requirements.
-    The Use Case Tree Method uses "Outcome" as the base concept, with
-    stereotypes providing additional semantic meaning as needed.
+    For detailed information about outcome stereotypes, see the
+    [Outcome Stereotype](outcome-stereotype.md) page.
 
     ## Relationship to Stories
 
-    Outcomes are the "why" component of Stories.
-    Each Story specifies:
+    Outcomes are the "why" component of Stories. Each Story specifies:
 
     - **Who** — The Persona who needs the capability
     - **What** — The capability or action needed
@@ -170,8 +156,7 @@ requirement_
     ## Alignment with Strategy
 
     Outcomes should align with the broader strategy and objectives of
-    the enterprise.
-    This alignment ensures that:
+    the enterprise. This alignment ensures that:
 
     - **Use cases contribute to strategic goals** — Each use case
       delivers outcomes that support enterprise objectives
@@ -221,45 +206,57 @@ requirement_
 
     --8<-- "fragment/uctm-diagram-outcome.md"
 
-    We're not (yet) prescribing a full OWL ontology here.
-    But we can state a small set of **facts** that people can reliably use to build their own
-    ontology / schema / graph model around an Outcome.
+    We're not (yet) prescribing a full OWL ontology here. But we can
+    state a small set of **facts** that people can reliably use to
+    build their own ontology / schema / graph model around an Outcome.
 
     ### Required facts about an Outcome
 
     - **Opaque universally unique identifier**
-        - An Outcome should have an **opaque**, **universally unique** identifier.
-        - Prefer a random identifier such as **UUIDv4**, represented as a URI:
+        - An Outcome should have an **opaque**, **universally unique**
+          identifier.
+        - Prefer a random identifier such as **UUIDv4**, represented
+          as a URI:
           `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
 
     - **Business-friendly name**
-        - An Outcome must have a human-readable name expressed in business language.
+        - An Outcome must have a human-readable name expressed in
+          business language.
 
     - **Definition**
-        - An Outcome must have a definition explaining the expected benefit/result.
+        - An Outcome must have a definition explaining the expected
+          benefit/result.
 
     - **Stereotype**
-        - An Outcome can have an **Outcome Stereotype** (e.g. KPI, Goal, Objective, Success
-          Criteria, Definition of Done).
-        - Stereotypes categorize outcomes without changing the underlying “Outcome” concept.
+        - An Outcome can have an **[Outcome Stereotype](outcome-stereotype.md)**
+          (e.g. KPI, Goal, Objective, Success Criteria, Definition of Done).
+        - Stereotypes categorize outcomes without changing the
+          underlying “Outcome” concept.
 
     - **Time horizon (optional)**
-        - Outcomes often imply a time horizon (short/mid/long term). Capture it explicitly if
+        - Outcomes often imply a time horizon (short/mid/long term).
+          Capture it explicitly if
           it matters.
 
     - **Measurability (optional but recommended)**
-        - Outcomes should have measurable success criteria where possible (metrics, thresholds,
+        - Outcomes should have measurable success criteria where
+          possible (metrics, thresholds,
           targets, baselines).
 
     - **Owned by a Use Case (optional)**
-        - Outcomes are often defined/owned by a Use Case, but can be referenced by other Use
+        - Outcomes are often defined/owned by a Use Case, but can be
+          referenced by other Use
           Cases (e.g., children).
 
     - **Use Case ↔ Outcome relationship-object (recommended)**
-        - Model the connection between a Use Case and an Outcome via an
-          **[Outcome Relationship](outcome-relationship.md)**
-          (not just a direct link).
+        - Model the connection between a Use Case and an Outcome via
+          an
+          **[Outcome Relationship](outcome-relationship.md)** (not
+          just a direct link).
         - This supports:
-            - **Inheritance**: a child Use Case referencing an Outcome defined on a parent Use Case
-            - **Contribution mapping**: describing *how* the child contributes to that desired Outcome
-            - **Local outcomes**: linking to Outcomes owned by the current Use Case as well
+            - **Inheritance**: a child Use Case referencing an Outcome
+              defined on a parent Use Case
+            - **Contribution mapping**: describing *how* the child
+              contributes to that desired Outcome
+            - **Local outcomes**: linking to Outcomes owned by the
+              current Use Case as well

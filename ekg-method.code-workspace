@@ -30,8 +30,12 @@
     "emeraldwalk.runonsave": {
       "commands": [
         {
-          "match": "\\.md$",
-          "cmd": "python3 ${workspaceFolder}/scripts/wrap_markdown.py ${file}"
+          "match": "ekg-method/.*\\.md$",
+          "cmd": "python3 /Users/jgeluk/Work/ekg-method/scripts/wrap_markdown.py ${file}"
+        },
+        {
+          "match": "ekg-catalog/.*\\.md$",
+          "cmd": "python3 /Users/jgeluk/Work/ekg-catalog/scripts/wrap_markdown.py ${file}"
         }
       ]
     }
