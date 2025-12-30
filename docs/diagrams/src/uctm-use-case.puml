@@ -12,8 +12,8 @@ class "OutcomeRelationship" as OutcomeRelationship
 class "ConceptVocabulary" as ConceptVocabulary
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "Term" as Term [[/concept/term/#ontology]]
-class "BusinessTerm" as BusinessTerm
-class "TechnicalTerm" as TechnicalTerm
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
 class "Persona" as Persona [[/concept/persona/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship
 class "PersonaTaxonomy" as PersonaTaxonomy

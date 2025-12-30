@@ -11,7 +11,9 @@ class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary
-class "Term" as Term [[/concept/term/#ontology]]
+class "Term" as Term [[/concept/term/index.md]]
+class "BusinessTerm" as BusinessTerm [[/concept/term/business-term.md]]
+class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term.md]]
 class "Persona" as Persona [[/concept/persona/#ontology]]
 
 ' Ownership / composition (part-of)
@@ -20,6 +22,10 @@ UseCase "1" *-- "0..*" WorkflowDefinition : owns
 UseCase "0..1" *-- "0..*" UseCase : is-part-of
 UseCase "0..*" o-- "0..*" UseCase : is-used-in
 Concept "1" *-- "1..*" Term : owns
+
+' Inheritance
+Term <|-- BusinessTerm
+Term <|-- TechnicalTerm
 
 ' Relationships
 UseCase "0..1" --> "1" UseCaseStereotype : hasStereotype
