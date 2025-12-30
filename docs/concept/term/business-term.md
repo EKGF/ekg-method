@@ -45,6 +45,7 @@ policies_
 
     ## Lexical Variants
     A single Business Term often has multiple forms for different communication contexts:
+
     - **Singular**: “Patient”
     - **Plural**: “Patients”
     - **Abbreviation**: “Pat.”

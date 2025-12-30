@@ -1,7 +1,8 @@
 ---
 description: >-
   Technical manifestations of a Concept in code, data, and metadata.
-  Learn how Technical Terms bridge the gap between human language and machine-readable data.
+  Learn how Technical Terms bridge the gap between human language and
+  machine-readable data.
 keywords:
   - technical term
   - variable name
@@ -14,7 +15,9 @@ schema_type: "Article"
 # Technical Term
 
 <!--summary-start-->
+
 _Technical manifestations of a Concept in code, data, and metadata_
+
 <!--summary-end-->
 
 === "Business & Management Audience"
@@ -33,6 +36,7 @@ _Technical manifestations of a Concept in code, data, and metadata_
 
     ## Technical Terms in Code and Data
     Technical Terms include any symbol or identifier used in technical artifacts:
+
     - **Variable names** (e.g., `_customer`, `cust_id`, `?cust`)
     - **Database columns** (e.g., `P_NAME`, `CLIENT_REF`)
     - **API parameters** (e.g., `/customers/{id}`)
