@@ -148,12 +148,14 @@ story:
 - **Success Criteria** — How do we measure story success?
 - **Key Results** — What measurable impact should this story have?
 
-### Business Capabilities
+### Use Case Stereotypes
 
-Business Capabilities (as modeled in the [Use Case Tree](../use-case-tree.md)) enable outcomes.
-Higher-level outcome stereotypes (Goals, Objectives) often drive
-capability investment decisions, while lower-level stereotypes (KPIs,
-Success Criteria) measure capability performance.
+Use Cases can have their own stereotypes (e.g., "Business Capability Area", "Business Capability Domain", "Data Domain"). Different outcome stereotypes may be appropriate at different levels:
+
+- **Goals** may guide entire programs or strategic use cases
+- **Objectives** may drive specific use case implementations
+- **Success Criteria** and **Definitions of Done** may define use case completion
+- **KPIs** may measure ongoing performance of operational use cases
 
 ## Best Practices
 
