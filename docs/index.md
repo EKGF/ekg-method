@@ -108,12 +108,12 @@ cases with dependencies, so you can deliver in the right order.
 
 - :material-lightbulb-outline: **Concepts**
 
-  The core building blocks: [use case](concept/use-case.md),
+  The core building blocks: [use case](concept/use-case/index.md),
   [outcome](concept/outcome/index.md),
   [workflow](concept/workflow.md), [terms](concept/term/index.md), and
   more.
 
-  [:octicons-arrow-right-24: Explore concepts](concept/use-case.md)
+  [:octicons-arrow-right-24: Explore concepts](concept/use-case/index.md)
 
 - :material-cog-outline: **Process**
 

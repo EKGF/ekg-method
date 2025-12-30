@@ -7,7 +7,7 @@ class "Term" as Term [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary
+class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 
 ' Term specializations

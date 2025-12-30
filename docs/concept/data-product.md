@@ -28,7 +28,7 @@ case's requirements_
     ## What Is a Data Product?
 
     A **Data Product** is a semantic data asset that provides the
-    required information for a [Use Case](use-case.md).
+    required information for a [Use Case](use-case/index.md).
     In later stages of the use case lifecycle, we can attach the use
     case to those semantic data products that already exist and can
     provide the required information.
@@ -46,7 +46,7 @@ case's requirements_
     - **Supply side** — Data Products define what data is available,
       how it's packaged, and how it can be accessed.
       They represent the "supply" in the data economy.
-    - **Demand side** — [Use Cases](use-case.md) define who needs
+    - **Demand side** — [Use Cases](use-case/index.md) define who needs
       data, what they need it for, and why.
       They represent the "demand" in the data economy.
 
@@ -96,7 +96,7 @@ case's requirements_
     ## What Is a Data Product in the Use Case Tree Method?
 
     A **Data Product** is a semantic data asset that provides
-    required information for a [Use Case](use-case.md).
+    required information for a [Use Case](use-case/index.md).
     It encapsulates data along with its semantic meaning (defined
     through [Ontologies](ontology.md)), making it a reusable
     component in the Enterprise Knowledge Graph.
@@ -153,7 +153,7 @@ case's requirements_
 
     Data Products relate to other core concepts:
 
-    - **[Use Cases](use-case.md)** — Use cases consume data
+    - **[Use Cases](use-case/index.md)** — Use cases consume data
       products to fulfill their requirements
     - **[Ontologies](ontology.md)** — Data products use ontologies
       to define the semantic meaning of their data

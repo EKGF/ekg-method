@@ -28,7 +28,7 @@ Stories within a Use Case to achieve desired business Outcomes_
     ## What Is a Workflow?
 
     A **Workflow** defines the logical order of steps needed to
-    accomplish a business process within a [Use Case](use-case.md).
+    accomplish a business process within a [Use Case](use-case/index.md).
     Every Use Case has one or more Workflows that describe how
     business activities should be performed.
 
@@ -87,7 +87,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     A **Workflow** is a logical sequence of steps that defines the
     order of execution for [Stories](story.md) within a [Use
-    Case](use-case.md).
+    Case](use-case/index.md).
     Every Use Case has one or more Workflows that describe how
     business processes should be executed.
 
@@ -305,7 +305,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     Workflows relate to other core concepts:
 
-    - **[Use Cases](use-case.md)** — Every use case has one or more
+    - **[Use Cases](use-case/index.md)** — Every use case has one or more
       workflows
     - **[Stories](story.md)** — Each workflow step corresponds to
       executing a story

@@ -215,7 +215,7 @@ This model is captured entirely within the EKG itself, enabling:
 The Use Case Tree is closely related to several other concepts in the
 Use Case Tree Method:
 
-- **[Use Case](use-case.md)** — Individual nodes in the tree
+- **[Use Case](use-case/index.md)** — Individual nodes in the tree
 - **[Enable Reuse](../objective/enable-reuse.md)** — The Use Case Tree
   is the primary mechanism for enabling reuse
 - **[Composable Business](../objective/composable-business.md)** — The

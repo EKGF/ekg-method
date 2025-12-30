@@ -6,8 +6,8 @@ hide members
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
-class "Story" as Story [[/concept/story/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
+class "Story" as Story [[/concept/story/#ontology]]
 
 ' Outcome has optional stereotype
 Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
@@ -16,12 +16,7 @@ Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase
 OutcomeRelationship --> Outcome : :targetOutcome
 
-' Use Case Tree structure
-UseCase "0..*" --> "0..1" UseCase : :isPartOf
-UseCase "0..*" --> "0..*" UseCase : :isUsedIn
-
 ' Stories reference outcomes as "why"
 Story --> Outcome : :contributesTo
 
 @enduml
-

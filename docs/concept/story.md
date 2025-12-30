@@ -26,7 +26,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
     ## What Is a Story?
 
-    A **Story** — in the context of a [Use Case](use-case.md) in the
+    A **Story** — in the context of a [Use Case](use-case/index.md) in the
     [Use Case Tree](use-case-tree.md) — defines a business
     requirement.
     It captures what someone needs to accomplish, expressed in their
@@ -193,7 +193,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
     - **[Personas](persona/index.md)** — Each Story specifies which
       Persona needs the capability
-    - **[Use Cases](use-case.md)** — Stories are organized within
+    - **[Use Cases](use-case/index.md)** — Stories are organized within
       Use Cases, defining the functional requirements
     - **[Outcomes](outcome/index.md)** — The "why" part of a Story links
       to business outcomes

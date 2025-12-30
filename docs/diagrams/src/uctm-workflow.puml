@@ -7,6 +7,7 @@ class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
@@ -19,6 +20,9 @@ UseCase "0..*" --> "0..*" UseCase : :isUsedIn
 
 ' Steps (relationship-object implied)
 WorkflowDefinition --> Story : :steps
+
+' Outcome has optional stereotype
+Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
 
 ' Stories link to outcomes and concepts
 Story --> Outcome : :contributesTo

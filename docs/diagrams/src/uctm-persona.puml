@@ -21,7 +21,7 @@ UseCase "0..*" --> "0..1" UseCase : :isPartOf
 UseCase "0..*" --> "0..*" UseCase : :isUsedIn
 
 ' Persona inheritance (optional)
-Persona --> Persona : :isSubPersonaOf
+Persona --> Persona : :isSubPersonaOf / skos:broader
 
 @enduml
 

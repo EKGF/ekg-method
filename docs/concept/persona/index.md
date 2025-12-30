@@ -26,7 +26,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ## What Is a Persona?
 
-    For any given [Use Case](../use-case.md), we need to identify all
+    For any given [Use Case](../use-case/index.md), we need to identify all
     the different types of players involved.
     In the initial stages of a use case's lifecycle, it matters less
     whether these players are called Stakeholders, Actors, Roles, User
@@ -148,7 +148,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ### Concept Vocabulary and Reuse
 
-    Each [Use Case](../use-case.md) can have its own vocabulary of
+    Each [Use Case](../use-case/index.md) can have its own vocabulary of
     concepts, including Personas.
     However, use cases also **inherit or borrow** concepts from
     higher-level or otherwise related use cases in the

@@ -4,13 +4,14 @@ top to bottom direction
 hide members
 
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
-class "UseCaseStereotype" as UseCaseStereotype
+class "UseCaseStereotype" as UseCaseStereotype [[/concept/use-case/use-case-stereotype/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary
+class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "Term" as Term [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
@@ -30,6 +31,7 @@ Term <|-- TechnicalTerm
 
 ' Relationships
 UseCase "0..1" --> "1" UseCaseStereotype : hasStereotype
+Outcome "0..1" --> "1" OutcomeStereotype : hasStereotype
 UseCase "0..*" --> "0..*" OutcomeRelationship : outcomeLink
 OutcomeRelationship --> Outcome : targetOutcome
 UseCase "0..*" --> "0..*" ConceptVocabulary : references/owns

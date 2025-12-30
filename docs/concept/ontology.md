@@ -39,7 +39,7 @@ supply (Data Products) in the data economy_
 
     Think of the data economy as having two sides:
 
-    - **Demand side** — [Use Cases](use-case.md) represent the
+    - **Demand side** — [Use Cases](use-case/index.md) represent the
       demands for information from various stakeholders.
       They define what data is needed and why.
     - **Supply side** — [Data Products](data-product.md) represent
@@ -94,7 +94,7 @@ supply (Data Products) in the data economy_
     Ontologies act as a crucial intermediary between the demand and
     supply sides of the information economy:
 
-    - **Demand side** — [Use Cases](use-case.md) represent the
+    - **Demand side** — [Use Cases](use-case/index.md) represent the
       demands for information from various stakeholders.
       They define what data is needed and why.
     - **Supply side** — [Data Products](data-product.md) represent
@@ -188,7 +188,7 @@ supply (Data Products) in the data economy_
     - **[Concepts](concept/index.md)** — Concepts link to ontology
       classes, properties, and shapes to define their semantic
       meaning
-    - **[Use Cases](use-case.md)** — Use cases have vocabularies of
+    - **[Use Cases](use-case/index.md)** — Use cases have vocabularies of
       concepts that link to ontologies
     - **[Data Products](data-product.md)** — Data products specify
       which ontologies their datasets conform to

@@ -28,7 +28,7 @@ reason about business concepts_
 
     ## What Is a Concept?
 
-    For every given [Use Case](../use-case.md), we want to start with
+    For every given [Use Case](../use-case/index.md), we want to start with
     capturing the concepts and terms that the user or "the business"
     uses or wants to use.
 
@@ -59,6 +59,10 @@ reason about business concepts_
 
     ## Concept Vocabulary
 
+    Concepts are organized into
+    **[Concept Vocabularies](concept-vocabulary.md)**---collections of
+    related concepts that share a common context or domain.
+
     Most concepts and their terms will be pre-defined in all kinds of
     vocabularies, but for brand-new use cases in a new domain,
     concepts and their terms will have to be created.
@@ -67,6 +71,9 @@ reason about business concepts_
     also inherit or borrow concepts from higher-level or related use
     cases in the [Use Case Tree](../use-case-tree.md).
     This enables reuse and consistency across the enterprise.
+
+    For more information about how vocabularies are organized and
+    managed, see [Concept Vocabulary](concept-vocabulary.md).
 
     ## Evolution and Refinement
 
@@ -221,7 +228,7 @@ reason about business concepts_
 
     Concepts are fundamental building blocks that relate to:
 
-    - **[Use Cases](../use-case.md)** — Each use case has a vocabulary
+    - **[Use Cases](../use-case/index.md)** — Each use case has a vocabulary
       of concepts
     - **[Personas](../persona/index.md)** — Personas are Concepts, enabling
       semantic definition and reasoning

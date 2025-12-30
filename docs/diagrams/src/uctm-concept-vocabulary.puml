@@ -4,33 +4,19 @@ top to bottom direction
 hide members
 
 class "Concept" as Concept [[/concept/concept/#ontology]]
-class "Term" as Term [[/concept/term/#ontology]]
-class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
-' Term specializations
-Term <|-- BusinessTerm
-Term <|-- TechnicalTerm
-
-' Terms
-Concept "1" *-- "1..*" Term : :term
-Concept "0..1" --> "1" BusinessTerm : :labelTerm
-
-' Vocabularies
+' Concepts belong to a Concept Vocabulary
 ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
-ConceptVocabulary "0..*" --> "1" UseCase : :useCase
 
-' Use Case Tree structure
-UseCase "0..*" --> "0..1" UseCase : :isPartOf
-UseCase "0..*" --> "0..*" UseCase : :isUsedIn
+' Use Case can reference or own Concept Vocabularies
+UseCase "0..*" --> "0..*" ConceptVocabulary : references/owns
 
-' Usage
+' Stories use concepts
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
 StoryConceptRelationship --> Concept : :concept
 
 @enduml
-

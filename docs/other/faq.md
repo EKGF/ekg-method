@@ -19,8 +19,8 @@ schema_type: "FAQPage"
 
 ## What is a Use Case?
 
-A [Use Case](../concept/use-case.md) is an aggregation of user (or
-data-) [stories](../concept/story.md) on a common theme.
+A [Use Case](../concept/use-case/index.md) is an aggregation of user
+(or data-) [stories](../concept/story.md) on a common theme.
 
 They are the modules---or components, so you will---of an
 [EKG](../vocab/ekg.md). A business-focused packaging of stories,
@@ -72,8 +72,8 @@ didn't want to call it "Use Case DAG" :-)
 
 ## What is the detail needed behind each use case? - Narrative? Happy case? Exceptions
 
-Here's a [template](../concept/use-case.md#plan-build-run) for the
-kind of information that we need to collect for any given use case
+Here's a [template](../concept/use-case/index.md#plan-build-run) for
+the kind of information that we need to collect for any given use case
 during the various phases in their life cycle.
 
 ## How are use cases named?

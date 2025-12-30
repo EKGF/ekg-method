@@ -29,7 +29,7 @@ requirement_
 
     A **business outcome** is the specific result or benefit that an
     organization expects to achieve from a particular [Use
-    Case](../use-case.md). It is the reason why the use case exists
+    Case](../use-case/index.md). It is the reason why the use case exists
     and what it aims to accomplish.
 
     Outcomes answer the fundamental question: **"Why are we doing
@@ -106,7 +106,7 @@ requirement_
     ## What Is an Outcome in the Use Case Tree Method?
 
     An **Outcome** represents the business value or benefit that a
-    [Use Case](../use-case.md) is designed to deliver. It is the "why"
+    [Use Case](../use-case/index.md) is designed to deliver. It is the "why"
     part of the [Story](../story.md) structure: "As a
     [Persona](../persona/index.md), I need [capability], so that I can
     [Outcome]."
@@ -186,7 +186,7 @@ requirement_
 
     Outcomes relate to other core concepts:
 
-    - **[Use Cases](../use-case.md)** — Each use case has one or more
+    - **[Use Cases](../use-case/index.md)** — Each use case has one or more
       outcomes that define its purpose
     - **[Stories](../story.md)** — Stories specify outcomes as the
       "why" component

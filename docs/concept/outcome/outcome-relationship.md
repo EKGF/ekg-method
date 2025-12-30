@@ -23,7 +23,7 @@ contribution mapping_
 
     ## What is an Outcome Relationship?
     An **Outcome Relationship** defines the link between a [Use
-    Case](../use-case.md) and a desired [Outcome](index.md).
+    Case](../use-case/index.md) and a desired [Outcome](index.md).
 
     It's more than just a link; it captures *how* a use case
     contributes to an outcome. For example, a sub-use case might
@@ -63,7 +63,7 @@ contribution mapping_
     - **Opaque universally unique identifier**: A UUID representing
       this relationship instance.
     - **Source Use Case**: A reference to the [Use
-      Case](../use-case.md) involved.
+      Case](../use-case/index.md) involved.
     - **Target Outcome**: A reference to the [Outcome](index.md) being
       achieved.
 

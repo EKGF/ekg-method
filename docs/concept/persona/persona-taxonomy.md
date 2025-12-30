@@ -23,7 +23,7 @@ Scheme within a Use Case_
 === "Business & Management Audience"
 
     ## What is a Persona Taxonomy?
-    A **Persona Taxonomy** is an organized collection of all the [Personas](index.md) relevant to a specific [Use Case](../use-case.md).
+    A **Persona Taxonomy** is an organized collection of all the [Personas](index.md) relevant to a specific [Use Case](../use-case/index.md).
 
     Think of it as the "cast of characters" for a use case—everyone and everything that interacts with the system or business capability.
 
@@ -56,7 +56,7 @@ Scheme within a Use Case_
     ### Required facts about a Persona Taxonomy
     - **Opaque universally unique identifier**: A UUID representing this taxonomy.
     - **SKOS Concept Scheme**: Modeled as `skos:ConceptScheme`.
-    - **Owned by Use Case**: A reference to the [Use Case](../use-case.md) that owns it (zero or one cardinality).
+    - **Owned by Use Case**: A reference to the [Use Case](../use-case/index.md) that owns it (zero or one cardinality).
 
     ### Relationship to Personas
     - **Contains Personas**: Personas reference the taxonomy via `skos:inScheme`.

@@ -5,7 +5,11 @@ hide members
 
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
+class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
+
+' Outcome has optional stereotype
+Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
 
 ' Links
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase
