@@ -29,7 +29,7 @@ requirement_
 
     A **business outcome** is the specific result or benefit that an
     organization expects to achieve from a particular [Use
-    Case](use-case.md).
+    Case](../use-case.md).
     It is the reason why the use case exists and what it aims to
     accomplish.
 
@@ -83,7 +83,7 @@ requirement_
     - **Compliance** — "Ensure regulatory compliance"
     - **Customer Satisfaction** — "Improve customer experience"
 
-    Notice how outcomes appear in [Stories](story.md) as the "why"
+    Notice how outcomes appear in [Stories](../story.md) as the "why"
     part: "...so that I can Assess the Risk" or "...so that I can
     Verify Stakeholders."
 
@@ -109,9 +109,9 @@ requirement_
     ## What Is an Outcome in the Use Case Tree Method?
 
     An **Outcome** represents the business value or benefit that a
-    [Use Case](use-case.md) is designed to deliver.
-    It is the "why" part of the [Story](story.md) structure: "As a
-    [Persona](persona.md), I need [capability], so that I can
+    [Use Case](../use-case.md) is designed to deliver.
+    It is the "why" part of the [Story](../story.md) structure: "As a
+    [Persona](../persona.md), I need [capability], so that I can
     [Outcome]."
 
     Outcomes provide the business justification and success criteria
@@ -201,11 +201,11 @@ requirement_
 
     Outcomes relate to other core concepts:
 
-    - **[Use Cases](use-case.md)** — Each use case has one or more
+    - **[Use Cases](../use-case.md)** — Each use case has one or more
       outcomes that define its purpose
-    - **[Stories](story.md)** — Stories specify outcomes as the
+    - **[Stories](../story.md)** — Stories specify outcomes as the
       "why" component
-    - **[Personas](persona.md)** — Outcomes are achieved by
+    - **[Personas](../persona.md)** — Outcomes are achieved by
       Personas through Stories
     - **Strategy** — Outcomes align with enterprise strategy and
       objectives
@@ -222,7 +222,7 @@ requirement_
     --8<-- "fragment/uctm-diagram-outcome.md"
 
     We're not (yet) prescribing a full OWL ontology here.
-    But we can state a small set of **facts** that people can reliably use to build their own
+    But we can state a small set of **facts** that  people can reliably use to build their own
     ontology / schema / graph model around an Outcome.
 
     ### Required facts about an Outcome

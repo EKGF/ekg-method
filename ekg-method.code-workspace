@@ -16,18 +16,21 @@
       "!relative scalar"
     ],
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.rulers": [
       70
     ],
     "[markdown]": {
       "editor.formatOnSave": true,
-      "editor.wordWrap": "wordWrapColumn",
-      "editor.wordWrapColumn": 70,
+      "editor.wordWrap": "off",
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.rulers": [
         70
-      ]
+      ],
+      "files.trimTrailingWhitespace": false
     },
+    "prettier.requireConfig": true,
+    "prettier.useEditorConfig": false,
     "prettier.proseWrap": "always",
     "prettier.printWidth": 70
   }

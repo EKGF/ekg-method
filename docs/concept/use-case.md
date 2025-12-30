@@ -677,40 +677,54 @@ business outcomes within the Use Case Tree_
           **[Outcome Relationship](outcome/outcome-relationship.md)**
           (not just a direct link).
         - This enables a Use Case to relate to an Outcome it **owns**, and also enables a child
-          Use Case to **reference an Outcome defined on a parent Use Case** (inherited) and
-          capture *how the child contributes* to that desired Outcome.
+          Use Case to **reference an Outcome defined on a parent Use
+          Case** (inherited) and capture *how the child contributes*
+          to that desired Outcome.
 
     - **Relationship: is-part-of (hierarchy and ownership)**
-        - A Use Case can be **part of exactly one** other Use Case (zero or one cardinality).
-        - If a Use Case is part of another, it is a **child-use case** (or **sub-use case**).
-        - If it is not part of any other Use Case, it is a **root-use case**.
-        - This is the only relationship that implies **ownership**: the parent Use Case owns its
+        - A Use Case can be **part of exactly one** other Use Case
+          (zero or one cardinality).
+        - If a Use Case is part of another, it is a **child-use
+          case** (or **sub-use case**).
+        - If it is not part of any other Use Case, it is a **root-use
+          case**.
+        - This is the only relationship that implies **ownership**:
+          the parent Use Case owns its
           child-use cases.
 
     - **Relationship: is-used-in (dependency and reuse)**
-        - A Use Case can be **used in zero or many** other Use Cases (zero to many cardinality).
-        - Use cases that are "used in" others are generally treated as sub-use cases in that
-          context, but they are **not owned** by the referring Use Case.
-        - This relationship enables cross-tree dependencies and identifies reusable building
-          blocks that serve multiple business areas.
+        - A Use Case can be **used in zero or many** other Use Cases
+          (zero to many cardinality).
+        - Use cases that are "used in" others are generally treated
+          as sub-use cases in that context, but they are **not
+          owned** by the referring Use Case.
+        - This relationship enables cross-tree dependencies and
+          identifies reusable building blocks that serve multiple
+          business areas.
 
     !!! note "Colloquial Parents"
-        Use cases referred to via either `is-part-of` or `is-used-in` are colloquially known as
-        **parent use cases**. In this sense, a Use Case can have multiple parents, but only the
+        Use cases referred to via either `is-part-of` or `is-used-in`
+        are colloquially known as **parent use cases**. In this
+        sense, a Use Case can have multiple parents, but only the
         one linked via `is-part-of` is the "REAL" parent that owns it.
 
     - **Use Case stereotype (optional, organization-defined)**
         - A Use Case can have a **Use Case Stereotype**.
         - By default, the stereotype is simply “Use Case”.
-        - Many organizations use different type names for scopes that are effectively the same
-          concept in the Use Case Tree Method. A stereotype makes the Use Case **recognizable**
+        - Many organizations use different type names for scopes that
+          are effectively the same concept in the Use Case Tree
+          Method. A stereotype makes the Use Case **recognizable**
           in the local language without changing the underlying model.
-        - Organizations can define **any number** of stereotypes and how they interrelate,
-          including constraints like “allowed parent stereotypes” and “allowed child stereotypes”.
+        - Organizations can define **any number** of stereotypes and
+          how they interrelate, including constraints like “allowed
+          parent stereotypes” and “allowed child stereotypes”.
         - Examples:
-            - **Business Capability Area**: allows only Business Capability Domain as child
-            - **Business Capability Domain**: parent must be Business Capability Area; child must be Business Capability
-            - **Business Capability**: parent must be Business Capability Domain; child can be anything
+            - **Business Capability Area**: allows only Business
+              Capability Domain as child
+            - **Business Capability Domain**: parent must be Business
+              Capability Area; child must be Business Capability
+            - **Business Capability**: parent must be Business
+              Capability Domain; child can be anything
             - **Data Domain**
             - **Technical Capability**
             - **Business Component**
@@ -721,20 +735,25 @@ business outcomes within the Use Case Tree_
 
     - **Stories (optional, owned)**
         - A Use Case can have **zero or more Stories**.
-        - The relationship is **part-of**: the Use Case **owns** its Stories.
-        - If the Use Case is deleted, its owned Stories are deleted as well.
+        - The relationship is **part-of**: the Use Case **owns** its
+          Stories.
+        - If the Use Case is deleted, its owned Stories are deleted
+          as well.
 
     - **Workflow definitions (optional, owned)**
         - A Use Case can have **zero or more Workflows**.
-        - More precisely: these are **WorkflowDefinition** objects (the definition, not a run).
-        - The relationship is **part-of**: the Use Case **owns** its workflow definitions.
-        - If the Use Case is deleted, its owned workflow definitions are deleted as well.
+        - More precisely: these are **WorkflowDefinition** objects
+          (the definition, not a run).
+        - The relationship is **part-of**: the Use Case **owns** its
+          workflow definitions.
+        - If the Use Case is deleted, its owned workflow definitions
+          are deleted as well.
 
     - **Persona taxonomy (optional, SKOS scheme)**
         - A Use Case can have **zero or one PersonaTaxonomy**.
         - A PersonaTaxonomy is a `skos:ConceptScheme` that groups the Personas relevant for the
           Use Case.
-        - Personas are `skos:Concept` and are members of exactly one PersonaTaxonomy via
+        - Personas are `skos:Concept`  and are members of exactly one PersonaTaxonomy via
           `skos:inScheme`.
 
     - **Concept vocabularies (optional, mixed)**
