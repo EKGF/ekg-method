@@ -57,7 +57,7 @@ theme:
     - toc.integrate
     - content.code.annotate
 extra:
-  homepage: https://www.ekgf.org/quadrants
+  homepage: https://ekgf.org/quadrants
   generator: false
   google_site_verification: "Q_9d2He8XxoBrVAXrAXsEm2R_UrGZ6KcOCXkeNRQ058"
   social:
