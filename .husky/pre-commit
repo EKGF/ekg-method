@@ -1,10 +1,16 @@
-# Run Python linting if Python files exist and ruff is available
-if find . -name "*.py" -not -path "./.venv/*" -not -path "./site/*" | grep -q .; then
-  if command -v uv >/dev/null 2>&1 && uv run ruff --version >/dev/null 2>&1; then
-    uv run ruff check . || exit 1
-    uv run ruff format --check . || exit 1
-  fi
+# Run Python linting on staged files if ruff is available
+if command -v uv >/dev/null 2>&1 && uv run ruff --version >/dev/null 2>&1; then
+  git diff --cached --name-only --diff-filter=ACM | grep '\.py$' | while read -r file; do
+    if [ -f "$file" ]; then
+      uv run ruff check "$file" || exit 1
+      uv run ruff format --check "$file" || exit 1
+    fi
+  done
 fi
 
-# Run markdown linting
-pnpm lint:md || exit 1
+# Run markdown linting on staged files only
+git diff --cached --name-only --diff-filter=ACM | grep '\.md$' | while read -r file; do
+  if [ -f "$file" ]; then
+    pnpm exec markdownlint "$file" --ignore node_modules --ignore .husky --ignore site || exit 1
+  fi
+done
