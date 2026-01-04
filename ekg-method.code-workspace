@@ -5,6 +5,21 @@
     },
     {
       "path": "../ekg-catalog"
+    },
+    {
+      "path": "../ekg-maturity"
+    },
+    {
+      "path": "../ekg-principles"
+    },
+    {
+      "path": "../ekgf-website"
+    },
+    {
+      "path": "../business-composer"
+    },
+    {
+      "path": "../agnos-website"
     }
   ],
   "settings": {

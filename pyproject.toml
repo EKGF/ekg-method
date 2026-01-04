@@ -35,3 +35,22 @@ dependencies = [
 [project.urls]
 Homepage = "https://method.ekgf.org"
 Repository = "https://github.com/EKGF/ekg-method"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.8.0",
+    "mypy>=1.11.0",
+    "pytest>=8.3.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

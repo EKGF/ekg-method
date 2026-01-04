@@ -1,0 +1,10 @@
+# Run Python linting if Python files exist and ruff is available
+if find . -name "*.py" -not -path "./.venv/*" -not -path "./site/*" | grep -q .; then
+  if command -v uv >/dev/null 2>&1 && uv run ruff --version >/dev/null 2>&1; then
+    uv run ruff check . || exit 1
+    uv run ruff format --check . || exit 1
+  fi
+fi
+
+# Run markdown linting
+pnpm lint:md || exit 1
