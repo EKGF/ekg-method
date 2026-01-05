@@ -1,12 +1,8 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.requireConfig": true,
-  "prettier.useEditorConfig": false,
-  "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "off",
-    "files.trimTrailingWhitespace": false
+  "markdownlint.ignore": [
+    "LICENSE"
+  ],
+  "files.associations": {
+    "LICENSE": "plaintext"
   }
 }

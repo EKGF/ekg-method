@@ -2,10 +2,9 @@
   "MD013": {
     "line_length": 70,
     "heading_line_length": 70,
-    "code_block_line_length": false
+    "code_block_line_length": 9999
   },
   "MD025": {
     "front_matter_title": ""
   }
 }
-
