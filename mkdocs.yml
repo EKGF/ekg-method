@@ -1,14 +1,16 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Use Case Tree Method
 site_description: Use Case Tree Method, a method to develop an Enterprise Knowledge Graph (EKG)
-repo_name: 'EKGF/ekg-method'
+repo_name: "EKGF/ekg-method"
 repo_url: https://github.com/EKGF/ekg-method
 site_url: https://method.ekgf.org
 edit_uri: edit/main/docs/
 site_dir: site
 site_author: Object Management Group (OMG) Enterprise Knowledge Graph Forum
 copyright: >-
-  Copyright © 2025 Object Management Group®, OMG® | All Rights Reserved
+  Copyright © 2026 EDMCouncil Inc., d/b/a Enterprise Data Management Association ("EDMA")
+  Copyright © 2026 agnos.ai UK Ltd
+  Licensed under Creative Commons Attribution-ShareAlike 4.0 International
 
 # Navigation
 # nav: omitted, because we're using the awesome-pages plugin (https://squidfunk.github.io/mkdocs-material/plugins/awesome-pages/)
@@ -30,18 +32,18 @@ theme:
       primary: custom
       accent: custom
       toggle:
-#        icon: material/toggle-switch-off-outline
-#        icon: material/lightbulb-outline
-        icon: material/weather-sunny
+        #        icon: material/toggle-switch-off-outline
+        #        icon: material/lightbulb-outline
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
-#        icon: material/toggle-switch
-#        icon: material/lightbulb
-        icon: material/weather-night
+        #        icon: material/toggle-switch
+        #        icon: material/lightbulb
+        icon: material/weather-sunny
         name: Switch to light mode
   features:
     - search.highlight
@@ -50,8 +52,8 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-#    - navigation.sections
-#    - navigation.expand
+    #    - navigation.sections
+    #    - navigation.expand
     - navigation.indexes
     - toc.follow
     - toc.integrate
@@ -93,7 +95,7 @@ plugins:
         - en
   - exclude-search:
       exclude:
-        - 'fragment/*'
+        - "fragment/*"
   - build_plantuml:
       render: "server" # or "local" for local rendering
       bin_path: "/usr/local/bin/plantuml" # ignored when render: server
@@ -116,9 +118,9 @@ plugins:
         - "*.tmp"
         - "*.sparql"
         - "*.gz"
-        - 'diagrams/src/*'
-        - 'fragment/*'
-        - 'other/seo-guide.md'
+        - "diagrams/src/*"
+        - "fragment/*"
+        - "other/seo-guide.md"
       regex:
         - '.*\.(tmp|bin|tar)$'
         - '_.*\.md$'
@@ -132,7 +134,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - meta
-# - mdx_spanner
+  # - mdx_spanner
   - def_list
   - abbr
   - admonition

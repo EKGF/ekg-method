@@ -2,7 +2,7 @@
   "scripts": {
     "prepare": "husky",
     "lint": "uv run ruff check . && uv run ruff format --check .",
-    "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore .husky --ignore site"
+    "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore .husky --ignore site --ignore LICENSE"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.3.0",
