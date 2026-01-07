@@ -4,7 +4,7 @@ Documenting the Use Case Tree method.
 
 ## Python
 
-This repo uses **Python 3.13+** (see `pyproject.toml`) and **uv**.
+This repo uses **Python 3.14.2+** (see `pyproject.toml`) and **uv**.
 
 ```bash
 uv sync
@@ -13,8 +13,7 @@ uv sync
 ## Copyright and Attribution
 
 ```text
-Copyright (c) 2026 EDMCouncil Inc., d/b/a Enterprise Data
-Management Association ("EDMA")
+Copyright (c) 2026 EDMCouncil Inc., d/b/a Enterprise Data Management Association ("EDMA")
 Copyright (c) 2026 agnos.ai UK Ltd
 ```
 
