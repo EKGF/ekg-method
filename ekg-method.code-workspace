@@ -20,6 +20,9 @@
     },
     {
       "path": "../agnos-website"
+    },
+    {
+      "path": "../mkdocs-material-ekgf"
     }
   ],
   "settings": {
@@ -42,17 +45,5 @@
       ],
       "files.trimTrailingWhitespace": false
     },
-    "emeraldwalk.runonsave": {
-      "commands": [
-        {
-          "match": "ekg-method/.*\\.md$",
-          "cmd": "python3 /Users/jgeluk/Work/ekg-method/scripts/wrap_markdown.py ${file}"
-        },
-        {
-          "match": "ekg-catalog/.*\\.md$",
-          "cmd": "python3 /Users/jgeluk/Work/ekg-catalog/scripts/wrap_markdown.py ${file}"
-        }
-      ]
-    }
   }
 }

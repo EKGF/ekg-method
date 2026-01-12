@@ -74,7 +74,7 @@ business outcomes within the Use Case Tree_
     - **Capability assessment**: How do we
       [Assess](../../process/plan/assess.md) all our organization's
       capabilities, as specified in the
-      [Maturity Model for the Enterprise Knowledge Graph (EKG/Maturity)](https://maturity.ekgf.org),
+      [Maturity Model for the Enterprise Knowledge Graph (EKG Maturity)](https://maturity.ekgf.org),
       related to our own EKG and how they match with our ambitions to
       implement our strategic use cases?
 

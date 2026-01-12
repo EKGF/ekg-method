@@ -1,5 +1,7 @@
 ---
-globs: *.md,*.yml,*.yaml
+description:
+  YAML and frontmatter formatting rules for ekgf.org content.
+globs: "**/*.md,**/*.yml,**/*.yaml"
 alwaysApply: false
 ---
 
@@ -10,7 +12,6 @@ alwaysApply: false
 When editing YAML files or frontmatter sections in Markdown files:
 
 1. **Always use multiline syntax** instead of long quoted strings
-
    - Use `>-` (folded block scalar with strip) for single-line strings
      that need to wrap
    - Use `|` (literal block scalar) when preserving line breaks is
