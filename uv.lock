@@ -274,6 +274,7 @@ dependencies = [
     { name = "mkdocs-localsearch" },
     { name = "mkdocs-macros-plugin" },
     { name = "mkdocs-material" },
+    { name = "mkdocs-material-ekgf" },
     { name = "mkdocs-minify-plugin" },
     { name = "mkdocs-redirects" },
     { name = "pillow" },
@@ -306,6 +307,7 @@ requires-dist = [
     { name = "mkdocs-localsearch" },
     { name = "mkdocs-macros-plugin" },
     { name = "mkdocs-material" },
+    { name = "mkdocs-material-ekgf", specifier = ">=0.0.5" },
     { name = "mkdocs-minify-plugin" },
     { name = "mkdocs-redirects" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.11.0" },
@@ -843,6 +845,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/27/e2/2ffc356cd72f1473d07c7719d82a8f2cbd261666828614ecb95b12169f41/mkdocs_material-9.7.1.tar.gz", hash = "sha256:89601b8f2c3e6c6ee0a918cc3566cb201d40bf37c3cd3c2067e26fadb8cce2b8", size = 4094392, upload-time = "2025-12-18T09:49:00.308Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3e/32/ed071cb721aca8c227718cffcf7bd539620e9799bbf2619e90c757bfd030/mkdocs_material-9.7.1-py3-none-any.whl", hash = "sha256:3f6100937d7d731f87f1e3e3b021c97f7239666b9ba1151ab476cabb96c60d5c", size = 9297166, upload-time = "2025-12-18T09:48:56.664Z" },
+]
+
+[[package]]
+name = "mkdocs-material-ekgf"
+version = "0.0.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/28/83/3560fdcada7172a41c6819b38a4b598000480e7f7969a157162ccf43ea42/mkdocs_material_ekgf-0.0.5.tar.gz", hash = "sha256:3f8b5921c8e0e143fa30ebd9344c87996d1f67f916a72bf5e39a14e6347792e3", size = 85999, upload-time = "2026-01-12T21:18:34.315Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ad/dd/ecd4dc69a11ed38f47f78bbfe0f93a47644d79d5aa2d7c478c3200409e0d/mkdocs_material_ekgf-0.0.5-py3-none-any.whl", hash = "sha256:a3dc1afacccdf4adb063a6ad3b73f6dad4d1ca08cd073da78423b22c79d6ce6b", size = 85776, upload-time = "2026-01-12T21:18:32.848Z" },
 ]
 
 [[package]]
