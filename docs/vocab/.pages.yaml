@@ -1,5 +1,6 @@
 title: Terms
 nav:
+  - index.md
   - CoE: coe.md
   - EKG: ekg.md
   - ...

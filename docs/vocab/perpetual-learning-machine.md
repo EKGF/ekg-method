@@ -12,6 +12,9 @@ keywords:
   - GenAI
   - knowledge capture
   - EKG architecture
+  - open world assumption
+  - observations
+  - meta-agents
 schema_type: Article
 ---
 
@@ -71,6 +74,49 @@ for the enterprise to get smarter.
 - **Institutional memory** - Knowledge persists beyond individual tenure
 - **Continuous improvement** - The enterprise gets smarter over time
 - **GenAI grounding** - AI agents have access to validated enterprise knowledge
+
+## GenAI Agents and Observations
+
+GenAI agents are particularly valuable in creating high-quality
+**observations**—structured assessments that are similar to human opinions
+but generated at scale. While humans have many channels to communicate
+their opinions and observations (meetings, emails, reports, conversations),
+GenAI agents lack these informal pathways. The Perpetual Learning Machine
+provides the structural infrastructure for GenAI agents to contribute
+their observations systematically.
+
+### Open World Architecture
+
+This capability requires both a technical and data architecture that
+supports the [Open World Assumption](https://en.wikipedia.org/wiki/Open-world_assumption)
+from the ground up. A virtual distributed Enterprise Knowledge Graph will
+always, by definition, contain multiple versions of the truth:
+
+- Observations from different GenAI agents
+- Made at different times
+- Using different LLM models
+- With different context windows and prompts
+- Alongside human observations and corrections
+
+Some observations may have lower quality than others—this is expected
+and by design.
+
+### From Quantity to Quality
+
+The power lies not just in individual observation quality, but in
+**aggregation over time**. When many agents—human and GenAI—independently
+observe the same pattern, statistical and machine learning methods can
+detect convergence:
+
+- Multiple agents flagging a potential **security breach**
+- Repeated observations of **undocumented data lineage**
+- Converging signals around a **business opportunity**
+- Accumulating warnings about **financial risk**
+
+Specialized "meta-agents" can analyze observations from other agents,
+applying statistical methods to transform a corpus of observations into
+validated **recommendations** or even **facts**—insights that no single
+human would discover on their own.
 
 ## Connection to Positive Learning
 

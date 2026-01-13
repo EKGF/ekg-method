@@ -1,39 +1,28 @@
 @startuml
 !include ../include/themes/light.puml
 top to bottom direction
+hide members
+skinparam noteFontColor #333333
 
-package "Enterprise Knowledge Graph" as EKG {
+class "Corpus of Structured Knowledge\n<size:11>Observations • Facts • Corrections • Validations</size>" as Corpus
 
-    package "Corpus of Structured Knowledge" as Corpus {
-        card "Observations" as obs
-        card "Facts" as facts
-        card "Corrections" as corr
-        card "Validations" as val
-    }
+note right of Corpus : The Virtual\nEnterprise\nKnowledge Graph
 
-    package "Perpetual Learning Machine" as PLM {
-        card "Capture interactions" as cap
-        card "Extract learnings" as ext
-        card "Structure as semantic knowledge" as struct
-        card "Validate and reconcile" as valid
-    }
+class "Perpetual Learning Machine\n<size:11>Capture • Extract • Structure • Validate</size>" as PLM
 
-    together {
-        component "Human\nAgents" as Human
-        component "GenAI\nAgents" as GenAI
-        component "System\nAgents" as System
-    }
+class "Human Agents" as Human
+class "GenAI Agents" as GenAI
+class "System Agents" as System
 
-    package "Use Cases & Systems" as UseCases {
-    }
-}
+class "Use Cases & Systems" as UseCases
 
 PLM -up-> Corpus : Store
-Human -up-> PLM : Capture
-GenAI -up-> PLM : Capture
-System -up-> PLM : Capture
-Human -down-> UseCases : Interact
-GenAI -down-> UseCases : Interact
-System -down-> UseCases : Interact
+Corpus -down-> PLM : Retrieve
+Human -up-> PLM
+GenAI -up-> PLM
+System -up-> PLM
+Human -down-> UseCases
+GenAI -down-> UseCases
+System -down-> UseCases
 
 @enduml
