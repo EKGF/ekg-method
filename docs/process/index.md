@@ -75,7 +75,7 @@ schema_type: "WebPage"
           </div>
       </div>
 
-        Deploy, operate, and optimize the [EKG/Platform](../vocab/ekg-platform.md).
+        Deploy, operate, and optimize the [EKG Platform](../vocab/ekg-platform.md).
         Measure [Outcomes](../concept/outcome/index.md), monitor [Workflows](../concept/workflow.md),
         serve multiple use cases across the enterprise.
 

@@ -48,12 +48,12 @@ first having a good plan.
 3. Then the translation of that to:
     * Ontology Architecture
     * Technical Architecture
-        - [EKG/Platform](../../vocab/ekg-platform.md), identification and 
+        - [EKG Platform](../../vocab/ekg-platform.md), identification and 
           functional description and requirements of all the various 
           platform services needed.
         - A design and architecture for the ”DataOps Environment” 
           which connects the upstream data providers and downstream 
-          data consumers to the EKG/Platform.
+          data consumers to the EKG Platform.
         - A design and architecture for the user experience (either 
           bespoke or generic model-driven UI).
     * A clear sequence of deliverable artifacts as input to the project plan.

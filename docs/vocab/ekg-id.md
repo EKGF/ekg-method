@@ -1,10 +1,10 @@
 ---
 description: >-
-  An EKG Identifier (EKG/ID) identifies an object in an EKG and is universally
+  An EKG Identifier (EKG ID) identifies an object in an EKG and is universally
   unique, opaque, permanent, resolvable, and non-reassignable. Learn about EKG
   identity principles.
 keywords:
-  - EKG/ID
+  - EKG ID
   - EKG identifier
   - unique identifier
   - identity management
@@ -13,7 +13,7 @@ keywords:
 schema_type: "Article"
 ---
 
-# EKG Identifier (EKG/ID)
+# EKG Identifier (EKG ID)
 
 _An EKG Identifier identifies an object[^object] in an [EKG](ekg.md)
 and is [universally unique](#universally-unique), [opaque](#opaque),
@@ -22,7 +22,7 @@ and is [universally unique](#universally-unique), [opaque](#opaque),
 
 !!! note inline end "Web-resolvability"
 
-    Usually the EKG/ID is part of an [EKG/IRI](ekg-iri.md) which
+    Usually the EKG ID is part of an [EKG IRI](ekg-iri.md) which
     makes it "web-resolvable" as well, but at higher levels of 
     technical EKG maturity there may be other technical ways to
     ensure "resolvability". It may not be required anymore to
@@ -44,9 +44,9 @@ An identifier is "opaque" if it provides no information about
 the thing it identifies other than being a seemingly random string
 or number.
 
-An EKG/ID needs to be opaque because one of the most impactful and
+An EKG ID needs to be opaque because one of the most impactful and
 important objectives of EKG is to maximise proliferation of web-resolvable
-EKG Identifiers (i.e. [EKG/IRIs](ekg-iri.md)) across not only the
+EKG Identifiers (i.e. [EKG IRIs](ekg-iri.md)) across not only the
 internal enterprise but also its larger ecosystem or even beyond that.
 These identifiers end up for years, perhaps decades, in all kinds of
 databases, spreadsheets, documents, long term storage etc.
@@ -55,7 +55,7 @@ or actual information from these identifiers.
 
 ## Permanent
 
-The EKG/IRI identifier is permanent and can safely be proliferated across
+The EKG IRI identifier is permanent and can safely be proliferated across
 the enterprise's universe---including its ecosystem---and will be used
 for the expression of facts about the object including relationships
 between objects.
@@ -74,7 +74,7 @@ _Resolving_ an identifier can be done in three ways:
 1. using it in a transaction---i.e. a query or update statement---submitted or routed via an
    internet protocol (e.q. HTTP API) or other means (e.g. Kafka) to a "lookup service" that 
    translates one or more given "features" of an object to its corresponding _EKG Identifier_ 
-   (i.e. an EKG/ID or an EKG/IRI).
+   (i.e. an EKG ID or an EKG IRI).
 2. constructing it via a standardized policy from key components and applying a hash and optionally
    signing it---where the object represented by the EKG identifier may or may not already exist.
 3. constructing it by giving the object an EKG identifier based on a random number in case 
@@ -82,8 +82,8 @@ _Resolving_ an identifier can be done in three ways:
 
 ## Web-resolvable
 
-An EKG Identifier (EKG/ID) (currently, see side box) becomes "web-resolvable", 
-by making it part of an EKG/IRI, i.e. by making it a URL and thereby prefixing
+An EKG Identifier (EKG ID) (currently, see side box) becomes "web-resolvable", 
+by making it part of an EKG IRI, i.e. by making it a URL and thereby prefixing
 the "identifier part" with "a locator":
 
 `[locator][identifier]`
@@ -92,7 +92,7 @@ Where `[locator]` could be something like `https://acme.com/id/`.
 
 If an external dataset is loaded into your organization's EKG then
 you could decide _not_ to give each object in that dataset to have
-a standard EKG/IRI and just use the provided identifiers, whatever
+a standard EKG IRI and just use the provided identifiers, whatever
 they may be.
 However, that could mean that it will be technically more difficult
 to make these external IRIs resolvable to your organization's EKG
