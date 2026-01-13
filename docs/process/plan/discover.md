@@ -57,7 +57,7 @@ requirements, [stories](../../concept/story.md) and
 [workflows](../../concept/workflow.md). These are aligned as a set of
 visual roadmaps to be used to create onward business cases. The team
 leverages the
-[knowledge graph maturity model](../../vocab/maturity-model.md) to
+[knowledge graph maturity model](https://maturity.ekgf.org) to
 help frame each deliverable in terms of staged business capabilities.
 
 ## Audience

@@ -159,5 +159,5 @@ unstructured data such as text and numerous volumes of documents.
   implemented in the EKG
 - **[Ontology](../concept/ontology.md)** - Semantic models that define
   meaning in the EKG
-- **[Maturity Model](maturity-model.md)** - Assessing EKG maturity
+- **[Maturity Model](https://maturity.ekgf.org)** - Assessing EKG maturity
   levels

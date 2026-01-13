@@ -111,7 +111,7 @@ Flyvberg, the principles behind smart scale-ups are the following:
   that are the fastest at this process will win”_. Speed is critical
   for companies not only to create momentum but also to create a
   feedback loop between the company and its environment to foster
-  [positive learning](../vocab/positive-learning.md)positive learning
+  [positive learning](../vocab/positive-learning.md)
   within companies. Positive learning is defined by Flyvbjerg as;
   _“learning to do things faster, better, and cheaper by doing the
   same thing over and over, through replicated modules”_.
