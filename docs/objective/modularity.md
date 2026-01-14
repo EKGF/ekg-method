@@ -33,11 +33,10 @@ systems._
 
 <!--summary-end-->
 
-The standard approach for large projects, such as nuclear plants, ERP
-implementations, data-warehouses and subway systems, is to build
-monolithical bespoke systems. Subsequently, large investments need to
-be taken to even start the project and the project won’t deliver, in
-most cases, any value until completion. Even a project that is 95%
+The standard approach for large projects—nuclear plants, ERP
+implementations, data warehouses, subway systems—is to build
+monolithic bespoke systems. Large investments before anything starts.
+No value delivered until completion. Even a project that is 95%
 complete, is often of no use to anyone until it is delivered, such as
 in the case of a nuclear plant. This problem also increases the risk
 that the project may get out of hand by requiring more time and budget
@@ -50,22 +49,29 @@ according to
 be divided in smaller subprojects that can be tackled separately and
 where each should deliver value independently of the rest.
 
-??? note "Prof. Bent Flyvbjerg" <div class="grid" markdown>
+??? note "Prof. Bent Flyvbjerg"
 
-<figure markdown>
-![Flyvbjerg](https://import.cdn.thinkific.com/404006/Dmb5k6KSpSaiPFXWwe0w_9E5A6165-027A-4B0D-A42B-FA265097E3F6%20-%20bent.jpg){
-width="280" } <caption>Prof. Bent Flyvbjerg</caption> </figure>
-<div markdown> Professor Bent Flyvbjerg is the Executive Chairman of
-Oxford Global Projects. He has 30+ years of experience as an advisor
-to government and business, including the US, UK, and Chinese
-governments, Fortune 500 companies, and top consultancies. Flyvbjerg
-is the most cited scholar in the world on project management. He is
-the first BT Professor and Inaugural Chair of Major Programme
-Management at Oxford University and holds the Villum Kann Rasmussen
-Professorship and Chair at the IT University of Copenhagen. He has
-received numerous honors and awards for his work on better project
-management, including a knighthood and two Fulbright Scholarships.
-</div> </div>
+    <div class="grid" markdown>
+
+    <figure markdown>
+    ![Flyvbjerg](https://import.cdn.thinkific.com/404006/Dmb5k6KSpSaiPFXWwe0w_9E5A6165-027A-4B0D-A42B-FA265097E3F6%20-%20bent.jpg){ width="280" }
+    <figcaption>Prof. Bent Flyvbjerg</figcaption>
+    </figure>
+
+    <div markdown>
+    Professor Bent Flyvbjerg is the Executive Chairman of Oxford Global
+    Projects. He has 30+ years of experience as an advisor to government
+    and business, including the US, UK, and Chinese governments, Fortune
+    500 companies, and top consultancies. Flyvbjerg is the most cited
+    scholar in the world on project management. He is the first BT
+    Professor and Inaugural Chair of Major Programme Management at Oxford
+    University and holds the Villum Kann Rasmussen Professorship and Chair
+    at the IT University of Copenhagen. He has received numerous honors
+    and awards for his work on better project management, including a
+    knighthood and two Fulbright Scholarships.
+    </div>
+
+    </div>
 
 Flyvbjerg uses Madrid’s subway system as a mere example to illustrate
 the value of this approach. Manuel Melis Maynar was the person
@@ -148,6 +154,23 @@ and
 consider packaged business capabilities as the building blocks of
 composable businesses.
 
+## The Use Case Tree Connection
+
+The [Use Case Tree Method](../concept/use-case-tree.md) applies these
+principles directly to Enterprise Knowledge Graph development. Each use
+case is a module. Each module delivers value independently. Each delivery
+accelerates the next through [positive learning](../vocab/positive-learning.md).
+
+No monuments. No big bang. Ship and iterate.
+
+## See Also
+
+- [Use Case Tree](../concept/use-case-tree.md)
+- [Positive Learning](../vocab/positive-learning.md)
+- [Composable Business](composable-business.md)
+- [Avoid Boiling the Ocean](avoid-boiling-the-ocean.md)
+- [Enable Reuse](enable-reuse.md)
+
 ## Sources
 
 - [Oxford Global Projects Academy - Smart Scaling: Modularity & Speed](https://academy.oxfordglobalprojects.com/pages/smart-scaling)
@@ -157,4 +180,4 @@ composable businesses.
 - [Gartner Keynote: The Future of Business Is Composable](https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable)
 - [Walkme - Packaged Business Capabilities (PBCs)](https://www.walkme.com/glossary/packaged-business-capabilities/)
 - [ElasticPath - What are Packaged Business Capabilities?](https://www.elasticpath.com/blog/what-are-packaged-business-capablities)
-- [Venture Leap - The future is called _“Packaged Business Capabilities”_](https://venture-leap.com/en/the-leap/the-future-is-called-packaged-business-capabilities-2/)
+- [Venture Leap - The future is called _"Packaged Business Capabilities"_](https://venture-leap.com/en/the-leap/the-future-is-called-packaged-business-capabilities-2/)

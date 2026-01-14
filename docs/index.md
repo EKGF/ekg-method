@@ -17,50 +17,50 @@ hide:
   - toc
 ---
 
-<div class="hero-container" markdown="1">
+<div class="ekgf-hero" markdown="1">
 
 # Use Case Tree Method
 
 Deliver strategic business value and agility through connected
 enterprise knowledge — one use case at a time.
 
-<div class="hero-buttons">
+<div class="ekgf-hero-buttons">
 <a href="concept/use-case-tree/" class="md-button md-button--primary">Explore the Use Case Tree</a>
-<a href="https://catalog.ekgf.org/" class="md-button">Browse example use cases</a>
+<a href="https://catalog.ekgf.org/use-case/" class="md-button">Browse example use cases</a>
 </div>
 
 </div>
 
 ## Built for Business Outcomes
 
-<div class="benefit-grid">
-  <div class="benefit-card-custom" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80');">
-    <div class="benefit-card-custom-content">
+<div class="ekgf-card-grid">
+  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80');">
+    <div class="ekgf-image-card-content">
       <strong>Business-owned roadmap</strong>
       <p>Align strategy → capabilities → delivery with one shared artifact.</p>
     </div>
   </div>
-  <div class="benefit-card-custom" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80');">
-    <div class="benefit-card-custom-content">
+  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80');">
+    <div class="ekgf-image-card-content">
       <strong>Composable delivery</strong>
       <p>Ship small, reusable building blocks instead of monolithic systems.</p>
     </div>
   </div>
-  <div class="benefit-card-custom" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80');">
-    <div class="benefit-card-custom-content">
+  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80');">
+    <div class="ekgf-image-card-content">
       <strong>Quality + compliance</strong>
       <p>Make traceability, controls, and auditability part of the design.</p>
     </div>
   </div>
-  <div class="benefit-card-custom" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80');">
-    <div class="benefit-card-custom-content">
+  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80');">
+    <div class="ekgf-image-card-content">
       <strong>Production-proven</strong>
       <p>A method refined across real EKG use cases running in production.</p>
     </div>
   </div>
 </div>
 
-<div class="landing-explanatory-section" markdown="1">
+<div class="ekgf-highlight-section" markdown="1">
 
 ## What is the Use Case Tree Method?
 

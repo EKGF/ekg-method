@@ -30,176 +30,126 @@ other technologies._
 
 <!--summary-end-->
 
-## Objective
+Why build an Enterprise Knowledge Graph? Simple: **to deliver strategic
+use cases that cannot realistically be done with other technologies**.
 
-The primary justification for building an Enterprise Knowledge Graph
-(EKG) is simple: **to deliver strategic use cases that cannot
-realistically be implemented with other technologies**.
+Not "could be done slightly better." Cannot be done. Period.
 
-However, there is an important distinction between **lighthouse use
-cases** and **strategic use cases**:
+Two types of use cases matter here:
 
-- **Lighthouse use cases** are the ultimate proof point that makes the
-  case for EKG adoption, overcoming the enormous resistance to change
-  that exists in large organizations. They are the use case that pulls
-  everyone over the line—business stakeholders, technologists,
-  security teams, and data professionals—convincing them that EKG is
-  critically important to the organization.
+- **Lighthouse use cases** - The proof point that breaks through
+  organizational resistance. The one that makes skeptics believers.
+  Without a lighthouse, you'll spend years in pilot purgatory.
 
-- **Strategic use cases** are other strategically important or
-  mission-critical use cases that can be done better (or only) by EKG.
-  These are important capabilities that matter at the C-level, but
-  they may not be the initial lighthouse that breaks through
-  organizational resistance.
+- **Strategic use cases** - Mission-critical capabilities that matter at
+  the C-level. They may not be your first win, but they're why you're
+  building an EKG in the first place.
 
-The Enterprise Knowledge Graph Forum (EKGF) claims that **only an EKG
-can realistically implement these strategic use cases** at enterprise
-scale.
+The EKGF claims that **only an EKG can realistically implement these
+strategic use cases** at enterprise scale. Bold claim. But look at the
+evidence.
 
-## Lighthouse Use Cases: Making the Case for EKG
+## Lighthouse Use Cases: Breaking Through Resistance
 
-Large organizations have enormous, almost insurmountable resistance to
-change. They've been doing things the same way for decades, and few
-new paradigms are wholeheartedly embraced. Even when organizations
-adopt Agile or DevOps, it's often in the lightest possible
-way—basically just to "check the boxes."
+Large organizations resist change. They've been doing things the same
+way for decades. Even when they adopt Agile or DevOps, it's usually
+box-ticking theater.
 
-EKG introduces many groundbreaking paradigms at once: semantic
-technology, knowledge graphs, self-describing datasets, model-driven
-development, and more. Convincing an organization and all its layers—
-business people, technologists, security professionals, data
-specialists—requires a compelling proof point.
+EKG introduces multiple paradigms at once: semantic technology, knowledge
+graphs, self-describing datasets, model-driven development. That's a lot
+to swallow. Convincing business people, technologists, security teams,
+and data specialists all at once requires a proof point that's impossible
+to ignore.
 
-**A lighthouse use case is that proof point.** It is the strategic use
-case that:
+**That's your lighthouse use case.** The one that makes everyone say:
+"We need this. Now."
 
-- **Demonstrates undeniable value** that cannot be achieved with
-  traditional approaches
-- **Overcomes organizational resistance** by showing clear, measurable
-  results
-- **Convinces all stakeholders** across business, technology,
-  security, and data domains
-- **Justifies the investment** in EKG as a strategic platform, not
-  just a one-off project
-- **Creates momentum** for broader EKG adoption across the enterprise
+A good lighthouse:
 
-The lighthouse use case is the one that makes everyone say: "We need
-EKG. This is the future of how we operate."
+- Demonstrates value that traditional approaches simply cannot deliver
+- Shows clear, measurable results that silence the skeptics
+- Justifies EKG as a strategic platform, not just another pilot
+- Creates momentum for broader adoption
 
-## Strategic Use Cases: Mission-Critical Capabilities
+## Strategic Use Cases: The Real Prize
 
-Beyond the lighthouse use case, there are many other strategically
-important or mission-critical use cases that can be done better (or
-only) by EKG. These strategic use cases:
+Beyond the lighthouse are the strategic use cases—the reason you're
+building an EKG in the first place. These are capabilities that:
 
-- **Deliver significant business value** at the executive level
-- **Solve problems that other technologies cannot** realistically
-  address
-- **Create competitive advantage** through unique capabilities
-- **Enable long-term transformation** rather than solving isolated
-  problems
-- **Build on the EKG foundation** established by the lighthouse use
-  case
-
-Strategic use cases may not be the initial proof point, but they are
-essential capabilities that justify continued investment in EKG and
-demonstrate its value across multiple domains.
+- Matter at the C-level
+- Cannot be done with traditional technology (not "could be better"—cannot)
+- Create competitive advantage that compounds over time
+- Build on each other through the EKG foundation
 
 ### The GenAI Connection
 
-A particularly relevant example today is **GenAI guardrailing**. As
-organizations explore generative AI, there's a nightmare scenario:
-letting GenAI agents loose on all legacy system endpoints using MCP
-servers and similar approaches without proper guardrails.
+Here's a timely example: **GenAI guardrailing**.
 
-**EKG provides the semantic foundation to guardrail GenAI**, enabling:
+Organizations are rushing to deploy GenAI agents. The nightmare scenario?
+Letting those agents loose on legacy system endpoints via MCP servers
+with no guardrails. Direct access to production data. No semantic
+understanding. No governance. Chaos waiting to happen.
 
-- **Controlled access** to enterprise data through semantic models
-- **Governed interactions** with systems and data sources
-- **Meaningful context** for AI agents through ontologies and
-  relationships
-- **Safe experimentation** without risking critical systems
-- **Auditable AI operations** through the knowledge graph
+**EKG provides the semantic foundation to make GenAI safe:**
 
-Having GenAI guardrailed by EKG allows GenAI use cases to thrive
-safely and effectively, rather than creating chaos by connecting AI
-agents directly to legacy endpoints.
+- Controlled, governed access to enterprise data
+- Meaningful context through ontologies and relationships
+- Auditable operations through the knowledge graph
+- Safe experimentation without risking critical systems
 
-## Why EKG Enables Unique Capabilities
+Without EKG, GenAI is a liability. With EKG, it's a competitive weapon.
 
-Traditional technology stacks face fundamental limitations when
-addressing enterprise-wide strategic challenges:
+## Why Traditional Technology Can't Do This
 
-### The Limitations of Traditional Approaches
+Traditional stacks hit fundamental walls:
 
-- **Siloed data** — Information trapped in isolated systems cannot be
-  easily connected or queried across domains
-- **Rigid schemas** — Relational databases require predefined
-  structures that break when business needs evolve
-- **Point-to-point integration** — Connecting systems requires custom
-  integrations for each connection, creating exponential complexity
-- **Limited semantic understanding** — Systems cannot understand
-  relationships and meaning across different domains
-- **High maintenance costs** — Changes require extensive rework across
-  multiple systems
+- **Siloed data** — Information trapped in systems that don't talk to
+  each other
+- **Rigid schemas** — Relational databases break when business needs
+  evolve
+- **Point-to-point integration** — Every new connection multiplies
+  complexity exponentially
+- **No semantic understanding** — Systems don't understand meaning,
+  just structure
+- **Change is expensive** — Every modification ripples across systems
 
-### How EKG Overcomes These Limitations
+### How EKG Changes the Game
 
-Enterprise Knowledge Graphs enable strategic use cases through:
+- **Semantic connectivity** — Data connected by meaning, queryable
+  across any domain (see [Interoperability](interoperability.md))
+- **Flexible schema** — Ontologies evolve without breaking existing
+  applications
+- **Universal integration** — One semantic layer connects everything
+- **Relationships first** — The graph structure naturally represents
+  complex dependencies
+- **Incremental evolution** — New use cases build on existing
+  components without disruption (see [Avoid Disruption](avoid-disruption.md))
 
-- **Semantic connectivity** — Data is connected by meaning, not just
-  structure, enabling queries across any domain (see
-  [Interoperability](interoperability.md))
-- **Flexible schema** — Ontologies can evolve without breaking
-  existing queries or applications
-- **Universal integration** — One semantic layer connects all systems,
-  reducing integration complexity (see
-  [Interoperability](interoperability.md))
-- **Relationship-first design** — The graph structure naturally
-  represents complex relationships and dependencies
-- **Incremental evolution** — New use cases can build on existing
-  components without disrupting what's already working (see
-  [Avoid Disruption](avoid-disruption.md))
+### Composable Components: The Multiplier
 
-### The Unique Power of Composable Components
-
-When the [Use Case Tree Method](../process/index.md) is followed
-completely, EKG enables a unique capability: **the delivery of robust,
-heavily tested knowledge graph components** that function like highly
-reusable lego bricks.
+When the [Use Case Tree Method](../process/index.md) is followed properly,
+something powerful happens: you build **reusable lego bricks** instead of
+one-off solutions.
 
 These components are:
 
-- **Data as code** — Knowledge graph components are versioned,
-  testable, and deployable like software code
-- **Low-code or no-code** — Components can be composed into larger use
-  cases with minimal custom development (see
-  [Composable Business](composable-business.md))
-- **Heavily tested** — Each component has comprehensive test coverage,
-  ensuring reliability and quality (see
-  [Increase Quality](increase-quality.md))
-- **Highly reusable** — Small, focused components can be combined to
-  build larger, more complex capabilities (see
-  [Enable Reuse](enable-reuse.md))
-- **Composable** — Components can be assembled like lego bricks to
-  create enterprise-spanning solutions (see
-  [Composable Business](composable-business.md) and
-  [Modularity](modularity.md))
+- **Data as code** — Versioned, testable, deployable
+- **Low-code composable** — Snap together with minimal custom development
+  (see [Composable Business](composable-business.md))
+- **Heavily tested** — Comprehensive coverage, guaranteed reliability
+  (see [Increase Quality](increase-quality.md))
+- **Highly reusable** — Build once, use everywhere
+  (see [Enable Reuse](enable-reuse.md))
 
-This composable architecture enables organizations to **scale up
-drastically** in terms of both functionality and quality. As more
-components are built and tested, the organization's capability to
-deliver complex use cases accelerates exponentially.
+The result? Each use case you deliver makes the next one faster. Your
+capability to build complex solutions accelerates exponentially.
 
-## Examples of Lighthouse and Strategic Use Cases
+## Examples: What Does "Cannot Be Done" Look Like?
 
-Both lighthouse and strategic use cases typically appear at the top of
-the [Use Case Tree](../concept/use-case-tree.md) and represent
-enterprise-wide capabilities. The same use case might serve as a
-lighthouse for one organization and a strategic use case for another,
-depending on organizational context and priorities.
-
-Common examples include:
+These sit at the top of your [Use Case Tree](../concept/use-case-tree.md).
+What's a lighthouse for one organization might be a strategic use case
+for another—context matters. But they all share one thing: traditional
+technology can't deliver them at enterprise scale.
 
 ### Client 360 / Customer 360
 
@@ -356,23 +306,18 @@ the critical guardrail to ensure reliability.
 
 [:octicons-arrow-right-24: Learn more on the EKG Catalog](https://catalog.ekgf.org/use-case/construction-project-quotations/)
 
-## The Competitive Advantage
+## The Competitive Moat
 
-Both lighthouse and strategic use cases enabled by EKG create
-sustainable competitive advantages because:
+These capabilities create advantages that compound:
 
-1. **They cannot be easily replicated** — Competitors using
-   traditional technology stacks cannot match the capabilities without
-   similar investment
-2. **They compound over time** — Each new use case builds on previous
-   ones, creating increasing returns
-3. **They enable innovation** — The semantic foundation enables rapid
-   experimentation and new capability development
-4. **They reduce technical debt** — Unlike point solutions, EKG
-   capabilities are reusable and composable
-5. **They enable safe AI adoption** — EKG provides the guardrails
-   needed for GenAI and other AI technologies to thrive in enterprise
-   contexts
+1. **Cannot be replicated easily** — Competitors on traditional stacks
+   can't match you without similar investment
+2. **Compound over time** — Each use case makes the next one faster
+3. **Enable innovation** — The semantic foundation lets you experiment
+   rapidly
+4. **Reduce technical debt** — Reusable components instead of point
+   solutions
+5. **Make AI safe** — EKG provides the guardrails for GenAI to thrive
 
 ## How the Use Case Tree Method Enables Strategic Use Cases
 

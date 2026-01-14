@@ -18,7 +18,7 @@ keywords:
   - EKG method
   - enterprise knowledge graph
   - agile methodology
-schema_type: "Article"
+schema_type: Article
 ---
 
 # Avoid "boiling the ocean"
@@ -31,52 +31,106 @@ things at the right time. Save money._
 <!--summary-end-->
 
 One of the most important goals for creating the Use Case Tree Method
-was--and still is--to tackle a phenomenon that we see happen often in
-almost all knowledge graph initiatives which we can most easily
-describe as "people are trying to boil the ocean".
+was—and still is—to tackle a phenomenon we see in almost every knowledge
+graph initiative: **people trying to boil the ocean**.
 
-It is human nature to try to simplify things by creating a logical
-boundary around a given set of problems that need to be solved. That's
-one important driver behind the creation of more and more silos in an
-organization.
+## The Silo Instinct
 
-However, with a Knowledge Graph, and especially an Enterprise
-Knowledge Graph, the idea might exist that all information is linked,
-everything comes together in one place (not necessarily a physical
-place btw) and all applications are now called use cases that all work
-with the same "giant database" that runs somewhere in the cloud i.e.
-"the EKG".
+It's human nature to simplify by drawing boundaries. That instinct drives
+the creation of silos—neat boxes around problems that feel manageable.
 
-Where to begin? What to do when?
+But with an Enterprise Knowledge Graph, the promise is different:
+everything connects, all information lives in one logical place, and
+applications become "use cases" working against a shared foundation.
+Suddenly the boundaries blur.
 
-It turns out that many people simply start doing what they like to do
-best. For some that's about focussing on ontologies that model the
-whole world. For others, it's about focussing on discussions about
-performance and database technology. And so forth. All of those
-activities are eventually all necessary but not all from day one.
-Don't lose sight for the forest for the trees.
+Where do you begin? What do you do when?
 
-In an EKG context, it becomes even more important than ever before to
-create focus, to have managed expectations, to not waste time on
-things that are not important just yet, to keep the eye on the ball
-which is to keep delivering real business value to real end-users
-continuously.
+## Everyone Does What They Like
 
-The [Use Case Tree](../concept/use-case-tree.md) avoids the
-boil-the-ocean-phenomenon because the Use Case Tree and its individual
-use cases define an agreed scope at the detail level without becoming
-technical immediately.
+Without clear guidance, people default to what they enjoy:
 
-First focus on _**"the why and the what"**_ (to deliver), then keep
-adding specialists and let them add their detailed information to your
-use cases until it gets delivered. In fact, at higher levels of
-maturity, adding all these details will lead to higher levels of
-automation of the software development and delivery process itself
-leading to "executable models" where no programming is even required
-anymore
+- **Ontologists** start modeling the entire universe
+- **Architects** dive into database technology and performance debates
+- **Data engineers** build pipelines for data nobody asked for yet
+- **Developers** prototype features that aren't on any roadmap
+
+All of these activities are eventually necessary—but not all from day one.
+Don't lose sight of the forest for the trees.
+
+## Focus is Everything
+
+In an EKG context, focus becomes more critical than ever:
+
+- [Manage expectations](manage-expectations.md) ruthlessly
+- Don't waste time on things that aren't important yet
+- Keep the eye on the ball: **deliver real business value to real
+  end-users, continuously**
+
+The [Use Case Tree](../concept/use-case-tree.md) prevents boiling the
+ocean by defining agreed scope at the right level of detail—without
+getting technical prematurely.
+
+## Strip Out the Noise
+
+People have a habit of dragging in irrelevant topics:
+
+- Database schema design
+- Page layouts and screen mockups
+- API specifications
+- Technology stack debates
+- "How we've always done it"
+
+Or they can't escape their current world—only thinking in terms of what
+already exists, proposing minor improvements to the status quo. Thinking
+out of the box is rare. Most people aren't empowered to do it, and those
+who are often don't know where to start.
+
+The Use Case Tree method strips all of this out. No databases. No screens.
+No technology. Just crystal clear focus on actual business requirements,
+in almost plain English:
+
+- **[Outcomes](../concept/outcome/index.md)** - What value are we delivering?
+- **[Stories](../concept/story.md)** - Who needs what and why?
+- **[Concepts](../concept/concept/index.md)** - What things are we talking about?
+- **[Workflows](../concept/workflow.md)** - How does work actually flow?
+- **A name** - What do we call this use case?
+
+That's it. And that's already hard enough.
+
+## The Why and What Before the How
+
+First focus on **"the why and the what"**—what business value are we
+delivering and to whom?
+
+Then—and only then—progressively add specialists who contribute their
+detailed knowledge to each use case until it ships. At higher levels of
+maturity, these structured details enable increasing automation of
+software development itself—moving toward executable models where
+traditional programming becomes unnecessary
 ([low-code/no-code delivery](https://www.techtarget.com/searchsoftwarequality/definition/low-code-no-code-development-platform)).
 
-The Use Case Tree provides focus for the Center of Excellence (CoE),
-enabling it to "crank out" use cases one by one, according to the
-agreed roadmap that is
+## Crank Out Use Cases
+
+The Use Case Tree gives the [CoE](../vocab/coe.md) the focus to deliver
+use cases one by one, following a roadmap
 [aligned with business strategy](align-with-business-strategy.md).
+
+Each delivered use case:
+
+- Proves value to stakeholders
+- Builds reusable components for the next use case
+- Accelerates future delivery through
+  [positive learning](../vocab/positive-learning.md)
+- Maintains momentum and credibility
+
+The alternative—trying to build everything at once—leads to projects that
+run for years, burn through budgets, and deliver nothing until "it's all
+done" (which it never is).
+
+## See Also
+
+- [Use Case Tree](../concept/use-case-tree.md)
+- [Manage Expectations](manage-expectations.md)
+- [Modularity](modularity.md)
+- [Positive Learning](../vocab/positive-learning.md)

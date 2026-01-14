@@ -30,56 +30,46 @@ knowledge_
 
 <!--summary-end-->
 
-## Objective
+Without reuse, there is no EKG. Just another pile of data that nobody
+can build on.
 
-**Reuse Enablement** is the discipline of designing, packaging, and
-governing every knowledge asset — use case, ontology, data product, or
-workflow — so that it can be safely reused across teams, domains, and
-generations of technology.
+**Reuse Enablement** means designing every knowledge asset—use case,
+ontology, data product, workflow—so it can be safely reused across teams,
+domains, and generations of technology. Not as an afterthought. As the
+core architectural principle.
 
-It is the foundation of the Enterprise Knowledge Graph (EKG): without
-reuse, there is no composability, no scalability, and no sustainable
-intelligence. The Use Case Tree Method defines reuse not as a
-technical afterthought but as a _core architectural principle_ —
-embedded in the way we plan, build, and run every enterprise
-capability.
+## The Problem: Starting from Zero, Every Time
 
-## Why It Matters
+Enterprises waste enormous effort solving the same problems repeatedly.
+Integrating the same data. Remodeling the same business rules. Recreating
+the same workflows. Different team, same work, zero leverage.
 
-Enterprises waste enormous effort solving the same problems repeatedly
-— integrating the same data, remodelling the same business rules,
-recreating the same workflows.
+Why? **Knowledge is not shared as reusable components.**
 
-Most of this duplication stems from one cause: **knowledge is not
-shared as reusable components**.
+It lives in silos—spreadsheets, slide decks, bespoke systems. Every
+project starts from scratch. Every team reinvents what the team next door
+built last year.
 
-When knowledge lives in silos — spreadsheets, slide decks, bespoke
-systems — every project begins from zero. By contrast, a reuse-enabled
-organisation captures its work as semantically defined, governed
-components that can be discovered and recomposed anywhere across the
-enterprise.
+A reuse-enabled organization captures work as semantically defined,
+governed components. Discoverable. Composable. Anywhere in the enterprise.
 
 The result:
 
 - Drastically reduced duplication and cost
-- Higher quality and consistency through shared models
-- Faster delivery and innovation
-- Stronger alignment across business and technology
+- Higher quality through shared, tested models
+- Faster delivery—each use case accelerates the next
+- Alignment across business and technology
 
-## Beyond Data: The Real Meaning of Reuse
+## Beyond Data: Reusing Behavior, Not Just Triples
 
-Most "semantic technology" initiatives of the past two decades have
-been driven from the **data perspective** — led by integration
-specialists and ontology engineers. They delivered powerful data
-harmonisation but rarely transformed how the enterprise actually
-_works_.
+Most semantic technology initiatives have been data-driven—integration
+specialists and ontology engineers delivering powerful data harmonization.
+Useful, but it rarely transforms how the enterprise actually *works*.
 
-That is where the **Enterprise Knowledge Graph (EKG)** and **Use Case
-Tree (UCT)** shift the paradigm. They treat **reuse not as a data
-exercise**, but as the foundation for _application composition_. In
-the Use Case Tree Method, reuse is not limited to triples or
-ontologies — it extends to **behaviour**, expressed as _Stories_ and
-_Workflows_.
+The **Use Case Tree Method** shifts the paradigm. Reuse isn't a data
+exercise. It's the foundation for *application composition*. Not just
+triples and ontologies—**behavior** itself, expressed as Stories and
+Workflows.
 
 Just as **object-oriented programming** in the 1980s combined data and
 methods into a reusable "object," the **Use Case Tree (UCT)** combines
@@ -209,12 +199,12 @@ below summarises their relationship within the Use Case Tree Method.
 - [Achieve Interoperability](interoperability.md)
 - [Capture Knowledge](capture-knowledge.md)
 
-## Summary
+## The Bottom Line
 
-Reuse Enablement is how the EKG turns knowledge into infrastructure.
-By packaging every use case, ontology, and data product as a governed,
-discoverable component within the Use Case Tree, the enterprise builds
-a foundation for **scalable intelligence and composable business**.
+Reuse turns knowledge into infrastructure.
 
-When reuse becomes second nature, innovation stops reinventing the
-wheel — and starts accelerating on shared semantic ground.
+Package every use case, ontology, and data product as a governed,
+discoverable component. Build a foundation for scalable intelligence.
+Stop reinventing the wheel. Start accelerating on shared semantic ground.
+
+That's not a technical goal. That's the whole point of the EKG.

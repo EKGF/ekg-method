@@ -32,6 +32,15 @@ maturity._
 
 <!--summary-end-->
 
+Silos don't talk to each other. That's why they're silos.
+
+The Enterprise Knowledge Graph breaks down those walls—not by forcing
+everyone into one system, but by creating a semantic layer that lets
+different systems, teams, and processes actually understand each other.
+
+The European Union faced this exact problem at continental scale. Their
+solution provides a framework we can apply to any enterprise.
+
 ## The European Interoperability Framework (EIF)
 
 In order to make the _free movement_ of goods between the 28 member
@@ -157,28 +166,26 @@ services. Aspects of technical interoperability include interface
 specifications, interconnection services, data integration services,
 data presentation and exchange, and secure communication protocols.
 
-## The Use Case Tree Method as an enabler of interoperability
+## The Use Case Tree Method: Interoperability in Practice
 
-As business silos are isolated parts of an organization that either
-work together in a rather dysfunctional way or do not work together at
-all, we consider that achieving high levels of interoperability within
-the enterprise is essential to allow these silos to work together and
-create synergies among them.
+Business silos either work together dysfunctionally or don't work
+together at all. High interoperability is how you fix that—not by
+eliminating silos, but by enabling them to collaborate.
 
-The _Use Case Tree Method_ is a rationale by which enterprises could
-design, build and deploy Enterprise Knowledge Graphs that, at high
-levels of maturity, will enable interoperability across the
-enterprise. Besides offering in semantic interoperability via
-ontologies and machine-readable definitions of meaning, the
-[Use Case Tree](../concept/use-case-tree.md) enables organizational by
-offering the opportunity to different parts of an organization to
-align their business processes, responsibilities, and expectations
-through modular reusable business capabilities (i.e. use cases) that
-are easy to deploy and have proven their value in the past.
+The [Use Case Tree Method](../concept/use-case-tree.md) enables
+interoperability at multiple layers:
 
-Additionally, EKG and the Use Case tree method could help
-organizations to reach higher levels of legal interoperability through
-compliance.
+- **Semantic interoperability** — Ontologies and machine-readable
+  definitions ensure meaning is preserved across systems
+- **Organizational interoperability** — Modular, reusable use cases let
+  different parts of the organization align processes and expectations
+- **Technical interoperability** — Standard interfaces and data products
+  enable system integration
+- **Legal interoperability** — Compliance capabilities built into the EKG
+  help navigate regulatory requirements
+
+The result: silos that actually work together. Not through mandate, but
+through shared semantic infrastructure.
 
 ## Related Content
 
