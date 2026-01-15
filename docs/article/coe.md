@@ -124,21 +124,23 @@ The EKG CoE involves various
 [personas](https://maturity.ekgf.org/intro/personas/) with different
 skills and responsibilities:
 
-- **[Technical Architect][ta]** — Designs the technical and semantic
+- **[EKG Architect][arch]** — Designs the technical and semantic
   architecture
-- **[Modeler][modeler]** — Models domain knowledge and maintains
+- **[Ontologist][ont]** — Models domain knowledge and maintains
   ontologies
-- **[EKG Engineer][eng]** — Implements use cases and integrations
-- **Data Steward** — Ensures data quality and governance
-- **EKG Champion** — Advocates for EKG adoption across the
+- **[Knowledge Engineer][ke]** — Implements use cases and integrations
+- **[Data Steward][ds]** — Ensures data quality and governance
+- **[EKG Champion][champ]** — Advocates for EKG adoption across the
   organization
 
 See the [EKG Maturity Model Personas](https://maturity.ekgf.org/intro/personas/)
 for the full list of personas involved in EKG initiatives.
 
-[ta]: https://maturity.ekgf.org/intro/personas/technical-architect/
-[modeler]: https://maturity.ekgf.org/intro/personas/modeler/
-[eng]: https://maturity.ekgf.org/intro/personas/ekg-engineer/
+[arch]: https://maturity.ekgf.org/intro/personas/ekg-architect/
+[ont]: https://maturity.ekgf.org/intro/personas/ontologist/
+[ke]: https://maturity.ekgf.org/intro/personas/knowledge-engineer/
+[ds]: https://maturity.ekgf.org/intro/personas/data-steward/
+[champ]: https://maturity.ekgf.org/intro/personas/ekg-champion/
 
 ## Success Factors
 
