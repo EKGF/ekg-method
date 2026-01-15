@@ -174,6 +174,29 @@ all data that goes in and out of the EKG:
 This mapping is always context-specific, defined by the use case that
 needs the data.
 
+### Context-Specific Testing
+
+Stories and their Concepts also drive **context-specific test
+scenarios**. Even when multiple use cases map their concepts to the
+same generic ontology, each use case maintains its own test scenarios
+that validate the ontology from its particular angle.
+
+This approach provides significant benefits:
+
+- **Massively increased robustness** — The same ontology is
+  continuously tested from many different perspectives
+- **Impact analysis** — When an ontology changes, test scenarios
+  from all affected use cases immediately reveal the impact
+- **Early warning** — Problems surface quickly because tests run
+  from multiple angles simultaneously
+- **Confidence in change** — Teams can evolve ontologies knowing
+  that comprehensive testing will catch regressions
+
+Rather than relying on a single test suite for a shared ontology,
+the distributed approach means that every use case contributes its
+own validation—creating a much more thorough and resilient testing
+regime.
+
 ## Implications for Architecture
 
 ### No Single Source of Truth
