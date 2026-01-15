@@ -51,7 +51,13 @@ Scheme within a Use Case_
     --8<-- "fragment/uctm-diagram-persona-taxonomy.md"
 
     <span id="ontology"></span>
-    ## Ontology (minimal facts we can state today)
+    ## Facts
+
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     ### Required facts about a Persona Taxonomy
     - **Opaque universally unique identifier**: A UUID representing this taxonomy.

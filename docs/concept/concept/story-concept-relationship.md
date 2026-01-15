@@ -51,7 +51,13 @@ or dependent)_
 
     --8<-- "fragment/uctm-diagram-story-concept-relationship.md"
 
-    ## Ontology (minimal facts we can state today)
+    ## Facts
+
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     ### Required facts about a Story/Concept Relationship
     - **Opaque universally unique identifier**: A UUID representing this specific relationship instance.

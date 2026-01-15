@@ -56,7 +56,13 @@ _Technical manifestations of a Concept in code, data, and metadata_
 
     --8<-- "fragment/uctm-diagram-technical-term.md"
 
-    ## Ontology (minimal facts we can state today)
+    ## Facts
+
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     ### Required facts about a Technical Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) apply.

@@ -210,11 +210,13 @@ defines what a Persona needs to accomplish within a Use Case_
 
     --8<-- "fragment/uctm-diagram-story.md"
 
-    ## Ontology (minimal facts we can state today)
+    ## Facts
 
-    We're not (yet) prescribing a full OWL ontology here.
-    But we can state a small set of **facts** that people can reliably use to build their own
-    ontology / schema / graph model around a Story.
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     ### Required facts about a Story
 

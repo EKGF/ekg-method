@@ -57,7 +57,13 @@ policies_
 
     --8<-- "fragment/uctm-diagram-business-term.md"
 
-    ## Ontology (minimal facts we can state today)
+    ## Facts
+
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     ### Required facts about a Business Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) (UUID, lexical forms, ownership) apply here.

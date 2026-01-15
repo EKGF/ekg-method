@@ -324,11 +324,13 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     --8<-- "fragment/uctm-diagram-workflow.md"
 
-    ## Ontology (minimal facts we can state today)
+    ## Facts
 
-    We're not (yet) prescribing a full OWL ontology here.
-    But we can state a small set of **facts** that people can reliably use to build their own
-    ontology / schema / graph model around a Workflow.
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
 
     !!! note "WorkflowDefinition"
 
