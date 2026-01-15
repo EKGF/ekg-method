@@ -65,9 +65,9 @@ progress and learning.
 One of the most critical expectation-setting conversations happens around
 the first use case. Stakeholders need to understand:
 
-- The first use case will likely take **longer** than building something
-  similar on existing technology—teams know those tools, they've done it
-  many times before
+- The first use case will likely take **longer** than building
+  something similar on existing technology—teams know those tools,
+  they've done it many times before
 - New paradigms (graph thinking, semantic modeling, EKG architecture)
   require a learning curve
 - The investment pays off because **every subsequent use case goes
@@ -78,7 +78,7 @@ for the long term.
 
 ### Compounding Returns
 
-The EKG approach follows a [positive learning](../vocab/positive-learning.md)
+The EKG approach follows a [positive learning](../article/positive-learning.md)
 curve. Help stakeholders understand:
 
 - Use case 1 establishes foundations (ontologies, integrations, patterns)
@@ -156,5 +156,5 @@ evolves through ongoing dialogue.
 
 - [Use Case Tree](../concept/use-case-tree.md)
 - [Discover Phase](../process/plan/discover.md)
-- [Positive Learning](../vocab/positive-learning.md)
+- [Positive Learning](../article/positive-learning.md)
 - [Modularity](modularity.md)

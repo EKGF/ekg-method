@@ -55,7 +55,8 @@ Without clear guidance, people default to what they enjoy:
 - **Data engineers** build pipelines for data nobody asked for yet
 - **Developers** prototype features that aren't on any roadmap
 
-All of these activities are eventually necessary—but not all from day one.
+All of these activities are eventually necessary—but not all from
+day one.
 Don't lose sight of the forest for the trees.
 
 ## Focus is Everything
@@ -92,7 +93,8 @@ in almost plain English:
 
 - **[Outcomes](../concept/outcome/index.md)** - What value are we delivering?
 - **[Stories](../concept/story.md)** - Who needs what and why?
-- **[Concepts](../concept/concept/index.md)** - What things are we talking about?
+- **[Concepts](../concept/concept/index.md)** - What things are we
+  talking about?
 - **[Workflows](../concept/workflow.md)** - How does work actually flow?
 - **A name** - What do we call this use case?
 
@@ -112,7 +114,7 @@ traditional programming becomes unnecessary
 
 ## Crank Out Use Cases
 
-The Use Case Tree gives the [CoE](../vocab/coe.md) the focus to deliver
+The Use Case Tree gives the [CoE](../article/coe.md) the focus to deliver
 use cases one by one, following a roadmap
 [aligned with business strategy](align-with-business-strategy.md).
 
@@ -121,7 +123,7 @@ Each delivered use case:
 - Proves value to stakeholders
 - Builds reusable components for the next use case
 - Accelerates future delivery through
-  [positive learning](../vocab/positive-learning.md)
+  [positive learning](../article/positive-learning.md)
 - Maintains momentum and credibility
 
 The alternative—trying to build everything at once—leads to projects that
@@ -133,4 +135,4 @@ done" (which it never is).
 - [Use Case Tree](../concept/use-case-tree.md)
 - [Manage Expectations](manage-expectations.md)
 - [Modularity](modularity.md)
-- [Positive Learning](../vocab/positive-learning.md)
+- [Positive Learning](../article/positive-learning.md)

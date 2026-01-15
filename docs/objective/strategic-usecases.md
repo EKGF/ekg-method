@@ -41,9 +41,9 @@ Two types of use cases matter here:
   organizational resistance. The one that makes skeptics believers.
   Without a lighthouse, you'll spend years in pilot purgatory.
 
-- **Strategic use cases** - Mission-critical capabilities that matter at
-  the C-level. They may not be your first win, but they're why you're
-  building an EKG in the first place.
+- **Strategic use cases** - Mission-critical capabilities that matter
+  at the C-level. They may not be your first win, but they're why
+  you're building an EKG in the first place.
 
 The EKGF claims that **only an EKG can realistically implement these
 strategic use cases** at enterprise scale. Bold claim. But look at the
@@ -128,8 +128,8 @@ Traditional stacks hit fundamental walls:
 ### Composable Components: The Multiplier
 
 When the [Use Case Tree Method](../process/index.md) is followed properly,
-something powerful happens: you build **reusable lego bricks** instead of
-one-off solutions.
+something powerful happens: you build **reusable lego bricks** instead
+of one-off solutions.
 
 These components are:
 
@@ -376,7 +376,7 @@ To identify and deliver lighthouse and strategic use cases:
 
 - **[Use Case Tree](../concept/use-case-tree.md)** - The structure
   that organizes strategic use cases
-- **[EKG](../vocab/ekg.md)** - The platform that enables strategic use
+- **[EKG](../article/ekg.md)** - The platform that enables strategic use
   cases
 
 ### Related Objectives

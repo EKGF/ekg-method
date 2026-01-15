@@ -170,7 +170,7 @@ reason about business concepts_
         This allows use cases at various maturity levels to coexist—
         from early exploration to production-ready implementations.
 
-        See [Distributed EKG Architecture](../../vocab/distributed-ekg.md)
+        See [Distributed EKG Architecture](../../article/distributed-ekg.md)
         for more on this approach.
 
     **Example:**

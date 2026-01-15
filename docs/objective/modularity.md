@@ -99,7 +99,7 @@ of decisions that Melis took before starting this project:
   that the project needed to be delivered in incremental steps of 3-6
   kilometers. This may enable workers and him to get feedback after
   each step and to foster
-  [positive learning](../vocab/positive-learning.md). In other
+  [positive learning](../article/positive-learning.md). In other
   projects, this may also make possible to deliver value to customers
   as soon as possible.
 
@@ -117,7 +117,7 @@ Flyvberg, the principles behind smart scale-ups are the following:
   that are the fastest at this process will win”_. Speed is critical
   for companies not only to create momentum but also to create a
   feedback loop between the company and its environment to foster
-  [positive learning](../vocab/positive-learning.md)
+  [positive learning](../article/positive-learning.md)
   within companies. Positive learning is defined by Flyvbjerg as;
   _“learning to do things faster, better, and cheaper by doing the
   same thing over and over, through replicated modules”_.
@@ -127,7 +127,7 @@ Flyvberg, the principles behind smart scale-ups are the following:
 - **Replicable modularity**: By relying on rather high-quality
   identical modules that can be assembled into a larger project,
   project managers can foster
-  [positive learning](../vocab/positive-learning.md) that will result
+  [positive learning](../article/positive-learning.md) that will result
   in performance increases, lower project management risks and in
   meeting the project expectations. Additionally, working incremental
   steps also offers delivering customer value without having to
@@ -159,14 +159,14 @@ composable businesses.
 The [Use Case Tree Method](../concept/use-case-tree.md) applies these
 principles directly to Enterprise Knowledge Graph development. Each use
 case is a module. Each module delivers value independently. Each delivery
-accelerates the next through [positive learning](../vocab/positive-learning.md).
+accelerates the next through [positive learning](../article/positive-learning.md).
 
 No monuments. No big bang. Ship and iterate.
 
 ## See Also
 
 - [Use Case Tree](../concept/use-case-tree.md)
-- [Positive Learning](../vocab/positive-learning.md)
+- [Positive Learning](../article/positive-learning.md)
 - [Composable Business](composable-business.md)
 - [Avoid Boiling the Ocean](avoid-boiling-the-ocean.md)
 - [Enable Reuse](enable-reuse.md)

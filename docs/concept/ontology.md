@@ -209,7 +209,7 @@ supply (Data Products) in the data economy_
         of ontologies. This distributed, context-specific approach is
         fundamental to how the Use Case Tree Method works.
 
-        See [Distributed EKG Architecture](../vocab/distributed-ekg.md)
+        See [Distributed EKG Architecture](../article/distributed-ekg.md)
         for a detailed explanation.
 
 === "Ontology"
