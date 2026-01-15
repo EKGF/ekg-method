@@ -17,9 +17,10 @@ schema_type: Article
 # Center of Excellence (CoE)
 
 A Center of Excellence for the Enterprise Knowledge Graph (EKG CoE) is
-a capability—not necessarily a formal department—that builds and maintains
-competence in the [Use Case Tree Method](../concept/use-case-tree.md) and
-supports EKG adoption across the enterprise.
+a capability—not necessarily a formal department—that builds and
+maintains competence in the
+[Use Case Tree Method](../concept/use-case-tree.md) and supports EKG
+adoption across the enterprise.
 
 ## Not an Ivory Tower
 
@@ -33,28 +34,28 @@ everything. It can take many forms:
 
 The key principle is **enablement over control**. Department heads and
 business owners throughout the enterprise should have the freedom to
-contribute to the EKG without gatekeepers stifling innovation. Yes, this
-can lead to inconsistencies or even contradictions—but that reflects
-reality. Large organizations often have hundreds of overlapping systems
-(400 different CRM systems is not unusual), and an Open World approach
-embraces this rather than fighting it.
+contribute to the EKG without gatekeepers stifling innovation. Yes,
+this can lead to inconsistencies or even contradictions—but that
+reflects reality. Large organizations often have hundreds of
+overlapping systems (400 different CRM systems is not unusual), and an
+Open World approach embraces this rather than fighting it.
 
-However, since the organization ultimately needs to *own* its EKG—ensuring
-it serves strategic goals and maintains coherence over time—some form of
-CoE is essential.
+However, since the organization ultimately needs to *own* its EKG—
+ensuring it serves strategic goals and maintains coherence over time—
+some form of CoE is essential.
 
 ## Purpose
 
 The EKG CoE serves as an enabling hub for:
 
-- **Expertise** - Deep knowledge of semantic technologies, knowledge graphs,
-  and the Use Case Tree Method
-- **Standards** - Defining and maintaining enterprise-wide ontologies,
+- **Expertise** — Deep knowledge of semantic technologies, knowledge
+  graphs, and the Use Case Tree Method
+- **Standards** — Defining and maintaining enterprise-wide ontologies,
   data models, and best practices
-- **Enablement** - Training and supporting business units in adopting
+- **Enablement** — Training and supporting business units in adopting
   EKG-based solutions
-- **Delivery** - Building and operating the [EKG Platform](ekg-platform.md)
-  and its use cases
+- **Delivery** — Building and operating the
+  [EKG Platform](ekg-platform.md) and its use cases
 
 ## Core Responsibilities
 
@@ -69,7 +70,8 @@ The EKG CoE serves as an enabling hub for:
 
 - Design and evolve the EKG architecture
 - Establish data governance and quality standards
-- Evaluate and integrate new technologies (including GenAI capabilities)
+- Evaluate and integrate new technologies (including GenAI
+  capabilities)
 - Operate the [Perpetual Learning Machine](perpetual-learning-machine.md)
 
 ### Knowledge Management
@@ -87,14 +89,15 @@ The EKG CoE serves as an enabling hub for:
 
 ## Organizational Models
 
-An EKG CoE can be structured in different ways depending on organizational
-culture and scale:
+An EKG CoE can be structured in different ways depending on
+organizational culture and scale:
 
 ### Federated Model (Recommended)
 
-A lightweight CoE provides guidance, standards, and platform capabilities,
-while domain teams and business units freely contribute their own use cases
-and knowledge. The CoE acts as a facilitator, not a gatekeeper.
+A lightweight CoE provides guidance, standards, and platform
+capabilities, while domain teams and business units freely contribute
+their own use cases and knowledge. The CoE acts as a facilitator, not
+a gatekeeper.
 
 ### Network Model
 
@@ -105,22 +108,37 @@ well in highly autonomous, decentralized cultures.
 ### Hybrid Model
 
 A small core team handles platform infrastructure and cross-domain
-integration, while business units own their domain-specific implementations.
-The core team enables rather than controls.
+integration, while business units own their domain-specific
+implementations. The core team enables rather than controls.
 
 ### Centralized Model
 
-A dedicated team owns the EKG platform and delivers use cases. This can
-work for organizations just starting out, but risks becoming a bottleneck
-as adoption grows. Plan to evolve toward a more federated approach.
+A dedicated team owns the EKG platform and delivers use cases. This
+can work for organizations just starting out, but risks becoming a
+bottleneck as adoption grows. Plan to evolve toward a more federated
+approach.
 
-## Key Roles
+## Personas
 
-- **EKG Architect** - Designs the technical and semantic architecture
-- **Ontologist** - Models domain knowledge and maintains ontologies
-- **Knowledge Engineer** - Implements use cases and integrations
-- **Data Steward** - Ensures data quality and governance
-- **EKG Champion** - Advocates for EKG adoption across the organization
+The EKG CoE involves various
+[personas](https://maturity.ekgf.org/intro/personas/) with different
+skills and responsibilities:
+
+- **[Technical Architect][ta]** — Designs the technical and semantic
+  architecture
+- **[Modeler][modeler]** — Models domain knowledge and maintains
+  ontologies
+- **[EKG Engineer][eng]** — Implements use cases and integrations
+- **Data Steward** — Ensures data quality and governance
+- **EKG Champion** — Advocates for EKG adoption across the
+  organization
+
+See the [EKG Maturity Model Personas](https://maturity.ekgf.org/intro/personas/)
+for the full list of personas involved in EKG initiatives.
+
+[ta]: https://maturity.ekgf.org/intro/personas/technical-architect/
+[modeler]: https://maturity.ekgf.org/intro/personas/modeler/
+[eng]: https://maturity.ekgf.org/intro/personas/ekg-engineer/
 
 ## Success Factors
 
