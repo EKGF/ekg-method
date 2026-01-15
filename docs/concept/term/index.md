@@ -99,10 +99,10 @@ technical) used to refer to the same underlying meaning_
 
 === "Ontology"
 
+    --8<-- "fragment/uctm-diagram-term.md"
+
     <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
-
-    --8<-- "fragment/uctm-diagram-term.md"
 
     We're not (yet) prescribing a full OWL ontology here.
     But we can state a small set of **facts** that people can reliably use to build their own

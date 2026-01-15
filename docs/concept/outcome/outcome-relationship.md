@@ -54,10 +54,10 @@ contribution mapping_
 
 === "Ontology"
 
+    --8<-- "fragment/uctm-diagram-outcome-relationship.md"
+
     <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
-
-    --8<-- "fragment/uctm-diagram-outcome-relationship.md"
 
     ### Required facts about an Outcome Relationship
     - **Opaque universally unique identifier**: A UUID representing

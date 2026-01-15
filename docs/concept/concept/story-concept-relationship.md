@@ -49,9 +49,9 @@ or dependent)_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
-
     --8<-- "fragment/uctm-diagram-story-concept-relationship.md"
+
+    ## Ontology (minimal facts we can state today)
 
     ### Required facts about a Story/Concept Relationship
     - **Opaque universally unique identifier**: A UUID representing this specific relationship instance.

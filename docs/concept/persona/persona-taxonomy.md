@@ -48,10 +48,10 @@ Scheme within a Use Case_
 
 === "Ontology"
 
+    --8<-- "fragment/uctm-diagram-persona-taxonomy.md"
+
     <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
-
-    --8<-- "fragment/uctm-diagram-persona-taxonomy.md"
 
     ### Required facts about a Persona Taxonomy
     - **Opaque universally unique identifier**: A UUID representing this taxonomy.

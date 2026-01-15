@@ -55,9 +55,9 @@ policies_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
-
     --8<-- "fragment/uctm-diagram-business-term.md"
+
+    ## Ontology (minimal facts we can state today)
 
     ### Required facts about a Business Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) (UUID, lexical forms, ownership) apply here.

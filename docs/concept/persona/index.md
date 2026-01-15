@@ -219,10 +219,10 @@ or entities — involved in a Use Case, defined using business language_
 
 === "Ontology"
 
+    --8<-- "fragment/uctm-diagram-persona.md"
+
     <span id="ontology"></span>
     ## Ontology (minimal facts we can state today)
-
-    --8<-- "fragment/uctm-diagram-persona.md"
 
     We're not (yet) prescribing a full OWL ontology here.
     But we can state a small set of **facts** that people can reliably use to build their own

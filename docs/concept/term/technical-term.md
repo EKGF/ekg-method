@@ -16,7 +16,9 @@ schema_type: "Article"
 
 <!--summary-start-->
 
+<!-- markdownlint-disable MD036 -->
 _Technical manifestations of a Concept in code, data, and metadata_
+<!-- markdownlint-enable MD036 -->
 
 <!--summary-end-->
 
@@ -52,9 +54,9 @@ _Technical manifestations of a Concept in code, data, and metadata_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
-
     --8<-- "fragment/uctm-diagram-technical-term.md"
+
+    ## Ontology (minimal facts we can state today)
 
     ### Required facts about a Technical Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) apply.

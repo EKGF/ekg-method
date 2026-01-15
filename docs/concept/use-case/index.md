@@ -633,9 +633,9 @@ business outcomes within the Use Case Tree_
 
 === "Ontology"
 
-    ## Ontology (minimal facts we can state today)
-
     --8<-- "fragment/uctm-diagram-use-case.md"
+
+    ## Ontology (minimal facts we can state today)
 
     We're not (yet) prescribing a full OWL ontology here.
     But we can state a small set of **facts** that people can reliably use to build their own
