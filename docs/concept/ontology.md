@@ -205,11 +205,18 @@ supply (Data Products) in the data economy_
 
     ## Facts
 
-    !!! info "About these facts"
+    !!! abstract "Why this tab is different"
 
-        We're not prescribing a full OWL ontology here. These are
-        minimal facts you can use to build your own ontology, schema,
-        or graph model.
+        This page is a bit "meta" — we're using ontological concepts
+        to describe the concept of Ontology itself. On other pages in
+        this method, we show minimal facts about business concepts
+        like Use Case, Persona, or Outcome. Here, we're documenting
+        what an OWL Ontology technically consists of.
+
+        The terminology below (Classes, Properties, Individuals,
+        Axioms) comes from the OWL 2 Web Ontology Language standard.
+        Don't worry if it feels abstract — this is reference material
+        for those building formal ontologies.
 
     ### Ontology
 
@@ -259,10 +266,17 @@ supply (Data Products) in the data economy_
 
     ### Individuals
 
+    !!! note "Terminology note"
+
+        In ontology terminology, "Individual" does not mean a person.
+        It's ontologist-speak for a specific object or instance in
+        the graph — any concrete thing that belongs to a class.
+
     - **Named Individual** (`owl:NamedIndividual`)
         - Represents a specific instance of a class.
         - Has an IRI that uniquely identifies it.
-        - Example: A specific person or organization
+        - Example: A specific person, organization, or any other
+          concrete entity in your knowledge graph
 
     ### Axioms
 
