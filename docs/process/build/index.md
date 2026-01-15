@@ -19,7 +19,7 @@ schema_type: "HowTo"
 # Build
 
 === "Intro"
- 
+
     **<!--summary-build-start-->
     _"Building" an EKG-based use case involves 
     everything from detailed requirements gathering---structured 
@@ -38,7 +38,7 @@ schema_type: "HowTo"
         Most of the actual "building" of the use case consists of
         adding more detail to the use case at hand. Capturing more knowledge
         about it. Once enough detail has been specified, it runs, job done.
-   
+
 === "Steps"
 
     <div class="grid cards" markdown>
@@ -108,7 +108,7 @@ schema_type: "HowTo"
       ideally around agreed business outcomes.
 
 === "Critical success factors"
-    
+
     1. Creating an EKG can only be successful if it is done as part of the
        company’s strategy with solid top-down support and leadership.
        - Bottom-up development of just one Knowledge Graph Use Case will only 
@@ -118,7 +118,7 @@ schema_type: "HowTo"
     3. An EKG requires internal ownership and a team that understands
        the many new paradigms that are involved.
         - Creating a solid team---let's call it the [Center of Excellence (CoE)
-          for the EKG](../../vocab/coe.md)---is essential.
+          for the EKG](../../article/coe.md)---is essential.
         - It is not the technology that holds us back---the technology works---it
           is the internal organization’s readiness and level of maturity in a
           number of areas that require focus.

@@ -28,7 +28,7 @@ schema_type: "HowTo"
     of functionality, not many).
     <!--summary-run-end-->***
     
-    Once the [EKG Platform](../../vocab/ekg-platform.md) has been [deployed](deploy.md) in 
+    Once the [EKG Platform](../../article/ekg-platform.md) has been [deployed](deploy.md) in 
     production, it needs to be supported and maintained. 
     Or [Operated](operate.md), [Measured](measure.md) and [Optimized](optimize.md) so you will.
     
@@ -66,4 +66,3 @@ schema_type: "HowTo"
          [:octicons-arrow-right-24: Learn more](optimize.md)
 
     </div>
-
