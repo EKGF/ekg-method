@@ -52,9 +52,13 @@ Not all components of an EKG need to be semantic knowledge graphs.
 The EKG can integrate:
 
 - **Semantic Knowledge Graphs** — RDF/OWL-based triple stores
-- **Labeled Property Graphs (LPGs)** — Neo4j, Amazon Neptune, etc.
+- **Labeled Property Graphs (LPGs)** — Graph databases using the
+  property graph model
+- **Hybrid Graph Databases** — Systems that support both semantic
+  (RDF) and property graph models
 - **Relational Databases** — SQL databases with structured data
-- **Document Stores** — MongoDB, Elasticsearch, etc.
+- **Document Stores** — NoSQL databases storing JSON or similar
+  formats
 - **Data Lakes** — Large-scale storage systems
 - **APIs and Services** — External data sources
 
