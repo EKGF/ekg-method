@@ -78,6 +78,8 @@ hooks:
 
 plugins:
   - material-ekgf
+  - social:
+      cards_layout: default
   - include-markdown
   - git-revision-date-localized:
       enable_creation_date: true
