@@ -5,6 +5,42 @@
          <lastmod>2026-01-15</lastmod>
     </url>
     <url>
+         <loc>https://method.ekgf.org/article/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/coe/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/distributed-ekg/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/ekg-id/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/ekg-iri/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/ekg-platform/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/ekg/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/perpetual-learning-machine/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
+         <loc>https://method.ekgf.org/article/positive-learning/</loc>
+         <lastmod>2026-01-15</lastmod>
+    </url>
+    <url>
          <loc>https://method.ekgf.org/concept/data-product/</loc>
          <lastmod>2026-01-15</lastmod>
     </url>
@@ -206,38 +242,6 @@
     </url>
     <url>
          <loc>https://method.ekgf.org/process/run/optimize/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/coe/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/ekg-id/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/ekg-iri/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/ekg-platform/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/ekg/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/perpetual-learning-machine/</loc>
-         <lastmod>2026-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://method.ekgf.org/vocab/positive-learning/</loc>
          <lastmod>2026-01-15</lastmod>
     </url>
 </urlset>
