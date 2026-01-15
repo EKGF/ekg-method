@@ -34,7 +34,7 @@ different approach.
 
 ## The EKG Difference
 
-### Distributed by Design
+### [Distributed by Design](https://principles.ekgf.org/principle/03-distributed/)
 
 An EKG is not a single monolithic graph. It can consist of **many
 knowledge graphs**, each of which can have their own versions of
