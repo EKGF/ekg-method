@@ -218,7 +218,7 @@ defines what a Persona needs to accomplish within a Use Case_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Story
+    ### Story
 
     - **Opaque universally unique identifier**
         - A Story must have an **opaque**, **universally unique** identifier.

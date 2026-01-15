@@ -230,7 +230,7 @@ or entities — involved in a Use Case, defined using business language_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Persona
+    ### Persona
 
     - **Opaque universally unique identifier**
         - A Persona should have an **opaque**, **universally unique** identifier.

@@ -65,7 +65,7 @@ policies_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Business Term
+    ### Business Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) (UUID, lexical forms, ownership) apply here.
     - **Term Kind**: Must be identified as a "Business Term".
     - **Language**: Should include a natural language tag (e.g., `en`, `nl`).

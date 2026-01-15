@@ -64,7 +64,7 @@ _Technical manifestations of a Concept in code, data, and metadata_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Technical Term
+    ### Technical Term
     - **Inherits from Term**: All facts required for a [Term](index.md#ontology) apply.
     - **Term Kind**: Must be identified as a "Technical Term".
     - **Provenance (Source Location)**: Must capture where the term was found:

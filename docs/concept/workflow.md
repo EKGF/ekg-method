@@ -337,7 +337,7 @@ Stories within a Use Case to achieve desired business Outcomes_
         When we say “Workflow” here, we primarily mean the **definition** of a workflow
         (a **WorkflowDefinition**), not a specific runtime execution instance.
 
-    ### Required facts about a WorkflowDefinition
+    ### WorkflowDefinition
 
     - **Opaque universally unique identifier**
         - A WorkflowDefinition should have an **opaque**, **universally unique** identifier.

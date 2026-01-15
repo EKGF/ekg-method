@@ -110,7 +110,7 @@ technical) used to refer to the same underlying meaning_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Term
+    ### Term
 
     - **Opaque universally unique identifier**
         - A Term should have an **opaque**, **universally unique** identifier.

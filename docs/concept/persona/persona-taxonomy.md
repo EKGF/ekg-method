@@ -59,7 +59,7 @@ Scheme within a Use Case_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Persona Taxonomy
+    ### Persona Taxonomy
     - **Opaque universally unique identifier**: A UUID representing this taxonomy.
     - **SKOS Concept Scheme**: Modeled as `skos:ConceptScheme`.
     - **Owned by Use Case**: A reference to the [Use Case](../use-case/index.md) that owns it (zero or one cardinality).

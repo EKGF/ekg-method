@@ -212,7 +212,7 @@ requirement_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about an Outcome
+    ### Outcome
 
     - **Opaque universally unique identifier**
         - An Outcome should have an **opaque**, **universally unique**

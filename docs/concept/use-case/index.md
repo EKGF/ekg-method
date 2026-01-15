@@ -643,7 +643,7 @@ business outcomes within the Use Case Tree_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Use Case
+    ### Use Case
 
     - **Opaque universally unique identifier**
         - A Use Case must have an **opaque**, **universally unique** identifier.

@@ -59,7 +59,7 @@ or dependent)_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Story/Concept Relationship
+    ### Story/Concept Relationship
     - **Opaque universally unique identifier**: A UUID representing this specific relationship instance.
     - **Source Story**: A reference to the [Story](../story.md) that owns this relationship.
     - **Target Concept**: A reference to the [Concept](index.md) being used.

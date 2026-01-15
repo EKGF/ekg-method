@@ -249,7 +249,7 @@ reason about business concepts_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about a Concept
+    ### Concept
 
     - **Opaque universally unique identifier**
         - A Concept must have an **opaque**, **universally unique** identifier.

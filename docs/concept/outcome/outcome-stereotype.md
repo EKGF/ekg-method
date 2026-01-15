@@ -425,7 +425,7 @@ Goals, Objectives, KPIs, and Success Criteria_
 
     An Outcome Stereotype is a classification applied to an Outcome:
 
-    ### Required facts
+    ### Outcome Stereotype
 
     - **Outcome** must reference zero or one **Outcome Stereotype**
     - **Outcome Stereotype** has a **name** (e.g., "Goal",

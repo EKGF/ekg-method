@@ -404,7 +404,7 @@ domain, enabling reuse and consistency across use cases_
     - Clear traceability of which terms are considered equivalent in
       which contexts
 
-    ### Required facts
+    ### Concept Vocabulary
 
     - **Identifier**
         - A Concept Vocabulary must have an **opaque**, **universally

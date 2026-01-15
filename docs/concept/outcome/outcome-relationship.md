@@ -65,7 +65,7 @@ contribution mapping_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Required facts about an Outcome Relationship
+    ### Outcome Relationship
     - **Opaque universally unique identifier**: A UUID representing
       this relationship instance.
     - **Source Use Case**: A reference to the [Use
