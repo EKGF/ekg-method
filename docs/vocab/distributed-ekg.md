@@ -166,10 +166,10 @@ By introducing Concepts as an intermediate layer:
 - **Evolution is supported** — Concepts can be refined as
   understanding grows
 
-### The Mapping
+### Context-Specific Operations
 
-Concepts provide the information needed to do **"the mapping"** of
-all data that goes in and out of the EKG:
+Concepts provide the information needed to perform various
+**context-specific operations** for each use case:
 
 - **Inbound mapping** — Transform data from source systems into EKG
   representations
@@ -177,9 +177,18 @@ all data that goes in and out of the EKG:
   consuming systems
 - **Semantic alignment** — Ensure that different representations of
   the same concept are understood as equivalent
+- **Validation** — Apply context-appropriate validation rules that
+  may differ from use case to use case
+- **KPI measurement** — Track performance metrics relevant to each
+  use case's specific outcomes
+- **Security rules** — Enforce access controls and data protection
+  policies appropriate to each context
 
-This mapping is always context-specific, defined by the use case that
-needs the data.
+All these operations are context-specific, defined by the use case
+that needs them. A concept like "Customer" may have different
+validation rules, different KPIs, and different security constraints
+depending on whether it appears in a sales, compliance, or marketing
+use case.
 
 ### Context-Specific Testing
 
