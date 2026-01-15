@@ -143,8 +143,10 @@ several problems:
    before requirements are fully understood
 2. **Brittleness** — Changes to ontologies would ripple through all
    use cases
-3. **Loss of business language** — Technical terminology would
-   dominate
+3. **Loss of business language** — Ontological terminology tends to
+   be philosophical and academic, which has its place, but not in
+   conversations with the business when reaching agreements on use
+   case definitions
 4. **Integration complexity** — Different systems couldn't speak
    their own language
 
