@@ -95,7 +95,7 @@ All outputs below describe the properties of what a
   whole life-cycle of any given
   [use case](../../concept/use-case/index.md) (even in production)**
 - Living data structure that becomes part of the
-  [Enterprise Knowledge Graph](../../vocab/ekg.md) itself for its
+  [Enterprise Knowledge Graph](../../article/ekg.md) itself for its
   whole life-cycle
 - Modular structure of components that allows for an ecosystem of
   internal and external reusable components compliant with standards
