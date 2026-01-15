@@ -1,39 +1,50 @@
 ---
-title: Vocabulary
+title: Articles
 description: >-
-  Key terms and concepts used in the EKG Method and Use Case Tree approach.
-  Definitions for Enterprise Knowledge Graph terminology.
+  In-depth articles on Enterprise Knowledge Graph concepts, architecture,
+  and the Use Case Tree Method.
 keywords:
-  - EKG vocabulary
-  - EKG glossary
-  - enterprise knowledge graph terms
-  - EKG method terminology
+  - EKG articles
+  - enterprise knowledge graph
+  - EKG architecture
+  - EKG method
 schema_type: Article
 ---
 
-# Vocabulary
+# Articles
 
-This section defines key terms and concepts used throughout the
-EKG Method documentation.
+This section contains in-depth articles on Enterprise Knowledge Graph
+concepts, architecture, and methodology.
 
-## Core Concepts
+## Architecture
 
-- **[Enterprise Knowledge Graph (EKG)](ekg.md)** - A knowledge graph scoped
-  to serve information needs across the entire enterprise
-- **[EKG Platform](ekg-platform.md)** - The technical platform that runs
-  the EKG
-- **[Center of Excellence (CoE)](coe.md)** - The organizational unit that
-  builds and maintains EKG competence
+- **[Distributed EKG Architecture](distributed-ekg.md)** — How an EKG
+  differs from traditional knowledge graphs through its distributed,
+  context-specific approach
+
+- **[Enterprise Knowledge Graph (EKG)](ekg.md)** — What an EKG is and
+  why it matters for strategic use cases
+
+- **[EKG Platform](ekg-platform.md)** — The technical platform that
+  runs the EKG
 
 ## Identifiers
 
-- **[EKG/IRI](ekg-iri.md)** - Internationalized Resource Identifiers for
-  EKG entities
-- **[EKG/ID](ekg-id.md)** - Business-friendly identifiers in the EKG
+- **[EKG/IRI](ekg-iri.md)** — Internationalized Resource Identifiers
+  for EKG entities
+
+- **[EKG/ID](ekg-id.md)** — Business-friendly identifiers in the EKG
 
 ## Learning & Improvement
 
-- **[Positive Learning](positive-learning.md)** - Improving performance
-  through replicable modules and iterative delivery
-- **[Perpetual Learning Machine](perpetual-learning-machine.md)** -
+- **[Perpetual Learning Machine](perpetual-learning-machine.md)** —
   Architectural pattern for capturing learnings from every interaction
+  and storing them in the EKG
+
+- **[Positive Learning](positive-learning.md)** — Improving performance
+  through replicable modules and iterative delivery
+
+## Organization
+
+- **[Center of Excellence (CoE)](coe.md)** — The organizational unit
+  that builds and maintains EKG competence across the enterprise

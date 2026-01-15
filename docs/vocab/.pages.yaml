@@ -1,7 +1,5 @@
-title: Terms
+title: Articles
 nav:
   - index.md
-  - CoE: coe.md
-  - Distributed EKG: distributed-ekg.md
-  - EKG: ekg.md
   - ...
+  - CoE: coe.md
