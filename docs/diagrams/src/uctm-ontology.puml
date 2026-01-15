@@ -1,0 +1,35 @@
+@startuml
+!include ../include/themes/light.puml
+top to bottom direction
+hide members
+
+class "Ontology" as Ontology [[/concept/ontology/#ontology]]
+class "Class" as Class
+class "Property" as Property
+class "ObjectProperty" as ObjectProperty
+class "DataProperty" as DataProperty
+class "AnnotationProperty" as AnnotationProperty
+class "NamedIndividual" as NamedIndividual
+class "Axiom" as Axiom
+
+' Property specializations
+Property <|-- ObjectProperty
+Property <|-- DataProperty
+Property <|-- AnnotationProperty
+
+' Ontology contains declarations
+Ontology "1" *-- "0..*" Class : declares
+Ontology "1" *-- "0..*" Property : declares
+Ontology "1" *-- "0..*" NamedIndividual : declares
+Ontology "1" *-- "0..*" Axiom : contains
+
+' Ontology imports
+Ontology "0..*" --> "0..*" Ontology : owl:imports
+
+' Axioms relate to entities
+Axiom "0..*" ..> Class : about
+Axiom "0..*" ..> Property : about
+Axiom "0..*" ..> NamedIndividual : about
+
+@enduml
+

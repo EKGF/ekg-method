@@ -198,3 +198,99 @@ supply (Data Products) in the data economy_
     This integration ensures that ontologies are not isolated
     specifications but part of a cohesive, semantic model of the
     enterprise.
+
+=== "Ontology"
+
+    --8<-- "fragment/uctm-diagram-ontology.md"
+
+    ## Facts
+
+    !!! info "About these facts"
+
+        We're not prescribing a full OWL ontology here. These are
+        minimal facts you can use to build your own ontology, schema,
+        or graph model.
+
+    ### Ontology
+
+    Based on the OWL 2 Web Ontology Language, an Ontology consists of:
+
+    - **Ontology IRI**
+        - An Ontology must have an **IRI** (Internationalized Resource
+          Identifier) that uniquely identifies it.
+        - Example: `https://example.org/ontologies/my-ontology`
+
+    - **Version IRI (optional)**
+        - An Ontology may have a **version IRI** that identifies a
+          specific version.
+        - This enables versioning and evolution of ontologies over time.
+
+    - **Imports**
+        - An Ontology can **import** zero or more other ontologies
+          via `owl:imports`.
+        - Imported ontologies become part of the importing ontology's
+          knowledge base.
+
+    ### Classes
+
+    - **Class** (`owl:Class`)
+        - Represents a category or type of thing.
+        - Classes can be organized in hierarchies using `rdfs:subClassOf`.
+        - Example: `Person`, `Organization`, `LegalEntity`
+
+    ### Properties
+
+    Properties define relationships and have three subtypes:
+
+    - **Object Property** (`owl:ObjectProperty`)
+        - Relates individuals to other individuals.
+        - Has a domain (subject type) and range (object type).
+        - Example: `worksFor` relates a `Person` to an `Organization`
+
+    - **Data Property** (`owl:DatatypeProperty`)
+        - Relates individuals to literal data values.
+        - Has a domain (subject type) and range (datatype).
+        - Example: `birthDate` relates a `Person` to an `xsd:date`
+
+    - **Annotation Property** (`owl:AnnotationProperty`)
+        - Provides metadata about ontology elements.
+        - Does not affect reasoning.
+        - Example: `rdfs:label`, `rdfs:comment`, `skos:definition`
+
+    ### Individuals
+
+    - **Named Individual** (`owl:NamedIndividual`)
+        - Represents a specific instance of a class.
+        - Has an IRI that uniquely identifies it.
+        - Example: A specific person or organization
+
+    ### Axioms
+
+    Axioms are statements that define the semantics:
+
+    - **Class Axioms**
+        - Subclass relationships (`rdfs:subClassOf`)
+        - Equivalence (`owl:equivalentClass`)
+        - Disjointness (`owl:disjointWith`)
+
+    - **Property Axioms**
+        - Domain and range declarations
+        - Property characteristics (transitive, symmetric, functional)
+        - Sub-property relationships
+
+    - **Individual Axioms**
+        - Class assertions (typing)
+        - Property assertions (relationships between individuals)
+        - Same/different individual declarations
+
+    ### Relationship to SHACL
+
+    While OWL defines the ontological structure, **SHACL** (Shapes
+    Constraint Language) complements it by defining:
+
+    - **Shapes** — Validation constraints on data
+    - **Property constraints** — Cardinality, value types, patterns
+    - **Node constraints** — Requirements for specific nodes
+
+    Together, OWL and SHACL provide a complete semantic and validation
+    framework for the Enterprise Knowledge Graph.
