@@ -163,6 +163,16 @@ reason about business concepts_
     by various programs, apps, and systems, in all their variations
     and manifestations.
 
+    !!! tip "Context-Specific Linking"
+
+        In the distributed EKG architecture, Concepts provide the
+        context-specific link between Stories and OWL ontology axioms.
+        This allows use cases at various maturity levels to coexist—
+        from early exploration to production-ready implementations.
+
+        See [Distributed EKG Architecture](../../vocab/distributed-ekg.md)
+        for more on this approach.
+
     **Example:**
 
     The official term for Customer could be "Customer," but it

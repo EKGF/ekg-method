@@ -151,6 +151,8 @@ unstructured data such as text and numerous volumes of documents.
 
 ## Related Content
 
+- **[Distributed EKG Architecture](distributed-ekg.md)** - How EKG
+  differs from traditional knowledge graphs
 - **[Use Case Tree](../concept/use-case-tree.md)** - The structure
   that organizes EKG use cases
 - **[EKG Platform](ekg-platform.md)** - The technical platform that

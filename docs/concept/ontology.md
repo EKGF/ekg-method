@@ -199,6 +199,19 @@ supply (Data Products) in the data economy_
     specifications but part of a cohesive, semantic model of the
     enterprise.
 
+    ## Ontologies in the EKG
+
+    !!! tip "Distributed Architecture"
+
+        Unlike traditional knowledge graph projects that load a single
+        copy of each ontology into one monolithic graph, an EKG can
+        consist of many knowledge graphs—each with their own versions
+        of ontologies. This distributed, context-specific approach is
+        fundamental to how the Use Case Tree Method works.
+
+        See [Distributed EKG Architecture](../vocab/distributed-ekg.md)
+        for a detailed explanation.
+
 === "Ontology"
 
     --8<-- "fragment/uctm-diagram-ontology.md"

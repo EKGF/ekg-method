@@ -2,5 +2,6 @@ title: Terms
 nav:
   - index.md
   - CoE: coe.md
+  - Distributed EKG: distributed-ekg.md
   - EKG: ekg.md
   - ...
