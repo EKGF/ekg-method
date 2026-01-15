@@ -75,23 +75,11 @@ Navigation structure is defined by `.pages.yaml` files
 
 - **NEVER execute `git push`** - users must push manually
 - **NEVER bypass hooks** with `--no-verify`
-- **NEVER use `git merge`** - always use `git rebase` for linear history
+- **NEVER use `git merge`** - always use `git rebase` for linear
+  history
 - Commit only when explicitly requested
-- Use Angular Conventional Commits: `<type>(<scope>): <subject>`
-  - Types: `build`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`,
-    `revert`, `style`, `test`
-  - Scope is required (e.g., `feat(parser):`, `fix(ui):`)
-  - All lowercase, imperative mood, no period at end
-  - Note: `chore` is NOT allowed in Angular convention
 
-### Multi-line commit messages
-
-Use multiple `-m` flags to avoid body-max-line-length violations:
-
-```bash
-git commit -m "feat(component): add xyz" \
-           -m "Short descriptive line"
-```
+For commit message format, see [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
 ## Dependencies
 
