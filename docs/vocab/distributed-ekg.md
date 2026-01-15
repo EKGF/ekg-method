@@ -147,8 +147,13 @@ several problems:
    be philosophical and academic, which has its place, but not in
    conversations with the business when reaching agreements on use
    case definitions
-4. **Integration complexity** — Different systems couldn't speak
-   their own language
+4. **Integration complexity** — Traditional approaches try to force
+   everyone to commit to a new "canonical model," but legacy systems
+   tend to hang around for decades. The EKG needs to understand all
+   vocabularies from all silos—old and new. Even if a legacy system
+   does things "the wrong way," if you're still using it and
+   transferring data to and from it, you need to know exactly what's
+   what.
 
 By introducing Concepts as an intermediate layer:
 
