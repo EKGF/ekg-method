@@ -6,5 +6,8 @@
   },
   "MD025": {
     "front_matter_title": ""
+  },
+  "MD033": {
+    "allowed_elements": ["figure", "object", "br", "sup", "sub"]
   }
 }

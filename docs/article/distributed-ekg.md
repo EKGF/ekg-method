@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 title: Distributed EKG Architecture
 description: >-
   How an Enterprise Knowledge Graph differs from traditional knowledge

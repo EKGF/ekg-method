@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 title: Articles
 description: >-
   In-depth articles on Enterprise Knowledge Graph concepts, architecture,

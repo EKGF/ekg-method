@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 description: >-
   An Enterprise Knowledge Graph connects all data objects and their
   meaning across systems. Learn what an EKG is, how it works, and why

@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 title: Positive Learning
 description: >-
   Positive learning in the context of Enterprise Knowledge Graph development -
@@ -15,10 +16,11 @@ schema_type: Article
 
 # Positive Learning
 
-Positive learning, as defined by project management researcher Bent Flyvbjerg,
-is the process of improving performance by repeating similar work through
-standardized, replicable modules. Organizations that embrace positive learning
-get faster, better, and cheaper at delivery over time. 
+Positive learning, as defined by project management researcher
+Bent Flyvbjerg, is the process of improving performance by
+repeating similar work through standardized, replicable modules.
+Organizations that embrace positive learning get faster, better,
+and cheaper at delivery over time.
 
 ## Why It Matters for EKG
 

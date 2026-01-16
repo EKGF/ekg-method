@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 title: Center of Excellence (CoE)
 description: >-
   A Center of Excellence for the Enterprise Knowledge Graph (CoE) provides

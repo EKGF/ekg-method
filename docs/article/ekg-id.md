@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 description: >-
   An EKG Identifier (EKG ID) identifies an object in an EKG and is universally
   unique, opaque, permanent, resolvable, and non-reassignable. Learn about EKG
@@ -17,7 +18,7 @@ schema_type: "Article"
 
 _An EKG Identifier identifies an object[^object] in an [EKG](ekg.md)
 and is [universally unique](#universally-unique), [opaque](#opaque),
-[permanent](#permanent), [resolvable](#resolvable) and 
+[permanent](#permanent), [resolvable](#resolvable) and
 [non-reassignable](#non-reassignable)._
 
 !!! note inline end "Web-resolvability"
@@ -71,20 +72,26 @@ of that thing.
 
 _Resolving_ an identifier can be done in three ways:
 
-1. using it in a transaction---i.e. a query or update statement---submitted or routed via an
-   internet protocol (e.q. HTTP API) or other means (e.g. Kafka) to a "lookup service" that 
-   translates one or more given "features" of an object to its corresponding _EKG Identifier_ 
-   (i.e. an EKG ID or an EKG IRI).
-2. constructing it via a standardized policy from key components and applying a hash and optionally
-   signing it---where the object represented by the EKG identifier may or may not already exist.
-3. constructing it by giving the object an EKG identifier based on a random number in case 
-   the EKG is the authoritative source for the given object.
+1. using it in a transaction---i.e. a query or update
+   statement---submitted or routed via an internet protocol
+   (e.q. HTTP API) or other means (e.g. Kafka) to a "lookup
+   service" that translates one or more given "features" of an
+   object to its corresponding _EKG Identifier_ (i.e. an EKG ID
+   or an EKG IRI).
+2. constructing it via a standardized policy from key components
+   and applying a hash and optionally signing it---where the
+   object represented by the EKG identifier may or may not
+   already exist.
+3. constructing it by giving the object an EKG identifier based
+   on a random number in case the EKG is the authoritative
+   source for the given object.
 
 ## Web-resolvable
 
-An EKG Identifier (EKG ID) (currently, see side box) becomes "web-resolvable", 
-by making it part of an EKG IRI, i.e. by making it a URL and thereby prefixing
-the "identifier part" with "a locator":
+An EKG Identifier (EKG ID) (currently, see side box) becomes
+"web-resolvable", by making it part of an EKG IRI, i.e. by making
+it a URL and thereby prefixing the "identifier part" with
+"a locator":
 
 `[locator][identifier]`
 
@@ -103,4 +110,4 @@ organization that provided the dataset.
 [^object]: there are many more or less equivalent terms for object, in some literature
 in the semantic technology world it's called "a Thing" or "an Individual" or "a Resource".
 Programmers with an object-oriented background could call it "an Instance" (although
-its not exactly the same). 
+its not exactly the same).

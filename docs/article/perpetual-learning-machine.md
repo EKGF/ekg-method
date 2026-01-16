@@ -1,4 +1,5 @@
 ---
+author: Jacobus Geluk
 title: Perpetual Learning Machine
 description: >-
   An architectural pattern for capturing learnings from every interaction
@@ -20,11 +21,11 @@ schema_type: Article
 
 # Perpetual Learning Machine
 
-The Perpetual Learning Machine is an architectural pattern within the
-[EKG Platform](ekg-platform.md) that systematically captures learnings from
-every interaction between agents (human or GenAI) and enterprise systems,
-storing them back into the [Virtual Enterprise Knowledge Graph](ekg.md)
-in a structured form. 
+The Perpetual Learning Machine is an architectural pattern within
+the [EKG Platform](ekg-platform.md) that systematically captures
+learnings from every interaction between agents (human or GenAI)
+and enterprise systems, storing them back into the
+[Virtual Enterprise Knowledge Graph](ekg.md) in a structured form.
 
 ## Core Concept
 
@@ -73,7 +74,8 @@ for the enterprise to get smarter.
 - **Reduced redundancy** - Problems solved once don't need solving again
 - **Institutional memory** - Knowledge persists beyond individual tenure
 - **Continuous improvement** - The enterprise gets smarter over time
-- **GenAI grounding** - AI agents have access to validated enterprise knowledge
+- **GenAI grounding** - AI agents have access to validated
+  enterprise knowledge
 
 ## GenAI Agents and Observations
 
@@ -121,7 +123,8 @@ human would discover on their own.
 ## Connection to Positive Learning
 
 The Perpetual Learning Machine is the technical implementation of
-[positive learning](positive-learning.md) at the enterprise architecture level.
+[positive learning](positive-learning.md) at the enterprise
+architecture level.
 It provides the infrastructure to ensure that learnings are not just
 accumulated but systematically captured and made available for reuse.
 
