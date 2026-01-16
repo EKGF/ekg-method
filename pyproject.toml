@@ -30,7 +30,7 @@ dependencies = [
   "pillow",
   "cairosvg",
   "ekg-lib>=0.0.30",
-  "mkdocs-material-ekgf>=0.0.20",
+  "mkdocs-material-ekgf>=0.0.21",
   "playwright>=1.57.0",
 ]
 
