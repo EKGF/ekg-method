@@ -31,11 +31,12 @@ dependencies = [
   "cairosvg",
   "ekg-lib>=0.0.30",
   "mkdocs-material-ekgf>=0.0.20",
+  "playwright>=1.57.0",
 ]
 
 [tool.uv.sources]
 # Use local development version - comment out for release
-# mkdocs-material-ekgf = { path = "../mkdocs-material-ekgf", editable = true }
+mkdocs-material-ekgf = { path = "../mkdocs-material-ekgf", editable = true }
 
 [project.urls]
 Homepage = "https://method.ekgf.org"

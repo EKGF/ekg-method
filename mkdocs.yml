@@ -20,7 +20,6 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: ekgf-logo-symbol
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -77,9 +76,8 @@ hooks:
   - docs/main.py
 
 plugins:
-  - material-ekgf
-  - social:
-      cards_layout: default
+  - material-ekgf:
+      social_cards: true
   - include-markdown
   - git-revision-date-localized:
       enable_creation_date: true
