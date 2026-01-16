@@ -52,6 +52,9 @@ jobs:
         name: Install all MkDocs dependencies
         run: make --environment-overrides docs-install-github-actions
       -
+        name: Install Playwright browsers
+        run: uv run playwright install chromium --with-deps
+      -
         name: Build Site
         # Build runs on all branches and PRs to validate changes
         # run 'docs-build' twice because 'gen_files' doesn't let MkDocs 
