@@ -9,7 +9,7 @@
         <meta name="description" content="An EKG Identifier (EKG ID) identifies an object in an EKG and is universally unique, opaque, permanent, resolvable, and non-reassignable. Learn about EKG identity principles.">
       
       
-        <meta name="author" content="Object Management Group (OMG) Enterprise Knowledge Graph Forum">
+        <meta name="author" content="Jacobus Geluk">
       
       
         <link rel="canonical" href="https://method.ekgf.org/article/ekg-id/">
@@ -139,7 +139,7 @@
     "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 12, 2026 19:53:56 EST"><span class="timeago" datetime="2026-01-12T19:53:56-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 12, 2026 19:53:56 EST">2026-01-12</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 15, 2026 21:06:38 EST"><span class="timeago" datetime="2026-01-15T21:06:38-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 15, 2026 21:06:38 EST">2026-01-15</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "EKG Identifier (EKG ID)",
@@ -329,6 +329,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:image" content="https://method.ekgf.org/assets/images/social/article/ekg-id.png" />
+    <meta property="article:author" content="Jacobus Geluk" />
 </head>
   
   
@@ -3483,7 +3484,7 @@
 <h1 id="ekg-identifier-ekg-id"><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier (<abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ID)<a class="headerlink" href="#ekg-identifier-ekg-id" title="Permanent link">&para;</a></h1>
 <p><em>An <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier identifies an object<sup id="fnref:object"><a class="footnote-ref" href="#fn:object">1</a></sup> in an <a href="../ekg/"><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr></a>
 and is <a href="#universally-unique">universally unique</a>, <a href="#opaque">opaque</a>,
-<a href="#permanent">permanent</a>, <a href="#resolvable">resolvable</a> and 
+<a href="#permanent">permanent</a>, <a href="#resolvable">resolvable</a> and
 <a href="#non-reassignable">non-reassignable</a>.</em></p>
 <div class="admonition note inline end">
 <p class="admonition-title">Web-resolvability</p>
@@ -3525,19 +3526,25 @@ of that thing.</p>
 <h2 id="resolvable">Resolvable<a class="headerlink" href="#resolvable" title="Permanent link">&para;</a></h2>
 <p><em>Resolving</em> an identifier can be done in three ways:</p>
 <ol>
-<li>using it in a transaction&mdash;i.e. a query or update statement&mdash;submitted or routed via an
-   internet protocol (e.q. HTTP <abbr title="Application Programming Interface">API</abbr>) or other means (e.g. Kafka) to a "lookup service" that 
-   translates one or more given "features" of an object to its corresponding <em><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier</em> 
-   (i.e. an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ID or an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> IRI).</li>
-<li>constructing it via a standardized policy from key components and applying a hash and optionally
-   signing it&mdash;where the object represented by the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> identifier may or may not already exist.</li>
-<li>constructing it by giving the object an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> identifier based on a random number in case 
-   the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> is the authoritative source for the given object.</li>
+<li>using it in a transaction&mdash;i.e. a query or update
+   statement&mdash;submitted or routed via an internet protocol
+   (e.q. HTTP <abbr title="Application Programming Interface">API</abbr>) or other means (e.g. Kafka) to a "lookup
+   service" that translates one or more given "features" of an
+   object to its corresponding <em><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier</em> (i.e. an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ID
+   or an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> IRI).</li>
+<li>constructing it via a standardized policy from key components
+   and applying a hash and optionally signing it&mdash;where the
+   object represented by the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> identifier may or may not
+   already exist.</li>
+<li>constructing it by giving the object an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> identifier based
+   on a random number in case the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> is the authoritative
+   source for the given object.</li>
 </ol>
 <h2 id="web-resolvable">Web-resolvable<a class="headerlink" href="#web-resolvable" title="Permanent link">&para;</a></h2>
-<p>An <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier (<abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ID) (currently, see side box) becomes "web-resolvable", 
-by making it part of an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> IRI, i.e. by making it a URL and thereby prefixing
-the "identifier part" with "a locator":</p>
+<p>An <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> Identifier (<abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ID) (currently, see side box) becomes
+"web-resolvable", by making it part of an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> IRI, i.e. by making
+it a URL and thereby prefixing the "identifier part" with
+"a locator":</p>
 <p><code>[locator][identifier]</code></p>
 <p>Where <code>[locator]</code> could be something like <code>https://acme.com/id/</code>.</p>
 <p>If an external dataset is loaded into your organization's <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> then
@@ -3585,7 +3592,7 @@ its not exactly the same).&#160;<a class="footnote-backref" href="#fnref:object"
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 12, 2026 19:53:56 EST"><span class="timeago" datetime="2026-01-12T19:53:56-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 12, 2026 19:53:56 EST">2026-01-12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 15, 2026 21:06:38 EST"><span class="timeago" datetime="2026-01-15T21:06:38-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 15, 2026 21:06:38 EST">2026-01-15</span>
   </span>
 
     
