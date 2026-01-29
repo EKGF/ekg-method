@@ -4,5 +4,9 @@
   ],
   "files.associations": {
     "LICENSE": "plaintext"
+  },
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
   }
 }

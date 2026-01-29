@@ -6,9 +6,13 @@
       "files": "*.md",
       "options": {
         "printWidth": 70,
-        "proseWrap": "always"
+        "proseWrap": "always",
+        "endOfLine": "lf"
       }
     }
-  ]
+  ],
+  "plugins": [
+    "./.scripts/prettier-plugin-strip-nbsp.js"
+  ],
+  "endOfLine": "lf"
 }
-
