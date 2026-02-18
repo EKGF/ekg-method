@@ -218,7 +218,7 @@ business outcomes within the Use Case Tree_
       that implement the use case.
       Stories define what the use case does and can be implemented
       as executable functions or APIs.
-      See [Story](../story.md) for more details.
+      See [Story](../story/index.md) for more details.
 
     - **Datasets and ontologies** — The data structures and semantic
       models that support the use case.
@@ -414,7 +414,7 @@ business outcomes within the Use Case Tree_
             - Definition of Success
         3. **[Personas](../persona/index.md), [Concepts & Terms](../concept/index.md)**
             - Add examples i.e. input for test scenarios
-        4. **[Stories](../story.md) & [Workflows](../workflow.md)**
+        4. **[Stories](../story/index.md) & [Workflows](../workflow.md)**
             - High level but agreed, metrics-based estimates
         5. **Tree Structure**
             - Break-down into existing or non-existing sub-use cases
@@ -436,7 +436,7 @@ business outcomes within the Use Case Tree_
               right Ontologies
         8. **Test Scenarios**
             - Define test-datasets and test-scenarios for each
-              [Story](../story.md)
+              [Story](../story/index.md)
             - Provision continuous integration pipelines for continuous
               automated testing
             - Ensure 100% test coverage across all stories

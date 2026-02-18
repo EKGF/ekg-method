@@ -53,7 +53,7 @@ schema_type: "WebPage"
           </div>
       </div>
 
-        Capture [Stories](../concept/story.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept/index.md).
+        Capture [Stories](../concept/story/index.md), [Workflows](../concept/workflow.md), and [Concepts](../concept/concept/index.md).
         Specify executable behavior as semantic models---mostly no-code---for reusable components.
 
         -----

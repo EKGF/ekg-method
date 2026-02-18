@@ -26,7 +26,7 @@ or dependent)_
 === "Business & Management Audience"
 
     ## What is a Story/Concept Relationship?
-    A **Story/Concept Relationship** explains *how* a [Story](../story.md) interacts with a [Concept](index.md).
+    A **Story/Concept Relationship** explains *how* a [Story](../story/index.md) interacts with a [Concept](index.md).
 
     It's not enough to say that a story "uses" a concept; we need to know if the concept is something the user *provides* (Input), something the system *returns* (Output), or something used behind the scenes to filter or calculate data (Dependent).
 
@@ -61,7 +61,7 @@ or dependent)_
 
     ### Story/Concept Relationship
     - **Opaque universally unique identifier**: A UUID representing this specific relationship instance.
-    - **Source Story**: A reference to the [Story](../story.md) that owns this relationship.
+    - **Source Story**: A reference to the [Story](../story/index.md) that owns this relationship.
     - **Target Concept**: A reference to the [Concept](index.md) being used.
     - **Usage Type**: One of `Input`, `Output`, or `Dependent`.
 

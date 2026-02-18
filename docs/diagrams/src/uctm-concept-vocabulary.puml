@@ -12,8 +12,8 @@ class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/
 ' Concepts belong to a Concept Vocabulary
 ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
 
-' Use Case can reference or own Concept Vocabularies
-UseCase "0..*" --> "0..*" ConceptVocabulary : references/owns
+' Use Case owns Concept Vocabularies
+UseCase "1" *-- "0..*" ConceptVocabulary : :conceptVocabulary
 
 ' Stories use concepts
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept

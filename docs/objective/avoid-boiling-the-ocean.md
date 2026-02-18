@@ -92,7 +92,7 @@ No technology. Just crystal clear focus on actual business requirements,
 in almost plain English:
 
 - **[Outcomes](../concept/outcome/index.md)** - What value are we delivering?
-- **[Stories](../concept/story.md)** - Who needs what and why?
+- **[Stories](../concept/story/index.md)** - Who needs what and why?
 - **[Concepts](../concept/concept/index.md)** - What things are we
   talking about?
 - **[Workflows](../concept/workflow.md)** - How does work actually flow?

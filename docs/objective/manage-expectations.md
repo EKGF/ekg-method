@@ -141,7 +141,7 @@ In large enterprises, different groups have different expectations:
 
 ## The Contract with the Business
 
-The Use Case Tree, combined with detailed [stories](../concept/story.md)
+The Use Case Tree, combined with detailed [stories](../concept/story/index.md)
 and acceptance criteria, forms a "contract" with the business:
 
 - Written in plain language, not technical jargon

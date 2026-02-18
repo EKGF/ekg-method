@@ -80,7 +80,7 @@ requirement_
     - **Compliance** — "Ensure regulatory compliance"
     - **Customer Satisfaction** — "Improve customer experience"
 
-    Notice how outcomes appear in [Stories](../story.md) as the "why"
+    Notice how outcomes appear in [Stories](../story/index.md) as the "why"
     part: "...so that I can Assess the Risk" or "...so that I can
     Verify Stakeholders."
 
@@ -107,7 +107,7 @@ requirement_
 
     An **Outcome** represents the business value or benefit that a
     [Use Case](../use-case/index.md) is designed to deliver. It is the "why"
-    part of the [Story](../story.md) structure: "As a
+    part of the [Story](../story/index.md) structure: "As a
     [Persona](../persona/index.md), I need [capability], so that I can
     [Outcome]."
 
@@ -188,7 +188,7 @@ requirement_
 
     - **[Use Cases](../use-case/index.md)** — Each use case has one or more
       outcomes that define its purpose
-    - **[Stories](../story.md)** — Stories specify outcomes as the
+    - **[Stories](../story/index.md)** — Stories specify outcomes as the
       "why" component
     - **[Personas](../persona/index.md)** — Outcomes are achieved by
       Personas through Stories

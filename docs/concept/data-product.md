@@ -159,7 +159,7 @@ case's requirements_
       to define the semantic meaning of their data
     - **[Concepts](concept/index.md)** — Data products contain data about
       concepts that are relevant to use cases
-    - **[Stories](story.md)** — Stories may require specific data
+    - **[Stories](story/index.md)** — Stories may require specific data
       products to fulfill their needs
 
     This integration ensures that data products are not isolated

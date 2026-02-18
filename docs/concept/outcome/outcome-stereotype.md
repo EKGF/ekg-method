@@ -233,7 +233,7 @@ Goals, Objectives, KPIs, and Success Criteria_
     ## Definition of Done
 
     A completion criterion for a [Use Case](../use-case/index.md) or
-    [Story](../story.md). The Definition of Done specifies when a use
+    [Story](../story/index.md). The Definition of Done specifies when a use
     case or story is considered complete and ready for acceptance.
 
     **Characteristics:**
@@ -379,7 +379,7 @@ Goals, Objectives, KPIs, and Success Criteria_
 
     ## Relationship to Stories
 
-    [Stories](../story.md) deliver outcomes through specific
+    [Stories](../story/index.md) deliver outcomes through specific
     scenarios. The outcome stereotype helps clarify what success looks
     like for the story:
 
@@ -500,4 +500,4 @@ Goals, Objectives, KPIs, and Success Criteria_
 - [Use Case](../use-case/index.md) — How outcomes drive use cases
 - [Use Case Stereotype](../use-case/use-case-stereotype.md) —
   Categorizing use cases
-- [Story](../story.md) — How stories deliver outcomes
+- [Story](../story/index.md) — How stories deliver outcomes

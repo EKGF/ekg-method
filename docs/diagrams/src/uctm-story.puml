@@ -9,11 +9,13 @@ class "Persona" as Persona [[/concept/persona/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
+class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "Term" as Term [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
 class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
+class "StoryImplementation" as StoryImplementation [[/concept/story/implementation/#ontology]]
 
 ' Term specializations
 Term <|-- BusinessTerm
@@ -33,11 +35,18 @@ Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
 Story --> Persona : :playedBy
 Story --> Outcome : :contributesTo
 
+' Concept vocabulary ownership
+UseCase "1" *-- "0..*" ConceptVocabulary : :conceptVocabulary
+ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+
 ' Concept usage
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
 StoryConceptRelationship --> Concept : :concept
 Concept "1" *-- "1..*" Term : :term
 Concept "0..1" --> "1" BusinessTerm : :labelTerm
+
+' Implementation
+Story "1" --> "0..*" StoryImplementation : :implementation
 
 ' Workflow participation
 WorkflowDefinition --> Story : :steps

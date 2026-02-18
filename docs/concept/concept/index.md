@@ -242,7 +242,7 @@ reason about business concepts_
       of concepts
     - **[Personas](../persona/index.md)** — Personas are Concepts, enabling
       semantic definition and reasoning
-    - **[Stories](../story.md)** — Stories reference domain concepts
+    - **[Stories](../story/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
     - **[Ontologies](../ontology.md)** — Concepts link to ontology
       classes, properties, and shapes

@@ -59,7 +59,7 @@ Stories within a Use Case to achieve desired business Outcomes_
     ## Workflow Structure
 
     Workflows consist of a sequence of steps, where each step
-    corresponds to executing a [Story](story.md) in the use case.
+    corresponds to executing a [Story](story/index.md) in the use case.
     The steps are organized to achieve the desired business
     [Outcome](outcome/index.md).
 
@@ -86,7 +86,7 @@ Stories within a Use Case to achieve desired business Outcomes_
     ## What Is a Workflow in the Use Case Tree Method?
 
     A **Workflow** is a logical sequence of steps that defines the
-    order of execution for [Stories](story.md) within a [Use
+    order of execution for [Stories](story/index.md) within a [Use
     Case](use-case/index.md).
     Every Use Case has one or more Workflows that describe how
     business processes should be executed.
@@ -167,7 +167,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     **Short-duration workflows:**
     Some workflows can be done quickly in real-time and in-memory,
-    where one [Story's](story.md) output can be directly used as the
+    where one [Story's](story/index.md) output can be directly used as the
     next Story's input.
     These workflows execute entirely within a single session and
     complete in seconds or minutes.
@@ -307,7 +307,7 @@ Stories within a Use Case to achieve desired business Outcomes_
 
     - **[Use Cases](use-case/index.md)** — Every use case has one or more
       workflows
-    - **[Stories](story.md)** — Each workflow step corresponds to
+    - **[Stories](story/index.md)** — Each workflow step corresponds to
       executing a story
     - **[Concepts](concept/index.md)** — Workflows use concepts from the
       use case's vocabulary

@@ -32,7 +32,7 @@ The [EKG Method](../index.md) emphasizes positive learning through:
 - **Iterative delivery** - Ship, learn, and improve cycles that create
   feedback loops between the organization and its environment.
 - **Standardized components** - [Ontologies](../concept/ontology.md),
-  [data products](../concept/data-product.md), and [stories](../concept/story.md)
+  [data products](../concept/data-product.md), and [stories](../concept/story/index.md)
   that accumulate organizational knowledge.
 
 ## Contrast with Negative Learning

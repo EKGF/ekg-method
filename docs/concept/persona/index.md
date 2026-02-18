@@ -92,7 +92,7 @@ or entities — involved in a Use Case, defined using business language_
 
     The Use Case Tree Method does not make that distinction, primarily to keep
     things simple when capturing requirements — primarily as
-    [Stories](../story.md) — but also because the term Persona combines
+    [Stories](../story/index.md) — but also because the term Persona combines
     both concepts into one unified model.
 
     ## Key Technical Characteristics
@@ -186,7 +186,7 @@ or entities — involved in a Use Case, defined using business language_
 
     ## Relationship to Stories
 
-    [Stories](../story.md) define what a Persona needs to accomplish.
+    [Stories](../story/index.md) define what a Persona needs to accomplish.
     Each Story specifies:
 
     - **Who** — The Persona (e.g., "As an Auditor...")

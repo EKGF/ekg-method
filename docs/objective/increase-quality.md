@@ -58,9 +58,11 @@ The [Use Case Tree](../concept/use-case-tree.md) enforces, requires, and
 enables 100% test coverage—but coverage that's based on real business
 scenarios and requirements, not arbitrary code metrics.
 
-Every [story](../concept/story.md) in a use case defines what the system
-must do, for whom, and why. Each story has explicit acceptance criteria.
-Those criteria *are* the tests. If a story passes its criteria, it works.
+Every [story](../concept/story/index.md) in a use case defines
+what the system must do, for whom, and why.
+Each story has explicit acceptance criteria.
+Those criteria _are_ the tests.
+If a story passes its criteria, it works.
 If it doesn't, it doesn't ship.
 
 No story without criteria. No criteria without tests. No deployment
@@ -71,14 +73,15 @@ without all tests passing.
 A use case starts with just a name and a description. Over its lifecycle,
 it grows into a fully detailed model:
 
-- [Concepts](../concept/concept/index.md) - What things are we talking about?
+- [Concepts](../concept/concept/index.md) - What things are we
+  talking about?
 - [Personas](../concept/persona/index.md) - Who uses this?
 - [Outcomes](../concept/outcome/index.md) - What value does it deliver?
-- [Stories](../concept/story.md) - What must the system do?
+- [Stories](../concept/story/index.md) - What must the system do?
 - [Workflows](../concept/workflow.md) - How does work flow?
 - Dependencies - What else does this need?
 
-This model is captured in the EKG itself. The specification *is* the
+This model is captured in the EKG itself. The specification _is_ the
 system. When the model changes, the tests change. When the tests change,
 you know immediately if something broke.
 
@@ -99,5 +102,5 @@ Anything less is hoping. Hope is not a strategy.
 ## See Also
 
 - [Use Case Tree](../concept/use-case-tree.md)
-- [Story](../concept/story.md)
+- [Story](../concept/story/index.md)
 - [Avoid Disruption](avoid-disruption.md)

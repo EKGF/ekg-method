@@ -26,8 +26,8 @@ defines what a Persona needs to accomplish within a Use Case_
 
     ## What Is a Story?
 
-    A **Story** — in the context of a [Use Case](use-case/index.md) in the
-    [Use Case Tree](use-case-tree.md) — defines a business
+    A **Story** — in the context of a [Use Case](../use-case/index.md) in the
+    [Use Case Tree](../use-case-tree.md) — defines a business
     requirement.
     It captures what someone needs to accomplish, expressed in their
     own language.
@@ -37,11 +37,11 @@ defines what a Persona needs to accomplish within a Use Case_
     Stories follow a simple, structured format that captures three
     essential elements:
 
-    - **Who** — The [Persona](persona/index.md) who needs this capability
+    - **Who** — The [Persona](../persona/index.md) who needs this capability
       (e.g., "As the Chief Risk Officer...")
     - **What** — What they need to do or know (e.g., "...I need to
       know our current Risk Position...")
-    - **Why** — The business [Outcome](outcome/index.md) or purpose (e.g.,
+    - **Why** — The business [Outcome](../outcome/index.md) or purpose (e.g.,
       "...so that I can Assess the Risk")
 
     !!! tip "Start simple"
@@ -169,7 +169,7 @@ defines what a Persona needs to accomplish within a Use Case_
 
     ## Relationship to Workflows
 
-    Stories are executed as steps within [Workflows](workflow.md).
+    Stories are executed as steps within [Workflows](../workflow.md).
     For each Story, we always know in which Workflows it participates
     as a Step.
 
@@ -191,15 +191,15 @@ defines what a Persona needs to accomplish within a Use Case_
 
     Stories link to other data structures in the Knowledge Graph:
 
-    - **[Personas](persona/index.md)** — Each Story specifies which
+    - **[Personas](../persona/index.md)** — Each Story specifies which
       Persona needs the capability
-    - **[Use Cases](use-case/index.md)** — Stories are organized within
+    - **[Use Cases](../use-case/index.md)** — Stories are organized within
       Use Cases, defining the functional requirements
-    - **[Outcomes](outcome/index.md)** — The "why" part of a Story links
+    - **[Outcomes](../outcome/index.md)** — The "why" part of a Story links
       to business outcomes
-    - **[Concepts](concept/index.md)** — Stories reference domain concepts
+    - **[Concepts](../concept/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
-    - **[Workflows](workflow.md)** — Stories are executed as steps
+    - **[Workflows](../workflow.md)** — Stories are executed as steps
       within workflows
 
     This integration ensures that Stories are not isolated

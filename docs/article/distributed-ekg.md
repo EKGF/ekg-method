@@ -91,8 +91,8 @@ Each level in this chain serves a purpose:
 
 1. **[Use Case](../concept/use-case/index.md)** — Defines the business
    context and requirements
-2. **[Story](../concept/story.md)** — Captures specific scenarios and
-   user needs
+2. **[Story](../concept/story/index.md)** — Captures specific
+   scenarios and user needs
 3. **[Concept](../concept/concept/index.md)** — The linking pin between
    business language and technical implementation
 4. **[Technical Term](../concept/term/technical-term.md)** — The
@@ -133,7 +133,7 @@ the Use Case**.
 
 [Concepts](../concept/concept/index.md) form the linking pin—in the
 context of the given use case—between the
-[Stories](../concept/story.md) and the OWL ontology axioms.
+[Stories](../concept/story/index.md) and the OWL ontology axioms.
 
 ### Why Concepts, Not Direct Ontology Mapping?
 

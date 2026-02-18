@@ -220,7 +220,7 @@ Use Case Tree Method:
   is the primary mechanism for enabling reuse
 - **[Composable Business](../objective/composable-business.md)** — The
   tree organizes capabilities for composition
-- **[Persona](persona/index.md)**, **[Story](story.md)**,
+- **[Persona](persona/index.md)**, **[Story](story/index.md)**,
   **[Workflow](workflow.md)**, **[Data Product](data-product.md)**,
   **[Ontology](ontology.md)** — All registered within use cases in the
   tree

@@ -53,7 +53,7 @@ toward more strategic goals.
 The team works with business experts and change managers in a series
 of interactive workshops to define requirements. The team adopts the
 business language in the selected context to capture goals, data
-requirements, [stories](../../concept/story.md) and
+requirements, [stories](../../concept/story/index.md) and
 [workflows](../../concept/workflow.md). These are aligned as a set of
 visual roadmaps to be used to create onward business cases. The team
 leverages the

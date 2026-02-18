@@ -115,45 +115,38 @@ domain, enabling reuse and consistency across use cases_
         example, a "Customer Vocabulary" might be used by Customer
         Service, Sales, Marketing, and Analytics use cases.
 
-    ## Types of Vocabularies
+    ## Ownership and Inheritance
 
-    There are typically two types of Concept Vocabularies:
+    Every Concept Vocabulary is **owned by exactly one Use Case**.
+    However, vocabularies are automatically **inherited** by all
+    descendant Use Cases in the
+    [Use Case Tree](../use-case-tree.md):
 
-    ### External (Referenced) Vocabularies
+    - **Own vocabularies** — Vocabularies owned by the
+      current Use Case.
+      The owning Use Case can add, modify, or remove
+      Concepts in these vocabularies.
+    - **Inherited vocabularies** — Vocabularies owned by
+      ancestor Use Cases.
+      These are available **read-only** to descendant
+      Use Cases --- they can use the Concepts but cannot
+      change them.
 
-    These are vocabularies defined elsewhere---either by other teams,
-    other use cases, or industry standards---that your use case
-    references and uses.
-
-    **Characteristics:**
-
-    - Not owned by your use case
-    - Shared across multiple use cases
-    - Changes are controlled by the vocabulary owner
-    - Promotes consistency across the enterprise
-
-    **Example:**
-
-    > The "Customer Service Use Case" references the enterprise-wide
-    > "Customer Vocabulary" maintained by the Customer Data team.
-
-    ### Private (Owned) Vocabularies
-
-    These are vocabularies created specifically for your use case,
-    containing concepts unique to your domain or context.
-
-    **Characteristics:**
-
-    - Owned by your use case
-    - Can be evolved as the use case evolves
-    - May eventually become shared vocabularies if useful to others
-    - Useful for novel or highly specific domains
+    This means broadly applicable vocabularies should be
+    defined at higher levels of the Use Case Tree, where
+    they benefit the most Use Cases.
 
     **Example:**
 
-    > The "Fraud Detection Use Case" creates its own private vocabulary
-    > containing fraud-specific concepts like "Suspicious Pattern",
-    > "Alert Threshold", and "Investigation Status".
+    > The top-level "Customer Management" Use Case owns a
+    > "Customer Vocabulary."
+    > All child Use Cases --- "Onboarding," "Service,"
+    > "Billing" --- automatically inherit this vocabulary
+    > and can reference its Concepts in their Stories.
+    > The "KYC Verification" Use Case (a child of
+    > Onboarding) also defines its own "KYC Vocabulary"
+    > with specialized Concepts like "Beneficial Owner"
+    > and "Sanctions List."
 
     ## When to Create a New Vocabulary
 
@@ -290,35 +283,59 @@ domain, enabling reuse and consistency across use cases_
 
     ## Relationship to Use Cases
 
-    [Use Cases](../use-case/index.md) relate to Concept Vocabularies in
-    two ways:
+    Each Concept Vocabulary is **owned by exactly one**
+    [Use Case](../use-case/index.md).
+    A Use Case can own zero or more Concept Vocabularies.
 
-    ### Reference Relationship
+    ### Inheritance through the Use Case Tree
 
-    - Use case **references** an external vocabulary
-    - Use case reads and uses concepts from the vocabulary
-    - Use case does not own or control the vocabulary
-    - Changes to the vocabulary affect the use case
+    Concept Vocabularies are **inherited** down the
+    [Use Case Tree](../use-case-tree.md).
+    When a Story in a child Use Case needs to reference
+    Concepts, it can draw from:
 
-    ### Ownership Relationship
+    - **Own vocabularies** — Concept Vocabularies owned by
+      the Story's own Use Case (read-write)
+    - **Ancestor vocabularies** — Concept Vocabularies
+      owned by any ancestor Use Case in the tree
+      (read-only)
 
-    - Use case **owns** a private vocabulary
-    - Use case defines and maintains the concepts
-    - Use case can evolve the vocabulary as needed
-    - Deleting the use case may delete the vocabulary
+    This inheritance mechanism means that broadly
+    applicable vocabularies can be defined at higher
+    levels of the Use Case Tree and reused by all
+    descendant Use Cases without duplication.
 
-    A single use case can both reference some vocabularies and own
-    others.
+    ### Practical example
+
+    ```
+    Enterprise Use Case Tree
+    └── Customer Management          ← owns "Customer Vocabulary"
+        ├── Customer Onboarding      ← inherits "Customer Vocabulary"
+        │   └── KYC Verification     ← inherits "Customer Vocabulary"
+        │       ← owns "KYC Vocabulary"
+        └── Customer Service         ← inherits "Customer Vocabulary"
+    ```
+
+    In this example, "KYC Verification" can pick Concepts
+    from both its own "KYC Vocabulary" and the inherited
+    "Customer Vocabulary" from its ancestor.
 
     ## Relationship to Stories
 
-    [Stories](../story.md) use concepts from vocabularies through
-    [Story/Concept Relationships](story-concept-relationship.md):
+    [Stories](../story/index.md) use Concepts from vocabularies
+    through
+    [Story/Concept Relationships](story-concept-relationship.md).
+    When associating Concepts to a Story as **InputConcept**,
+    **OutputConcept**, or **DependentConcept**, the available
+    Concepts come from:
 
-    - Stories reference concepts for inputs, outputs, and dependencies
-    - Stories use the vocabulary of their parent use case
-    - Stories may span multiple vocabularies if their use case
-      references multiple vocabularies
+    - Concept Vocabularies **owned by** the Story's own
+      Use Case
+    - Concept Vocabularies **inherited from** any ancestor
+      Use Case in the tree (read-only)
+
+    A Story may reference Concepts from multiple
+    vocabularies.
 
     ## Relationship to Terms
 
@@ -447,15 +464,19 @@ domain, enabling reuse and consistency across use cases_
         - Modeled using `skos:inScheme` relationship
         - Cardinality: 1 vocabulary → 0..* concepts
 
-    - **Referenced by Use Cases**
-        - A Concept Vocabulary can be referenced by **zero or more**
-          Use Cases
-        - Cardinality: 1 vocabulary → 0..* use cases (reference)
+    - **Owned by exactly one Use Case**
+        - A Concept Vocabulary is owned by exactly **one** Use Case
+        - The Use Case owns **zero or more** Concept Vocabularies
+        - Cardinality: 1 vocabulary → 1 use case (ownership)
+        - If the owning Use Case is deleted, its Concept
+          Vocabularies are deleted as well
 
-    - **Owned by Use Case**
-        - A Concept Vocabulary can be owned by **zero or one** Use Case
-        - If owned, the vocabulary is private to that use case
-        - Cardinality: 1 vocabulary → 0..1 use case (ownership)
+    - **Inherited by descendant Use Cases**
+        - Descendant Use Cases in the tree inherit
+          (read-only) access to ancestor Concept
+          Vocabularies
+        - This is not a stored relationship but derived
+          from the `:isPartOf` hierarchy of Use Cases
 
     ### SKOS Alignment
 
