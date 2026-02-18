@@ -13,7 +13,7 @@ jobs:
     steps:
       -
         name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       -
@@ -32,22 +32,15 @@ jobs:
             libgraphviz-dev
       -
         name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.14'
       -
         name: Install uv
-        run: pip install uv
-      -
-        name: Cache uv dependencies
-        uses: actions/cache@v4
+        uses: astral-sh/setup-uv@v7
         with:
-          path: |
-            ~/.cache/uv
-            .venv
-          key: ${{ runner.os }}-uv-${{ hashFiles('uv.lock', 'pyproject.toml') }}
-          restore-keys: |
-            ${{ runner.os }}-uv-
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
       -
         name: Install all MkDocs dependencies
         run: make --environment-overrides docs-install-github-actions
@@ -57,7 +50,7 @@ jobs:
       -
         name: Build Site
         # Build runs on all branches and PRs to validate changes
-        # run 'docs-build' twice because 'gen_files' doesn't let MkDocs 
+        # run 'docs-build' twice because 'gen_files' doesn't let MkDocs
         # pick up on the generated files in the first run
         run: |
           make --environment-overrides docs-build
