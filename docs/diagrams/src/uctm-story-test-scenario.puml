@@ -1,0 +1,21 @@
+@startuml
+!include ../include/themes/light.puml
+top to bottom direction
+hide members
+
+class "Story" as Story [[/concept/story/#ontology]]
+class "StoryTestScenario" as StoryTestScenario [[/concept/story/test-scenarios/#ontology]]
+class "State" as State
+class "Expectation" as Expectation
+
+' Scenario ownership
+Story "1" --> "0..*" StoryTestScenario : :testScenario
+
+' Given-When-Then
+StoryTestScenario --> State : :given
+StoryTestScenario --> Expectation : :then
+
+' Expectation specializations
+Expectation <|-- State
+
+@enduml

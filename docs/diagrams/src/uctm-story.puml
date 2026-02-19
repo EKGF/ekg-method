@@ -16,6 +16,7 @@ class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]
 class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 class "StoryImplementation" as StoryImplementation [[/concept/story/implementation/#ontology]]
+class "StoryTestScenario" as StoryTestScenario [[/concept/story/test-scenarios/#ontology]]
 
 ' Term specializations
 Term <|-- BusinessTerm
@@ -47,6 +48,9 @@ Concept "0..1" --> "1" BusinessTerm : :labelTerm
 
 ' Implementation
 Story "1" --> "0..*" StoryImplementation : :implementation
+
+' Test scenarios
+Story "1" --> "0..*" StoryTestScenario : :testScenario
 
 ' Workflow participation
 WorkflowDefinition --> Story : :steps
