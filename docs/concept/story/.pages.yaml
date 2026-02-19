@@ -1,4 +1,9 @@
 title: Story
 nav:
   - index.md
+  - What is a story?: what-is-a-story.md
+  - Story structure: story-structure.md
+  - Why stories matter: why-stories-matter.md
+  - Continuous testing: continuous-testing.md
+  - Relationships: relationships.md
   - Implementation: implementation.md
