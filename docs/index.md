@@ -17,110 +17,213 @@ hide:
   - toc
 ---
 
-<div class="ekgf-hero" markdown="1">
+<!-- markdownlint-disable MD013 MD033 MD041 -->
 
-# Use Case Tree Method
-
-Deliver strategic business value and agility through connected
-enterprise knowledge — one use case at a time.
-
-<div class="ekgf-hero-buttons">
-<a href="concept/use-case-tree/" class="md-button md-button--primary">Explore the Use Case Tree</a>
-<a href="https://catalog.ekgf.org/use-case/" class="md-button">Browse example use cases</a>
-</div>
-
-</div>
-
-## Built for Business Outcomes
-
-<div class="ekgf-card-grid">
-  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80');">
-    <div class="ekgf-image-card-content">
-      <strong>Business-owned roadmap</strong>
-      <p>Align strategy → capabilities → delivery with one shared artifact.</p>
+<div class="method-home">
+  <section class="method-hero" aria-labelledby="method-home-title">
+    <div class="method-hero__copy">
+      <h1 id="method-home-title">Use Case Tree Method</h1>
+      <p>
+        Turn strategic EKG use cases into reusable, governed,
+        continuously tested semantic components.
+      </p>
+      <div class="method-actions">
+        <a href="concept/use-case-tree/" class="md-button md-button--primary">Explore the Use Case Tree</a>
+        <a href="objective/strategic-usecases/" class="md-button">See strategic use cases</a>
+      </div>
     </div>
-  </div>
-  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80');">
-    <div class="ekgf-image-card-content">
-      <strong>Composable delivery</strong>
-      <p>Ship small, reusable building blocks instead of monolithic systems.</p>
+
+    <div class="method-hero__visual" aria-label="Use Case Tree Method flow">
+      <div class="method-flow">
+        <div class="method-flow__node method-flow__node--strategy">
+          <span>Strategic Use Case</span>
+          <strong>Client 360, Risk, Compliance</strong>
+        </div>
+        <div class="method-flow__node method-flow__node--tree">
+          <span>Use Case Tree</span>
+          <strong>Scope and sequence</strong>
+        </div>
+        <div class="method-flow__node method-flow__node--package">
+          <span>Semantic Packages</span>
+          <strong>Reusable business capabilities</strong>
+        </div>
+        <div class="method-flow__node method-flow__node--running">
+          <span>Running EKG</span>
+          <strong>Measured, governed, improved</strong>
+        </div>
+      </div>
+
+      <div class="method-package-grid" aria-label="Semantic package contents">
+        <span>Outcomes</span>
+        <span>Stories</span>
+        <span>Workflows</span>
+        <span>Data Products</span>
+        <span>Ontologies</span>
+        <span>Tests</span>
+      </div>
     </div>
-  </div>
-  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80');">
-    <div class="ekgf-image-card-content">
-      <strong>Quality + compliance</strong>
-      <p>Make traceability, controls, and auditability part of the design.</p>
+  </section>
+
+  <section class="method-section method-capabilities" aria-labelledby="capabilities-title">
+    <h2 id="capabilities-title">What the method makes possible</h2>
+    <div class="method-card-grid method-card-grid--four">
+      <article class="method-card">
+        <span class="method-card__mark">K</span>
+        <h3>Lighthouse use cases</h3>
+        <p>
+          Pick the strategic use case that proves EKG value where
+          traditional stacks cannot realistically deliver.
+        </p>
+        <a href="objective/strategic-usecases/">Explore strategic use cases</a>
+      </article>
+
+      <article class="method-card">
+        <span class="method-card__mark">M</span>
+        <h3>Semantic package manager</h3>
+        <p>
+          Use the Use Case Tree to publish versioned, discoverable
+          packages of business capability.
+        </p>
+        <a href="objective/enable-reuse/">Understand reuse</a>
+      </article>
+
+      <article class="method-card">
+        <span class="method-card__mark">D</span>
+        <h3>Executable knowledge</h3>
+        <p>
+          Capture outcomes, stories, workflows, data products, and
+          ontologies as living enterprise knowledge.
+        </p>
+        <a href="objective/capture-knowledge/">Capture knowledge</a>
+      </article>
+
+      <article class="method-card">
+        <span class="method-card__mark">I</span>
+        <h3>Functional health</h3>
+        <p>
+          Turn requirements into continuously tested stories, so the
+          EKG knows whether it still works.
+        </p>
+        <a href="objective/increase-quality/">Increase quality</a>
+      </article>
     </div>
-  </div>
-  <div class="ekgf-image-card" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80');">
-    <div class="ekgf-image-card-content">
-      <strong>Production-proven</strong>
-      <p>A method refined across real EKG use cases running in production.</p>
+  </section>
+
+  <section class="method-section method-journey" aria-labelledby="journey-title">
+    <h2 id="journey-title">Plan → Build → Run</h2>
+    <p>
+      The method turns strategy into running capabilities through one
+      business-owned lifecycle.
+    </p>
+
+    <div class="method-phase-grid">
+      <article class="method-phase method-phase--plan">
+        <div class="method-phase__header">
+          <span>01</span>
+          <h3>Plan</h3>
+        </div>
+        <p>
+          Shape vision, discover strategic use cases, assess readiness,
+          train stakeholders, and chart the roadmap.
+        </p>
+        <div class="method-chip-row">
+          <a href="process/plan/envision/">Envision</a>
+          <a href="process/plan/discover/">Discover</a>
+          <a href="process/plan/assess/">Assess</a>
+          <a href="process/plan/train/">Train</a>
+          <a href="process/plan/chart/">Chart</a>
+        </div>
+      </article>
+
+      <article class="method-phase method-phase--build">
+        <div class="method-phase__header">
+          <span>02</span>
+          <h3>Build</h3>
+        </div>
+        <p>
+          Translate business requirements into executable models, tests,
+          workflows, and reusable components.
+        </p>
+        <div class="method-chip-row">
+          <a href="process/build/allocate/">Allocate</a>
+          <a href="process/build/design/">Design</a>
+          <a href="process/build/implement/">Implement</a>
+          <a href="process/build/test/">Test</a>
+          <a href="process/build/verify/">Verify</a>
+          <a href="process/build/deliver/">Deliver</a>
+        </div>
+      </article>
+
+      <article class="method-phase method-phase--run">
+        <div class="method-phase__header">
+          <span>03</span>
+          <h3>Run</h3>
+        </div>
+        <p>
+          Operate the EKG platform, measure outcomes, monitor functional
+          health, and optimize over time.
+        </p>
+        <div class="method-chip-row">
+          <a href="process/run/deploy/">Deploy</a>
+          <a href="process/run/operate/">Operate</a>
+          <a href="process/run/measure/">Measure</a>
+          <a href="process/run/optimize/">Optimize</a>
+        </div>
+      </article>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="ekgf-highlight-section" markdown="1">
+  <section class="method-section method-audiences" aria-labelledby="audience-title">
+    <h2 id="audience-title">Choose the path that matches your role</h2>
+    <div class="method-card-grid method-card-grid--three">
+      <article class="method-path">
+        <h3>Business leaders</h3>
+        <p>
+          Start with strategy, lighthouse use cases, business outcomes,
+          and the roadmap to measurable value.
+        </p>
+        <a href="process/plan/envision/">Start with Envision</a>
+      </article>
 
-## What is the Use Case Tree Method?
+      <article class="method-path">
+        <h3>Product and change teams</h3>
+        <p>
+          Use the tree to manage scope, expectations, reuse
+          opportunities, stakeholders, and delivery sequence.
+        </p>
+        <a href="process/plan/discover/">Start with Discover</a>
+      </article>
 
-The **Use Case Tree Method** is a business-owned approach to turn
-strategy into reusable EKG components — without
-[boiling the ocean](objective/avoid-boiling-the-ocean.md).
+      <article class="method-path">
+        <h3>Data and technology teams</h3>
+        <p>
+          Connect concepts, ontologies, data products, stories,
+          workflows, and tests into executable models.
+        </p>
+        <a href="concept/use-case/">Start with Use Case</a>
+      </article>
+    </div>
+  </section>
 
-Strategic capabilities like
-_[Enterprise Risk Management](https://catalog.ekgf.org/use-case/risk-management/)_
-or _[Client 360](https://catalog.ekgf.org/use-case/client-360/)_ are
-broken down into smaller use cases that you can — and should — deliver
-first. Each use case is a [reusable](objective/enable-reuse.md)
-[building block](objective/modularity.md) (see
-["Modularity Managed"](objective/modularity.md)).
-
-### The Use Case Tree in one sentence
-
-The [Use Case Tree](concept/use-case-tree.md) is a high-level map of
-the capabilities your enterprise plans to build — broken down into use
-cases with dependencies, so you can deliver in the right order.
-
-- **Plan**: Long-term
-  [data strategy](objective/align-with-business-strategy.md) and
-  business capability plan.
-- **Scope**: High-level requirements overview and dependency model.
-- **Align**: One single artifact for business, data, and technology
-  specialists.
-
-</div>
-
-## Explore the Method
-
-<div class="grid cards" markdown>
-
-- :material-target: **Objectives**
-
-  Why the method works:
-  [interoperability](objective/interoperability.md),
-  [reuse](objective/enable-reuse.md),
-  [modularity](objective/modularity.md),
-  [quality](objective/increase-quality.md),
-  [alignment](objective/align-with-business-strategy.md), and more.
-
-  [:octicons-arrow-right-24: Explore the objectives](objective/index.md)
-
-- :material-lightbulb-outline: **Concepts**
-
-  The core building blocks: [use case](concept/use-case/index.md),
-  [outcome](concept/outcome/index.md),
-  [workflow](concept/workflow.md), [terms](concept/term/index.md), and
-  more.
-
-  [:octicons-arrow-right-24: Explore concepts](concept/use-case/index.md)
-
-- :material-cog-outline: **Process**
-
-  [Plan](process/plan/index.md), [build](process/build/index.md), and
-  [run](process/run/index.md) EKG components — from first use case to
-  scale.
-
-  [:octicons-arrow-right-24: Explore the process](process/index.md)
-
+  <section class="method-section method-explore" aria-labelledby="explore-title">
+    <h2 id="explore-title">Explore the method</h2>
+    <div class="method-link-grid">
+      <a class="method-link-tile" href="objectives/">
+        <span>Objectives</span>
+        <strong>Why the method works</strong>
+      </a>
+      <a class="method-link-tile" href="concept/use-case-tree/">
+        <span>Concepts</span>
+        <strong>The building blocks</strong>
+      </a>
+      <a class="method-link-tile" href="process/">
+        <span>Process</span>
+        <strong>The delivery lifecycle</strong>
+      </a>
+      <a class="method-link-tile" href="article/">
+        <span>Articles</span>
+        <strong>Architecture and adoption</strong>
+      </a>
+    </div>
+  </section>
 </div>

@@ -71,6 +71,8 @@ extra_javascript:
   - javascripts/mermaid.js
   - javascripts/darkable-objects.js
   - javascripts/objective-badges.js
+extra_css:
+  - stylesheets/home.css
 
 hooks:
   - docs/main.py
