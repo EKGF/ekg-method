@@ -149,7 +149,7 @@
     }
     
   ],
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Concept Vocabulary",
@@ -2178,22 +2178,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-concepts-work-with-terms" class="md-nav__link">
+  <a href="#how-concepts-work-with-manifestations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How Concepts Work with Terms
+        How concepts work with manifestations
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How Concepts Work with Terms">
+    <nav class="md-nav" aria-label="How concepts work with manifestations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-multiple-terms" class="md-nav__link">
+  <a href="#why-multiple-manifestations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Multiple Terms?
+        Why multiple manifestations?
       
     </span>
   </a>
@@ -2466,10 +2466,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#relationship-to-terms" class="md-nav__link">
+  <a href="#relationship-to-manifestations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Relationship to Terms
+        Relationship to manifestations
       
     </span>
   </a>
@@ -2665,7 +2665,7 @@
   <span class="md-ellipsis">
     
   
-    Term
+    Concept Manifestation
   
 
     
@@ -2687,7 +2687,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Term
+    Concept Manifestation
   
 
           </label>
@@ -2709,7 +2709,7 @@
   <span class="md-ellipsis">
     
   
-    Business Term
+    Business term
   
 
     
@@ -2737,7 +2737,7 @@
   <span class="md-ellipsis">
     
   
-    Technical Term
+    Technical manifestation
   
 
     
@@ -4111,43 +4111,47 @@ domain, enabling reuse and consistency across use cases</em></p>
 <p>A <strong>Concept Vocabulary</strong> is a collection of related
 <a href="../">Concepts</a> that share a common context or domain. Think
 of it as a dictionary or glossary specific to a particular area of
-your business&mdash;it groups together all the concepts and their terms
-that make sense to use together.</p>
+your business. It groups together concepts and their
+manifestations that make sense to use together.</p>
 <p>Just as you might have a "Finance Vocabulary" or a "Product
 Management Vocabulary" in your organization, the Use Case Tree
 Method organizes concepts into vocabularies to keep things clear
 and reusable.</p>
-<h2 id="how-concepts-work-with-terms">How Concepts Work with Terms<a class="headerlink" href="#how-concepts-work-with-terms" title="Permanent link">&para;</a></h2>
+<h2 id="how-concepts-work-with-manifestations">How concepts work with manifestations<a class="headerlink" href="#how-concepts-work-with-manifestations" title="Permanent link">&para;</a></h2>
 <p>An important characteristic of our Concept Vocabularies is how
-concepts relate to the actual words people use:</p>
+concepts relate to the actual words and technical forms people and
+systems use:</p>
 <ul>
 <li>A <strong>Concept</strong> in our model is essentially just a unique
   identifier (a random UUID) that represents an idea or thing in
   your domain</li>
-<li>This concept can have <strong>multiple Terms</strong> associated with it&mdash;the
-  actual words or phrases people use to refer to that concept</li>
+<li>This concept can have <strong>multiple manifestations</strong> associated
+  with it, such as business words, abbreviations, <abbr title="Application Programming Interface">API</abbr> parameters,
+  query variables, ontology classes, shapes, and source
+  occurrences</li>
 <li>This is a <strong>one-to-many relationship</strong>: one concept, potentially
-  many terms</li>
+  many manifestations</li>
 </ul>
-<h3 id="why-multiple-terms">Why Multiple Terms?<a class="headerlink" href="#why-multiple-terms" title="Permanent link">&para;</a></h3>
+<h3 id="why-multiple-manifestations">Why multiple manifestations?<a class="headerlink" href="#why-multiple-manifestations" title="Permanent link">&para;</a></h3>
 <p>In a given context, people often use different words for the same
-thing:</p>
+thing, and systems often use different identifiers for it:</p>
 <p><strong>Example: Hospital Context</strong></p>
 <blockquote>
 <p>In a hospital use case, the concept of "a person receiving care"
-might have multiple terms:</p>
+might have multiple manifestations:</p>
 <ul>
 <li>"Patient" — medical staff terminology</li>
 <li>"Client" — administrative perspective</li>
 <li>"Customer" — billing department</li>
 <li>"Visitor" — reception desk</li>
 </ul>
-<p>All these terms refer to the same underlying concept in this
-hospital context, so they're grouped under one Concept identifier.</p>
+<p>All these manifestations refer to the same underlying Concept in
+this hospital context, so they are grouped under one Concept
+identifier.</p>
 </blockquote>
 <h3 id="context-matters">Context Matters<a class="headerlink" href="#context-matters" title="Permanent link">&para;</a></h3>
-<p>The same terms might mean completely different things in other
-contexts:</p>
+<p>The same manifestation value might mean completely different things
+in other contexts:</p>
 <ul>
 <li>"Patient" in a hospital means something different than "patient"
   in a legal context (someone waiting)</li>
@@ -4155,14 +4159,14 @@ contexts:</p>
 <li>Each use case defines its own concepts that make sense in its
   context</li>
 </ul>
-<p>The Concept (the UUID) ties together all the terms that mean the
-same thing <strong>in your specific use case context</strong>.</p>
+<p>The Concept (the UUID) ties together all the manifestations that
+mean the same thing <strong>in your specific use case context</strong>.</p>
 <div class="admonition note">
-<p class="admonition-title">Terms are reusable, Concepts are context-specific</p>
-<p>The <strong>terms</strong> themselves (like "patient", "client") can be
-reused across many vocabularies and use cases. But the
-<strong>concept</strong> that groups those terms together is specific to the
-use case's context and meaning.</p>
+<p class="admonition-title">Manifestations can repeat, Concepts are contextual</p>
+<p>The <strong>manifestation values</strong> themselves, such as "patient",
+"client", <code>?patient</code>, or <code>patient_id</code>, can appear in many
+vocabularies and systems. The <strong>Concept</strong> that groups them
+together is specific to the use case's context and meaning.</p>
 </div>
 <h2 id="why-use-concept-vocabularies">Why Use Concept Vocabularies?<a class="headerlink" href="#why-use-concept-vocabularies" title="Permanent link">&para;</a></h2>
 <p>Concept Vocabularies serve several important purposes:</p>
@@ -4176,8 +4180,8 @@ use case's context and meaning.</p>
    vocabulary without duplicating concepts</p>
 </li>
 <li>
-<p><strong>Consistency</strong> — Ensures that the same terms mean the same
-   things across different parts of the organization</p>
+<p><strong>Consistency</strong> — Ensures that the same manifestation values
+   can be interpreted in the right context</p>
 </li>
 <li>
 <p><strong>Ownership</strong> — Clarifies who is responsible for defining and
@@ -4378,13 +4382,14 @@ Concepts come from:</p>
 </ul>
 <p>A Story may reference Concepts from multiple
 vocabularies.</p>
-<h2 id="relationship-to-terms">Relationship to Terms<a class="headerlink" href="#relationship-to-terms" title="Permanent link">&para;</a></h2>
-<p><a href="../../term/">Terms</a> are part of concepts, which are part of
-vocabularies:</p>
+<h2 id="relationship-to-manifestations">Relationship to manifestations<a class="headerlink" href="#relationship-to-manifestations" title="Permanent link">&para;</a></h2>
+<p><a href="../../term/">Concept Manifestations</a> are attached to
+concepts, which are part of vocabularies:</p>
 <ul>
 <li>A Concept Vocabulary contains multiple Concepts</li>
-<li>Each Concept has one or more Terms</li>
-<li>Terms provide the actual labels and names used in different
+<li>Each Concept can have zero or more manifestations</li>
+<li>Manifestations provide the labels, names, variables, schema
+  resources, shapes, and source occurrences used in different
   contexts</li>
 </ul>
 </div>
@@ -4417,41 +4422,41 @@ way:</p>
 <ul>
 <li>A <strong>Concept</strong> is essentially just a <strong>universally unique
   identifier</strong> (UUID)</li>
-<li>The Concept identifier represents the abstract idea or thing</li>
-<li>The Concept has a <strong>one-to-many relationship</strong> with <strong>Terms</strong></li>
-<li>Terms are the actual manifestations&mdash;the words and phrases
-  people use</li>
-<li>A Concept can have multiple Terms, each representing different
-  ways people refer to the same thing in a given context</li>
+<li>The Concept identifier represents the local linking pin</li>
+<li>The Concept has a <strong>one-to-many relationship</strong> with
+  <strong>Concept Manifestations</strong></li>
+<li>Manifestations are the observable forms: words, phrases, code
+  identifiers, schema resources, shapes, and source occurrences</li>
+<li>A Concept can have multiple manifestations, each representing a
+  different way the same meaning appears in a given context</li>
 </ul>
 <p><strong>Why this matters:</strong></p>
 <p>In a given use case context, people often use multiple words for
 the same concept:</p>
 <div class="highlight"><pre><span></span><code>Concept: urn:uuid:a1b2c3d4-... (hospital visitor concept)
-├── Term: &quot;Patient&quot; (medical staff usage)
-├── Term: &quot;Client&quot; (administrative usage)
-├── Term: &quot;Customer&quot; (billing department usage)
-└── Term: &quot;Visitor&quot; (reception desk usage)
+├── BusinessTerm: &quot;Patient&quot; (medical staff usage)
+├── BusinessTerm: &quot;Client&quot; (administrative usage)
+├── URIParameterManifestation: &quot;patient-id&quot;
+└── OWLClassManifestation: hospital:Patient
 </code></pre></div>
-<p>All these terms refer to the same underlying concept <strong>in this
-hospital use case's context</strong>. In other contexts, these same terms
-might mean completely different things and wouldn't be grouped
+<p>All these manifestations refer to the same underlying Concept
+<strong>in this hospital use case's context</strong>. In other contexts, these
+same values might mean different things and would not be grouped
 together.</p>
 <p><strong>Key insight:</strong></p>
 <ul>
-<li><strong>Concepts</strong> (the UUID identifier) are <strong>context-specific</strong> to
-  the use case</li>
-<li><strong>Terms</strong> (the actual words) are <strong>reusable</strong> across many
-  contexts</li>
-<li>The Concept binds together all the terms that mean the same thing
-  in your specific use case context</li>
+<li><strong>Concepts</strong> are context-specific linking pins</li>
+<li><strong>Manifestation values</strong> can recur across many contexts</li>
+<li>The Concept binds together all manifestations that mean the same
+  thing in your specific use case context</li>
 </ul>
 <p>This separation allows:</p>
 <ul>
-<li>Different use cases to use the same terms with different meanings</li>
-<li>One use case to group multiple terms under one concept</li>
-<li>Clear traceability of which terms are considered equivalent in
-  which contexts</li>
+<li>Different use cases to use the same values with different
+  meanings</li>
+<li>One use case to group multiple manifestations under one Concept</li>
+<li>Clear traceability of which manifestations are considered
+  equivalent in which contexts</li>
 </ul>
 <h3 id="concept-vocabulary_1">Concept Vocabulary<a class="headerlink" href="#concept-vocabulary_1" title="Permanent link">&para;</a></h3>
 <ul>
@@ -4575,8 +4580,8 @@ together.</p>
   stories use concepts</li>
 <li><a href="../../use-case/">Use Case</a> — How use cases relate to
   vocabularies</li>
-<li><a href="../../term/">Term</a> — Components of concepts within
-  vocabularies</li>
+<li><a href="../../term/">Concept Manifestation</a> — Observable forms of
+  concepts within vocabularies</li>
 </ul>
 
 <!-- Source file information -->
@@ -4603,7 +4608,7 @@ together.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>
   </span>
 
     
