@@ -197,8 +197,9 @@ business outcomes within the Use Case Tree_
       Personas define who (or what) interacts with the use case and
       their needs.
 
-    - **Concepts and terms** — The concepts and their terms as used
-      in the context of the Use Case.
+    - **Concepts and manifestations** — The concepts and their
+      business or technical manifestations as used in the context of
+      the Use Case.
       These form the vocabulary of the domain and link to the
       semantic models (ontologies) that will be developed.
       See [Concept](../concept/index.md) for more details.
@@ -412,7 +413,8 @@ business outcomes within the Use Case Tree_
         1. **Name + Business Description**
         2. **Desired Business Outcomes**
             - Definition of Success
-        3. **[Personas](../persona/index.md), [Concepts & Terms](../concept/index.md)**
+        3. **[Personas](../persona/index.md),
+           [Concepts & Manifestations](../concept/index.md)**
             - Add examples i.e. input for test scenarios
         4. **[Stories](../story/index.md) & [Workflows](../workflow.md)**
             - High level but agreed, metrics-based estimates
@@ -760,12 +762,13 @@ business outcomes within the Use Case Tree_
             - **Output Concept** — definition of the output (often a shape/compound object)
             - **Dependent Concept** — referenced in filters/constraints (e.g., SQL/SPARQL `WHERE`)
 
-    ### How it fits with Concepts & Terms
+    ### How it fits with Concepts & Manifestations
 
-    In the Use Case Tree Method, [Concepts & Terms](../concept/index.md) capture the shared vocabulary
-    and intent.
-    Ontologies make that vocabulary **precise and machine-actionable** (identifiers, relations,
-    constraints, and alignment to standards).
+    In the Use Case Tree Method,
+    [Concepts & Manifestations](../concept/index.md) capture the
+    shared vocabulary and intent.
+    Ontologies make that vocabulary **precise and machine-actionable**
+    (identifiers, relations, constraints, and alignment to standards).
 
     Learn more in [Ontology](../ontology.md).
 

@@ -1,101 +1,103 @@
 ---
 description: >-
-  A manifestation of a Concept: a business-facing or technical term
-  (e.g., synonyms, abbreviations, variable names) that all mean the
-  same thing in the Concept's context. Learn how Terms work in the Use
-  Case Tree Method.
+  A concrete manifestation of a Concept: a business-facing term, code
+  identifier, query variable, schema resource, shape, or source
+  occurrence that shows where the Concept appears.
 keywords:
-  - term
+  - concept manifestation
+  - manifestation
   - business term
-  - technical term
+  - technical manifestation
   - concept term
   - EKG method
   - enterprise knowledge graph
 schema_type: "Article"
 ---
 
-# Term
+# Concept manifestation
 
 <!--summary-start-->
 
-_A manifestation of a Concept: the words (business-facing and
-technical) used to refer to the same underlying meaning_
+_A concrete place where a Concept shows up in language, code, data,
+metadata, schemas, or source artifacts_
 
 <!--summary-end-->
 
 === "Business & Management Audience"
 
-    ## What Is a Term?
+    ## What is a concept manifestation?
 
-    A **Term** is a word or phrase people use to refer to a [Concept](../concept/index.md) in a given
-    context.
-    Concepts are about **meaning**; Terms are about **how that meaning shows up** in language.
+    A **Concept Manifestation** is a visible form of a
+    [Concept](../concept/index.md) in a given context.
+    Concepts are about meaning. Manifestations are how that meaning
+    shows up.
 
-    A Concept can have multiple Terms (synonyms, abbreviations, variations), but they all refer
-    to the **same meaning** in the context of that Concept.
+    A Concept can have many manifestations:
 
-    ## Business Terms vs Technical Terms
+    - business names, synonyms, and abbreviations
+    - labels used in documentation or user interfaces
+    - report column names and spreadsheet headers
+    - API field names and parameter names
+    - ontology terms and validation shapes
 
-    Terms come in two broad categories:
+    The Concept remains the linking pin. The manifestations give the
+    Concept its observable forms.
 
-    - **[Business Terms](business-term.md)** — user-facing terminology used in conversations, documentation, UI, and
-      policies (e.g., “Customer”, “Counterparty”, “Risk Position”)
-    - **[Technical Terms](technical-term.md)** — manifestations in code and data (e.g., variable names, column names,
-      API parameters, query bindings)
+    ## Business terms and technical manifestations
 
-    Treat both as Terms, because both are used by people, and both need to be linked back to the
-    Concept so everyone stays aligned.
+    Manifestations come in two broad groups:
+
+    - **[Business Terms](business-term.md)** are human-facing
+      manifestations used in conversations, documentation, UI, and
+      policies.
+    - **[Technical Manifestations](technical-term.md)** are
+      machine-facing manifestations in code, queries, schemas,
+      ontologies, shapes, APIs, and source repositories.
+
+    Treat both as manifestations because both need to be linked back
+    to the Concept.
 
 === "Data & Tech Audience"
 
-    ## Terms as Concept Manifestations
+    ## Manifestations as evidence
 
-    A Term is a **manifestation** of a Concept.
+    A manifestation is evidence that a Concept appears somewhere.
     It can be:
 
     - a preferred business phrase
-    - an abbreviation
-    - a synonym
-    - a technical symbol in code (e.g., `_customer`, `cust_id`, `?cust`, `/customers`)
+    - an abbreviation or synonym
+    - a JavaScript, Python, SQL, SPARQL, or Cypher identifier
+    - an API path parameter or query parameter
+    - an OWL class, OWL property, or OWL axiom
+    - a SHACL shape or property shape
+    - a SKOS concept or concept scheme
+    - a source occurrence in a repository
 
-    Terms allow the Knowledge Graph to connect human language and technical artifacts back to a
-    consistent semantic core (the Concept).
+    This lets the Knowledge Graph connect human language and technical
+    artifacts back to the same Concept without putting schema-specific
+    claims directly on the Concept.
 
-    ## Discovering Technical Terms in code and data
+    ## Discovering manifestations
 
-    Technical Terms can often be **discovered automatically** by scanning the organization’s
-    repositories and data artifacts:
-    Python/Java code, SQL, configuration, CSV column headers, API specs, and more.
+    Manifestations can be created manually, but many can be discovered
+    by scanning repositories and data artifacts:
 
-    Each detected manifestation becomes a **Technical Term** that links to:
+    - source code
+    - SQL, SPARQL, Cypher, and GQL statements
+    - RDF, OWL, SHACL, and SKOS files
+    - API specifications
+    - CSV files and database schemas
 
-    - the **Concept** it manifests, and optionally
-    - the **Business Term** it corresponds to in that context.
+    Each detected occurrence can point at the manifestation it
+    observed, including repository, file path, line, column, commit,
+    and language or format.
 
-    Example:
-    If you detect the CSV header `P`, you can link that Technical Term to the Concept and also to
-    the Business Term “Patient”.
+    ## Preferred manifestation
 
-    Technical Terms also include **semantic/validation artifacts** introduced later in the Use
-    Case lifecycle (especially during the Build phase), such as:
-
-    - OWL classes/properties/axioms in an ontology, and
-    - SHACL shapes and constraints.
-
-    In those cases, you link the Concept (and optionally a Business Term) to the ontology/shapes
-    term via a **special mapping relationship** (e.g. “representsClass”, “representsProperty”,
-    “constrainedByShape”), pointing at the ontology IRI.
-
-    Example:
-    If the Concept “patient” corresponds to the OWL class `hospital:Patient` in a Hospital
-    ontology, create a Technical Term representing that ontology term and link it with something
-    like **representsClass → `hospital:Patient`**.
-
-    ## Preferred Term
-
-    Concepts don’t need a traditional `rdfs:label` / `skos:prefLabel` label.
-    Instead, a Concept can point to a **preferred Term** (a Term object) that represents the
-    preferred expression in that context.
+    Concepts do not need to carry their own display labels. Instead,
+    a Concept can point at a preferred Business Term. Technical roles
+    can also have preferred manifestations, such as the preferred API
+    parameter or preferred SPARQL placeholder.
 
 === "Ontology"
 
@@ -110,59 +112,47 @@ technical) used to refer to the same underlying meaning_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Term
+    ### ConceptManifestation
 
     - **Opaque universally unique identifier**
-        - A Term should have an **opaque**, **universally unique** identifier.
-        - Prefer a random identifier such as **UUIDv4**, represented as a URI:
+        - A manifestation should have an opaque, universally unique
+          identifier.
+        - Prefer a random identifier such as UUIDv4, represented as
+          a URI:
           `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
 
-    - **One or more forms (lexical variants)**
-        - A Term must have **one or more textual forms** (the actual strings).
-        - Business Terms often need multiple forms for different UI / communication contexts, for
-          example:
-            - **Singular**: “Patient”
-            - **Plural**: “Patients”
-            - **Abbreviation**: “Pat.”
-            - **Short label**: “P”
-        - These are variations of the **same Term** (think “sub-manifestations” of the Term).
-          They should not be mixed with the forms of a different Term.
+    - **Belongs to a Concept**
+        - A manifestation links to exactly one Concept in the local
+          context.
+        - A Concept can have zero or more manifestations.
+        - The same real-world token may appear as separate
+          manifestations when two Concepts intentionally do not mean
+          the same thing.
 
-        Example:
-        If “Patient” and “Client” are both used to mean the same thing in a given Use Case
-        context, model them as **two separate Business Term objects**, each with their own
-        lexical forms.
-        Both Terms link to the same Concept, and the Concept defines the shared meaning.
-
-    - **Term kind**
-        - A Term should indicate whether it is a **Business Term** or a **Technical Term**.
-
-    - **Owned by a Concept**
-        - Terms are **owned** by a Concept (part-of): when the Concept is deleted, its Term
-          objects are deleted as well.
-        - A Concept must have **one or more Terms**.
-        - All Terms for a Concept **mean the same thing** in that Concept’s context.
+    - **Manifestation kind**
+        - A manifestation should state its kind, such as
+          `BusinessTerm`, `TechnicalManifestation`,
+          `OWLClassManifestation`, `SHACLShapeManifestation`,
+          `SQLColumnManifestation`, or
+          `JavaScriptIdentifierManifestation`.
 
     ### Optional but useful facts
 
-    - **Language**: natural language tag for business terms (e.g., `en`, `nl`)
-    - **System / artifact**: where a technical term appears (e.g., codebase, dataset, API)
-    - **Term subtype**: for technical terms (e.g., `VariableName`, `ColumnName`, `ApiFieldName`,
-      `QueryBinding`)
-    - **Provenance**: who introduced the term, when, and why
+    - **Literal form**: exact string, label, slug, variable, or token.
+    - **Resource form**: RDF IRI for an OWL, SHACL, SKOS, SQL, or
+      other schema resource.
+    - **Language**: natural language tag for business terms.
+    - **System or artifact**: where the manifestation appears.
+    - **Provenance**: who introduced it, when, and why.
 
-    ### Optional facts for Technical Terms (recommended)
+    ### Optional source occurrence facts
 
-    When a Term is discovered in code/data, capture **where it came from**:
+    When a manifestation is discovered in code or data, capture where
+    it came from:
 
-    - **Repository URL** (e.g., GitHub repo)
+    - **Repository URL**
     - **File path**
-    - **Line range** (or equivalent location for non-text artifacts)
-    - **Commit / tag / revision**
-    - **Language / format** (e.g., Python, Java, SQL, CSV)
-    - **Locator URL** (deep link to the exact source line / blob for traceability)
-
-    When a Term represents an ontology or validation artifact, capture:
-
-    - **Ontology / shape identifier** (IRI), e.g. `hospital:Patient`
-    - **Mapping kind** (e.g., representsClass / representsProperty / constrainedByShape)
+    - **Line and column**
+    - **Commit, tag, or revision**
+    - **Language or format**
+    - **Locator URL**

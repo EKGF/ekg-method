@@ -12,9 +12,9 @@ class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereo
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
-class "Term" as Term [[/concept/term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
 class "Persona" as Persona [[/concept/persona/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
@@ -23,11 +23,11 @@ UseCase "1" *-- "0..*" Story : owns
 UseCase "1" *-- "0..*" WorkflowDefinition : owns
 UseCase "0..1" *-- "0..*" UseCase : is-part-of
 UseCase "0..*" o-- "0..*" UseCase : is-used-in
-Concept "1" *-- "1..*" Term : owns
+Concept "1" *-- "0..*" ConceptManifestation : owns
 
 ' Inheritance
-Term <|-- BusinessTerm
-Term <|-- TechnicalTerm
+ConceptManifestation <|-- BusinessTerm
+ConceptManifestation <|-- TechnicalManifestation
 
 ' Relationships
 UseCase "0..1" --> "1" UseCaseStereotype : hasStereotype

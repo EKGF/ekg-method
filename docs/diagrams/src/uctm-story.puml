@@ -10,17 +10,17 @@ class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
-class "Term" as Term [[/concept/term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
 class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 class "StoryImplementation" as StoryImplementation [[/concept/story/implementation/#ontology]]
 class "StoryTestScenario" as StoryTestScenario [[/concept/story/test-scenarios/#ontology]]
 
-' Term specializations
-Term <|-- BusinessTerm
-Term <|-- TechnicalTerm
+' Manifestation specializations
+ConceptManifestation <|-- BusinessTerm
+ConceptManifestation <|-- TechnicalManifestation
 
 ' Other resources point to UseCase (typical KG modeling style)
 Story "0..*" --> "1" UseCase : :useCase
@@ -43,8 +43,8 @@ ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
 ' Concept usage
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
 StoryConceptRelationship --> Concept : :concept
-Concept "1" *-- "1..*" Term : :term
-Concept "0..1" --> "1" BusinessTerm : :labelTerm
+Concept "1" *-- "0..*" ConceptManifestation : :hasManifestation
+Concept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
 
 ' Implementation
 Story "1" --> "0..*" StoryImplementation : :implementation

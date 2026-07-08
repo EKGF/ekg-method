@@ -119,8 +119,8 @@ case's requirements_
     The choice of semantic data products to be used for a given use
     case should be made based on:
 
-    - **Semantic relevance** — Does the data product contain
-      concepts and terms that match the use case's vocabulary?
+    - **Semantic relevance** — Does the data product contain concepts
+      and manifestations that match the use case's vocabulary?
     - **Suitability** — Does the data product meet the use case's
       requirements?
     - **Quality** — Is the data product well-maintained and

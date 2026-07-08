@@ -1,62 +1,81 @@
 ---
 description: >-
-  User-facing terminology used in conversations, documentation, UI,
-  and policies. Learn how Business Terms link to Concepts in the Use
-  Case Tree Method.
+  A human-facing Concept Manifestation used in conversations,
+  documentation, user interfaces, policies, glossaries, and
+  governance.
 keywords:
   - business term
-  - term
+  - concept manifestation
   - glossary
   - vocabulary
   - EKG method
 schema_type: "Article"
 ---
 
-# Business Term
+# Business term
 
 <!--summary-start-->
 
-_User-facing terminology used in conversations, documentation, UI, and
-policies_
+_A human-facing Concept Manifestation used in conversations,
+documentation, user interfaces, policies, and governance_
 
 <!--summary-end-->
 
 === "Business & Management Audience"
 
-    ## What is a Business Term?
-    A **Business Term** is a human-readable label for a [Concept](../concept/index.md). It represents how business users speak about a specific meaning within a given context.
+    ## What is a business term?
 
-    By linking multiple Business Terms (synonyms) to a single Concept, the Enterprise Knowledge Graph ensures that everyone is talking about the same underlying meaning even if they use different words.
+    A **Business Term** is a human-facing
+    [Concept Manifestation](index.md). It is how people speak about a
+    Concept in a specific context.
 
-    ## Key Characteristics
-    - **User-facing**: Used in documentation, policies, and user interfaces.
-    - **Context-specific**: A term might mean different things in different contexts, but it always links to a specific Concept that defines its meaning in *this* context.
-    - **Synonym support**: Multiple business terms can manifest the same Concept.
+    Multiple Business Terms can point to one Concept when they mean the
+    same thing in that context. For example, "Customer",
+    "Counterparty", and "Client" may all be valid Business Terms for
+    one Concept in one use case, while meaning different things in
+    another use case.
+
+    ## Key characteristics
+
+    - **User-facing**: used in documentation, policies, UI, and
+      conversation.
+    - **Context-specific**: a term may mean different things in
+      different contexts.
+    - **Governable**: business owners can decide whether two terms
+      really mean the same Concept.
+    - **Mergeable**: Concepts can be merged later when owners agree
+      that they mean the same thing.
 
     ## Examples
-    - “Customer”
-    - “Counterparty”
-    - “Risk Position”
+
+    - "Customer"
+    - "Counterparty"
+    - "Risk Position"
+    - "Beneficial Owner"
 
 === "Data & Tech Audience"
 
-    ## Business Terms as Concept Manifestations
-    From a technical perspective, a Business Term is a specific type of [Term](index.md) that provides the human-readable "face" of a Concept.
+    ## Business terms as manifestations
 
-    ## Lexical Variants
-    A single Business Term often has multiple forms for different communication contexts:
+    A Business Term is a specialization of
+    `concept:ConceptManifestation`.
+    It carries human-readable lexical forms such as:
 
-    - **Singular**: “Patient”
-    - **Plural**: “Patients”
-    - **Abbreviation**: “Pat.”
-    - **Short label**: “P”
+    - preferred label
+    - synonym
+    - abbreviation
+    - singular form
+    - plural form
+    - short UI label
 
-    These are variations of the **same Business Term object**. If two different words are used (e.g., “Patient” and “Client”), they should be modeled as two separate Business Term objects linking to the same Concept.
+    The Concept itself stays thin. The preferred display label is a
+    link from the Concept to a preferred Business Term.
 
 === "Ontology"
 
     --8<-- "fragment/uctm-diagram-business-term.md"
 
+    <span id="ontology"></span>
     ## Facts
 
     !!! info "About these facts"
@@ -65,10 +84,15 @@ policies_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Business Term
-    - **Inherits from Term**: All facts required for a [Term](index.md#ontology) (UUID, lexical forms, ownership) apply here.
-    - **Term Kind**: Must be identified as a "Business Term".
-    - **Language**: Should include a natural language tag (e.g., `en`, `nl`).
+    ### BusinessTerm
 
-    ### Relationship to Concept
-    - **Owned by Concept**: A Business Term is a part-of a Concept. If the Concept is deleted, the Business Term is deleted.
+    - **Subclass of ConceptManifestation**
+        - All manifestation facts apply here.
+    - **Language**
+        - A natural language tag should be used when the form is
+          language-specific.
+    - **Lexical form**
+        - Use a label or value for the exact business-facing text.
+    - **Preferred role**
+        - A Concept can mark one Business Term as its preferred
+          business-facing manifestation in a given context.

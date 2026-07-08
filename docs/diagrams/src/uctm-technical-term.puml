@@ -3,15 +3,14 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
+class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 
 ' Inheritance
-Term <|-- TechnicalTerm
+ConceptManifestation <|-- TechnicalManifestation
 
 ' Ownership
-Concept "1" *-- "1..*" TechnicalTerm : owns
+Concept "1" *-- "0..*" TechnicalManifestation : :hasManifestation
 
 @enduml
-
