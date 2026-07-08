@@ -3,15 +3,14 @@
 top to bottom direction
 hide members
 
-class "Term" as Term [[/concept/term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
 
 ' Inheritance
-Term <|-- BusinessTerm
+ConceptManifestation <|-- BusinessTerm
 
 ' Ownership
-Concept "1" *-- "1..*" BusinessTerm : owns
+Concept "1" *-- "0..*" BusinessTerm : :hasManifestation
 
 @enduml
-

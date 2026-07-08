@@ -63,9 +63,9 @@ Stories within a Use Case to achieve desired business Outcomes_
     The steps are organized to achieve the desired business
     [Outcome](outcome/index.md).
 
-    The concepts and terms used in the workflow are based on the
-    context-specific vocabulary identified during the requirements
-    gathering phase — the same [Concepts](concept/index.md) that define
+    The concepts and manifestations used in the workflow are based on
+    the context-specific vocabulary identified during the requirements
+    gathering phase: the same [Concepts](concept/index.md) that define
     the use case's domain.
 
     ## When Are Workflows Defined?
@@ -105,12 +105,12 @@ Stories within a Use Case to achieve desired business Outcomes_
       executed
     - **Dependencies** — Relationships between steps that determine
       execution order
-    - **Concepts** — The domain concepts and terms used throughout
-      the workflow
+    - **Concepts** — The domain concepts and manifestations used
+      throughout the workflow
 
-    The concepts and terms used in the workflow are based on the
-    context-specific vocabulary identified during the requirements
-    gathering phase — the same Concepts that define the use case's
+    The concepts and manifestations used in the workflow are based on
+    the context-specific vocabulary identified during the requirements
+    gathering phase: the same Concepts that define the use case's
     domain.
 
     ## Relationship to Stories

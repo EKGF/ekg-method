@@ -1,9 +1,10 @@
 ---
 description: >-
-  Technical manifestations of a Concept in code, data, and metadata.
-  Learn how Technical Terms bridge the gap between human language and
-  machine-readable data.
+  A machine-facing Concept Manifestation in code, data, metadata,
+  queries, ontologies, shapes, taxonomies, APIs, or source
+  repositories.
 keywords:
+  - technical manifestation
   - technical term
   - variable name
   - column header
@@ -12,50 +13,77 @@ keywords:
 schema_type: "Article"
 ---
 
-# Technical Term
+# Technical manifestation
 
 <!--summary-start-->
 
 <!-- markdownlint-disable MD036 -->
-_Technical manifestations of a Concept in code, data, and metadata_
+_A machine-facing Concept Manifestation in code, data, metadata,
+queries, ontologies, shapes, taxonomies, APIs, or source repositories_
 <!-- markdownlint-enable MD036 -->
 
 <!--summary-end-->
 
 === "Business & Management Audience"
 
-    ## What is a Technical Term?
-    A **Technical Term** is the manifestation of a [Concept](../concept/index.md) in the digital landscape—code, databases, and APIs.
+    ## What is a technical manifestation?
 
-    While Business Terms focus on how people talk, Technical Terms focus on how systems "speak." Linking these together in the Knowledge Graph provides 100% traceability from a high-level business requirement down to the exact database column or line of code.
+    A **Technical Manifestation** is how a
+    [Concept](../concept/index.md) appears in the digital landscape:
+    code, databases, APIs, statements, ontologies, shapes, and source
+    repositories.
 
-    ## Why it Matters
-    - **Automated Discovery**: We can scan codebases to find where business concepts are actually implemented.
-    - **Impact Analysis**: See how a change in business logic affects specific technical components.
-    - **Transparency**: Provides a clear map of how data flows through the enterprise.
+    Business Terms focus on how people talk. Technical Manifestations
+    focus on how systems speak. Linking both to the same Concept gives
+    traceability from business language to concrete implementation
+    details.
+
+    ## Why it matters
+
+    - **Automated discovery**: repositories can be scanned for where
+      Concepts appear.
+    - **Impact analysis**: a Concept change can be traced to affected
+      code, queries, columns, shapes, and ontology terms.
+    - **Transparency**: business meaning is linked to the exact
+      technical surfaces that implement it.
 
 === "Data & Tech Audience"
 
-    ## Technical Terms in Code and Data
-    Technical Terms include any symbol or identifier used in technical artifacts:
+    ## Technical manifestations in code and data
 
-    - **Variable names** (e.g., `_customer`, `cust_id`, `?cust`)
-    - **Database columns** (e.g., `P_NAME`, `CLIENT_REF`)
-    - **API parameters** (e.g., `/customers/{id}`)
+    Technical Manifestations include symbols and resources such as:
 
-    ## Automated Discovery
-    Technical Terms are often discovered automatically by scanning repositories (Python, Java, SQL, CSV, etc.). Each detected manifestation becomes a Technical Term that links back to the Concept.
+    - variable names, for example `_customer` or `cust_id`
+    - SPARQL variables, for example `?customer`
+    - SQL columns and tables
+    - Cypher labels, relationship types, and properties
+    - API parameters and JSON field names
+    - OWL classes, properties, individuals, and axioms
+    - SHACL node shapes and property shapes
+    - SKOS concepts and concept schemes
 
-    ## Semantic & Validation Artifacts
-    Later in the lifecycle (Build phase), Technical Terms also represent:
+    ## Automated discovery
 
-    - **OWL classes and properties** in an ontology.
-    - **SHACL shapes** and constraints.
+    Technical Manifestations can often be discovered automatically by
+    scanning repositories and data artifacts. Each detected occurrence
+    can become a `ManifestationOccurrence` linked to a stable
+    Technical Manifestation.
+
+    ## Semantic and validation artifacts
+
+    OWL and SHACL bindings are Technical Manifestations too. A Concept
+    should not directly say that it represents `hospital:Patient`.
+    Instead, it links to an `OWLClassManifestation` whose
+    `manifestationResource` is `hospital:Patient`.
+
+    This keeps the Concept thin and lets one Concept have multiple
+    ontology, shape, taxonomy, query, and code manifestations.
 
 === "Ontology"
 
     --8<-- "fragment/uctm-diagram-technical-term.md"
 
+    <span id="ontology"></span>
     ## Facts
 
     !!! info "About these facts"
@@ -64,14 +92,32 @@ _Technical manifestations of a Concept in code, data, and metadata_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Technical Term
-    - **Inherits from Term**: All facts required for a [Term](index.md#ontology) apply.
-    - **Term Kind**: Must be identified as a "Technical Term".
-    - **Provenance (Source Location)**: Must capture where the term was found:
-        - **Repository URL**
-        - **File path & Line range**
-        - **Commit / Revision**
+    ### TechnicalManifestation
 
-    ### Optional but Recommended
-    - **System / Artifact**: The specific system where the term resides.
-    - **Mapping Kind**: For ontology terms (e.g., `representsClass`, `constrainedByShape`).
+    - **Subclass of ConceptManifestation**
+        - All manifestation facts apply here.
+    - **Literal value**
+        - Use the exact token for variables, columns, identifiers,
+          placeholders, and API parameters.
+    - **Resource value**
+        - Use an IRI for OWL, SHACL, SKOS, SQL, RDF, or other schema
+          resources.
+    - **Source occurrence**
+        - Use an occurrence object for repository, file, line, column,
+          commit, and language details.
+
+    ### Recommended subtypes
+
+    - `URIParameterManifestation`
+    - `SPARQLVariableManifestation`
+    - `SPARQLResultColumnManifestation`
+    - `OWLClassManifestation`
+    - `OWLPropertyManifestation`
+    - `OWLAxiomManifestation`
+    - `SHACLShapeManifestation`
+    - `SKOSConceptManifestation`
+    - `SQLTableManifestation`
+    - `SQLColumnManifestation`
+    - `CypherIdentifierManifestation`
+    - `JavaScriptIdentifierManifestation`
+    - `JSONFieldManifestation`

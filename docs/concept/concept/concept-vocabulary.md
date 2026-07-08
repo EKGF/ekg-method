@@ -33,49 +33,53 @@ domain, enabling reuse and consistency across use cases_
     A **Concept Vocabulary** is a collection of related
     [Concepts](index.md) that share a common context or domain. Think
     of it as a dictionary or glossary specific to a particular area of
-    your business---it groups together all the concepts and their terms
-    that make sense to use together.
+    your business. It groups together concepts and their
+    manifestations that make sense to use together.
 
     Just as you might have a "Finance Vocabulary" or a "Product
     Management Vocabulary" in your organization, the Use Case Tree
     Method organizes concepts into vocabularies to keep things clear
     and reusable.
 
-    ## How Concepts Work with Terms
+    ## How concepts work with manifestations
 
     An important characteristic of our Concept Vocabularies is how
-    concepts relate to the actual words people use:
+    concepts relate to the actual words and technical forms people and
+    systems use:
 
     - A **Concept** in our model is essentially just a unique
       identifier (a random UUID) that represents an idea or thing in
       your domain
-    - This concept can have **multiple Terms** associated with it---the
-      actual words or phrases people use to refer to that concept
+    - This concept can have **multiple manifestations** associated
+      with it, such as business words, abbreviations, API parameters,
+      query variables, ontology classes, shapes, and source
+      occurrences
     - This is a **one-to-many relationship**: one concept, potentially
-      many terms
+      many manifestations
 
-    ### Why Multiple Terms?
+    ### Why multiple manifestations?
 
     In a given context, people often use different words for the same
-    thing:
+    thing, and systems often use different identifiers for it:
 
     **Example: Hospital Context**
 
     > In a hospital use case, the concept of "a person receiving care"
-    > might have multiple terms:
+    > might have multiple manifestations:
     >
     > - "Patient" — medical staff terminology
     > - "Client" — administrative perspective
     > - "Customer" — billing department
     > - "Visitor" — reception desk
     >
-    > All these terms refer to the same underlying concept in this
-    > hospital context, so they're grouped under one Concept identifier.
+    > All these manifestations refer to the same underlying Concept in
+    > this hospital context, so they are grouped under one Concept
+    > identifier.
 
     ### Context Matters
 
-    The same terms might mean completely different things in other
-    contexts:
+    The same manifestation value might mean completely different things
+    in other contexts:
 
     - "Patient" in a hospital means something different than "patient"
       in a legal context (someone waiting)
@@ -83,15 +87,15 @@ domain, enabling reuse and consistency across use cases_
     - Each use case defines its own concepts that make sense in its
       context
 
-    The Concept (the UUID) ties together all the terms that mean the
-    same thing **in your specific use case context**.
+    The Concept (the UUID) ties together all the manifestations that
+    mean the same thing **in your specific use case context**.
 
-    !!! note "Terms are reusable, Concepts are context-specific"
+    !!! note "Manifestations can repeat, Concepts are contextual"
 
-        The **terms** themselves (like "patient", "client") can be
-        reused across many vocabularies and use cases. But the
-        **concept** that groups those terms together is specific to the
-        use case's context and meaning.
+        The **manifestation values** themselves, such as "patient",
+        "client", `?patient`, or `patient_id`, can appear in many
+        vocabularies and systems. The **Concept** that groups them
+        together is specific to the use case's context and meaning.
 
     ## Why Use Concept Vocabularies?
 
@@ -103,8 +107,8 @@ domain, enabling reuse and consistency across use cases_
     2. **Reuse** — Allows multiple use cases to share the same
        vocabulary without duplicating concepts
 
-    3. **Consistency** — Ensures that the same terms mean the same
-       things across different parts of the organization
+    3. **Consistency** — Ensures that the same manifestation values
+       can be interpreted in the right context
 
     4. **Ownership** — Clarifies who is responsible for defining and
        maintaining concepts in each domain
@@ -337,14 +341,15 @@ domain, enabling reuse and consistency across use cases_
     A Story may reference Concepts from multiple
     vocabularies.
 
-    ## Relationship to Terms
+    ## Relationship to manifestations
 
-    [Terms](../term/index.md) are part of concepts, which are part of
-    vocabularies:
+    [Concept Manifestations](../term/index.md) are attached to
+    concepts, which are part of vocabularies:
 
     - A Concept Vocabulary contains multiple Concepts
-    - Each Concept has one or more Terms
-    - Terms provide the actual labels and names used in different
+    - Each Concept can have zero or more manifestations
+    - Manifestations provide the labels, names, variables, schema
+      resources, shapes, and source occurrences used in different
       contexts
 
 === "Ontology"
@@ -380,12 +385,13 @@ domain, enabling reuse and consistency across use cases_
 
     - A **Concept** is essentially just a **universally unique
       identifier** (UUID)
-    - The Concept identifier represents the abstract idea or thing
-    - The Concept has a **one-to-many relationship** with **Terms**
-    - Terms are the actual manifestations---the words and phrases
-      people use
-    - A Concept can have multiple Terms, each representing different
-      ways people refer to the same thing in a given context
+    - The Concept identifier represents the local linking pin
+    - The Concept has a **one-to-many relationship** with
+      **Concept Manifestations**
+    - Manifestations are the observable forms: words, phrases, code
+      identifiers, schema resources, shapes, and source occurrences
+    - A Concept can have multiple manifestations, each representing a
+      different way the same meaning appears in a given context
 
     **Why this matters:**
 
@@ -394,32 +400,31 @@ domain, enabling reuse and consistency across use cases_
 
     ```
     Concept: urn:uuid:a1b2c3d4-... (hospital visitor concept)
-    ├── Term: "Patient" (medical staff usage)
-    ├── Term: "Client" (administrative usage)
-    ├── Term: "Customer" (billing department usage)
-    └── Term: "Visitor" (reception desk usage)
+    ├── BusinessTerm: "Patient" (medical staff usage)
+    ├── BusinessTerm: "Client" (administrative usage)
+    ├── URIParameterManifestation: "patient-id"
+    └── OWLClassManifestation: hospital:Patient
     ```
 
-    All these terms refer to the same underlying concept **in this
-    hospital use case's context**. In other contexts, these same terms
-    might mean completely different things and wouldn't be grouped
+    All these manifestations refer to the same underlying Concept
+    **in this hospital use case's context**. In other contexts, these
+    same values might mean different things and would not be grouped
     together.
 
     **Key insight:**
 
-    - **Concepts** (the UUID identifier) are **context-specific** to
-      the use case
-    - **Terms** (the actual words) are **reusable** across many
-      contexts
-    - The Concept binds together all the terms that mean the same thing
-      in your specific use case context
+    - **Concepts** are context-specific linking pins
+    - **Manifestation values** can recur across many contexts
+    - The Concept binds together all manifestations that mean the same
+      thing in your specific use case context
 
     This separation allows:
 
-    - Different use cases to use the same terms with different meanings
-    - One use case to group multiple terms under one concept
-    - Clear traceability of which terms are considered equivalent in
-      which contexts
+    - Different use cases to use the same values with different
+      meanings
+    - One use case to group multiple manifestations under one Concept
+    - Clear traceability of which manifestations are considered
+      equivalent in which contexts
 
     ### Concept Vocabulary
 
@@ -511,5 +516,5 @@ domain, enabling reuse and consistency across use cases_
   stories use concepts
 - [Use Case](../use-case/index.md) — How use cases relate to
   vocabularies
-- [Term](../term/index.md) — Components of concepts within
-  vocabularies
+- [Concept Manifestation](../term/index.md) — Observable forms of
+  concepts within vocabularies

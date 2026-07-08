@@ -4,21 +4,21 @@ top to bottom direction
 hide members
 
 class "Concept" as Concept [[/concept/concept/#ontology]]
-class "Term" as Term [[/concept/term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
-' Term specializations
-Term <|-- BusinessTerm
-Term <|-- TechnicalTerm
+' Manifestation specializations
+ConceptManifestation <|-- BusinessTerm
+ConceptManifestation <|-- TechnicalManifestation
 
-' Terms
-Concept "1" *-- "1..*" Term : :term
-Concept "0..1" --> "1" BusinessTerm : :labelTerm
+' Manifestations
+Concept "1" *-- "0..*" ConceptManifestation : :hasManifestation
+Concept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
 
 ' Vocabularies
 ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
@@ -33,4 +33,3 @@ Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
 StoryConceptRelationship --> Concept : :concept
 
 @enduml
-

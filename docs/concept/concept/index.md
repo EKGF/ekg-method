@@ -1,9 +1,8 @@
 ---
 description: >-
-  A domain term or idea that links business language to semantic
-  models, enabling the Enterprise Knowledge Graph to understand and
-  reason about business concepts. Learn how concepts bridge business
-  and technical domains in the Use Case Tree Method.
+  A thin linking pin for a context-specific meaning, connected to
+  business terms, technical manifestations, ontology resources,
+  shapes, taxonomies, code identifiers, and source occurrences.
 keywords:
   - concept
   - domain concept
@@ -18,9 +17,9 @@ schema_type: "Article"
 
 <!--summary-start-->
 
-_A domain term or idea that links business language to semantic
-models, enabling the Enterprise Knowledge Graph to understand and
-reason about business concepts_
+_A thin linking pin for a context-specific meaning, connected to
+business terms, technical manifestations, models, code, data, and
+source occurrences_
 
 <!--summary-end-->
 
@@ -29,14 +28,18 @@ reason about business concepts_
     ## What Is a Concept?
 
     For every given [Use Case](../use-case/index.md), we want to start with
-    capturing the concepts and terms that the user or "the business"
-    uses or wants to use.
+    capturing the concepts and manifestations that the user or
+    "the business" uses or wants to use.
 
-    A **Concept** is a way to represent a business idea or term in a
-    way that both humans and machines can understand.
-    It serves as a bridge between the language your organization uses
-    and the formal semantic models (ontologies) that enable the
-    Enterprise Knowledge Graph to reason about your business.
+    A **Concept** is a context-specific linking pin for a meaning.
+    It is deliberately small: the Concept itself does not need to
+    carry every label, ontology class, shape, data field, or code
+    identifier.
+
+    Instead, it links to
+    [Concept Manifestations](../term/index.md): business names,
+    synonyms, abbreviations, API parameters, query variables,
+    ontology terms, shapes, taxonomy entries, and source occurrences.
 
     ## Why Concepts Matter
 
@@ -44,8 +47,9 @@ reason about business concepts_
 
     - **Business language is preserved** — We capture terms as the
       business uses them, not as some external standard defines them
-    - **Semantic meaning is enabled** — Concepts link to ontologies
-      that give them machine-readable meaning
+    - **Semantic meaning is enabled** — Concepts link to technical
+      manifestations that point at ontologies, shapes, taxonomies,
+      code, and data
     - **Consistency is maintained** — The same concept can be reused
       across multiple use cases
     - **Interoperability is achieved** — Concepts can map to
@@ -63,9 +67,9 @@ reason about business concepts_
     **[Concept Vocabularies](concept-vocabulary.md)**---collections of
     related concepts that share a common context or domain.
 
-    Most concepts and their terms will be pre-defined in all kinds of
-    vocabularies, but for brand-new use cases in a new domain,
-    concepts and their terms will have to be created.
+    Most concepts and manifestations will be pre-defined in all kinds
+    of vocabularies. For brand-new use cases in a new domain,
+    concepts and their manifestations may have to be created.
 
     Each Use Case can have its own vocabulary of concepts, but it can
     also inherit or borrow concepts from higher-level or related use
@@ -82,22 +86,23 @@ reason about business concepts_
 
     - **Adjust concepts** — Better reflect the reality of the domain
     - **Map to ontologies** — Link concepts to more appropriate
-      terms in specific ontologies or vocabularies to ensure
-      consistency and interoperability across the enterprise
+      ontology terms, shapes, taxonomies, or other technical
+      manifestations to ensure consistency and interoperability
+      across the enterprise
 
     In either case, the important thing is to ensure that the
-    captured concepts and terms accurately reflect the reality of the
-    domain and the needs of the stakeholders.
+    captured concepts and manifestations accurately reflect the
+    reality of the domain and the needs of the stakeholders.
 
 === "Data & Tech Audience"
 
     ## What Is a Concept in the Use Case Tree Method?
 
-    A **Concept** is the linking pin between local business language
-    and formal semantic models (ontologies).
-    It enables the EKG to understand business terminology while
-    maintaining connections to standardized vocabularies and enabling
-    automated reasoning.
+    A **Concept** is the linking pin between local business language,
+    technical implementation, and formal semantic models.
+    It stays deliberately thin. Business terms, technical identifiers,
+    ontology resources, SHACL shapes, taxonomy entries, and source
+    occurrences are modeled as Concept Manifestations.
 
     ## The Concept Lifecycle
 
@@ -117,21 +122,19 @@ reason about business concepts_
         The business owns its use cases and should recognize them
         throughout their lifecycle.
 
-    ### Mapping to Ontologies
+    ### Mapping to ontologies and shapes
 
     Later in the use case's lifecycle, once the problem is well
-    understood, the relevant ontologies can be mapped to the terms and
-    concepts captured earlier.
+    understood, the relevant ontologies, shapes, and taxonomies can be
+    mapped to manifestations of the concepts captured earlier.
     This allows for better integration of the use case with the
     overall EKG ecosystem.
 
     !!! note "Implementation Detail"
         The mapping to OWL ontologies or SHACL shapes is primarily a
         technical implementation detail that is local to the specific
-        use case. Different use cases may map to the same ontology in
-        completely different ways, reflecting their unique business
-        contexts and requirements. This flexibility ensures that
-        ontology mappings serve the use case rather than constraining it.
+        use case. The Concept links to an OWL or SHACL manifestation;
+        the manifestation points at the ontology resource or shape.
 
     ### Refinement and Evolution
 
@@ -141,27 +144,30 @@ reason about business concepts_
     - **Adjust captured concepts** — Better reflect the reality of
       the domain
     - **Map to appropriate ontologies** — Link to more appropriate
-      terms in specific ontologies or vocabularies to ensure
-      consistency and interoperability across the enterprise
+      ontology resources, shapes, taxonomies, or other technical
+      manifestations to ensure consistency and interoperability
+      across the enterprise
 
-    ## Concept Types
+    ## Manifestation types
 
-    Concepts can represent different types of semantic elements:
+    Concepts do not need a class/property/shape subtype hierarchy.
+    Their manifestations carry that detail:
 
-    - **Class Concepts** — Represent types or categories (e.g.,
-      "Person", "Account", "Transaction")
-    - **Property Concepts** — Represent relationships or attributes
-      (e.g., "hasOwner", "isLocatedIn", "hasValue")
-    - **Shape Concepts** — Represent validation constraints or data
-      shapes
+    - **Business Terms** represent names, synonyms, and abbreviations.
+    - **Technical Manifestations** represent API parameters, code
+      identifiers, query variables, tables, and columns.
+    - **OWL Manifestations** represent classes, properties,
+      individuals, and axioms.
+    - **SHACL Manifestations** represent node shapes and property
+      shapes.
+    - **SKOS Manifestations** represent concepts and concept schemes.
 
     ## Concepts as Linking Pins
 
     Concepts are the linking pin in many ways.
-    They link "business terms" and "technical terms" as they are
-    used in the context of the given use case, by the business and
-    by various programs, apps, and systems, in all their variations
-    and manifestations.
+    They link Business Terms and Technical Manifestations as they are
+    used in the context of the given use case, by the business and by
+    programs, apps, systems, statements, ontologies, and data.
 
     !!! tip "Context-Specific Linking"
 
@@ -189,10 +195,9 @@ reason about business concepts_
       or `sh:minCount`)
 
     All these symbols, terms, axioms, and shapes are manifestations
-    of the same concept and linked to it.
-    Even the mapping to certain axioms in an OWL ontology or
-    certain shapes in a SHACL shape would be seen as "technical
-    terms" — just yet some other manifestations of a given concept.
+    of the same Concept and linked to it.
+    Mappings to OWL axioms or SHACL shapes are Technical
+    Manifestations, not direct properties of the Concept.
 
     This enables the EKG to understand that these different
     representations all refer to the same business concept, enabling
@@ -244,8 +249,9 @@ reason about business concepts_
       semantic definition and reasoning
     - **[Stories](../story/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
-    - **[Ontologies](../ontology.md)** — Concepts link to ontology
-      classes, properties, and shapes
+    - **[Ontologies](../ontology.md)** — Concepts link through
+      manifestations to ontology classes, properties, axioms, and
+      shapes
 
 === "Ontology"
 
@@ -274,25 +280,27 @@ reason about business concepts_
         - Do **not** use the slug as a foreign key in the Knowledge Graph itself; use the real
           identifier for references.
 
-    - **Label Term (instead of a traditional label)**
-        - A Concept does not have a traditional label such as `skos:prefLabel` or `rdfs:label`.
-        - Instead, it has a **labelTerm** link to one of its **BusinessTerm** objects (a resource
-          in the Knowledge Graph).
-        - Learn more in [Term](../term/index.md).
+    - **Preferred Business Term**
+        - A Concept does not need a traditional label such as
+          `skos:prefLabel` or `rdfs:label`.
+        - Instead, it can link to a preferred **BusinessTerm**.
+        - Learn more in
+          [Concept Manifestation](../term/index.md).
 
     - **Definition**
-        - A Concept must have a business-focused definition explaining what it means in context.
+        - A Concept must have a business-focused definition explaining
+          what it means in context.
 
-    - **One or more Terms (required)**
-        - A Concept must have **one or more Terms** (`Term`), which can be either a
-          **BusinessTerm** or a **TechnicalTerm**.
-        - A Concept without a Term has no reason to exist.
-        - All Terms of a Concept **mean the same thing** in the context of that Concept.
-        - Terms may include alternative spellings, abbreviations, synonyms, and technical
-          manifestations.
-        - Terms are **owned** by the Concept (part-of): when the Concept is deleted, its Term
-          objects are deleted as well.
-        - Learn more in [Term](../term/index.md).
+    - **Zero or more manifestations**
+        - A Concept can have zero or more
+          `ConceptManifestation` resources.
+        - Manifestations may include spellings, abbreviations,
+          synonyms, variables, columns, ontology resources, shapes,
+          taxonomy entries, and source occurrences.
+        - A Concept can start empty and become meaningful as
+          manifestations are discovered or curated.
+        - Learn more in
+          [Concept Manifestation](../term/index.md).
 
     - **Contained in a Concept Vocabulary**
         - A Concept is a member of a Concept Vocabulary (a “container” of Concepts).
@@ -301,12 +309,13 @@ reason about business concepts_
             - **own** a private vocabulary.
 
     - **Mapping to ontologies (optional)**
-        - A Concept can be mapped/aligned to terms in one or more ontologies (classes,
-          properties, shapes).
-        - Model this via mapping/alignment relationships so you can capture confidence, rationale,
-          and provenance.
+        - A Concept can link to OWL, SHACL, SKOS, SQL, and source
+          artifacts through Technical Manifestations.
+        - The manifestation carries the resource or literal value and
+          any provenance.
 
     - **Used by Stories and Workflows**
-        - Stories use Concepts as **input**, **output**, and **dependent** concepts.
-        - Workflows use Concepts through the Stories they orchestrate and the vocabulary of the
-          Use Case.
+        - Stories use Concepts as **input**, **output**, and
+          **dependent** concepts.
+        - Workflows use Concepts through the Stories they orchestrate
+          and the vocabulary of the Use Case.

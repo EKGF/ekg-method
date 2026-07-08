@@ -12,16 +12,16 @@ class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereo
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
 class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
 class "Concept" as Concept [[/concept/concept/#ontology]]
-class "Term" as Term [[/concept/term/#ontology]]
+class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
-class "TechnicalTerm" as TechnicalTerm [[/concept/term/technical-term/#ontology]]
+class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
 class "Persona" as Persona [[/concept/persona/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 class "PersonaTaxonomy" as PersonaTaxonomy [[/concept/persona/persona-taxonomy/#ontology]]
 
-' Term specializations
-Term <|-- BusinessTerm
-Term <|-- TechnicalTerm
+' Manifestation specializations
+ConceptManifestation <|-- BusinessTerm
+ConceptManifestation <|-- TechnicalManifestation
 
 ' Other resources point to UseCase (typical KG modeling style)
 Story "0..*" --> "1" UseCase : :useCase
@@ -35,8 +35,8 @@ UseCase "0..*" --> "0..1" UseCase : :isPartOf
 UseCase "0..*" --> "0..*" UseCase : :isUsedIn
 
 ' Local ownership / containment
-Concept "1" *-- "1..*" Term : :term
-Concept "0..1" --> "1" BusinessTerm : :labelTerm
+Concept "1" *-- "0..*" ConceptManifestation : :hasManifestation
+Concept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
 ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
 
 ' Other key relationships
