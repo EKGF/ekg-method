@@ -82,6 +82,26 @@ or entities — involved in a Use Case, defined using business language_
 
 === "Data & Tech Audience"
 
+    ## Where the word comes from
+
+    A *persona* is the mask a performer wears — the character, not the
+    performer. The method borrows the word deliberately, and the rest
+    of the vocabulary follows from it: a **Story** is
+    [played by](../story/index.md) a Persona, the way a play is
+    performed by its characters.
+
+    The relation is named `playedBy` for that reason. Read as a
+    sentence it explains itself — *this Story is played by this
+    Persona* — where a structural name such as `hasPersona` would
+    assert that a link exists without saying what it means. In a
+    method whose product is the vocabulary itself, a name that teaches
+    the model is doing real work.
+
+    The metaphor also sets the expectations correctly. A character
+    outlives any one performance and can appear in many stories; so
+    can a Persona. And a performer is not reduced to a single
+    character — which is the distinction the next section turns on.
+
     ## Persona vs. Actor vs. Role
 
     In traditional use case modeling, the term **Actor** is commonly
@@ -94,6 +114,51 @@ or entities — involved in a Use Case, defined using business language_
     things simple when capturing requirements — primarily as
     [Stories](../story/index.md) — but also because the term Persona combines
     both concepts into one unified model.
+
+    ### Assuming a role versus having a Persona
+
+    The deeper reason is that *assuming* is the wrong verb.
+
+    In the Actor/Role model, an actor **assumes** a role in order to
+    perform a task. That verb carries an exclusivity the model rarely
+    states out loud: in a given context, at a given moment, the actor
+    is in **one** role. AWS makes this explicit — a principal calls
+    `AssumeRole` and, for the duration of that session, *is* the role;
+    the identity it had before is set aside. Role is a hat you swap.
+
+    A Persona is not a hat. A principal **has** Personas — several at
+    once — and never switches between them. The closest analogy is a
+    trait, interface or protocol in a programming language: a type
+    implements many traits simultaneously, and a function that
+    requires one of them is stating a **minimum**, not a restriction.
+
+    That is exactly how a Story names its Persona. The Story says:
+
+    > to invoke this, you must have **at least** this Persona.
+
+    It does not say *only* this Persona, and it does not ask anyone to
+    put a hat on first. Membership is checked; nothing is assumed, in
+    either sense of the word.
+
+    This is why [Real-Time Persona Computation](#real-time-persona-computation)
+    below speaks of computing *the set* of Personas a user has. A set
+    is the natural shape here; under an Actor/Role reading it would
+    have to be a single current value.
+
+    ### Why we diverge
+
+    EKGF is part of the OMG, and traditional use case modeling, the
+    TOGAF Metamodel and the OMG's own specifications all reach for
+    Actor and Role. Being part of a standards body is not a reason to
+    inherit a distinction that does not serve the reader — the method
+    is free to model this its own way, and does.
+
+    The practical gains are small and real: requirements capture has
+    one term instead of two; a Story's authorization requirement is a
+    predicate over what the caller *has*, needing no session in which
+    a role was assumed; and a person who is simultaneously an approver,
+    an auditor and an employee is described as they actually are,
+    rather than as three context switches.
 
     ## Key Technical Characteristics
 

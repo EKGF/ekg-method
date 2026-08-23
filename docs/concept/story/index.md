@@ -73,9 +73,15 @@ of a Use Case and the Outcome it contributes to_
 
     - **Structured statement (who / what / why)**
         - A Story should capture:
-            - **Who**: a reference to a Persona (or persona-like Concept)
+            - **Who**: a reference to a Persona (or persona-like Concept),
+              named `playedBy` — a Story is
+              [played by](../persona/index.md#where-the-word-comes-from)
+              a Persona, and the caller must **have** that Persona to
+              invoke it, not be restricted to it
             - **What**: the capability/action needed
-            - **Why**: a reference to an Outcome (the intended business value)
+            - **Why**: a reference to an Outcome (the intended business value),
+              named `contributesTo` — the Story contributes to the Outcome
+              rather than merely having one
 
     - **Owned by a Use Case**
         - A Story is **part-of** a Use Case: the Use Case **owns** the Story.
