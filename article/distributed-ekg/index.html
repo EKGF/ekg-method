@@ -141,7 +141,7 @@
     "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Distributed EKG Architecture",
@@ -3506,15 +3506,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#concepts-as-the-linking-pin" class="md-nav__link">
+  <a href="#concepts-as-shared-meanings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Concepts as the Linking Pin
+        Concepts as shared meanings
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Concepts as the Linking Pin">
+    <nav class="md-nav" aria-label="Concepts as shared meanings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3933,8 +3933,8 @@ given Use Case.</p>
 requirements to formal ontology axioms:</p>
 <div class="highlight"><pre><span></span><code>Use Case
     └── Story
-        └── Concept
-            └── Technical Term
+        └── Data Element Concept
+            └── Technical Manifestation
                 └── Ontology Axiom
 </code></pre></div>
 <p>Each level in this chain serves a purpose:</p>
@@ -3943,18 +3943,19 @@ requirements to formal ontology axioms:</p>
    context and requirements</li>
 <li><strong><a href="../../concept/story/">Story</a></strong> — Captures specific
    scenarios and user needs</li>
-<li><strong><a href="../../concept/concept/">Concept</a></strong> — The linking pin between
-   business language and technical implementation</li>
-<li><strong><a href="../../concept/term/technical-term/">Technical Term</a></strong> — The
-   manifestation in code, data, and metadata</li>
+<li><strong><a href="../../concept/concept/">Data Element Concept</a></strong> — A shared
+   meaning reused across business and technical manifestations;
+   called a Concept for short</li>
+<li><strong><a href="../../concept/term/technical-term/">Technical Manifestation</a></strong> —
+   The manifestation in code, data, and metadata</li>
 <li><strong>Ontology Axiom</strong> — The formal semantic definition in OWL or <abbr title="Shapes Constraint Language, a W3C standard">SHACL</abbr></li>
 </ol>
 <h3 id="why-context-matters">Why Context Matters<a class="headerlink" href="#why-context-matters" title="Permanent link">&para;</a></h3>
-<p>Different use cases may map to the <strong>same ontology</strong> in completely
-different ways. A "Customer" concept in a sales use case may have
-different attributes, constraints, and relationships than "Customer"
-in a compliance use case—even if both ultimately link to the same
-OWL class.</p>
+<p>Different use cases may use different manifestations of the same
+Concept. Sales and compliance can reuse a Customer Concept while
+selecting different shapes, query variables or business terms.
+Create a separate Concept where needed, such as when the intended
+meaning differs. A change of context alone does not require one.</p>
 <p>This flexibility ensures that:</p>
 <ul>
 <li><strong>Ontology mappings serve the use case</strong>, not the other way around</li>
@@ -3975,10 +3976,11 @@ OWL ontologies. The tree may contain:</p>
 <p>This is one of the key reasons why the Use Case Tree Method
 introduces the idea of <strong><a href="../../concept/concept/">Concepts</a> of
 the Use Case</strong>.</p>
-<h2 id="concepts-as-the-linking-pin">Concepts as the Linking Pin<a class="headerlink" href="#concepts-as-the-linking-pin" title="Permanent link">&para;</a></h2>
-<p><a href="../../concept/concept/">Concepts</a> form the linking pin—in the
-context of the given use case—between the
-<a href="../../concept/story/">Stories</a> and the OWL ontology axioms.</p>
+<h2 id="concepts-as-shared-meanings">Concepts as shared meanings<a class="headerlink" href="#concepts-as-shared-meanings" title="Permanent link">&para;</a></h2>
+<p><a href="../../concept/concept/">Concepts</a> identify reusable meanings
+that connect <a href="../../concept/story/">Stories</a> to business and
+technical manifestations. The latter can reference OWL ontology
+axioms or <abbr title="Shapes Constraint Language, a W3C standard">SHACL</abbr> shapes. Several use cases can share the same Concept.</p>
 <h3 id="why-concepts-not-direct-ontology-mapping">Why Concepts, Not Direct Ontology Mapping?<a class="headerlink" href="#why-concepts-not-direct-ontology-mapping" title="Permanent link">&para;</a></h3>
 <p>If use cases mapped directly to ontology axioms, we would face
 several problems:</p>
@@ -4005,8 +4007,8 @@ several problems:</p>
   terminology</li>
 <li><strong>Mapping can be deferred</strong> — Ontology integration happens when
   appropriate</li>
-<li><strong>Context is maintained</strong> — Each use case has its own semantic
-  context</li>
+<li><strong>Reuse is encouraged</strong> — Use cases share Concepts wherever their
+  meanings agree and select the manifestations they need</li>
 <li><strong>Evolution is supported</strong> — Concepts can be refined as
   understanding grows</li>
 </ul>
@@ -4084,8 +4086,8 @@ monolithic graph:</p>
 <li><a href="../ekg/">Enterprise Knowledge Graph</a> — What an <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> is</li>
 <li><a href="../../concept/ontology/">Ontology</a> — Formal specification of
   concepts</li>
-<li><a href="../../concept/concept/">Concept</a> — The linking pin between
-  business and technical</li>
+<li><a href="../../concept/concept/">Data Element Concept</a> — Reusable
+  meaning across business and technical manifestations</li>
 <li><a href="../../concept/use-case/">Use Case</a> — Business capabilities in
   the <abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr></li>
 <li><a href="../../concept/use-case-tree/">Use Case Tree</a> — Organizing use cases</li>
@@ -4115,7 +4117,7 @@ monolithic graph:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>
   </span>
 
     

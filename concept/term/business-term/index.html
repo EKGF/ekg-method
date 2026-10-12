@@ -141,7 +141,7 @@
     "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Business term",
@@ -3758,12 +3758,12 @@ documentation, user interfaces, policies, and governance</em></p>
 <h2 id="what-is-a-business-term">What is a business term?<a class="headerlink" href="#what-is-a-business-term" title="Permanent link">&para;</a></h2>
 <p>A <strong>Business Term</strong> is a human-facing
 <a href="../">Concept Manifestation</a>. It is how people speak about a
-Concept in a specific context.</p>
-<p>Multiple Business Terms can point to one Concept when they mean the
-same thing in that context. For example, "Customer",
-"Counterparty", and "Client" may all be valid Business Terms for
-one Concept in one use case, while meaning different things in
-another use case.</p>
+<a href="../../concept/">Data Element Concept</a>, or Concept for short.</p>
+<p>Multiple Business Terms can point to one Concept wherever their
+meanings agree. For example, "Customer identifier" and "Customer
+ID" can name the same Concept across sales, service and billing.
+A change of language or use case does not require a new Concept.
+Matching words alone do not establish that their meanings agree.</p>
 <h2 id="key-characteristics">Key characteristics<a class="headerlink" href="#key-characteristics" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>User-facing</strong>: used in documentation, policies, UI, and
@@ -3786,7 +3786,7 @@ another use case.</p>
 <div class="tabbed-block">
 <h2 id="business-terms-as-manifestations">Business terms as manifestations<a class="headerlink" href="#business-terms-as-manifestations" title="Permanent link">&para;</a></h2>
 <p>A Business Term is a specialization of
-<code>concept:ConceptManifestation</code>.
+<code>ekg-concept:ConceptManifestation</code>.
 It carries human-readable lexical forms such as:</p>
 <ul>
 <li>preferred label</li>
@@ -3796,8 +3796,8 @@ It carries human-readable lexical forms such as:</p>
 <li>plural form</li>
 <li>short UI label</li>
 </ul>
-<p>The Concept itself stays thin. The preferred display label is a
-link from the Concept to a preferred Business Term.</p>
+<p><code>ekg-concept:preferredBusinessTerm</code> links the Data Element Concept
+to the Business Term that supplies its preferred display label.</p>
 </div>
 <div class="tabbed-block">
 <!-- markdownlint-disable MD041 MD012 -->
@@ -3861,7 +3861,7 @@ or graph model.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>
   </span>
 
     

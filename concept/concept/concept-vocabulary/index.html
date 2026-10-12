@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A collection of related concepts that share a common context or domain, enabling reuse and consistency across use cases in the Use Case Tree Method.">
+        <meta name="description" content="A governed set of related data element concepts, enabling reuse and consistency across use cases in the Use Case Tree Method.">
       
       
         <meta name="author" content="Object Management Group (OMG) Enterprise Knowledge Graph Forum">
@@ -94,7 +94,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://method.ekgf.org/concept/concept/concept-vocabulary/">
 <meta property="og:title" content="Concept Vocabulary - Use Case Tree Method">
-<meta property="og:description" content="A collection of related concepts that share a common context or domain, enabling reuse and consistency across use cases in the Use Case Tree Method.">
+<meta property="og:description" content="A governed set of related data element concepts, enabling reuse and consistency across use cases in the Use Case Tree Method.">
 <meta property="og:site_name" content="Use Case Tree Method">
 
 <meta property="og:locale" content="en_US">
@@ -104,7 +104,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://method.ekgf.org/concept/concept/concept-vocabulary/">
 <meta name="twitter:title" content="Concept Vocabulary - Use Case Tree Method">
-<meta name="twitter:description" content="A collection of related concepts that share a common context or domain, enabling reuse and consistency across use cases in the Use Case Tree Method.">
+<meta name="twitter:description" content="A governed set of related data element concepts, enabling reuse and consistency across use cases in the Use Case Tree Method.">
 
   
     
@@ -119,7 +119,7 @@
 
 
 
-<meta name="keywords" content="concept vocabulary, vocabulary, SKOS concept scheme, domain vocabulary, EKG method, enterprise knowledge graph">
+<meta name="keywords" content="concept vocabulary, vocabulary, concept set, data element concept, domain vocabulary, EKG method, enterprise knowledge graph">
 
 
 
@@ -128,7 +128,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "name": "Concept Vocabulary - Use Case Tree Method",
-  "description": "A collection of related concepts that share a common context or domain, enabling reuse and consistency across use cases in the Use Case Tree Method.",
+  "description": "A governed set of related data element concepts, enabling reuse and consistency across use cases in the Use Case Tree Method.",
   "url": "https://method.ekgf.org/concept/concept/concept-vocabulary/",
   "inLanguage": "en",
   "isPartOf": {
@@ -149,11 +149,11 @@
     }
     
   ],
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Concept Vocabulary",
-    "description": "A collection of related concepts that share a common context or domain, enabling reuse and consistency across use cases in the Use Case Tree Method."
+    "description": "A governed set of related data element concepts, enabling reuse and consistency across use cases in the Use Case Tree Method."
   }
 }
 </script>
@@ -2500,10 +2500,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extension-of-skos" class="md-nav__link">
+  <a href="#shared-meanings-and-their-manifestations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Extension of SKOS
+        Shared meanings and their manifestations
       
     </span>
   </a>
@@ -2544,10 +2544,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#skos-alignment" class="md-nav__link">
+  <a href="#ekg-ontology-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SKOS Alignment
+        EKG ontology example
       
     </span>
   </a>
@@ -4100,16 +4100,16 @@
 <h1 id="concept-vocabulary">Concept Vocabulary<a class="headerlink" href="#concept-vocabulary" title="Permanent link">&para;</a></h1>
 <!--summary-start-->
 
-<p><em>A collection of related concepts that share a common context or
-domain, enabling reuse and consistency across use cases</em></p>
+<p><em>A governed set of related data element concepts, enabling reuse and
+consistency across use cases</em></p>
 <!--summary-end-->
 
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="business--management-audience" name="__tabbed_1" type="radio" /><input id="vocabulary-management" name="__tabbed_1" type="radio" /><input id="relationships_1" name="__tabbed_1" type="radio" /><input id="ontology" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="business--management-audience">Business &amp; Management Audience</label><label for="vocabulary-management">Vocabulary Management</label><label for="relationships_1">Relationships</label><label for="ontology">Ontology</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <h2 id="what-is-a-concept-vocabulary">What Is a Concept Vocabulary?<a class="headerlink" href="#what-is-a-concept-vocabulary" title="Permanent link">&para;</a></h2>
-<p>A <strong>Concept Vocabulary</strong> is a collection of related
-<a href="../">Concepts</a> that share a common context or domain. Think
+<p>A <strong>Concept Vocabulary</strong> is a governed set of related
+<a href="../">Data Element Concepts</a>, called Concepts for short. Think
 of it as a dictionary or glossary specific to a particular area of
 your business. It groups together concepts and their
 manifestations that make sense to use together.</p>
@@ -4122,51 +4122,44 @@ and reusable.</p>
 concepts relate to the actual words and technical forms people and
 systems use:</p>
 <ul>
-<li>A <strong>Concept</strong> in our model is essentially just a unique
-  identifier (a random UUID) that represents an idea or thing in
-  your domain</li>
+<li>A <strong>Concept</strong> identifies a reusable meaning, independently of
+  the names and technical forms used to express it</li>
 <li>This concept can have <strong>multiple manifestations</strong> associated
   with it, such as business words, abbreviations, <abbr title="Application Programming Interface">API</abbr> parameters,
-  query variables, ontology classes, shapes, and source
-  occurrences</li>
+  query variables, ontology classes and shapes</li>
 <li>This is a <strong>one-to-many relationship</strong>: one concept, potentially
   many manifestations</li>
 </ul>
 <h3 id="why-multiple-manifestations">Why multiple manifestations?<a class="headerlink" href="#why-multiple-manifestations" title="Permanent link">&para;</a></h3>
 <p>In a given context, people often use different words for the same
 thing, and systems often use different identifiers for it:</p>
-<p><strong>Example: Hospital Context</strong></p>
+<p><strong>Example: Customer identifier</strong></p>
 <blockquote>
-<p>In a hospital use case, the concept of "a person receiving care"
-might have multiple manifestations:</p>
+<p>A shared customer-identifier Concept might have these
+manifestations across sales, service and billing:</p>
 <ul>
-<li>"Patient" — medical staff terminology</li>
-<li>"Client" — administrative perspective</li>
-<li>"Customer" — billing department</li>
-<li>"Visitor" — reception desk</li>
+<li>"Customer identifier" — the business term</li>
+<li>"Customer ID" — a shorter label on forms</li>
+<li><code>?customerId</code> — a <abbr title="SPARQL Protocol and RDF Query Language, a W3C standard">SPARQL</abbr> variable</li>
+<li><code>customer_id</code> — a Python variable</li>
 </ul>
-<p>All these manifestations refer to the same underlying Concept in
-this hospital context, so they are grouped under one Concept
-identifier.</p>
+<p>These manifestations express the same meaning and link to
+one Concept reused by those use cases.</p>
 </blockquote>
 <h3 id="context-matters">Context Matters<a class="headerlink" href="#context-matters" title="Permanent link">&para;</a></h3>
-<p>The same manifestation value might mean completely different things
-in other contexts:</p>
-<ul>
-<li>"Patient" in a hospital means something different than "patient"
-  in a legal context (someone waiting)</li>
-<li>"Client" in a hospital is different from "client" in a law firm</li>
-<li>Each use case defines its own concepts that make sense in its
-  context</li>
-</ul>
-<p>The Concept (the UUID) ties together all the manifestations that
-mean the same thing <strong>in your specific use case context</strong>.</p>
+<p>The same word or token can have different meanings. For example,
+"bank" can denote a financial institution or the side of a river.
+Conversely, different names can express the same meaning.</p>
+<p>Check the meaning before reusing a Concept. A new use case or
+vocabulary does not by itself require a new Concept. A Concept
+can also belong to more than one vocabulary.</p>
 <div class="admonition note">
-<p class="admonition-title">Manifestations can repeat, Concepts are contextual</p>
-<p>The <strong>manifestation values</strong> themselves, such as "patient",
-"client", <code>?patient</code>, or <code>patient_id</code>, can appear in many
-vocabularies and systems. The <strong>Concept</strong> that groups them
-together is specific to the use case's context and meaning.</p>
+<p class="admonition-title">Reuse meaning across contexts</p>
+<p>Reuse existing Concepts wherever their meanings apply.
+Separate Concepts may be created where needed and later
+merged when their owners establish that they mean the same
+thing. Matching manifestation values alone do not establish
+that identity.</p>
 </div>
 <h2 id="why-use-concept-vocabularies">Why Use Concept Vocabularies?<a class="headerlink" href="#why-use-concept-vocabularies" title="Permanent link">&para;</a></h2>
 <p>Concept Vocabularies serve several important purposes:</p>
@@ -4249,14 +4242,13 @@ and "Sanctions List."</p>
   vocabulary</li>
 </ul>
 <h2 id="evolution-path">Evolution Path<a class="headerlink" href="#evolution-path" title="Permanent link">&para;</a></h2>
-<p>Many vocabularies start as private and evolve to become shared:</p>
+<p>Reuse existing Concepts while developing new vocabulary content:</p>
 <ol>
-<li><strong>Start private</strong> — Create a vocabulary specific to your use
-   case</li>
-<li><strong>Prove value</strong> — Demonstrate that the concepts are useful and
-   well-defined</li>
-<li><strong>Generalize</strong> — Remove use case-specific details and make
-   concepts more generally applicable</li>
+<li><strong>Discover</strong> — Find existing Concepts that express the needed
+   meanings</li>
+<li><strong>Extend</strong> — Add manifestations or create new Concepts for
+   meanings that are not already covered</li>
+<li><strong>Refine</strong> — Clarify definitions and reconcile duplicates</li>
 <li><strong>Share</strong> — Publish the vocabulary for other use cases to
    reference</li>
 <li><strong>Maintain</strong> — Establish governance for the shared vocabulary</li>
@@ -4329,13 +4321,15 @@ stability with evolution</p>
 <div class="tabbed-block">
 <h2 id="relationship-to-concepts">Relationship to Concepts<a class="headerlink" href="#relationship-to-concepts" title="Permanent link">&para;</a></h2>
 <p><a href="../">Concepts</a> are the members of a Concept Vocabulary.
-Using the SKOS (Simple Knowledge Organization System) standard:</p>
+In the EKGF Concept Ontology:</p>
 <ul>
-<li>A Concept Vocabulary is a <code>skos:ConceptScheme</code></li>
-<li>A Concept is a <code>skos:Concept</code></li>
-<li>Concepts belong to a vocabulary via <code>skos:inScheme</code></li>
+<li>A Concept Vocabulary is an <code>ekg-concept:ConceptSet</code></li>
+<li>A Concept is an <code>ekg-concept:DataElementConcept</code></li>
+<li><code>ekg-concept:inConceptSet</code> links a Concept to a vocabulary</li>
 </ul>
-<p>This follows established <abbr title="World Wide Web Consortium">W3C</abbr> standards for organizing concepts.</p>
+<p>Membership organizes shared meanings without making each
+Concept local to a vocabulary. SKOS concepts and schemes can
+be linked through technical manifestations.</p>
 <h2 id="relationship-to-use-cases">Relationship to Use Cases<a class="headerlink" href="#relationship-to-use-cases" title="Permanent link">&para;</a></h2>
 <p>Each Concept Vocabulary is <strong>owned by exactly one</strong>
 <a href="../../use-case/">Use Case</a>.
@@ -4389,8 +4383,9 @@ concepts, which are part of vocabularies:</p>
 <li>A Concept Vocabulary contains multiple Concepts</li>
 <li>Each Concept can have zero or more manifestations</li>
 <li>Manifestations provide the labels, names, variables, schema
-  resources, shapes, and source occurrences used in different
-  contexts</li>
+  resources and shapes used in different contexts</li>
+<li><code>ManifestationOccurrence</code> records where a manifestation
+  appears in a source</li>
 </ul>
 </div>
 <div class="tabbed-block">
@@ -4408,56 +4403,28 @@ or graph model.</p>
 </div>
 <h2 id="technical-model">Technical Model<a class="headerlink" href="#technical-model" title="Permanent link">&para;</a></h2>
 <p>A Concept Vocabulary is a container for related concepts:</p>
-<h3 id="extension-of-skos">Extension of SKOS<a class="headerlink" href="#extension-of-skos" title="Permanent link">&para;</a></h3>
-<p>While a Concept Vocabulary is technically a <code>skos:ConceptScheme</code>
-following <abbr title="World Wide Web Consortium">W3C</abbr> SKOS standards, we extend the model in an important
-way:</p>
-<p><strong>Standard SKOS:</strong></p>
-<ul>
-<li>A <code>skos:Concept</code> has labels directly attached
-  (<code>skos:prefLabel</code>, <code>skos:altLabel</code>)</li>
-<li>Labels are properties of the concept itself</li>
-</ul>
-<p><strong>Use Case Tree Method Extension:</strong></p>
-<ul>
-<li>A <strong>Concept</strong> is essentially just a <strong>universally unique
-  identifier</strong> (UUID)</li>
-<li>The Concept identifier represents the local linking pin</li>
-<li>The Concept has a <strong>one-to-many relationship</strong> with
-  <strong>Concept Manifestations</strong></li>
-<li>Manifestations are the observable forms: words, phrases, code
-  identifiers, schema resources, shapes, and source occurrences</li>
-<li>A Concept can have multiple manifestations, each representing a
-  different way the same meaning appears in a given context</li>
-</ul>
-<p><strong>Why this matters:</strong></p>
-<p>In a given use case context, people often use multiple words for
-the same concept:</p>
-<div class="highlight"><pre><span></span><code>Concept: urn:uuid:a1b2c3d4-... (hospital visitor concept)
-├── BusinessTerm: &quot;Patient&quot; (medical staff usage)
-├── BusinessTerm: &quot;Client&quot; (administrative usage)
-├── URIParameterManifestation: &quot;patient-id&quot;
-└── OWLClassManifestation: hospital:Patient
+<h3 id="shared-meanings-and-their-manifestations">Shared meanings and their manifestations<a class="headerlink" href="#shared-meanings-and-their-manifestations" title="Permanent link">&para;</a></h3>
+<p><code>DataElementConcept</code> identifies the meaning of a data element or
+compound data construct. Its
+<a href="../#relationship-to-isoiec-11179">relationship to ISO/IEC 11179</a>
+follows the separation of meaning and representation, with a
+broader scope that includes whole classes and shapes.</p>
+<p>A Concept can have many manifestations across different use
+cases and systems:</p>
+<div class="highlight"><pre><span></span><code>DataElementConcept: customer identifier
+├── BusinessTerm: &quot;Customer identifier&quot;
+├── BusinessTerm: &quot;Customer ID&quot;
+├── URIParameterManifestation: &quot;customerId&quot;
+└── SPARQLVariableManifestation: &quot;?customerId&quot;
 </code></pre></div>
-<p>All these manifestations refer to the same underlying Concept
-<strong>in this hospital use case's context</strong>. In other contexts, these
-same values might mean different things and would not be grouped
-together.</p>
-<p><strong>Key insight:</strong></p>
-<ul>
-<li><strong>Concepts</strong> are context-specific linking pins</li>
-<li><strong>Manifestation values</strong> can recur across many contexts</li>
-<li>The Concept binds together all manifestations that mean the same
-  thing in your specific use case context</li>
-</ul>
-<p>This separation allows:</p>
-<ul>
-<li>Different use cases to use the same values with different
-  meanings</li>
-<li>One use case to group multiple manifestations under one Concept</li>
-<li>Clear traceability of which manifestations are considered
-  equivalent in which contexts</li>
-</ul>
+<p>The Concept identifies the shared meaning, while manifestations
+express it in particular forms. Reuse the Concept when a new
+use case needs that meaning. Create a separate Concept when
+needed, and reconcile independently created duplicates when
+their owners establish that they mean the same thing.</p>
+<p>A SKOS concept is one possible technical manifestation's
+resource. <code>DataElementConcept</code> has no <code>skos:Concept</code> superclass,
+and <code>ConceptSet</code> is not a <code>skos:ConceptScheme</code> subclass.</p>
 <h3 id="concept-vocabulary_1">Concept Vocabulary<a class="headerlink" href="#concept-vocabulary_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -4481,8 +4448,7 @@ together.</p>
 <li>
 <p><strong>Type</strong></p>
 <ul>
-<li>A Concept Vocabulary is a <code>skos:ConceptScheme</code> (following <abbr title="World Wide Web Consortium">W3C</abbr>
-  SKOS standard)</li>
+<li>A Concept Vocabulary is an <code>ekg-concept:ConceptSet</code></li>
 </ul>
 </li>
 </ul>
@@ -4523,8 +4489,9 @@ together.</p>
 <p><strong>Contains Concepts</strong></p>
 <ul>
 <li>A Concept Vocabulary contains <strong>zero or more</strong> Concepts</li>
-<li>Modeled using <code>skos:inScheme</code> relationship</li>
-<li>Cardinality: 1 vocabulary → 0..* concepts</li>
+<li><code>ekg-concept:inConceptSet</code> links a Concept to its set</li>
+<li>Concepts can belong to multiple sets; shared membership
+  reuses the same identity</li>
 </ul>
 </li>
 <li>
@@ -4548,26 +4515,35 @@ together.</p>
 </ul>
 </li>
 </ul>
-<h3 id="skos-alignment">SKOS Alignment<a class="headerlink" href="#skos-alignment" title="Permanent link">&para;</a></h3>
-<p>Following <abbr title="World Wide Web Consortium">W3C</abbr> SKOS standards:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerVocabulary</span> <span class="kt">a</span> <span class="nn">skos</span><span class="p">:</span><span class="nt">ConceptScheme</span> <span class="p">;</span>
-    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">title</span> <span class="s">&quot;Customer Vocabulary&quot;</span> <span class="p">;</span>
-    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">description</span> <span class="s">&quot;Concepts related to customer management&quot;</span> <span class="p">;</span>
-    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">creator</span> <span class="s">&quot;Customer Data Team&quot;</span> <span class="p">;</span>
-    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">created</span> <span class="s">&quot;2024-01-15&quot;</span> <span class="p">;</span>
-    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">modified</span> <span class="s">&quot;2024-12-30&quot;</span> <span class="p">.</span>
+<h3 id="ekg-ontology-example"><abbr title="Enterprise Knowledge Graph, an EKGF standard">EKG</abbr> ontology example<a class="headerlink" href="#ekg-ontology-example" title="Permanent link">&para;</a></h3>
+<p>These readable example identifiers illustrate a vocabulary,
+a Concept and its manifestations:</p>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nv">&lt;https://example.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">ekg-concept:</span><span class="w"> </span><span class="nv">&lt;https://ekgf.org/ontology/concept#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">dcterms:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/dc/terms/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">ex</span><span class="p">:</span><span class="nt">Customer</span> <span class="kt">a</span> <span class="nn">skos</span><span class="p">:</span><span class="nt">Concept</span> <span class="p">;</span>
-    <span class="nn">skos</span><span class="p">:</span><span class="nt">inScheme</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerVocabulary</span> <span class="p">;</span>
-    <span class="nn">skos</span><span class="p">:</span><span class="nt">prefLabel</span> <span class="s">&quot;Customer&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">skos</span><span class="p">:</span><span class="nt">definition</span> <span class="s">&quot;An organization or individual who purchases goods or services&quot;</span> <span class="p">.</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerVocabulary</span> <span class="kt">a</span> <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">ConceptSet</span> <span class="p">;</span>
+    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">title</span> <span class="s">&quot;Customer Vocabulary&quot;</span> <span class="p">;</span>
+    <span class="nn">dcterms</span><span class="p">:</span><span class="nt">description</span> <span class="s">&quot;Concepts for customer management&quot;</span> <span class="p">.</span>
+
+<span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerIdentifier</span> <span class="kt">a</span> <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">DataElementConcept</span> <span class="p">;</span>
+    <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">inConceptSet</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerVocabulary</span> <span class="p">;</span>
+    <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">preferredBusinessTerm</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerIdentifierTerm</span> <span class="p">;</span>
+    <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">hasManifestation</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerIdVariable</span> <span class="p">.</span>
+
+<span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerIdentifierTerm</span> <span class="kt">a</span> <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">BusinessTerm</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Customer identifier&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">.</span>
+
+<span class="nn">ex</span><span class="p">:</span><span class="nt">CustomerIdVariable</span> <span class="kt">a</span> <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">SPARQLVariableManifestation</span> <span class="p">;</span>
+    <span class="nn">ekg-concept</span><span class="p">:</span><span class="nt">manifestationValue</span> <span class="s">&quot;?customerId&quot;</span> <span class="p">.</span>
 </code></pre></div>
 <h3 id="implementation-considerations">Implementation Considerations<a class="headerlink" href="#implementation-considerations" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Use URIs for vocabulary identifiers to enable linking</li>
 <li>Consider using standard vocabulary management systems</li>
 <li>Implement version control for vocabularies</li>
-<li>Provide SKOS exports for interoperability</li>
+<li>Link SKOS representations through technical manifestations</li>
 <li>Support vocabulary import/export for reuse</li>
 </ul>
 </div>
@@ -4608,7 +4584,7 @@ together.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 8, 2026 09:13:49 EDT"><span class="timeago" datetime="2026-07-08T09:13:49-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 8, 2026 09:13:49 EDT">2026-07-08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2026 10:57:52 EDT"><span class="timeago" datetime="2026-10-12T10:57:52-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2026 10:57:52 EDT">2026-10-12</span>
   </span>
 
     

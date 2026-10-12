@@ -141,7 +141,7 @@
     "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 19:02:11 EST"><span class="timeago" datetime="2026-02-18T19:02:11-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 19:02:11 EST">2026-02-18</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 22, 2026 20:46:09 EDT"><span class="timeago" datetime="2026-08-22T20:46:09-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 22, 2026 20:46:09 EDT">2026-08-22</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Story",
@@ -3698,9 +3698,15 @@ or graph model.</p>
 <p><strong>Structured statement (who / what / why)</strong></p>
 <ul>
 <li>A Story should capture:<ul>
-<li><strong>Who</strong>: a reference to a Persona (or persona-like Concept)</li>
+<li><strong>Who</strong>: a reference to a Persona (or persona-like Concept),
+  named <code>playedBy</code> — a Story is
+  <a href="../persona/#where-the-word-comes-from">played by</a>
+  a Persona, and the caller must <strong>have</strong> that Persona to
+  invoke it, not be restricted to it</li>
 <li><strong>What</strong>: the capability/action needed</li>
-<li><strong>Why</strong>: a reference to an Outcome (the intended business value)</li>
+<li><strong>Why</strong>: a reference to an Outcome (the intended business value),
+  named <code>contributesTo</code> — the Story contributes to the Outcome
+  rather than merely having one</li>
 </ul>
 </li>
 </ul>
@@ -3762,7 +3768,7 @@ or graph model.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 19:02:11 EST"><span class="timeago" datetime="2026-02-18T19:02:11-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 19:02:11 EST">2026-02-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 22, 2026 20:46:09 EDT"><span class="timeago" datetime="2026-08-22T20:46:09-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 22, 2026 20:46:09 EDT">2026-08-22</span>
   </span>
 
     

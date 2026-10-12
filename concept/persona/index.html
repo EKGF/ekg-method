@@ -141,7 +141,7 @@
     "name": "Object Management Group (OMG) Enterprise Knowledge Graph Forum",
     "url": "https://method.ekgf.org/"
   },
-  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>",
+  "dateModified": "<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 22, 2026 20:46:09 EDT"><span class="timeago" datetime="2026-08-22T20:46:09-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 22, 2026 20:46:09 EDT">2026-08-22</span>",
   "mainEntity": {
     "@type": "Article",
     "headline": "Persona",
@@ -3685,6 +3685,22 @@ approach, where Personas become reusable components in the
 Enterprise Knowledge Graph.</p>
 </div>
 <div class="tabbed-block">
+<h2 id="where-the-word-comes-from">Where the word comes from<a class="headerlink" href="#where-the-word-comes-from" title="Permanent link">&para;</a></h2>
+<p>A <em>persona</em> is the mask a performer wears — the character, not the
+performer. The method borrows the word deliberately, and the rest
+of the vocabulary follows from it: a <strong>Story</strong> is
+<a href="../story/">played by</a> a Persona, the way a play is
+performed by its characters.</p>
+<p>The relation is named <code>playedBy</code> for that reason. Read as a
+sentence it explains itself — <em>this Story is played by this
+Persona</em> — where a structural name such as <code>hasPersona</code> would
+assert that a link exists without saying what it means. In a
+method whose product is the vocabulary itself, a name that teaches
+the model is doing real work.</p>
+<p>The metaphor also sets the expectations correctly. A character
+outlives any one performance and can appear in many stories; so
+can a Persona. And a performer is not reduced to a single
+character — which is the distinction the next section turns on.</p>
 <h2 id="persona-vs-actor-vs-role">Persona vs. Actor vs. Role<a class="headerlink" href="#persona-vs-actor-vs-role" title="Permanent link">&para;</a></h2>
 <p>In traditional use case modeling, the term <strong>Actor</strong> is commonly
 used rather than <strong>Persona</strong>.
@@ -3695,6 +3711,42 @@ perform a task.</p>
 things simple when capturing requirements — primarily as
 <a href="../story/">Stories</a> — but also because the term Persona combines
 both concepts into one unified model.</p>
+<h3 id="assuming-a-role-versus-having-a-persona">Assuming a role versus having a Persona<a class="headerlink" href="#assuming-a-role-versus-having-a-persona" title="Permanent link">&para;</a></h3>
+<p>The deeper reason is that <em>assuming</em> is the wrong verb.</p>
+<p>In the Actor/Role model, an actor <strong>assumes</strong> a role in order to
+perform a task. That verb carries an exclusivity the model rarely
+states out loud: in a given context, at a given moment, the actor
+is in <strong>one</strong> role. AWS makes this explicit — a principal calls
+<code>AssumeRole</code> and, for the duration of that session, <em>is</em> the role;
+the identity it had before is set aside. Role is a hat you swap.</p>
+<p>A Persona is not a hat. A principal <strong>has</strong> Personas — several at
+once — and never switches between them. The closest analogy is a
+trait, interface or protocol in a programming language: a type
+implements many traits simultaneously, and a function that
+requires one of them is stating a <strong>minimum</strong>, not a restriction.</p>
+<p>That is exactly how a Story names its Persona. The Story says:</p>
+<blockquote>
+<p>to invoke this, you must have <strong>at least</strong> this Persona.</p>
+</blockquote>
+<p>It does not say <em>only</em> this Persona, and it does not ask anyone to
+put a hat on first. Membership is checked; nothing is assumed, in
+either sense of the word.</p>
+<p>This is why <a href="#real-time-persona-computation">Real-Time Persona Computation</a>
+below speaks of computing <em>the set</em> of Personas a user has. A set
+is the natural shape here; under an Actor/Role reading it would
+have to be a single current value.</p>
+<h3 id="why-we-diverge">Why we diverge<a class="headerlink" href="#why-we-diverge" title="Permanent link">&para;</a></h3>
+<p>EKGF is part of the OMG, and traditional use case modeling, the
+TOGAF Metamodel and the OMG's own specifications all reach for
+Actor and Role. Being part of a standards body is not a reason to
+inherit a distinction that does not serve the reader — the method
+is free to model this its own way, and does.</p>
+<p>The practical gains are small and real: requirements capture has
+one term instead of two; a Story's authorization requirement is a
+predicate over what the caller <em>has</em>, needing no session in which
+a role was assumed; and a person who is simultaneously an approver,
+an auditor and an employee is described as they actually are,
+rather than as three context switches.</p>
 <h2 id="key-technical-characteristics">Key Technical Characteristics<a class="headerlink" href="#key-technical-characteristics" title="Permanent link">&para;</a></h2>
 <h3 id="automated-role-assignment">Automated Role Assignment<a class="headerlink" href="#automated-role-assignment" title="Permanent link">&para;</a></h3>
 <p>Actors assuming a Role is fully automated, context-dependent,
@@ -3894,7 +3946,7 @@ or graph model.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 18, 2026 14:15:13 EST"><span class="timeago" datetime="2026-02-18T14:15:13-05:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 18, 2026 14:15:13 EST">2026-02-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 22, 2026 20:46:09 EDT"><span class="timeago" datetime="2026-08-22T20:46:09-04:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 22, 2026 20:46:09 EDT">2026-08-22</span>
   </span>
 
     
