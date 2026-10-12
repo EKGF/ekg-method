@@ -1,9 +1,11 @@
 ---
 description: >-
-  A thin linking pin for a context-specific meaning, connected to
-  business terms, technical manifestations, ontology resources,
-  shapes, taxonomies, code identifiers, and source occurrences.
+  A reusable concept identifying the meaning of a data element or
+  compound data construct, independently of its business or technical
+  manifestations.
 keywords:
+  - data element concept
+  - ISO/IEC 11179
   - concept
   - domain concept
   - business concept
@@ -13,13 +15,13 @@ keywords:
 schema_type: "Article"
 ---
 
-# Concept
+# Data Element Concept
 
 <!--summary-start-->
 
-_A thin linking pin for a context-specific meaning, connected to
-business terms, technical manifestations, models, code, data, and
-source occurrences_
+_A reusable concept identifying the meaning of a data element or
+compound data construct, independently of its particular business
+or technical manifestations_
 
 <!--summary-end-->
 
@@ -31,15 +33,24 @@ source occurrences_
     capturing the concepts and manifestations that the user or
     "the business" uses or wants to use.
 
-    A **Concept** is a context-specific linking pin for a meaning.
-    It is deliberately small: the Concept itself does not need to
-    carry every label, ontology class, shape, data field, or code
-    identifier.
+    A **Data Element Concept**, called a **Concept** for short,
+    identifies a shared meaning. Reuse that Concept wherever the
+    same meaning applies, across use cases, languages and systems.
+    It can describe an individual data element, such as a customer
+    identifier, or a compound construct, such as a whole customer
+    record.
 
-    Instead, it links to
+    Users and code encounter it through
     [Concept Manifestations](../term/index.md): business names,
     synonyms, abbreviations, API parameters, query variables,
-    ontology terms, shapes, taxonomy entries, and source occurrences.
+    ontology terms, shapes and taxonomy entries. For example,
+    "Customer identifier", `?customerId` in SPARQL and `customer_id`
+    in Python can express the same Concept.
+
+    A Concept is not inherently tied to one context. Separate
+    Concepts can be created where needed, but reuse is the intended
+    practice. Independently created Concepts may later be merged
+    when their owners establish that they mean the same thing.
 
     ## Why Concepts Matter
 
@@ -98,11 +109,36 @@ source occurrences_
 
     ## What Is a Concept in the Use Case Tree Method?
 
-    A **Concept** is the linking pin between local business language,
-    technical implementation, and formal semantic models.
-    It stays deliberately thin. Business terms, technical identifiers,
-    ontology resources, SHACL shapes, taxonomy entries, and source
-    occurrences are modeled as Concept Manifestations.
+    The formal class is `ekg-concept:DataElementConcept` in the
+    [EKGF Concept Ontology](https://github.com/EKGF/ekg-ontologies/blob/main/ekgf-concept.ttl).
+    "Concept" is the everyday short form. `ConceptSet`,
+    `ConceptManifestation` and properties such as `hasConcept` retain
+    that short form.
+
+    The Concept identifies the shared meaning. Its manifestations
+    and graph relationships express and describe that meaning.
+    Business terms, technical identifiers, ontology resources,
+    SHACL shapes and taxonomy entries are represented through
+    Concept Manifestations. A `ManifestationOccurrence` records a
+    particular sighting of a manifestation in a source.
+
+    ## Relationship to ISO/IEC 11179
+
+    This class deliberately generalizes the data element concept in
+    [ISO/IEC 11179-31:2023](https://www.iso.org/standard/78925.html),
+    section 3.25. It follows the distinction between meaning and
+    representation. The ISO model associates a data element concept
+    with an object class and a property, such as Customer and
+    Identifier.
+
+    Our scope also includes compound data constructs, such as whole
+    entity types and structured records. An entire OWL class or
+    SHACL shape can be a manifestation of a Concept. This broader
+    scope does not assert formal equivalence to the ISO model.
+
+    A Data Element Concept has no `skos:Concept` superclass. SKOS
+    resources can be linked through `SKOSConceptManifestation` or
+    `SKOSConceptSchemeManifestation` resources.
 
     ## The Concept Lifecycle
 
@@ -131,10 +167,10 @@ source occurrences_
     overall EKG ecosystem.
 
     !!! note "Implementation Detail"
-        The mapping to OWL ontologies or SHACL shapes is primarily a
-        technical implementation detail that is local to the specific
-        use case. The Concept links to an OWL or SHACL manifestation;
-        the manifestation points at the ontology resource or shape.
+        The Concept links to an OWL or SHACL manifestation; the
+        manifestation points at the ontology resource or shape.
+        Several use cases can reuse the same Concept while selecting
+        the manifestations appropriate to their implementations.
 
     ### Refinement and Evolution
 
@@ -162,46 +198,39 @@ source occurrences_
       shapes.
     - **SKOS Manifestations** represent concepts and concept schemes.
 
-    ## Concepts as Linking Pins
+    ## Shared meaning across manifestations
 
-    Concepts are the linking pin in many ways.
-    They link Business Terms and Technical Manifestations as they are
-    used in the context of the given use case, by the business and by
-    programs, apps, systems, statements, ontologies, and data.
+    Concepts connect Business Terms and Technical Manifestations
+    across programs, apps, systems, statements, ontologies and data.
 
-    !!! tip "Context-Specific Linking"
+    !!! tip "Reuse across contexts"
 
-        In the distributed EKG architecture, Concepts provide the
-        context-specific link between Stories and OWL ontology axioms.
-        This allows use cases at various maturity levels to coexist—
-        from early exploration to production-ready implementations.
+        In the distributed EKG architecture, Stories can share a
+        Concept while using different technical manifestations.
+        Exploratory and production use cases can reuse the same
+        meaning at different stages of implementation.
 
         See [Distributed EKG Architecture](../../article/distributed-ekg.md)
         for more on this approach.
 
     **Example:**
 
-    The official term for Customer could be "Customer," but it
-    appears in different forms:
+    A customer-identifier Concept can appear in different forms:
 
-    - On forms in apps as "Cust."
-    - In Python code as `_customer`
-    - In SPARQL statements as `?cust`
-    - In database schemas as `cust_id` or `customer_id`
-    - In API endpoints as `/customers` or `/api/cust`
-    - In OWL ontologies as specific axioms (e.g., `owl:Class` or
-      `rdfs:subClassOf` relationships)
-    - In SHACL shapes as validation constraints (e.g., `sh:property`
-      or `sh:minCount`)
+    - On forms as "Customer identifier" or "Customer ID"
+    - In Python code as `customer_id`
+    - In SPARQL statements as `?customerId`
+    - In database schemas as `customer_id`
+    - In API parameters as `customerId`
 
-    All these symbols, terms, axioms, and shapes are manifestations
-    of the same Concept and linked to it.
-    Mappings to OWL axioms or SHACL shapes are Technical
-    Manifestations, not direct properties of the Concept.
+    These manifestations can link to the same Concept wherever that
+    meaning is reused. Matching names alone do not establish that
+    two manifestations express the same meaning.
 
-    This enables the EKG to understand that these different
-    representations all refer to the same business concept, enabling
-    semantic integration across diverse systems and technologies.
+    A Concept for the whole Customer construct can likewise have an
+    OWL class and a SHACL shape as technical manifestations. Those
+    manifestations link to the class or shape through
+    `manifestationResource`.
 
     ## Relationship to Ontologies
 
@@ -228,13 +257,16 @@ source occurrences_
     Concepts follow the same reuse patterns as other elements in the
     Use Case Tree Method:
 
-    - **Local definition** — Each use case can define concepts
-      specific to its domain
+    - **Reuse first** — Use an existing Concept wherever its meaning
+      fits, even when a different name or technical form is needed
     - **Inheritance** — Lower-level use cases inherit concepts from
       parent use cases in the Use Case Tree
     - **Borrowing** — Use cases can reference concepts from related
       use cases
-    - **Consistency** — Common concepts are defined once and reused
+    - **New definitions** — Create a separate Concept when needed;
+      a new context alone does not require one
+    - **Reconciliation** — Owners can merge independently created
+      Concepts when they establish that their meanings are the same
 
     This ensures that concepts are not duplicated unnecessarily and
     that the EKG maintains semantic consistency across the enterprise.
@@ -245,8 +277,8 @@ source occurrences_
 
     - **[Use Cases](../use-case/index.md)** — Each use case has a vocabulary
       of concepts
-    - **[Personas](../persona/index.md)** — Personas are Concepts, enabling
-      semantic definition and reasoning
+    - **[Personas](../persona/index.md)** — Personas interact with
+      Stories using the business manifestations of their Concepts
     - **[Stories](../story/index.md)** — Stories reference domain concepts
       that need to be understood and modeled
     - **[Ontologies](../ontology.md)** — Concepts link through
@@ -265,7 +297,11 @@ source occurrences_
         minimal facts you can use to build your own ontology, schema,
         or graph model.
 
-    ### Concept
+    ### DataElementConcept
+
+    The class IRI is `ekg-concept:DataElementConcept`, where the
+    `ekg-concept` namespace is `https://ekgf.org/ontology/concept#`.
+    "Concept" remains the short form throughout the Method.
 
     - **Opaque universally unique identifier**
         - A Concept must have an **opaque**, **universally unique** identifier.
@@ -288,22 +324,27 @@ source occurrences_
           [Concept Manifestation](../term/index.md).
 
     - **Definition**
-        - A Concept must have a business-focused definition explaining
-          what it means in context.
+        - Describe the shared meaning through business-facing
+          manifestations and graph relationships.
+        - The meaning can be reused across contexts.
 
     - **Zero or more manifestations**
         - A Concept can have zero or more
           `ConceptManifestation` resources.
         - Manifestations may include spellings, abbreviations,
           synonyms, variables, columns, ontology resources, shapes,
-          taxonomy entries, and source occurrences.
-        - A Concept can start empty and become meaningful as
-          manifestations are discovered or curated.
+          and taxonomy entries.
+        - Source sightings are `ManifestationOccurrence` resources
+          linked to manifestations through `occurrenceOf`.
+        - A Concept can be identified before its manifestations are
+          discovered or curated.
         - Learn more in
           [Concept Manifestation](../term/index.md).
 
     - **Contained in a Concept Vocabulary**
-        - A Concept is a member of a Concept Vocabulary (a “container” of Concepts).
+        - A Concept Vocabulary is represented by `ConceptSet`.
+        - `inConceptSet` links a Concept to a set. Membership does
+          not make its meaning local to that vocabulary.
         - A Use Case can relate to Concept Vocabularies via relationship-objects:
             - it can **reference** an external vocabulary and/or
             - **own** a private vocabulary.
@@ -312,10 +353,18 @@ source occurrences_
         - A Concept can link to OWL, SHACL, SKOS, SQL, and source
           artifacts through Technical Manifestations.
         - The manifestation carries the resource or literal value and
-          any provenance.
+          its occurrences record source provenance.
 
     - **Used by Stories and Workflows**
         - Stories use Concepts as **input**, **output**, and
           **dependent** concepts.
         - Workflows use Concepts through the Stories they orchestrate
           and the vocabulary of the Use Case.
+
+    ### Class IRI migration
+
+    Replace references to the retired `ekg-concept:Concept` class
+    with `ekg-concept:DataElementConcept` in RDF, queries, shapes and
+    consumer code. There is no compatibility alias. The namespace,
+    `ConceptSet`, `ConceptManifestation` and property names retain
+    their short forms.

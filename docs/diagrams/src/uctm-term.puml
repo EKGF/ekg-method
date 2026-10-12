@@ -6,8 +6,8 @@ hide members
 class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
+class "ConceptSet" as ConceptSet [[/concept/concept/concept-vocabulary/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 
 ' Manifestation specializations
@@ -15,12 +15,12 @@ ConceptManifestation <|-- BusinessTerm
 ConceptManifestation <|-- TechnicalManifestation
 
 ' Ownership
-Concept "1" *-- "0..*" ConceptManifestation : :hasManifestation
-Concept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
+DataElementConcept "1" *-- "0..*" ConceptManifestation : :hasManifestation
+DataElementConcept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
 
-' Context (concepts live inside vocabularies used by use cases)
-ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
-ConceptVocabulary "0..*" --> "1" UseCase : :useCase
+' Shared concepts are grouped into sets used by use cases
+DataElementConcept "0..*" --> "0..*" ConceptSet : ekg-concept:inConceptSet
+UseCase "1" --> "0..*" ConceptSet : use-case:ownsConceptSet
 
 ' Use Case Tree structure
 UseCase "0..*" --> "0..1" UseCase : :isPartOf

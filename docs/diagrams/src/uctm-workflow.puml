@@ -8,7 +8,7 @@ class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Other resources point to UseCase (typical KG modeling style)
@@ -27,7 +27,7 @@ Outcome "0..1" --> "1" OutcomeStereotype : outcome:stereotype
 ' Stories link to outcomes and concepts
 Story --> Outcome : :contributesTo
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
-StoryConceptRelationship --> Concept : :concept
+StoryConceptRelationship --> DataElementConcept : :concept
 
 @enduml
 

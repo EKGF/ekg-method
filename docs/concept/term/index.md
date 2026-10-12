@@ -1,8 +1,8 @@
 ---
 description: >-
-  A concrete manifestation of a Concept: a business-facing term, code
-  identifier, query variable, schema resource, shape, or source
-  occurrence that shows where the Concept appears.
+  A business or technical expression of a Data Element Concept, such
+  as a business term, code identifier, query variable, schema
+  resource or shape.
 keywords:
   - concept manifestation
   - manifestation
@@ -18,8 +18,8 @@ schema_type: "Article"
 
 <!--summary-start-->
 
-_A concrete place where a Concept shows up in language, code, data,
-metadata, schemas, or source artifacts_
+_A business or technical expression of a Data Element Concept in
+language, code, data, metadata or schemas_
 
 <!--summary-end-->
 
@@ -28,7 +28,7 @@ metadata, schemas, or source artifacts_
     ## What is a concept manifestation?
 
     A **Concept Manifestation** is a visible form of a
-    [Concept](../concept/index.md) in a given context.
+    [Data Element Concept](../concept/index.md), or Concept for short.
     Concepts are about meaning. Manifestations are how that meaning
     shows up.
 
@@ -40,8 +40,9 @@ metadata, schemas, or source artifacts_
     - API field names and parameter names
     - ontology terms and validation shapes
 
-    The Concept remains the linking pin. The manifestations give the
-    Concept its observable forms.
+    The same Concept can be reused across contexts. Its
+    manifestations give that shared meaning observable forms in
+    different languages and systems.
 
     ## Business terms and technical manifestations
 
@@ -59,9 +60,9 @@ metadata, schemas, or source artifacts_
 
 === "Data & Tech Audience"
 
-    ## Manifestations as evidence
+    ## Expressions of a shared meaning
 
-    A manifestation is evidence that a Concept appears somewhere.
+    A manifestation expresses a Concept in a particular form.
     It can be:
 
     - a preferred business phrase
@@ -71,11 +72,14 @@ metadata, schemas, or source artifacts_
     - an OWL class, OWL property, or OWL axiom
     - a SHACL shape or property shape
     - a SKOS concept or concept scheme
-    - a source occurrence in a repository
 
     This lets the Knowledge Graph connect human language and technical
     artifacts back to the same Concept without putting schema-specific
     claims directly on the Concept.
+
+    A `ManifestationOccurrence` records evidence that a manifestation
+    appears at a particular source location. Several occurrences can
+    refer to the same manifestation.
 
     ## Discovering manifestations
 
@@ -122,8 +126,8 @@ metadata, schemas, or source artifacts_
           `urn:uuid:550e8400-e29b-41d4-a716-446655440000`
 
     - **Belongs to a Concept**
-        - A manifestation links to exactly one Concept in the local
-          context.
+        - A manifestation links to its `DataElementConcept` through
+          `ekg-concept:concept`, the inverse of `hasManifestation`.
         - A Concept can have zero or more manifestations.
         - The same real-world token may appear as separate
           manifestations when two Concepts intentionally do not mean
@@ -147,8 +151,9 @@ metadata, schemas, or source artifacts_
 
     ### Optional source occurrence facts
 
-    When a manifestation is discovered in code or data, capture where
-    it came from:
+    When a manifestation is discovered in code or data, record a
+    `ManifestationOccurrence` linked through `occurrenceOf` and
+    capture where it came from:
 
     - **Repository URL**
     - **File path**

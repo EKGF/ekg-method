@@ -82,8 +82,8 @@ requirements to formal ontology axioms:
 ```text
 Use Case
     └── Story
-        └── Concept
-            └── Technical Term
+        └── Data Element Concept
+            └── Technical Manifestation
                 └── Ontology Axiom
 ```
 
@@ -93,19 +93,20 @@ Each level in this chain serves a purpose:
    context and requirements
 2. **[Story](../concept/story/index.md)** — Captures specific
    scenarios and user needs
-3. **[Concept](../concept/concept/index.md)** — The linking pin between
-   business language and technical implementation
-4. **[Technical Term](../concept/term/technical-term.md)** — The
-   manifestation in code, data, and metadata
+3. **[Data Element Concept](../concept/concept/index.md)** — A shared
+   meaning reused across business and technical manifestations;
+   called a Concept for short
+4. **[Technical Manifestation](../concept/term/technical-term.md)** —
+   The manifestation in code, data, and metadata
 5. **Ontology Axiom** — The formal semantic definition in OWL or SHACL
 
 ### Why Context Matters
 
-Different use cases may map to the **same ontology** in completely
-different ways. A "Customer" concept in a sales use case may have
-different attributes, constraints, and relationships than "Customer"
-in a compliance use case—even if both ultimately link to the same
-OWL class.
+Different use cases may use different manifestations of the same
+Concept. Sales and compliance can reuse a Customer Concept while
+selecting different shapes, query variables or business terms.
+Create a separate Concept where needed, such as when the intended
+meaning differs. A change of context alone does not require one.
 
 This flexibility ensures that:
 
@@ -129,11 +130,12 @@ This is one of the key reasons why the Use Case Tree Method
 introduces the idea of **[Concepts](../concept/concept/index.md) of
 the Use Case**.
 
-## Concepts as the Linking Pin
+## Concepts as shared meanings
 
-[Concepts](../concept/concept/index.md) form the linking pin—in the
-context of the given use case—between the
-[Stories](../concept/story/index.md) and the OWL ontology axioms.
+[Concepts](../concept/concept/index.md) identify reusable meanings
+that connect [Stories](../concept/story/index.md) to business and
+technical manifestations. The latter can reference OWL ontology
+axioms or SHACL shapes. Several use cases can share the same Concept.
 
 ### Why Concepts, Not Direct Ontology Mapping?
 
@@ -162,8 +164,8 @@ By introducing Concepts as an intermediate layer:
   terminology
 - **Mapping can be deferred** — Ontology integration happens when
   appropriate
-- **Context is maintained** — Each use case has its own semantic
-  context
+- **Reuse is encouraged** — Use cases share Concepts wherever their
+  meanings agree and select the manifestations they need
 - **Evolution is supported** — Concepts can be refined as
   understanding grows
 
@@ -250,8 +252,8 @@ The distributed, context-specific approach enables:
 - [Enterprise Knowledge Graph](ekg.md) — What an EKG is
 - [Ontology](../concept/ontology.md) — Formal specification of
   concepts
-- [Concept](../concept/concept/index.md) — The linking pin between
-  business and technical
+- [Data Element Concept](../concept/concept/index.md) — Reusable
+  meaning across business and technical manifestations
 - [Use Case](../concept/use-case/index.md) — Business capabilities in
   the EKG
 - [Use Case Tree](../concept/use-case-tree.md) — Organizing use cases

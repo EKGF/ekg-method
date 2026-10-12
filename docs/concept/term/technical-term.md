@@ -29,7 +29,8 @@ queries, ontologies, shapes, taxonomies, APIs, or source repositories_
     ## What is a technical manifestation?
 
     A **Technical Manifestation** is how a
-    [Concept](../concept/index.md) appears in the digital landscape:
+    [Data Element Concept](../concept/index.md), or Concept for
+    short, appears in the digital landscape:
     code, databases, APIs, statements, ontologies, shapes, and source
     repositories.
 
@@ -76,8 +77,9 @@ queries, ontologies, shapes, taxonomies, APIs, or source repositories_
     Instead, it links to an `OWLClassManifestation` whose
     `manifestationResource` is `hospital:Patient`.
 
-    This keeps the Concept thin and lets one Concept have multiple
-    ontology, shape, taxonomy, query, and code manifestations.
+    This separates the shared meaning from its representations and
+    lets one Concept have multiple ontology, shape, taxonomy, query
+    and code manifestations across use cases and systems.
 
 === "Ontology"
 

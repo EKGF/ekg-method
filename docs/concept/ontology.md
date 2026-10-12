@@ -150,13 +150,14 @@ supply (Data Products) in the data economy_
 
     ## Relationship to Concepts
 
-    [Concepts](concept/index.md) serve as the linking pin between business
-    language and ontologies:
+    [Data Element Concepts](concept/index.md), called Concepts for
+    short, identify reusable meanings across business language and
+    ontologies:
 
-    - **Business language** — Concepts capture the terms and ideas
-      that the business uses
-    - **Ontology mapping** — Concepts link to ontology classes,
-      properties, and shapes that define their semantic meaning
+    - **Business language** — Business Term manifestations express
+      the meanings in the language that the business uses
+    - **Ontology mapping** — Technical Manifestations link Concepts
+      to ontology classes, properties and shapes
     - **Multiple mappings** — A single concept can map to multiple
       ontologies, enabling integration across different standards
 

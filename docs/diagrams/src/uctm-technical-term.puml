@@ -5,12 +5,12 @@ hide members
 
 class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
 
 ' Inheritance
 ConceptManifestation <|-- TechnicalManifestation
 
 ' Ownership
-Concept "1" *-- "0..*" TechnicalManifestation : :hasManifestation
+DataElementConcept "1" *-- "0..*" TechnicalManifestation : :hasManifestation
 
 @enduml

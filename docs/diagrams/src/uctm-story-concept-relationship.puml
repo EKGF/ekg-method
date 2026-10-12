@@ -4,12 +4,12 @@ top to bottom direction
 hide members
 
 class "Story" as Story [[/concept/story/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
 ' Usage
 Story "0..*" *-- "1" StoryConceptRelationship : owns
-StoryConceptRelationship "0..*" --> "1" Concept : concept
+StoryConceptRelationship "0..*" --> "1" DataElementConcept : concept
 
 @enduml
 

@@ -756,7 +756,10 @@ business outcomes within the Use Case Tree_
         - A Use Case can have **zero or more relationships** to Concept Vocabularies.
         - It may **reference an external** Concept Vocabulary, and/or **own a private** Concept
           Vocabulary.
-        - A Concept Vocabulary contains **Concepts**.
+        - A Concept Vocabulary is a `ConceptSet` containing reusable
+          **Data Element Concepts**, called Concepts for short.
+        - A new Use Case can reuse existing Concepts while selecting
+          the business and technical manifestations it needs.
         - Stories relate to Concepts via a **relationship-object** that captures usage type:
             - **Input Concept** — required/mandatory input parameter (or optional)
             - **Output Concept** — definition of the output (often a shape/compound object)

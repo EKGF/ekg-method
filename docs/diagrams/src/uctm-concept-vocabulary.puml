@@ -3,20 +3,20 @@
 top to bottom direction
 hide members
 
-class "Concept" as Concept [[/concept/concept/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
+class "ConceptSet" as ConceptSet [[/concept/concept/concept-vocabulary/#ontology]]
 class "UseCase" as UseCase [[/concept/use-case/#ontology]]
 class "Story" as Story [[/concept/story/#ontology]]
 class "StoryConceptRelationship" as StoryConceptRelationship [[/concept/concept/story-concept-relationship/#ontology]]
 
-' Concepts belong to a Concept Vocabulary
-ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+' Membership in concept sets
+DataElementConcept "0..*" --> "0..*" ConceptSet : ekg-concept:inConceptSet
 
-' Use Case owns Concept Vocabularies
-UseCase "1" *-- "0..*" ConceptVocabulary : :conceptVocabulary
+' Use Case owns concept sets
+UseCase "1" *-- "0..*" ConceptSet : use-case:ownsConceptSet
 
 ' Stories use concepts
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
-StoryConceptRelationship --> Concept : :concept
+StoryConceptRelationship --> DataElementConcept : :concept
 
 @enduml

@@ -10,8 +10,8 @@ class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
+class "ConceptSet" as ConceptSet [[/concept/concept/concept-vocabulary/#ontology]]
 class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
@@ -23,7 +23,7 @@ UseCase "1" *-- "0..*" Story : owns
 UseCase "1" *-- "0..*" WorkflowDefinition : owns
 UseCase "0..1" *-- "0..*" UseCase : is-part-of
 UseCase "0..*" o-- "0..*" UseCase : is-used-in
-Concept "1" *-- "0..*" ConceptManifestation : owns
+DataElementConcept "1" *-- "0..*" ConceptManifestation : owns
 
 ' Inheritance
 ConceptManifestation <|-- BusinessTerm
@@ -34,14 +34,14 @@ UseCase "0..1" --> "1" UseCaseStereotype : hasStereotype
 Outcome "0..1" --> "1" OutcomeStereotype : hasStereotype
 UseCase "0..*" --> "0..*" OutcomeRelationship : outcomeLink
 OutcomeRelationship --> Outcome : targetOutcome
-UseCase "0..*" --> "0..*" ConceptVocabulary : references/owns
-ConceptVocabulary "1" o-- "0..*" Concept : contains
+UseCase "0..*" --> "0..*" ConceptSet : references/owns
+DataElementConcept "0..*" --> "0..*" ConceptSet : ekg-concept:inConceptSet
 
 ' Usage
 Story --> Persona : story:playedBy
 Story --> Outcome : story:contributesTo
 Story --> StoryConceptRelationship : story:relatedConcept
-StoryConceptRelationship --> Concept: story:concept
+StoryConceptRelationship --> DataElementConcept: story:concept
 WorkflowDefinition --> Story : workflow:firstStep
 
 @enduml

@@ -1,13 +1,13 @@
 ---
 title: Concept Vocabulary
 description: >-
-  A collection of related concepts that share a common context or
-  domain, enabling reuse and consistency across use cases in the Use
-  Case Tree Method.
+  A governed set of related data element concepts, enabling reuse
+  and consistency across use cases in the Use Case Tree Method.
 keywords:
   - concept vocabulary
   - vocabulary
-  - SKOS concept scheme
+  - concept set
+  - data element concept
   - domain vocabulary
   - EKG method
   - enterprise knowledge graph
@@ -21,8 +21,8 @@ schema_type: "Article"
 
 <!--summary-start-->
 
-_A collection of related concepts that share a common context or
-domain, enabling reuse and consistency across use cases_
+_A governed set of related data element concepts, enabling reuse and
+consistency across use cases_
 
 <!--summary-end-->
 
@@ -30,8 +30,8 @@ domain, enabling reuse and consistency across use cases_
 
     ## What Is a Concept Vocabulary?
 
-    A **Concept Vocabulary** is a collection of related
-    [Concepts](index.md) that share a common context or domain. Think
+    A **Concept Vocabulary** is a governed set of related
+    [Data Element Concepts](index.md), called Concepts for short. Think
     of it as a dictionary or glossary specific to a particular area of
     your business. It groups together concepts and their
     manifestations that make sense to use together.
@@ -47,13 +47,11 @@ domain, enabling reuse and consistency across use cases_
     concepts relate to the actual words and technical forms people and
     systems use:
 
-    - A **Concept** in our model is essentially just a unique
-      identifier (a random UUID) that represents an idea or thing in
-      your domain
+    - A **Concept** identifies a reusable meaning, independently of
+      the names and technical forms used to express it
     - This concept can have **multiple manifestations** associated
       with it, such as business words, abbreviations, API parameters,
-      query variables, ontology classes, shapes, and source
-      occurrences
+      query variables, ontology classes and shapes
     - This is a **one-to-many relationship**: one concept, potentially
       many manifestations
 
@@ -62,40 +60,36 @@ domain, enabling reuse and consistency across use cases_
     In a given context, people often use different words for the same
     thing, and systems often use different identifiers for it:
 
-    **Example: Hospital Context**
+    **Example: Customer identifier**
 
-    > In a hospital use case, the concept of "a person receiving care"
-    > might have multiple manifestations:
+    > A shared customer-identifier Concept might have these
+    > manifestations across sales, service and billing:
     >
-    > - "Patient" — medical staff terminology
-    > - "Client" — administrative perspective
-    > - "Customer" — billing department
-    > - "Visitor" — reception desk
+    > - "Customer identifier" — the business term
+    > - "Customer ID" — a shorter label on forms
+    > - `?customerId` — a SPARQL variable
+    > - `customer_id` — a Python variable
     >
-    > All these manifestations refer to the same underlying Concept in
-    > this hospital context, so they are grouped under one Concept
-    > identifier.
+    > These manifestations express the same meaning and link to
+    > one Concept reused by those use cases.
 
     ### Context Matters
 
-    The same manifestation value might mean completely different things
-    in other contexts:
+    The same word or token can have different meanings. For example,
+    "bank" can denote a financial institution or the side of a river.
+    Conversely, different names can express the same meaning.
 
-    - "Patient" in a hospital means something different than "patient"
-      in a legal context (someone waiting)
-    - "Client" in a hospital is different from "client" in a law firm
-    - Each use case defines its own concepts that make sense in its
-      context
+    Check the meaning before reusing a Concept. A new use case or
+    vocabulary does not by itself require a new Concept. A Concept
+    can also belong to more than one vocabulary.
 
-    The Concept (the UUID) ties together all the manifestations that
-    mean the same thing **in your specific use case context**.
+    !!! note "Reuse meaning across contexts"
 
-    !!! note "Manifestations can repeat, Concepts are contextual"
-
-        The **manifestation values** themselves, such as "patient",
-        "client", `?patient`, or `patient_id`, can appear in many
-        vocabularies and systems. The **Concept** that groups them
-        together is specific to the use case's context and meaning.
+        Reuse existing Concepts wherever their meanings apply.
+        Separate Concepts may be created where needed and later
+        merged when their owners establish that they mean the same
+        thing. Matching manifestation values alone do not establish
+        that identity.
 
     ## Why Use Concept Vocabularies?
 
@@ -179,14 +173,13 @@ domain, enabling reuse and consistency across use cases_
 
     ## Evolution Path
 
-    Many vocabularies start as private and evolve to become shared:
+    Reuse existing Concepts while developing new vocabulary content:
 
-    1. **Start private** — Create a vocabulary specific to your use
-       case
-    2. **Prove value** — Demonstrate that the concepts are useful and
-       well-defined
-    3. **Generalize** — Remove use case-specific details and make
-       concepts more generally applicable
+    1. **Discover** — Find existing Concepts that express the needed
+       meanings
+    2. **Extend** — Add manifestations or create new Concepts for
+       meanings that are not already covered
+    3. **Refine** — Clarify definitions and reconcile duplicates
     4. **Share** — Publish the vocabulary for other use cases to
        reference
     5. **Maintain** — Establish governance for the shared vocabulary
@@ -277,13 +270,15 @@ domain, enabling reuse and consistency across use cases_
     ## Relationship to Concepts
 
     [Concepts](index.md) are the members of a Concept Vocabulary.
-    Using the SKOS (Simple Knowledge Organization System) standard:
+    In the EKGF Concept Ontology:
 
-    - A Concept Vocabulary is a `skos:ConceptScheme`
-    - A Concept is a `skos:Concept`
-    - Concepts belong to a vocabulary via `skos:inScheme`
+    - A Concept Vocabulary is an `ekg-concept:ConceptSet`
+    - A Concept is an `ekg-concept:DataElementConcept`
+    - `ekg-concept:inConceptSet` links a Concept to a vocabulary
 
-    This follows established W3C standards for organizing concepts.
+    Membership organizes shared meanings without making each
+    Concept local to a vocabulary. SKOS concepts and schemes can
+    be linked through technical manifestations.
 
     ## Relationship to Use Cases
 
@@ -349,8 +344,9 @@ domain, enabling reuse and consistency across use cases_
     - A Concept Vocabulary contains multiple Concepts
     - Each Concept can have zero or more manifestations
     - Manifestations provide the labels, names, variables, schema
-      resources, shapes, and source occurrences used in different
-      contexts
+      resources and shapes used in different contexts
+    - `ManifestationOccurrence` records where a manifestation
+      appears in a source
 
 === "Ontology"
 
@@ -369,62 +365,34 @@ domain, enabling reuse and consistency across use cases_
 
     A Concept Vocabulary is a container for related concepts:
 
-    ### Extension of SKOS
+    ### Shared meanings and their manifestations
 
-    While a Concept Vocabulary is technically a `skos:ConceptScheme`
-    following W3C SKOS standards, we extend the model in an important
-    way:
+    `DataElementConcept` identifies the meaning of a data element or
+    compound data construct. Its
+    [relationship to ISO/IEC 11179](index.md#relationship-to-isoiec-11179)
+    follows the separation of meaning and representation, with a
+    broader scope that includes whole classes and shapes.
 
-    **Standard SKOS:**
+    A Concept can have many manifestations across different use
+    cases and systems:
 
-    - A `skos:Concept` has labels directly attached
-      (`skos:prefLabel`, `skos:altLabel`)
-    - Labels are properties of the concept itself
-
-    **Use Case Tree Method Extension:**
-
-    - A **Concept** is essentially just a **universally unique
-      identifier** (UUID)
-    - The Concept identifier represents the local linking pin
-    - The Concept has a **one-to-many relationship** with
-      **Concept Manifestations**
-    - Manifestations are the observable forms: words, phrases, code
-      identifiers, schema resources, shapes, and source occurrences
-    - A Concept can have multiple manifestations, each representing a
-      different way the same meaning appears in a given context
-
-    **Why this matters:**
-
-    In a given use case context, people often use multiple words for
-    the same concept:
-
-    ```
-    Concept: urn:uuid:a1b2c3d4-... (hospital visitor concept)
-    ├── BusinessTerm: "Patient" (medical staff usage)
-    ├── BusinessTerm: "Client" (administrative usage)
-    ├── URIParameterManifestation: "patient-id"
-    └── OWLClassManifestation: hospital:Patient
+    ```text
+    DataElementConcept: customer identifier
+    ├── BusinessTerm: "Customer identifier"
+    ├── BusinessTerm: "Customer ID"
+    ├── URIParameterManifestation: "customerId"
+    └── SPARQLVariableManifestation: "?customerId"
     ```
 
-    All these manifestations refer to the same underlying Concept
-    **in this hospital use case's context**. In other contexts, these
-    same values might mean different things and would not be grouped
-    together.
+    The Concept identifies the shared meaning, while manifestations
+    express it in particular forms. Reuse the Concept when a new
+    use case needs that meaning. Create a separate Concept when
+    needed, and reconcile independently created duplicates when
+    their owners establish that they mean the same thing.
 
-    **Key insight:**
-
-    - **Concepts** are context-specific linking pins
-    - **Manifestation values** can recur across many contexts
-    - The Concept binds together all manifestations that mean the same
-      thing in your specific use case context
-
-    This separation allows:
-
-    - Different use cases to use the same values with different
-      meanings
-    - One use case to group multiple manifestations under one Concept
-    - Clear traceability of which manifestations are considered
-      equivalent in which contexts
+    A SKOS concept is one possible technical manifestation's
+    resource. `DataElementConcept` has no `skos:Concept` superclass,
+    and `ConceptSet` is not a `skos:ConceptScheme` subclass.
 
     ### Concept Vocabulary
 
@@ -441,8 +409,7 @@ domain, enabling reuse and consistency across use cases_
           "Financial Instruments Vocabulary"
 
     - **Type**
-        - A Concept Vocabulary is a `skos:ConceptScheme` (following W3C
-          SKOS standard)
+        - A Concept Vocabulary is an `ekg-concept:ConceptSet`
 
     ### Optional facts
 
@@ -466,8 +433,9 @@ domain, enabling reuse and consistency across use cases_
 
     - **Contains Concepts**
         - A Concept Vocabulary contains **zero or more** Concepts
-        - Modeled using `skos:inScheme` relationship
-        - Cardinality: 1 vocabulary → 0..* concepts
+        - `ekg-concept:inConceptSet` links a Concept to its set
+        - Concepts can belong to multiple sets; shared membership
+          reuses the same identity
 
     - **Owned by exactly one Use Case**
         - A Concept Vocabulary is owned by exactly **one** Use Case
@@ -483,22 +451,31 @@ domain, enabling reuse and consistency across use cases_
         - This is not a stored relationship but derived
           from the `:isPartOf` hierarchy of Use Cases
 
-    ### SKOS Alignment
+    ### EKG ontology example
 
-    Following W3C SKOS standards:
+    These readable example identifiers illustrate a vocabulary,
+    a Concept and its manifestations:
 
     ```turtle
-    ex:CustomerVocabulary a skos:ConceptScheme ;
-        dcterms:title "Customer Vocabulary" ;
-        dcterms:description "Concepts related to customer management" ;
-        dcterms:creator "Customer Data Team" ;
-        dcterms:created "2024-01-15" ;
-        dcterms:modified "2024-12-30" .
+    @prefix ex: <https://example.org/> .
+    @prefix ekg-concept: <https://ekgf.org/ontology/concept#> .
+    @prefix dcterms: <http://purl.org/dc/terms/> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-    ex:Customer a skos:Concept ;
-        skos:inScheme ex:CustomerVocabulary ;
-        skos:prefLabel "Customer"@en ;
-        skos:definition "An organization or individual who purchases goods or services" .
+    ex:CustomerVocabulary a ekg-concept:ConceptSet ;
+        dcterms:title "Customer Vocabulary" ;
+        dcterms:description "Concepts for customer management" .
+
+    ex:CustomerIdentifier a ekg-concept:DataElementConcept ;
+        ekg-concept:inConceptSet ex:CustomerVocabulary ;
+        ekg-concept:preferredBusinessTerm ex:CustomerIdentifierTerm ;
+        ekg-concept:hasManifestation ex:CustomerIdVariable .
+
+    ex:CustomerIdentifierTerm a ekg-concept:BusinessTerm ;
+        rdfs:label "Customer identifier"@en .
+
+    ex:CustomerIdVariable a ekg-concept:SPARQLVariableManifestation ;
+        ekg-concept:manifestationValue "?customerId" .
     ```
 
     ### Implementation Considerations
@@ -506,7 +483,7 @@ domain, enabling reuse and consistency across use cases_
     - Use URIs for vocabulary identifiers to enable linking
     - Consider using standard vocabulary management systems
     - Implement version control for vocabularies
-    - Provide SKOS exports for interoperability
+    - Link SKOS representations through technical manifestations
     - Support vocabulary import/export for reuse
 
 ## See Also

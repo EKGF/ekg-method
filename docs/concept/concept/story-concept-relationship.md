@@ -26,7 +26,11 @@ or dependent)_
 === "Business & Management Audience"
 
     ## What is a Story/Concept Relationship?
-    A **Story/Concept Relationship** explains *how* a [Story](../story/index.md) interacts with a [Concept](index.md).
+    A **Story/Concept Relationship** explains how a
+    [Story](../story/index.md) interacts with a
+    [Data Element Concept](index.md), or Concept for short.
+    Different Stories can reuse the same Concept while their
+    implementations use different technical manifestations.
 
     It's not enough to say that a story "uses" a concept; we need to know if the concept is something the user *provides* (Input), something the system *returns* (Output), or something used behind the scenes to filter or calculate data (Dependent).
 

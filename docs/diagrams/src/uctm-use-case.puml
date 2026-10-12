@@ -10,8 +10,8 @@ class "WorkflowDefinition" as WorkflowDefinition [[/concept/workflow/#ontology]]
 class "Outcome" as Outcome [[/concept/outcome/#ontology]]
 class "OutcomeStereotype" as OutcomeStereotype [[/concept/outcome/outcome-stereotype/#ontology]]
 class "OutcomeRelationship" as OutcomeRelationship [[/concept/outcome/outcome-relationship/#ontology]]
-class "ConceptVocabulary" as ConceptVocabulary [[/concept/concept/concept-vocabulary/#ontology]]
-class "Concept" as Concept [[/concept/concept/#ontology]]
+class "ConceptSet" as ConceptSet [[/concept/concept/concept-vocabulary/#ontology]]
+class "DataElementConcept" as DataElementConcept [[/concept/concept/#ontology]]
 class "ConceptManifestation" as ConceptManifestation [[/concept/term/#ontology]]
 class "BusinessTerm" as BusinessTerm [[/concept/term/business-term/#ontology]]
 class "TechnicalManifestation" as TechnicalManifestation [[/concept/term/technical-term/#ontology]]
@@ -26,7 +26,7 @@ ConceptManifestation <|-- TechnicalManifestation
 ' Other resources point to UseCase (typical KG modeling style)
 Story "0..*" --> "1" UseCase : :useCase
 WorkflowDefinition "0..*" --> "1" UseCase : :useCase
-ConceptVocabulary "0..*" --> "1" UseCase : :useCase
+UseCase "1" --> "0..*" ConceptSet : use-case:ownsConceptSet
 OutcomeRelationship "0..*" --> "1" UseCase : :useCase
 PersonaTaxonomy "0..1" --> "1" UseCase : :useCase
 
@@ -35,9 +35,9 @@ UseCase "0..*" --> "0..1" UseCase : :isPartOf
 UseCase "0..*" --> "0..*" UseCase : :isUsedIn
 
 ' Local ownership / containment
-Concept "1" *-- "0..*" ConceptManifestation : :hasManifestation
-Concept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
-ConceptVocabulary "1" o-- "0..*" Concept : skos:inScheme
+DataElementConcept "1" *-- "0..*" ConceptManifestation : :hasManifestation
+DataElementConcept "0..1" --> "1" BusinessTerm : :preferredBusinessTerm
+DataElementConcept "0..*" --> "0..*" ConceptSet : ekg-concept:inConceptSet
 
 ' Other key relationships
 UseCase "0..1" --> "1" UseCaseStereotype : usecase:stereotype
@@ -48,7 +48,7 @@ OutcomeRelationship --> Outcome : :targetOutcome
 Story --> Persona : :playedBy
 Story --> Outcome : :contributesTo
 Story "0..*" --> "1" StoryConceptRelationship : :storyConcept
-StoryConceptRelationship --> Concept : :concept
+StoryConceptRelationship --> DataElementConcept : :concept
 WorkflowDefinition --> Story : steps
 
 ' Personas belong to a PersonaTaxonomy (SKOS concept scheme)

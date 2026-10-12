@@ -27,13 +27,13 @@ documentation, user interfaces, policies, and governance_
 
     A **Business Term** is a human-facing
     [Concept Manifestation](index.md). It is how people speak about a
-    Concept in a specific context.
+    [Data Element Concept](../concept/index.md), or Concept for short.
 
-    Multiple Business Terms can point to one Concept when they mean the
-    same thing in that context. For example, "Customer",
-    "Counterparty", and "Client" may all be valid Business Terms for
-    one Concept in one use case, while meaning different things in
-    another use case.
+    Multiple Business Terms can point to one Concept wherever their
+    meanings agree. For example, "Customer identifier" and "Customer
+    ID" can name the same Concept across sales, service and billing.
+    A change of language or use case does not require a new Concept.
+    Matching words alone do not establish that their meanings agree.
 
     ## Key characteristics
 
@@ -58,7 +58,7 @@ documentation, user interfaces, policies, and governance_
     ## Business terms as manifestations
 
     A Business Term is a specialization of
-    `concept:ConceptManifestation`.
+    `ekg-concept:ConceptManifestation`.
     It carries human-readable lexical forms such as:
 
     - preferred label
@@ -68,8 +68,8 @@ documentation, user interfaces, policies, and governance_
     - plural form
     - short UI label
 
-    The Concept itself stays thin. The preferred display label is a
-    link from the Concept to a preferred Business Term.
+    `ekg-concept:preferredBusinessTerm` links the Data Element Concept
+    to the Business Term that supplies its preferred display label.
 
 === "Ontology"
 
