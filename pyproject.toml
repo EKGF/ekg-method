@@ -47,7 +47,7 @@ Repository = "https://github.com/EKGF/ekg-method"
 dev = [
     "ruff>=0.15.1",
     "mypy>=1.11.0",
-    "pytest>=8.3.0",
+    "pytest>=9.0.3",
 ]
 
 [tool.ruff]
